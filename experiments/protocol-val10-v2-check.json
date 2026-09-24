@@ -1,0 +1,129 @@
+{
+  "check_type": "split feasibility and isolation only; no BANKING77 model fit or evaluation",
+  "checks": [
+    {
+      "classes": 77,
+      "seed": 11,
+      "shots": 5,
+      "train_ids_sha256": "36d576b588596240122f467ef8519ee816fa3fc877bd19d82f538826633afec0",
+      "training_examples": 385
+    },
+    {
+      "classes": 77,
+      "seed": 11,
+      "shots": 10,
+      "train_ids_sha256": "10b72715d4e0dd47c0603160816e41ede7cf96f99539de87a95794bd98eebcd9",
+      "training_examples": 770
+    },
+    {
+      "classes": 77,
+      "seed": 11,
+      "shots": 20,
+      "train_ids_sha256": "0b9f4091e758161bf06803ba7d7ef1d4849d4c98064af8f566d020e5f1d5795b",
+      "training_examples": 1540
+    },
+    {
+      "classes": 77,
+      "seed": 22,
+      "shots": 5,
+      "train_ids_sha256": "78c09fb1e42717ae181bddfc417d4712ead2d4485165c55f4c10b83e3a7a2a21",
+      "training_examples": 385
+    },
+    {
+      "classes": 77,
+      "seed": 22,
+      "shots": 10,
+      "train_ids_sha256": "6be84bbf89d68bab0ca3e2fea6e34c367c4c8c76f1a54fc7011415101a1261b1",
+      "training_examples": 770
+    },
+    {
+      "classes": 77,
+      "seed": 22,
+      "shots": 20,
+      "train_ids_sha256": "8ce1ef193df2aafe139f21bcc80a64fa647e0f2a88f813d95bfa9d00f4a1daf0",
+      "training_examples": 1540
+    },
+    {
+      "classes": 77,
+      "seed": 33,
+      "shots": 5,
+      "train_ids_sha256": "6aa9e86dbfa054cb34b06edc915e76bf08bb8b7f65f209414c504d1bc8c1e493",
+      "training_examples": 385
+    },
+    {
+      "classes": 77,
+      "seed": 33,
+      "shots": 10,
+      "train_ids_sha256": "78c86c2ecd75e30f03da3581c3a3d4a42680400d2e9fc806611667932b42ae51",
+      "training_examples": 770
+    },
+    {
+      "classes": 77,
+      "seed": 33,
+      "shots": 20,
+      "train_ids_sha256": "f7db36b709319944e293d61f6eec64dc90320d7093d5f7db4d69b77fac999cd8",
+      "training_examples": 1540
+    },
+    {
+      "classes": 77,
+      "seed": 44,
+      "shots": 5,
+      "train_ids_sha256": "52fe4588a4233addb2d70dfc1b24dece1f2e393f9a6b950135eca696a69d6b9c",
+      "training_examples": 385
+    },
+    {
+      "classes": 77,
+      "seed": 44,
+      "shots": 10,
+      "train_ids_sha256": "ffb270e8d34f79bdb102c6da7e880d9478faa6a2e4c566cf4fc63a529b1e1cbf",
+      "training_examples": 770
+    },
+    {
+      "classes": 77,
+      "seed": 44,
+      "shots": 20,
+      "train_ids_sha256": "356011012e49aaa25f72dadfd01ef303d028ecc44a5a376a6f0bcd7e42532630",
+      "training_examples": 1540
+    },
+    {
+      "classes": 77,
+      "seed": 55,
+      "shots": 5,
+      "train_ids_sha256": "11904ddb7c6b8883120188c10169f8824389c5d4063f8eaf4f8bd7a2c08d5d15",
+      "training_examples": 385
+    },
+    {
+      "classes": 77,
+      "seed": 55,
+      "shots": 10,
+      "train_ids_sha256": "1c24f4d8db81631d164457570785f113a37a1d7462a4afd9eb74ed95e68aa276",
+      "training_examples": 770
+    },
+    {
+      "classes": 77,
+      "seed": 55,
+      "shots": 20,
+      "train_ids_sha256": "89fc721da118c32fa0d9d42ef38db5086873aa3b39387b5d9ef08d2e3a2c65ea",
+      "training_examples": 1540
+    }
+  ],
+  "cleaned_training_source_examples": 9992,
+  "feasible_shots": [
+    5,
+    10,
+    20
+  ],
+  "legacy_manifest_sha256": "94afed93106efc82a0ab3bf143e18c6ae19c823061c956fe28c14a51fffe6305",
+  "legacy_smoke_artifact_hashes_verified": true,
+  "manifest_sha256": "f07ac5a03a3ae444db042dd064db920daa3f6462b1e92c9df36ad6118196030a",
+  "minimum_available_examples_per_class": 25,
+  "official_test_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+  "protocol_id": "banking77-val10-v2",
+  "source_revision": "57ec275d8078af65b7731c2a98be812d844a6d6b",
+  "split_seed": 20260924,
+  "training_pool_examples": 9222,
+  "validation_examples": 770,
+  "validation_ids_sha256": "2226054cdf84b64e6bc3952ca579e77f4b56186d5c88f91d82d143642a5a7804",
+  "validation_is_subset_of_legacy_validation": true,
+  "validation_per_class": 10
+}

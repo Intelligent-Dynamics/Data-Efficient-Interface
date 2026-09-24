@@ -4,7 +4,7 @@ import argparse
 import json
 from pathlib import Path
 
-from .data import SEEDS, SHOTS, prepare
+from .data import DEFAULT_MANIFEST, SEEDS, SHOTS, prepare
 
 
 def main():
@@ -14,7 +14,7 @@ def main():
         command = subparsers.add_parser(name)
         command.add_argument("--raw", type=Path, default=Path("data/raw/banking77"))
         command.add_argument("--manifest", type=Path,
-                             default=Path("data/processed/banking77/manifest.json"))
+                             default=DEFAULT_MANIFEST)
         if name == "run":
             command.add_argument("--shots", type=int, choices=SHOTS, required=True)
             command.add_argument("--seed", type=int, choices=SEEDS, required=True)

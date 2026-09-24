@@ -4,6 +4,8 @@ An Intelligent Dynamics research project. Operating principle: **Measure → und
 
 ## Start each session
 
+Canonical checkout: `/Users/Andrew/Developer/data-efficient-inference`. Use this directory for all work; do not recreate the former Documents/ChatGPT path. Verify the Git top-level before making changes.
+
 Read `docs/PROJECT_CONTEXT.md`, `docs/CURRENT_PLAN.md`, `docs/EXPERIMENTS.md`, and `docs/RESULTS.md` before making changes. Inspect the working tree and preserve existing work. Follow the current milestone; do not infer that the entire system should be built.
 
 ## Research rules
@@ -20,6 +22,6 @@ Read `docs/PROJECT_CONTEXT.md`, `docs/CURRENT_PLAN.md`, `docs/EXPERIMENTS.md`, a
 
 ## Current scope
 
-M1a is implemented and tested; one N=5/seed=11 validation smoke experiment has run. It is not an independently reproduced final result. Read `docs/CURRENT_PLAN.md` for the exact next experiment (N=10/seed=11) and the feasibility revision: with validation=20, all 77 classes support only N=5 and N=10, not N=20/50. Never oversample, drop classes, or reuse test data to disguise this limit. Strong-model calls, calibration, routing, deployment, and UI remain later work.
+M1a is implemented and tested; one N=5/seed=11 validation smoke experiment has run. It is not an independently reproduced final result. Read `docs/CURRENT_PLAN.md` for the next experiment (N=10/seed=11, not yet run) under protocol `banking77-val10-v2`: fixed validation=10 per class and training N=5/10/20 across all 77 classes. N=50 is unsupported. Keep the legacy validation=20 smoke record separate; its scores cannot be pooled with the new protocol. Never oversample, drop classes, or reuse test data to disguise this limit. Strong-model calls, calibration, routing, deployment, and UI remain later work.
 
 Use `uv sync --locked --cache-dir .cache/uv`, then `.venv/bin/python -m pytest -q`. CLI commands are documented in `README.md`. Commit only source, lockfiles, documentation, and compact evidence; raw data and large generated artifacts stay ignored. Confirm the Git top-level is this project before Git writes or recording provenance.

@@ -15,3 +15,6 @@ Raw data and larger artifacts are excluded from Git. `metadata.json` also hashes
 ```
 
 This reproduction has **not** been run. Source hashes identify the pre-commit implementation; post-run documentation changes are expected. Timing and serialized-model hashes may differ between environments even when samples, predicted labels, and metrics agree. BANKING77 attribution and license are in the repository README and source manifest.
+
+
+Protocol note (2026-09-24): this record uses the legacy 20-validation-examples-per-class split. Reproduction requires code at `717b7e6` or the saved source snapshot. Current CLI defaults use `banking77-val10-v2` (10 validation examples/class) and **do not reproduce this run**. The legacy metrics, sampled IDs, metadata, and frozen protocol remain unchanged; do not aggregate this score with v2 scores.

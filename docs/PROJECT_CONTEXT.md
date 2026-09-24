@@ -2,6 +2,7 @@
 
 Updated: 2026-09-24. Organization: Intelligent Dynamics.
 Project: **Data-Efficient Specialist Inference**.
+Canonical checkout: `/Users/Andrew/Developer/data-efficient-inference`. The existing checkout, including Git history and local artifacts, was moved here from the former Documents/ChatGPT path on 2026-09-24. Origin remains `https://github.com/Intelligent-Dynamics/data-efficient-inference.git`.
 
 ## Thesis and research question
 
@@ -23,7 +24,11 @@ At the initial inspection on 2026-09-24 the repository contained only Git metada
 
 The local baseline now has pinned dataset downloads/dependencies, normalized-duplicate auditing, fixed validation and nested training samples, TF-IDF + logistic regression, a dummy comparator, JSON provenance/metrics/predictions, and automated tests. One N=5/seed=11 smoke experiment has completed; its observations are in `EXPERIMENTS.md`, not promoted to final results. There is no routing, calibration, cost model, API, or frontend implementation.
 
-The actual data exposed an infeasible planning assumption: the smallest class has only 35 usable training-source examples. With 20 reserved for validation, only 5- and 10-shot regimes are feasible across all 77 classes. The 20/50-shot regimes fail explicitly pending a documented design decision. The current plan preserves the dataset, all classes, and the official test set. All training-source labels read for stratification/auditing are disclosed separately from sampled fitting/validation labels; this is a simulated few-shot benchmark, not proof of total annotation requirements.
+The initial validation=20 design left too few examples in the smallest class (35 usable source rows). At the user's direction, protocol `banking77-val10-v2` now reserves a fixed **10 examples per class** from official training data for validation/calibration, leaving at least 25 training candidates per class. Initial regimes are **5, 10, and 20 shots**, all with the same 770 held-out validation examples and sampling seeds 11/22/33/44/55. Fifty-shot is dropped: even without a holdout the smallest class cannot supply 50 unique examples. All 77 classes, duplicate/ID isolation, deterministic nested sampling, and the sealed official test split are preserved. All training-source labels read for stratification/auditing are disclosed separately from sampled fitting/validation labels; this is a simulated few-shot benchmark, not proof of total annotation requirements.
+
+The existing N=5/seed=11 smoke run used the old validation=20 protocol. Keep its artifacts and metrics as historical evidence; do not compare or aggregate its score directly with new-protocol results. No BANKING77 model has been trained under the revised protocol yet.
+
+Ten validation examples per class (770 overall) are a reasonable development budget for coarse comparisons among a small, prespecified set of simple baselines. They do not guarantee sensitivity to small differences: each additional correct case changes a class's recall by 10 percentage points, and macro-F1 can be noisy. Reusing this fixed holdout for many tuning decisions risks overfitting; report paired development comparisons and training-seed variability, not definitive quality claims. For later calibration, this is a shared held-out development pool, not independent calibration and evaluation sets. Do not fit calibration or select thresholds on these labels and then call performance on the same labels unbiased. Reliable per-class calibration, high-confidence tail estimates, and narrow non-inferiority claims will need a separately designed, label-budgeted calibration/evaluation procedure (additional development labels or suitable cross-fitting). The official test split remains sealed during that work.
 
 ## Dataset comparison
 

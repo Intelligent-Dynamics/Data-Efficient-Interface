@@ -11,9 +11,11 @@ from urllib.request import urlopen
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "data/banking77-source.json"
 SPLIT_SEED = 20260924
-SHOTS = (5, 10, 20, 50)
+SHOTS = (5, 10, 20)
 SEEDS = (11, 22, 33, 44, 55)
-VALIDATION_PER_CLASS = 20
+VALIDATION_PER_CLASS = 10
+PROTOCOL_ID = "banking77-val10-v2"
+DEFAULT_MANIFEST = Path("data/processed") / PROTOCOL_ID / "manifest.json"
 
 
 def sha256(payload):
@@ -123,11 +125,11 @@ def ranked(rows, seed, namespace):
     ), r["id"]))
 
 
-def validation_split(rows, labels, per_class=VALIDATION_PER_CLASS, min_shots=5):
+def validation_split(rows, labels, per_class=VALIDATION_PER_CLASS, required_shots=max(SHOTS)):
     pool, validation = [], []
     for label in labels:
         group = ranked([r for r in rows if r["label"] == label], SPLIT_SEED, "validation")
-        if len(group) < per_class + min_shots:
+        if len(group) < per_class + required_shots:
             raise ValueError(f"Insufficient unique training examples for {label}: {len(group)}")
         validation.extend(group[:per_class])
         pool.extend(group[per_class:])
@@ -177,7 +179,8 @@ def prepare(raw, manifest_path):
     infeasible = {str(n): {label: available[label] for label in labels if available[label] < n}
                   for n in SHOTS if any(available[label] < n for label in labels)}
     manifest = {
-        "schema_version": 1, "source": source, "labels": labels,
+        "schema_version": 2, "protocol_id": PROTOCOL_ID, "shots": list(SHOTS),
+        "source": source, "labels": labels,
         "split_seed": SPLIT_SEED, "validation_per_class": VALIDATION_PER_CLASS,
         "sampling_algorithm": "SHA256 compact JSON [namespace, seed, row_id]; ascending hex then row_id",
         "normalization": "NFKC, lowercase, collapse whitespace; SHA256 UTF-8; audit only",
@@ -206,6 +209,15 @@ def prepare(raw, manifest_path):
 def load_development(raw, manifest_path):
     """Offline training path. No parsing of official test texts or labels."""
     manifest = read_json(manifest_path)
+    if (manifest.get("schema_version") != 2
+            or manifest.get("protocol_id") != PROTOCOL_ID
+            or manifest.get("validation_per_class") != VALIDATION_PER_CLASS
+            or manifest.get("split_seed") != SPLIT_SEED
+            or manifest.get("shots") != list(SHOTS)):
+        raise ValueError(
+            f"Protocol mismatch: expected {PROTOCOL_ID}. Run prepare with the new default "
+            "manifest path; legacy manifests and results must remain unchanged."
+        )
     source = source_spec()
     if manifest["source"] != source:
         raise ValueError("Manifest source differs from pinned source")

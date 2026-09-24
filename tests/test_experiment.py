@@ -5,7 +5,7 @@ import pytest
 from sklearn.exceptions import ConvergenceWarning
 
 from baseline import experiment
-from baseline.data import read_json, text_key, write_json
+from baseline.data import PROTOCOL_ID, read_json, text_key, write_json
 
 
 def test_metric_json_schema_and_zero_support_class():
@@ -50,7 +50,8 @@ def synthetic_run(tmp_path, monkeypatch):
     pool = [row(f"train:{label}:{i}", label, f"intent{label} example {i}")
             for label in labels for i in range(6)]
     validation = [row(f"val:{label}", label, f"intent{label} validationexclusive") for label in labels]
-    manifest = {"labels": labels, "source": {"dataset": "synthetic"}, "sealed_test": [],
+    manifest = {"labels": labels, "protocol_id": PROTOCOL_ID,
+                "source": {"dataset": "synthetic"}, "sealed_test": [],
                 "audit": {"original_train": 21}}
     manifest_path = tmp_path / "manifest.json"
     write_json(manifest_path, manifest)
@@ -67,6 +68,7 @@ def test_run_serializes_metrics_metadata_and_predictions(synthetic_run):
     predictions = read_json(output / "predictions.json")
     probabilities = read_json(output / "probabilities.json")
     assert metadata["status"] == "completed"
+    assert metadata["protocol_id"] == PROTOCOL_ID
     assert metadata["label_budgets"]["training"] == 15
     assert metadata["label_budgets"]["test_evaluation"] == 0
     assert metrics["schema_version"] == 1

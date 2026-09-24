@@ -1,8 +1,11 @@
+import csv
+
 from collections import Counter
 
 import pytest
 
-from baseline.data import (SEEDS, SHOTS, clean_train, download, few_shot,
+from baseline.data import (PROTOCOL_ID, SEEDS, SHOTS, clean_train, download, few_shot,
+                           load_development, prepare, read_json, write_json,
                            scan_sealed_test, sha256, text_key, validation_split,
                            verify_isolation)
 
@@ -23,7 +26,7 @@ def synthetic_data():
 def test_exact_budgets_determinism_and_nested_samples(synthetic_data, seed):
     labels, rows = synthetic_data
     pool, validation = validation_split(rows, labels)
-    assert Counter(r["label"] for r in validation) == {label: 20 for label in labels}
+    assert Counter(r["label"] for r in validation) == {label: 10 for label in labels}
     assert validation_split(list(reversed(rows)), labels) == (pool, validation)
     previous = set()
     for shots in SHOTS:
@@ -38,20 +41,30 @@ def test_exact_budgets_determinism_and_nested_samples(synthetic_data, seed):
 
 
 def test_short_class_fails_instead_of_oversampling():
-    rows = [row(f"train:{i:05d}", f"request {i}") for i in range(24)]
+    rows = [row(f"train:{i:05d}", f"request {i}") for i in range(29)]
     with pytest.raises(ValueError, match="Insufficient"):
         validation_split(rows, ["a"])
 
 
-def test_smallest_class_allows_five_and_ten_but_rejects_twenty_and_fifty():
+def test_smallest_class_supports_all_regimes_with_same_validation():
     rows = [row(f"train:{i:05d}", f"request {i}") for i in range(35)]
     pool, validation = validation_split(rows, ["a"])
-    assert len(validation) == 20
-    assert len(few_shot(pool, ["a"], 5, 11)) == 5
-    assert len(few_shot(pool, ["a"], 10, 11)) == 10
-    for shots in (20, 50):
-        with pytest.raises(ValueError, match="Insufficient"):
-            few_shot(pool, ["a"], shots, 11)
+    assert len(validation) == 10
+    assert len(pool) == 25
+    validation_ids = [r["id"] for r in validation]
+    for seed in SEEDS:
+        for shots in (5, 10, 20):
+            sample = few_shot(pool, ["a"], shots, seed)
+            assert len(sample) == shots
+            verify_isolation(sample, validation, [])
+            assert [r["id"] for r in validation] == validation_ids
+
+
+def test_fifty_shot_is_not_a_supported_regime(synthetic_data):
+    labels, rows = synthetic_data
+    pool, _ = validation_split(rows, labels)
+    with pytest.raises(ValueError, match="predeclared"):
+        few_shot(pool, labels, 50, 11)
 
 
 def test_duplicates_conflicts_and_test_overlap():
@@ -106,3 +119,67 @@ def test_download_is_offline_when_cached_and_rejects_corruption(tmp_path, monkey
     path.write_bytes(b"changed")
     with pytest.raises(ValueError, match="Checksum mismatch"):
         download(tmp_path, source)
+
+
+@pytest.fixture
+def prepared_fixture(tmp_path, monkeypatch):
+    """Exercise preparation/loading offline using small synthetic source files."""
+    raw = tmp_path / "raw"
+    raw.mkdir()
+    labels = ["a", "b", "c"]
+    write_json(raw / "categories.json", labels)
+    (raw / "LICENSE").write_text("synthetic fixture")
+    for name, rows in (
+        ("train.csv", [(f"{label} request {i}", label) for label in labels for i in range(35)]),
+        ("test.csv", [(f"sealed {label}", "unused label") for label in labels]),
+    ):
+        with (raw / name).open("w", newline="") as handle:
+            writer = csv.writer(handle)
+            writer.writerow(["text", "category"])
+            writer.writerows(rows)
+    source = {"expected_counts": {"train": 105, "test": 3, "classes": 3},
+              "files": {p.name: {"sha256": sha256(p.read_bytes())} for p in raw.iterdir()}}
+    monkeypatch.setattr("baseline.data.source_spec", lambda: source)
+    manifest_path = tmp_path / "v2" / "manifest.json"
+    prepare(raw, manifest_path)
+    return raw, manifest_path
+
+
+def test_preparation_is_fixed_and_does_not_reopen_test_during_training(prepared_fixture, monkeypatch):
+    raw, path = prepared_fixture
+    before = path.read_bytes()
+    test_before = (raw / "test.csv").read_bytes()
+    manifest = prepare(raw, path)
+    assert manifest["protocol_id"] == PROTOCOL_ID
+    assert manifest["validation_per_class"] == 10
+    assert manifest["shots"] == [5, 10, 20]
+    assert path.read_bytes() == before
+    assert (raw / "test.csv").read_bytes() == test_before
+    from baseline.data import csv_rows
+    def training_only_rows(path):
+        assert path.name != "test.csv", "Training must not parse official test rows"
+        return csv_rows(path)
+    monkeypatch.setattr("baseline.data.csv_rows", training_only_rows)
+    for seed in SEEDS:
+        for shots in SHOTS:
+            loaded, pool, validation = load_development(raw, path)
+            assert [r["id"] for r in validation] == manifest["validation_ids"]
+            verify_isolation(few_shot(pool, loaded["labels"], shots, seed),
+                             validation, loaded["sealed_test"])
+
+
+@pytest.mark.parametrize("field,value", [
+    ("schema_version", 1), ("protocol_id", "legacy"), ("validation_per_class", 20),
+    ("split_seed", 0), ("shots", [5, 10, 20, 50]),
+])
+def test_rejects_legacy_or_changed_protocol(prepared_fixture, field, value):
+    raw, path = prepared_fixture
+    manifest = read_json(path)
+    manifest[field] = value
+    write_json(path, manifest)
+    with pytest.raises(ValueError, match="Protocol mismatch"):
+        load_development(raw, path)
+    before = path.read_bytes()
+    with pytest.raises(ValueError, match="refusing to overwrite"):
+        prepare(raw, path)
+    assert path.read_bytes() == before

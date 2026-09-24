@@ -135,6 +135,7 @@ def run(raw, manifest_path, output, shots, seed):
         train = few_shot(pool, manifest["labels"], shots, seed)
         verify_isolation(train, validation, manifest["sealed_test"])
         labels = manifest["labels"]
+        metadata["protocol_id"] = manifest["protocol_id"]
         metadata["source"] = manifest["source"]
         metadata["data_audit"] = manifest["audit"]
         metadata["label_budgets"] = {
