@@ -1,0 +1,40 @@
+# Python bytecode and compiled extensions
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test, coverage, and tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.cache/
+
+# Notebooks and local configuration
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Downloaded datasets and generated experiment artifacts
+data/raw/
+data/processed/
+artifacts/
