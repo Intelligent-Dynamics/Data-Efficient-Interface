@@ -1,0 +1,119 @@
+# EXP-002: BANKING77 validation learning curve
+
+EXP-002 uses the unchanged word unigram/bigram TF-IDF + L2 multinomial logistic-regression pipeline at clean Git commit `30645360724d7fb8fe0c5a11d7dd7e02f3ac339b`. Dataset: BANKING77 revision `57ec275d8078af65b7731c2a98be812d844a6d6b`. Split protocol: `banking77-val10-v2`, seed 20260924, all 77 classes, the same 770 validation examples. Training seeds: 11, 22, 33, 44, 55; N=5/10/20. No model settings, splits, or seeds were selected using these scores.
+
+## Aggregate quality
+
+All values below are percentages; ± denotes sample SD across five seeds, not a confidence interval.
+
+| Shots/class | Train/run | Accuracy mean ± SD (%) | Macro-F1 mean ± SD (%) | Macro-F1 min–max (%) |
+| --- | ---: | ---: | ---: | ---: |
+| 5 | 385 | 51.84 ± 1.69 | 50.41 ± 1.58 | 48.77–52.59 |
+| 10 | 770 | 62.49 ± 1.60 | 61.58 ± 1.81 | 60.05–64.14 |
+| 20 | 1,540 | 69.95 ± 0.61 | 69.19 ± 0.63 | 68.18–69.80 |
+
+Primary macro-F1 by seed (percent):
+
+| Shots/class | Seed 11 | Seed 22 | Seed 33 | Seed 44 | Seed 55 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 5 | 51.13 | 49.01 | 50.55 | 48.77 | 52.59 |
+| 10 | 62.84 | 60.52 | 60.37 | 60.05 | 64.14 |
+| 20 | 69.80 | 69.07 | 69.37 | 69.55 | 68.18 |
+
+![Validation learning curve](learning_curve.png)
+
+Both increments improved accuracy and macro-F1 for every paired seed. Mean macro-F1 gains were **+11.17 percentage points** from 5→10 (seed gains 9.81–11.71) and **+7.61 points** from 10→20 (4.04–9.50). Accuracy gains were +10.65 and +7.45 points. These are substantial, consistent development-set gains; no formal population significance claim is made.
+
+Macro-F1 seed SD is **1.58 → 1.81 → 0.63 percentage points**: variance does not decrease monotonically, but is much lower at 20 shots. Accuracy SD is **1.69 → 1.60 → 0.61 points**. Seed variability is not validation-sampling uncertainty.
+
+The slope is flattening, but the curve does **not yet show a clear plateau**: 10→20 still adds 7.61 macro-F1 points on average. Diminishing returns are especially visible per added example/class (approximately 2.23 F1 points for 5→10 versus 0.76 for 10→20). Three budgets cannot establish an asymptote.
+
+## Error analysis
+
+Lowest average recall, weighting all 15 primary models equally:
+
+| Intent | Mean validation recall across all 15 primary models (%) |
+| --- | ---: |
+| `topping_up_by_card` | 26.00 |
+| `supported_cards_and_currencies` | 26.00 |
+| `transfer_fee_charged` | 26.00 |
+| `card_delivery_estimate` | 28.00 |
+| `unable_to_verify_identity` | 28.67 |
+
+At 20 shots, lowest-recall intents and all intents tied for highest mean recall:
+
+| 20-shot intent | Mean recall (%) | Mean F1 (%) |
+| --- | ---: | ---: |
+| `transfer_fee_charged` | 30.00 | 39.36 |
+| `unable_to_verify_identity` | 32.00 | 34.17 |
+| `supported_cards_and_currencies` | 32.00 | 39.50 |
+| `wrong_exchange_rate_for_cash_withdrawal` | 36.00 | 48.74 |
+| `topping_up_by_card` | 38.00 | 42.63 |
+| `verify_source_of_funds` | 100.00 | 92.64 |
+| `apple_pay_or_google_pay` | 100.00 | 99.05 |
+| `lost_or_stolen_phone` | 100.00 | 99.05 |
+
+Common directed confusions at 20 shots:
+
+| True intent → predicted intent (20-shot) | Errors across five seeds | Distinct validation requests involved |
+| --- | ---: | ---: |
+| `get_disposable_virtual_card` → `disposable_card_limits` | 19/50 | 4/10 |
+| `getting_virtual_card` → `virtual_card_not_working` | 17/50 | 6/10 |
+| `unable_to_verify_identity` → `why_verify_identity` | 16/50 | 7/10 |
+| `topping_up_by_card` → `top_up_by_cash_or_cheque` | 15/50 | 5/10 |
+| `wrong_exchange_rate_for_cash_withdrawal` → `card_payment_wrong_exchange_rate` | 15/50 | 4/10 |
+
+Confusions concentrate in related virtual-card, top-up, exchange-rate, and identity-verification intents. Label overlap is a plausible explanation, not a causal finding. Full class statistics and every nonzero confusion are in `error_analysis.json`.
+
+## Evidence and verification
+
+All 15 primary runs and 15 independent local refits completed without warnings or failures. Refits used separate clean output directories, reproduced sampled IDs, predicted labels, and complete quality metrics exactly, and had zero maximum absolute difference in classifier coefficients/intercepts. Only the 15 primary runs enter the aggregates. This is local reproducibility, not independent external or cross-platform replication.
+
+The verifier checked every required artifact and recorded hash, dataset/split/configuration agreement, exact N-per-class training membership, train/validation/test ID and normalized-text isolation, and shared validation order/labels. Each saved TF-IDF vocabulary and IDF vector exactly matched a vectorizer rebuilt using only its intended training texts. Saved models reproduced their validation predictions/probabilities. Metrics were recomputed from all saved predictions. The aggregate summary, error-analysis JSON, and per-run CSV were independently regenerated byte-for-byte from the versioned records. No official test rows were parsed during this study; test access was limited to pinned byte-integrity checks. No test evaluation occurred.
+
+- `runs/`: 15 separate machine-readable primary records, each containing original metadata, samples, complete metrics, and validation predictions.
+- `reproductions/`: 15 equivalent independent-refit records; excluded from five-seed means/SD.
+- `summary.json`: exact aggregate statistics, all seed values, paired gains, and unique label budgets.
+- `per_run.csv`: one primary run per row.
+- `error_analysis.json`: all class averages and confusion counts by regime.
+- `verification.json`: model/artifact/reproduction checks and split/test checksums.
+- `analysis_metadata.json`: analysis-source hash, plotting versions, exact commands, and output hashes.
+- `learning_curve.png` and `.svg`: macro-F1 and accuracy means, SD bars, and individual seeds.
+
+Full model/probability/source-snapshot artifacts remain in ignored `artifacts/exp002-learning-curve/` and `artifacts/exp002-learning-curve-reproduction/`. They are regenerable from the pinned source and unchanged fitting pipeline. Compact records retain the hashes of those local-only files; their presence here is not claimed. Package versions during fitting were Python 3.13.0, scikit-learn 1.7.2, NumPy 2.3.3, SciPy 1.16.2, joblib 1.5.2, threadpoolctl 3.6.0. Matplotlib 3.10.7 was added afterward for analysis only. All fits used one compute thread.
+
+Fit-time means (single local machine, seconds): 5-shot 0.0494, 10-shot 0.1342, 20-shot 0.3413. Per-run metadata retains raw fit/inference timing measurements, hardware, batch sizes, warmups/repetitions, timestamps, configurations, and code/data/split provenance. These timings are not monetary cost estimates.
+
+Training labels per primary run are 385/770/1,540, plus 770 validation labels. Across the entire matrix, **5,394 unique training examples** were used, or **6,164 including validation**. All 10,003 source-training labels were separately read for stratification/duplicate auditing. Refits reused the same labels. No calibration/prompt/test-evaluation labels were used.
+
+## Reproduce
+
+From `/Users/Andrew/Developer/data-efficient-inference`, install the locked environment and prepare the pinned dataset. The fitting pipeline and split logic are unchanged from commit `3064536`. Use fresh output directories; never overwrite prior runs.
+
+```sh
+uv sync --locked --cache-dir .cache/uv
+.venv/bin/python -m baseline prepare
+for shots in 5 10 20; do
+  for seed in 11 22 33 44 55; do
+    .venv/bin/python -m baseline run --shots "$shots" --seed "$seed" --output "artifacts/exp002-learning-curve/exp002-v2-n$shots-s$seed"
+  done
+done
+```
+
+For independent refits, use the same loop with outputs under `artifacts/exp002-learning-curve-reproduction/exp002-v2-n$shots-s$seed-reproduction`. The full verifier checks both matrices before exporting:
+
+```sh
+MPLCONFIGDIR=.cache/matplotlib .venv/bin/python -m baseline.learning_curve --runs-dir artifacts/exp002-learning-curve --reproductions-dir artifacts/exp002-learning-curve-reproduction --output artifacts/exp002-verified-export
+```
+
+Recompute aggregate statistics and figures directly from the versioned primary records, without downloading data, loading models, or fitting anything:
+
+```sh
+MPLCONFIGDIR=.cache/matplotlib .venv/bin/python -m baseline.learning_curve --records-dir experiments/exp002-learning-curve/runs --output artifacts/exp002-summary-recomputed
+```
+
+These are validation results on only 10 fixed examples per class, reused across training seeds and regimes. SD uses `ddof=1` across the five training seeds; it is neither a confidence interval nor an estimate of uncertainty over new traffic. The legacy validation=20 smoke is excluded. Class-level 100% recall is an observation on a tiny holdout, not a reliability guarantee. Confusion counts repeat the same requests across models; 50 prediction events per class/regime represent only 10 distinct validation requests. Training subsets overlap across seeds, and validation was available in earlier development, so these are development comparisons rather than a fresh confirmatory evaluation. Near-duplicate leakage beyond the implemented normalized-exact audit remains untested. No production-quality, routing, calibration, or cost-savings claim is supported.
+
+## Next experiment
+
+**Recommended next experiment: a 25-shot extension with the same TF-IDF + logistic regression, the same 770 validation IDs, and seeds 11/22/33/44/55.** This is the largest common budget supported by the current cleaned pool (minimum 25 per class), and tests whether the remaining 20→25 gain is still useful before changing models. First document/test a protocol extension that permits 25 while preserving the current validation IDs and each seed's 5/10/20 training prefixes; do not modify or relabel EXP-002. Compare paired 20→25 gains and their seed variability. The smallest class will use its entire 25-example pool for every seed, so disclose that reduced sampling variation. No 25-shot run, model change, routing, embedding, LLM, calibration, cost model, or official-test evaluation has been performed.

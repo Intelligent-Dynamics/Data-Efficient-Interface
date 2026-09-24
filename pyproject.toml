@@ -12,7 +12,10 @@ dependencies = [
 ]
 
 [dependency-groups]
-dev = ["pytest==8.4.2"]
+dev = [
+    "matplotlib==3.10.7",
+    "pytest==8.4.2",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -1,0 +1,105 @@
+{
+  "all_artifact_hashes_verified": true,
+  "checks": [
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp002-v2-n5-s11-reproduction",
+      "run_id": "exp002-v2-n5-s11"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp002-v2-n5-s22-reproduction",
+      "run_id": "exp002-v2-n5-s22"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp002-v2-n5-s33-reproduction",
+      "run_id": "exp002-v2-n5-s33"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp002-v2-n5-s44-reproduction",
+      "run_id": "exp002-v2-n5-s44"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp002-v2-n5-s55-reproduction",
+      "run_id": "exp002-v2-n5-s55"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp002-v2-n10-s11-reproduction",
+      "run_id": "exp002-v2-n10-s11"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp002-v2-n10-s22-reproduction",
+      "run_id": "exp002-v2-n10-s22"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp002-v2-n10-s33-reproduction",
+      "run_id": "exp002-v2-n10-s33"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp002-v2-n10-s44-reproduction",
+      "run_id": "exp002-v2-n10-s44"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp002-v2-n10-s55-reproduction",
+      "run_id": "exp002-v2-n10-s55"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp002-v2-n20-s11-reproduction",
+      "run_id": "exp002-v2-n20-s11"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp002-v2-n20-s22-reproduction",
+      "run_id": "exp002-v2-n20-s22"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp002-v2-n20-s33-reproduction",
+      "run_id": "exp002-v2-n20-s33"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp002-v2-n20-s44-reproduction",
+      "run_id": "exp002-v2-n20-s44"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp002-v2-n20-s55-reproduction",
+      "run_id": "exp002-v2-n20-s55"
+    }
+  ],
+  "independent_reproduction_count": 15,
+  "intended_training_subsets_verified": true,
+  "official_test_evaluation": false,
+  "official_test_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+  "primary_run_count": 15,
+  "protocol_id": "banking77-val10-v2",
+  "shared_validation_verified": true,
+  "split_manifest_sha256": "f07ac5a03a3ae444db042dd064db920daa3f6462b1e92c9df36ad6118196030a",
+  "test_access": "byte integrity only during this study",
+  "train_only_vocabulary_and_idf_verified": true
+}

@@ -1,0 +1,30 @@
+{
+  "aggregate_recomputation_byte_identical": [
+    "summary.json",
+    "error_analysis.json",
+    "per_run.csv",
+    "learning_curve.png",
+    "learning_curve.svg"
+  ],
+  "analysis_source_sha256": "6579eea88874a9c0e3831be77e464126ece75337c4cce914649ae73b5644ed81",
+  "created_utc": "2026-09-24T23:50:36.880675+00:00",
+  "independent_refits": "15 local refits from clean output directories; not external or cross-platform replication",
+  "output_sha256": {
+    "error_analysis.json": "309fc4c1e923b58376d3b88a56f792e684f928ed2e67ccadfeb425435e2ecb21",
+    "learning_curve.png": "969170cf54aaace3257d1e45dba26ee4c4e2023b2f1b7a3aaf098555ee9d7ba6",
+    "learning_curve.svg": "3ead13664b31cdae85880f7e0fe6daf29f33729da5aff667ccd0c8c7b33a4d37",
+    "per_run.csv": "62d39197cc67ad4cae5e5b4f77e44861354a1cd82de37674594820daaef42e34",
+    "summary.json": "5936f6ec752aa1db97ded877eb9c4077b3a28d73755113722f58ff47b6fbd807",
+    "verification.json": "c4697df9065f2f7c411d9d026c8116eb6f49900dfbb4e3cac3fa4cd00b82d1e4"
+  },
+  "packages": {
+    "matplotlib": "3.10.7",
+    "numpy": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.16.2"
+  },
+  "plot_visual_inspection": "PNG inspected; axes, both learning curves, seed points, and SD bars readable without clipping",
+  "reaggregation_command": "MPLCONFIGDIR=.cache/matplotlib .venv/bin/python -m baseline.learning_curve --records-dir experiments/exp002-learning-curve/runs --output artifacts/exp002-aggregate-reproduction-lf",
+  "training_code_commit": "30645360724d7fb8fe0c5a11d7dd7e02f3ac339b",
+  "verification_command": "MPLCONFIGDIR=.cache/matplotlib .venv/bin/python -m baseline.learning_curve --runs-dir artifacts/exp002-learning-curve --reproductions-dir artifacts/exp002-learning-curve-reproduction --output experiments/exp002-learning-curve"
+}

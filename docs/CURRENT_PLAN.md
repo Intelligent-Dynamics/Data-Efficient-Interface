@@ -6,7 +6,7 @@ Updated: 2026-09-24. Active protocol: **`banking77-val10-v2`**.
 
 Canonical checkout: `/Users/Andrew/Developer/data-efficient-inference`. The existing repository was moved here intact from `/Users/Andrew/Documents/ChatGPT/Data-Efficient Specialist Inference`; no new repository was initialized. Before protocol edits, `main` was clean at `717b7e6`, one commit ahead of `origin/main`. Origin remains `https://github.com/Intelligent-Dynamics/data-efficient-inference.git` in the Intelligent Dynamics organization.
 
-M1a implementation and one legacy N=5/seed=11 validation smoke run are complete. **The v2 protocol fix is implemented and tested: 29 tests pass, and all 15 combinations of N=5/10/20 and seeds 11/22/33/44/55 pass real-data sampling/isolation checks.** No BANKING77 model was trained or evaluated during this protocol-fix session. The next model experiment remains pending. No final project result, test evaluation, API, routing, calibration, embeddings, SetFit, cost model, frontend, or GPU work is in scope.
+**M1b / EXP-002 complete:** all 15 v2 learning-curve runs and 15 independent local refits succeeded. All samples, predictions, metrics, and classifier parameters reproduced; only the primary five seeds per regime enter the aggregate. The suite now passes **35 tests**. Validation findings are in `RESULTS.md` and `experiments/exp002-learning-curve/`. No official-test evaluation, new model, routing, calibration, embeddings, SetFit, LLM, cost-model, frontend, or GPU work occurred.
 
 ## Decisions and rationale
 
@@ -55,26 +55,37 @@ This is one held-out development pool, not separate validation and calibration e
 - Record single-thread fit time, model bytes, and vectorizer-plus-classifier prediction timings: batch size 1 and full validation; one warmup and five timed passes. Report hardware, units, median/throughput. These are local measurements, not cost savings.
 - Retain every planned seed; later report mean/sample standard deviation by N. Promote only independently reproduced measurements to `RESULTS.md`. Keep failures and negative results.
 
-## Validation performed for this change
+## Validation performed for the v2 protocol fix (historical)
 
 `.venv/bin/python -m pytest -q`: **29 passed**, no warnings. Added coverage for 10-case holdout feasibility, supported regimes, frozen validation across sizes/seeds, idempotent preparation, test rows excluded from the training loader, legacy/mutated protocol rejection, and refusal to overwrite old manifests. Existing metric, convergence-failure, ID/text isolation, and train-only TF-IDF checks still pass.
 
 Real-data preparation and sampling checks verified every N/seed combination, all 77 class budgets, nested/deterministic sampling, fixed validation IDs, and isolation. Evidence is in `experiments/protocol-val10-v2-check.json`. The prior manifest and smoke artifact hashes remain unchanged. No model fit or evaluation was involved in these real-data checks; unit-test fits used synthetic data only.
 
-## Exact next experiment (pending; not run this session)
+## Latest learning-curve findings
 
-Run **N=10, seed=11 under v2**, using unchanged model settings and the v2 manifest:
+| Shots/class | Train/run | Accuracy mean ± SD (%) | Macro-F1 mean ± SD (%) | Macro-F1 min–max (%) |
+| --- | ---: | ---: | ---: | ---: |
+| 5 | 385 | 51.84 ± 1.69 | 50.41 ± 1.58 | 48.77–52.59 |
+| 10 | 770 | 62.49 ± 1.60 | 61.58 ± 1.81 | 60.05–64.14 |
+| 20 | 1,540 | 69.95 ± 0.61 | 69.19 ± 0.63 | 68.18–69.80 |
 
-```sh
-cd /Users/Andrew/Developer/data-efficient-inference
-uv sync --locked --cache-dir .cache/uv
-.venv/bin/python -m baseline prepare
-.venv/bin/python -m baseline run --shots 10 --seed 11 --output artifacts/exp001-v2-n10-s11
-```
+Both increments improved accuracy and macro-F1 for every paired seed. Mean macro-F1 gains were **+11.17 percentage points** from 5→10 (seed gains 9.81–11.71) and **+7.61 points** from 10→20 (4.04–9.50). Accuracy gains were +10.65 and +7.45 points. These are substantial, consistent development-set gains; no formal population significance claim is made.
 
-Then independently repeat into `artifacts/exp001-v2-n10-s11-reproduction`; compare split/sample hashes and predicted labels exactly and metrics within `1e-10`. Afterward complete the 5/10/20 × five-seed matrix under v2, including a **fresh v2 5-shot run**. The legacy smoke cannot substitute for that run because its validation set and candidate training pool differed. Current v2 validation is a deterministic subset of the legacy validation set, not a fresh confirmatory holdout.
+Macro-F1 seed SD is **1.58 → 1.81 → 0.63 percentage points**: variance does not decrease monotonically, but is much lower at 20 shots. Accuracy SD is **1.69 → 1.60 → 0.61 points**. Seed variability is not validation-sampling uncertainty.
 
-Freeze preprocessing, configurations, metrics, and evaluation policy before any later official-test evaluation. Log all test access. If test results later guide design, disclose reuse and obtain a fresh holdout for new confirmatory claims. Stronger-model choice, calibration design, useful coverage/quality-loss targets, and cost assumptions remain later decisions.
+The slope is flattening, but the curve does **not yet show a clear plateau**: 10→20 still adds 7.61 macro-F1 points on average. Diminishing returns are especially visible per added example/class (approximately 2.23 F1 points for 5→10 versus 0.76 for 10→20). Three budgets cannot establish an asymptote.
+
+The study preserved the same 770 validation IDs and exact per-class budgets for every run. Thirty complete artifact sets exist locally, with compact evidence for all primary/refit runs in Git. Verified aggregates and error analysis are reproducible from the versioned JSON without raw data. The full verifier additionally checks all hashes, intended sample membership, TF-IDF vocabulary/IDF, saved predictions, and classifier refits. All primary/refit metrics matched exactly; all coefficient/intercept differences were zero. Full suite: 35 passed.
+
+At 20 shots, `transfer_fee_charged` (30% mean recall), `unable_to_verify_identity` (32%), and `supported_cards_and_currencies` (32%) remain weak. Closely related virtual-card and identity intents frequently confuse the model. Full class metrics and error counts are retained; do not tune on selected validation examples without logging the resulting exploratory status.
+
+## Exact next recommended experiment (not implemented or run)
+
+**Recommended next experiment: a 25-shot extension with the same TF-IDF + logistic regression, the same 770 validation IDs, and seeds 11/22/33/44/55.** This is the largest common budget supported by the current cleaned pool (minimum 25 per class), and tests whether the remaining 20→25 gain is still useful before changing models. First document/test a protocol extension that permits 25 while preserving the current validation IDs and each seed's 5/10/20 training prefixes; do not modify or relabel EXP-002. Compare paired 20→25 gains and their seed variability. The smallest class will use its entire 25-example pool for every seed, so disclose that reduced sampling variation. No 25-shot run, model change, routing, embedding, LLM, calibration, cost model, or official-test evaluation has been performed.
+
+The current CLI intentionally still accepts only 5/10/20. First add a dated protocol/manifest extension for 25 and tests asserting identical existing validation/sample IDs. Then run all five 25-shot seeds in separate artifacts, record every seed, independently reproduce them, and compare paired 20→25 accuracy/macro-F1 and SD using the same metrics. A small gain would motivate a later representation experiment; a material gain would show continuing data sensitivity. Predeclare interpretation and avoid selecting a best seed. Do not touch official test data or change this completed study.
+
+Freeze configurations and evaluation policy before any later official-test evaluation. Log all test access. If test results later guide design, disclose reuse and obtain a fresh holdout for new confirmatory claims. Stronger-model choice, calibration, coverage/quality-loss targets, and costs remain later decisions.
 
 ## Protocol history
 

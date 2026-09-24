@@ -8,7 +8,7 @@ Can a small specialist model trained with limited labeled data handle a signific
 
 ## Current status
 
-The minimal CPU baseline is implemented. Experimental observations and their verification status are recorded in [the experiment log](docs/EXPERIMENTS.md); there are no final project results or cost-savings claims.
+The complete 5/10/20-shot classical validation baseline is measured across five seeds and independently reproduced locally. See [verified validation results](docs/RESULTS.md), [per-run evidence and learning curves](experiments/exp002-learning-curve/README.md), and [the experiment log](docs/EXPERIMENTS.md). Official-test performance and cost savings have not been measured.
 
 The pipeline uses BANKING77, word unigram/bigram TF-IDF, and L2 logistic regression, with a most-frequent-class sanity comparator. The official test set is excluded from model development. Routing, calibration, general-purpose models, and a frontend are deferred.
 
@@ -37,6 +37,16 @@ Each run saves `metadata.json`, `metrics.json`, `samples.json`, `split_manifest.
 Downloaded files, environments, and bulky artifacts are ignored by Git. Compact smoke-run evidence is kept under `experiments/`; full local artifacts can be regenerated with the recorded source and commands. Load serialized models only from trusted runs.
 
 Dataset attribution: Casanueva et al. (2020), *Efficient Intent Detection with Dual Sentence Encoders*. [Publisher](https://github.com/PolyAI-LDN/task-specific-datasets), [CC BY 4.0 license](https://github.com/PolyAI-LDN/task-specific-datasets/blob/57ec275d8078af65b7731c2a98be812d844a6d6b/LICENSE). The downloader retains the upstream license. Split filtering and subsampling are project modifications.
+
+## Learning-curve analysis
+
+EXP-002 includes 15 primary runs plus 15 independent verification refits. All seeds are retained; summary SD is sample SD across training seeds, not a confidence interval. Recompute its summary, error analysis, CSV, and PNG/SVG figures from the checked-in records without downloading data or fitting models:
+
+```sh
+MPLCONFIGDIR=.cache/matplotlib .venv/bin/python -m baseline.learning_curve --records-dir experiments/exp002-learning-curve/runs --output artifacts/exp002-summary-recomputed
+```
+
+Use a fresh output directory. [The study README](experiments/exp002-learning-curve/README.md) contains full-matrix fitting commands, artifact verification, interpretation, and limitations. Large model/probability artifacts remain local; their hashes and compact records are versioned.
 
 ## Project documents
 
