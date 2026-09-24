@@ -1,0 +1,19 @@
+[project]
+name = "data-efficient-inference"
+version = "0.1.0"
+description = "Reproducible few-shot BANKING77 lexical baseline"
+requires-python = "==3.13.*"
+dependencies = [
+    "scikit-learn==1.7.2",
+    "numpy==2.3.3",
+    "scipy==1.16.2",
+    "joblib==1.5.2",
+    "threadpoolctl==3.6.0",
+]
+
+[dependency-groups]
+dev = ["pytest==8.4.2"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -4,7 +4,7 @@ Updated: 2026-09-24.
 
 ## Status and decisions
 
-M0 — repository inspection and research design: complete. **M1a — minimal baseline implementation, tests, and one N=5/seed=11 validation smoke experiment: complete.** M1b multi-seed evaluation and independent reproduction remain pending. No final project result, official-test evaluation, or paid model call has been produced.
+M0 — repository inspection and research design: complete. M1 implementation is in progress; this session covers tests and **one N=5, seed=11 validation smoke experiment**, not the full matrix or a final result. No paid model calls are in scope.
 
 Repository setup decision (2026-09-24): use the private GitHub repository `Intelligent-Dynamics/data-efficient-inference`, with `main` as the default branch and `origin` as the remote. Organization identity and repository-creation permission were verified through the authenticated GitHub CLI. This setup does not advance the ML implementation milestone.
 
@@ -16,7 +16,7 @@ Decisions made on 2026-09-24:
 - Use a separate, fixed validation budget of 20 labels per class. Disclose it in every few-shot claim.
 - Defer stronger-model selection, paid calls, calibration, routing, UI, and infrastructure.
 
-## Completed implementation milestone
+## Exact next implementation milestone
 
 **M1a — implement the reproducible local BANKING77 few-shot lexical baseline, run tests and one N=5/seed=11 validation smoke experiment. Keep the official test split sealed.** The user's implementation-session instruction narrows the original M1 full-matrix acceptance criteria; multi-seed experiments and independent reproduction are deferred to M1b.
 
@@ -72,23 +72,3 @@ None of these questions blocks the local M1 baseline. Routing and savings claims
 Pinned publisher revision: `57ec275d8078af65b7731c2a98be812d844a6d6b`; exact source-file checksums are in `data/banking77-source.json`. Mechanical checks found 10,003 training rows and 3,080 test rows. Cleaning removed 7 training rows matching normalized test text and 4 repeated training rows; no conflicting-label duplicate groups were found. This leaves 9,992 rows: 1,540 validation and 8,452 candidate training rows. Near duplicates have not been audited.
 
 The original preparation attempt correctly stopped at the minimum-size prerequisite. `contactless_not_working` has 35 usable source rows (15 after validation); `virtual_card_not_working` has 41 (21 remaining), `card_acceptance` 57 (37), and `card_swallowed` 61 (41). Thus N=20 fails for one class and N=50 for four. Preserve all 77 classes, validation=20, and the official test set. Preparation now reports feasible/infeasible regimes, and sampling raises an error for any infeasible request. No models were trained before this revision.
-
-## What was implemented and what worked
-
-- `baseline/data.py`: pinned source/checksum verification, immutable row IDs, duplicate removal, conflict quarantine, sealed-test hash audit, deterministic fixed validation and nested training sampling, feasibility reporting, and split-isolation checks.
-- `baseline/experiment.py` and CLI: fixed TF-IDF/L2 logistic regression, dummy comparator, validation metrics and class probabilities, JSON manifests/provenance, source snapshot, model serialization, single-thread timings, and persistent failure records. No test-evaluation option exists.
-- Python 3.13.0, exact direct dependency versions, and `uv.lock`; 22 tests passed with no warnings. Tests cover all planned budgets/seeds using synthetic data, isolation by ID and text, duplicate/conflict handling, real minimum-class feasibility, train-only vocabulary/IDF, checksum rejection, metric JSON, saved-prediction recomputation, and convergence failures.
-- One real experiment completed: `exp001-smoke-n5-s11`, with 385 training and 1,540 validation examples. Saved metrics were recomputed exactly from predictions; hashes and sample budgets were checked. No independent refit was performed. See `EXPERIMENTS.md` and `experiments/exp001-smoke-n5-s11/` for the measured values and run-time protocol.
-- Issues: the original 20/50-shot matrix is infeasible; near-duplicate leakage is still untested. Dependency serialization warnings were resolved by version pinning. An unexpected loss of local Git metadata/docs was recovered from the verified initial remote commit; a Git-root guard now prevents recording an unrelated parent repository.
-
-## Exact next experiment: M1b reference run
-
-Run **N=10, seed=11**, using the existing fixed validation split and unchanged model settings:
-
-```sh
-uv sync --locked --cache-dir .cache/uv
-.venv/bin/python -m baseline prepare
-.venv/bin/python -m baseline run --shots 10 --seed 11 --output artifacts/exp001-n10-s11
-```
-
-Then independently repeat that configuration in `artifacts/exp001-n10-s11-reproduction`, compare split/sample hashes and predicted labels exactly, and compare metrics within `1e-10`. Only after that, complete the feasible N=5/10 × seeds 11/22/33/44/55 study, retaining every run, reporting mean/sample standard deviation, and accounting for unique labels across the study. The N=5/seed=11 smoke may be included only if its recorded source/configuration matches the frozen study. No tuning follows from its score. Larger regimes need a new protocol, and the official test set remains sealed.

@@ -1,0 +1,292 @@
+{
+  "artifacts_sha256": {
+    "metrics.json": "f4dc395727b0bea607e791c44e309bef54442d189f34837c2c9daf12d8aa0143",
+    "model.joblib": "3b33e7595fb109dd388fa7a65805250fe9a8e9767457ad67114486972ed89191",
+    "predictions.json": "fc20fb48142449c9c1d32a4225edd747e6f1bdae4babe4a59ee156c7dbac0173",
+    "probabilities.json": "8ac338050181cff95908d49c8eeb9a672e754ef33ba6a01ea24ee183354770a8",
+    "samples.json": "e2db7786f0526e12ff1e0643bfa37fe6adc92cb1c413abf1780330f766919865",
+    "split_manifest.json": "94afed93106efc82a0ab3bf143e18c6ae19c823061c956fe28c14a51fffe6305",
+    "working-tree.patch": "bcb58cc98ea5c092c7907cdc35107cebd00c72a87c8cd56f3ad5e501e48d971c"
+  },
+  "code": {
+    "git_head": "649f7e106dd88f31101b910eb17783cb6b779e6d",
+    "git_status": "M README.md\n M docs/CURRENT_PLAN.md\n M docs/EXPERIMENTS.md\n?? .python-version\n?? baseline/\n?? data/\n?? pyproject.toml\n?? tests/\n?? uv.lock",
+    "source_files_sha256": {
+      ".python-version": "3713acffd953d571bccbe163951aeef988a75f945c049b7fba53f080311267fa",
+      "baseline/__init__.py": "8a3218d35d41d1cf1d4608ed6cea6ca0a0529b1c889b8058d2932b6135837708",
+      "baseline/__main__.py": "a43375bbcf674f07f4d0e880052b0a5498e98e49d7d8c8fe9f3a3a262c23c41b",
+      "baseline/data.py": "b90f7b7d27ff7bf4843ea30a0e23de0b05fad02c47a0fe9b58fcb187a6ce7ad0",
+      "baseline/experiment.py": "c49d385925696a5c050e3cf4ad624321ed1486a4296414aa1ee4da77899dc81f",
+      "data/banking77-source.json": "64533b22b8a9fd3bde032b541e256e395238f30cd328bc2033042195b21b9c50",
+      "docs/CURRENT_PLAN.md": "0ea873d02b358be32ddc82cc0eded544e54ce23df5d885eedce509e39a48e8c7",
+      "pyproject.toml": "50a6fee12869a41eb1b6161bdcbb145c0f46cac509ae29d9cdc61bde3c30255f",
+      "tests/test_data.py": "1e61f8aaf49aa65af323910a7c2ddf71be6ab29d6b2df75c09bc3f6766be8624",
+      "tests/test_experiment.py": "86c15292b599be1ebbfd558e6c9d6a6d0342b3e7c78e4b7ef858792a8be4113f",
+      "uv.lock": "83074396976b472841031a4a8af78ac9ebb7fec45f56edc498b5a6fcc0660c99"
+    },
+    "source_snapshot_sha256": "f71bd3ff8beaf2a3eabf352ca2d6e8c513dfaae0d25ebfa1a2154706cd3cb03d",
+    "working_tree_patch_sha256": "bcb58cc98ea5c092c7907cdc35107cebd00c72a87c8cd56f3ad5e501e48d971c"
+  },
+  "command": "'/Users/Andrew/Documents/ChatGPT/Data-Efficient Specialist Inference/.venv/bin/python' -m baseline run --shots 5 --seed 11 --output artifacts/exp001-smoke-n5-s11",
+  "configuration": {
+    "compute_threads": 1,
+    "logistic_regression": {
+      "C": 1.0,
+      "class_weight": null,
+      "fit_intercept": true,
+      "max_iter": 2000,
+      "penalty": "l2",
+      "solver": "lbfgs",
+      "tol": 0.0001
+    },
+    "multiclass_loss": "multinomial",
+    "tfidf": {
+      "analyzer": "word",
+      "lowercase": true,
+      "max_df": 1.0,
+      "min_df": 1,
+      "ngram_range": [
+        1,
+        2
+      ],
+      "norm": "l2",
+      "smooth_idf": true,
+      "stop_words": null,
+      "sublinear_tf": true,
+      "token_pattern": "(?u)\\b\\w\\w+\\b",
+      "use_idf": true
+    }
+  },
+  "data_audit": {
+    "available_training_per_class": {
+      "Refund_not_showing_up": 142,
+      "activate_my_card": 139,
+      "age_limit": 90,
+      "apple_pay_or_google_pay": 106,
+      "atm_support": 65,
+      "automatic_top_up": 107,
+      "balance_not_updated_after_bank_transfer": 151,
+      "balance_not_updated_after_cheque_or_cash_deposit": 161,
+      "beneficiary_not_allowed": 136,
+      "cancel_transfer": 137,
+      "card_about_to_expire": 109,
+      "card_acceptance": 37,
+      "card_arrival": 133,
+      "card_delivery_estimate": 92,
+      "card_linking": 119,
+      "card_not_working": 91,
+      "card_payment_fee_charged": 167,
+      "card_payment_not_recognised": 148,
+      "card_payment_wrong_exchange_rate": 147,
+      "card_swallowed": 41,
+      "cash_withdrawal_charge": 157,
+      "cash_withdrawal_not_recognised": 140,
+      "change_pin": 100,
+      "compromised_card": 65,
+      "contactless_not_working": 15,
+      "country_support": 108,
+      "declined_card_payment": 133,
+      "declined_cash_withdrawal": 153,
+      "declined_transfer": 113,
+      "direct_debit_payment_not_recognised": 162,
+      "disposable_card_limits": 101,
+      "edit_personal_details": 101,
+      "exchange_charge": 101,
+      "exchange_rate": 92,
+      "exchange_via_app": 98,
+      "extra_charge_on_statement": 146,
+      "failed_transfer": 117,
+      "fiat_currency_support": 106,
+      "get_disposable_virtual_card": 77,
+      "get_physical_card": 86,
+      "getting_spare_card": 109,
+      "getting_virtual_card": 78,
+      "lost_or_stolen_card": 62,
+      "lost_or_stolen_phone": 101,
+      "order_physical_card": 100,
+      "passcode_forgotten": 85,
+      "pending_card_payment": 139,
+      "pending_cash_withdrawal": 123,
+      "pending_top_up": 129,
+      "pending_transfer": 128,
+      "pin_blocked": 93,
+      "receiving_money": 75,
+      "request_refund": 149,
+      "reverted_card_payment?": 141,
+      "supported_cards_and_currencies": 109,
+      "terminate_account": 88,
+      "top_up_by_bank_transfer_charge": 91,
+      "top_up_by_card_charge": 94,
+      "top_up_by_cash_or_cheque": 94,
+      "top_up_failed": 125,
+      "top_up_limits": 77,
+      "top_up_reverted": 126,
+      "topping_up_by_card": 83,
+      "transaction_charged_twice": 155,
+      "transfer_fee_charged": 152,
+      "transfer_into_account": 93,
+      "transfer_not_received_by_recipient": 151,
+      "transfer_timing": 108,
+      "unable_to_verify_identity": 82,
+      "verify_my_identity": 84,
+      "verify_source_of_funds": 93,
+      "verify_top_up": 106,
+      "virtual_card_not_working": 21,
+      "visa_or_mastercard": 115,
+      "why_verify_identity": 101,
+      "wrong_amount_of_cash_received": 160,
+      "wrong_exchange_rate_for_cash_withdrawal": 143
+    },
+    "cleaned_train": 9992,
+    "exclusions_by_reason": {
+      "duplicate_training_text": 4,
+      "matches_official_test": 7
+    },
+    "feasible_shots": [
+      5,
+      10
+    ],
+    "infeasible_shots_available_counts": {
+      "20": {
+        "contactless_not_working": 15
+      },
+      "50": {
+        "card_acceptance": 37,
+        "card_swallowed": 41,
+        "contactless_not_working": 15,
+        "virtual_card_not_working": 21
+      }
+    },
+    "near_duplicates_checked": false,
+    "official_test": 3080,
+    "original_train": 10003,
+    "pool": 8452,
+    "test_access": "mechanical schema/count/text-hash audit only; labels unused; no evaluation",
+    "validation": 1540
+  },
+  "dummy_tie_break": {
+    "predicted_label": "Refund_not_showing_up",
+    "rule": "first class in sklearn sorted class order"
+  },
+  "environment": {
+    "machine": "arm64",
+    "packages": {
+      "joblib": "1.5.2",
+      "numpy": "2.3.3",
+      "pytest": "8.4.2",
+      "scikit-learn": "1.7.2",
+      "scipy": "1.16.2",
+      "threadpoolctl": "3.6.0"
+    },
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python": "3.13.0",
+    "threadpools": [
+      {
+        "filepath": "/Users/Andrew/Documents/ChatGPT/Data-Efficient Specialist Inference/.venv/lib/python3.13/site-packages/sklearn/.dylibs/libomp.dylib",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libomp",
+        "user_api": "openmp",
+        "version": null
+      }
+    ]
+  },
+  "evaluation_split": "validation",
+  "finished_utc": "2026-09-24T23:22:55.139483+00:00",
+  "label_budgets": {
+    "calibration": 0,
+    "development_unique": 1925,
+    "note": "Simulated few-shot access to public labels, not an annotation-cost measurement",
+    "prompt_examples": 0,
+    "test_evaluation": 0,
+    "training": 385,
+    "training_source_labels_read_for_stratification_and_duplicate_audit": 10003,
+    "validation": 1540
+  },
+  "optimizer_iterations": [
+    4
+  ],
+  "purpose": "single validation experiment; not a final project result",
+  "resources": {
+    "fit_seconds": 0.047240125015378,
+    "model_bytes": 1932612,
+    "prediction_timing": {
+      "full_validation": {
+        "batch_size": 1540,
+        "median_pass_seconds": 0.01236758311279118,
+        "median_seconds_per_request": 8.030898125189078e-06,
+        "pass_seconds": [
+          0.012420666869729757,
+          0.011646207887679338,
+          0.012466124957427382,
+          0.012027874821797013,
+          0.01236758311279118
+        ],
+        "requests_per_pass": 1540,
+        "requests_per_second": 124519.07425689777
+      },
+      "single_request": {
+        "batch_size": 1,
+        "median_pass_seconds": 0.3830550001002848,
+        "median_seconds_per_request": 0.000248737013052133,
+        "pass_seconds": [
+          0.38454879191704094,
+          0.3859229579102248,
+          0.3830550001002848,
+          0.38077558297663927,
+          0.3791632920037955
+        ],
+        "requests_per_pass": 1540,
+        "requests_per_second": 4020.3103982373914
+      },
+      "timed_passes": 5,
+      "units": "seconds",
+      "warmup_passes": 1
+    }
+  },
+  "run_id": "exp001-smoke-n5-s11",
+  "samples_sha256": "e2db7786f0526e12ff1e0643bfa37fe6adc92cb1c413abf1780330f766919865",
+  "schema_version": 1,
+  "seed": 11,
+  "shots": 5,
+  "source": {
+    "attribution": "Casanueva et al. (2020), Efficient Intent Detection with Dual Sentence Encoders",
+    "dataset": "BANKING77",
+    "expected_counts": {
+      "classes": 77,
+      "test": 3080,
+      "train": 10003
+    },
+    "files": {
+      "LICENSE": {
+        "path": "LICENSE",
+        "sha256": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661",
+        "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b/LICENSE"
+      },
+      "categories.json": {
+        "path": "banking_data/categories.json",
+        "sha256": "53261da888122daf2d120d925458631d9619e15d82e56052e7a42e535ce32b63",
+        "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b/banking_data/categories.json"
+      },
+      "test.csv": {
+        "path": "banking_data/test.csv",
+        "sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+        "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b/banking_data/test.csv"
+      },
+      "train.csv": {
+        "path": "banking_data/train.csv",
+        "sha256": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+        "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b/banking_data/train.csv"
+      }
+    },
+    "license": "CC-BY-4.0",
+    "repository": "https://github.com/PolyAI-LDN/task-specific-datasets",
+    "revision": "57ec275d8078af65b7731c2a98be812d844a6d6b"
+  },
+  "split_manifest_sha256": "94afed93106efc82a0ab3bf143e18c6ae19c823061c956fe28c14a51fffe6305",
+  "started_utc": "2026-09-24T23:22:52.361727+00:00",
+  "status": "completed",
+  "vocabulary_size": 2998,
+  "warnings": []
+}

@@ -20,4 +20,6 @@ Read `docs/PROJECT_CONTEXT.md`, `docs/CURRENT_PLAN.md`, `docs/EXPERIMENTS.md`, a
 
 ## Current scope
 
-Planning is complete; the next milestone is a local BANKING77 few-shot TF-IDF + logistic-regression baseline, specified in `docs/CURRENT_PLAN.md`. Strong-model calls, confidence routing, deployment, and UI are later milestones. No experiments have run as of initialization on 2026-09-24.
+M1a is implemented and tested; one N=5/seed=11 validation smoke experiment has run. It is not an independently reproduced final result. Read `docs/CURRENT_PLAN.md` for the exact next experiment (N=10/seed=11) and the feasibility revision: with validation=20, all 77 classes support only N=5 and N=10, not N=20/50. Never oversample, drop classes, or reuse test data to disguise this limit. Strong-model calls, calibration, routing, deployment, and UI remain later work.
+
+Use `uv sync --locked --cache-dir .cache/uv`, then `.venv/bin/python -m pytest -q`. CLI commands are documented in `README.md`. Commit only source, lockfiles, documentation, and compact evidence; raw data and large generated artifacts stay ignored. Confirm the Git top-level is this project before Git writes or recording provenance.

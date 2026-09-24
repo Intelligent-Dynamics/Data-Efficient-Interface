@@ -17,7 +17,13 @@ The eventual evidence-backed statement would be: “Using N labeled examples per
 
 ## Initial repository inspection
 
-On 2026-09-24 the repository contained only Git metadata, no tracked files, and no commits on `master`. There was no implementation, dependency configuration, test suite, dataset, or prior result. This session establishes documentation only.
+At the initial inspection on 2026-09-24 the repository contained only Git metadata, no tracked files, and no commits on `master`. There was no implementation, dependency configuration, test suite, dataset, or prior result. The first session established documentation only.
+
+## Implementation state (2026-09-24)
+
+The local baseline now has pinned dataset downloads/dependencies, normalized-duplicate auditing, fixed validation and nested training samples, TF-IDF + logistic regression, a dummy comparator, JSON provenance/metrics/predictions, and automated tests. One N=5/seed=11 smoke experiment has completed; its observations are in `EXPERIMENTS.md`, not promoted to final results. There is no routing, calibration, cost model, API, or frontend implementation.
+
+The actual data exposed an infeasible planning assumption: the smallest class has only 35 usable training-source examples. With 20 reserved for validation, only 5- and 10-shot regimes are feasible across all 77 classes. The 20/50-shot regimes fail explicitly pending a documented design decision. The current plan preserves the dataset, all classes, and the official test set. All training-source labels read for stratification/auditing are disclosed separately from sampled fitting/validation labels; this is a simulated few-shot benchmark, not proof of total annotation requirements.
 
 ## Dataset comparison
 

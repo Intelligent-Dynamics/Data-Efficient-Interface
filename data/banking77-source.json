@@ -1,0 +1,26 @@
+{
+  "dataset": "BANKING77",
+  "repository": "https://github.com/PolyAI-LDN/task-specific-datasets",
+  "revision": "57ec275d8078af65b7731c2a98be812d844a6d6b",
+  "license": "CC-BY-4.0",
+  "attribution": "Casanueva et al. (2020), Efficient Intent Detection with Dual Sentence Encoders",
+  "expected_counts": {"train": 10003, "test": 3080, "classes": 77},
+  "files": {
+    "train.csv": {
+      "path": "banking_data/train.csv",
+      "sha256": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b"
+    },
+    "test.csv": {
+      "path": "banking_data/test.csv",
+      "sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+    },
+    "categories.json": {
+      "path": "banking_data/categories.json",
+      "sha256": "53261da888122daf2d120d925458631d9619e15d82e56052e7a42e535ce32b63"
+    },
+    "LICENSE": {
+      "path": "LICENSE",
+      "sha256": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661"
+    }
+  }
+}
