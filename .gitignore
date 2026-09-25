@@ -25,6 +25,7 @@ dist/
 .coverage.*
 htmlcov/
 coverage.xml
+# Includes downloaded Hugging Face model weights
 .cache/
 
 # Notebooks and local configuration
@@ -37,4 +38,5 @@ coverage.xml
 # Downloaded datasets and generated experiment artifacts
 data/raw/
 data/processed/
+# Includes cached embedding arrays and serialized classifiers
 artifacts/

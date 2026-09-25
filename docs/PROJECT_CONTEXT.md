@@ -1,6 +1,6 @@
 # Project context
 
-Updated: 2026-09-24. Organization: Intelligent Dynamics.
+Updated: 2026-09-25. Organization: Intelligent Dynamics.
 Project: **Data-Efficient Specialist Inference**.
 Canonical checkout: `/Users/Andrew/Developer/data-efficient-inference`. The existing checkout, including Git history and local artifacts, was moved here from the former Documents/ChatGPT path on 2026-09-24. Origin remains `https://github.com/Intelligent-Dynamics/data-efficient-inference.git`.
 
@@ -29,6 +29,14 @@ The initial validation=20 design left too few examples in the smallest class (35
 The existing N=5/seed=11 smoke run used the old validation=20 protocol. Keep its artifacts and metrics as historical evidence; do not compare or aggregate its score directly with new-protocol results. The revised protocol now has 15 primary validation runs and 15 independent local refits. Mean macro-F1 rises from 50.41% to 61.58% to 69.19% at 5/10/20 shots; these are development-set measurements, not test or production results. No routing/cost claim is established.
 
 Ten validation examples per class (770 overall) are a reasonable development budget for coarse comparisons among a small, prespecified set of simple baselines. They do not guarantee sensitivity to small differences: each additional correct case changes a class's recall by 10 percentage points, and macro-F1 can be noisy. Reusing this fixed holdout for many tuning decisions risks overfitting; report paired development comparisons and training-seed variability, not definitive quality claims. For later calibration, this is a shared held-out development pool, not independent calibration and evaluation sets. Do not fit calibration or select thresholds on these labels and then call performance on the same labels unbiased. Reliable per-class calibration, high-confidence tail estimates, and narrow non-inferiority claims will need a separately designed, label-budgeted calibration/evaluation procedure (additional development labels or suitable cross-fitting). The official test split remains sealed during that work.
+
+## Frozen representation milestone (2026-09-25)
+
+The user chose a frozen sentence-embedding comparison next, superseding the proposed 25-shot lexical extension. EXP-003 implements `sentence-transformers/all-MiniLM-L6-v2` at revision `1110a243fdf4706b3f48f1d95db1a4f5529b4d41`, with only logistic regression trained. Its initial classifier settings are identical to TF-IDF. CPU encoding produces 384-dimensional normalized vectors; encoder weights remain frozen and unchanged. Dataset, cleaning, fixed validation, training IDs, and all classical results are preserved.
+
+Exactly one 5-shot seed-11 smoke has completed using the existing EXP-002 IDs. Its comparison is recorded in `EXPERIMENTS.md`, not in verified research results. Artifact replay and 47 tests passed; no independent embedding training reproduction or multi-seed embedding study has run. The next proposed step is an independent local reproduction of this same smoke, not more model complexity.
+
+The label budget is 385 task-training labels **plus 770 validation labels**, reused from the TF-IDF comparator. External encoder pretraining is an additional source of knowledge: this is not representation learning from 385 labels alone, and overlap with public benchmarks cannot be excluded. The pinned [publisher model card](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/blob/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md) describes its pretraining. Keep the single-seed result exploratory, disclose this holdout's repeated use, and preserve the sealed test. No paid inference, fine-tuning, routing, calibration, frontend or cost model was added.
 
 ## Dataset comparison
 

@@ -1,0 +1,21 @@
+{
+  "checks": [
+    "artifact/source hashes",
+    "reference sample IDs and budgets",
+    "ID/text isolation",
+    "feature row/text/label alignment",
+    "unchanged frozen encoder state",
+    "unchanged classifier settings",
+    "classifier prediction/probability replay",
+    "metric/comparison recomputation"
+  ],
+  "classifier_refitted": false,
+  "encoder_executed": false,
+  "note": "Artifact consistency check; not an independent training reproduction",
+  "run_id": "exp003-minilm-v2-n5-s11",
+  "schema_version": 1,
+  "status": "passed",
+  "test_rows_parsed": false,
+  "training_examples": 385,
+  "validation_examples": 770
+}

@@ -6,9 +6,7 @@ Updated: 2026-09-25. Active protocol: **`banking77-val10-v2`**.
 
 Canonical checkout: `/Users/Andrew/Developer/data-efficient-inference`. The existing repository was moved here intact from `/Users/Andrew/Documents/ChatGPT/Data-Efficient Specialist Inference`; no new repository was initialized. Before protocol edits, `main` was clean at `717b7e6`, one commit ahead of `origin/main`. Origin remains `https://github.com/Intelligent-Dynamics/data-efficient-inference.git` in the Intelligent Dynamics organization.
 
-**M2a / EXP-003 complete:** frozen MiniLM + unchanged logistic regression is implemented; exactly one 5-shot seed-11 v2 validation smoke run succeeded. The 47-test suite passes, artifacts and prediction replay are verified, and the official test stayed sealed. This single-seed comparison is in `EXPERIMENTS.md` and `experiments/exp003-minilm-v2-n5-s11/`; it is not promoted to `RESULTS.md`.
-
-**M1b / EXP-002 remains complete:** the prior 15 classical runs and 15 independent local refits, code, and verified results are preserved unchanged. No 25-shot extension or additional embedding run occurred.
+**M1b / EXP-002 complete:** all 15 v2 learning-curve runs and 15 independent local refits succeeded. All samples, predictions, metrics, and classifier parameters reproduced; only the primary five seeds per regime enter the aggregate. The suite now passes **35 tests**. Validation findings are in `RESULTS.md` and `experiments/exp002-learning-curve/`. No official-test evaluation, new model, routing, calibration, embeddings, SetFit, LLM, cost-model, frontend, or GPU work occurred.
 
 ## Decisions and rationale
 
@@ -81,7 +79,7 @@ The study preserved the same 770 validation IDs and exact per-class budgets for 
 
 At 20 shots, `transfer_fee_charged` (30% mean recall), `unable_to_verify_identity` (32%), and `supported_cards_and_currencies` (32%) remain weak. Closely related virtual-card and identity intents frequently confuse the model. Full class metrics and error counts are retained; do not tune on selected validation examples without logging the resulting exploratory status.
 
-## Completed milestone — EXP-003 frozen MiniLM smoke (2026-09-25)
+## Active milestone — EXP-003 frozen MiniLM smoke (2026-09-25)
 
 The user's new direction supersedes the proposed 25-shot lexical extension. Do not extend the split protocol. Implement frozen `sentence-transformers/all-MiniLM-L6-v2` plus the existing logistic regression, then run **only 5-shot, seed 11**. Preserve EXP-001/EXP-002 and `RESULTS.md`. This is a pipeline smoke check, not final research evidence.
 
@@ -95,21 +93,13 @@ The user's new direction supersedes the proposed 25-shot lexical extension. Do n
 - Label budget: 385 fitting + **770 additional validation labels** = 1,155 unique task examples, already used in the matching TF-IDF run. No new unique task labels; all 10,003 source-training labels are still read for audit/stratification. The encoder uses external pretraining, so this is not training a language model from only 385 labels. Calibration/prompt/test labels: zero.
 - Validate row/text/label alignment, encoder freeze, exact reference-ID reuse, isolation, artifact consistency and unchanged LR. Tests use synthetic encoders/data, not extra BANKING77 experiments.
 
-Executed exactly once, after tests passed:
+Planned command, after tests pass:
 
 ```sh
 HF_HUB_DISABLE_TELEMETRY=1 TOKENIZERS_PARALLELISM=false .venv/bin/python -m baseline.embeddings --output artifacts/exp003-minilm-v2-n5-s11
 ```
 
-Outcome: 75.84% accuracy and 74.46% macro-F1 versus 52.21% and 51.13% for the matching TF-IDF run. This is a smoke comparison only. Same sample/validation hashes; unchanged encoder state, zero trainable encoder parameters; LR settings unchanged; no warnings. Source and artifact hashes, feature alignment, saved classifier replay and metric recomputation passed. Full suite: 47 tests. No implementation blocker was discovered. Single-seed uncertainty, reused validation labels and potential upstream pretraining overlap remain unresolved limitations.
-
-Implemented `baseline/embeddings.py` with a fixed 5-shot seed-11 command and `--verify` replay mode. Downloaded weights and row-indexed embeddings are ignored. Tests and compact JSON/protocol evidence are versioned; the TF-IDF pipeline, split protocol, existing experiments and `RESULTS.md` remain unchanged.
-
-## Exact next recommended experiment — not run
-
-Independently reproduce **5-shot seed 11** with the same pinned frozen encoder, existing IDs, and unchanged LR in `artifacts/exp003-minilm-v2-n5-s11-reproduction`. Compare train/validation feature arrays (report numeric tolerance and maximum difference), predicted labels, full metrics and classifier parameters against EXP-003. Record a separate artifact and timing observations; never overwrite this smoke or silently tune settings to obtain agreement. This would be an independent local training reproduction, unlike the completed saved-artifact replay.
-
-Only after that should a separate milestone consider matched five-seed learning curves. No additional run is part of this completed request. Commit/push this milestone and stop. Calibration, routing, paid APIs, fine-tuning, frontend, cost claims, and official-test evaluation remain deferred.
+No new seed, training regime, calibrator, routing, paid API, fine-tuning, frontend, or official-test evaluation is authorized in this milestone. Record the single smoke comparison in `EXPERIMENTS.md`, not in verified final research findings. After artifact verification and tests, commit and push the milestone, then stop.
 
 ## Protocol history
 

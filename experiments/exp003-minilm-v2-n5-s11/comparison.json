@@ -1,0 +1,20 @@
+{
+  "difference_percentage_points": {
+    "accuracy": 23.636363636363644,
+    "macro_f1": 23.333850372605326
+  },
+  "embedding_run_id": "exp003-minilm-v2-n5-s11",
+  "frozen_minilm": {
+    "accuracy": 0.7584415584415585,
+    "macro_f1": 0.7446050715536411
+  },
+  "protocol_id": "banking77-val10-v2",
+  "purpose": "paired smoke check, one seed; no uncertainty estimate",
+  "reference_run_id": "exp002-v2-n5-s11",
+  "samples_sha256": "018f481053a04611d7171083b1235e8108a26a1a4ac8d4a3eb3cba210e481af8",
+  "schema_version": 1,
+  "tfidf": {
+    "accuracy": 0.522077922077922,
+    "macro_f1": 0.5112665678275878
+  }
+}

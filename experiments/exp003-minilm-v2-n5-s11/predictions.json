@@ -1,0 +1,3852 @@
+[
+  {
+    "id": "train:00053",
+    "predicted_label": "card_not_working",
+    "true_label": "card_arrival"
+  },
+  {
+    "id": "train:00070",
+    "predicted_label": "lost_or_stolen_card",
+    "true_label": "card_arrival"
+  },
+  {
+    "id": "train:00106",
+    "predicted_label": "card_arrival",
+    "true_label": "card_arrival"
+  },
+  {
+    "id": "train:00062",
+    "predicted_label": "lost_or_stolen_card",
+    "true_label": "card_arrival"
+  },
+  {
+    "id": "train:00091",
+    "predicted_label": "lost_or_stolen_card",
+    "true_label": "card_arrival"
+  },
+  {
+    "id": "train:00040",
+    "predicted_label": "order_physical_card",
+    "true_label": "card_arrival"
+  },
+  {
+    "id": "train:00011",
+    "predicted_label": "card_arrival",
+    "true_label": "card_arrival"
+  },
+  {
+    "id": "train:00149",
+    "predicted_label": "lost_or_stolen_card",
+    "true_label": "card_arrival"
+  },
+  {
+    "id": "train:00126",
+    "predicted_label": "card_about_to_expire",
+    "true_label": "card_arrival"
+  },
+  {
+    "id": "train:00039",
+    "predicted_label": "card_not_working",
+    "true_label": "card_arrival"
+  },
+  {
+    "id": "train:00261",
+    "predicted_label": "lost_or_stolen_card",
+    "true_label": "card_linking"
+  },
+  {
+    "id": "train:00245",
+    "predicted_label": "lost_or_stolen_card",
+    "true_label": "card_linking"
+  },
+  {
+    "id": "train:00215",
+    "predicted_label": "card_linking",
+    "true_label": "card_linking"
+  },
+  {
+    "id": "train:00288",
+    "predicted_label": "card_linking",
+    "true_label": "card_linking"
+  },
+  {
+    "id": "train:00180",
+    "predicted_label": "card_linking",
+    "true_label": "card_linking"
+  },
+  {
+    "id": "train:00248",
+    "predicted_label": "card_linking",
+    "true_label": "card_linking"
+  },
+  {
+    "id": "train:00181",
+    "predicted_label": "order_physical_card",
+    "true_label": "card_linking"
+  },
+  {
+    "id": "train:00254",
+    "predicted_label": "lost_or_stolen_card",
+    "true_label": "card_linking"
+  },
+  {
+    "id": "train:00155",
+    "predicted_label": "card_linking",
+    "true_label": "card_linking"
+  },
+  {
+    "id": "train:00283",
+    "predicted_label": "card_linking",
+    "true_label": "card_linking"
+  },
+  {
+    "id": "train:00369",
+    "predicted_label": "exchange_rate",
+    "true_label": "exchange_rate"
+  },
+  {
+    "id": "train:00292",
+    "predicted_label": "exchange_rate",
+    "true_label": "exchange_rate"
+  },
+  {
+    "id": "train:00372",
+    "predicted_label": "exchange_rate",
+    "true_label": "exchange_rate"
+  },
+  {
+    "id": "train:00353",
+    "predicted_label": "exchange_rate",
+    "true_label": "exchange_rate"
+  },
+  {
+    "id": "train:00400",
+    "predicted_label": "exchange_rate",
+    "true_label": "exchange_rate"
+  },
+  {
+    "id": "train:00370",
+    "predicted_label": "exchange_rate",
+    "true_label": "exchange_rate"
+  },
+  {
+    "id": "train:00345",
+    "predicted_label": "exchange_rate",
+    "true_label": "exchange_rate"
+  },
+  {
+    "id": "train:00339",
+    "predicted_label": "exchange_rate",
+    "true_label": "exchange_rate"
+  },
+  {
+    "id": "train:00334",
+    "predicted_label": "exchange_rate",
+    "true_label": "exchange_rate"
+  },
+  {
+    "id": "train:00361",
+    "predicted_label": "exchange_rate",
+    "true_label": "exchange_rate"
+  },
+  {
+    "id": "train:00432",
+    "predicted_label": "exchange_rate",
+    "true_label": "card_payment_wrong_exchange_rate"
+  },
+  {
+    "id": "train:00499",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "true_label": "card_payment_wrong_exchange_rate"
+  },
+  {
+    "id": "train:00544",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "true_label": "card_payment_wrong_exchange_rate"
+  },
+  {
+    "id": "train:00476",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "true_label": "card_payment_wrong_exchange_rate"
+  },
+  {
+    "id": "train:00527",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "true_label": "card_payment_wrong_exchange_rate"
+  },
+  {
+    "id": "train:00513",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "true_label": "card_payment_wrong_exchange_rate"
+  },
+  {
+    "id": "train:00500",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "true_label": "card_payment_wrong_exchange_rate"
+  },
+  {
+    "id": "train:00539",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "true_label": "card_payment_wrong_exchange_rate"
+  },
+  {
+    "id": "train:00522",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "true_label": "card_payment_wrong_exchange_rate"
+  },
+  {
+    "id": "train:00546",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "true_label": "card_payment_wrong_exchange_rate"
+  },
+  {
+    "id": "train:00616",
+    "predicted_label": "extra_charge_on_statement",
+    "true_label": "extra_charge_on_statement"
+  },
+  {
+    "id": "train:00667",
+    "predicted_label": "transaction_charged_twice",
+    "true_label": "extra_charge_on_statement"
+  },
+  {
+    "id": "train:00686",
+    "predicted_label": "extra_charge_on_statement",
+    "true_label": "extra_charge_on_statement"
+  },
+  {
+    "id": "train:00664",
+    "predicted_label": "pending_card_payment",
+    "true_label": "extra_charge_on_statement"
+  },
+  {
+    "id": "train:00671",
+    "predicted_label": "extra_charge_on_statement",
+    "true_label": "extra_charge_on_statement"
+  },
+  {
+    "id": "train:00603",
+    "predicted_label": "extra_charge_on_statement",
+    "true_label": "extra_charge_on_statement"
+  },
+  {
+    "id": "train:00624",
+    "predicted_label": "extra_charge_on_statement",
+    "true_label": "extra_charge_on_statement"
+  },
+  {
+    "id": "train:00725",
+    "predicted_label": "extra_charge_on_statement",
+    "true_label": "extra_charge_on_statement"
+  },
+  {
+    "id": "train:00594",
+    "predicted_label": "extra_charge_on_statement",
+    "true_label": "extra_charge_on_statement"
+  },
+  {
+    "id": "train:00640",
+    "predicted_label": "extra_charge_on_statement",
+    "true_label": "extra_charge_on_statement"
+  },
+  {
+    "id": "train:00875",
+    "predicted_label": "pending_cash_withdrawal",
+    "true_label": "pending_cash_withdrawal"
+  },
+  {
+    "id": "train:00836",
+    "predicted_label": "pending_cash_withdrawal",
+    "true_label": "pending_cash_withdrawal"
+  },
+  {
+    "id": "train:00847",
+    "predicted_label": "pending_cash_withdrawal",
+    "true_label": "pending_cash_withdrawal"
+  },
+  {
+    "id": "train:00815",
+    "predicted_label": "pending_cash_withdrawal",
+    "true_label": "pending_cash_withdrawal"
+  },
+  {
+    "id": "train:00758",
+    "predicted_label": "pending_cash_withdrawal",
+    "true_label": "pending_cash_withdrawal"
+  },
+  {
+    "id": "train:00818",
+    "predicted_label": "pending_cash_withdrawal",
+    "true_label": "pending_cash_withdrawal"
+  },
+  {
+    "id": "train:00835",
+    "predicted_label": "pending_cash_withdrawal",
+    "true_label": "pending_cash_withdrawal"
+  },
+  {
+    "id": "train:00839",
+    "predicted_label": "pending_cash_withdrawal",
+    "true_label": "pending_cash_withdrawal"
+  },
+  {
+    "id": "train:00805",
+    "predicted_label": "card_swallowed",
+    "true_label": "pending_cash_withdrawal"
+  },
+  {
+    "id": "train:00856",
+    "predicted_label": "pending_cash_withdrawal",
+    "true_label": "pending_cash_withdrawal"
+  },
+  {
+    "id": "train:00916",
+    "predicted_label": "fiat_currency_support",
+    "true_label": "fiat_currency_support"
+  },
+  {
+    "id": "train:00976",
+    "predicted_label": "fiat_currency_support",
+    "true_label": "fiat_currency_support"
+  },
+  {
+    "id": "train:00933",
+    "predicted_label": "fiat_currency_support",
+    "true_label": "fiat_currency_support"
+  },
+  {
+    "id": "train:00954",
+    "predicted_label": "fiat_currency_support",
+    "true_label": "fiat_currency_support"
+  },
+  {
+    "id": "train:00910",
+    "predicted_label": "fiat_currency_support",
+    "true_label": "fiat_currency_support"
+  },
+  {
+    "id": "train:00926",
+    "predicted_label": "fiat_currency_support",
+    "true_label": "fiat_currency_support"
+  },
+  {
+    "id": "train:00931",
+    "predicted_label": "fiat_currency_support",
+    "true_label": "fiat_currency_support"
+  },
+  {
+    "id": "train:00974",
+    "predicted_label": "fiat_currency_support",
+    "true_label": "fiat_currency_support"
+  },
+  {
+    "id": "train:00932",
+    "predicted_label": "fiat_currency_support",
+    "true_label": "fiat_currency_support"
+  },
+  {
+    "id": "train:00892",
+    "predicted_label": "fiat_currency_support",
+    "true_label": "fiat_currency_support"
+  },
+  {
+    "id": "train:01029",
+    "predicted_label": "card_delivery_estimate",
+    "true_label": "card_delivery_estimate"
+  },
+  {
+    "id": "train:01047",
+    "predicted_label": "card_delivery_estimate",
+    "true_label": "card_delivery_estimate"
+  },
+  {
+    "id": "train:01051",
+    "predicted_label": "card_delivery_estimate",
+    "true_label": "card_delivery_estimate"
+  },
+  {
+    "id": "train:01094",
+    "predicted_label": "card_delivery_estimate",
+    "true_label": "card_delivery_estimate"
+  },
+  {
+    "id": "train:01008",
+    "predicted_label": "card_about_to_expire",
+    "true_label": "card_delivery_estimate"
+  },
+  {
+    "id": "train:01066",
+    "predicted_label": "card_delivery_estimate",
+    "true_label": "card_delivery_estimate"
+  },
+  {
+    "id": "train:01007",
+    "predicted_label": "order_physical_card",
+    "true_label": "card_delivery_estimate"
+  },
+  {
+    "id": "train:01020",
+    "predicted_label": "lost_or_stolen_card",
+    "true_label": "card_delivery_estimate"
+  },
+  {
+    "id": "train:01114",
+    "predicted_label": "card_delivery_estimate",
+    "true_label": "card_delivery_estimate"
+  },
+  {
+    "id": "train:01058",
+    "predicted_label": "card_delivery_estimate",
+    "true_label": "card_delivery_estimate"
+  },
+  {
+    "id": "train:01243",
+    "predicted_label": "top_up_limits",
+    "true_label": "automatic_top_up"
+  },
+  {
+    "id": "train:01181",
+    "predicted_label": "top_up_limits",
+    "true_label": "automatic_top_up"
+  },
+  {
+    "id": "train:01235",
+    "predicted_label": "automatic_top_up",
+    "true_label": "automatic_top_up"
+  },
+  {
+    "id": "train:01133",
+    "predicted_label": "automatic_top_up",
+    "true_label": "automatic_top_up"
+  },
+  {
+    "id": "train:01229",
+    "predicted_label": "automatic_top_up",
+    "true_label": "automatic_top_up"
+  },
+  {
+    "id": "train:01202",
+    "predicted_label": "automatic_top_up",
+    "true_label": "automatic_top_up"
+  },
+  {
+    "id": "train:01140",
+    "predicted_label": "automatic_top_up",
+    "true_label": "automatic_top_up"
+  },
+  {
+    "id": "train:01177",
+    "predicted_label": "automatic_top_up",
+    "true_label": "automatic_top_up"
+  },
+  {
+    "id": "train:01159",
+    "predicted_label": "automatic_top_up",
+    "true_label": "automatic_top_up"
+  },
+  {
+    "id": "train:01143",
+    "predicted_label": "automatic_top_up",
+    "true_label": "automatic_top_up"
+  },
+  {
+    "id": "train:01283",
+    "predicted_label": "card_not_working",
+    "true_label": "card_not_working"
+  },
+  {
+    "id": "train:01327",
+    "predicted_label": "card_not_working",
+    "true_label": "card_not_working"
+  },
+  {
+    "id": "train:01355",
+    "predicted_label": "card_not_working",
+    "true_label": "card_not_working"
+  },
+  {
+    "id": "train:01346",
+    "predicted_label": "card_not_working",
+    "true_label": "card_not_working"
+  },
+  {
+    "id": "train:01322",
+    "predicted_label": "declined_card_payment",
+    "true_label": "card_not_working"
+  },
+  {
+    "id": "train:01263",
+    "predicted_label": "card_about_to_expire",
+    "true_label": "card_not_working"
+  },
+  {
+    "id": "train:01321",
+    "predicted_label": "card_not_working",
+    "true_label": "card_not_working"
+  },
+  {
+    "id": "train:01316",
+    "predicted_label": "card_not_working",
+    "true_label": "card_not_working"
+  },
+  {
+    "id": "train:01264",
+    "predicted_label": "card_not_working",
+    "true_label": "card_not_working"
+  },
+  {
+    "id": "train:01352",
+    "predicted_label": "card_not_working",
+    "true_label": "card_not_working"
+  },
+  {
+    "id": "train:01428",
+    "predicted_label": "edit_personal_details",
+    "true_label": "exchange_via_app"
+  },
+  {
+    "id": "train:01429",
+    "predicted_label": "exchange_via_app",
+    "true_label": "exchange_via_app"
+  },
+  {
+    "id": "train:01375",
+    "predicted_label": "exchange_via_app",
+    "true_label": "exchange_via_app"
+  },
+  {
+    "id": "train:01370",
+    "predicted_label": "exchange_via_app",
+    "true_label": "exchange_via_app"
+  },
+  {
+    "id": "train:01367",
+    "predicted_label": "exchange_via_app",
+    "true_label": "exchange_via_app"
+  },
+  {
+    "id": "train:01392",
+    "predicted_label": "exchange_via_app",
+    "true_label": "exchange_via_app"
+  },
+  {
+    "id": "train:01472",
+    "predicted_label": "exchange_via_app",
+    "true_label": "exchange_via_app"
+  },
+  {
+    "id": "train:01395",
+    "predicted_label": "exchange_via_app",
+    "true_label": "exchange_via_app"
+  },
+  {
+    "id": "train:01361",
+    "predicted_label": "fiat_currency_support",
+    "true_label": "exchange_via_app"
+  },
+  {
+    "id": "train:01444",
+    "predicted_label": "edit_personal_details",
+    "true_label": "exchange_via_app"
+  },
+  {
+    "id": "train:01550",
+    "predicted_label": "lost_or_stolen_card",
+    "true_label": "lost_or_stolen_card"
+  },
+  {
+    "id": "train:01501",
+    "predicted_label": "lost_or_stolen_card",
+    "true_label": "lost_or_stolen_card"
+  },
+  {
+    "id": "train:01555",
+    "predicted_label": "lost_or_stolen_card",
+    "true_label": "lost_or_stolen_card"
+  },
+  {
+    "id": "train:01513",
+    "predicted_label": "lost_or_stolen_card",
+    "true_label": "lost_or_stolen_card"
+  },
+  {
+    "id": "train:01480",
+    "predicted_label": "card_about_to_expire",
+    "true_label": "lost_or_stolen_card"
+  },
+  {
+    "id": "train:01549",
+    "predicted_label": "card_arrival",
+    "true_label": "lost_or_stolen_card"
+  },
+  {
+    "id": "train:01523",
+    "predicted_label": "lost_or_stolen_card",
+    "true_label": "lost_or_stolen_card"
+  },
+  {
+    "id": "train:01552",
+    "predicted_label": "lost_or_stolen_card",
+    "true_label": "lost_or_stolen_card"
+  },
+  {
+    "id": "train:01477",
+    "predicted_label": "lost_or_stolen_card",
+    "true_label": "lost_or_stolen_card"
+  },
+  {
+    "id": "train:01518",
+    "predicted_label": "lost_or_stolen_card",
+    "true_label": "lost_or_stolen_card"
+  },
+  {
+    "id": "train:01639",
+    "predicted_label": "age_limit",
+    "true_label": "age_limit"
+  },
+  {
+    "id": "train:01589",
+    "predicted_label": "age_limit",
+    "true_label": "age_limit"
+  },
+  {
+    "id": "train:01565",
+    "predicted_label": "age_limit",
+    "true_label": "age_limit"
+  },
+  {
+    "id": "train:01656",
+    "predicted_label": "age_limit",
+    "true_label": "age_limit"
+  },
+  {
+    "id": "train:01581",
+    "predicted_label": "age_limit",
+    "true_label": "age_limit"
+  },
+  {
+    "id": "train:01612",
+    "predicted_label": "age_limit",
+    "true_label": "age_limit"
+  },
+  {
+    "id": "train:01632",
+    "predicted_label": "age_limit",
+    "true_label": "age_limit"
+  },
+  {
+    "id": "train:01601",
+    "predicted_label": "age_limit",
+    "true_label": "age_limit"
+  },
+  {
+    "id": "train:01593",
+    "predicted_label": "age_limit",
+    "true_label": "age_limit"
+  },
+  {
+    "id": "train:01588",
+    "predicted_label": "age_limit",
+    "true_label": "age_limit"
+  },
+  {
+    "id": "train:01780",
+    "predicted_label": "pin_blocked",
+    "true_label": "pin_blocked"
+  },
+  {
+    "id": "train:01699",
+    "predicted_label": "pin_blocked",
+    "true_label": "pin_blocked"
+  },
+  {
+    "id": "train:01692",
+    "predicted_label": "pin_blocked",
+    "true_label": "pin_blocked"
+  },
+  {
+    "id": "train:01689",
+    "predicted_label": "pin_blocked",
+    "true_label": "pin_blocked"
+  },
+  {
+    "id": "train:01719",
+    "predicted_label": "pin_blocked",
+    "true_label": "pin_blocked"
+  },
+  {
+    "id": "train:01710",
+    "predicted_label": "pin_blocked",
+    "true_label": "pin_blocked"
+  },
+  {
+    "id": "train:01759",
+    "predicted_label": "pin_blocked",
+    "true_label": "pin_blocked"
+  },
+  {
+    "id": "train:01742",
+    "predicted_label": "get_physical_card",
+    "true_label": "pin_blocked"
+  },
+  {
+    "id": "train:01727",
+    "predicted_label": "get_physical_card",
+    "true_label": "pin_blocked"
+  },
+  {
+    "id": "train:01677",
+    "predicted_label": "pin_blocked",
+    "true_label": "pin_blocked"
+  },
+  {
+    "id": "train:01792",
+    "predicted_label": "contactless_not_working",
+    "true_label": "contactless_not_working"
+  },
+  {
+    "id": "train:01782",
+    "predicted_label": "lost_or_stolen_phone",
+    "true_label": "contactless_not_working"
+  },
+  {
+    "id": "train:01784",
+    "predicted_label": "contactless_not_working",
+    "true_label": "contactless_not_working"
+  },
+  {
+    "id": "train:01816",
+    "predicted_label": "contactless_not_working",
+    "true_label": "contactless_not_working"
+  },
+  {
+    "id": "train:01788",
+    "predicted_label": "lost_or_stolen_phone",
+    "true_label": "contactless_not_working"
+  },
+  {
+    "id": "train:01791",
+    "predicted_label": "card_not_working",
+    "true_label": "contactless_not_working"
+  },
+  {
+    "id": "train:01800",
+    "predicted_label": "contactless_not_working",
+    "true_label": "contactless_not_working"
+  },
+  {
+    "id": "train:01796",
+    "predicted_label": "contactless_not_working",
+    "true_label": "contactless_not_working"
+  },
+  {
+    "id": "train:01814",
+    "predicted_label": "contactless_not_working",
+    "true_label": "contactless_not_working"
+  },
+  {
+    "id": "train:01805",
+    "predicted_label": "contactless_not_working",
+    "true_label": "contactless_not_working"
+  },
+  {
+    "id": "train:01871",
+    "predicted_label": "card_payment_fee_charged",
+    "true_label": "top_up_by_bank_transfer_charge"
+  },
+  {
+    "id": "train:01906",
+    "predicted_label": "top_up_by_card_charge",
+    "true_label": "top_up_by_bank_transfer_charge"
+  },
+  {
+    "id": "train:01899",
+    "predicted_label": "transfer_fee_charged",
+    "true_label": "top_up_by_bank_transfer_charge"
+  },
+  {
+    "id": "train:01836",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "true_label": "top_up_by_bank_transfer_charge"
+  },
+  {
+    "id": "train:01902",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "true_label": "top_up_by_bank_transfer_charge"
+  },
+  {
+    "id": "train:01901",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "true_label": "top_up_by_bank_transfer_charge"
+  },
+  {
+    "id": "train:01910",
+    "predicted_label": "exchange_charge",
+    "true_label": "top_up_by_bank_transfer_charge"
+  },
+  {
+    "id": "train:01898",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "true_label": "top_up_by_bank_transfer_charge"
+  },
+  {
+    "id": "train:01875",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "true_label": "top_up_by_bank_transfer_charge"
+  },
+  {
+    "id": "train:01890",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "true_label": "top_up_by_bank_transfer_charge"
+  },
+  {
+    "id": "train:02019",
+    "predicted_label": "pending_top_up",
+    "true_label": "pending_top_up"
+  },
+  {
+    "id": "train:01981",
+    "predicted_label": "top_up_failed",
+    "true_label": "pending_top_up"
+  },
+  {
+    "id": "train:01995",
+    "predicted_label": "top_up_reverted",
+    "true_label": "pending_top_up"
+  },
+  {
+    "id": "train:02010",
+    "predicted_label": "pending_top_up",
+    "true_label": "pending_top_up"
+  },
+  {
+    "id": "train:01931",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "true_label": "pending_top_up"
+  },
+  {
+    "id": "train:02005",
+    "predicted_label": "pending_top_up",
+    "true_label": "pending_top_up"
+  },
+  {
+    "id": "train:01938",
+    "predicted_label": "pending_top_up",
+    "true_label": "pending_top_up"
+  },
+  {
+    "id": "train:01965",
+    "predicted_label": "pending_top_up",
+    "true_label": "pending_top_up"
+  },
+  {
+    "id": "train:01961",
+    "predicted_label": "pending_top_up",
+    "true_label": "pending_top_up"
+  },
+  {
+    "id": "train:01967",
+    "predicted_label": "pending_card_payment",
+    "true_label": "pending_top_up"
+  },
+  {
+    "id": "train:02138",
+    "predicted_label": "terminate_account",
+    "true_label": "cancel_transfer"
+  },
+  {
+    "id": "train:02126",
+    "predicted_label": "cancel_transfer",
+    "true_label": "cancel_transfer"
+  },
+  {
+    "id": "train:02133",
+    "predicted_label": "cancel_transfer",
+    "true_label": "cancel_transfer"
+  },
+  {
+    "id": "train:02080",
+    "predicted_label": "cancel_transfer",
+    "true_label": "cancel_transfer"
+  },
+  {
+    "id": "train:02108",
+    "predicted_label": "cancel_transfer",
+    "true_label": "cancel_transfer"
+  },
+  {
+    "id": "train:02120",
+    "predicted_label": "cancel_transfer",
+    "true_label": "cancel_transfer"
+  },
+  {
+    "id": "train:02225",
+    "predicted_label": "cancel_transfer",
+    "true_label": "cancel_transfer"
+  },
+  {
+    "id": "train:02105",
+    "predicted_label": "cancel_transfer",
+    "true_label": "cancel_transfer"
+  },
+  {
+    "id": "train:02165",
+    "predicted_label": "cancel_transfer",
+    "true_label": "cancel_transfer"
+  },
+  {
+    "id": "train:02211",
+    "predicted_label": "cancel_transfer",
+    "true_label": "cancel_transfer"
+  },
+  {
+    "id": "train:02239",
+    "predicted_label": "top_up_limits",
+    "true_label": "top_up_limits"
+  },
+  {
+    "id": "train:02324",
+    "predicted_label": "top_up_limits",
+    "true_label": "top_up_limits"
+  },
+  {
+    "id": "train:02286",
+    "predicted_label": "top_up_limits",
+    "true_label": "top_up_limits"
+  },
+  {
+    "id": "train:02294",
+    "predicted_label": "top_up_limits",
+    "true_label": "top_up_limits"
+  },
+  {
+    "id": "train:02290",
+    "predicted_label": "top_up_limits",
+    "true_label": "top_up_limits"
+  },
+  {
+    "id": "train:02316",
+    "predicted_label": "top_up_limits",
+    "true_label": "top_up_limits"
+  },
+  {
+    "id": "train:02251",
+    "predicted_label": "top_up_limits",
+    "true_label": "top_up_limits"
+  },
+  {
+    "id": "train:02320",
+    "predicted_label": "top_up_limits",
+    "true_label": "top_up_limits"
+  },
+  {
+    "id": "train:02272",
+    "predicted_label": "top_up_limits",
+    "true_label": "top_up_limits"
+  },
+  {
+    "id": "train:02289",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "true_label": "top_up_limits"
+  },
+  {
+    "id": "train:02382",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "true_label": "wrong_amount_of_cash_received"
+  },
+  {
+    "id": "train:02446",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "true_label": "wrong_amount_of_cash_received"
+  },
+  {
+    "id": "train:02357",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "true_label": "wrong_amount_of_cash_received"
+  },
+  {
+    "id": "train:02496",
+    "predicted_label": "verify_source_of_funds",
+    "true_label": "wrong_amount_of_cash_received"
+  },
+  {
+    "id": "train:02429",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "true_label": "wrong_amount_of_cash_received"
+  },
+  {
+    "id": "train:02474",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "true_label": "wrong_amount_of_cash_received"
+  },
+  {
+    "id": "train:02407",
+    "predicted_label": "declined_cash_withdrawal",
+    "true_label": "wrong_amount_of_cash_received"
+  },
+  {
+    "id": "train:02416",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "true_label": "wrong_amount_of_cash_received"
+  },
+  {
+    "id": "train:02406",
+    "predicted_label": "pending_cash_withdrawal",
+    "true_label": "wrong_amount_of_cash_received"
+  },
+  {
+    "id": "train:02410",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "true_label": "wrong_amount_of_cash_received"
+  },
+  {
+    "id": "train:02563",
+    "predicted_label": "card_payment_fee_charged",
+    "true_label": "card_payment_fee_charged"
+  },
+  {
+    "id": "train:02576",
+    "predicted_label": "card_payment_fee_charged",
+    "true_label": "card_payment_fee_charged"
+  },
+  {
+    "id": "train:02519",
+    "predicted_label": "card_payment_fee_charged",
+    "true_label": "card_payment_fee_charged"
+  },
+  {
+    "id": "train:02515",
+    "predicted_label": "card_payment_fee_charged",
+    "true_label": "card_payment_fee_charged"
+  },
+  {
+    "id": "train:02634",
+    "predicted_label": "card_payment_fee_charged",
+    "true_label": "card_payment_fee_charged"
+  },
+  {
+    "id": "train:02606",
+    "predicted_label": "card_payment_fee_charged",
+    "true_label": "card_payment_fee_charged"
+  },
+  {
+    "id": "train:02655",
+    "predicted_label": "verify_source_of_funds",
+    "true_label": "card_payment_fee_charged"
+  },
+  {
+    "id": "train:02645",
+    "predicted_label": "card_payment_fee_charged",
+    "true_label": "card_payment_fee_charged"
+  },
+  {
+    "id": "train:02569",
+    "predicted_label": "card_payment_fee_charged",
+    "true_label": "card_payment_fee_charged"
+  },
+  {
+    "id": "train:02599",
+    "predicted_label": "card_payment_fee_charged",
+    "true_label": "card_payment_fee_charged"
+  },
+  {
+    "id": "train:02743",
+    "predicted_label": "transfer_timing",
+    "true_label": "transfer_not_received_by_recipient"
+  },
+  {
+    "id": "train:02794",
+    "predicted_label": "transfer_timing",
+    "true_label": "transfer_not_received_by_recipient"
+  },
+  {
+    "id": "train:02862",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "true_label": "transfer_not_received_by_recipient"
+  },
+  {
+    "id": "train:02698",
+    "predicted_label": "transfer_timing",
+    "true_label": "transfer_not_received_by_recipient"
+  },
+  {
+    "id": "train:02742",
+    "predicted_label": "card_delivery_estimate",
+    "true_label": "transfer_not_received_by_recipient"
+  },
+  {
+    "id": "train:02804",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "true_label": "transfer_not_received_by_recipient"
+  },
+  {
+    "id": "train:02738",
+    "predicted_label": "transfer_timing",
+    "true_label": "transfer_not_received_by_recipient"
+  },
+  {
+    "id": "train:02866",
+    "predicted_label": "transfer_timing",
+    "true_label": "transfer_not_received_by_recipient"
+  },
+  {
+    "id": "train:02764",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "true_label": "transfer_not_received_by_recipient"
+  },
+  {
+    "id": "train:02855",
+    "predicted_label": "transfer_not_received_by_recipient",
+    "true_label": "transfer_not_received_by_recipient"
+  },
+  {
+    "id": "train:02927",
+    "predicted_label": "country_support",
+    "true_label": "supported_cards_and_currencies"
+  },
+  {
+    "id": "train:02893",
+    "predicted_label": "fiat_currency_support",
+    "true_label": "supported_cards_and_currencies"
+  },
+  {
+    "id": "train:02931",
+    "predicted_label": "visa_or_mastercard",
+    "true_label": "supported_cards_and_currencies"
+  },
+  {
+    "id": "train:02966",
+    "predicted_label": "country_support",
+    "true_label": "supported_cards_and_currencies"
+  },
+  {
+    "id": "train:02924",
+    "predicted_label": "fiat_currency_support",
+    "true_label": "supported_cards_and_currencies"
+  },
+  {
+    "id": "train:02923",
+    "predicted_label": "supported_cards_and_currencies",
+    "true_label": "supported_cards_and_currencies"
+  },
+  {
+    "id": "train:02971",
+    "predicted_label": "top_up_by_card_charge",
+    "true_label": "supported_cards_and_currencies"
+  },
+  {
+    "id": "train:02938",
+    "predicted_label": "topping_up_by_card",
+    "true_label": "supported_cards_and_currencies"
+  },
+  {
+    "id": "train:02941",
+    "predicted_label": "fiat_currency_support",
+    "true_label": "supported_cards_and_currencies"
+  },
+  {
+    "id": "train:02878",
+    "predicted_label": "transfer_into_account",
+    "true_label": "supported_cards_and_currencies"
+  },
+  {
+    "id": "train:03002",
+    "predicted_label": "getting_virtual_card",
+    "true_label": "getting_virtual_card"
+  },
+  {
+    "id": "train:03094",
+    "predicted_label": "getting_virtual_card",
+    "true_label": "getting_virtual_card"
+  },
+  {
+    "id": "train:03073",
+    "predicted_label": "getting_virtual_card",
+    "true_label": "getting_virtual_card"
+  },
+  {
+    "id": "train:03007",
+    "predicted_label": "getting_virtual_card",
+    "true_label": "getting_virtual_card"
+  },
+  {
+    "id": "train:03034",
+    "predicted_label": "getting_virtual_card",
+    "true_label": "getting_virtual_card"
+  },
+  {
+    "id": "train:03089",
+    "predicted_label": "getting_virtual_card",
+    "true_label": "getting_virtual_card"
+  },
+  {
+    "id": "train:03022",
+    "predicted_label": "getting_virtual_card",
+    "true_label": "getting_virtual_card"
+  },
+  {
+    "id": "train:03017",
+    "predicted_label": "getting_virtual_card",
+    "true_label": "getting_virtual_card"
+  },
+  {
+    "id": "train:03025",
+    "predicted_label": "getting_virtual_card",
+    "true_label": "getting_virtual_card"
+  },
+  {
+    "id": "train:03074",
+    "predicted_label": "virtual_card_not_working",
+    "true_label": "getting_virtual_card"
+  },
+  {
+    "id": "train:03096",
+    "predicted_label": "card_linking",
+    "true_label": "card_acceptance"
+  },
+  {
+    "id": "train:03140",
+    "predicted_label": "card_acceptance",
+    "true_label": "card_acceptance"
+  },
+  {
+    "id": "train:03132",
+    "predicted_label": "card_acceptance",
+    "true_label": "card_acceptance"
+  },
+  {
+    "id": "train:03109",
+    "predicted_label": "card_acceptance",
+    "true_label": "card_acceptance"
+  },
+  {
+    "id": "train:03100",
+    "predicted_label": "card_acceptance",
+    "true_label": "card_acceptance"
+  },
+  {
+    "id": "train:03106",
+    "predicted_label": "country_support",
+    "true_label": "card_acceptance"
+  },
+  {
+    "id": "train:03135",
+    "predicted_label": "card_acceptance",
+    "true_label": "card_acceptance"
+  },
+  {
+    "id": "train:03098",
+    "predicted_label": "order_physical_card",
+    "true_label": "card_acceptance"
+  },
+  {
+    "id": "train:03150",
+    "predicted_label": "card_acceptance",
+    "true_label": "card_acceptance"
+  },
+  {
+    "id": "train:03123",
+    "predicted_label": "card_acceptance",
+    "true_label": "card_acceptance"
+  },
+  {
+    "id": "train:03206",
+    "predicted_label": "top_up_reverted",
+    "true_label": "top_up_reverted"
+  },
+  {
+    "id": "train:03226",
+    "predicted_label": "top_up_reverted",
+    "true_label": "top_up_reverted"
+  },
+  {
+    "id": "train:03267",
+    "predicted_label": "top_up_failed",
+    "true_label": "top_up_reverted"
+  },
+  {
+    "id": "train:03243",
+    "predicted_label": "top_up_failed",
+    "true_label": "top_up_reverted"
+  },
+  {
+    "id": "train:03161",
+    "predicted_label": "top_up_reverted",
+    "true_label": "top_up_reverted"
+  },
+  {
+    "id": "train:03155",
+    "predicted_label": "top_up_reverted",
+    "true_label": "top_up_reverted"
+  },
+  {
+    "id": "train:03233",
+    "predicted_label": "pending_top_up",
+    "true_label": "top_up_reverted"
+  },
+  {
+    "id": "train:03285",
+    "predicted_label": "top_up_failed",
+    "true_label": "top_up_reverted"
+  },
+  {
+    "id": "train:03263",
+    "predicted_label": "automatic_top_up",
+    "true_label": "top_up_reverted"
+  },
+  {
+    "id": "train:03244",
+    "predicted_label": "top_up_reverted",
+    "true_label": "top_up_reverted"
+  },
+  {
+    "id": "train:03381",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "true_label": "balance_not_updated_after_cheque_or_cash_deposit"
+  },
+  {
+    "id": "train:03394",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "true_label": "balance_not_updated_after_cheque_or_cash_deposit"
+  },
+  {
+    "id": "train:03386",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "true_label": "balance_not_updated_after_cheque_or_cash_deposit"
+  },
+  {
+    "id": "train:03361",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "true_label": "balance_not_updated_after_cheque_or_cash_deposit"
+  },
+  {
+    "id": "train:03406",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "true_label": "balance_not_updated_after_cheque_or_cash_deposit"
+  },
+  {
+    "id": "train:03430",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "true_label": "balance_not_updated_after_cheque_or_cash_deposit"
+  },
+  {
+    "id": "train:03378",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "true_label": "balance_not_updated_after_cheque_or_cash_deposit"
+  },
+  {
+    "id": "train:03460",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "true_label": "balance_not_updated_after_cheque_or_cash_deposit"
+  },
+  {
+    "id": "train:03384",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "true_label": "balance_not_updated_after_cheque_or_cash_deposit"
+  },
+  {
+    "id": "train:03408",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "true_label": "balance_not_updated_after_cheque_or_cash_deposit"
+  },
+  {
+    "id": "train:03643",
+    "predicted_label": "reverted_card_payment?",
+    "true_label": "card_payment_not_recognised"
+  },
+  {
+    "id": "train:03615",
+    "predicted_label": "reverted_card_payment?",
+    "true_label": "card_payment_not_recognised"
+  },
+  {
+    "id": "train:03500",
+    "predicted_label": "request_refund",
+    "true_label": "card_payment_not_recognised"
+  },
+  {
+    "id": "train:03545",
+    "predicted_label": "card_payment_not_recognised",
+    "true_label": "card_payment_not_recognised"
+  },
+  {
+    "id": "train:03590",
+    "predicted_label": "card_payment_not_recognised",
+    "true_label": "card_payment_not_recognised"
+  },
+  {
+    "id": "train:03620",
+    "predicted_label": "card_payment_not_recognised",
+    "true_label": "card_payment_not_recognised"
+  },
+  {
+    "id": "train:03569",
+    "predicted_label": "card_payment_not_recognised",
+    "true_label": "card_payment_not_recognised"
+  },
+  {
+    "id": "train:03596",
+    "predicted_label": "reverted_card_payment?",
+    "true_label": "card_payment_not_recognised"
+  },
+  {
+    "id": "train:03631",
+    "predicted_label": "card_payment_not_recognised",
+    "true_label": "card_payment_not_recognised"
+  },
+  {
+    "id": "train:03542",
+    "predicted_label": "card_payment_not_recognised",
+    "true_label": "card_payment_not_recognised"
+  },
+  {
+    "id": "train:03769",
+    "predicted_label": "edit_personal_details",
+    "true_label": "edit_personal_details"
+  },
+  {
+    "id": "train:03683",
+    "predicted_label": "edit_personal_details",
+    "true_label": "edit_personal_details"
+  },
+  {
+    "id": "train:03743",
+    "predicted_label": "edit_personal_details",
+    "true_label": "edit_personal_details"
+  },
+  {
+    "id": "train:03717",
+    "predicted_label": "edit_personal_details",
+    "true_label": "edit_personal_details"
+  },
+  {
+    "id": "train:03751",
+    "predicted_label": "edit_personal_details",
+    "true_label": "edit_personal_details"
+  },
+  {
+    "id": "train:03692",
+    "predicted_label": "edit_personal_details",
+    "true_label": "edit_personal_details"
+  },
+  {
+    "id": "train:03706",
+    "predicted_label": "edit_personal_details",
+    "true_label": "edit_personal_details"
+  },
+  {
+    "id": "train:03691",
+    "predicted_label": "edit_personal_details",
+    "true_label": "edit_personal_details"
+  },
+  {
+    "id": "train:03765",
+    "predicted_label": "edit_personal_details",
+    "true_label": "edit_personal_details"
+  },
+  {
+    "id": "train:03698",
+    "predicted_label": "edit_personal_details",
+    "true_label": "edit_personal_details"
+  },
+  {
+    "id": "train:03800",
+    "predicted_label": "why_verify_identity",
+    "true_label": "why_verify_identity"
+  },
+  {
+    "id": "train:03809",
+    "predicted_label": "why_verify_identity",
+    "true_label": "why_verify_identity"
+  },
+  {
+    "id": "train:03786",
+    "predicted_label": "why_verify_identity",
+    "true_label": "why_verify_identity"
+  },
+  {
+    "id": "train:03810",
+    "predicted_label": "why_verify_identity",
+    "true_label": "why_verify_identity"
+  },
+  {
+    "id": "train:03862",
+    "predicted_label": "why_verify_identity",
+    "true_label": "why_verify_identity"
+  },
+  {
+    "id": "train:03801",
+    "predicted_label": "why_verify_identity",
+    "true_label": "why_verify_identity"
+  },
+  {
+    "id": "train:03865",
+    "predicted_label": "why_verify_identity",
+    "true_label": "why_verify_identity"
+  },
+  {
+    "id": "train:03829",
+    "predicted_label": "why_verify_identity",
+    "true_label": "why_verify_identity"
+  },
+  {
+    "id": "train:03844",
+    "predicted_label": "why_verify_identity",
+    "true_label": "why_verify_identity"
+  },
+  {
+    "id": "train:03778",
+    "predicted_label": "why_verify_identity",
+    "true_label": "why_verify_identity"
+  },
+  {
+    "id": "train:03899",
+    "predicted_label": "why_verify_identity",
+    "true_label": "unable_to_verify_identity"
+  },
+  {
+    "id": "train:03918",
+    "predicted_label": "why_verify_identity",
+    "true_label": "unable_to_verify_identity"
+  },
+  {
+    "id": "train:03989",
+    "predicted_label": "why_verify_identity",
+    "true_label": "unable_to_verify_identity"
+  },
+  {
+    "id": "train:03911",
+    "predicted_label": "unable_to_verify_identity",
+    "true_label": "unable_to_verify_identity"
+  },
+  {
+    "id": "train:03993",
+    "predicted_label": "verify_my_identity",
+    "true_label": "unable_to_verify_identity"
+  },
+  {
+    "id": "train:03952",
+    "predicted_label": "unable_to_verify_identity",
+    "true_label": "unable_to_verify_identity"
+  },
+  {
+    "id": "train:03923",
+    "predicted_label": "unable_to_verify_identity",
+    "true_label": "unable_to_verify_identity"
+  },
+  {
+    "id": "train:03987",
+    "predicted_label": "why_verify_identity",
+    "true_label": "unable_to_verify_identity"
+  },
+  {
+    "id": "train:03928",
+    "predicted_label": "why_verify_identity",
+    "true_label": "unable_to_verify_identity"
+  },
+  {
+    "id": "train:03946",
+    "predicted_label": "why_verify_identity",
+    "true_label": "unable_to_verify_identity"
+  },
+  {
+    "id": "train:04017",
+    "predicted_label": "get_physical_card",
+    "true_label": "get_physical_card"
+  },
+  {
+    "id": "train:04068",
+    "predicted_label": "get_physical_card",
+    "true_label": "get_physical_card"
+  },
+  {
+    "id": "train:04091",
+    "predicted_label": "activate_my_card",
+    "true_label": "get_physical_card"
+  },
+  {
+    "id": "train:04048",
+    "predicted_label": "get_physical_card",
+    "true_label": "get_physical_card"
+  },
+  {
+    "id": "train:04034",
+    "predicted_label": "get_physical_card",
+    "true_label": "get_physical_card"
+  },
+  {
+    "id": "train:04069",
+    "predicted_label": "change_pin",
+    "true_label": "get_physical_card"
+  },
+  {
+    "id": "train:04042",
+    "predicted_label": "get_physical_card",
+    "true_label": "get_physical_card"
+  },
+  {
+    "id": "train:04052",
+    "predicted_label": "get_physical_card",
+    "true_label": "get_physical_card"
+  },
+  {
+    "id": "train:03996",
+    "predicted_label": "get_physical_card",
+    "true_label": "get_physical_card"
+  },
+  {
+    "id": "train:04057",
+    "predicted_label": "change_pin",
+    "true_label": "get_physical_card"
+  },
+  {
+    "id": "train:04149",
+    "predicted_label": "visa_or_mastercard",
+    "true_label": "visa_or_mastercard"
+  },
+  {
+    "id": "train:04182",
+    "predicted_label": "visa_or_mastercard",
+    "true_label": "visa_or_mastercard"
+  },
+  {
+    "id": "train:04159",
+    "predicted_label": "visa_or_mastercard",
+    "true_label": "visa_or_mastercard"
+  },
+  {
+    "id": "train:04192",
+    "predicted_label": "visa_or_mastercard",
+    "true_label": "visa_or_mastercard"
+  },
+  {
+    "id": "train:04224",
+    "predicted_label": "visa_or_mastercard",
+    "true_label": "visa_or_mastercard"
+  },
+  {
+    "id": "train:04108",
+    "predicted_label": "visa_or_mastercard",
+    "true_label": "visa_or_mastercard"
+  },
+  {
+    "id": "train:04137",
+    "predicted_label": "visa_or_mastercard",
+    "true_label": "visa_or_mastercard"
+  },
+  {
+    "id": "train:04143",
+    "predicted_label": "visa_or_mastercard",
+    "true_label": "visa_or_mastercard"
+  },
+  {
+    "id": "train:04117",
+    "predicted_label": "visa_or_mastercard",
+    "true_label": "visa_or_mastercard"
+  },
+  {
+    "id": "train:04167",
+    "predicted_label": "visa_or_mastercard",
+    "true_label": "visa_or_mastercard"
+  },
+  {
+    "id": "train:04264",
+    "predicted_label": "automatic_top_up",
+    "true_label": "topping_up_by_card"
+  },
+  {
+    "id": "train:04283",
+    "predicted_label": "topping_up_by_card",
+    "true_label": "topping_up_by_card"
+  },
+  {
+    "id": "train:04325",
+    "predicted_label": "top_up_reverted",
+    "true_label": "topping_up_by_card"
+  },
+  {
+    "id": "train:04327",
+    "predicted_label": "topping_up_by_card",
+    "true_label": "topping_up_by_card"
+  },
+  {
+    "id": "train:04266",
+    "predicted_label": "top_up_failed",
+    "true_label": "topping_up_by_card"
+  },
+  {
+    "id": "train:04316",
+    "predicted_label": "pending_top_up",
+    "true_label": "topping_up_by_card"
+  },
+  {
+    "id": "train:04315",
+    "predicted_label": "automatic_top_up",
+    "true_label": "topping_up_by_card"
+  },
+  {
+    "id": "train:04306",
+    "predicted_label": "top_up_failed",
+    "true_label": "topping_up_by_card"
+  },
+  {
+    "id": "train:04333",
+    "predicted_label": "transfer_into_account",
+    "true_label": "topping_up_by_card"
+  },
+  {
+    "id": "train:04289",
+    "predicted_label": "top_up_failed",
+    "true_label": "topping_up_by_card"
+  },
+  {
+    "id": "train:04360",
+    "predicted_label": "disposable_card_limits",
+    "true_label": "disposable_card_limits"
+  },
+  {
+    "id": "train:04434",
+    "predicted_label": "disposable_card_limits",
+    "true_label": "disposable_card_limits"
+  },
+  {
+    "id": "train:04426",
+    "predicted_label": "disposable_card_limits",
+    "true_label": "disposable_card_limits"
+  },
+  {
+    "id": "train:04450",
+    "predicted_label": "disposable_card_limits",
+    "true_label": "disposable_card_limits"
+  },
+  {
+    "id": "train:04372",
+    "predicted_label": "disposable_card_limits",
+    "true_label": "disposable_card_limits"
+  },
+  {
+    "id": "train:04343",
+    "predicted_label": "disposable_card_limits",
+    "true_label": "disposable_card_limits"
+  },
+  {
+    "id": "train:04431",
+    "predicted_label": "disposable_card_limits",
+    "true_label": "disposable_card_limits"
+  },
+  {
+    "id": "train:04421",
+    "predicted_label": "getting_virtual_card",
+    "true_label": "disposable_card_limits"
+  },
+  {
+    "id": "train:04370",
+    "predicted_label": "disposable_card_limits",
+    "true_label": "disposable_card_limits"
+  },
+  {
+    "id": "train:04427",
+    "predicted_label": "disposable_card_limits",
+    "true_label": "disposable_card_limits"
+  },
+  {
+    "id": "train:04475",
+    "predicted_label": "compromised_card",
+    "true_label": "compromised_card"
+  },
+  {
+    "id": "train:04542",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "true_label": "compromised_card"
+  },
+  {
+    "id": "train:04513",
+    "predicted_label": "compromised_card",
+    "true_label": "compromised_card"
+  },
+  {
+    "id": "train:04508",
+    "predicted_label": "compromised_card",
+    "true_label": "compromised_card"
+  },
+  {
+    "id": "train:04500",
+    "predicted_label": "compromised_card",
+    "true_label": "compromised_card"
+  },
+  {
+    "id": "train:04524",
+    "predicted_label": "compromised_card",
+    "true_label": "compromised_card"
+  },
+  {
+    "id": "train:04530",
+    "predicted_label": "compromised_card",
+    "true_label": "compromised_card"
+  },
+  {
+    "id": "train:04474",
+    "predicted_label": "compromised_card",
+    "true_label": "compromised_card"
+  },
+  {
+    "id": "train:04499",
+    "predicted_label": "compromised_card",
+    "true_label": "compromised_card"
+  },
+  {
+    "id": "train:04520",
+    "predicted_label": "compromised_card",
+    "true_label": "compromised_card"
+  },
+  {
+    "id": "train:04547",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "true_label": "atm_support"
+  },
+  {
+    "id": "train:04587",
+    "predicted_label": "atm_support",
+    "true_label": "atm_support"
+  },
+  {
+    "id": "train:04627",
+    "predicted_label": "atm_support",
+    "true_label": "atm_support"
+  },
+  {
+    "id": "train:04598",
+    "predicted_label": "atm_support",
+    "true_label": "atm_support"
+  },
+  {
+    "id": "train:04609",
+    "predicted_label": "atm_support",
+    "true_label": "atm_support"
+  },
+  {
+    "id": "train:04606",
+    "predicted_label": "atm_support",
+    "true_label": "atm_support"
+  },
+  {
+    "id": "train:04621",
+    "predicted_label": "atm_support",
+    "true_label": "atm_support"
+  },
+  {
+    "id": "train:04557",
+    "predicted_label": "atm_support",
+    "true_label": "atm_support"
+  },
+  {
+    "id": "train:04619",
+    "predicted_label": "atm_support",
+    "true_label": "atm_support"
+  },
+  {
+    "id": "train:04568",
+    "predicted_label": "atm_support",
+    "true_label": "atm_support"
+  },
+  {
+    "id": "train:04745",
+    "predicted_label": "reverted_card_payment?",
+    "true_label": "direct_debit_payment_not_recognised"
+  },
+  {
+    "id": "train:04785",
+    "predicted_label": "card_payment_fee_charged",
+    "true_label": "direct_debit_payment_not_recognised"
+  },
+  {
+    "id": "train:04809",
+    "predicted_label": "card_payment_not_recognised",
+    "true_label": "direct_debit_payment_not_recognised"
+  },
+  {
+    "id": "train:04786",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "true_label": "direct_debit_payment_not_recognised"
+  },
+  {
+    "id": "train:04743",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "true_label": "direct_debit_payment_not_recognised"
+  },
+  {
+    "id": "train:04795",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "true_label": "direct_debit_payment_not_recognised"
+  },
+  {
+    "id": "train:04723",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "true_label": "direct_debit_payment_not_recognised"
+  },
+  {
+    "id": "train:04789",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "true_label": "direct_debit_payment_not_recognised"
+  },
+  {
+    "id": "train:04714",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "true_label": "direct_debit_payment_not_recognised"
+  },
+  {
+    "id": "train:04715",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "true_label": "direct_debit_payment_not_recognised"
+  },
+  {
+    "id": "train:04837",
+    "predicted_label": "passcode_forgotten",
+    "true_label": "passcode_forgotten"
+  },
+  {
+    "id": "train:04859",
+    "predicted_label": "passcode_forgotten",
+    "true_label": "passcode_forgotten"
+  },
+  {
+    "id": "train:04846",
+    "predicted_label": "passcode_forgotten",
+    "true_label": "passcode_forgotten"
+  },
+  {
+    "id": "train:04841",
+    "predicted_label": "passcode_forgotten",
+    "true_label": "passcode_forgotten"
+  },
+  {
+    "id": "train:04899",
+    "predicted_label": "passcode_forgotten",
+    "true_label": "passcode_forgotten"
+  },
+  {
+    "id": "train:04880",
+    "predicted_label": "passcode_forgotten",
+    "true_label": "passcode_forgotten"
+  },
+  {
+    "id": "train:04824",
+    "predicted_label": "passcode_forgotten",
+    "true_label": "passcode_forgotten"
+  },
+  {
+    "id": "train:04917",
+    "predicted_label": "passcode_forgotten",
+    "true_label": "passcode_forgotten"
+  },
+  {
+    "id": "train:04870",
+    "predicted_label": "passcode_forgotten",
+    "true_label": "passcode_forgotten"
+  },
+  {
+    "id": "train:04904",
+    "predicted_label": "passcode_forgotten",
+    "true_label": "passcode_forgotten"
+  },
+  {
+    "id": "train:05082",
+    "predicted_label": "declined_cash_withdrawal",
+    "true_label": "declined_cash_withdrawal"
+  },
+  {
+    "id": "train:04970",
+    "predicted_label": "declined_card_payment",
+    "true_label": "declined_cash_withdrawal"
+  },
+  {
+    "id": "train:05042",
+    "predicted_label": "card_swallowed",
+    "true_label": "declined_cash_withdrawal"
+  },
+  {
+    "id": "train:05018",
+    "predicted_label": "declined_cash_withdrawal",
+    "true_label": "declined_cash_withdrawal"
+  },
+  {
+    "id": "train:05044",
+    "predicted_label": "card_swallowed",
+    "true_label": "declined_cash_withdrawal"
+  },
+  {
+    "id": "train:04982",
+    "predicted_label": "declined_cash_withdrawal",
+    "true_label": "declined_cash_withdrawal"
+  },
+  {
+    "id": "train:05008",
+    "predicted_label": "card_swallowed",
+    "true_label": "declined_cash_withdrawal"
+  },
+  {
+    "id": "train:05020",
+    "predicted_label": "declined_cash_withdrawal",
+    "true_label": "declined_cash_withdrawal"
+  },
+  {
+    "id": "train:05017",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "true_label": "declined_cash_withdrawal"
+  },
+  {
+    "id": "train:05026",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "true_label": "declined_cash_withdrawal"
+  },
+  {
+    "id": "train:05177",
+    "predicted_label": "pending_card_payment",
+    "true_label": "pending_card_payment"
+  },
+  {
+    "id": "train:05169",
+    "predicted_label": "pending_card_payment",
+    "true_label": "pending_card_payment"
+  },
+  {
+    "id": "train:05109",
+    "predicted_label": "pending_card_payment",
+    "true_label": "pending_card_payment"
+  },
+  {
+    "id": "train:05126",
+    "predicted_label": "pending_card_payment",
+    "true_label": "pending_card_payment"
+  },
+  {
+    "id": "train:05230",
+    "predicted_label": "pending_card_payment",
+    "true_label": "pending_card_payment"
+  },
+  {
+    "id": "train:05111",
+    "predicted_label": "pending_card_payment",
+    "true_label": "pending_card_payment"
+  },
+  {
+    "id": "train:05209",
+    "predicted_label": "pending_card_payment",
+    "true_label": "pending_card_payment"
+  },
+  {
+    "id": "train:05216",
+    "predicted_label": "pending_card_payment",
+    "true_label": "pending_card_payment"
+  },
+  {
+    "id": "train:05206",
+    "predicted_label": "pending_card_payment",
+    "true_label": "pending_card_payment"
+  },
+  {
+    "id": "train:05179",
+    "predicted_label": "pending_card_payment",
+    "true_label": "pending_card_payment"
+  },
+  {
+    "id": "train:05370",
+    "predicted_label": "lost_or_stolen_phone",
+    "true_label": "lost_or_stolen_phone"
+  },
+  {
+    "id": "train:05328",
+    "predicted_label": "lost_or_stolen_phone",
+    "true_label": "lost_or_stolen_phone"
+  },
+  {
+    "id": "train:05356",
+    "predicted_label": "lost_or_stolen_phone",
+    "true_label": "lost_or_stolen_phone"
+  },
+  {
+    "id": "train:05253",
+    "predicted_label": "lost_or_stolen_phone",
+    "true_label": "lost_or_stolen_phone"
+  },
+  {
+    "id": "train:05285",
+    "predicted_label": "lost_or_stolen_phone",
+    "true_label": "lost_or_stolen_phone"
+  },
+  {
+    "id": "train:05347",
+    "predicted_label": "lost_or_stolen_phone",
+    "true_label": "lost_or_stolen_phone"
+  },
+  {
+    "id": "train:05255",
+    "predicted_label": "lost_or_stolen_phone",
+    "true_label": "lost_or_stolen_phone"
+  },
+  {
+    "id": "train:05252",
+    "predicted_label": "lost_or_stolen_phone",
+    "true_label": "lost_or_stolen_phone"
+  },
+  {
+    "id": "train:05361",
+    "predicted_label": "card_linking",
+    "true_label": "lost_or_stolen_phone"
+  },
+  {
+    "id": "train:05269",
+    "predicted_label": "lost_or_stolen_phone",
+    "true_label": "lost_or_stolen_phone"
+  },
+  {
+    "id": "train:05396",
+    "predicted_label": "request_refund",
+    "true_label": "request_refund"
+  },
+  {
+    "id": "train:05460",
+    "predicted_label": "request_refund",
+    "true_label": "request_refund"
+  },
+  {
+    "id": "train:05433",
+    "predicted_label": "Refund_not_showing_up",
+    "true_label": "request_refund"
+  },
+  {
+    "id": "train:05378",
+    "predicted_label": "Refund_not_showing_up",
+    "true_label": "request_refund"
+  },
+  {
+    "id": "train:05517",
+    "predicted_label": "request_refund",
+    "true_label": "request_refund"
+  },
+  {
+    "id": "train:05463",
+    "predicted_label": "request_refund",
+    "true_label": "request_refund"
+  },
+  {
+    "id": "train:05400",
+    "predicted_label": "request_refund",
+    "true_label": "request_refund"
+  },
+  {
+    "id": "train:05450",
+    "predicted_label": "Refund_not_showing_up",
+    "true_label": "request_refund"
+  },
+  {
+    "id": "train:05466",
+    "predicted_label": "request_refund",
+    "true_label": "request_refund"
+  },
+  {
+    "id": "train:05387",
+    "predicted_label": "request_refund",
+    "true_label": "request_refund"
+  },
+  {
+    "id": "train:05635",
+    "predicted_label": "declined_transfer",
+    "true_label": "declined_transfer"
+  },
+  {
+    "id": "train:05559",
+    "predicted_label": "declined_transfer",
+    "true_label": "declined_transfer"
+  },
+  {
+    "id": "train:05614",
+    "predicted_label": "declined_transfer",
+    "true_label": "declined_transfer"
+  },
+  {
+    "id": "train:05555",
+    "predicted_label": "declined_transfer",
+    "true_label": "declined_transfer"
+  },
+  {
+    "id": "train:05603",
+    "predicted_label": "declined_transfer",
+    "true_label": "declined_transfer"
+  },
+  {
+    "id": "train:05591",
+    "predicted_label": "declined_transfer",
+    "true_label": "declined_transfer"
+  },
+  {
+    "id": "train:05610",
+    "predicted_label": "declined_transfer",
+    "true_label": "declined_transfer"
+  },
+  {
+    "id": "train:05551",
+    "predicted_label": "declined_transfer",
+    "true_label": "declined_transfer"
+  },
+  {
+    "id": "train:05617",
+    "predicted_label": "declined_transfer",
+    "true_label": "declined_transfer"
+  },
+  {
+    "id": "train:05588",
+    "predicted_label": "declined_transfer",
+    "true_label": "declined_transfer"
+  },
+  {
+    "id": "train:05679",
+    "predicted_label": "Refund_not_showing_up",
+    "true_label": "Refund_not_showing_up"
+  },
+  {
+    "id": "train:05820",
+    "predicted_label": "Refund_not_showing_up",
+    "true_label": "Refund_not_showing_up"
+  },
+  {
+    "id": "train:05722",
+    "predicted_label": "Refund_not_showing_up",
+    "true_label": "Refund_not_showing_up"
+  },
+  {
+    "id": "train:05759",
+    "predicted_label": "request_refund",
+    "true_label": "Refund_not_showing_up"
+  },
+  {
+    "id": "train:05681",
+    "predicted_label": "request_refund",
+    "true_label": "Refund_not_showing_up"
+  },
+  {
+    "id": "train:05783",
+    "predicted_label": "Refund_not_showing_up",
+    "true_label": "Refund_not_showing_up"
+  },
+  {
+    "id": "train:05779",
+    "predicted_label": "Refund_not_showing_up",
+    "true_label": "Refund_not_showing_up"
+  },
+  {
+    "id": "train:05729",
+    "predicted_label": "Refund_not_showing_up",
+    "true_label": "Refund_not_showing_up"
+  },
+  {
+    "id": "train:05750",
+    "predicted_label": "Refund_not_showing_up",
+    "true_label": "Refund_not_showing_up"
+  },
+  {
+    "id": "train:05807",
+    "predicted_label": "Refund_not_showing_up",
+    "true_label": "Refund_not_showing_up"
+  },
+  {
+    "id": "train:05962",
+    "predicted_label": "declined_card_payment",
+    "true_label": "declined_card_payment"
+  },
+  {
+    "id": "train:05856",
+    "predicted_label": "declined_card_payment",
+    "true_label": "declined_card_payment"
+  },
+  {
+    "id": "train:05898",
+    "predicted_label": "declined_card_payment",
+    "true_label": "declined_card_payment"
+  },
+  {
+    "id": "train:05917",
+    "predicted_label": "declined_card_payment",
+    "true_label": "declined_card_payment"
+  },
+  {
+    "id": "train:05941",
+    "predicted_label": "declined_card_payment",
+    "true_label": "declined_card_payment"
+  },
+  {
+    "id": "train:05959",
+    "predicted_label": "card_not_working",
+    "true_label": "declined_card_payment"
+  },
+  {
+    "id": "train:05892",
+    "predicted_label": "declined_transfer",
+    "true_label": "declined_card_payment"
+  },
+  {
+    "id": "train:05956",
+    "predicted_label": "declined_card_payment",
+    "true_label": "declined_card_payment"
+  },
+  {
+    "id": "train:05937",
+    "predicted_label": "declined_card_payment",
+    "true_label": "declined_card_payment"
+  },
+  {
+    "id": "train:05910",
+    "predicted_label": "card_not_working",
+    "true_label": "declined_card_payment"
+  },
+  {
+    "id": "train:06078",
+    "predicted_label": "transfer_timing",
+    "true_label": "pending_transfer"
+  },
+  {
+    "id": "train:06054",
+    "predicted_label": "pending_transfer",
+    "true_label": "pending_transfer"
+  },
+  {
+    "id": "train:06053",
+    "predicted_label": "pending_transfer",
+    "true_label": "pending_transfer"
+  },
+  {
+    "id": "train:05993",
+    "predicted_label": "transfer_timing",
+    "true_label": "pending_transfer"
+  },
+  {
+    "id": "train:06036",
+    "predicted_label": "pending_card_payment",
+    "true_label": "pending_transfer"
+  },
+  {
+    "id": "train:06098",
+    "predicted_label": "transfer_timing",
+    "true_label": "pending_transfer"
+  },
+  {
+    "id": "train:06127",
+    "predicted_label": "pending_transfer",
+    "true_label": "pending_transfer"
+  },
+  {
+    "id": "train:06080",
+    "predicted_label": "transfer_timing",
+    "true_label": "pending_transfer"
+  },
+  {
+    "id": "train:06037",
+    "predicted_label": "transfer_timing",
+    "true_label": "pending_transfer"
+  },
+  {
+    "id": "train:06010",
+    "predicted_label": "pending_transfer",
+    "true_label": "pending_transfer"
+  },
+  {
+    "id": "train:06204",
+    "predicted_label": "terminate_account",
+    "true_label": "terminate_account"
+  },
+  {
+    "id": "train:06174",
+    "predicted_label": "terminate_account",
+    "true_label": "terminate_account"
+  },
+  {
+    "id": "train:06168",
+    "predicted_label": "terminate_account",
+    "true_label": "terminate_account"
+  },
+  {
+    "id": "train:06223",
+    "predicted_label": "terminate_account",
+    "true_label": "terminate_account"
+  },
+  {
+    "id": "train:06216",
+    "predicted_label": "terminate_account",
+    "true_label": "terminate_account"
+  },
+  {
+    "id": "train:06161",
+    "predicted_label": "terminate_account",
+    "true_label": "terminate_account"
+  },
+  {
+    "id": "train:06213",
+    "predicted_label": "cancel_transfer",
+    "true_label": "terminate_account"
+  },
+  {
+    "id": "train:06206",
+    "predicted_label": "terminate_account",
+    "true_label": "terminate_account"
+  },
+  {
+    "id": "train:06222",
+    "predicted_label": "terminate_account",
+    "true_label": "terminate_account"
+  },
+  {
+    "id": "train:06143",
+    "predicted_label": "terminate_account",
+    "true_label": "terminate_account"
+  },
+  {
+    "id": "train:06292",
+    "predicted_label": "card_swallowed",
+    "true_label": "card_swallowed"
+  },
+  {
+    "id": "train:06271",
+    "predicted_label": "card_swallowed",
+    "true_label": "card_swallowed"
+  },
+  {
+    "id": "train:06262",
+    "predicted_label": "card_swallowed",
+    "true_label": "card_swallowed"
+  },
+  {
+    "id": "train:06298",
+    "predicted_label": "lost_or_stolen_card",
+    "true_label": "card_swallowed"
+  },
+  {
+    "id": "train:06272",
+    "predicted_label": "card_swallowed",
+    "true_label": "card_swallowed"
+  },
+  {
+    "id": "train:06270",
+    "predicted_label": "card_swallowed",
+    "true_label": "card_swallowed"
+  },
+  {
+    "id": "train:06266",
+    "predicted_label": "card_swallowed",
+    "true_label": "card_swallowed"
+  },
+  {
+    "id": "train:06293",
+    "predicted_label": "card_swallowed",
+    "true_label": "card_swallowed"
+  },
+  {
+    "id": "train:06256",
+    "predicted_label": "card_swallowed",
+    "true_label": "card_swallowed"
+  },
+  {
+    "id": "train:06268",
+    "predicted_label": "card_swallowed",
+    "true_label": "card_swallowed"
+  },
+  {
+    "id": "train:06335",
+    "predicted_label": "transaction_charged_twice",
+    "true_label": "transaction_charged_twice"
+  },
+  {
+    "id": "train:06411",
+    "predicted_label": "transaction_charged_twice",
+    "true_label": "transaction_charged_twice"
+  },
+  {
+    "id": "train:06396",
+    "predicted_label": "transaction_charged_twice",
+    "true_label": "transaction_charged_twice"
+  },
+  {
+    "id": "train:06315",
+    "predicted_label": "transaction_charged_twice",
+    "true_label": "transaction_charged_twice"
+  },
+  {
+    "id": "train:06379",
+    "predicted_label": "transaction_charged_twice",
+    "true_label": "transaction_charged_twice"
+  },
+  {
+    "id": "train:06363",
+    "predicted_label": "transaction_charged_twice",
+    "true_label": "transaction_charged_twice"
+  },
+  {
+    "id": "train:06446",
+    "predicted_label": "transaction_charged_twice",
+    "true_label": "transaction_charged_twice"
+  },
+  {
+    "id": "train:06382",
+    "predicted_label": "transaction_charged_twice",
+    "true_label": "transaction_charged_twice"
+  },
+  {
+    "id": "train:06344",
+    "predicted_label": "reverted_card_payment?",
+    "true_label": "transaction_charged_twice"
+  },
+  {
+    "id": "train:06462",
+    "predicted_label": "transaction_charged_twice",
+    "true_label": "transaction_charged_twice"
+  },
+  {
+    "id": "train:06570",
+    "predicted_label": "verify_source_of_funds",
+    "true_label": "verify_source_of_funds"
+  },
+  {
+    "id": "train:06545",
+    "predicted_label": "verify_source_of_funds",
+    "true_label": "verify_source_of_funds"
+  },
+  {
+    "id": "train:06520",
+    "predicted_label": "verify_source_of_funds",
+    "true_label": "verify_source_of_funds"
+  },
+  {
+    "id": "train:06571",
+    "predicted_label": "verify_source_of_funds",
+    "true_label": "verify_source_of_funds"
+  },
+  {
+    "id": "train:06554",
+    "predicted_label": "verify_source_of_funds",
+    "true_label": "verify_source_of_funds"
+  },
+  {
+    "id": "train:06541",
+    "predicted_label": "verify_source_of_funds",
+    "true_label": "verify_source_of_funds"
+  },
+  {
+    "id": "train:06518",
+    "predicted_label": "verify_source_of_funds",
+    "true_label": "verify_source_of_funds"
+  },
+  {
+    "id": "train:06503",
+    "predicted_label": "verify_source_of_funds",
+    "true_label": "verify_source_of_funds"
+  },
+  {
+    "id": "train:06507",
+    "predicted_label": "verify_source_of_funds",
+    "true_label": "verify_source_of_funds"
+  },
+  {
+    "id": "train:06565",
+    "predicted_label": "verify_source_of_funds",
+    "true_label": "verify_source_of_funds"
+  },
+  {
+    "id": "train:06673",
+    "predicted_label": "transfer_timing",
+    "true_label": "transfer_timing"
+  },
+  {
+    "id": "train:06613",
+    "predicted_label": "transfer_timing",
+    "true_label": "transfer_timing"
+  },
+  {
+    "id": "train:06705",
+    "predicted_label": "transfer_timing",
+    "true_label": "transfer_timing"
+  },
+  {
+    "id": "train:06634",
+    "predicted_label": "verify_source_of_funds",
+    "true_label": "transfer_timing"
+  },
+  {
+    "id": "train:06619",
+    "predicted_label": "transfer_timing",
+    "true_label": "transfer_timing"
+  },
+  {
+    "id": "train:06721",
+    "predicted_label": "transfer_timing",
+    "true_label": "transfer_timing"
+  },
+  {
+    "id": "train:06640",
+    "predicted_label": "transfer_timing",
+    "true_label": "transfer_timing"
+  },
+  {
+    "id": "train:06664",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "true_label": "transfer_timing"
+  },
+  {
+    "id": "train:06717",
+    "predicted_label": "transfer_timing",
+    "true_label": "transfer_timing"
+  },
+  {
+    "id": "train:06661",
+    "predicted_label": "transfer_timing",
+    "true_label": "transfer_timing"
+  },
+  {
+    "id": "train:06786",
+    "predicted_label": "reverted_card_payment?",
+    "true_label": "reverted_card_payment?"
+  },
+  {
+    "id": "train:06745",
+    "predicted_label": "pending_card_payment",
+    "true_label": "reverted_card_payment?"
+  },
+  {
+    "id": "train:06771",
+    "predicted_label": "pending_card_payment",
+    "true_label": "reverted_card_payment?"
+  },
+  {
+    "id": "train:06871",
+    "predicted_label": "reverted_card_payment?",
+    "true_label": "reverted_card_payment?"
+  },
+  {
+    "id": "train:06851",
+    "predicted_label": "reverted_card_payment?",
+    "true_label": "reverted_card_payment?"
+  },
+  {
+    "id": "train:06879",
+    "predicted_label": "reverted_card_payment?",
+    "true_label": "reverted_card_payment?"
+  },
+  {
+    "id": "train:06778",
+    "predicted_label": "reverted_card_payment?",
+    "true_label": "reverted_card_payment?"
+  },
+  {
+    "id": "train:06839",
+    "predicted_label": "request_refund",
+    "true_label": "reverted_card_payment?"
+  },
+  {
+    "id": "train:06723",
+    "predicted_label": "declined_card_payment",
+    "true_label": "reverted_card_payment?"
+  },
+  {
+    "id": "train:06845",
+    "predicted_label": "reverted_card_payment?",
+    "true_label": "reverted_card_payment?"
+  },
+  {
+    "id": "train:06937",
+    "predicted_label": "change_pin",
+    "true_label": "change_pin"
+  },
+  {
+    "id": "train:06943",
+    "predicted_label": "change_pin",
+    "true_label": "change_pin"
+  },
+  {
+    "id": "train:06963",
+    "predicted_label": "change_pin",
+    "true_label": "change_pin"
+  },
+  {
+    "id": "train:06886",
+    "predicted_label": "change_pin",
+    "true_label": "change_pin"
+  },
+  {
+    "id": "train:06905",
+    "predicted_label": "change_pin",
+    "true_label": "change_pin"
+  },
+  {
+    "id": "train:06912",
+    "predicted_label": "change_pin",
+    "true_label": "change_pin"
+  },
+  {
+    "id": "train:06956",
+    "predicted_label": "change_pin",
+    "true_label": "change_pin"
+  },
+  {
+    "id": "train:06958",
+    "predicted_label": "change_pin",
+    "true_label": "change_pin"
+  },
+  {
+    "id": "train:06931",
+    "predicted_label": "change_pin",
+    "true_label": "change_pin"
+  },
+  {
+    "id": "train:06918",
+    "predicted_label": "change_pin",
+    "true_label": "change_pin"
+  },
+  {
+    "id": "train:07129",
+    "predicted_label": "beneficiary_not_allowed",
+    "true_label": "beneficiary_not_allowed"
+  },
+  {
+    "id": "train:07142",
+    "predicted_label": "beneficiary_not_allowed",
+    "true_label": "beneficiary_not_allowed"
+  },
+  {
+    "id": "train:07158",
+    "predicted_label": "beneficiary_not_allowed",
+    "true_label": "beneficiary_not_allowed"
+  },
+  {
+    "id": "train:07078",
+    "predicted_label": "beneficiary_not_allowed",
+    "true_label": "beneficiary_not_allowed"
+  },
+  {
+    "id": "train:07043",
+    "predicted_label": "beneficiary_not_allowed",
+    "true_label": "beneficiary_not_allowed"
+  },
+  {
+    "id": "train:07058",
+    "predicted_label": "transfer_into_account",
+    "true_label": "beneficiary_not_allowed"
+  },
+  {
+    "id": "train:07044",
+    "predicted_label": "failed_transfer",
+    "true_label": "beneficiary_not_allowed"
+  },
+  {
+    "id": "train:07015",
+    "predicted_label": "transfer_fee_charged",
+    "true_label": "beneficiary_not_allowed"
+  },
+  {
+    "id": "train:07091",
+    "predicted_label": "beneficiary_not_allowed",
+    "true_label": "beneficiary_not_allowed"
+  },
+  {
+    "id": "train:07124",
+    "predicted_label": "beneficiary_not_allowed",
+    "true_label": "beneficiary_not_allowed"
+  },
+  {
+    "id": "train:07215",
+    "predicted_label": "transfer_fee_charged",
+    "true_label": "transfer_fee_charged"
+  },
+  {
+    "id": "train:07314",
+    "predicted_label": "transfer_fee_charged",
+    "true_label": "transfer_fee_charged"
+  },
+  {
+    "id": "train:07193",
+    "predicted_label": "transfer_fee_charged",
+    "true_label": "transfer_fee_charged"
+  },
+  {
+    "id": "train:07218",
+    "predicted_label": "top_up_reverted",
+    "true_label": "transfer_fee_charged"
+  },
+  {
+    "id": "train:07323",
+    "predicted_label": "card_payment_fee_charged",
+    "true_label": "transfer_fee_charged"
+  },
+  {
+    "id": "train:07182",
+    "predicted_label": "transfer_fee_charged",
+    "true_label": "transfer_fee_charged"
+  },
+  {
+    "id": "train:07201",
+    "predicted_label": "transfer_fee_charged",
+    "true_label": "transfer_fee_charged"
+  },
+  {
+    "id": "train:07200",
+    "predicted_label": "transfer_fee_charged",
+    "true_label": "transfer_fee_charged"
+  },
+  {
+    "id": "train:07313",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "true_label": "transfer_fee_charged"
+  },
+  {
+    "id": "train:07276",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "true_label": "transfer_fee_charged"
+  },
+  {
+    "id": "train:07418",
+    "predicted_label": "receiving_money",
+    "true_label": "receiving_money"
+  },
+  {
+    "id": "train:07398",
+    "predicted_label": "receiving_money",
+    "true_label": "receiving_money"
+  },
+  {
+    "id": "train:07413",
+    "predicted_label": "receiving_money",
+    "true_label": "receiving_money"
+  },
+  {
+    "id": "train:07333",
+    "predicted_label": "receiving_money",
+    "true_label": "receiving_money"
+  },
+  {
+    "id": "train:07427",
+    "predicted_label": "apple_pay_or_google_pay",
+    "true_label": "receiving_money"
+  },
+  {
+    "id": "train:07385",
+    "predicted_label": "receiving_money",
+    "true_label": "receiving_money"
+  },
+  {
+    "id": "train:07370",
+    "predicted_label": "verify_source_of_funds",
+    "true_label": "receiving_money"
+  },
+  {
+    "id": "train:07394",
+    "predicted_label": "receiving_money",
+    "true_label": "receiving_money"
+  },
+  {
+    "id": "train:07339",
+    "predicted_label": "receiving_money",
+    "true_label": "receiving_money"
+  },
+  {
+    "id": "train:07371",
+    "predicted_label": "country_support",
+    "true_label": "receiving_money"
+  },
+  {
+    "id": "train:07534",
+    "predicted_label": "failed_transfer",
+    "true_label": "failed_transfer"
+  },
+  {
+    "id": "train:07549",
+    "predicted_label": "failed_transfer",
+    "true_label": "failed_transfer"
+  },
+  {
+    "id": "train:07456",
+    "predicted_label": "failed_transfer",
+    "true_label": "failed_transfer"
+  },
+  {
+    "id": "train:07518",
+    "predicted_label": "failed_transfer",
+    "true_label": "failed_transfer"
+  },
+  {
+    "id": "train:07497",
+    "predicted_label": "failed_transfer",
+    "true_label": "failed_transfer"
+  },
+  {
+    "id": "train:07444",
+    "predicted_label": "failed_transfer",
+    "true_label": "failed_transfer"
+  },
+  {
+    "id": "train:07453",
+    "predicted_label": "failed_transfer",
+    "true_label": "failed_transfer"
+  },
+  {
+    "id": "train:07516",
+    "predicted_label": "failed_transfer",
+    "true_label": "failed_transfer"
+  },
+  {
+    "id": "train:07535",
+    "predicted_label": "beneficiary_not_allowed",
+    "true_label": "failed_transfer"
+  },
+  {
+    "id": "train:07459",
+    "predicted_label": "failed_transfer",
+    "true_label": "failed_transfer"
+  },
+  {
+    "id": "train:07596",
+    "predicted_label": "transfer_into_account",
+    "true_label": "transfer_into_account"
+  },
+  {
+    "id": "train:07677",
+    "predicted_label": "transfer_into_account",
+    "true_label": "transfer_into_account"
+  },
+  {
+    "id": "train:07649",
+    "predicted_label": "transfer_into_account",
+    "true_label": "transfer_into_account"
+  },
+  {
+    "id": "train:07630",
+    "predicted_label": "transfer_into_account",
+    "true_label": "transfer_into_account"
+  },
+  {
+    "id": "train:07571",
+    "predicted_label": "transfer_into_account",
+    "true_label": "transfer_into_account"
+  },
+  {
+    "id": "train:07606",
+    "predicted_label": "transfer_into_account",
+    "true_label": "transfer_into_account"
+  },
+  {
+    "id": "train:07570",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "true_label": "transfer_into_account"
+  },
+  {
+    "id": "train:07608",
+    "predicted_label": "transfer_into_account",
+    "true_label": "transfer_into_account"
+  },
+  {
+    "id": "train:07643",
+    "predicted_label": "transfer_into_account",
+    "true_label": "transfer_into_account"
+  },
+  {
+    "id": "train:07639",
+    "predicted_label": "transfer_into_account",
+    "true_label": "transfer_into_account"
+  },
+  {
+    "id": "train:07789",
+    "predicted_label": "card_not_working",
+    "true_label": "verify_top_up"
+  },
+  {
+    "id": "train:07745",
+    "predicted_label": "verify_top_up",
+    "true_label": "verify_top_up"
+  },
+  {
+    "id": "train:07772",
+    "predicted_label": "verify_top_up",
+    "true_label": "verify_top_up"
+  },
+  {
+    "id": "train:07747",
+    "predicted_label": "verify_top_up",
+    "true_label": "verify_top_up"
+  },
+  {
+    "id": "train:07752",
+    "predicted_label": "verify_top_up",
+    "true_label": "verify_top_up"
+  },
+  {
+    "id": "train:07731",
+    "predicted_label": "verify_top_up",
+    "true_label": "verify_top_up"
+  },
+  {
+    "id": "train:07750",
+    "predicted_label": "beneficiary_not_allowed",
+    "true_label": "verify_top_up"
+  },
+  {
+    "id": "train:07719",
+    "predicted_label": "verify_top_up",
+    "true_label": "verify_top_up"
+  },
+  {
+    "id": "train:07713",
+    "predicted_label": "verify_top_up",
+    "true_label": "verify_top_up"
+  },
+  {
+    "id": "train:07786",
+    "predicted_label": "verify_top_up",
+    "true_label": "verify_top_up"
+  },
+  {
+    "id": "train:07815",
+    "predicted_label": "getting_spare_card",
+    "true_label": "getting_spare_card"
+  },
+  {
+    "id": "train:07916",
+    "predicted_label": "getting_spare_card",
+    "true_label": "getting_spare_card"
+  },
+  {
+    "id": "train:07829",
+    "predicted_label": "lost_or_stolen_card",
+    "true_label": "getting_spare_card"
+  },
+  {
+    "id": "train:07833",
+    "predicted_label": "card_payment_fee_charged",
+    "true_label": "getting_spare_card"
+  },
+  {
+    "id": "train:07864",
+    "predicted_label": "getting_spare_card",
+    "true_label": "getting_spare_card"
+  },
+  {
+    "id": "train:07871",
+    "predicted_label": "disposable_card_limits",
+    "true_label": "getting_spare_card"
+  },
+  {
+    "id": "train:07924",
+    "predicted_label": "getting_spare_card",
+    "true_label": "getting_spare_card"
+  },
+  {
+    "id": "train:07819",
+    "predicted_label": "getting_spare_card",
+    "true_label": "getting_spare_card"
+  },
+  {
+    "id": "train:07921",
+    "predicted_label": "top_up_by_card_charge",
+    "true_label": "getting_spare_card"
+  },
+  {
+    "id": "train:07830",
+    "predicted_label": "getting_spare_card",
+    "true_label": "getting_spare_card"
+  },
+  {
+    "id": "train:07999",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "true_label": "top_up_by_cash_or_cheque"
+  },
+  {
+    "id": "train:07974",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "true_label": "top_up_by_cash_or_cheque"
+  },
+  {
+    "id": "train:08006",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "true_label": "top_up_by_cash_or_cheque"
+  },
+  {
+    "id": "train:08040",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "true_label": "top_up_by_cash_or_cheque"
+  },
+  {
+    "id": "train:07966",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "true_label": "top_up_by_cash_or_cheque"
+  },
+  {
+    "id": "train:08042",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "true_label": "top_up_by_cash_or_cheque"
+  },
+  {
+    "id": "train:07963",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "true_label": "top_up_by_cash_or_cheque"
+  },
+  {
+    "id": "train:07992",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "true_label": "top_up_by_cash_or_cheque"
+  },
+  {
+    "id": "train:07964",
+    "predicted_label": "top_up_limits",
+    "true_label": "top_up_by_cash_or_cheque"
+  },
+  {
+    "id": "train:07998",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "true_label": "top_up_by_cash_or_cheque"
+  },
+  {
+    "id": "train:08100",
+    "predicted_label": "order_physical_card",
+    "true_label": "order_physical_card"
+  },
+  {
+    "id": "train:08096",
+    "predicted_label": "card_payment_fee_charged",
+    "true_label": "order_physical_card"
+  },
+  {
+    "id": "train:08166",
+    "predicted_label": "getting_spare_card",
+    "true_label": "order_physical_card"
+  },
+  {
+    "id": "train:08134",
+    "predicted_label": "order_physical_card",
+    "true_label": "order_physical_card"
+  },
+  {
+    "id": "train:08129",
+    "predicted_label": "order_physical_card",
+    "true_label": "order_physical_card"
+  },
+  {
+    "id": "train:08120",
+    "predicted_label": "getting_spare_card",
+    "true_label": "order_physical_card"
+  },
+  {
+    "id": "train:08118",
+    "predicted_label": "order_physical_card",
+    "true_label": "order_physical_card"
+  },
+  {
+    "id": "train:08119",
+    "predicted_label": "order_physical_card",
+    "true_label": "order_physical_card"
+  },
+  {
+    "id": "train:08146",
+    "predicted_label": "order_physical_card",
+    "true_label": "order_physical_card"
+  },
+  {
+    "id": "train:08089",
+    "predicted_label": "order_physical_card",
+    "true_label": "order_physical_card"
+  },
+  {
+    "id": "train:08185",
+    "predicted_label": "virtual_card_not_working",
+    "true_label": "virtual_card_not_working"
+  },
+  {
+    "id": "train:08205",
+    "predicted_label": "virtual_card_not_working",
+    "true_label": "virtual_card_not_working"
+  },
+  {
+    "id": "train:08206",
+    "predicted_label": "virtual_card_not_working",
+    "true_label": "virtual_card_not_working"
+  },
+  {
+    "id": "train:08190",
+    "predicted_label": "virtual_card_not_working",
+    "true_label": "virtual_card_not_working"
+  },
+  {
+    "id": "train:08176",
+    "predicted_label": "virtual_card_not_working",
+    "true_label": "virtual_card_not_working"
+  },
+  {
+    "id": "train:08197",
+    "predicted_label": "virtual_card_not_working",
+    "true_label": "virtual_card_not_working"
+  },
+  {
+    "id": "train:08182",
+    "predicted_label": "virtual_card_not_working",
+    "true_label": "virtual_card_not_working"
+  },
+  {
+    "id": "train:08184",
+    "predicted_label": "virtual_card_not_working",
+    "true_label": "virtual_card_not_working"
+  },
+  {
+    "id": "train:08173",
+    "predicted_label": "virtual_card_not_working",
+    "true_label": "virtual_card_not_working"
+  },
+  {
+    "id": "train:08167",
+    "predicted_label": "virtual_card_not_working",
+    "true_label": "virtual_card_not_working"
+  },
+  {
+    "id": "train:08367",
+    "predicted_label": "wrong_exchange_rate_for_cash_withdrawal",
+    "true_label": "wrong_exchange_rate_for_cash_withdrawal"
+  },
+  {
+    "id": "train:08273",
+    "predicted_label": "wrong_exchange_rate_for_cash_withdrawal",
+    "true_label": "wrong_exchange_rate_for_cash_withdrawal"
+  },
+  {
+    "id": "train:08352",
+    "predicted_label": "wrong_exchange_rate_for_cash_withdrawal",
+    "true_label": "wrong_exchange_rate_for_cash_withdrawal"
+  },
+  {
+    "id": "train:08264",
+    "predicted_label": "exchange_rate",
+    "true_label": "wrong_exchange_rate_for_cash_withdrawal"
+  },
+  {
+    "id": "train:08297",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "true_label": "wrong_exchange_rate_for_cash_withdrawal"
+  },
+  {
+    "id": "train:08226",
+    "predicted_label": "cash_withdrawal_charge",
+    "true_label": "wrong_exchange_rate_for_cash_withdrawal"
+  },
+  {
+    "id": "train:08218",
+    "predicted_label": "atm_support",
+    "true_label": "wrong_exchange_rate_for_cash_withdrawal"
+  },
+  {
+    "id": "train:08308",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "true_label": "wrong_exchange_rate_for_cash_withdrawal"
+  },
+  {
+    "id": "train:08230",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "true_label": "wrong_exchange_rate_for_cash_withdrawal"
+  },
+  {
+    "id": "train:08331",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "true_label": "wrong_exchange_rate_for_cash_withdrawal"
+  },
+  {
+    "id": "train:08436",
+    "predicted_label": "get_disposable_virtual_card",
+    "true_label": "get_disposable_virtual_card"
+  },
+  {
+    "id": "train:08377",
+    "predicted_label": "get_disposable_virtual_card",
+    "true_label": "get_disposable_virtual_card"
+  },
+  {
+    "id": "train:08428",
+    "predicted_label": "getting_virtual_card",
+    "true_label": "get_disposable_virtual_card"
+  },
+  {
+    "id": "train:08444",
+    "predicted_label": "getting_virtual_card",
+    "true_label": "get_disposable_virtual_card"
+  },
+  {
+    "id": "train:08400",
+    "predicted_label": "get_disposable_virtual_card",
+    "true_label": "get_disposable_virtual_card"
+  },
+  {
+    "id": "train:08429",
+    "predicted_label": "get_disposable_virtual_card",
+    "true_label": "get_disposable_virtual_card"
+  },
+  {
+    "id": "train:08416",
+    "predicted_label": "get_disposable_virtual_card",
+    "true_label": "get_disposable_virtual_card"
+  },
+  {
+    "id": "train:08467",
+    "predicted_label": "get_disposable_virtual_card",
+    "true_label": "get_disposable_virtual_card"
+  },
+  {
+    "id": "train:08387",
+    "predicted_label": "get_disposable_virtual_card",
+    "true_label": "get_disposable_virtual_card"
+  },
+  {
+    "id": "train:08383",
+    "predicted_label": "get_disposable_virtual_card",
+    "true_label": "get_disposable_virtual_card"
+  },
+  {
+    "id": "train:08523",
+    "predicted_label": "top_up_failed",
+    "true_label": "top_up_failed"
+  },
+  {
+    "id": "train:08609",
+    "predicted_label": "top_up_reverted",
+    "true_label": "top_up_failed"
+  },
+  {
+    "id": "train:08484",
+    "predicted_label": "top_up_failed",
+    "true_label": "top_up_failed"
+  },
+  {
+    "id": "train:08562",
+    "predicted_label": "lost_or_stolen_phone",
+    "true_label": "top_up_failed"
+  },
+  {
+    "id": "train:08525",
+    "predicted_label": "top_up_failed",
+    "true_label": "top_up_failed"
+  },
+  {
+    "id": "train:08517",
+    "predicted_label": "top_up_failed",
+    "true_label": "top_up_failed"
+  },
+  {
+    "id": "train:08468",
+    "predicted_label": "top_up_failed",
+    "true_label": "top_up_failed"
+  },
+  {
+    "id": "train:08573",
+    "predicted_label": "top_up_failed",
+    "true_label": "top_up_failed"
+  },
+  {
+    "id": "train:08544",
+    "predicted_label": "top_up_failed",
+    "true_label": "top_up_failed"
+  },
+  {
+    "id": "train:08526",
+    "predicted_label": "top_up_failed",
+    "true_label": "top_up_failed"
+  },
+  {
+    "id": "train:08657",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "true_label": "balance_not_updated_after_bank_transfer"
+  },
+  {
+    "id": "train:08634",
+    "predicted_label": "transfer_timing",
+    "true_label": "balance_not_updated_after_bank_transfer"
+  },
+  {
+    "id": "train:08757",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "true_label": "balance_not_updated_after_bank_transfer"
+  },
+  {
+    "id": "train:08670",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "true_label": "balance_not_updated_after_bank_transfer"
+  },
+  {
+    "id": "train:08613",
+    "predicted_label": "verify_source_of_funds",
+    "true_label": "balance_not_updated_after_bank_transfer"
+  },
+  {
+    "id": "train:08625",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "true_label": "balance_not_updated_after_bank_transfer"
+  },
+  {
+    "id": "train:08781",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "true_label": "balance_not_updated_after_bank_transfer"
+  },
+  {
+    "id": "train:08749",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "true_label": "balance_not_updated_after_bank_transfer"
+  },
+  {
+    "id": "train:08641",
+    "predicted_label": "transfer_timing",
+    "true_label": "balance_not_updated_after_bank_transfer"
+  },
+  {
+    "id": "train:08767",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "true_label": "balance_not_updated_after_bank_transfer"
+  },
+  {
+    "id": "train:08870",
+    "predicted_label": "card_payment_fee_charged",
+    "true_label": "cash_withdrawal_not_recognised"
+  },
+  {
+    "id": "train:08886",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "true_label": "cash_withdrawal_not_recognised"
+  },
+  {
+    "id": "train:08938",
+    "predicted_label": "verify_source_of_funds",
+    "true_label": "cash_withdrawal_not_recognised"
+  },
+  {
+    "id": "train:08854",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "true_label": "cash_withdrawal_not_recognised"
+  },
+  {
+    "id": "train:08889",
+    "predicted_label": "compromised_card",
+    "true_label": "cash_withdrawal_not_recognised"
+  },
+  {
+    "id": "train:08802",
+    "predicted_label": "verify_source_of_funds",
+    "true_label": "cash_withdrawal_not_recognised"
+  },
+  {
+    "id": "train:08927",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "true_label": "cash_withdrawal_not_recognised"
+  },
+  {
+    "id": "train:08928",
+    "predicted_label": "terminate_account",
+    "true_label": "cash_withdrawal_not_recognised"
+  },
+  {
+    "id": "train:08859",
+    "predicted_label": "compromised_card",
+    "true_label": "cash_withdrawal_not_recognised"
+  },
+  {
+    "id": "train:08906",
+    "predicted_label": "lost_or_stolen_card",
+    "true_label": "cash_withdrawal_not_recognised"
+  },
+  {
+    "id": "train:09002",
+    "predicted_label": "exchange_rate",
+    "true_label": "exchange_charge"
+  },
+  {
+    "id": "train:09003",
+    "predicted_label": "exchange_charge",
+    "true_label": "exchange_charge"
+  },
+  {
+    "id": "train:09001",
+    "predicted_label": "exchange_charge",
+    "true_label": "exchange_charge"
+  },
+  {
+    "id": "train:09058",
+    "predicted_label": "exchange_charge",
+    "true_label": "exchange_charge"
+  },
+  {
+    "id": "train:08977",
+    "predicted_label": "exchange_charge",
+    "true_label": "exchange_charge"
+  },
+  {
+    "id": "train:08959",
+    "predicted_label": "exchange_charge",
+    "true_label": "exchange_charge"
+  },
+  {
+    "id": "train:08978",
+    "predicted_label": "exchange_charge",
+    "true_label": "exchange_charge"
+  },
+  {
+    "id": "train:09037",
+    "predicted_label": "exchange_charge",
+    "true_label": "exchange_charge"
+  },
+  {
+    "id": "train:08960",
+    "predicted_label": "exchange_rate",
+    "true_label": "exchange_charge"
+  },
+  {
+    "id": "train:09025",
+    "predicted_label": "exchange_charge",
+    "true_label": "exchange_charge"
+  },
+  {
+    "id": "train:09078",
+    "predicted_label": "top_up_by_card_charge",
+    "true_label": "top_up_by_card_charge"
+  },
+  {
+    "id": "train:09096",
+    "predicted_label": "top_up_by_card_charge",
+    "true_label": "top_up_by_card_charge"
+  },
+  {
+    "id": "train:09156",
+    "predicted_label": "top_up_by_card_charge",
+    "true_label": "top_up_by_card_charge"
+  },
+  {
+    "id": "train:09175",
+    "predicted_label": "top_up_by_card_charge",
+    "true_label": "top_up_by_card_charge"
+  },
+  {
+    "id": "train:09108",
+    "predicted_label": "top_up_by_card_charge",
+    "true_label": "top_up_by_card_charge"
+  },
+  {
+    "id": "train:09142",
+    "predicted_label": "top_up_by_card_charge",
+    "true_label": "top_up_by_card_charge"
+  },
+  {
+    "id": "train:09130",
+    "predicted_label": "card_payment_fee_charged",
+    "true_label": "top_up_by_card_charge"
+  },
+  {
+    "id": "train:09075",
+    "predicted_label": "top_up_by_card_charge",
+    "true_label": "top_up_by_card_charge"
+  },
+  {
+    "id": "train:09089",
+    "predicted_label": "top_up_by_card_charge",
+    "true_label": "top_up_by_card_charge"
+  },
+  {
+    "id": "train:09138",
+    "predicted_label": "top_up_by_card_charge",
+    "true_label": "top_up_by_card_charge"
+  },
+  {
+    "id": "train:09303",
+    "predicted_label": "activate_my_card",
+    "true_label": "activate_my_card"
+  },
+  {
+    "id": "train:09229",
+    "predicted_label": "activate_my_card",
+    "true_label": "activate_my_card"
+  },
+  {
+    "id": "train:09301",
+    "predicted_label": "activate_my_card",
+    "true_label": "activate_my_card"
+  },
+  {
+    "id": "train:09249",
+    "predicted_label": "activate_my_card",
+    "true_label": "activate_my_card"
+  },
+  {
+    "id": "train:09238",
+    "predicted_label": "activate_my_card",
+    "true_label": "activate_my_card"
+  },
+  {
+    "id": "train:09287",
+    "predicted_label": "activate_my_card",
+    "true_label": "activate_my_card"
+  },
+  {
+    "id": "train:09234",
+    "predicted_label": "activate_my_card",
+    "true_label": "activate_my_card"
+  },
+  {
+    "id": "train:09286",
+    "predicted_label": "activate_my_card",
+    "true_label": "activate_my_card"
+  },
+  {
+    "id": "train:09236",
+    "predicted_label": "activate_my_card",
+    "true_label": "activate_my_card"
+  },
+  {
+    "id": "train:09308",
+    "predicted_label": "activate_my_card",
+    "true_label": "activate_my_card"
+  },
+  {
+    "id": "train:09407",
+    "predicted_label": "cash_withdrawal_charge",
+    "true_label": "cash_withdrawal_charge"
+  },
+  {
+    "id": "train:09394",
+    "predicted_label": "declined_cash_withdrawal",
+    "true_label": "cash_withdrawal_charge"
+  },
+  {
+    "id": "train:09481",
+    "predicted_label": "card_payment_fee_charged",
+    "true_label": "cash_withdrawal_charge"
+  },
+  {
+    "id": "train:09505",
+    "predicted_label": "cash_withdrawal_charge",
+    "true_label": "cash_withdrawal_charge"
+  },
+  {
+    "id": "train:09473",
+    "predicted_label": "cash_withdrawal_charge",
+    "true_label": "cash_withdrawal_charge"
+  },
+  {
+    "id": "train:09378",
+    "predicted_label": "cash_withdrawal_charge",
+    "true_label": "cash_withdrawal_charge"
+  },
+  {
+    "id": "train:09448",
+    "predicted_label": "cash_withdrawal_charge",
+    "true_label": "cash_withdrawal_charge"
+  },
+  {
+    "id": "train:09493",
+    "predicted_label": "cash_withdrawal_charge",
+    "true_label": "cash_withdrawal_charge"
+  },
+  {
+    "id": "train:09492",
+    "predicted_label": "cash_withdrawal_charge",
+    "true_label": "cash_withdrawal_charge"
+  },
+  {
+    "id": "train:09397",
+    "predicted_label": "cash_withdrawal_charge",
+    "true_label": "cash_withdrawal_charge"
+  },
+  {
+    "id": "train:09622",
+    "predicted_label": "card_about_to_expire",
+    "true_label": "card_about_to_expire"
+  },
+  {
+    "id": "train:09615",
+    "predicted_label": "card_about_to_expire",
+    "true_label": "card_about_to_expire"
+  },
+  {
+    "id": "train:09575",
+    "predicted_label": "card_about_to_expire",
+    "true_label": "card_about_to_expire"
+  },
+  {
+    "id": "train:09637",
+    "predicted_label": "card_about_to_expire",
+    "true_label": "card_about_to_expire"
+  },
+  {
+    "id": "train:09557",
+    "predicted_label": "card_about_to_expire",
+    "true_label": "card_about_to_expire"
+  },
+  {
+    "id": "train:09539",
+    "predicted_label": "card_about_to_expire",
+    "true_label": "card_about_to_expire"
+  },
+  {
+    "id": "train:09591",
+    "predicted_label": "card_about_to_expire",
+    "true_label": "card_about_to_expire"
+  },
+  {
+    "id": "train:09522",
+    "predicted_label": "card_about_to_expire",
+    "true_label": "card_about_to_expire"
+  },
+  {
+    "id": "train:09636",
+    "predicted_label": "card_about_to_expire",
+    "true_label": "card_about_to_expire"
+  },
+  {
+    "id": "train:09605",
+    "predicted_label": "card_about_to_expire",
+    "true_label": "card_about_to_expire"
+  },
+  {
+    "id": "train:09644",
+    "predicted_label": "apple_pay_or_google_pay",
+    "true_label": "apple_pay_or_google_pay"
+  },
+  {
+    "id": "train:09708",
+    "predicted_label": "apple_pay_or_google_pay",
+    "true_label": "apple_pay_or_google_pay"
+  },
+  {
+    "id": "train:09661",
+    "predicted_label": "apple_pay_or_google_pay",
+    "true_label": "apple_pay_or_google_pay"
+  },
+  {
+    "id": "train:09701",
+    "predicted_label": "apple_pay_or_google_pay",
+    "true_label": "apple_pay_or_google_pay"
+  },
+  {
+    "id": "train:09702",
+    "predicted_label": "apple_pay_or_google_pay",
+    "true_label": "apple_pay_or_google_pay"
+  },
+  {
+    "id": "train:09688",
+    "predicted_label": "apple_pay_or_google_pay",
+    "true_label": "apple_pay_or_google_pay"
+  },
+  {
+    "id": "train:09750",
+    "predicted_label": "apple_pay_or_google_pay",
+    "true_label": "apple_pay_or_google_pay"
+  },
+  {
+    "id": "train:09675",
+    "predicted_label": "apple_pay_or_google_pay",
+    "true_label": "apple_pay_or_google_pay"
+  },
+  {
+    "id": "train:09765",
+    "predicted_label": "apple_pay_or_google_pay",
+    "true_label": "apple_pay_or_google_pay"
+  },
+  {
+    "id": "train:09724",
+    "predicted_label": "apple_pay_or_google_pay",
+    "true_label": "apple_pay_or_google_pay"
+  },
+  {
+    "id": "train:09826",
+    "predicted_label": "verify_my_identity",
+    "true_label": "verify_my_identity"
+  },
+  {
+    "id": "train:09777",
+    "predicted_label": "verify_my_identity",
+    "true_label": "verify_my_identity"
+  },
+  {
+    "id": "train:09852",
+    "predicted_label": "verify_my_identity",
+    "true_label": "verify_my_identity"
+  },
+  {
+    "id": "train:09783",
+    "predicted_label": "why_verify_identity",
+    "true_label": "verify_my_identity"
+  },
+  {
+    "id": "train:09830",
+    "predicted_label": "unable_to_verify_identity",
+    "true_label": "verify_my_identity"
+  },
+  {
+    "id": "train:09837",
+    "predicted_label": "verify_my_identity",
+    "true_label": "verify_my_identity"
+  },
+  {
+    "id": "train:09807",
+    "predicted_label": "verify_my_identity",
+    "true_label": "verify_my_identity"
+  },
+  {
+    "id": "train:09857",
+    "predicted_label": "unable_to_verify_identity",
+    "true_label": "verify_my_identity"
+  },
+  {
+    "id": "train:09798",
+    "predicted_label": "verify_my_identity",
+    "true_label": "verify_my_identity"
+  },
+  {
+    "id": "train:09784",
+    "predicted_label": "verify_my_identity",
+    "true_label": "verify_my_identity"
+  },
+  {
+    "id": "train:09899",
+    "predicted_label": "country_support",
+    "true_label": "country_support"
+  },
+  {
+    "id": "train:09901",
+    "predicted_label": "country_support",
+    "true_label": "country_support"
+  },
+  {
+    "id": "train:09956",
+    "predicted_label": "country_support",
+    "true_label": "country_support"
+  },
+  {
+    "id": "train:09874",
+    "predicted_label": "country_support",
+    "true_label": "country_support"
+  },
+  {
+    "id": "train:09995",
+    "predicted_label": "country_support",
+    "true_label": "country_support"
+  },
+  {
+    "id": "train:09910",
+    "predicted_label": "country_support",
+    "true_label": "country_support"
+  },
+  {
+    "id": "train:09890",
+    "predicted_label": "country_support",
+    "true_label": "country_support"
+  },
+  {
+    "id": "train:09905",
+    "predicted_label": "country_support",
+    "true_label": "country_support"
+  },
+  {
+    "id": "train:09927",
+    "predicted_label": "country_support",
+    "true_label": "country_support"
+  },
+  {
+    "id": "train:10000",
+    "predicted_label": "country_support",
+    "true_label": "country_support"
+  }
+]

@@ -48,6 +48,19 @@ MPLCONFIGDIR=.cache/matplotlib .venv/bin/python -m baseline.learning_curve --rec
 
 Use a fresh output directory. [The study README](experiments/exp002-learning-curve/README.md) contains full-matrix fitting commands, artifact verification, interpretation, and limitations. Large model/probability artifacts remain local; their hashes and compact records are versioned.
 
+## Frozen embedding smoke baseline
+
+EXP-003 adds frozen `sentence-transformers/all-MiniLM-L6-v2` embeddings plus the same logistic regression. Only the 5-shot, seed-11 validation smoke has run; see [the smoke comparison and evidence](experiments/exp003-minilm-v2-n5-s11/README.md). It reuses the exact EXP-002 v2 training/validation IDs and keeps the official test sealed. This is not a final research result.
+
+The encoder revision and dependency versions are pinned. Weights download to ignored `.cache/huggingface/hub`; cached features and classifiers stay in ignored `artifacts/`. The command requires the existing v2 manifest and versioned comparator and cannot prepare or select a new split. It trains only logistic regression and checks unchanged encoder state. The label budget is 385 fitting plus 770 validation labels, and the representation benefits from external pretraining.
+
+```sh
+# Verification of the existing local smoke; no new fitting or encoding:
+.venv/bin/python -m baseline.embeddings --verify --output artifacts/exp003-minilm-v2-n5-s11
+```
+
+The study README records the execution command and future reproduction instructions. No other embedding seed or regime has run. All original TF-IDF commands and results are preserved.
+
 ## Project documents
 
 - [Project context](docs/PROJECT_CONTEXT.md): thesis, dataset comparison, and evidence standards.
