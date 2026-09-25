@@ -83,6 +83,18 @@ MPLCONFIGDIR=.cache/matplotlib .venv/bin/python -m baseline.selective --records-
 
 Original probabilities/caches/models stay ignored. The study README records provenance checks and a separate independent checker; the official test remains sealed.
 
+## General-model and fallback evaluation preparation
+
+[EXP-006 preparation](experiments/exp006-general-model-preparation/README.md) freezes a 77-intent zero-shot GPT-6 Luna prompt and provides a resumable, capped API runner plus full-workload evaluation. **Paid inference has NOT RUN.** One future set of 770 responses will be reused across all 15 specialists; unresolved responses count as errors.
+
+No credentials or inference calls are needed for the dry run:
+
+```sh
+.venv/bin/python -m baseline.general dry-run --output artifacts/exp006-dry-run-new
+```
+
+The study README contains the exact model/settings, prompt, cost assumptions, synthetic-test evidence and future command. Paid execution requires explicit authorization, a numeric cap and the approved protocol hash; its example command is not permission. Keep keys and response caches out of Git. No total-system savings are claimed.
+
 ## Project documents
 
 - [Project context](docs/PROJECT_CONTEXT.md): thesis, dataset comparison, and evidence standards.

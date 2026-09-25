@@ -1,0 +1,42 @@
+{
+  "actual_api_spend_usd": "0",
+  "all_existing_validation_ids_and_truth_match": true,
+  "all_request_ids_and_cache_keys_unique": true,
+  "api_account_access_and_live_compatibility_verified": false,
+  "evidence_sha256": {
+    "dry_run.json": "6f87f2be2fb64a2c120004bbb62e064df4d6b4569b482b0cfb0d03c3fe10ebab",
+    "prompt.txt": "c439ee8f82e2a3708c3fa9c3badbd32f58f11379805401e226c877e90db63324",
+    "protocol.json": "d7f824ee761ca90d4dc3a848dd19e3928475c799d6713e03e336dc2a80c9ca68",
+    "schema.json": "aeb0ec029c6ea2ac32650af8443e2db739c22fd5947975858c2c1f06680b115a"
+  },
+  "exp004_and_exp005_primary_record_pairs_verified": 15,
+  "guarded_dry_run": {
+    "api_credential_access": false,
+    "http_calls": 0,
+    "socket_connection_calls": 0,
+    "transport_calls": 0
+  },
+  "independent_decimal_cost_recalculation_matches": true,
+  "maximum_attempts_including_retries": 1540,
+  "new_unique_labels": 0,
+  "no_live_responses_or_real_general_metrics_exist": true,
+  "official_intent_count": 77,
+  "official_test_file_access": false,
+  "paid_inference_calls": 0,
+  "pinned_training_bytes_categories_and_manifest_verified": true,
+  "planned_unique_requests": 770,
+  "previous_tracked_experiments_data_models_tests_dependencies_results_unchanged": true,
+  "prior_experiment_log_prefix_preserved": true,
+  "reused_validation_labels": 770,
+  "source_hashes_match_final_dry_run": true,
+  "specialist_fits_or_encoder_executions": 0,
+  "status": "preparation_verified_PAID_NOT_RUN",
+  "study_id": "EXP-006",
+  "test_suite": {
+    "command": ".venv/bin/python -m pytest -q",
+    "failed": 0,
+    "new_synthetic_tests": 144,
+    "passed": 243
+  },
+  "two_dry_runs_same_cost_and_configuration": true
+}

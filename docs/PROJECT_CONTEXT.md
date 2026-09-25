@@ -94,6 +94,12 @@ EXP-005 analyzes all 15 saved primary EXP-004 validation probability files witho
 
 The next proposed work is analysis of persistent rejections/confident errors in saved predictions, not another model or routing implementation. Future calibration still needs an independently evaluated, explicitly label-budgeted protocol. See the EXP-005 entry in `EXPERIMENTS.md` and `CURRENT_PLAN.md` for exact observations and boundaries.
 
+## General-model evaluation preparation (2026-09-25)
+
+EXP-006 prepares an OpenAI `gpt-6-luna` zero-shot baseline on exactly the existing 770 validation texts, with one response set shared by all 15 specialist configurations. The user authorized only runner implementation, synthetic tests, protocol freezing and cost estimation; **the paid experiment has NOT RUN** and actual API spend is zero. The fixed 77-intent prompt sends no ground truth, specialist output/confidence or demonstrations. Official documentation exposes an alias without a dated snapshot, limiting immutable model reproducibility.
+
+The future evaluation will measure general-model standalone and full-workload specialist/fallback metrics using EXP-005's fixed prefixes plus all fallback. Unresolved responses remain errors; fallback accuracy is measured on rejected requests, never assumed. Explicit spending approval and a numeric cap are required. Actual collection charges, hypothetical API-only routed charges and unmeasured specialist deployment cost remain separate; no total-system savings or production-latency claim follows. All prior results, splits, dependencies and the sealed test are preserved. See the EXP-006 preparation write-up and current plan for exact settings, estimates, failure controls and approval command.
+
 ## Scope boundaries and persistent records
 
 Begin with a local reproducible experiment. No frontend, serving stack, database, orchestration platform, GPU fine-tuning, or routing implementation is needed now.
