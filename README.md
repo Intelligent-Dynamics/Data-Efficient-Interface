@@ -71,6 +71,18 @@ MPLCONFIGDIR=.cache/matplotlib .venv/bin/python -m baseline.minilm_curve --recor
 
 Use a fresh output directory. Sample SD reflects five training seeds, not uncertainty over new validation samples. The additional 770 validation labels and pretrained representation are disclosed. Cached classifier-only timings are explicitly not end-to-end inference speed.
 
+## Confidence and selective-prediction diagnostic
+
+[EXP-005 evidence](experiments/exp005-selective-diagnostic/README.md) reports all 15 existing MiniLM runs at approximately 25/50/75/90/100% validation coverage, full risk/coverage curves, sample SDs and per-intent acceptance/error counts. Confidence is uncalibrated; the same 770 cases are reused. High aggregate accepted accuracy can hide entirely rejected intents. No model was fitted/executed and no production threshold or fallback claim is established.
+
+Reproduce tables and curves using compact records alone, with a fresh output path:
+
+```sh
+MPLCONFIGDIR=.cache/matplotlib .venv/bin/python -m baseline.selective --records-dir experiments/exp005-selective-diagnostic/runs --output artifacts/exp005-summary-new
+```
+
+Original probabilities/caches/models stay ignored. The study README records provenance checks and a separate independent checker; the official test remains sealed.
+
 ## Project documents
 
 - [Project context](docs/PROJECT_CONTEXT.md): thesis, dataset comparison, and evidence standards.

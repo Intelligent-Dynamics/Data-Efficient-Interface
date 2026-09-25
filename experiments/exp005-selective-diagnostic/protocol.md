@@ -6,9 +6,9 @@ Updated: 2026-09-25. Active protocol: **`banking77-val10-v2`**.
 
 Canonical checkout: `/Users/Andrew/Developer/data-efficient-inference`. The existing repository was moved here intact from `/Users/Andrew/Documents/ChatGPT/Data-Efficient Specialist Inference`; no new repository was initialized. Before protocol edits, `main` was clean at `717b7e6`, one commit ahead of `origin/main`. Origin remains `https://github.com/Intelligent-Dynamics/data-efficient-inference.git` in the Intelligent Dynamics organization.
 
-**EXP-005 complete:** all 15 existing EXP-004 primary probability files passed alignment/provenance checks. The uncalibrated confidence diagnostic, full risk/coverage curves, five landmarks per run and all-intent acceptance/error counts are reproducible. Independent arithmetic checks and byte-identical compact-record regeneration passed. **99 tests pass.** No model fitting/execution, probability regeneration, calibration or dataset/test access occurred.
+**M2b / EXP-004 complete:** all 15 frozen-MiniLM configurations and 15 independent local re-encoding/refits succeeded. Exact IDs and pinned settings were reused, embeddings and classifier parameters matched exactly, and all predictions/full metrics reproduced. No warnings or failures occurred. All 64 tests pass. Verified validation findings and the paired seed comparison are in `RESULTS.md` and `experiments/exp004-minilm-learning-curve/`.
 
-EXP-001–004 artifacts/results, all existing model implementations, model/dependency pins and split protocol remain unchanged. EXP-005 is exploratory on the reused 770-case holdout; it establishes no production threshold or combined-system claim. Evidence: `experiments/exp005-selective-diagnostic/README.md`.
+EXP-001/002/003 artifacts, TF-IDF/smoke implementations, model/dependency pins and the split protocol remain unchanged. The official test remains sealed. No fine-tuning, tuning, calibration, routing, paid API, cost model or frontend work occurred.
 
 ## Decisions and rationale
 
@@ -143,7 +143,7 @@ The primary cache reused 1,155 EXP-003 vectors and encoded 5,009 missing trainin
 
 Label budget: 385/770/1,540 training per run plus **770 validation labels**. Across the full matrix: 5,394 unique training + 770 validation = 6,164, all already present in EXP-002. Additional audit/stratification access to all 10,003 training-source labels and external encoder pretraining remain disclosed. Seed SD does not measure holdout/traffic uncertainty; reused validation and possible upstream benchmark exposure limit claims. The official test was checked only by byte hash.
 
-## Completed milestone — EXP-005 confidence/selective-prediction diagnostic
+## Active milestone — EXP-005 confidence/selective-prediction diagnostic
 
 The user's request supersedes the proposed paired 20-shot error analysis. Analyze all 15 existing EXP-004 primary runs (5/10/20 shots × seeds 11/22/33/44/55). No model or calibrator fitting, new embedding computation, dataset change or official-test access.
 
@@ -155,23 +155,13 @@ The user's request supersedes the proposed paired 20-shot error analysis. Analyz
 - Commit compact records of ordered IDs, uncalibrated scores, truth/predictions, source hashes and landmarks; these reconstruct the full curves exactly. Keep full class-probability arrays, classifiers and embedding caches in their existing ignored locations. No raw/private text is needed in the diagnostic evidence.
 - This reuses the same 770 validation labels (10 per class), adds no labels, and does not make five independent validation datasets. Preserve all prior artifacts and results. No calibration guarantee, production threshold, fallback-answer assumption, combined-system accuracy, inference-speed or dollar-savings claim.
 
-Executed command after tests:
+Planned command after tests:
 
 ```sh
 MPLCONFIGDIR=.cache/matplotlib .venv/bin/python -m baseline.selective --artifacts artifacts/exp004-minilm-learning-curve --output artifacts/exp005-selective-diagnostic
 ```
 
-All saved probabilities were intact; none were regenerated. Full-coverage scores match EXP-004 exactly for all 15 models. A separate checker agrees with every confidence rank, prefix error count and per-class landmark count; aggregate differences are at most 1.78e-15. All records, summaries, CSVs, full aggregate curves and the plot regenerate byte-for-byte. The 99-test suite covers the new arithmetic/alignment invariants and existing pipelines. No diagnostic failures or implementation blockers were found.
-
-At 50% coverage (385/770), accepted accuracy is **87.90 ± 0.91%, 93.25 ± 1.31%, 96.68 ± 0.34%** at 5/10/20 shots, versus full-coverage **74.13 ± 1.30%, 80.05 ± 0.93%, 83.77 ± 0.66%**. For 20 shots, 25.065/50/75.065/90/100% coverage incurs **1.4/12.8/42.8/82.8/125.0 mean errors** out of 193/385/578/693/770 accepted. All landmark means/sample SDs and each seed's integer counts are retained in the experiment log/evidence.
-
-Confidence identifies a more accurate subset on these validation cases, with material intent omissions: at 50%, 20-shot models reject every example of 5–8 intents, including `cash_withdrawal_not_recognised` and `topping_up_by_card` in every seed. At 75.065%, every intent is represented for 20 shots. Risks at individual prefixes need not be monotonic. No generalization, calibration, independent-holdout, threshold, LLM fallback or cost claim follows.
-
-## Exact next proposed experiment — persistent rejection and confident errors
-
-Not started or authorized for execution in EXP-005. Reuse the saved 15 MiniLM diagnostics and matching TF-IDF predictions to characterize all 77 intents and request-level recurrence of rejection/errors across seeds at the existing 25/50/75/90/100% prefixes. Preserve the same cases and label budget; do not adjust prefixes based on correctness, fit another model, introduce new labels, or access the official test. Report whether omissions persist across budgets/seeds and whether TF-IDF corrects the same errors; overlapping seeds remain repeated observations of the same requests.
-
-Before any later calibration or threshold-selection work, specify independent evaluation or suitable cross-fitting and all additional label access. No calibration protocol is selected yet. Stop after committing and pushing EXP-005; no fine-tuning, routing, paid APIs or frontend.
+Independently check calculations, regenerate outputs from compact records, update the experiment log/current plan, run tests, then commit/push this single milestone. No fine-tuning, routing, paid API or frontend work.
 
 ## Protocol history
 

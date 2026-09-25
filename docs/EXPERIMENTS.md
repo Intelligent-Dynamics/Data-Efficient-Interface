@@ -207,3 +207,42 @@ SD is **sample SD across five training seeds (`ddof=1`)**, not a confidence inte
 The unchanged test checksum is `d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d`; split-manifest SHA-256 is `f07ac5a03a3ae444db042dd064db920daa3f6462b1e92c9df36ad6118196030a`. Verified validation findings were appended to `RESULTS.md`; earlier sections/artifacts remain intact.
 
 Next recommended work: paired error analysis of the saved 20-shot predictions across all five seeds, identifying intent/request-level improvements and regressions against TF-IDF. This requires no new fitting or test access. No fine-tuning, routing, paid APIs or frontend was added.
+
+
+## 2026-09-25 — EXP-005 confidence/selective-prediction diagnostic
+
+**Status: completed exploratory analysis of all 15 existing EXP-004 primary runs.** The user's request supersedes the proposed paired 20-shot error analysis. No new model was trained or executed; no probabilities needed regeneration. Dataset, sample IDs, package/model pins and earlier artifacts are unchanged. The official test remained sealed, with no raw dataset or test-byte access in this milestone.
+
+Source provenance, sample IDs/labels, probability row/class order, normalization, maximum-probability/prediction agreement, full metrics and saved artifact/cache/source hashes all passed before ranking. Confidence is **UNCALIBRATED maximum class probability**. Rank descending, with exact ties broken by SHA-256 of UTF-8 sample ID then ID, without consulting labels. No exact confidence ties occurred. All 771 prefixes per run are reconstructible; zero accepted accuracy/risk is `null`. Full coverage exactly matches every corresponding EXP-004 accuracy.
+
+The requested 25/50/75/90/100% landmarks accept 193/385/578/693/770 cases using `ceil(target * 770)`. Below are mean ± sample SD across five seeds; coverage/accepted-count SD is zero. Zero-acceptance intent counts include mean ± SD and range.
+
+| Shots/class | Actual coverage (%) | Accepted/run | Accepted accuracy (%) | Selective risk (%) | Errors/run | Intents with zero accepted |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 5 | 25.065 | 193 | 92.12 ± 1.44 | 7.88 ± 1.44 | 15.20 ± 2.77 | 31.60 ± 2.30 (28–34) |
+| 5 | 50.000 | 385 | 87.90 ± 0.91 | 12.10 ± 0.91 | 46.60 ± 3.51 | 8.20 ± 2.39 (5–11) |
+| 5 | 75.065 | 578 | 82.49 ± 1.65 | 17.51 ± 1.65 | 101.20 ± 9.55 | 0.80 ± 0.84 (0–2) |
+| 5 | 90.000 | 693 | 78.67 ± 1.25 | 21.33 ± 1.25 | 147.80 ± 8.64 | 0.00 ± 0.00 (0–0) |
+| 5 | 100.000 | 770 | 74.13 ± 1.30 | 25.87 ± 1.30 | 199.20 ± 10.03 | 0.00 ± 0.00 (0–0) |
+| 10 | 25.065 | 193 | 97.72 ± 0.70 | 2.28 ± 0.70 | 4.40 ± 1.34 | 29.80 ± 2.05 (28–32) |
+| 10 | 50.000 | 385 | 93.25 ± 1.31 | 6.75 ± 1.31 | 26.00 ± 5.05 | 8.00 ± 1.58 (6–10) |
+| 10 | 75.065 | 578 | 88.72 ± 1.00 | 11.28 ± 1.00 | 65.20 ± 5.76 | 0.80 ± 1.30 (0–3) |
+| 10 | 90.000 | 693 | 84.36 ± 0.88 | 15.64 ± 0.88 | 108.40 ± 6.11 | 0.00 ± 0.00 (0–0) |
+| 10 | 100.000 | 770 | 80.05 ± 0.93 | 19.95 ± 0.93 | 153.60 ± 7.13 | 0.00 ± 0.00 (0–0) |
+| 20 | 25.065 | 193 | 99.27 ± 0.28 | 0.73 ± 0.28 | 1.40 ± 0.55 | 27.00 ± 1.58 (25–29) |
+| 20 | 50.000 | 385 | 96.68 ± 0.34 | 3.32 ± 0.34 | 12.80 ± 1.30 | 6.00 ± 1.22 (5–8) |
+| 20 | 75.065 | 578 | 92.60 ± 0.55 | 7.40 ± 0.55 | 42.80 ± 3.19 | 0.00 ± 0.00 (0–0) |
+| 20 | 90.000 | 693 | 88.05 ± 0.30 | 11.95 ± 0.30 | 82.80 ± 2.05 | 0.00 ± 0.00 (0–0) |
+| 20 | 100.000 | 770 | 83.77 ± 0.66 | 16.23 ± 0.66 | 125.00 ± 5.10 | 0.00 ± 0.00 (0–0) |
+
+[Complete evidence, curve, interpretation and reproduction commands](../experiments/exp005-selective-diagnostic/README.md) preserve all 15 individual diagnostics, 75 landmark rows, 5,775 per-intent acceptance/error rows, and every seed's values. High confidence does identify more reliable subsets on this reused validation set. Every non-full landmark is more accurate than its own model's full result, but risk is not strictly monotonic at every prefix.
+
+Class composition is a material limitation: at 50%, 20-shot runs omit all examples of 5–8 intents, and at 25% omit 25–29. `cash_withdrawal_not_recognised` is entirely rejected at 50% in all 15 runs; `topping_up_by_card` is entirely rejected in all five 20-shot runs. Every intent is represented by 75% coverage for 20 shots, while some 5/10-shot runs still omit up to 2/3. Preserve these omissions alongside the favorable aggregate accuracy.
+
+Implementation: `baseline/selective.py` reads audited saved predictions/probabilities and supports compact-record regeneration. A separate standard-library checker independently reproduces rankings, every prefix's error counts, landmarks and per-class counts from the original probabilities; aggregate maximum absolute difference is 1.78e-15. All individual records, summary, CSV tables, complete aggregate curves and PNG regenerate byte-for-byte. Plot visually inspected. **99 tests passed**, including new ordering/tie/count/risk, zero-null, alignment, provenance-data consistency and compact-record corruption cases. No diagnostic execution failed or was discarded.
+
+Analysis began `2026-09-25T18:47:05.905393+00:00` and completed `2026-09-25T18:47:08.388105+00:00`, from base commit `e1b428c606567b19145ef058e0f96f77f75fb060` plus hashed analysis/tests/pre-run protocol. Exact commands, source/artifact hashes and verification are retained in the evidence directory. EXP-001–004 and `RESULTS.md` remain preserved; the diagnostic is recorded as exploratory evidence here, not promoted to a production claim.
+
+The same **770 additional validation labels** are reused; zero new labels are added. Five seeds do not create independent validation datasets or confidence intervals. The ten examples per intent and repeated holdout use limit high-confidence/rare-error conclusions. No calibration model or production threshold was fitted or selected. Rejected requests have no assumed LLM outcome. No combined-system accuracy, speed, dollar savings, fine-tuning, routing, paid APIs or frontend was introduced.
+
+Next proposed experiment, not executed: a saved-prediction diagnostic of persistent intent rejection and confident errors. Use the same 15 records and predefined EXP-005 prefixes to report all-intent acceptance/error tables and per-request recurrence across seeds; compare the same requests against the existing TF-IDF predictions. No new labels, fitting, threshold optimization or test access. Any later calibration experiment requires a separately specified label-budgeted fitting/evaluation protocol first. Stop after this milestone's commit/push.

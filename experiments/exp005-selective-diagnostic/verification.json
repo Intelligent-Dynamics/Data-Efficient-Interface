@@ -1,0 +1,152 @@
+{
+  "all_15_compact_run_records_regenerated_exactly": true,
+  "analysis_artifact_and_source_hashes_verified": true,
+  "byte_identical_regeneration": {
+    "full_curves.json": "9032204adc549028b467ff776b4fe0f03680f6411a81d272476d2bdfd5adda08",
+    "per_class_acceptance.csv": "81eb74686be316d55ec671911cb665108bc80c4b17329f59acc0e248b3e4d4bc",
+    "per_run.csv": "581d7ce42919785b739380f842ac853d0bc4e8157449392ecde3e17228eb933e",
+    "risk_coverage.png": "dafe31298a412bbae07c2c1c9e853ded1cd912bfaecee84417412cc2ff720f2f",
+    "summary.json": "d6b997cca8ac2d3d69b65ea370eb63ba2cf15d18e7e9d054ba36671f53d7f312"
+  },
+  "calibration_fits": 0,
+  "checks": [
+    {
+      "all_771_prefix_points_verified": true,
+      "full_coverage_matches_exp004": true,
+      "landmarks_and_per_class_counts_identical": true,
+      "ranked_ids_scores_error_flags_identical": true,
+      "run_id": "exp004-minilm-v2-n5-s11",
+      "zero_acceptance_accuracy_and_risk_are_null": true
+    },
+    {
+      "all_771_prefix_points_verified": true,
+      "full_coverage_matches_exp004": true,
+      "landmarks_and_per_class_counts_identical": true,
+      "ranked_ids_scores_error_flags_identical": true,
+      "run_id": "exp004-minilm-v2-n5-s22",
+      "zero_acceptance_accuracy_and_risk_are_null": true
+    },
+    {
+      "all_771_prefix_points_verified": true,
+      "full_coverage_matches_exp004": true,
+      "landmarks_and_per_class_counts_identical": true,
+      "ranked_ids_scores_error_flags_identical": true,
+      "run_id": "exp004-minilm-v2-n5-s33",
+      "zero_acceptance_accuracy_and_risk_are_null": true
+    },
+    {
+      "all_771_prefix_points_verified": true,
+      "full_coverage_matches_exp004": true,
+      "landmarks_and_per_class_counts_identical": true,
+      "ranked_ids_scores_error_flags_identical": true,
+      "run_id": "exp004-minilm-v2-n5-s44",
+      "zero_acceptance_accuracy_and_risk_are_null": true
+    },
+    {
+      "all_771_prefix_points_verified": true,
+      "full_coverage_matches_exp004": true,
+      "landmarks_and_per_class_counts_identical": true,
+      "ranked_ids_scores_error_flags_identical": true,
+      "run_id": "exp004-minilm-v2-n5-s55",
+      "zero_acceptance_accuracy_and_risk_are_null": true
+    },
+    {
+      "all_771_prefix_points_verified": true,
+      "full_coverage_matches_exp004": true,
+      "landmarks_and_per_class_counts_identical": true,
+      "ranked_ids_scores_error_flags_identical": true,
+      "run_id": "exp004-minilm-v2-n10-s11",
+      "zero_acceptance_accuracy_and_risk_are_null": true
+    },
+    {
+      "all_771_prefix_points_verified": true,
+      "full_coverage_matches_exp004": true,
+      "landmarks_and_per_class_counts_identical": true,
+      "ranked_ids_scores_error_flags_identical": true,
+      "run_id": "exp004-minilm-v2-n10-s22",
+      "zero_acceptance_accuracy_and_risk_are_null": true
+    },
+    {
+      "all_771_prefix_points_verified": true,
+      "full_coverage_matches_exp004": true,
+      "landmarks_and_per_class_counts_identical": true,
+      "ranked_ids_scores_error_flags_identical": true,
+      "run_id": "exp004-minilm-v2-n10-s33",
+      "zero_acceptance_accuracy_and_risk_are_null": true
+    },
+    {
+      "all_771_prefix_points_verified": true,
+      "full_coverage_matches_exp004": true,
+      "landmarks_and_per_class_counts_identical": true,
+      "ranked_ids_scores_error_flags_identical": true,
+      "run_id": "exp004-minilm-v2-n10-s44",
+      "zero_acceptance_accuracy_and_risk_are_null": true
+    },
+    {
+      "all_771_prefix_points_verified": true,
+      "full_coverage_matches_exp004": true,
+      "landmarks_and_per_class_counts_identical": true,
+      "ranked_ids_scores_error_flags_identical": true,
+      "run_id": "exp004-minilm-v2-n10-s55",
+      "zero_acceptance_accuracy_and_risk_are_null": true
+    },
+    {
+      "all_771_prefix_points_verified": true,
+      "full_coverage_matches_exp004": true,
+      "landmarks_and_per_class_counts_identical": true,
+      "ranked_ids_scores_error_flags_identical": true,
+      "run_id": "exp004-minilm-v2-n20-s11",
+      "zero_acceptance_accuracy_and_risk_are_null": true
+    },
+    {
+      "all_771_prefix_points_verified": true,
+      "full_coverage_matches_exp004": true,
+      "landmarks_and_per_class_counts_identical": true,
+      "ranked_ids_scores_error_flags_identical": true,
+      "run_id": "exp004-minilm-v2-n20-s22",
+      "zero_acceptance_accuracy_and_risk_are_null": true
+    },
+    {
+      "all_771_prefix_points_verified": true,
+      "full_coverage_matches_exp004": true,
+      "landmarks_and_per_class_counts_identical": true,
+      "ranked_ids_scores_error_flags_identical": true,
+      "run_id": "exp004-minilm-v2-n20-s33",
+      "zero_acceptance_accuracy_and_risk_are_null": true
+    },
+    {
+      "all_771_prefix_points_verified": true,
+      "full_coverage_matches_exp004": true,
+      "landmarks_and_per_class_counts_identical": true,
+      "ranked_ids_scores_error_flags_identical": true,
+      "run_id": "exp004-minilm-v2-n20-s44",
+      "zero_acceptance_accuracy_and_risk_are_null": true
+    },
+    {
+      "all_771_prefix_points_verified": true,
+      "full_coverage_matches_exp004": true,
+      "landmarks_and_per_class_counts_identical": true,
+      "ranked_ids_scores_error_flags_identical": true,
+      "run_id": "exp004-minilm-v2-n20-s55",
+      "zero_acceptance_accuracy_and_risk_are_null": true
+    }
+  ],
+  "encoder_executions": 0,
+  "independent_aggregate_mean_sd_max_abs_difference": 1.7763568394002505e-15,
+  "independent_checker_sha256": "60d919d11e6e2c112a6927382a114fe188edf1608da0d74c0222ea23de7c418b",
+  "independent_full_report_sha256": "423e0afa8762b5f6fe9eb4f0a4c8a5df4f16769d132c7ce9997f453a5cb88935",
+  "independent_source_audit_passed": true,
+  "model_fits": 0,
+  "prior_experiment_log_prefix_preserved": true,
+  "prior_tracked_data_models_tests_dependencies_experiments_and_results_unchanged": true,
+  "probabilities_regenerated": false,
+  "raw_dataset_or_official_test_access": false,
+  "scope": "Exploratory analysis of the same 770 validation requests; five seeds are not independent datasets",
+  "status": "passed",
+  "study_id": "EXP-005",
+  "test_suite": {
+    "command": ".venv/bin/python -m pytest -q",
+    "failed": 0,
+    "passed": 99
+  }
+}

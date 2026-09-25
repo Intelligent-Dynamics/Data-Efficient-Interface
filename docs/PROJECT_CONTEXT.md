@@ -88,6 +88,12 @@ Use request-level token usage because fallback requests may be longer or more ex
 
 **Actual spend** is what the experiment consumed or was billed, including baseline calls, development calls, failed calls, and retries. **Benchmarked inference cost** is the cost of a defined policy on the fixed workload; replaying cached stronger-model outputs estimates a counterfactual and does not create actual cash savings. **Projected deployment savings** additionally assume volume and traffic mix and must be labeled projections. Training, labeling, and development costs are reported separately from per-request inference costs and included in any later break-even analysis.
 
+## Confidence diagnostic (2026-09-25)
+
+EXP-005 analyzes all 15 saved primary EXP-004 validation probability files without fitting or executing a model. Maximum class probability is explicitly uncalibrated. A fixed label-blind ranking and tie rule yields reproducible risk/coverage curves and per-intent acceptance counts at approximately 25/50/75/90/100% coverage. The higher-confidence subsets are more accurate on these reused cases, but can reject entire intents; this is exploratory development evidence, not a calibrated confidence or production-threshold claim. The same 770 validation labels are reused and no new labels are added. All earlier artifacts/results and the sealed test remain unchanged.
+
+The next proposed work is analysis of persistent rejections/confident errors in saved predictions, not another model or routing implementation. Future calibration still needs an independently evaluated, explicitly label-budgeted protocol. See the EXP-005 entry in `EXPERIMENTS.md` and `CURRENT_PLAN.md` for exact observations and boundaries.
+
 ## Scope boundaries and persistent records
 
 Begin with a local reproducible experiment. No frontend, serving stack, database, orchestration platform, GPU fine-tuning, or routing implementation is needed now.
