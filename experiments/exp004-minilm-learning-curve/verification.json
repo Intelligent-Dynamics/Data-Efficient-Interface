@@ -1,0 +1,108 @@
+{
+  "all_artifact_source_cache_hashes_verified": true,
+  "all_existing_sample_ids_verified": true,
+  "checks": [
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp004-minilm-v2-n5-s11-reproduction",
+      "run_id": "exp004-minilm-v2-n5-s11"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp004-minilm-v2-n5-s22-reproduction",
+      "run_id": "exp004-minilm-v2-n5-s22"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp004-minilm-v2-n5-s33-reproduction",
+      "run_id": "exp004-minilm-v2-n5-s33"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp004-minilm-v2-n5-s44-reproduction",
+      "run_id": "exp004-minilm-v2-n5-s44"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp004-minilm-v2-n5-s55-reproduction",
+      "run_id": "exp004-minilm-v2-n5-s55"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp004-minilm-v2-n10-s11-reproduction",
+      "run_id": "exp004-minilm-v2-n10-s11"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp004-minilm-v2-n10-s22-reproduction",
+      "run_id": "exp004-minilm-v2-n10-s22"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp004-minilm-v2-n10-s33-reproduction",
+      "run_id": "exp004-minilm-v2-n10-s33"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp004-minilm-v2-n10-s44-reproduction",
+      "run_id": "exp004-minilm-v2-n10-s44"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp004-minilm-v2-n10-s55-reproduction",
+      "run_id": "exp004-minilm-v2-n10-s55"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp004-minilm-v2-n20-s11-reproduction",
+      "run_id": "exp004-minilm-v2-n20-s11"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp004-minilm-v2-n20-s22-reproduction",
+      "run_id": "exp004-minilm-v2-n20-s22"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp004-minilm-v2-n20-s33-reproduction",
+      "run_id": "exp004-minilm-v2-n20-s33"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp004-minilm-v2-n20-s44-reproduction",
+      "run_id": "exp004-minilm-v2-n20-s44"
+    },
+    {
+      "classifier_parameter_max_abs_difference": 0.0,
+      "identical_samples_predictions_metrics": true,
+      "reproduction_id": "exp004-minilm-v2-n20-s55-reproduction",
+      "run_id": "exp004-minilm-v2-n20-s55"
+    }
+  ],
+  "embedding_comparison_atol": 1e-06,
+  "embedding_comparison_rtol": 0,
+  "embedding_max_abs_difference": 0.0,
+  "exp003_identical_predictions_and_metrics": true,
+  "independent_refits": 15,
+  "independently_reencoded_rows": 6164,
+  "no_test_rows_parsed": true,
+  "official_test_sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+  "primary_reused_smoke_rows": 1155,
+  "primary_runs": 15,
+  "scope": "Independent local re-encoding and refits; not external or cross-platform replication",
+  "split_manifest_sha256": "f07ac5a03a3ae444db042dd064db920daa3f6462b1e92c9df36ad6118196030a"
+}

@@ -8,9 +8,7 @@ Can a small specialist model trained with limited labeled data handle a signific
 
 ## Current status
 
-The complete 5/10/20-shot classical validation baseline is measured across five seeds and independently reproduced locally. See [verified validation results](docs/RESULTS.md), [per-run evidence and learning curves](experiments/exp002-learning-curve/README.md), and [the experiment log](docs/EXPERIMENTS.md). Official-test performance and cost savings have not been measured.
-
-The pipeline uses BANKING77, word unigram/bigram TF-IDF, and L2 logistic regression, with a most-frequent-class sanity comparator. The official test set is excluded from model development. Routing, calibration, general-purpose models, and a frontend are deferred.
+The classical TF-IDF and frozen MiniLM 5/10/20-shot validation curves are measured across five seeds and independently reproduced locally. See [verified validation results](docs/RESULTS.md), [the paired MiniLM/TF-IDF study](experiments/exp004-minilm-learning-curve/README.md), and [the experiment log](docs/EXPERIMENTS.md). Every configuration uses the same existing BANKING77 v2 sample IDs; only logistic regression is trained for the frozen embedding model. Official-test performance, end-to-end embedding inference speed, and cost savings remain unmeasured. Fine-tuning, routing, calibration, paid inference and frontend work are deferred.
 
 ## Run locally
 
@@ -50,7 +48,7 @@ Use a fresh output directory. [The study README](experiments/exp002-learning-cur
 
 ## Frozen embedding smoke baseline
 
-EXP-003 adds frozen `sentence-transformers/all-MiniLM-L6-v2` embeddings plus the same logistic regression. Only the 5-shot, seed-11 validation smoke has run; see [the smoke comparison and evidence](experiments/exp003-minilm-v2-n5-s11/README.md). It reuses the exact EXP-002 v2 training/validation IDs and keeps the official test sealed. This is not a final research result.
+EXP-003 adds frozen `sentence-transformers/all-MiniLM-L6-v2` embeddings plus the same logistic regression. The original 5-shot, seed-11 smoke is preserved; see [the smoke comparison and evidence](experiments/exp003-minilm-v2-n5-s11/README.md). It reuses the exact EXP-002 v2 training/validation IDs and keeps the official test sealed. This is not a final research result.
 
 The encoder revision and dependency versions are pinned. Weights download to ignored `.cache/huggingface/hub`; cached features and classifiers stay in ignored `artifacts/`. The command requires the existing v2 manifest and versioned comparator and cannot prepare or select a new split. It trains only logistic regression and checks unchanged encoder state. The label budget is 385 fitting plus 770 validation labels, and the representation benefits from external pretraining.
 
@@ -59,7 +57,19 @@ The encoder revision and dependency versions are pinned. Weights download to ign
 .venv/bin/python -m baseline.embeddings --verify --output artifacts/exp003-minilm-v2-n5-s11
 ```
 
-The study README records the execution command and future reproduction instructions. No other embedding seed or regime has run. All original TF-IDF commands and results are preserved.
+The study README records the execution command and future reproduction instructions. EXP-004 subsequently completed all 15 configurations and independent refits. All original TF-IDF commands, results and smoke artifacts are preserved.
+
+## Full frozen MiniLM comparison
+
+[EXP-004 evidence](experiments/exp004-minilm-learning-curve/README.md) includes all 15 primary runs, 15 independently re-encoded/refitted reproductions, exact paired seed gains, cache provenance and the comparison plot. Encoder revision/settings and LR hyperparameters are unchanged from EXP-003; no tuning or test evaluation occurred. See the study README for full execution and cache-reuse commands.
+
+Recompute summary/CSV/plot from versioned records without fitting or encoding:
+
+```sh
+MPLCONFIGDIR=.cache/matplotlib .venv/bin/python -m baseline.minilm_curve --records-dir experiments/exp004-minilm-learning-curve/runs --output artifacts/exp004-summary-new
+```
+
+Use a fresh output directory. Sample SD reflects five training seeds, not uncertainty over new validation samples. The additional 770 validation labels and pretrained representation are disclosed. Cached classifier-only timings are explicitly not end-to-end inference speed.
 
 ## Project documents
 

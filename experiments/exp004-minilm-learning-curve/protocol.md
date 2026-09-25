@@ -6,9 +6,9 @@ Updated: 2026-09-25. Active protocol: **`banking77-val10-v2`**.
 
 Canonical checkout: `/Users/Andrew/Developer/data-efficient-inference`. The existing repository was moved here intact from `/Users/Andrew/Documents/ChatGPT/Data-Efficient Specialist Inference`; no new repository was initialized. Before protocol edits, `main` was clean at `717b7e6`, one commit ahead of `origin/main`. Origin remains `https://github.com/Intelligent-Dynamics/data-efficient-inference.git` in the Intelligent Dynamics organization.
 
-**M2b / EXP-004 complete:** all 15 frozen-MiniLM configurations and 15 independent local re-encoding/refits succeeded. Exact IDs and pinned settings were reused, embeddings and classifier parameters matched exactly, and all predictions/full metrics reproduced. No warnings or failures occurred. All 64 tests pass. Verified validation findings and the paired seed comparison are in `RESULTS.md` and `experiments/exp004-minilm-learning-curve/`.
+**M2a / EXP-003 complete:** frozen MiniLM + unchanged logistic regression is implemented; exactly one 5-shot seed-11 v2 validation smoke run succeeded. The 47-test suite passes, artifacts and prediction replay are verified, and the official test stayed sealed. This single-seed comparison is in `EXPERIMENTS.md` and `experiments/exp003-minilm-v2-n5-s11/`; it is not promoted to `RESULTS.md`.
 
-EXP-001/002/003 artifacts, TF-IDF/smoke implementations, model/dependency pins and the split protocol remain unchanged. The official test remains sealed. No fine-tuning, tuning, calibration, routing, paid API, cost model or frontend work occurred.
+**M1b / EXP-002 remains complete:** the prior 15 classical runs and 15 independent local refits, code, and verified results are preserved unchanged. No 25-shot extension or additional embedding run occurred.
 
 ## Decisions and rationale
 
@@ -105,7 +105,7 @@ Outcome: 75.84% accuracy and 74.46% macro-F1 versus 52.21% and 51.13% for the ma
 
 Implemented `baseline/embeddings.py` with a fixed 5-shot seed-11 command and `--verify` replay mode. Downloaded weights and row-indexed embeddings are ignored. Tests and compact JSON/protocol evidence are versioned; the TF-IDF pipeline, split protocol, existing experiments and `RESULTS.md` remain unchanged.
 
-## Completed milestone — EXP-004 full frozen-MiniLM learning curve
+## Active milestone — EXP-004 full frozen-MiniLM learning curve
 
 The user's 2026-09-25 request supersedes the single-reproduction next step. Run all **5/10/20 shots × seeds 11/22/33/44/55**, then independently reproduce every score. No hyperparameter tuning or official-test evaluation. Keep all EXP-001/002/003 artifacts unchanged.
 
@@ -119,35 +119,13 @@ The user's 2026-09-25 request supersedes the single-reproduction next step. Run 
 - Per-run labels: 385/770/1,540 training **plus 770 validation**. Reuse adds no new unique task labels beyond EXP-002; record the union rather than summing overlapping runs. Disclose all 10,003 source-training labels mechanically read for auditing/stratification and the encoder's external pretraining. Test/calibration/prompt labels remain zero.
 - Test cache invalidation/alignment, exact sample reuse, train-only LR fitting, frozen checks, failure recording, full-grid aggregation and sample SD, paired gains and rejection of corrupted records. Verify all artifacts and recompute aggregates from compact records before promoting findings to `RESULTS.md`.
 
-Executed study command after tests:
+Planned command after tests:
 
 ```sh
 HF_HUB_DISABLE_TELEMETRY=1 TOKENIZERS_PARALLELISM=false MPLCONFIGDIR=.cache/matplotlib .venv/bin/python -m baseline.minilm_curve --output artifacts/exp004-minilm-learning-curve --reuse-smoke artifacts/exp003-minilm-v2-n5-s11
 ```
 
 Commit/push the completed milestone after verification and documentation. No fine-tuning, routing, paid APIs, frontend, or cost claims.
-
-## Current findings and verification
-
-| Shots/class | MiniLM accuracy (%) | MiniLM macro-F1 (%) | TF-IDF accuracy (%) | TF-IDF macro-F1 (%) |
-| --- | ---: | ---: | ---: | ---: |
-| 5 | 74.13 ± 1.30 | 72.60 ± 1.34 | 51.84 ± 1.69 | 50.41 ± 1.58 |
-| 10 | 80.05 ± 0.93 | 79.19 ± 1.03 | 62.49 ± 1.60 | 61.58 ± 1.81 |
-| 20 | 83.77 ± 0.66 | 83.35 ± 0.68 | 69.95 ± 0.61 | 69.19 ± 0.63 |
-
-Mean paired macro-F1 advantages over TF-IDF: +22.19 / +17.60 / +14.16 points at 5/10/20 shots; all 15 individual paired improvements were positive. MiniLM's F1 seed SD decreases from 1.34 to 1.03 to 0.68 points. Mean 5→10 and 10→20 F1 gains are 6.58 and 4.16 points; the curve is flattening but no plateau is established. All exact seed values, ranges, paired gains and sample SDs are recorded, not only the best seed.
-
-Implemented `baseline/minilm_curve.py`: reads existing reference IDs, verifies/imports compatible EXP-003 features, encodes only the required union, independently reconstructs a second cache, fits/verifies 30 separate classifiers, and aggregates/plots only 15 primary runs. No earlier pipeline or dependency change was needed.
-
-The primary cache reused 1,155 EXP-003 vectors and encoded 5,009 missing training rows; the independent cache recomputed all 6,164 rows. Both caches retained the exact frozen encoder state. Maximum embedding and classifier-parameter differences were 0.0; all scores/predictions matched, including EXP-003's seed-11 smoke. Cache hits and per-run cached classifier timings are explicitly distinct from encoding and unmeasured end-to-end inference. Both caches and all run sources/artifacts were audited; summary/CSV/plot regenerated byte-for-byte. Test suite: **64 passed**. No failures, warnings or blockers were discovered.
-
-Label budget: 385/770/1,540 training per run plus **770 validation labels**. Across the full matrix: 5,394 unique training + 770 validation = 6,164, all already present in EXP-002. Additional audit/stratification access to all 10,003 training-source labels and external encoder pretraining remain disclosed. Seed SD does not measure holdout/traffic uncertainty; reused validation and possible upstream benchmark exposure limit claims. The official test was checked only by byte hash.
-
-## Exact next recommended milestone — not started
-
-Perform paired **20-shot validation error analysis using saved predictions**, for seeds 11/22/33/44/55, comparing frozen MiniLM against each corresponding TF-IDF run. Report per-class mean recall/F1 changes, consistent improvements/regressions, common directed confusions, and distinct validation requests behind repeated error counts. Count unique requests separately from repeated prediction events. Preserve every seed and the current artifacts; no new model fit, hyperparameter tuning, test access or inference API is needed.
-
-Use this analysis to decide the next research question before adding model complexity or designing calibration. Any later calibration/threshold procedure needs separately budgeted development/evaluation evidence; this repeatedly used 770-case holdout cannot provide unbiased calibration evaluation. No next-stage work is included in the completed EXP-004 request.
 
 ## Protocol history
 
