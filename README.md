@@ -8,7 +8,7 @@ Can a small specialist model trained with limited labeled data handle a signific
 
 ## Current status
 
-The classical TF-IDF and frozen MiniLM 5/10/20-shot validation curves are measured across five seeds and independently reproduced locally. See [verified validation results](docs/RESULTS.md), [the paired MiniLM/TF-IDF study](experiments/exp004-minilm-learning-curve/README.md), and [the experiment log](docs/EXPERIMENTS.md). Every configuration uses the same existing BANKING77 v2 sample IDs; only logistic regression is trained for the frozen embedding model. Official-test performance, end-to-end embedding inference speed, and cost savings remain unmeasured. Fine-tuning, routing, calibration, paid inference and frontend work are deferred.
+The classical TF-IDF and frozen MiniLM 5/10/20-shot validation curves are measured across five seeds and independently reproduced locally. See [verified validation results](docs/RESULTS.md), [the paired MiniLM/TF-IDF study](experiments/exp004-minilm-learning-curve/README.md), and [the experiment log](docs/EXPERIMENTS.md). Every configuration uses the same existing BANKING77 v2 sample IDs; only logistic regression is trained for the frozen embedding model. Official-test performance, end-to-end embedding inference speed, and cost savings remain unmeasured. Fine-tuning, serving/routing infrastructure, calibration and frontend work are deferred. EXP-006R recovery is prepared but has not run; it needs new spending authorization.
 
 ## Run locally
 
@@ -83,17 +83,17 @@ MPLCONFIGDIR=.cache/matplotlib .venv/bin/python -m baseline.selective --records-
 
 Original probabilities/caches/models stay ignored. The study README records provenance checks and a separate independent checker; the official test remains sealed.
 
-## General-model and fallback evaluation preparation
+## General-model evaluation and separate recovery preparation
 
-[EXP-006 preparation](experiments/exp006-general-model-preparation/README.md) freezes a 77-intent zero-shot GPT-6 Luna prompt and provides a resumable, capped API runner plus full-workload evaluation. **Paid inference has NOT RUN.** One future set of 770 responses will be reused across all 15 specialists; unresolved responses count as errors.
+The saved EXP-006 run finished with **718 successful predictions and 52 unresolved HTTP-429 requests**. Its original evidence and two-attempt limit are preserved. [EXP-006R preparation](experiments/exp006r-429-recovery-preparation/README.md) implements a separately authorized recovery for only those 52 IDs, plus an offline merge/evaluation command. **Paid recovery has NOT RUN.** The original errors report exhausted credits; resolve quota before a later live run.
 
-No credentials or inference calls are needed for the dry run:
+No network, credentials or raw dataset access is needed for the recovery dry run:
 
 ```sh
-.venv/bin/python -m baseline.general dry-run --output artifacts/exp006-dry-run-new
+.venv/bin/python -m baseline.recovery dry-run --output artifacts/exp006r-dry-run-new
 ```
 
-The study README contains the exact model/settings, prompt, cost assumptions, synthetic-test evidence and future command. Paid execution requires explicit authorization, a numeric cap and the approved protocol hash; its example command is not permission. Keep keys and response caches out of Git. No total-system savings are claimed.
+The recovery write-up contains its protocol hash, cost estimate, retry policy, tests and exact future live/merge commands. New explicit authorization and a numeric cap are required; neither the earlier EXP-006 approval nor a documented command is permission. Keep keys and response caches out of Git. Preserve the [original EXP-006 protocol](experiments/exp006-general-model-preparation/README.md). No recovered quality result or total-system savings is claimed.
 
 ## Project documents
 

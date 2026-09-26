@@ -1,0 +1,84 @@
+{
+  "actual_preparation_spend_usd": "0",
+  "api_calls": 0,
+  "changed_files": [
+    "AGENTS.md",
+    "README.md",
+    "baseline/recovery.py",
+    "baseline/recovery_merge.py",
+    "baseline/recovery_source.py",
+    "docs/CURRENT_PLAN.md",
+    "docs/EXPERIMENTS.md",
+    "docs/PROJECT_CONTEXT.md",
+    "docs/RESULTS.md",
+    "experiments/exp006r-429-recovery-preparation/README.md",
+    "experiments/exp006r-429-recovery-preparation/dry_run.json",
+    "experiments/exp006r-429-recovery-preparation/protocol.json",
+    "experiments/exp006r-429-recovery-preparation/source_audit.json",
+    "experiments/exp006r-429-recovery-preparation/source_inventory.json",
+    "experiments/exp006r-429-recovery-preparation/verification.json",
+    "tests/test_recovery_merge.py",
+    "tests/test_recovery_runner.py",
+    "tests/test_recovery_source.py"
+  ],
+  "code": {
+    "files_sha256": {
+      "baseline/general.py": "2193ac7ce9433a3d551e2f5b987d0fc7173c6c095a504c04ef96ef97adfff434",
+      "baseline/general_metrics.py": "20015576459f971d9644f6f8e59fe1725f5d095e9ca6ef6f83953e8cdfdc396c",
+      "baseline/general_protocol.py": "9f3b1422e17988b71899326b9dd1a6312603b66dbaa5c26e2ddfd0073a9884a2",
+      "baseline/recovery.py": "36d41fb99eb73121eeb8fa1407034f25ac9718e4f174a72f03c633307c6ca576",
+      "baseline/recovery_merge.py": "6976c9c848144f929a13862fc122f546588e0d546705f0ea73e74b6f5b56dcf1",
+      "baseline/recovery_source.py": "5a8f44fb520d008da1ac2f5721f1220ae2de108498d7dcd4171ef056bd0fbd0e",
+      "pyproject.toml": "01599a944ee41d015c00a7fc491fef088f1746f5b72d9a235f9a2a7a54d33897",
+      "uv.lock": "2211a97a03960524dfd4fe173e911392d6dca00d981924ed594fa0f712157b99"
+    },
+    "git_head": "f36e3c1ef76ddb9cf57c19d1f7dc3e9b46c1e740",
+    "http_client": "Python standard library urllib; no SDK or hidden retries",
+    "packages": {
+      "numpy": "2.3.3",
+      "scikit-learn": "1.7.2"
+    },
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "python": "3.13.0"
+  },
+  "cost_independently_recomputed_usd": {
+    "conservative_maximum": "0.46757600",
+    "conservative_one_attempt": "0.11689400",
+    "nominal_one_attempt": "0.008374250"
+  },
+  "dry_run_sha256": "c05e4045d918eef07ad1f75d32859d1b2eaec66ee01a2ff55fc494b1bacf7492",
+  "guarded_real_source_dry_run": {
+    "credential_access_attempts": 0,
+    "eligible_ids_match_original_execution": true,
+    "independent_decimal_estimates_match": true,
+    "live_recovery_directory_absent": true,
+    "network_attempts": 0,
+    "official_test_access": false,
+    "original_file_count": 775,
+    "original_files_byte_identical": true,
+    "raw_dataset_access_attempts": 0
+  },
+  "live_recovery_directory_absent": true,
+  "no_real_merged_evaluation": true,
+  "previous_experiments_and_results_retained_as_exact_prefix": true,
+  "raw_response_caches_versioned": false,
+  "recovery_protocol_sha256": "99500454a24e5b01ba3c1bba16d5076101d06a5a3d448fe400c32af716c16161",
+  "source_audit_sha256": "89fa42e5facbf40b82c2eec017efb71fd8ec35d847d7be083bcad9ed44577e12",
+  "source_protocol_sha256": "d7f824ee761ca90d4dc3a848dd19e3928475c799d6713e03e336dc2a80c9ca68",
+  "source_tree_sha256": "bfd8ad140577004bb436a4c89a977721a3286dd358470fa05e5cf1351037a7cb",
+  "status": "PREPARATION ONLY; PAID RECOVERY NOT RUN",
+  "study_id": "EXP-006R",
+  "test_command": ".venv/bin/python -m pytest -q",
+  "test_files_sha256": {
+    "tests/test_recovery_merge.py": "5c05415700ffd0f81d88ab631980a31b92c6ad7bd2e35db516def904954f0388",
+    "tests/test_recovery_runner.py": "49de5e277ad3e4cf248b13eba9bdf2fa410572e5806b9ff03d2e2e5c39923bcd",
+    "tests/test_recovery_source.py": "d9de1d5189cf356bdf5c4643e8e9d417c11cdf3ee8553ac2d191b8ca70a0c479"
+  },
+  "tests": {
+    "failed": 0,
+    "new_recovery_tests": 128,
+    "passed": 371,
+    "summary": "371 passed in 22.23s"
+  },
+  "verified_utc": "2026-09-26T18:50:02.089228+00:00"
+}

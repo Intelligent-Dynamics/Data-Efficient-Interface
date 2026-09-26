@@ -100,6 +100,12 @@ EXP-006 prepares an OpenAI `gpt-6-luna` zero-shot baseline on exactly the existi
 
 The future evaluation will measure general-model standalone and full-workload specialist/fallback metrics using EXP-005's fixed prefixes plus all fallback. Unresolved responses remain errors; fallback accuracy is measured on rejected requests, never assumed. Explicit spending approval and a numeric cap are required. Actual collection charges, hypothetical API-only routed charges and unmeasured specialist deployment cost remain separate; no total-system savings or production-latency claim follows. All prior results, splits, dependencies and the sealed test are preserved. See the EXP-006 preparation write-up and current plan for exact settings, estimates, failure controls and approval command.
 
+## Separate EXP-006R recovery preparation (2026-09-26)
+
+The saved EXP-006 execution now has 718 successful and 52 unresolved HTTP-429 validation requests, each unresolved ID having exhausted the original two-attempt allowance. The earlier preparation entry is historical. Preserve all original evidence byte-for-byte; any new attempts belong to a separate EXP-006R protocol, cache and spending authorization. The request model/prompt/schema/settings, validation IDs and evaluation definitions remain unchanged. Original error bodies identify exhausted credits, which require a quota/billing remedy before recovery. A new runner halts on recurring quota errors and applies bounded serial backoff for transient rate limits.
+
+**EXP-006R is prepared only; no paid recovery or real recovered evaluation has run.** The offline merge uses 718 unchanged original successes and only the 52 recovery outcomes, retains failures, and labels results EXP-006 + EXP-006R recovery. The same 770 validation labels are reused; no new labels or test access. No recovered quality, production threshold or total-system savings is asserted. Protocol hash, future command and conditional cost estimates are in the recovery preparation write-up and current plan.
+
 ## Scope boundaries and persistent records
 
 Begin with a local reproducible experiment. No frontend, serving stack, database, orchestration platform, GPU fine-tuning, or routing implementation is needed now.

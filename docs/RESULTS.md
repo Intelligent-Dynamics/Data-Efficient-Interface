@@ -109,3 +109,10 @@ SD is **sample SD across five training seeds (`ddof=1`)**, not a confidence inte
 Classifier timings use cached embeddings and **are not end-to-end inference measurements**. Encoding/cache construction is recorded separately; end-to-end speed and costs are unmeasured.
 
 Reproducible evidence: [study README](../experiments/exp004-minilm-learning-curve/README.md), [summary JSON](../experiments/exp004-minilm-learning-curve/summary.json), [all seed values and paired improvements](../experiments/exp004-minilm-learning-curve/per_seed.csv), [independent refit checks](../experiments/exp004-minilm-learning-curve/verification.json), and [artifact/aggregate audit](../experiments/exp004-minilm-learning-curve/analysis_audit.json).
+
+
+## EXP-006R — preparation status only (2026-09-26)
+
+**Paid recovery NOT RUN; no recovered research results are available.** A separate, tested recovery protocol is prepared for exactly the original EXP-006's 52 unresolved HTTP-429 IDs. All original EXP-006 files are preserved. Preparation used synthetic responses and a zero-inference dry run only; preparation API spend is $0. The quota/credit issue must be resolved and a new explicit recovery approval/cap obtained before live execution.
+
+No recovered accuracy, macro-F1, combined quality, actual recovery charge or production saving is claimed. The original 770 validation IDs and additional validation-label budget remain unchanged, and the official test remains sealed. Any later merged result must be labeled **EXP-006 + EXP-006R recovery** and retain failures. [Preparation protocol and verification](../experiments/exp006r-429-recovery-preparation/README.md).

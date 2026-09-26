@@ -1,14 +1,18 @@
 # Current plan
 
-Updated: 2026-09-25. Active protocol: **`banking77-val10-v2`**.
+Updated: 2026-09-26. Active protocol: **`banking77-val10-v2`**.
 
 ## Repository and status
 
 Canonical checkout: `/Users/Andrew/Developer/data-efficient-inference`. The existing repository was moved here intact from `/Users/Andrew/Documents/ChatGPT/Data-Efficient Specialist Inference`; no new repository was initialized. Before protocol edits, `main` was clean at `717b7e6`, one commit ahead of `origin/main`. Origin remains `https://github.com/Intelligent-Dynamics/data-efficient-inference.git` in the Intelligent Dynamics organization.
 
-**EXP-006 preparation complete; PAID EXPERIMENT NOT RUN.** Implemented and synthetically tested an offline dry run, an explicitly authorized/capped resumable Responses runner, and standalone/general-plus-specialist evaluation using the fixed EXP-005 acceptance sets. No API inference, new model training, calibration, test access or real fallback evaluation occurred. Actual API spend this session: **$0**. All earlier artifacts/results and dependency/model pins remain unchanged.
+**EXP-006R preparation implemented; PAID RECOVERY NOT RUN.** The saved original EXP-006 execution is now audited: 718 `ok`, 52 `http_429`, `finished_with_unresolved`. Its 775 files remain byte-for-byte unchanged. This supersedes the historical preparation status below without altering any earlier experiment record. The original two-attempt allowance is exhausted for all 52 eligible cases.
 
-Candidate `gpt-6-luna` and Standard prices were checked in official documentation on 2026-09-25; no dated snapshot is published there. Prompt/schema/settings are frozen in `experiments/exp006-general-model-preparation/`. One set of 770 responses will serve all 15 specialist configurations; it does not exist yet. See the study README and verification JSON for complete implementation/test evidence.
+The separate recovery freezes the same model/prompt/schema/settings and exact 52 IDs from original `execution.json`; source protocol `d7f824ee761ca90d4dc3a848dd19e3928475c799d6713e03e336dc2a80c9ca68`, recovery protocol **`99500454a24e5b01ba3c1bba16d5076101d06a5a3d448fe400c32af716c16161`**. No model training, new split, test access or API call occurred in this preparation. **371 tests passed**, including 128 new source/execution/merge regression tests using synthetic responses only. The guarded real-source dry run made zero network, credential or raw/test-data accesses. Full verification is recorded in the [recovery preparation evidence](../experiments/exp006r-429-recovery-preparation/README.md).
+
+**Issue discovered:** all 105 original 429 attempts report `insufficient_quota` / `credit_balance_exhausted`. This requires usable credits/account quota; backoff alone cannot help. Recovery halts immediately if a billing/quota error recurs. For transient errors it uses serial execution, a minimum five-second gap, exponential backoff, saved Retry-After cooldowns and at most four new attempts per eligible ID. No original successful request can be sent.
+
+**Exact next milestone:** after resolving quota and receiving a new explicit live approval, run only these 52 requests using the documented recovery command and its own numeric cap. Expected one-attempt estimate **$0.008374250**; conservative four-attempt bound **$0.46757600** (208 maximum attempts); proposed recovery-only cap **$0.50, NOT AUTHORIZED**. Official rates reverified 2026-09-26, unchanged from the original pricing object; reverify if stale. Save into `artifacts/exp006r-gpt6-luna-429-recovery-v1`, then use the offline merge command with a fresh `artifacts/exp006-plus-exp006r-evaluation-v1` output. All 770 IDs must occur once: 718 original successes plus recovery outcomes for the original 52 only. Preserve unresolved failures; recompute unchanged standalone and all 90 combined evaluations, explicitly labeled **EXP-006 + EXP-006R recovery**. Keep original/recovery API accounting separate. No final recovered metrics, production threshold, total-system savings or latency claim is available. This preparation stops before spending money.
 
 ## Decisions and rationale
 
@@ -173,7 +177,7 @@ Not started in EXP-005; superseded by the user's EXP-006 preparation request. Re
 
 Before any later calibration or threshold-selection work, specify independent evaluation or suitable cross-fitting and all additional label access. No calibration protocol is selected yet. Stop after committing and pushing EXP-005; no fine-tuning, routing, paid APIs or frontend.
 
-## EXP-006 prepared protocol and exact next milestone
+## Historical EXP-006 preparation — superseded by EXP-006R status above
 
 The user authorized implementation, synthetic testing and cost estimation **only**. The next milestone is the paid 770-request validation collection/evaluation, pending explicit user approval of spending. Do not execute it automatically after preparation.
 
