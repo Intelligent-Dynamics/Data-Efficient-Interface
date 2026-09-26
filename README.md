@@ -8,7 +8,7 @@ Can a small specialist model trained with limited labeled data handle a signific
 
 ## Current status
 
-The classical TF-IDF and frozen MiniLM 5/10/20-shot validation curves are measured across five seeds and independently reproduced locally. See [verified validation results](docs/RESULTS.md), [the paired MiniLM/TF-IDF study](experiments/exp004-minilm-learning-curve/README.md), and [the experiment log](docs/EXPERIMENTS.md). Every configuration uses the same existing BANKING77 v2 sample IDs; only logistic regression is trained for the frozen embedding model. Official-test performance, end-to-end embedding inference speed, and cost savings remain unmeasured. Fine-tuning, serving/routing infrastructure, calibration and frontend work are deferred. EXP-006 + EXP-006R validation collection is complete. EXP-007 fixed-threshold preparation is complete; official test evaluation remains unrun and needs separate authorization.
+The classical TF-IDF and frozen MiniLM 5/10/20-shot validation curves are measured across five seeds and independently reproduced locally. See [verified validation results](docs/RESULTS.md), [the paired MiniLM/TF-IDF study](experiments/exp004-minilm-learning-curve/README.md), and [the experiment log](docs/EXPERIMENTS.md). Every configuration uses the same existing BANKING77 v2 sample IDs; only logistic regression is trained for the frozen embedding model. Official-test performance, end-to-end embedding inference speed, and cost savings remain unmeasured. Fine-tuning, serving/routing infrastructure, calibration and frontend work are deferred. EXP-006 + EXP-006R validation collection is complete. EXP-007 fixed-threshold preparation and its guarded final-test runner are implemented; official test evaluation remains unrun and needs separate authorization.
 
 ## Run locally
 
@@ -103,6 +103,16 @@ Verified validation scores: Luna alone **79.74% accuracy / 79.01% macro-F1**; th
 ```
 
 These are validation-only offline preparation/replay commands. See the study README for exact thresholds, frozen protocol hash, conditional API estimates, tests and limitations. No calibrated confidence, test performance or total-system savings is claimed.
+
+## Guarded final-test runner (implementation only)
+
+`baseline.final_test` implements the unchanged frozen EXP-007 protocol. **The official test is still sealed; no live test collection has run.** All implementation checks use synthetic fixtures.
+
+```sh
+.venv/bin/python -m baseline.final_test dry-run
+```
+
+This default mode reads only protocol/cost metadata. The `preflight` mode requires exact protocol approval and explicit test access only; it computes actual payload/reservation requirements without inference, API calls or spending permission. An optional proposed cap is compared without granting authorization. The separate `live` mode requires exact protocol approval, explicit test/live authorization, a positive approved cap and current UTC pricing acknowledgement before unsealing. Live execution persists label-free specialist predictions before one shared Luna collection, supports bounded durable resume, and freezes predictions before scoring. [Exact commands, controls, conditional costs and verification](experiments/exp007-runner-preparation/README.md).
 
 ## Project documents
 

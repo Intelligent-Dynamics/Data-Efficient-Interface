@@ -1,0 +1,134 @@
+{
+  "all_uncommitted_files": [
+    "AGENTS.md",
+    "README.md",
+    "baseline/final_collection.py",
+    "baseline/final_protocol.py",
+    "baseline/final_specialists.py",
+    "baseline/final_test.py",
+    "docs/CURRENT_PLAN.md",
+    "docs/EXPERIMENTS.md",
+    "docs/PROJECT_CONTEXT.md",
+    "experiments/exp007-runner-preparation/README.md",
+    "experiments/exp007-runner-preparation/dry_run.json",
+    "experiments/exp007-runner-preparation/verification.json",
+    "tests/test_final_authorization_scopes.py",
+    "tests/test_final_collection.py",
+    "tests/test_final_integration.py",
+    "tests/test_final_protocol.py",
+    "tests/test_final_specialists.py",
+    "tests/test_final_test.py"
+  ],
+  "api_calls": 0,
+  "authorization_scopes": {
+    "dry-run": [],
+    "live": [
+      "exact approved protocol hash",
+      "explicit test access",
+      "explicit live/API approval",
+      "positive approved USD cap",
+      "current UTC unchanged-pricing acknowledgement"
+    ],
+    "preflight": [
+      "exact approved protocol hash",
+      "explicit test access"
+    ]
+  },
+  "authorization_separation_changed": true,
+  "base_commit": "5b672c2508ce6c26b977580f784e0d8f1ec5d746",
+  "changed_in_this_review": [
+    "AGENTS.md",
+    "README.md",
+    "baseline/final_protocol.py",
+    "baseline/final_test.py",
+    "docs/CURRENT_PLAN.md",
+    "docs/EXPERIMENTS.md",
+    "docs/PROJECT_CONTEXT.md",
+    "experiments/exp007-runner-preparation/README.md",
+    "experiments/exp007-runner-preparation/dry_run.json",
+    "experiments/exp007-runner-preparation/verification.json",
+    "tests/test_final_authorization_scopes.py"
+  ],
+  "commit_or_push_performed": false,
+  "conditional_conservative_spend_estimate_usd": "28.24052000",
+  "dry_run_command": ".venv/bin/python -m baseline.final_test dry-run",
+  "experimental_protocol_bytes_and_definitions_unchanged": true,
+  "frozen_protocol_sha256": "0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00",
+  "guards": {
+    "api_calls": 0,
+    "exit_code": 0,
+    "forbidden_access_attempts": {
+      "network_access": 0,
+      "protected_data_or_model_access": 0
+    },
+    "isolated_synthetic_fixture_directory": "/private/tmp/exp007-scope-fixtures-b80a085e5bb64676b66e502514041725",
+    "official_test_opened": false,
+    "paid_api_calls": 0,
+    "real_preflight_or_live_executed": false
+  },
+  "official_test_hashed": false,
+  "official_test_opened": false,
+  "paid_api_calls": 0,
+  "preflight_optional_cap": "Informational comparison only; never authorizes spending",
+  "previous_implementation_verification": {
+    "passed": 678,
+    "source_and_test_files_sha256": {
+      "baseline/final_collection.py": "945d77d33b997e98e6c733a372987dddf79b0eb94bff8230399f34826c06f8d3",
+      "baseline/final_protocol.py": "9135bdf5198a438e581a1f65c35962c86496923c7547d8d4d34fbf7e5a57414a",
+      "baseline/final_specialists.py": "036af93ee40b74ea4563f7e5b445cd7ba74ff0d0ffdcbdaf848b4aed38f441b1",
+      "baseline/final_test.py": "4beb67072537eca942647ef84fb0b97431449c41dc13d08d6058ceba02fa9322",
+      "tests/test_final_collection.py": "a3fb3eafe721eac5956c1e9fb58da51ae5d7f20d225dd2483feac2d4fb9b904b",
+      "tests/test_final_integration.py": "8dc4db3784a8659a39a3745b26b37ccb5e7a3a3d3bdc714c7e834c7735eb3b43",
+      "tests/test_final_protocol.py": "246c0a5cf592194021101c414f9e20f4fb15635dc806bf30e4b7fd6ea85c362a",
+      "tests/test_final_specialists.py": "a83629998cbcb52013ddfd95d6df088d2dfa189c2ed6a7af35cdacc0227a1cf9",
+      "tests/test_final_test.py": "ebd3563f15add8bf7f405615bd8157cdcbe83e219007c342c0214bdb6e982a7c"
+    }
+  },
+  "privacy_review": "Only UTF-8 source, synthetic test fixtures, documentation and compact preparation evidence; no secrets, raw dataset, real response bodies, model weights, or caches.",
+  "real_model_weights_read": false,
+  "real_preflight_or_live_executed": false,
+  "reviewed_files_sha256": {
+    "AGENTS.md": "4858181e45b703637df0ab43a6a22d9918950ecd202989e5d94e4e4c1ecb64b2",
+    "README.md": "5631d35e7f83965df022bbb8c9013107e7d5e65b65f3d5ab5e0e8afef7ca83ad",
+    "baseline/final_collection.py": "945d77d33b997e98e6c733a372987dddf79b0eb94bff8230399f34826c06f8d3",
+    "baseline/final_protocol.py": "602c029c1ecc7f3a01f25f863e37d625b46631a0bf4e1bdb8efe72c78ae5fe28",
+    "baseline/final_specialists.py": "036af93ee40b74ea4563f7e5b445cd7ba74ff0d0ffdcbdaf848b4aed38f441b1",
+    "baseline/final_test.py": "a70bd4d1743541e8d83c080f6a4b66bcb559ec6198755d33ade5baffd17d12b6",
+    "docs/CURRENT_PLAN.md": "deae6bd55cd78ce8d494ff8035eb306194c74093bc39eb4e4fa327238695ecfd",
+    "docs/EXPERIMENTS.md": "2bac4205ae1098a57b4e95ccc8235cde97c3271a198a4182fd833754d4be6204",
+    "docs/PROJECT_CONTEXT.md": "0594bf0f1edc0250a46856db204f432b8511706aa77c77e7f747b96fe1f1a752",
+    "experiments/exp007-runner-preparation/README.md": "cf7255d8a2cc0d7ab7dbec2a1155608c665699d24b8150de5eff8123b35c0e4b",
+    "experiments/exp007-runner-preparation/dry_run.json": "36343aed4f9ec1bc2ec69a5e4d3aa7e2937a61e2463c4637fac4afceabe660ad",
+    "tests/test_final_authorization_scopes.py": "6f432131728b5533700bfc22f14a6d94eb704179de9259b696db22f9b8856d73",
+    "tests/test_final_collection.py": "a3fb3eafe721eac5956c1e9fb58da51ae5d7f20d225dd2483feac2d4fb9b904b",
+    "tests/test_final_integration.py": "8dc4db3784a8659a39a3745b26b37ccb5e7a3a3d3bdc714c7e834c7735eb3b43",
+    "tests/test_final_protocol.py": "246c0a5cf592194021101c414f9e20f4fb15635dc806bf30e4b7fd6ea85c362a",
+    "tests/test_final_specialists.py": "a83629998cbcb52013ddfd95d6df088d2dfa189c2ed6a7af35cdacc0227a1cf9",
+    "tests/test_final_test.py": "ebd3563f15add8bf7f405615bd8157cdcbe83e219007c342c0214bdb6e982a7c"
+  },
+  "source_and_test_files_sha256": {
+    "baseline/final_collection.py": "945d77d33b997e98e6c733a372987dddf79b0eb94bff8230399f34826c06f8d3",
+    "baseline/final_protocol.py": "602c029c1ecc7f3a01f25f863e37d625b46631a0bf4e1bdb8efe72c78ae5fe28",
+    "baseline/final_specialists.py": "036af93ee40b74ea4563f7e5b445cd7ba74ff0d0ffdcbdaf848b4aed38f441b1",
+    "baseline/final_test.py": "a70bd4d1743541e8d83c080f6a4b66bcb559ec6198755d33ade5baffd17d12b6",
+    "tests/test_final_authorization_scopes.py": "6f432131728b5533700bfc22f14a6d94eb704179de9259b696db22f9b8856d73",
+    "tests/test_final_collection.py": "a3fb3eafe721eac5956c1e9fb58da51ae5d7f20d225dd2483feac2d4fb9b904b",
+    "tests/test_final_integration.py": "8dc4db3784a8659a39a3745b26b37ccb5e7a3a3d3bdc714c7e834c7735eb3b43",
+    "tests/test_final_protocol.py": "246c0a5cf592194021101c414f9e20f4fb15635dc806bf30e4b7fd6ea85c362a",
+    "tests/test_final_specialists.py": "a83629998cbcb52013ddfd95d6df088d2dfa189c2ed6a7af35cdacc0227a1cf9",
+    "tests/test_final_test.py": "ebd3563f15add8bf7f405615bd8157cdcbe83e219007c342c0214bdb6e982a7c"
+  },
+  "staged_files": 0,
+  "status": "SYNTHETIC REVIEW COMPLETE; TEST SEALED; ZERO API CALLS; UNCOMMITTED",
+  "study_id": "EXP-007 runner authorization-scope review",
+  "tests": {
+    "elapsed_seconds": 53.76,
+    "failed": 0,
+    "new_scope_tests": 42,
+    "new_tests_since_base_commit": 225,
+    "passed": 720,
+    "suite_command": ".venv/bin/python -m pytest -q --basetemp=<fresh isolated synthetic fixture directory>"
+  },
+  "verification_harness_note": "First review suite passed720, followed by a directory-relative pytest cleanup false alarm in the audit hook. Final full rerun used isolated fixtures, passed720 with zero guard attempts and no cleanup exception.",
+  "verified_utc": "2026-09-26T22:34:35.670064+00:00"
+}

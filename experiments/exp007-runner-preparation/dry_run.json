@@ -1,0 +1,56 @@
+{
+  "study_id": "EXP-007",
+  "status": "SEALED METADATA-ONLY DRY RUN",
+  "protocol_sha256": "0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00",
+  "official_test_opened": false,
+  "api_calls": 0,
+  "model_executions": 0,
+  "planned_test_rows": 3080,
+  "planned_initial_requests_at_most": 3080,
+  "shared_luna_response_sets": 1,
+  "nominal_usage_projection_usd": "0.3325308",
+  "conditional_conservative_maximum_usd": "28.24052000",
+  "assumed_max_payload_bytes": 4817,
+  "estimate_note": "Frozen validation-based estimate only. Actual test payloads remain unread; authorized preflight recomputes every reservation before any call.",
+  "pricing": {
+    "currency": "USD",
+    "as_of": "2026-09-25",
+    "per_million_tokens": {
+      "input": "0.10",
+      "cached_input": "0.01",
+      "cache_write": "0.125",
+      "output": "0.50"
+    },
+    "source": "https://developers.openai.com/api/docs/pricing",
+    "cache_source": "https://developers.openai.com/api/docs/guides/prompt-caching",
+    "scope": "Standard, nonregional, <=272000 input tokens, no tools; excluding taxes/credits"
+  },
+  "pricing_currently_verified_by_runner": false,
+  "authorization_required_by_mode": {
+    "dry-run": [],
+    "preflight": [
+      "exact protocol hash",
+      "test access"
+    ],
+    "live": [
+      "exact protocol hash",
+      "test access",
+      "live API",
+      "positive USD cap",
+      "current UTC date acknowledgement of unchanged official prices"
+    ]
+  },
+  "required_live_environment": [
+    "OPENAI_API_KEY"
+  ],
+  "optional_live_environment": [
+    "OPENAI_PROJECT_ID"
+  ],
+  "thresholds": {
+    "11": 0.10354116298070118,
+    "22": 0.10243964501544885,
+    "33": 0.1021902311171956,
+    "44": 0.10160314104812371,
+    "55": 0.10612054364389162
+  }
+}
