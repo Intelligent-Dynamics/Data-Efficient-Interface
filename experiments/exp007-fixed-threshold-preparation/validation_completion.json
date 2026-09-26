@@ -1,0 +1,24 @@
+{
+  "completed_original_successes_preserved": 718,
+  "completed_recovery_predictions": 52,
+  "largest_validation_payload_bytes": 4817,
+  "new_api_calls": 0,
+  "official_test_access": false,
+  "original_source_tree_sha256": "bfd8ad140577004bb436a4c89a977721a3286dd358470fa05e5cf1351037a7cb",
+  "original_unknown_usage_attempts": 105,
+  "recovery_unknown_usage_attempts": 0,
+  "source_files_sha256": {
+    "artifacts/exp006-gpt6-luna-validation-v1/execution.json": "9e77193095bd00278831868b17227157e22786bb488bf0df7a59a0d62db0aa89",
+    "artifacts/exp006-plus-exp006r-evaluation-v1/evaluation.json": "6e6aca762519e1d78a359b49e31307c8796a24d69dfc4f69d6194ea56df37a67",
+    "artifacts/exp006r-gpt6-luna-429-recovery-v1/execution.json": "c79f44a931ee31a7cc4584b6ae58bbf3767ca9fa744f8e4cf669d0b8d7996c60"
+  },
+  "successful_response_usage": {
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "input_tokens": 758272,
+    "output_tokens": 14611,
+    "reasoning_tokens": 0
+  },
+  "successful_usage_priced_usd": "0.0831327",
+  "validation_count": 770
+}

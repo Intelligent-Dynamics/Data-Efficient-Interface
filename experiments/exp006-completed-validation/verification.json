@@ -1,0 +1,115 @@
+{
+  "collection_code_provenance": {
+    "EXP-006": {
+      "files_sha256": {
+        "baseline/general.py": "2193ac7ce9433a3d551e2f5b987d0fc7173c6c095a504c04ef96ef97adfff434",
+        "baseline/general_metrics.py": "20015576459f971d9644f6f8e59fe1725f5d095e9ca6ef6f83953e8cdfdc396c",
+        "baseline/general_protocol.py": "9f3b1422e17988b71899326b9dd1a6312603b66dbaa5c26e2ddfd0073a9884a2",
+        "pyproject.toml": "01599a944ee41d015c00a7fc491fef088f1746f5b72d9a235f9a2a7a54d33897",
+        "uv.lock": "2211a97a03960524dfd4fe173e911392d6dca00d981924ed594fa0f712157b99"
+      },
+      "git_head": "f36e3c1ef76ddb9cf57c19d1f7dc3e9b46c1e740",
+      "http_client": "Python standard library urllib; no SDK or hidden retries",
+      "packages": {
+        "numpy": "2.3.3",
+        "scikit-learn": "1.7.2"
+      },
+      "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+      "python": "3.13.0"
+    },
+    "EXP-006R": {
+      "files_sha256": {
+        "baseline/general.py": "2193ac7ce9433a3d551e2f5b987d0fc7173c6c095a504c04ef96ef97adfff434",
+        "baseline/general_metrics.py": "20015576459f971d9644f6f8e59fe1725f5d095e9ca6ef6f83953e8cdfdc396c",
+        "baseline/general_protocol.py": "9f3b1422e17988b71899326b9dd1a6312603b66dbaa5c26e2ddfd0073a9884a2",
+        "baseline/recovery.py": "36d41fb99eb73121eeb8fa1407034f25ac9718e4f174a72f03c633307c6ca576",
+        "baseline/recovery_merge.py": "6976c9c848144f929a13862fc122f546588e0d546705f0ea73e74b6f5b56dcf1",
+        "baseline/recovery_source.py": "5a8f44fb520d008da1ac2f5721f1220ae2de108498d7dcd4171ef056bd0fbd0e",
+        "pyproject.toml": "01599a944ee41d015c00a7fc491fef088f1746f5b72d9a235f9a2a7a54d33897",
+        "uv.lock": "2211a97a03960524dfd4fe173e911392d6dca00d981924ed594fa0f712157b99"
+      },
+      "git_head": "f36e3c1ef76ddb9cf57c19d1f7dc3e9b46c1e740",
+      "http_client": "Python standard library urllib; no SDK or hidden retries",
+      "packages": {
+        "numpy": "2.3.3",
+        "scikit-learn": "1.7.2"
+      },
+      "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+      "python": "3.13.0"
+    }
+  },
+  "collection_finished_utc": {
+    "EXP-006": "2026-09-26T18:00:46.822858+00:00",
+    "EXP-006R": "2026-09-26T18:59:09.788949+00:00"
+  },
+  "combinations": 90,
+  "compact_files_sha256": {
+    "accounting.json": "47f88a959191d6c31f7749b00fc4e711abf10d1ce2f3c112c4fb59d2535cb6e6",
+    "accounting_attempts.json": "636162b1be1afe51ce0451dd942f8f9360c155ba868f407a51be214af50e9242",
+    "predictions.json": "3f952ce3dfa458127d2901ab61ae27e3a50fffb0f53a3d5074dc57d8edf3b245",
+    "pricing.json": "91db7c3e2a73d26ac81d8992a7c133929a8c81382557ee927b6c6e5abe58f242",
+    "quality_summary.json": "96ac1dc9703dd423f9f780dd0bb9ae49f61f7aef137c6d07399d4997e6204853",
+    "reproduce.py": "fd906dbc673092ac8e1865a2c64cd13c6376ec84e0517b0c0c35dfafbe34417a"
+  },
+  "full_saved_merged_evaluation_reproduced_exactly": true,
+  "model_executions": 0,
+  "new_api_calls": 0,
+  "official_test_access": false,
+  "original_source_tree_sha256": "bfd8ad140577004bb436a4c89a977721a3286dd358470fa05e5cf1351037a7cb",
+  "original_status_counts": {
+    "http_429": 52,
+    "ok": 718
+  },
+  "preserved_original_successes": 718,
+  "prior_artifacts_modified": false,
+  "privacy": "Compact public-dataset IDs, predicted intent names and numerical usage only. No customer text, raw response bodies, provider request IDs, credentials, model weights or embeddings.",
+  "raw_dataset_access": false,
+  "recovered_requests": 52,
+  "recovery_protocol_sha256": "99500454a24e5b01ba3c1bba16d5076101d06a5a3d448fe400c32af716c16161",
+  "recovery_status_counts": {
+    "ok": 52
+  },
+  "recovery_tree_sha256": "da1fe63fd1de546cd78175e5b2d3f1f73d053abe7e76bab59913bc7bab6cba5c",
+  "source_files_sha256": {
+    "artifacts/exp006-gpt6-luna-validation-v1/execution.json": "9e77193095bd00278831868b17227157e22786bb488bf0df7a59a0d62db0aa89",
+    "artifacts/exp006-gpt6-luna-validation-v1/manifest.json": "8d65d243fe47bb1d40618f7556403166a133be57902086f94fe9f485ae2e03da",
+    "artifacts/exp006-gpt6-luna-validation-v1/reservations.json": "f51414120ec8255d9cc0dfeacd3809dacf2d4fbcdbb4541511ca14e95ec22963",
+    "artifacts/exp006-plus-exp006r-evaluation-v1/evaluation.json": "6e6aca762519e1d78a359b49e31307c8796a24d69dfc4f69d6194ea56df37a67",
+    "artifacts/exp006r-gpt6-luna-429-recovery-v1/execution.json": "c79f44a931ee31a7cc4584b6ae58bbf3767ca9fa744f8e4cf669d0b8d7996c60",
+    "artifacts/exp006r-gpt6-luna-429-recovery-v1/manifest.json": "4571600c7e54e74f53cc042ed88ce91e26dc7670b667385327685f5db163e843",
+    "artifacts/exp006r-gpt6-luna-429-recovery-v1/reservations.json": "70348a8f3d4ac48a7c9f6f9f1eb6623c98897c9a83563379009461adbeefc3cc"
+  },
+  "source_protocol_sha256": "d7f824ee761ca90d4dc3a848dd19e3928475c799d6713e03e336dc2a80c9ca68",
+  "specialist_files_sha256": {
+    "experiments/exp005-selective-diagnostic/runs/exp004-minilm-v2-n10-s11.json": "a207c37493e9aacdf91409f8925a697e1071c6a2b7f481ebeb35d6a10508ea3b",
+    "experiments/exp005-selective-diagnostic/runs/exp004-minilm-v2-n10-s22.json": "dc68956ca076937f7093cec085c2f8a6356d4478be10b029a6171d11c9fe556b",
+    "experiments/exp005-selective-diagnostic/runs/exp004-minilm-v2-n10-s33.json": "ea9f1e0b42b986426d8e76e7b00a4741b210911217e72a1e22445e6dacb4888b",
+    "experiments/exp005-selective-diagnostic/runs/exp004-minilm-v2-n10-s44.json": "450c9e1f0c47579952eb5e051f1b856e474d21b0f179488a76b0c9d17a596b29",
+    "experiments/exp005-selective-diagnostic/runs/exp004-minilm-v2-n10-s55.json": "beada42387706d1b0431a23650249e0460df833dd452f29cddcf71fb26042748",
+    "experiments/exp005-selective-diagnostic/runs/exp004-minilm-v2-n20-s11.json": "afccc7ab601e2ec501eda2f291e5397349428f319387a6bd1f15c6d529a8b060",
+    "experiments/exp005-selective-diagnostic/runs/exp004-minilm-v2-n20-s22.json": "c10bb0bf9496a6899428b1136d943cbfa4755ba6ad5a133007acdf681bc09ffb",
+    "experiments/exp005-selective-diagnostic/runs/exp004-minilm-v2-n20-s33.json": "02b8ae0b725a25cf376096bafb71323b42d3884ff8e20ebb9b859635f13dcf0e",
+    "experiments/exp005-selective-diagnostic/runs/exp004-minilm-v2-n20-s44.json": "70a7e92474acf038e6e655e36c281c0e597062fba7b37c50d5f7d6b24d7ccf23",
+    "experiments/exp005-selective-diagnostic/runs/exp004-minilm-v2-n20-s55.json": "8487a7c86e18b06d90915c99602105c164f097797bcd16ce4097e7b66bd4f7de",
+    "experiments/exp005-selective-diagnostic/runs/exp004-minilm-v2-n5-s11.json": "396b121c97d4b708c6728b8f07894987b9d7742a46e3d6ca66f7ee9f18c37608",
+    "experiments/exp005-selective-diagnostic/runs/exp004-minilm-v2-n5-s22.json": "e190b8b79bc0f4cfc45f6c34b078c2783d49608aad01aa9ec14b276d7891f2ac",
+    "experiments/exp005-selective-diagnostic/runs/exp004-minilm-v2-n5-s33.json": "8285fca3b6cc52b66cde71e597039b2e6b74c20a56c269ce1472e592d1738019",
+    "experiments/exp005-selective-diagnostic/runs/exp004-minilm-v2-n5-s44.json": "34e179a9585644ed47d9a9ce6432427553c4640a022ccd715738aeb600765b03",
+    "experiments/exp005-selective-diagnostic/runs/exp004-minilm-v2-n5-s55.json": "54134e9abe5dfad1489bed4d41035c81a1eb335d22a53b761535e440db0caf2d"
+  },
+  "specialists": 15,
+  "status": "verified completed validation",
+  "study_id": "EXP-006 + EXP-006R recovery",
+  "unresolved_after_recovery": 0,
+  "validation_ids": 770,
+  "verification_code_files_sha256": {
+    "baseline/general.py": "2193ac7ce9433a3d551e2f5b987d0fc7173c6c095a504c04ef96ef97adfff434",
+    "baseline/general_metrics.py": "20015576459f971d9644f6f8e59fe1725f5d095e9ca6ef6f83953e8cdfdc396c",
+    "baseline/general_protocol.py": "9f3b1422e17988b71899326b9dd1a6312603b66dbaa5c26e2ddfd0073a9884a2",
+    "baseline/recovery.py": "36d41fb99eb73121eeb8fa1407034f25ac9718e4f174a72f03c633307c6ca576",
+    "baseline/recovery_merge.py": "6976c9c848144f929a13862fc122f546588e0d546705f0ea73e74b6f5b56dcf1",
+    "baseline/recovery_source.py": "5a8f44fb520d008da1ac2f5721f1220ae2de108498d7dcd4171ef056bd0fbd0e",
+    "baseline/selective.py": "c2ad88cdfa97b4a65fb976ecaebd0f89d5307b3b37f1f01f53f92910346b785a"
+  },
+  "verified_utc": "2026-09-26T21:47:30.247408+00:00"
+}

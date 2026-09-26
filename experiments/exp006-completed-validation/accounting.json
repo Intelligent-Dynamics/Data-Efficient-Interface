@@ -1,0 +1,1801 @@
+{
+  "actual_experiment_accounting": {
+    "combined_collection": {
+      "actual_api_spend_usd": null,
+      "committed_reservation_usd": "1.96744200",
+      "invoice_reconciled": false,
+      "note": "Actual experiment usage priced at frozen rates; missing usage is reserved, not assumed free.",
+      "recorded_attempts": 875,
+      "reservation_envelope_valid": true,
+      "spend_interval_under_frozen_assumptions_usd": [
+        "0.0831327",
+        "0.31921220"
+      ],
+      "unknown_charge_attempts": 105,
+      "unknown_charge_reservation_usd": "0.23607950",
+      "usage_priced_api_charges_usd": "0.0831327"
+    },
+    "original_exp006": {
+      "actual_api_spend_usd": null,
+      "committed_reservation_usd": "1.85054800",
+      "invoice_reconciled": false,
+      "note": "Actual experiment usage priced at frozen rates; missing usage is reserved, not assumed free.",
+      "recorded_attempts": 823,
+      "reservation_envelope_valid": true,
+      "spend_interval_under_frozen_assumptions_usd": [
+        "0.0775395",
+        "0.31361900"
+      ],
+      "unknown_charge_attempts": 105,
+      "unknown_charge_reservation_usd": "0.23607950",
+      "usage_priced_api_charges_usd": "0.0775395"
+    },
+    "recovery_exp006r": {
+      "actual_api_spend_usd": "0.0055932",
+      "committed_reservation_usd": "0.11689400",
+      "invoice_reconciled": false,
+      "note": "Actual experiment usage priced at frozen rates; missing usage is reserved, not assumed free.",
+      "recorded_attempts": 52,
+      "reservation_envelope_valid": true,
+      "spend_interval_under_frozen_assumptions_usd": [
+        "0.0055932",
+        "0.0055932"
+      ],
+      "unknown_charge_attempts": 0,
+      "unknown_charge_reservation_usd": "0",
+      "usage_priced_api_charges_usd": "0.0055932"
+    }
+  },
+  "attempt_status_counts": {
+    "EXP-006": {
+      "http_429": 105,
+      "ok": 718
+    },
+    "EXP-006R": {
+      "ok": 52
+    }
+  },
+  "hypothetical_routed_api_components": [
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.0,
+      "no_discount_attempt_envelope_usd": "1.96744200",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0831327",
+        "0.31921220"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s11",
+      "seed": 11,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.2506493506493506,
+      "no_discount_attempt_envelope_usd": "1.47113525",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0623875",
+        "0.23557600"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s11",
+      "seed": 11,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.25,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.5,
+      "no_discount_attempt_envelope_usd": "0.98327175",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0416869",
+        "0.15862540"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s11",
+      "seed": 11,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.5,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.7506493506493507,
+      "no_discount_attempt_envelope_usd": "0.49491175",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0207940",
+        "0.08366050"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s11",
+      "seed": 11,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.75,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.9,
+      "no_discount_attempt_envelope_usd": "0.17782525",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0083556",
+        "0.0128396"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s11",
+      "seed": 11,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.9,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 1.0,
+      "no_discount_attempt_envelope_usd": "0",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0",
+        "0"
+      ],
+      "replayed_usage_usd": "0",
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s11",
+      "seed": 11,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 1.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.0,
+      "no_discount_attempt_envelope_usd": "1.96744200",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0831327",
+        "0.31921220"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s22",
+      "seed": 22,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.2506493506493506,
+      "no_discount_attempt_envelope_usd": "1.46659150",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0624058",
+        "0.23107830"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s22",
+      "seed": 22,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.25,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.5,
+      "no_discount_attempt_envelope_usd": "1.00804825",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0417067",
+        "0.18339320"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s22",
+      "seed": 22,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.5,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.7506493506493507,
+      "no_discount_attempt_envelope_usd": "0.51308475",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0208291",
+        "0.10175160"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s22",
+      "seed": 22,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.75,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.9,
+      "no_discount_attempt_envelope_usd": "0.19577975",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0083601",
+        "0.03086360"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s22",
+      "seed": 22,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.9,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 1.0,
+      "no_discount_attempt_envelope_usd": "0",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0",
+        "0"
+      ],
+      "replayed_usage_usd": "0",
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s22",
+      "seed": 22,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 1.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.0,
+      "no_discount_attempt_envelope_usd": "1.96744200",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0831327",
+        "0.31921220"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s33",
+      "seed": 33,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.2506493506493506,
+      "no_discount_attempt_envelope_usd": "1.48028925",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0624108",
+        "0.24460030"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s33",
+      "seed": 33,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.25,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.5,
+      "no_discount_attempt_envelope_usd": "1.01738325",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0417391",
+        "0.19245110"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s33",
+      "seed": 33,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.5,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.7506493506493507,
+      "no_discount_attempt_envelope_usd": "0.50867450",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0208294",
+        "0.09726990"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s33",
+      "seed": 33,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.75,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.9,
+      "no_discount_attempt_envelope_usd": "0.18686425",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0083619",
+        "0.02184440"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s33",
+      "seed": 33,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.9,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 1.0,
+      "no_discount_attempt_envelope_usd": "0",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0",
+        "0"
+      ],
+      "replayed_usage_usd": "0",
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s33",
+      "seed": 33,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 1.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.0,
+      "no_discount_attempt_envelope_usd": "1.96744200",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0831327",
+        "0.31921220"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s44",
+      "seed": 44,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.2506493506493506,
+      "no_discount_attempt_envelope_usd": "1.47579325",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0623973",
+        "0.24008430"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s44",
+      "seed": 44,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.25,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.5,
+      "no_discount_attempt_envelope_usd": "1.00149325",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0417009",
+        "0.17658290"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s44",
+      "seed": 44,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.5,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.7506493506493507,
+      "no_discount_attempt_envelope_usd": "0.49063500",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0208083",
+        "0.07923280"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s44",
+      "seed": 44,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.75,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.9,
+      "no_discount_attempt_envelope_usd": "0.18679875",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0083457",
+        "0.0218027"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s44",
+      "seed": 44,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.9,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 1.0,
+      "no_discount_attempt_envelope_usd": "0",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0",
+        "0"
+      ],
+      "replayed_usage_usd": "0",
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s44",
+      "seed": 44,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 1.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.0,
+      "no_discount_attempt_envelope_usd": "1.96744200",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0831327",
+        "0.31921220"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s55",
+      "seed": 55,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.2506493506493506,
+      "no_discount_attempt_envelope_usd": "1.48465700",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0624068",
+        "0.24908530"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s55",
+      "seed": 55,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.25,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.5,
+      "no_discount_attempt_envelope_usd": "0.99912925",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0417029",
+        "0.17445240"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s55",
+      "seed": 55,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.5,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.7506493506493507,
+      "no_discount_attempt_envelope_usd": "0.48175375",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0208200",
+        "0.07036000"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s55",
+      "seed": 55,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.75,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.9,
+      "no_discount_attempt_envelope_usd": "0.17783075",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0083525",
+        "0.0128405"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s55",
+      "seed": 55,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.9,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 1.0,
+      "no_discount_attempt_envelope_usd": "0",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0",
+        "0"
+      ],
+      "replayed_usage_usd": "0",
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n5-s55",
+      "seed": 55,
+      "shots": 5,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 1.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.0,
+      "no_discount_attempt_envelope_usd": "1.96744200",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0831327",
+        "0.31921220"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s11",
+      "seed": 11,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.2506493506493506,
+      "no_discount_attempt_envelope_usd": "1.47564400",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0623850",
+        "0.24007200"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s11",
+      "seed": 11,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.25,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.5,
+      "no_discount_attempt_envelope_usd": "0.99919850",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0416937",
+        "0.17438320"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s11",
+      "seed": 11,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.5,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.7506493506493507,
+      "no_discount_attempt_envelope_usd": "0.50843275",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0207810",
+        "0.09719050"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s11",
+      "seed": 11,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.75,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.9,
+      "no_discount_attempt_envelope_usd": "0.18674425",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0083410",
+        "0.0217880"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s11",
+      "seed": 11,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.9,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 1.0,
+      "no_discount_attempt_envelope_usd": "0",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0",
+        "0"
+      ],
+      "replayed_usage_usd": "0",
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s11",
+      "seed": 11,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 1.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.0,
+      "no_discount_attempt_envelope_usd": "1.96744200",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0831327",
+        "0.31921220"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s22",
+      "seed": 22,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.2506493506493506,
+      "no_discount_attempt_envelope_usd": "1.47562875",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0623889",
+        "0.24006940"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s22",
+      "seed": 22,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.25,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.5,
+      "no_discount_attempt_envelope_usd": "0.99452900",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0416909",
+        "0.16988990"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s22",
+      "seed": 22,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.5,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.7506493506493507,
+      "no_discount_attempt_envelope_usd": "0.51301400",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0208109",
+        "0.10175590"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s22",
+      "seed": 22,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.75,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.9,
+      "no_discount_attempt_envelope_usd": "0.19578925",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0083532",
+        "0.03083470"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s22",
+      "seed": 22,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.9,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 1.0,
+      "no_discount_attempt_envelope_usd": "0",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0",
+        "0"
+      ],
+      "replayed_usage_usd": "0",
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s22",
+      "seed": 22,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 1.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.0,
+      "no_discount_attempt_envelope_usd": "1.96744200",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0831327",
+        "0.31921220"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s33",
+      "seed": 33,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.2506493506493506,
+      "no_discount_attempt_envelope_usd": "1.48922500",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0624036",
+        "0.25358010"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s33",
+      "seed": 33,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.25,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.5,
+      "no_discount_attempt_envelope_usd": "1.01272050",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0417008",
+        "0.18790630"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s33",
+      "seed": 33,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.5,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.7506493506493507,
+      "no_discount_attempt_envelope_usd": "0.52213250",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0208100",
+        "0.11067250"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s33",
+      "seed": 33,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.75,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.9,
+      "no_discount_attempt_envelope_usd": "0.20925250",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0083422",
+        "0.04425270"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s33",
+      "seed": 33,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.9,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 1.0,
+      "no_discount_attempt_envelope_usd": "0",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0",
+        "0"
+      ],
+      "replayed_usage_usd": "0",
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s33",
+      "seed": 33,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 1.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.0,
+      "no_discount_attempt_envelope_usd": "1.96744200",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0831327",
+        "0.31921220"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s44",
+      "seed": 44,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.2506493506493506,
+      "no_discount_attempt_envelope_usd": "1.46667025",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0623778",
+        "0.23104230"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s44",
+      "seed": 44,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.25,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.5,
+      "no_discount_attempt_envelope_usd": "0.99234050",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0416883",
+        "0.16761480"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s44",
+      "seed": 44,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.5,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.7506493506493507,
+      "no_discount_attempt_envelope_usd": "0.50857800",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0207965",
+        "0.09721400"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s44",
+      "seed": 44,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.75,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.9,
+      "no_discount_attempt_envelope_usd": "0.18230600",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0083413",
+        "0.0173463"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s44",
+      "seed": 44,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.9,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 1.0,
+      "no_discount_attempt_envelope_usd": "0",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0",
+        "0"
+      ],
+      "replayed_usage_usd": "0",
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s44",
+      "seed": 44,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 1.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.0,
+      "no_discount_attempt_envelope_usd": "1.96744200",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0831327",
+        "0.31921220"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s55",
+      "seed": 55,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.2506493506493506,
+      "no_discount_attempt_envelope_usd": "1.48465725",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0623924",
+        "0.24907890"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s55",
+      "seed": 55,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.25,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.5,
+      "no_discount_attempt_envelope_usd": "1.00384625",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0417103",
+        "0.17896980"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s55",
+      "seed": 55,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.5,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.7506493506493507,
+      "no_discount_attempt_envelope_usd": "0.48169900",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0208018",
+        "0.07034280"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s55",
+      "seed": 55,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.75,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.9,
+      "no_discount_attempt_envelope_usd": "0.17780975",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0083450",
+        "0.0128330"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s55",
+      "seed": 55,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.9,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 1.0,
+      "no_discount_attempt_envelope_usd": "0",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0",
+        "0"
+      ],
+      "replayed_usage_usd": "0",
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n10-s55",
+      "seed": 55,
+      "shots": 10,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 1.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.0,
+      "no_discount_attempt_envelope_usd": "1.96744200",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0831327",
+        "0.31921220"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s11",
+      "seed": 11,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.2506493506493506,
+      "no_discount_attempt_envelope_usd": "1.48010500",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0623793",
+        "0.24457480"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s11",
+      "seed": 11,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.25,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.5,
+      "no_discount_attempt_envelope_usd": "1.00811375",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0416761",
+        "0.18338160"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s11",
+      "seed": 11,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.5,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.7506493506493507,
+      "no_discount_attempt_envelope_usd": "0.50415925",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0207948",
+        "0.09270030"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s11",
+      "seed": 11,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.75,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.9,
+      "no_discount_attempt_envelope_usd": "0.19566425",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0083248",
+        "0.03078130"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s11",
+      "seed": 11,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.9,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 1.0,
+      "no_discount_attempt_envelope_usd": "0",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0",
+        "0"
+      ],
+      "replayed_usage_usd": "0",
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s11",
+      "seed": 11,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 1.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.0,
+      "no_discount_attempt_envelope_usd": "1.96744200",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0831327",
+        "0.31921220"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s22",
+      "seed": 22,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.2506493506493506,
+      "no_discount_attempt_envelope_usd": "1.48013200",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0623815",
+        "0.24454900"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s22",
+      "seed": 22,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.25,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.5,
+      "no_discount_attempt_envelope_usd": "1.00803550",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0416654",
+        "0.18338040"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s22",
+      "seed": 22,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.5,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.7506493506493507,
+      "no_discount_attempt_envelope_usd": "0.50418650",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0208000",
+        "0.09279900"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s22",
+      "seed": 22,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.75,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.9,
+      "no_discount_attempt_envelope_usd": "0.20927425",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0083396",
+        "0.04430860"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s22",
+      "seed": 22,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.9,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 1.0,
+      "no_discount_attempt_envelope_usd": "0",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0",
+        "0"
+      ],
+      "replayed_usage_usd": "0",
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s22",
+      "seed": 22,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 1.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.0,
+      "no_discount_attempt_envelope_usd": "1.96744200",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0831327",
+        "0.31921220"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s33",
+      "seed": 33,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.2506493506493506,
+      "no_discount_attempt_envelope_usd": "1.48010875",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0623731",
+        "0.24453660"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s33",
+      "seed": 33,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.25,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.5,
+      "no_discount_attempt_envelope_usd": "0.99921300",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0416823",
+        "0.17440830"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s33",
+      "seed": 33,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.5,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.7506493506493507,
+      "no_discount_attempt_envelope_usd": "0.50412425",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0207929",
+        "0.09272290"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s33",
+      "seed": 33,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.75,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.9,
+      "no_discount_attempt_envelope_usd": "0.20474100",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0083404",
+        "0.03979590"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s33",
+      "seed": 33,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.9,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 1.0,
+      "no_discount_attempt_envelope_usd": "0",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0",
+        "0"
+      ],
+      "replayed_usage_usd": "0",
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s33",
+      "seed": 33,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 1.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.0,
+      "no_discount_attempt_envelope_usd": "1.96744200",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0831327",
+        "0.31921220"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s44",
+      "seed": 44,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.2506493506493506,
+      "no_discount_attempt_envelope_usd": "1.47565800",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0623783",
+        "0.24005180"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s44",
+      "seed": 44,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.25,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.5,
+      "no_discount_attempt_envelope_usd": "0.99909150",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0416629",
+        "0.17436990"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s44",
+      "seed": 44,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.5,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.7506493506493507,
+      "no_discount_attempt_envelope_usd": "0.50404800",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0207925",
+        "0.09270650"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s44",
+      "seed": 44,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.75,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.9,
+      "no_discount_attempt_envelope_usd": "0.18218475",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0083312",
+        "0.0173052"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s44",
+      "seed": 44,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.9,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 1.0,
+      "no_discount_attempt_envelope_usd": "0",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0",
+        "0"
+      ],
+      "replayed_usage_usd": "0",
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s44",
+      "seed": 44,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 1.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.0,
+      "no_discount_attempt_envelope_usd": "1.96744200",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0831327",
+        "0.31921220"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s55",
+      "seed": 55,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.2506493506493506,
+      "no_discount_attempt_envelope_usd": "1.48460525",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0623917",
+        "0.24907820"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s55",
+      "seed": 55,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.25,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.5,
+      "no_discount_attempt_envelope_usd": "1.00363400",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0416723",
+        "0.17890430"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s55",
+      "seed": 55,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.5,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.7506493506493507,
+      "no_discount_attempt_envelope_usd": "0.48404025",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0208028",
+        "0.07258580"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s55",
+      "seed": 55,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.75,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 0.9,
+      "no_discount_attempt_envelope_usd": "0.18235475",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0.0083403",
+        "0.0173513"
+      ],
+      "replayed_usage_usd": null,
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s55",
+      "seed": 55,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 0.9,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    },
+    {
+      "assumption": "Reuse observed per-request cache read/write mix and retries; routing order could change server caching. Local replay incurs no API charge.",
+      "coverage": 1.0,
+      "no_discount_attempt_envelope_usd": "0",
+      "production_latency_seconds": null,
+      "replayed_usage_interval_usd": [
+        "0",
+        "0"
+      ],
+      "replayed_usage_usd": "0",
+      "requests_without_attempts": 0,
+      "run_id": "exp004-minilm-v2-n20-s55",
+      "seed": 55,
+      "shots": 20,
+      "specialist_deployment_cost_usd": null,
+      "target_coverage": 1.0,
+      "total_system_cost_usd": null,
+      "total_system_savings_usd": null
+    }
+  ],
+  "note": "All original and recovery attempts are retained. Missing usage remains unknown, not free. Usage-priced charges are not invoice reconciliation. Routed API estimates replay observed cache behavior and original/recovery retries; specialist deployment cost and total-system savings remain unmeasured.",
+  "pricing": {
+    "as_of": "2026-09-25",
+    "cache_source": "https://developers.openai.com/api/docs/guides/prompt-caching",
+    "currency": "USD",
+    "per_million_tokens": {
+      "cache_write": "0.125",
+      "cached_input": "0.01",
+      "input": "0.10",
+      "output": "0.50"
+    },
+    "scope": "Standard, nonregional, <=272000 input tokens, no tools; excluding taxes/credits",
+    "source": "https://developers.openai.com/api/docs/pricing"
+  },
+  "study_id": "EXP-006 + EXP-006R recovery",
+  "usage_totals_from_reported_attempts": {
+    "EXP-006": {
+      "cache_write_tokens": 0,
+      "cached_input_tokens": 0,
+      "input_tokens": 707085,
+      "output_tokens": 13662,
+      "reasoning_tokens": 0
+    },
+    "EXP-006R": {
+      "cache_write_tokens": 0,
+      "cached_input_tokens": 0,
+      "input_tokens": 51187,
+      "output_tokens": 949,
+      "reasoning_tokens": 0
+    }
+  }
+}

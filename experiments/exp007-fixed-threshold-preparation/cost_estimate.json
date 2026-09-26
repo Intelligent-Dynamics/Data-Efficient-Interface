@@ -1,0 +1,42 @@
+{
+  "actual_preparation_spend_usd": "0",
+  "api_calls_during_preparation": 0,
+  "approved_spending_cap_usd": null,
+  "assumed_max_payload_bytes": 4817,
+  "assumptions": [
+    "Nominal: test token distribution equals successful validation responses; one attempt, observed cache behavior.",
+    "Envelope: every future request fits the observed validation byte maximum; bytes are only an engineering token heuristic.",
+    "All-input cache-write rate and full output allowance; no cache-read discount in the conservative estimates.",
+    "All 3080 cases need Luna-only baseline predictions once, reused across seeds; not only rejected cases.",
+    "Test payloads have NOT been read. This estimate is not a guaranteed invoice or approved cap.",
+    "After separate test authorization, recompute all payload reservations before any paid call; halt if cap is insufficient.",
+    "Missing/failure usage remains unknown. Actual collection spend includes failures/retries.",
+    "Specialist deployment cost and total-system savings remain unmeasured."
+  ],
+  "conservative_all_attempts_usd": "28.24052000",
+  "conservative_one_attempt_usd": "7.06013000",
+  "input_token_envelope_per_attempt": 17826,
+  "live_authorization": false,
+  "max_attempts_per_request": 4,
+  "maximum_attempts": 12320,
+  "nominal_usage_projection_usd": "0.3325308",
+  "output_token_envelope_per_attempt": 128,
+  "planned_first_attempts": 3080,
+  "planned_test_rows": 3080,
+  "pricing": {
+    "as_of": "2026-09-25",
+    "cache_source": "https://developers.openai.com/api/docs/guides/prompt-caching",
+    "currency": "USD",
+    "per_million_tokens": {
+      "cache_write": "0.125",
+      "cached_input": "0.01",
+      "input": "0.10",
+      "output": "0.50"
+    },
+    "scope": "Standard, nonregional, <=272000 input tokens, no tools; excluding taxes/credits",
+    "source": "https://developers.openai.com/api/docs/pricing"
+  },
+  "pricing_verified_date": "2026-09-26",
+  "response_sets_across_all_five_specialists": 1,
+  "same_tokens_all_input_cache_write_usd": "0.4083580"
+}

@@ -1,0 +1,117 @@
+{
+  "changed_files": [
+    "AGENTS.md",
+    "README.md",
+    "baseline/fixed_routing.py",
+    "baseline/threshold_inputs.py",
+    "baseline/thresholds.py",
+    "docs/CURRENT_PLAN.md",
+    "docs/EXPERIMENTS.md",
+    "docs/PROJECT_CONTEXT.md",
+    "docs/RESULTS.md",
+    "experiments/exp007-fixed-threshold-preparation/README.md",
+    "experiments/exp007-fixed-threshold-preparation/cost_estimate.json",
+    "experiments/exp007-fixed-threshold-preparation/independent_check.py",
+    "experiments/exp007-fixed-threshold-preparation/manifest.json",
+    "experiments/exp007-fixed-threshold-preparation/preparation_guards.json",
+    "experiments/exp007-fixed-threshold-preparation/protocol.json",
+    "experiments/exp007-fixed-threshold-preparation/protocol_sha256.txt",
+    "experiments/exp007-fixed-threshold-preparation/thresholds.json",
+    "experiments/exp007-fixed-threshold-preparation/validation_completion.json",
+    "experiments/exp007-fixed-threshold-preparation/verification.json",
+    "tests/test_fixed_routing.py",
+    "tests/test_threshold_inputs.py",
+    "tests/test_thresholds.py"
+  ],
+  "completed_validation_evidence_unchanged": true,
+  "evidence_files_sha256": {
+    "README.md": "2589a6ca51ebc86cde74c2916694bd426c06defcc1534ffdcfbe124bf7363c2b",
+    "cost_estimate.json": "43f76d8582145a15173e4d6faa52eecedc5695095ccf6b162512a424e7c82f31",
+    "independent_check.py": "2644c238661a835f031b7a51e92582958333393f99063f43ce65f31f2b580b77",
+    "manifest.json": "cede66f369a58f30be2a6e969b8f679475406e879da9b667207a7085b4af403a",
+    "preparation_guards.json": "fd88e8758aa35b068687d139ff680f2281a96bde13e95a375933d2173c55678a",
+    "protocol.json": "0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00",
+    "protocol_sha256.txt": "02c5a2b36555887f2000cb3bbf20722d410cccaf437a1a30b3a1fd50bdb1d0bd",
+    "thresholds.json": "fc68d6ea6622b930ef1176e5f500f2542e3a1c51a6c1d80876d9b3e6b4840d9a",
+    "validation_completion.json": "bdc2f91539e46012e4fd1e29bcca58a18cfbde91039551699ac175850121671a"
+  },
+  "guards": {
+    "access_attempt_counts": {
+      "credentials": 0,
+      "model_load": 0,
+      "network": 0,
+      "raw_or_processed_data": 0
+    },
+    "api_calls": 0,
+    "blocked_capabilities": [
+      "network",
+      "credentials",
+      "raw_or_processed_data",
+      "model_load"
+    ],
+    "official_test_access": false
+  },
+  "implementation_issue": "Initial completed-validation metadata order check was too strict. Match unique ID population while retaining exact prediction order and hashes; nine regressions added. No original artifact or evaluation definition changed.",
+  "independent_reproduction": {
+    "api_calls": 0,
+    "costs_recomputed": true,
+    "official_test_access": false,
+    "protocol_sha256": "0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00",
+    "status": "passed",
+    "thresholds": [
+      {
+        "accepted": 693,
+        "difference": 0,
+        "seed": 11,
+        "threshold": 0.10354116298070118
+      },
+      {
+        "accepted": 693,
+        "difference": 0,
+        "seed": 22,
+        "threshold": 0.10243964501544885
+      },
+      {
+        "accepted": 693,
+        "difference": 0,
+        "seed": 33,
+        "threshold": 0.1021902311171956
+      },
+      {
+        "accepted": 693,
+        "difference": 0,
+        "seed": 44,
+        "threshold": 0.10160314104812371
+      },
+      {
+        "accepted": 693,
+        "difference": 0,
+        "seed": 55,
+        "threshold": 0.10612054364389162
+      }
+    ]
+  },
+  "new_unique_labels": 0,
+  "original_exp006_bytes_preserved": true,
+  "original_exp006_file_count": 775,
+  "original_exp006_tree_sha256": "bfd8ad140577004bb436a4c89a977721a3286dd358470fa05e5cf1351037a7cb",
+  "paid_api_calls": 0,
+  "previous_experiment_and_result_records_preserved_as_prefix": true,
+  "protocol_sha256": "0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00",
+  "status": "PREPARATION VERIFIED; OFFICIAL TEST NOT RUN",
+  "study_id": "EXP-007",
+  "test_artifact_directory_absent": true,
+  "test_command": ".venv/bin/python -m pytest -q",
+  "test_file_reads_including_hashing": 0,
+  "test_files_sha256": {
+    "tests/test_fixed_routing.py": "53a87eebecf7f2a0a456c43815afdd4060d9aabbffefe73b7e165d4cb2de98ed",
+    "tests/test_threshold_inputs.py": "a735b5872f3642253ee6836388cde30fe2eaa5db80301263023ed93da13e0109",
+    "tests/test_thresholds.py": "f20932c0d75c20b0a986487a0eba06066c3338ccca7d600452097d29d4b0c3bd"
+  },
+  "tests": {
+    "failed": 0,
+    "new_tests": 124,
+    "passed": 495,
+    "summary": "495 passed in 24.62s"
+  }
+}

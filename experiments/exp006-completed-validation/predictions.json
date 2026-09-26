@@ -1,0 +1,6162 @@
+[
+  {
+    "id": "train:00053",
+    "original_status": "http_429",
+    "predicted_label": "card_arrival",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00070",
+    "original_status": "http_429",
+    "predicted_label": "card_arrival",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00106",
+    "original_status": "http_429",
+    "predicted_label": "card_arrival",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00062",
+    "original_status": "http_429",
+    "predicted_label": "card_arrival",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00091",
+    "original_status": "http_429",
+    "predicted_label": "card_arrival",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00040",
+    "original_status": "http_429",
+    "predicted_label": "card_arrival",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00011",
+    "original_status": "http_429",
+    "predicted_label": "card_arrival",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00149",
+    "original_status": "http_429",
+    "predicted_label": "card_arrival",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00126",
+    "original_status": "http_429",
+    "predicted_label": "card_arrival",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00039",
+    "original_status": "http_429",
+    "predicted_label": "card_arrival",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00261",
+    "original_status": "http_429",
+    "predicted_label": "card_linking",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00245",
+    "original_status": "http_429",
+    "predicted_label": "lost_or_stolen_card",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00215",
+    "original_status": "http_429",
+    "predicted_label": "card_linking",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00288",
+    "original_status": "http_429",
+    "predicted_label": "card_linking",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00180",
+    "original_status": "http_429",
+    "predicted_label": "lost_or_stolen_card",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00248",
+    "original_status": "http_429",
+    "predicted_label": "lost_or_stolen_card",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00181",
+    "original_status": "http_429",
+    "predicted_label": "card_linking",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00254",
+    "original_status": "http_429",
+    "predicted_label": "lost_or_stolen_card",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00155",
+    "original_status": "http_429",
+    "predicted_label": "card_linking",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00283",
+    "original_status": "http_429",
+    "predicted_label": "card_linking",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00369",
+    "original_status": "http_429",
+    "predicted_label": "exchange_rate",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00292",
+    "original_status": "http_429",
+    "predicted_label": "exchange_rate",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00372",
+    "original_status": "http_429",
+    "predicted_label": "exchange_rate",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00353",
+    "original_status": "http_429",
+    "predicted_label": "exchange_rate",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00400",
+    "original_status": "http_429",
+    "predicted_label": "exchange_rate",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00370",
+    "original_status": "http_429",
+    "predicted_label": "exchange_rate",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00345",
+    "original_status": "http_429",
+    "predicted_label": "exchange_rate",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00339",
+    "original_status": "http_429",
+    "predicted_label": "exchange_rate",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00334",
+    "original_status": "http_429",
+    "predicted_label": "exchange_rate",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00361",
+    "original_status": "http_429",
+    "predicted_label": "exchange_rate",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00432",
+    "original_status": "http_429",
+    "predicted_label": "exchange_rate",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00499",
+    "original_status": "http_429",
+    "predicted_label": "exchange_charge",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00544",
+    "original_status": "http_429",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00476",
+    "original_status": "http_429",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00527",
+    "original_status": "http_429",
+    "predicted_label": "exchange_rate",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00513",
+    "original_status": "http_429",
+    "predicted_label": "exchange_rate",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00500",
+    "original_status": "http_429",
+    "predicted_label": "exchange_rate",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00539",
+    "original_status": "http_429",
+    "predicted_label": "exchange_charge",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00522",
+    "original_status": "http_429",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00546",
+    "original_status": "http_429",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00616",
+    "original_status": "http_429",
+    "predicted_label": "extra_charge_on_statement",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00667",
+    "original_status": "http_429",
+    "predicted_label": "extra_charge_on_statement",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00686",
+    "original_status": "http_429",
+    "predicted_label": "extra_charge_on_statement",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00664",
+    "original_status": "http_429",
+    "predicted_label": "pending_card_payment",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00671",
+    "original_status": "http_429",
+    "predicted_label": "extra_charge_on_statement",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00603",
+    "original_status": "http_429",
+    "predicted_label": "extra_charge_on_statement",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00624",
+    "original_status": "http_429",
+    "predicted_label": "extra_charge_on_statement",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00725",
+    "original_status": "http_429",
+    "predicted_label": "extra_charge_on_statement",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00594",
+    "original_status": "http_429",
+    "predicted_label": "extra_charge_on_statement",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00640",
+    "original_status": "http_429",
+    "predicted_label": "extra_charge_on_statement",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00875",
+    "original_status": "http_429",
+    "predicted_label": "pending_cash_withdrawal",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00836",
+    "original_status": "http_429",
+    "predicted_label": "pending_cash_withdrawal",
+    "prediction_source": "EXP-006R",
+    "recovery_status": "ok",
+    "status": "ok"
+  },
+  {
+    "id": "train:00847",
+    "original_status": "ok",
+    "predicted_label": "pending_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:00815",
+    "original_status": "ok",
+    "predicted_label": "pending_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:00758",
+    "original_status": "ok",
+    "predicted_label": "pending_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:00818",
+    "original_status": "ok",
+    "predicted_label": "pending_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:00835",
+    "original_status": "ok",
+    "predicted_label": "pending_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:00839",
+    "original_status": "ok",
+    "predicted_label": "pending_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:00805",
+    "original_status": "ok",
+    "predicted_label": "pending_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:00856",
+    "original_status": "ok",
+    "predicted_label": "pending_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:00916",
+    "original_status": "ok",
+    "predicted_label": "exchange_via_app",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:00976",
+    "original_status": "ok",
+    "predicted_label": "fiat_currency_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:00933",
+    "original_status": "ok",
+    "predicted_label": "fiat_currency_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:00954",
+    "original_status": "ok",
+    "predicted_label": "fiat_currency_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:00910",
+    "original_status": "ok",
+    "predicted_label": "fiat_currency_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:00926",
+    "original_status": "ok",
+    "predicted_label": "fiat_currency_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:00931",
+    "original_status": "ok",
+    "predicted_label": "fiat_currency_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:00974",
+    "original_status": "ok",
+    "predicted_label": "fiat_currency_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:00932",
+    "original_status": "ok",
+    "predicted_label": "exchange_via_app",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:00892",
+    "original_status": "ok",
+    "predicted_label": "fiat_currency_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01029",
+    "original_status": "ok",
+    "predicted_label": "card_delivery_estimate",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01047",
+    "original_status": "ok",
+    "predicted_label": "card_delivery_estimate",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01051",
+    "original_status": "ok",
+    "predicted_label": "card_delivery_estimate",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01094",
+    "original_status": "ok",
+    "predicted_label": "card_delivery_estimate",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01008",
+    "original_status": "ok",
+    "predicted_label": "card_delivery_estimate",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01066",
+    "original_status": "ok",
+    "predicted_label": "card_delivery_estimate",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01007",
+    "original_status": "ok",
+    "predicted_label": "card_arrival",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01020",
+    "original_status": "ok",
+    "predicted_label": "card_arrival",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01114",
+    "original_status": "ok",
+    "predicted_label": "card_delivery_estimate",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01058",
+    "original_status": "ok",
+    "predicted_label": "card_delivery_estimate",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01243",
+    "original_status": "ok",
+    "predicted_label": "automatic_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01181",
+    "original_status": "ok",
+    "predicted_label": "automatic_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01235",
+    "original_status": "ok",
+    "predicted_label": "automatic_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01133",
+    "original_status": "ok",
+    "predicted_label": "automatic_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01229",
+    "original_status": "ok",
+    "predicted_label": "automatic_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01202",
+    "original_status": "ok",
+    "predicted_label": "automatic_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01140",
+    "original_status": "ok",
+    "predicted_label": "automatic_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01177",
+    "original_status": "ok",
+    "predicted_label": "automatic_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01159",
+    "original_status": "ok",
+    "predicted_label": "automatic_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01143",
+    "original_status": "ok",
+    "predicted_label": "automatic_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01283",
+    "original_status": "ok",
+    "predicted_label": "card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01327",
+    "original_status": "ok",
+    "predicted_label": "card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01355",
+    "original_status": "ok",
+    "predicted_label": "card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01346",
+    "original_status": "ok",
+    "predicted_label": "card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01322",
+    "original_status": "ok",
+    "predicted_label": "declined_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01263",
+    "original_status": "ok",
+    "predicted_label": "card_about_to_expire",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01321",
+    "original_status": "ok",
+    "predicted_label": "card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01316",
+    "original_status": "ok",
+    "predicted_label": "card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01264",
+    "original_status": "ok",
+    "predicted_label": "card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01352",
+    "original_status": "ok",
+    "predicted_label": "card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01428",
+    "original_status": "ok",
+    "predicted_label": "exchange_via_app",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01429",
+    "original_status": "ok",
+    "predicted_label": "exchange_via_app",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01375",
+    "original_status": "ok",
+    "predicted_label": "exchange_via_app",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01370",
+    "original_status": "ok",
+    "predicted_label": "exchange_via_app",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01367",
+    "original_status": "ok",
+    "predicted_label": "fiat_currency_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01392",
+    "original_status": "ok",
+    "predicted_label": "exchange_via_app",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01472",
+    "original_status": "ok",
+    "predicted_label": "exchange_via_app",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01395",
+    "original_status": "ok",
+    "predicted_label": "exchange_via_app",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01361",
+    "original_status": "ok",
+    "predicted_label": "fiat_currency_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01444",
+    "original_status": "ok",
+    "predicted_label": "exchange_via_app",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01550",
+    "original_status": "ok",
+    "predicted_label": "lost_or_stolen_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01501",
+    "original_status": "ok",
+    "predicted_label": "lost_or_stolen_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01555",
+    "original_status": "ok",
+    "predicted_label": "lost_or_stolen_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01513",
+    "original_status": "ok",
+    "predicted_label": "lost_or_stolen_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01480",
+    "original_status": "ok",
+    "predicted_label": "lost_or_stolen_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01549",
+    "original_status": "ok",
+    "predicted_label": "lost_or_stolen_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01523",
+    "original_status": "ok",
+    "predicted_label": "lost_or_stolen_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01552",
+    "original_status": "ok",
+    "predicted_label": "card_arrival",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01477",
+    "original_status": "ok",
+    "predicted_label": "lost_or_stolen_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01518",
+    "original_status": "ok",
+    "predicted_label": "lost_or_stolen_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01639",
+    "original_status": "ok",
+    "predicted_label": "age_limit",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01589",
+    "original_status": "ok",
+    "predicted_label": "age_limit",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01565",
+    "original_status": "ok",
+    "predicted_label": "age_limit",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01656",
+    "original_status": "ok",
+    "predicted_label": "age_limit",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01581",
+    "original_status": "ok",
+    "predicted_label": "age_limit",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01612",
+    "original_status": "ok",
+    "predicted_label": "age_limit",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01632",
+    "original_status": "ok",
+    "predicted_label": "age_limit",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01601",
+    "original_status": "ok",
+    "predicted_label": "age_limit",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01593",
+    "original_status": "ok",
+    "predicted_label": "age_limit",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01588",
+    "original_status": "ok",
+    "predicted_label": "age_limit",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01780",
+    "original_status": "ok",
+    "predicted_label": "pin_blocked",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01699",
+    "original_status": "ok",
+    "predicted_label": "pin_blocked",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01692",
+    "original_status": "ok",
+    "predicted_label": "pin_blocked",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01689",
+    "original_status": "ok",
+    "predicted_label": "pin_blocked",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01719",
+    "original_status": "ok",
+    "predicted_label": "pin_blocked",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01710",
+    "original_status": "ok",
+    "predicted_label": "pin_blocked",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01759",
+    "original_status": "ok",
+    "predicted_label": "pin_blocked",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01742",
+    "original_status": "ok",
+    "predicted_label": "pin_blocked",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01727",
+    "original_status": "ok",
+    "predicted_label": "pin_blocked",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01677",
+    "original_status": "ok",
+    "predicted_label": "pin_blocked",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01792",
+    "original_status": "ok",
+    "predicted_label": "contactless_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01782",
+    "original_status": "ok",
+    "predicted_label": "card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01784",
+    "original_status": "ok",
+    "predicted_label": "contactless_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01816",
+    "original_status": "ok",
+    "predicted_label": "contactless_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01788",
+    "original_status": "ok",
+    "predicted_label": "card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01791",
+    "original_status": "ok",
+    "predicted_label": "card_acceptance",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01800",
+    "original_status": "ok",
+    "predicted_label": "contactless_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01796",
+    "original_status": "ok",
+    "predicted_label": "contactless_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01814",
+    "original_status": "ok",
+    "predicted_label": "contactless_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01805",
+    "original_status": "ok",
+    "predicted_label": "contactless_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01871",
+    "original_status": "ok",
+    "predicted_label": "transfer_fee_charged",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01906",
+    "original_status": "ok",
+    "predicted_label": "cash_withdrawal_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01899",
+    "original_status": "ok",
+    "predicted_label": "receiving_money",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01836",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01902",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01901",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01910",
+    "original_status": "ok",
+    "predicted_label": "receiving_money",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01898",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01875",
+    "original_status": "ok",
+    "predicted_label": "receiving_money",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01890",
+    "original_status": "ok",
+    "predicted_label": "receiving_money",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02019",
+    "original_status": "ok",
+    "predicted_label": "pending_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01981",
+    "original_status": "ok",
+    "predicted_label": "top_up_failed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01995",
+    "original_status": "ok",
+    "predicted_label": "top_up_failed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02010",
+    "original_status": "ok",
+    "predicted_label": "pending_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01931",
+    "original_status": "ok",
+    "predicted_label": "pending_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02005",
+    "original_status": "ok",
+    "predicted_label": "pending_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01938",
+    "original_status": "ok",
+    "predicted_label": "pending_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01965",
+    "original_status": "ok",
+    "predicted_label": "pending_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01961",
+    "original_status": "ok",
+    "predicted_label": "pending_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:01967",
+    "original_status": "ok",
+    "predicted_label": "pending_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02138",
+    "original_status": "ok",
+    "predicted_label": "cancel_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02126",
+    "original_status": "ok",
+    "predicted_label": "cancel_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02133",
+    "original_status": "ok",
+    "predicted_label": "cancel_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02080",
+    "original_status": "ok",
+    "predicted_label": "cancel_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02108",
+    "original_status": "ok",
+    "predicted_label": "cancel_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02120",
+    "original_status": "ok",
+    "predicted_label": "cancel_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02225",
+    "original_status": "ok",
+    "predicted_label": "cancel_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02105",
+    "original_status": "ok",
+    "predicted_label": "card_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02165",
+    "original_status": "ok",
+    "predicted_label": "cancel_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02211",
+    "original_status": "ok",
+    "predicted_label": "reverted_card_payment?",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02239",
+    "original_status": "ok",
+    "predicted_label": "top_up_limits",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02324",
+    "original_status": "ok",
+    "predicted_label": "top_up_limits",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02286",
+    "original_status": "ok",
+    "predicted_label": "top_up_limits",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02294",
+    "original_status": "ok",
+    "predicted_label": "topping_up_by_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02290",
+    "original_status": "ok",
+    "predicted_label": "top_up_limits",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02316",
+    "original_status": "ok",
+    "predicted_label": "top_up_limits",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02251",
+    "original_status": "ok",
+    "predicted_label": "top_up_limits",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02320",
+    "original_status": "ok",
+    "predicted_label": "top_up_limits",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02272",
+    "original_status": "ok",
+    "predicted_label": "top_up_limits",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02289",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02382",
+    "original_status": "ok",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02446",
+    "original_status": "ok",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02357",
+    "original_status": "ok",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02496",
+    "original_status": "ok",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02429",
+    "original_status": "ok",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02474",
+    "original_status": "ok",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02407",
+    "original_status": "ok",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02416",
+    "original_status": "ok",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02406",
+    "original_status": "ok",
+    "predicted_label": "pending_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02410",
+    "original_status": "ok",
+    "predicted_label": "pending_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02563",
+    "original_status": "ok",
+    "predicted_label": "card_payment_fee_charged",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02576",
+    "original_status": "ok",
+    "predicted_label": "card_payment_fee_charged",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02519",
+    "original_status": "ok",
+    "predicted_label": "card_payment_fee_charged",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02515",
+    "original_status": "ok",
+    "predicted_label": "card_payment_fee_charged",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02634",
+    "original_status": "ok",
+    "predicted_label": "card_payment_fee_charged",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02606",
+    "original_status": "ok",
+    "predicted_label": "card_payment_fee_charged",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02655",
+    "original_status": "ok",
+    "predicted_label": "card_payment_fee_charged",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02645",
+    "original_status": "ok",
+    "predicted_label": "extra_charge_on_statement",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02569",
+    "original_status": "ok",
+    "predicted_label": "card_payment_fee_charged",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02599",
+    "original_status": "ok",
+    "predicted_label": "extra_charge_on_statement",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02743",
+    "original_status": "ok",
+    "predicted_label": "transfer_timing",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02794",
+    "original_status": "ok",
+    "predicted_label": "transfer_timing",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02862",
+    "original_status": "ok",
+    "predicted_label": "transfer_not_received_by_recipient",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02698",
+    "original_status": "ok",
+    "predicted_label": "transfer_timing",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02742",
+    "original_status": "ok",
+    "predicted_label": "transfer_not_received_by_recipient",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02804",
+    "original_status": "ok",
+    "predicted_label": "pending_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02738",
+    "original_status": "ok",
+    "predicted_label": "transfer_timing",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02866",
+    "original_status": "ok",
+    "predicted_label": "transfer_timing",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02764",
+    "original_status": "ok",
+    "predicted_label": "transfer_not_received_by_recipient",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02855",
+    "original_status": "ok",
+    "predicted_label": "transfer_not_received_by_recipient",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02927",
+    "original_status": "ok",
+    "predicted_label": "supported_cards_and_currencies",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02893",
+    "original_status": "ok",
+    "predicted_label": "supported_cards_and_currencies",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02931",
+    "original_status": "ok",
+    "predicted_label": "supported_cards_and_currencies",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02966",
+    "original_status": "ok",
+    "predicted_label": "supported_cards_and_currencies",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02924",
+    "original_status": "ok",
+    "predicted_label": "fiat_currency_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02923",
+    "original_status": "ok",
+    "predicted_label": "supported_cards_and_currencies",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02971",
+    "original_status": "ok",
+    "predicted_label": "topping_up_by_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02938",
+    "original_status": "ok",
+    "predicted_label": "supported_cards_and_currencies",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02941",
+    "original_status": "ok",
+    "predicted_label": "supported_cards_and_currencies",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:02878",
+    "original_status": "ok",
+    "predicted_label": "supported_cards_and_currencies",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03002",
+    "original_status": "ok",
+    "predicted_label": "getting_virtual_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03094",
+    "original_status": "ok",
+    "predicted_label": "getting_virtual_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03073",
+    "original_status": "ok",
+    "predicted_label": "getting_virtual_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03007",
+    "original_status": "ok",
+    "predicted_label": "getting_virtual_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03034",
+    "original_status": "ok",
+    "predicted_label": "getting_virtual_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03089",
+    "original_status": "ok",
+    "predicted_label": "getting_virtual_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03022",
+    "original_status": "ok",
+    "predicted_label": "getting_virtual_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03017",
+    "original_status": "ok",
+    "predicted_label": "getting_virtual_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03025",
+    "original_status": "ok",
+    "predicted_label": "getting_virtual_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03074",
+    "original_status": "ok",
+    "predicted_label": "getting_virtual_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03096",
+    "original_status": "ok",
+    "predicted_label": "card_acceptance",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03140",
+    "original_status": "ok",
+    "predicted_label": "card_acceptance",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03132",
+    "original_status": "ok",
+    "predicted_label": "card_acceptance",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03109",
+    "original_status": "ok",
+    "predicted_label": "topping_up_by_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03100",
+    "original_status": "ok",
+    "predicted_label": "card_acceptance",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03106",
+    "original_status": "ok",
+    "predicted_label": "card_acceptance",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03135",
+    "original_status": "ok",
+    "predicted_label": "card_acceptance",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03098",
+    "original_status": "ok",
+    "predicted_label": "card_acceptance",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03150",
+    "original_status": "ok",
+    "predicted_label": "card_acceptance",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03123",
+    "original_status": "ok",
+    "predicted_label": "card_acceptance",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03206",
+    "original_status": "ok",
+    "predicted_label": "top_up_reverted",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03226",
+    "original_status": "ok",
+    "predicted_label": "top_up_failed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03267",
+    "original_status": "ok",
+    "predicted_label": "top_up_reverted",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03243",
+    "original_status": "ok",
+    "predicted_label": "top_up_failed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03161",
+    "original_status": "ok",
+    "predicted_label": "top_up_reverted",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03155",
+    "original_status": "ok",
+    "predicted_label": "pending_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03233",
+    "original_status": "ok",
+    "predicted_label": "cancel_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03285",
+    "original_status": "ok",
+    "predicted_label": "top_up_failed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03263",
+    "original_status": "ok",
+    "predicted_label": "automatic_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03244",
+    "original_status": "ok",
+    "predicted_label": "top_up_reverted",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03381",
+    "original_status": "ok",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03394",
+    "original_status": "ok",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03386",
+    "original_status": "ok",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03361",
+    "original_status": "ok",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03406",
+    "original_status": "ok",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03430",
+    "original_status": "ok",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03378",
+    "original_status": "ok",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03460",
+    "original_status": "ok",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03384",
+    "original_status": "ok",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03408",
+    "original_status": "ok",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03643",
+    "original_status": "ok",
+    "predicted_label": "card_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03615",
+    "original_status": "ok",
+    "predicted_label": "card_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03500",
+    "original_status": "ok",
+    "predicted_label": "card_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03545",
+    "original_status": "ok",
+    "predicted_label": "card_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03590",
+    "original_status": "ok",
+    "predicted_label": "card_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03620",
+    "original_status": "ok",
+    "predicted_label": "card_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03569",
+    "original_status": "ok",
+    "predicted_label": "card_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03596",
+    "original_status": "ok",
+    "predicted_label": "card_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03631",
+    "original_status": "ok",
+    "predicted_label": "card_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03542",
+    "original_status": "ok",
+    "predicted_label": "card_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03769",
+    "original_status": "ok",
+    "predicted_label": "edit_personal_details",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03683",
+    "original_status": "ok",
+    "predicted_label": "edit_personal_details",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03743",
+    "original_status": "ok",
+    "predicted_label": "edit_personal_details",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03717",
+    "original_status": "ok",
+    "predicted_label": "edit_personal_details",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03751",
+    "original_status": "ok",
+    "predicted_label": "edit_personal_details",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03692",
+    "original_status": "ok",
+    "predicted_label": "edit_personal_details",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03706",
+    "original_status": "ok",
+    "predicted_label": "edit_personal_details",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03691",
+    "original_status": "ok",
+    "predicted_label": "edit_personal_details",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03765",
+    "original_status": "ok",
+    "predicted_label": "edit_personal_details",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03698",
+    "original_status": "ok",
+    "predicted_label": "edit_personal_details",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03800",
+    "original_status": "ok",
+    "predicted_label": "why_verify_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03809",
+    "original_status": "ok",
+    "predicted_label": "why_verify_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03786",
+    "original_status": "ok",
+    "predicted_label": "why_verify_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03810",
+    "original_status": "ok",
+    "predicted_label": "why_verify_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03862",
+    "original_status": "ok",
+    "predicted_label": "verify_my_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03801",
+    "original_status": "ok",
+    "predicted_label": "verify_my_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03865",
+    "original_status": "ok",
+    "predicted_label": "why_verify_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03829",
+    "original_status": "ok",
+    "predicted_label": "why_verify_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03844",
+    "original_status": "ok",
+    "predicted_label": "why_verify_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03778",
+    "original_status": "ok",
+    "predicted_label": "why_verify_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03899",
+    "original_status": "ok",
+    "predicted_label": "verify_my_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03918",
+    "original_status": "ok",
+    "predicted_label": "unable_to_verify_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03989",
+    "original_status": "ok",
+    "predicted_label": "verify_my_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03911",
+    "original_status": "ok",
+    "predicted_label": "unable_to_verify_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03993",
+    "original_status": "ok",
+    "predicted_label": "verify_my_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03952",
+    "original_status": "ok",
+    "predicted_label": "unable_to_verify_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03923",
+    "original_status": "ok",
+    "predicted_label": "unable_to_verify_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03987",
+    "original_status": "ok",
+    "predicted_label": "unable_to_verify_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03928",
+    "original_status": "ok",
+    "predicted_label": "unable_to_verify_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03946",
+    "original_status": "ok",
+    "predicted_label": "verify_my_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04017",
+    "original_status": "ok",
+    "predicted_label": "change_pin",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04068",
+    "original_status": "ok",
+    "predicted_label": "change_pin",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04091",
+    "original_status": "ok",
+    "predicted_label": "activate_my_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04048",
+    "original_status": "ok",
+    "predicted_label": "change_pin",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04034",
+    "original_status": "ok",
+    "predicted_label": "card_arrival",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04069",
+    "original_status": "ok",
+    "predicted_label": "card_arrival",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04042",
+    "original_status": "ok",
+    "predicted_label": "change_pin",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04052",
+    "original_status": "ok",
+    "predicted_label": "change_pin",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:03996",
+    "original_status": "ok",
+    "predicted_label": "change_pin",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04057",
+    "original_status": "ok",
+    "predicted_label": "card_arrival",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04149",
+    "original_status": "ok",
+    "predicted_label": "visa_or_mastercard",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04182",
+    "original_status": "ok",
+    "predicted_label": "visa_or_mastercard",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04159",
+    "original_status": "ok",
+    "predicted_label": "visa_or_mastercard",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04192",
+    "original_status": "ok",
+    "predicted_label": "visa_or_mastercard",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04224",
+    "original_status": "ok",
+    "predicted_label": "visa_or_mastercard",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04108",
+    "original_status": "ok",
+    "predicted_label": "visa_or_mastercard",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04137",
+    "original_status": "ok",
+    "predicted_label": "visa_or_mastercard",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04143",
+    "original_status": "ok",
+    "predicted_label": "visa_or_mastercard",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04117",
+    "original_status": "ok",
+    "predicted_label": "supported_cards_and_currencies",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04167",
+    "original_status": "ok",
+    "predicted_label": "visa_or_mastercard",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04264",
+    "original_status": "ok",
+    "predicted_label": "topping_up_by_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04283",
+    "original_status": "ok",
+    "predicted_label": "topping_up_by_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04325",
+    "original_status": "ok",
+    "predicted_label": "top_up_failed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04327",
+    "original_status": "ok",
+    "predicted_label": "topping_up_by_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04266",
+    "original_status": "ok",
+    "predicted_label": "topping_up_by_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04316",
+    "original_status": "ok",
+    "predicted_label": "pending_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04315",
+    "original_status": "ok",
+    "predicted_label": "receiving_money",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04306",
+    "original_status": "ok",
+    "predicted_label": "pending_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04333",
+    "original_status": "ok",
+    "predicted_label": "topping_up_by_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04289",
+    "original_status": "ok",
+    "predicted_label": "pending_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04360",
+    "original_status": "ok",
+    "predicted_label": "disposable_card_limits",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04434",
+    "original_status": "ok",
+    "predicted_label": "disposable_card_limits",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04426",
+    "original_status": "ok",
+    "predicted_label": "disposable_card_limits",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04450",
+    "original_status": "ok",
+    "predicted_label": "disposable_card_limits",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04372",
+    "original_status": "ok",
+    "predicted_label": "disposable_card_limits",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04343",
+    "original_status": "ok",
+    "predicted_label": "disposable_card_limits",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04431",
+    "original_status": "ok",
+    "predicted_label": "disposable_card_limits",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04421",
+    "original_status": "ok",
+    "predicted_label": "disposable_card_limits",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04370",
+    "original_status": "ok",
+    "predicted_label": "disposable_card_limits",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04427",
+    "original_status": "ok",
+    "predicted_label": "disposable_card_limits",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04475",
+    "original_status": "ok",
+    "predicted_label": "compromised_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04542",
+    "original_status": "ok",
+    "predicted_label": "compromised_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04513",
+    "original_status": "ok",
+    "predicted_label": "compromised_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04508",
+    "original_status": "ok",
+    "predicted_label": "compromised_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04500",
+    "original_status": "ok",
+    "predicted_label": "compromised_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04524",
+    "original_status": "ok",
+    "predicted_label": "card_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04530",
+    "original_status": "ok",
+    "predicted_label": "compromised_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04474",
+    "original_status": "ok",
+    "predicted_label": "card_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04499",
+    "original_status": "ok",
+    "predicted_label": "compromised_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04520",
+    "original_status": "ok",
+    "predicted_label": "compromised_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04547",
+    "original_status": "ok",
+    "predicted_label": "atm_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04587",
+    "original_status": "ok",
+    "predicted_label": "atm_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04627",
+    "original_status": "ok",
+    "predicted_label": "atm_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04598",
+    "original_status": "ok",
+    "predicted_label": "atm_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04609",
+    "original_status": "ok",
+    "predicted_label": "atm_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04606",
+    "original_status": "ok",
+    "predicted_label": "atm_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04621",
+    "original_status": "ok",
+    "predicted_label": "atm_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04557",
+    "original_status": "ok",
+    "predicted_label": "atm_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04619",
+    "original_status": "ok",
+    "predicted_label": "atm_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04568",
+    "original_status": "ok",
+    "predicted_label": "atm_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04745",
+    "original_status": "ok",
+    "predicted_label": "card_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04785",
+    "original_status": "ok",
+    "predicted_label": "card_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04809",
+    "original_status": "ok",
+    "predicted_label": "card_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04786",
+    "original_status": "ok",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04743",
+    "original_status": "ok",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04795",
+    "original_status": "ok",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04723",
+    "original_status": "ok",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04789",
+    "original_status": "ok",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04714",
+    "original_status": "ok",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04715",
+    "original_status": "ok",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04837",
+    "original_status": "ok",
+    "predicted_label": "passcode_forgotten",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04859",
+    "original_status": "ok",
+    "predicted_label": "passcode_forgotten",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04846",
+    "original_status": "ok",
+    "predicted_label": "passcode_forgotten",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04841",
+    "original_status": "ok",
+    "predicted_label": "passcode_forgotten",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04899",
+    "original_status": "ok",
+    "predicted_label": "passcode_forgotten",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04880",
+    "original_status": "ok",
+    "predicted_label": "passcode_forgotten",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04824",
+    "original_status": "ok",
+    "predicted_label": "passcode_forgotten",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04917",
+    "original_status": "ok",
+    "predicted_label": "passcode_forgotten",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04870",
+    "original_status": "ok",
+    "predicted_label": "passcode_forgotten",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04904",
+    "original_status": "ok",
+    "predicted_label": "passcode_forgotten",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05082",
+    "original_status": "ok",
+    "predicted_label": "declined_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04970",
+    "original_status": "ok",
+    "predicted_label": "declined_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05042",
+    "original_status": "ok",
+    "predicted_label": "atm_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05018",
+    "original_status": "ok",
+    "predicted_label": "declined_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05044",
+    "original_status": "ok",
+    "predicted_label": "declined_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:04982",
+    "original_status": "ok",
+    "predicted_label": "declined_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05008",
+    "original_status": "ok",
+    "predicted_label": "declined_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05020",
+    "original_status": "ok",
+    "predicted_label": "declined_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05017",
+    "original_status": "ok",
+    "predicted_label": "declined_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05026",
+    "original_status": "ok",
+    "predicted_label": "declined_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05177",
+    "original_status": "ok",
+    "predicted_label": "pending_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05169",
+    "original_status": "ok",
+    "predicted_label": "pending_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05109",
+    "original_status": "ok",
+    "predicted_label": "pending_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05126",
+    "original_status": "ok",
+    "predicted_label": "pending_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05230",
+    "original_status": "ok",
+    "predicted_label": "pending_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05111",
+    "original_status": "ok",
+    "predicted_label": "pending_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05209",
+    "original_status": "ok",
+    "predicted_label": "pending_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05216",
+    "original_status": "ok",
+    "predicted_label": "pending_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05206",
+    "original_status": "ok",
+    "predicted_label": "pending_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05179",
+    "original_status": "ok",
+    "predicted_label": "pending_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05370",
+    "original_status": "ok",
+    "predicted_label": "lost_or_stolen_phone",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05328",
+    "original_status": "ok",
+    "predicted_label": "lost_or_stolen_phone",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05356",
+    "original_status": "ok",
+    "predicted_label": "lost_or_stolen_phone",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05253",
+    "original_status": "ok",
+    "predicted_label": "lost_or_stolen_phone",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05285",
+    "original_status": "ok",
+    "predicted_label": "lost_or_stolen_phone",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05347",
+    "original_status": "ok",
+    "predicted_label": "lost_or_stolen_phone",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05255",
+    "original_status": "ok",
+    "predicted_label": "lost_or_stolen_phone",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05252",
+    "original_status": "ok",
+    "predicted_label": "lost_or_stolen_phone",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05361",
+    "original_status": "ok",
+    "predicted_label": "card_linking",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05269",
+    "original_status": "ok",
+    "predicted_label": "lost_or_stolen_phone",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05396",
+    "original_status": "ok",
+    "predicted_label": "request_refund",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05460",
+    "original_status": "ok",
+    "predicted_label": "request_refund",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05433",
+    "original_status": "ok",
+    "predicted_label": "request_refund",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05378",
+    "original_status": "ok",
+    "predicted_label": "request_refund",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05517",
+    "original_status": "ok",
+    "predicted_label": "request_refund",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05463",
+    "original_status": "ok",
+    "predicted_label": "request_refund",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05400",
+    "original_status": "ok",
+    "predicted_label": "request_refund",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05450",
+    "original_status": "ok",
+    "predicted_label": "request_refund",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05466",
+    "original_status": "ok",
+    "predicted_label": "request_refund",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05387",
+    "original_status": "ok",
+    "predicted_label": "request_refund",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05635",
+    "original_status": "ok",
+    "predicted_label": "declined_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05559",
+    "original_status": "ok",
+    "predicted_label": "declined_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05614",
+    "original_status": "ok",
+    "predicted_label": "declined_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05555",
+    "original_status": "ok",
+    "predicted_label": "declined_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05603",
+    "original_status": "ok",
+    "predicted_label": "declined_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05591",
+    "original_status": "ok",
+    "predicted_label": "declined_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05610",
+    "original_status": "ok",
+    "predicted_label": "declined_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05551",
+    "original_status": "ok",
+    "predicted_label": "declined_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05617",
+    "original_status": "ok",
+    "predicted_label": "declined_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05588",
+    "original_status": "ok",
+    "predicted_label": "beneficiary_not_allowed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05679",
+    "original_status": "ok",
+    "predicted_label": "Refund_not_showing_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05820",
+    "original_status": "ok",
+    "predicted_label": "Refund_not_showing_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05722",
+    "original_status": "ok",
+    "predicted_label": "Refund_not_showing_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05759",
+    "original_status": "ok",
+    "predicted_label": "Refund_not_showing_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05681",
+    "original_status": "ok",
+    "predicted_label": "request_refund",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05783",
+    "original_status": "ok",
+    "predicted_label": "Refund_not_showing_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05779",
+    "original_status": "ok",
+    "predicted_label": "Refund_not_showing_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05729",
+    "original_status": "ok",
+    "predicted_label": "request_refund",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05750",
+    "original_status": "ok",
+    "predicted_label": "Refund_not_showing_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05807",
+    "original_status": "ok",
+    "predicted_label": "Refund_not_showing_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05962",
+    "original_status": "ok",
+    "predicted_label": "declined_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05856",
+    "original_status": "ok",
+    "predicted_label": "declined_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05898",
+    "original_status": "ok",
+    "predicted_label": "declined_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05917",
+    "original_status": "ok",
+    "predicted_label": "card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05941",
+    "original_status": "ok",
+    "predicted_label": "declined_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05959",
+    "original_status": "ok",
+    "predicted_label": "declined_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05892",
+    "original_status": "ok",
+    "predicted_label": "declined_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05956",
+    "original_status": "ok",
+    "predicted_label": "declined_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05937",
+    "original_status": "ok",
+    "predicted_label": "declined_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05910",
+    "original_status": "ok",
+    "predicted_label": "card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06078",
+    "original_status": "ok",
+    "predicted_label": "transfer_timing",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06054",
+    "original_status": "ok",
+    "predicted_label": "pending_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06053",
+    "original_status": "ok",
+    "predicted_label": "pending_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:05993",
+    "original_status": "ok",
+    "predicted_label": "pending_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06036",
+    "original_status": "ok",
+    "predicted_label": "pending_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06098",
+    "original_status": "ok",
+    "predicted_label": "pending_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06127",
+    "original_status": "ok",
+    "predicted_label": "pending_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06080",
+    "original_status": "ok",
+    "predicted_label": "pending_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06037",
+    "original_status": "ok",
+    "predicted_label": "transfer_timing",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06010",
+    "original_status": "ok",
+    "predicted_label": "pending_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06204",
+    "original_status": "ok",
+    "predicted_label": "terminate_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06174",
+    "original_status": "ok",
+    "predicted_label": "terminate_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06168",
+    "original_status": "ok",
+    "predicted_label": "terminate_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06223",
+    "original_status": "ok",
+    "predicted_label": "terminate_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06216",
+    "original_status": "ok",
+    "predicted_label": "terminate_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06161",
+    "original_status": "ok",
+    "predicted_label": "terminate_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06213",
+    "original_status": "ok",
+    "predicted_label": "terminate_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06206",
+    "original_status": "ok",
+    "predicted_label": "terminate_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06222",
+    "original_status": "ok",
+    "predicted_label": "terminate_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06143",
+    "original_status": "ok",
+    "predicted_label": "terminate_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06292",
+    "original_status": "ok",
+    "predicted_label": "card_swallowed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06271",
+    "original_status": "ok",
+    "predicted_label": "card_swallowed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06262",
+    "original_status": "ok",
+    "predicted_label": "card_swallowed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06298",
+    "original_status": "ok",
+    "predicted_label": "card_swallowed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06272",
+    "original_status": "ok",
+    "predicted_label": "card_swallowed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06270",
+    "original_status": "ok",
+    "predicted_label": "card_swallowed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06266",
+    "original_status": "ok",
+    "predicted_label": "card_swallowed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06293",
+    "original_status": "ok",
+    "predicted_label": "card_swallowed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06256",
+    "original_status": "ok",
+    "predicted_label": "getting_spare_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06268",
+    "original_status": "ok",
+    "predicted_label": "card_swallowed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06335",
+    "original_status": "ok",
+    "predicted_label": "transaction_charged_twice",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06411",
+    "original_status": "ok",
+    "predicted_label": "transaction_charged_twice",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06396",
+    "original_status": "ok",
+    "predicted_label": "transaction_charged_twice",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06315",
+    "original_status": "ok",
+    "predicted_label": "transaction_charged_twice",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06379",
+    "original_status": "ok",
+    "predicted_label": "transaction_charged_twice",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06363",
+    "original_status": "ok",
+    "predicted_label": "transaction_charged_twice",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06446",
+    "original_status": "ok",
+    "predicted_label": "transaction_charged_twice",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06382",
+    "original_status": "ok",
+    "predicted_label": "transaction_charged_twice",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06344",
+    "original_status": "ok",
+    "predicted_label": "transaction_charged_twice",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06462",
+    "original_status": "ok",
+    "predicted_label": "transaction_charged_twice",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06570",
+    "original_status": "ok",
+    "predicted_label": "verify_source_of_funds",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06545",
+    "original_status": "ok",
+    "predicted_label": "verify_source_of_funds",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06520",
+    "original_status": "ok",
+    "predicted_label": "verify_source_of_funds",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06571",
+    "original_status": "ok",
+    "predicted_label": "verify_source_of_funds",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06554",
+    "original_status": "ok",
+    "predicted_label": "verify_source_of_funds",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06541",
+    "original_status": "ok",
+    "predicted_label": "verify_source_of_funds",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06518",
+    "original_status": "ok",
+    "predicted_label": "verify_source_of_funds",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06503",
+    "original_status": "ok",
+    "predicted_label": "verify_source_of_funds",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06507",
+    "original_status": "ok",
+    "predicted_label": "verify_source_of_funds",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06565",
+    "original_status": "ok",
+    "predicted_label": "verify_source_of_funds",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06673",
+    "original_status": "ok",
+    "predicted_label": "transfer_timing",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06613",
+    "original_status": "ok",
+    "predicted_label": "transfer_timing",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06705",
+    "original_status": "ok",
+    "predicted_label": "transfer_timing",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06634",
+    "original_status": "ok",
+    "predicted_label": "transfer_timing",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06619",
+    "original_status": "ok",
+    "predicted_label": "transfer_timing",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06721",
+    "original_status": "ok",
+    "predicted_label": "transfer_timing",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06640",
+    "original_status": "ok",
+    "predicted_label": "transfer_timing",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06664",
+    "original_status": "ok",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06717",
+    "original_status": "ok",
+    "predicted_label": "transfer_timing",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06661",
+    "original_status": "ok",
+    "predicted_label": "transfer_timing",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06786",
+    "original_status": "ok",
+    "predicted_label": "reverted_card_payment?",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06745",
+    "original_status": "ok",
+    "predicted_label": "pending_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06771",
+    "original_status": "ok",
+    "predicted_label": "transfer_not_received_by_recipient",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06871",
+    "original_status": "ok",
+    "predicted_label": "reverted_card_payment?",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06851",
+    "original_status": "ok",
+    "predicted_label": "reverted_card_payment?",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06879",
+    "original_status": "ok",
+    "predicted_label": "cancel_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06778",
+    "original_status": "ok",
+    "predicted_label": "reverted_card_payment?",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06839",
+    "original_status": "ok",
+    "predicted_label": "Refund_not_showing_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06723",
+    "original_status": "ok",
+    "predicted_label": "declined_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06845",
+    "original_status": "ok",
+    "predicted_label": "reverted_card_payment?",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06937",
+    "original_status": "ok",
+    "predicted_label": "change_pin",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06943",
+    "original_status": "ok",
+    "predicted_label": "change_pin",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06963",
+    "original_status": "ok",
+    "predicted_label": "change_pin",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06886",
+    "original_status": "ok",
+    "predicted_label": "change_pin",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06905",
+    "original_status": "ok",
+    "predicted_label": "change_pin",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06912",
+    "original_status": "ok",
+    "predicted_label": "change_pin",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06956",
+    "original_status": "ok",
+    "predicted_label": "change_pin",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06958",
+    "original_status": "ok",
+    "predicted_label": "change_pin",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06931",
+    "original_status": "ok",
+    "predicted_label": "change_pin",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:06918",
+    "original_status": "ok",
+    "predicted_label": "change_pin",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07129",
+    "original_status": "ok",
+    "predicted_label": "failed_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07142",
+    "original_status": "ok",
+    "predicted_label": "beneficiary_not_allowed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07158",
+    "original_status": "ok",
+    "predicted_label": "failed_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07078",
+    "original_status": "ok",
+    "predicted_label": "failed_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07043",
+    "original_status": "ok",
+    "predicted_label": "beneficiary_not_allowed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07058",
+    "original_status": "ok",
+    "predicted_label": "failed_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07044",
+    "original_status": "ok",
+    "predicted_label": "failed_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07015",
+    "original_status": "ok",
+    "predicted_label": "beneficiary_not_allowed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07091",
+    "original_status": "ok",
+    "predicted_label": "beneficiary_not_allowed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07124",
+    "original_status": "ok",
+    "predicted_label": "beneficiary_not_allowed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07215",
+    "original_status": "ok",
+    "predicted_label": "card_payment_fee_charged",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07314",
+    "original_status": "ok",
+    "predicted_label": "transfer_fee_charged",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07193",
+    "original_status": "ok",
+    "predicted_label": "transfer_fee_charged",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07218",
+    "original_status": "ok",
+    "predicted_label": "extra_charge_on_statement",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07323",
+    "original_status": "ok",
+    "predicted_label": "extra_charge_on_statement",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07182",
+    "original_status": "ok",
+    "predicted_label": "transfer_fee_charged",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07201",
+    "original_status": "ok",
+    "predicted_label": "transfer_fee_charged",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07200",
+    "original_status": "ok",
+    "predicted_label": "transfer_fee_charged",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07313",
+    "original_status": "ok",
+    "predicted_label": "transfer_fee_charged",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07276",
+    "original_status": "ok",
+    "predicted_label": "transfer_fee_charged",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07418",
+    "original_status": "ok",
+    "predicted_label": "receiving_money",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07398",
+    "original_status": "ok",
+    "predicted_label": "receiving_money",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07413",
+    "original_status": "ok",
+    "predicted_label": "receiving_money",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07333",
+    "original_status": "ok",
+    "predicted_label": "receiving_money",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07427",
+    "original_status": "ok",
+    "predicted_label": "receiving_money",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07385",
+    "original_status": "ok",
+    "predicted_label": "receiving_money",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07370",
+    "original_status": "ok",
+    "predicted_label": "fiat_currency_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07394",
+    "original_status": "ok",
+    "predicted_label": "receiving_money",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07339",
+    "original_status": "ok",
+    "predicted_label": "receiving_money",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07371",
+    "original_status": "ok",
+    "predicted_label": "receiving_money",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07534",
+    "original_status": "ok",
+    "predicted_label": "failed_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07549",
+    "original_status": "ok",
+    "predicted_label": "failed_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07456",
+    "original_status": "ok",
+    "predicted_label": "failed_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07518",
+    "original_status": "ok",
+    "predicted_label": "failed_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07497",
+    "original_status": "ok",
+    "predicted_label": "failed_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07444",
+    "original_status": "ok",
+    "predicted_label": "failed_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07453",
+    "original_status": "ok",
+    "predicted_label": "failed_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07516",
+    "original_status": "ok",
+    "predicted_label": "failed_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07535",
+    "original_status": "ok",
+    "predicted_label": "failed_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07459",
+    "original_status": "ok",
+    "predicted_label": "failed_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07596",
+    "original_status": "ok",
+    "predicted_label": "transfer_into_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07677",
+    "original_status": "ok",
+    "predicted_label": "transfer_into_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07649",
+    "original_status": "ok",
+    "predicted_label": "transfer_into_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07630",
+    "original_status": "ok",
+    "predicted_label": "transfer_into_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07571",
+    "original_status": "ok",
+    "predicted_label": "transfer_into_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07606",
+    "original_status": "ok",
+    "predicted_label": "transfer_into_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07570",
+    "original_status": "ok",
+    "predicted_label": "transfer_into_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07608",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07643",
+    "original_status": "ok",
+    "predicted_label": "transfer_into_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07639",
+    "original_status": "ok",
+    "predicted_label": "transfer_into_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07789",
+    "original_status": "ok",
+    "predicted_label": "card_linking",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07745",
+    "original_status": "ok",
+    "predicted_label": "verify_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07772",
+    "original_status": "ok",
+    "predicted_label": "verify_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07747",
+    "original_status": "ok",
+    "predicted_label": "verify_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07752",
+    "original_status": "ok",
+    "predicted_label": "verify_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07731",
+    "original_status": "ok",
+    "predicted_label": "verify_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07750",
+    "original_status": "ok",
+    "predicted_label": "verify_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07719",
+    "original_status": "ok",
+    "predicted_label": "verify_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07713",
+    "original_status": "ok",
+    "predicted_label": "verify_top_up",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07786",
+    "original_status": "ok",
+    "predicted_label": "verify_my_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07815",
+    "original_status": "ok",
+    "predicted_label": "getting_spare_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07916",
+    "original_status": "ok",
+    "predicted_label": "card_linking",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07829",
+    "original_status": "ok",
+    "predicted_label": "getting_spare_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07833",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_card_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07864",
+    "original_status": "ok",
+    "predicted_label": "getting_spare_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07871",
+    "original_status": "ok",
+    "predicted_label": "getting_spare_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07924",
+    "original_status": "ok",
+    "predicted_label": "getting_spare_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07819",
+    "original_status": "ok",
+    "predicted_label": "getting_spare_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07921",
+    "original_status": "ok",
+    "predicted_label": "getting_spare_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07830",
+    "original_status": "ok",
+    "predicted_label": "getting_spare_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07999",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07974",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08006",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08040",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07966",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08042",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07963",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07992",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07964",
+    "original_status": "ok",
+    "predicted_label": "topping_up_by_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:07998",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08100",
+    "original_status": "ok",
+    "predicted_label": "order_physical_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08096",
+    "original_status": "ok",
+    "predicted_label": "get_physical_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08166",
+    "original_status": "ok",
+    "predicted_label": "card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08134",
+    "original_status": "ok",
+    "predicted_label": "get_physical_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08129",
+    "original_status": "ok",
+    "predicted_label": "get_physical_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08120",
+    "original_status": "ok",
+    "predicted_label": "get_physical_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08118",
+    "original_status": "ok",
+    "predicted_label": "order_physical_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08119",
+    "original_status": "ok",
+    "predicted_label": "order_physical_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08146",
+    "original_status": "ok",
+    "predicted_label": "country_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08089",
+    "original_status": "ok",
+    "predicted_label": "get_physical_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08185",
+    "original_status": "ok",
+    "predicted_label": "virtual_card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08205",
+    "original_status": "ok",
+    "predicted_label": "virtual_card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08206",
+    "original_status": "ok",
+    "predicted_label": "virtual_card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08190",
+    "original_status": "ok",
+    "predicted_label": "virtual_card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08176",
+    "original_status": "ok",
+    "predicted_label": "virtual_card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08197",
+    "original_status": "ok",
+    "predicted_label": "virtual_card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08182",
+    "original_status": "ok",
+    "predicted_label": "virtual_card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08184",
+    "original_status": "ok",
+    "predicted_label": "virtual_card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08173",
+    "original_status": "ok",
+    "predicted_label": "virtual_card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08167",
+    "original_status": "ok",
+    "predicted_label": "virtual_card_not_working",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08367",
+    "original_status": "ok",
+    "predicted_label": "wrong_exchange_rate_for_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08273",
+    "original_status": "ok",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08352",
+    "original_status": "ok",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08264",
+    "original_status": "ok",
+    "predicted_label": "wrong_exchange_rate_for_cash_withdrawal",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08297",
+    "original_status": "ok",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08226",
+    "original_status": "ok",
+    "predicted_label": "cash_withdrawal_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08218",
+    "original_status": "ok",
+    "predicted_label": "cash_withdrawal_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08308",
+    "original_status": "ok",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08230",
+    "original_status": "ok",
+    "predicted_label": "exchange_rate",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08331",
+    "original_status": "ok",
+    "predicted_label": "exchange_rate",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08436",
+    "original_status": "ok",
+    "predicted_label": "disposable_card_limits",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08377",
+    "original_status": "ok",
+    "predicted_label": "get_disposable_virtual_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08428",
+    "original_status": "ok",
+    "predicted_label": "get_disposable_virtual_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08444",
+    "original_status": "ok",
+    "predicted_label": "get_disposable_virtual_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08400",
+    "original_status": "ok",
+    "predicted_label": "get_disposable_virtual_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08429",
+    "original_status": "ok",
+    "predicted_label": "get_disposable_virtual_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08416",
+    "original_status": "ok",
+    "predicted_label": "get_disposable_virtual_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08467",
+    "original_status": "ok",
+    "predicted_label": "get_disposable_virtual_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08387",
+    "original_status": "ok",
+    "predicted_label": "get_disposable_virtual_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08383",
+    "original_status": "ok",
+    "predicted_label": "get_disposable_virtual_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08523",
+    "original_status": "ok",
+    "predicted_label": "top_up_failed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08609",
+    "original_status": "ok",
+    "predicted_label": "top_up_failed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08484",
+    "original_status": "ok",
+    "predicted_label": "top_up_failed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08562",
+    "original_status": "ok",
+    "predicted_label": "pending_card_payment",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08525",
+    "original_status": "ok",
+    "predicted_label": "top_up_failed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08517",
+    "original_status": "ok",
+    "predicted_label": "top_up_failed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08468",
+    "original_status": "ok",
+    "predicted_label": "top_up_failed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08573",
+    "original_status": "ok",
+    "predicted_label": "top_up_failed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08544",
+    "original_status": "ok",
+    "predicted_label": "top_up_failed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08526",
+    "original_status": "ok",
+    "predicted_label": "top_up_failed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08657",
+    "original_status": "ok",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08634",
+    "original_status": "ok",
+    "predicted_label": "transfer_timing",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08757",
+    "original_status": "ok",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08670",
+    "original_status": "ok",
+    "predicted_label": "transfer_into_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08613",
+    "original_status": "ok",
+    "predicted_label": "receiving_money",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08625",
+    "original_status": "ok",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08781",
+    "original_status": "ok",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08749",
+    "original_status": "ok",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08641",
+    "original_status": "ok",
+    "predicted_label": "transfer_timing",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08767",
+    "original_status": "ok",
+    "predicted_label": "transfer_into_account",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08870",
+    "original_status": "ok",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08886",
+    "original_status": "ok",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08938",
+    "original_status": "ok",
+    "predicted_label": "extra_charge_on_statement",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08854",
+    "original_status": "ok",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08889",
+    "original_status": "ok",
+    "predicted_label": "compromised_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08802",
+    "original_status": "ok",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08927",
+    "original_status": "ok",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08928",
+    "original_status": "ok",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08859",
+    "original_status": "ok",
+    "predicted_label": "compromised_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08906",
+    "original_status": "ok",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09002",
+    "original_status": "ok",
+    "predicted_label": "receiving_money",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09003",
+    "original_status": "ok",
+    "predicted_label": "exchange_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09001",
+    "original_status": "ok",
+    "predicted_label": "exchange_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09058",
+    "original_status": "ok",
+    "predicted_label": "exchange_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08977",
+    "original_status": "ok",
+    "predicted_label": "exchange_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08959",
+    "original_status": "ok",
+    "predicted_label": "exchange_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08978",
+    "original_status": "ok",
+    "predicted_label": "exchange_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09037",
+    "original_status": "ok",
+    "predicted_label": "exchange_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:08960",
+    "original_status": "ok",
+    "predicted_label": "exchange_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09025",
+    "original_status": "ok",
+    "predicted_label": "exchange_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09078",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_card_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09096",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_card_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09156",
+    "original_status": "ok",
+    "predicted_label": "supported_cards_and_currencies",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09175",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_card_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09108",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_card_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09142",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_card_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09130",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_card_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09075",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_card_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09089",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09138",
+    "original_status": "ok",
+    "predicted_label": "top_up_by_card_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09303",
+    "original_status": "ok",
+    "predicted_label": "activate_my_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09229",
+    "original_status": "ok",
+    "predicted_label": "activate_my_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09301",
+    "original_status": "ok",
+    "predicted_label": "activate_my_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09249",
+    "original_status": "ok",
+    "predicted_label": "activate_my_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09238",
+    "original_status": "ok",
+    "predicted_label": "activate_my_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09287",
+    "original_status": "ok",
+    "predicted_label": "activate_my_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09234",
+    "original_status": "ok",
+    "predicted_label": "activate_my_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09286",
+    "original_status": "ok",
+    "predicted_label": "activate_my_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09236",
+    "original_status": "ok",
+    "predicted_label": "activate_my_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09308",
+    "original_status": "ok",
+    "predicted_label": "activate_my_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09407",
+    "original_status": "ok",
+    "predicted_label": "cash_withdrawal_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09394",
+    "original_status": "ok",
+    "predicted_label": "cash_withdrawal_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09481",
+    "original_status": "ok",
+    "predicted_label": "extra_charge_on_statement",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09505",
+    "original_status": "ok",
+    "predicted_label": "cash_withdrawal_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09473",
+    "original_status": "ok",
+    "predicted_label": "cash_withdrawal_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09378",
+    "original_status": "ok",
+    "predicted_label": "cash_withdrawal_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09448",
+    "original_status": "ok",
+    "predicted_label": "cash_withdrawal_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09493",
+    "original_status": "ok",
+    "predicted_label": "cash_withdrawal_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09492",
+    "original_status": "ok",
+    "predicted_label": "cash_withdrawal_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09397",
+    "original_status": "ok",
+    "predicted_label": "cash_withdrawal_charge",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09622",
+    "original_status": "ok",
+    "predicted_label": "card_about_to_expire",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09615",
+    "original_status": "ok",
+    "predicted_label": "card_about_to_expire",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09575",
+    "original_status": "ok",
+    "predicted_label": "card_about_to_expire",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09637",
+    "original_status": "ok",
+    "predicted_label": "get_physical_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09557",
+    "original_status": "ok",
+    "predicted_label": "card_about_to_expire",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09539",
+    "original_status": "ok",
+    "predicted_label": "card_about_to_expire",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09591",
+    "original_status": "ok",
+    "predicted_label": "card_about_to_expire",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09522",
+    "original_status": "ok",
+    "predicted_label": "card_about_to_expire",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09636",
+    "original_status": "ok",
+    "predicted_label": "card_about_to_expire",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09605",
+    "original_status": "ok",
+    "predicted_label": "card_about_to_expire",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09644",
+    "original_status": "ok",
+    "predicted_label": "apple_pay_or_google_pay",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09708",
+    "original_status": "ok",
+    "predicted_label": "apple_pay_or_google_pay",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09661",
+    "original_status": "ok",
+    "predicted_label": "topping_up_by_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09701",
+    "original_status": "ok",
+    "predicted_label": "top_up_failed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09702",
+    "original_status": "ok",
+    "predicted_label": "top_up_failed",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09688",
+    "original_status": "ok",
+    "predicted_label": "topping_up_by_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09750",
+    "original_status": "ok",
+    "predicted_label": "topping_up_by_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09675",
+    "original_status": "ok",
+    "predicted_label": "topping_up_by_card",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09765",
+    "original_status": "ok",
+    "predicted_label": "apple_pay_or_google_pay",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09724",
+    "original_status": "ok",
+    "predicted_label": "apple_pay_or_google_pay",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09826",
+    "original_status": "ok",
+    "predicted_label": "verify_my_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09777",
+    "original_status": "ok",
+    "predicted_label": "why_verify_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09852",
+    "original_status": "ok",
+    "predicted_label": "verify_my_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09783",
+    "original_status": "ok",
+    "predicted_label": "verify_my_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09830",
+    "original_status": "ok",
+    "predicted_label": "verify_my_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09837",
+    "original_status": "ok",
+    "predicted_label": "why_verify_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09807",
+    "original_status": "ok",
+    "predicted_label": "verify_my_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09857",
+    "original_status": "ok",
+    "predicted_label": "verify_my_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09798",
+    "original_status": "ok",
+    "predicted_label": "verify_my_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09784",
+    "original_status": "ok",
+    "predicted_label": "why_verify_identity",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09899",
+    "original_status": "ok",
+    "predicted_label": "country_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09901",
+    "original_status": "ok",
+    "predicted_label": "country_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09956",
+    "original_status": "ok",
+    "predicted_label": "country_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09874",
+    "original_status": "ok",
+    "predicted_label": "country_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09995",
+    "original_status": "ok",
+    "predicted_label": "country_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09910",
+    "original_status": "ok",
+    "predicted_label": "country_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09890",
+    "original_status": "ok",
+    "predicted_label": "card_delivery_estimate",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09905",
+    "original_status": "ok",
+    "predicted_label": "country_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:09927",
+    "original_status": "ok",
+    "predicted_label": "country_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  },
+  {
+    "id": "train:10000",
+    "original_status": "ok",
+    "predicted_label": "country_support",
+    "prediction_source": "EXP-006",
+    "recovery_status": null,
+    "status": "ok"
+  }
+]

@@ -116,3 +116,39 @@ Reproducible evidence: [study README](../experiments/exp004-minilm-learning-curv
 **Paid recovery NOT RUN; no recovered research results are available.** A separate, tested recovery protocol is prepared for exactly the original EXP-006's 52 unresolved HTTP-429 IDs. All original EXP-006 files are preserved. Preparation used synthetic responses and a zero-inference dry run only; preparation API spend is $0. The quota/credit issue must be resolved and a new explicit recovery approval/cap obtained before live execution.
 
 No recovered accuracy, macro-F1, combined quality, actual recovery charge or production saving is claimed. The original 770 validation IDs and additional validation-label budget remain unchanged, and the official test remains sealed. Any later merged result must be labeled **EXP-006 + EXP-006R recovery** and retain failures. [Preparation protocol and verification](../experiments/exp006r-429-recovery-preparation/README.md).
+
+
+## EXP-007 — verified validation threshold reproduction (2026-09-26)
+
+**Official test NOT RUN.** The existing 20-shot EXP-004/005 validation artifacts yield the following exact scalar thresholds. Each `confidence >= threshold` gate reproduces its corresponding prior 90% rank acceptance set, including membership, with no changed IDs:
+
+| Seed | Fixed threshold (`>=`) | Validation acceptance | Coverage | Changed IDs |
+| --- | ---: | ---: | ---: | ---: |
+| 11 | 0.10354116298070118 | 693/770 | 90% | 0 |
+| 22 | 0.10243964501544885 | 693/770 | 90% | 0 |
+| 33 | 0.1021902311171956 | 693/770 | 90% | 0 |
+| 44 | 0.10160314104812371 | 693/770 | 90% | 0 |
+| 55 | 0.10612054364389162 | 693/770 | 90% | 0 |
+
+No boundary tie occurs. Thresholds are stored losslessly as binary64 decimal/hex values and independently reproduced from saved confidences. The rule is label-blind at derivation/runtime, but the 20-shot/90% choice follows exploratory validation results. The same 770 additional validation labels were already used in development. No calibration, refitting, new labels, paid calls or official-test access occurred; 495 tests passed.
+
+These are reproducible **validation acceptance-set checks**, not test/production quality or confidence calibration results. Future coverage must be observed, not forced to 90%. [Frozen protocol and evidence](../experiments/exp007-fixed-threshold-preparation/README.md), SHA-256 `0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00`. No future API projection is promoted to actual spend or production savings.
+
+
+## EXP-006 + EXP-006R — completed validation checkpoint (2026-09-26)
+
+**Completed and independently reproduced: EXP-006 + EXP-006R validation evaluation.** EXP-006R recovered all 52 eligible cases in 52 attempts with zero unresolved outputs. The merged evaluation preserves 718 original successes, substitutes only the original 52 HTTP-429 cases, and resolves all 770 IDs exactly once. The original EXP-006 remains unchanged at 718 ok/52 http_429; its 823 attempts and all preparation/history are preserved. This current completion record supersedes the earlier preparation-only status without rewriting it.
+
+Luna standalone: **614/770 correct, 79.74% accuracy, 79.01% macro-F1**, with zero unresolved predictions. Reuse one general-response set across all 15 specialists and all 90 existing coverage combinations. Below, mean ± sample SD across the five seeds at the previously fixed 90% landmark (77 fallback cases per model):
+
+| Shots/class | Specialist coverage | Routed accuracy (%) | Routed macro-F1 (%) | Fallback accuracy on rejected cases (%) |
+| --- | ---: | ---: | ---: | ---: |
+| 5 | 693/770 (90%) | 77.14 ± 1.49 | 76.09 ± 1.54 | 63.38 ± 4.72 |
+| 10 | 693/770 (90%) | 82.05 ± 0.89 | 81.47 ± 0.96 | 61.30 ± 2.50 |
+| 20 | 693/770 (90%) | 85.27 ± 0.27 | 84.92 ± 0.38 | 60.26 ± 3.26 |
+
+All 90 combinations, every seed and all predeclared landmarks are preserved in the compact evidence; this table does not replace them. Negative comparisons remain visible: the 5-shot 90% combination is worse than Luna alone. Luna's standalone accuracy is also below the 20-shot specialist-only mean (83.77%). The 20-shot 90% combination improves observed validation quality to 85.27% accuracy / 84.92% macro-F1, but this is an exploratory development comparison on the same reused 770 cases, not test performance or a production guarantee. The EXP-007 scalar thresholds reproduce its acceptance sets exactly; no threshold, label, model or prompt changed in this synchronization.
+
+Accounting remains separate from quality completion: recovery usage-priced charges are **$0.0055932**; combined known usage-priced charges are **$0.0831327**. **Exact combined total spend remains unknown** because 105 original failed attempts have no returned usage. The saved conditional interval is $0.0831327–$0.31921220 under the frozen reservation assumptions, not an invoice reconciliation. Original failures are retained even though every final prediction is resolved. No actual cash-saving, total-system savings or production-latency claim follows.
+
+The complete saved offline evaluation was reproduced exactly from audited local caches. Published compact predictions plus existing versioned EXP-005 records reproduce all quality metrics; derived per-attempt token/reservation records reproduce accounting without raw response bodies, customer texts, API request IDs, credentials, weights or private caches. [Completed-validation evidence and reproduction](../experiments/exp006-completed-validation/README.md). The same **770 additional validation labels** are reused; five seeds do not create five independent holdouts. No new API calls, model fitting or official-test access occurred during promotion.

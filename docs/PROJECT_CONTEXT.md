@@ -1,8 +1,16 @@
 # Project context
 
-Updated: 2026-09-25. Organization: Intelligent Dynamics.
+Updated: 2026-09-26. Organization: Intelligent Dynamics.
 Project: **Data-Efficient Specialist Inference**.
 Canonical checkout: `/Users/Andrew/Developer/data-efficient-inference`. The existing checkout, including Git history and local artifacts, was moved here from the former Documents/ChatGPT path on 2026-09-24. Origin remains `https://github.com/Intelligent-Dynamics/data-efficient-inference.git`.
+
+## Current completed state
+
+EXP-006R live recovery has zero unresolved requests, and the EXP-006 + EXP-006R offline merged evaluation is complete over all 770 validation IDs and all 90 prior specialist/fallback combinations. Verified compact evidence is published in `experiments/exp006-completed-validation/`; raw response caches remain ignored. The original 718-success/52-HTTP-429 execution and its preparation write-ups remain unchanged historical evidence.
+
+Verified compact validation results record Luna standalone 79.74% accuracy / 79.01% macro-F1 and the exploratory 20-shot 90% combination at 85.27% / 84.92% mean accuracy/macro-F1. All 90 combinations and seed variance are preserved, including weaker outcomes. Every final prediction is resolved, while exact combined spend remains unknown because 105 original failed attempts lacked token usage. These are reused-validation findings, not test or production measurements.
+
+EXP-007 fixed-threshold preparation is complete: all five gates exactly reproduce 693/770 validation acceptance, with no boundary ties. **The official test is still sealed.** The frozen protocol is ready for a separately implemented, tested and authorized one-time test runner; the current preparation CLI has no test/live mode. Neither this repository synchronization nor earlier validation approval authorizes test access or paid calls.
 
 ## Thesis and research question
 
@@ -96,15 +104,27 @@ The next proposed work is analysis of persistent rejections/confident errors in 
 
 ## General-model evaluation preparation (2026-09-25)
 
+Historical checkpoint retained below; the completed state at the top of this document supersedes its preparation-only status.
+
 EXP-006 prepares an OpenAI `gpt-6-luna` zero-shot baseline on exactly the existing 770 validation texts, with one response set shared by all 15 specialist configurations. The user authorized only runner implementation, synthetic tests, protocol freezing and cost estimation; **the paid experiment has NOT RUN** and actual API spend is zero. The fixed 77-intent prompt sends no ground truth, specialist output/confidence or demonstrations. Official documentation exposes an alias without a dated snapshot, limiting immutable model reproducibility.
 
 The future evaluation will measure general-model standalone and full-workload specialist/fallback metrics using EXP-005's fixed prefixes plus all fallback. Unresolved responses remain errors; fallback accuracy is measured on rejected requests, never assumed. Explicit spending approval and a numeric cap are required. Actual collection charges, hypothetical API-only routed charges and unmeasured specialist deployment cost remain separate; no total-system savings or production-latency claim follows. All prior results, splits, dependencies and the sealed test are preserved. See the EXP-006 preparation write-up and current plan for exact settings, estimates, failure controls and approval command.
 
 ## Separate EXP-006R recovery preparation (2026-09-26)
 
+Historical checkpoint retained below; the completed state at the top of this document supersedes its preparation-only status.
+
 The saved EXP-006 execution now has 718 successful and 52 unresolved HTTP-429 validation requests, each unresolved ID having exhausted the original two-attempt allowance. The earlier preparation entry is historical. Preserve all original evidence byte-for-byte; any new attempts belong to a separate EXP-006R protocol, cache and spending authorization. The request model/prompt/schema/settings, validation IDs and evaluation definitions remain unchanged. Original error bodies identify exhausted credits, which require a quota/billing remedy before recovery. A new runner halts on recurring quota errors and applies bounded serial backoff for transient rate limits.
 
 **EXP-006R is prepared only; no paid recovery or real recovered evaluation has run.** The offline merge uses 718 unchanged original successes and only the 52 recovery outcomes, retains failures, and labels results EXP-006 + EXP-006R recovery. The same 770 validation labels are reused; no new labels or test access. No recovered quality, production threshold or total-system savings is asserted. Protocol hash, future command and conditional cost estimates are in the recovery preparation write-up and current plan.
+
+## Fixed-threshold preparation (EXP-007, 2026-09-26)
+
+The saved EXP-006 + EXP-006R validation collection is now complete with 770 successful combined responses; historical preparation statuses above describe their dates. Preserve both stages' original artifacts and unknown-usage failures. The user's next choice is a scalar routing rule for the five existing 20-shot specialists, matching their prior 90% validation rank boundary. Each threshold is derived only from saved validation confidences/IDs, and all five reproduce exactly 693/770 accepted IDs with no boundary ties. No recalibration or retraining occurs.
+
+Freeze `confidence >= per-seed threshold` and the unchanged Luna fallback before any test access. Runtime cannot use dataset-wide ranks or force 90% coverage; future test coverage is a measured outcome. The 20-shot/90% design was chosen after exploratory validation results, so disclose repeated use of the same 770 additional development labels. This is a deployable decision rule, not a calibrated probability, production guarantee or measured test result.
+
+The authoritative EXP-007 protocol specifies one eventual evaluation of all 3,080 official test IDs, all five saved specialists, and one all-case Luna response set reused for standalone/routed comparisons. It requires separate explicit test access and paid spending authorization. Preparation has read no test bytes and made no paid calls. Current plan/evidence record the exact thresholds, protocol hash, conditional API estimate and 495-test verification. Specialist deployment cost, production latency and total-system savings remain unmeasured.
 
 ## Scope boundaries and persistent records
 

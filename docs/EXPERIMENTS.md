@@ -286,3 +286,55 @@ No-network dry-run estimates for **52 unique requests / at most 208 attempts**: 
 **Final full suite: 371 passed in 22.23s**, including 128 new recovery tests. The real-source dry run completed with network, credential and raw/test-data access blocked; independent Decimal estimates matched, and all 775 source files remained byte-identical. No prior experiment implementation, protocol or artifact was changed.
 
 [Prepared protocol, exact dry/live/merge commands, sources, cost breakdown and verification](../experiments/exp006r-429-recovery-preparation/README.md). No live recovery or real merged evaluation was executed. Next: resolve quota, review current pricing and obtain new explicit approval for the recovery hash plus numeric cap; only then collect the 52 cases and evaluate offline. Preserve previous results, including unresolved/negative outcomes.
+
+
+## 2026-09-26 — EXP-007 fixed-threshold preparation
+
+**Status: PREPARATION COMPLETE; OFFICIAL TEST NOT RUN. Preparation API spend: $0.** No paid call, model execution, fit, calibration, new split or official-test access occurred. Test data were not opened even for a checksum. Dataset counts/checksum metadata were read from the already-versioned source specification only.
+
+Saved validation evidence now confirms EXP-006R completed with 52/52 successful recovery responses and a completed 770-response merged set. The original 718 successes and original 775-file inventory remain unchanged. This supersedes the old preparation-only status as a current-state observation; it does not overwrite historical EXP-006/006R artifacts or introduce recovered-quality claims here. The completed responses supplied validation-only token usage for the later cost projection.
+
+At the user's direction, fix the 20-shot specialist and existing 90% EXP-005 landmark. Audit all five EXP-004 primary classifiers/probabilities and EXP-005 records before deriving thresholds from IDs/confidences alone. Twenty-five source files are hash-bound; classifier bytes are checked without deserialization. Original labels, IDs, model revision, packages, LR and embedding settings remain unchanged.
+
+| Seed | Fixed threshold (`>=`) | Validation acceptance | Coverage | Changed IDs |
+| --- | ---: | ---: | ---: | ---: |
+| 11 | 0.10354116298070118 | 693/770 | 90% | 0 |
+| 22 | 0.10243964501544885 | 693/770 | 90% | 0 |
+| 33 | 0.1021902311171956 | 693/770 | 90% | 0 |
+| 44 | 0.10160314104812371 | 693/770 | 90% | 0 |
+| 55 | 0.10612054364389162 | 693/770 | 90% | 0 |
+
+Each threshold is the exact rank-693 confidence, serialized as a round-trip JSON/decimal/hex binary64 value. Rank 694 is strictly below it for every seed: no boundary tie and no accepted-set difference. The deterministic tie policy chooses all-or-none boundary ties to minimize set difference, including all on an equal-distance tie; it never consults correctness. `>=` runs independently per request without ranking a future workload or enforcing a target fraction. Confidence is uncalibrated. This cutoff computation uses no labels, but choosing 20 shots/90% was informed by previous development results; disclose all **770 reused validation labels** plus 1,540 fitting labels per seed, with zero new labels.
+
+Frozen future test protocol SHA-256: **`0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00`**. It will use all 3,080 official test requests, all five existing specialists, observed threshold coverage, and unchanged `gpt-6-luna` prompt/schema/settings below threshold. The full Luna-only comparator requires one all-case response set shared by the five seeds. Report specialist-only/Luna-only/routed accuracy and macro-F1 over all cases, fallback number/percentage and rejected-subset accuracy, failures and all seed results/sample SD. Never retune, recalibrate, refit, force 90% on test, or select the best seed after results. New test access and capped spending authorization are required; preparation exposes no test loader/live mode.
+
+API estimates, using only completed validation token usage and current official rates verified 2026-09-26: nominal **$0.3325308**, or **$0.4083580** for the same tokens all at cache-write input rates. The 770 successful validation responses used 758,272 input and 14,611 output tokens (zero recorded caching/reasoning tokens). Known successful-response charges $0.0831327 exclude 105 original failure attempts with unknown usage; this is not verified total experiment spend. The engineering envelope uses the largest validation payload (4,817 compact bytes), `2*bytes+8192` input and 128 output tokens, with no cache discount. For 3,080 first attempts this is **$7.06013**; four attempts each yields **$28.24052**. This assumes test requests fit the validation byte envelope and is not a guaranteed bill or approved cap. Actual test preflight must occur only after separate access approval. Specialist deployment cost and total-system savings remain unmeasured.
+
+Implemented three small modules and synthetic regression tests. **495 tests passed** (124 new). A standard-library checker independently reproduced the thresholds, acceptance-set hashes and cost arithmetic. The real preparation passed with network, credentials, raw/processed dataset access and model loading forbidden; all counters were zero. An initial check rejected a harmless difference between original execution ID order and evaluation metadata order; exact predictions/populations matched, so validation now permits metadata permutation while rejecting missing/duplicate/foreign IDs, changed predictions or hashes. Dedicated regressions pass. No source evidence or threshold changed to resolve that implementation issue.
+
+[Exact protocol, evidence, commands and limitations](../experiments/exp007-fixed-threshold-preparation/README.md). No official-test quality/coverage, calibrated-confidence, production-threshold, total-system savings or latency result is claimed. Next: implement and authorize the one-time frozen test evaluation, then report all outcomes without adapting this protocol to them.
+
+
+## 2026-09-26 — repository synchronization and verified completed validation
+
+**Completed and independently reproduced: EXP-006 + EXP-006R validation evaluation.** EXP-006R recovered all 52 eligible cases in 52 attempts with zero unresolved outputs. The merged evaluation preserves 718 original successes, substitutes only the original 52 HTTP-429 cases, and resolves all 770 IDs exactly once. The original EXP-006 remains unchanged at 718 ok/52 http_429; its 823 attempts and all preparation/history are preserved. This current completion record supersedes the earlier preparation-only status without rewriting it.
+
+Luna standalone: **614/770 correct, 79.74% accuracy, 79.01% macro-F1**, with zero unresolved predictions. Reuse one general-response set across all 15 specialists and all 90 existing coverage combinations. Below, mean ± sample SD across the five seeds at the previously fixed 90% landmark (77 fallback cases per model):
+
+| Shots/class | Specialist coverage | Routed accuracy (%) | Routed macro-F1 (%) | Fallback accuracy on rejected cases (%) |
+| --- | ---: | ---: | ---: | ---: |
+| 5 | 693/770 (90%) | 77.14 ± 1.49 | 76.09 ± 1.54 | 63.38 ± 4.72 |
+| 10 | 693/770 (90%) | 82.05 ± 0.89 | 81.47 ± 0.96 | 61.30 ± 2.50 |
+| 20 | 693/770 (90%) | 85.27 ± 0.27 | 84.92 ± 0.38 | 60.26 ± 3.26 |
+
+All 90 combinations, every seed and all predeclared landmarks are preserved in the compact evidence; this table does not replace them. Negative comparisons remain visible: the 5-shot 90% combination is worse than Luna alone. Luna's standalone accuracy is also below the 20-shot specialist-only mean (83.77%). The 20-shot 90% combination improves observed validation quality to 85.27% accuracy / 84.92% macro-F1, but this is an exploratory development comparison on the same reused 770 cases, not test performance or a production guarantee. The EXP-007 scalar thresholds reproduce its acceptance sets exactly; no threshold, label, model or prompt changed in this synchronization.
+
+Accounting remains separate from quality completion: recovery usage-priced charges are **$0.0055932**; combined known usage-priced charges are **$0.0831327**. **Exact combined total spend remains unknown** because 105 original failed attempts have no returned usage. The saved conditional interval is $0.0831327–$0.31921220 under the frozen reservation assumptions, not an invoice reconciliation. Original failures are retained even though every final prediction is resolved. No actual cash-saving, total-system savings or production-latency claim follows.
+
+The complete saved offline evaluation was reproduced exactly from audited local caches. Published compact predictions plus existing versioned EXP-005 records reproduce all quality metrics; derived per-attempt token/reservation records reproduce accounting without raw response bodies, customer texts, API request IDs, credentials, weights or private caches. [Completed-validation evidence and reproduction](../experiments/exp006-completed-validation/README.md). The same **770 additional validation labels** are reused; five seeds do not create five independent holdouts. No new API calls, model fitting or official-test access occurred during promotion.
+
+EXP-007 preparation source, tests, frozen protocol and compact evidence are included in the same repository checkpoint. Thresholds remain unchanged for seeds 11/22/33/44/55: 0.10354116298070118 / 0.10243964501544885 / 0.1021902311171956 / 0.10160314104812371 / 0.10612054364389162. Each accepts exactly 693/770 validation IDs with no tied boundary. Frozen protocol SHA-256 remains `0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00`.
+
+The full suite was rerun for this checkpoint: **495 tests passed**. EXP-007's independent threshold/cost replay also passed. The official BANKING77 test stayed sealed; no paid API call was made. Historical preparation-only entries are retained as snapshots of their original milestones; current README/AGENTS/project-context/plan point to completed validation plus unrun test preparation.
+
+The exact next implementation milestone is a guarded one-time test runner for that frozen protocol. The current `baseline.fixed_routing` CLI supports preparation only and has no test/live execution mode. Do not invent or execute such a command. Existing safe verification: `.venv/bin/python experiments/exp007-fixed-threshold-preparation/independent_check.py`. Only after the runner is implemented/tested and separately authorized may it unseal the test and collect one capped Luna response set for all 3,080 test IDs. This synchronization grants neither test access nor spending permission.

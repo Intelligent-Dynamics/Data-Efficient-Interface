@@ -1,0 +1,26 @@
+{
+  "api_calls": 0,
+  "code_files_sha256": {
+    "baseline/fixed_routing.py": "02fa0a3b20129d2a4475b1245ce5742a76227a0171148f7b3d5ddf1e640da806",
+    "baseline/general_metrics.py": "20015576459f971d9644f6f8e59fe1725f5d095e9ca6ef6f83953e8cdfdc396c",
+    "baseline/threshold_inputs.py": "2471e098dedadae1be724f80ecfbb6709c52c4e878651a849af729a74f47066a",
+    "baseline/thresholds.py": "33ee9dc601fc1c477bf925a78101126bf8cd57f4321ca7899352cd208bb832b2",
+    "pyproject.toml": "01599a944ee41d015c00a7fc491fef088f1746f5b72d9a235f9a2a7a54d33897",
+    "uv.lock": "2211a97a03960524dfd4fe173e911392d6dca00d981924ed594fa0f712157b99"
+  },
+  "generated_utc": "2026-09-26T19:33:41.194996+00:00",
+  "git_head": "2ca24ba3eda56ac0d6c3e5043d10d33c98c6f43a",
+  "model_executions": 0,
+  "model_fits": 0,
+  "observed_validation_coverage_by_seed": {
+    "11": 0.9,
+    "22": 0.9,
+    "33": 0.9,
+    "44": 0.9,
+    "55": 0.9
+  },
+  "official_test_access": false,
+  "protocol_sha256": "0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00",
+  "status": "PREPARATION ONLY; OFFICIAL TEST NOT RUN",
+  "study_id": "EXP-007"
+}

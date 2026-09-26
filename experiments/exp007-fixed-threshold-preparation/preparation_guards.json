@@ -1,0 +1,16 @@
+{
+  "access_attempt_counts": {
+    "credentials": 0,
+    "model_load": 0,
+    "network": 0,
+    "raw_or_processed_data": 0
+  },
+  "api_calls": 0,
+  "blocked_capabilities": [
+    "network",
+    "credentials",
+    "raw_or_processed_data",
+    "model_load"
+  ],
+  "official_test_access": false
+}

@@ -8,7 +8,7 @@ Can a small specialist model trained with limited labeled data handle a signific
 
 ## Current status
 
-The classical TF-IDF and frozen MiniLM 5/10/20-shot validation curves are measured across five seeds and independently reproduced locally. See [verified validation results](docs/RESULTS.md), [the paired MiniLM/TF-IDF study](experiments/exp004-minilm-learning-curve/README.md), and [the experiment log](docs/EXPERIMENTS.md). Every configuration uses the same existing BANKING77 v2 sample IDs; only logistic regression is trained for the frozen embedding model. Official-test performance, end-to-end embedding inference speed, and cost savings remain unmeasured. Fine-tuning, serving/routing infrastructure, calibration and frontend work are deferred. EXP-006R recovery is prepared but has not run; it needs new spending authorization.
+The classical TF-IDF and frozen MiniLM 5/10/20-shot validation curves are measured across five seeds and independently reproduced locally. See [verified validation results](docs/RESULTS.md), [the paired MiniLM/TF-IDF study](experiments/exp004-minilm-learning-curve/README.md), and [the experiment log](docs/EXPERIMENTS.md). Every configuration uses the same existing BANKING77 v2 sample IDs; only logistic regression is trained for the frozen embedding model. Official-test performance, end-to-end embedding inference speed, and cost savings remain unmeasured. Fine-tuning, serving/routing infrastructure, calibration and frontend work are deferred. EXP-006 + EXP-006R validation collection is complete. EXP-007 fixed-threshold preparation is complete; official test evaluation remains unrun and needs separate authorization.
 
 ## Run locally
 
@@ -83,17 +83,26 @@ MPLCONFIGDIR=.cache/matplotlib .venv/bin/python -m baseline.selective --records-
 
 Original probabilities/caches/models stay ignored. The study README records provenance checks and a separate independent checker; the official test remains sealed.
 
-## General-model evaluation and separate recovery preparation
+## Completed general-model validation
 
-The saved EXP-006 run finished with **718 successful predictions and 52 unresolved HTTP-429 requests**. Its original evidence and two-attempt limit are preserved. [EXP-006R preparation](experiments/exp006r-429-recovery-preparation/README.md) implements a separately authorized recovery for only those 52 IDs, plus an offline merge/evaluation command. **Paid recovery has NOT RUN.** The original errors report exhausted credits; resolve quota before a later live run.
+**EXP-006R live recovery and EXP-006 + EXP-006R offline evaluation are complete.** Recovery resolved all 52 originally unresolved validation IDs (`unresolved_count = 0`). The merged evaluation contains all 770 IDs exactly once, preserves the original 718 successful predictions, and recomputes standalone Luna and all 90 specialist/fallback combinations. The original EXP-006 remains historical evidence of 718 successes and 52 HTTP-429 outcomes; no original file was overwritten.
 
-No network, credentials or raw dataset access is needed for the recovery dry run:
+Verified validation scores: Luna alone **79.74% accuracy / 79.01% macro-F1**; the five 20-shot specialists at the 90% acceptance landmark average **85.27 ± 0.27% accuracy / 84.92 ± 0.38% macro-F1**. All seed results and all 90 combinations are retained, including negative comparisons. Unknown usage from 105 original failed attempts prevents an exact combined spend claim.
+
+[Verified compact completed-validation evidence](experiments/exp006-completed-validation/README.md) retains predictions, every combination, seed variability and known/unknown accounting without raw API responses or request text. The earlier preparation-only write-ups describe their historical checkpoints. The official test remains sealed; validation results are exploratory and do not establish total-system savings or production quality.
+
+## Fixed-threshold routing preparation
+
+[EXP-007](experiments/exp007-fixed-threshold-preparation/README.md) freezes one confidence threshold for each existing 20-shot specialist. All five scalar gates reproduce exactly 693/770 validation requests (90%) with no tied-boundary differences. The original EXP-006 plus separately completed recovery now provides 770 validation Luna responses; earlier artifacts are preserved.
+
+**Official test evaluation has NOT RUN.** The future test protocol applies each threshold independently and reports observed coverage. It needs a new all-case Luna test prediction set once, shared across five specialists, to report specialist-only/Luna-only/routed metrics. Test access and spending require new explicit authorization. No paid/test mode is exposed by preparation.
 
 ```sh
-.venv/bin/python -m baseline.recovery dry-run --output artifacts/exp006r-dry-run-new
+.venv/bin/python -m baseline.fixed_routing --output artifacts/exp007-preparation-replay
+.venv/bin/python experiments/exp007-fixed-threshold-preparation/independent_check.py
 ```
 
-The recovery write-up contains its protocol hash, cost estimate, retry policy, tests and exact future live/merge commands. New explicit authorization and a numeric cap are required; neither the earlier EXP-006 approval nor a documented command is permission. Keep keys and response caches out of Git. Preserve the [original EXP-006 protocol](experiments/exp006-general-model-preparation/README.md). No recovered quality result or total-system savings is claimed.
+These are validation-only offline preparation/replay commands. See the study README for exact thresholds, frozen protocol hash, conditional API estimates, tests and limitations. No calibrated confidence, test performance or total-system savings is claimed.
 
 ## Project documents
 
