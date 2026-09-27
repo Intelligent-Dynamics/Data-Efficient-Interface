@@ -1,0 +1,1907 @@
+{
+  "ids": [
+    "train:03987",
+    "train:03034",
+    "train:04434",
+    "train:03631",
+    "train:09234",
+    "train:09522",
+    "train:00345",
+    "train:05109",
+    "train:06298",
+    "train:03106",
+    "train:07999",
+    "train:02108",
+    "train:04264",
+    "train:03460",
+    "train:01710",
+    "train:07453",
+    "train:08185",
+    "train:03800",
+    "train:01047",
+    "train:06216"
+  ],
+  "requests": [
+    {
+      "attempt_reservation_usd": "0.0028045",
+      "id": "train:03987",
+      "input_token_reservation": 21924,
+      "nominal_input_tokens": 1717,
+      "nominal_output_tokens": 32,
+      "nominal_usd_no_cache_read_discount": "0.000230625",
+      "output_token_reservation": 128,
+      "prompt_sha256": "add00fc181c078993db0d1b7623447b0f4e311e7f37558ebe61d77e077bc5010",
+      "request_sha256": "3cd390ba0df6166aeb5f5678449358be3bfaf3441373f395cd0605c1777524d6",
+      "retrieved": [
+        {
+          "id": "train:03920",
+          "similarity": 0.9431205161638476
+        },
+        {
+          "id": "train:03985",
+          "similarity": 0.9375451676074351
+        },
+        {
+          "id": "train:03937",
+          "similarity": 0.937058023285036
+        },
+        {
+          "id": "train:03882",
+          "similarity": 0.9160852213841415
+        },
+        {
+          "id": "train:09772",
+          "similarity": 0.8512822769003552
+        },
+        {
+          "id": "train:03895",
+          "similarity": 0.8441994283365435
+        },
+        {
+          "id": "train:09839",
+          "similarity": 0.8431928364848522
+        },
+        {
+          "id": "train:09809",
+          "similarity": 0.8422775155405972
+        },
+        {
+          "id": "train:09868",
+          "similarity": 0.8352806198141853
+        },
+        {
+          "id": "train:03972",
+          "similarity": 0.8338028346357416
+        },
+        {
+          "id": "train:03965",
+          "similarity": 0.81981401618233
+        },
+        {
+          "id": "train:09799",
+          "similarity": 0.8028823858270794
+        },
+        {
+          "id": "train:03969",
+          "similarity": 0.7887487246802377
+        },
+        {
+          "id": "train:03948",
+          "similarity": 0.7836223758818164
+        },
+        {
+          "id": "train:03924",
+          "similarity": 0.7792136225532795
+        },
+        {
+          "id": "train:03796",
+          "similarity": 0.7739964622757021
+        },
+        {
+          "id": "train:03885",
+          "similarity": 0.7702817463685783
+        },
+        {
+          "id": "train:03790",
+          "similarity": 0.7676366524682725
+        },
+        {
+          "id": "train:03798",
+          "similarity": 0.7649109586368225
+        },
+        {
+          "id": "train:03806",
+          "similarity": 0.7398529682564969
+        }
+      ],
+      "serialized_request_bytes": 6866
+    },
+    {
+      "attempt_reservation_usd": "0.00280975",
+      "id": "train:03034",
+      "input_token_reservation": 21966,
+      "nominal_input_tokens": 1722,
+      "nominal_output_tokens": 32,
+      "nominal_usd_no_cache_read_discount": "0.00023125",
+      "output_token_reservation": 128,
+      "prompt_sha256": "5d832ba0aba75ee931724ad5f8db5d4ea04aaa96233e3508f436db93c2ddd10f",
+      "request_sha256": "d39969f12abfb162d4e528dcdd34b76330282a8cb2cdd1e7818b0c794acc02fc",
+      "retrieved": [
+        {
+          "id": "train:03032",
+          "similarity": 0.8931748019944793
+        },
+        {
+          "id": "train:03086",
+          "similarity": 0.8920003300923991
+        },
+        {
+          "id": "train:03010",
+          "similarity": 0.8831532797885073
+        },
+        {
+          "id": "train:03059",
+          "similarity": 0.8800207952573166
+        },
+        {
+          "id": "train:03038",
+          "similarity": 0.8709283444813312
+        },
+        {
+          "id": "train:03051",
+          "similarity": 0.8547473197476516
+        },
+        {
+          "id": "train:03095",
+          "similarity": 0.8280640882568697
+        },
+        {
+          "id": "train:03028",
+          "similarity": 0.8234531063832655
+        },
+        {
+          "id": "train:03020",
+          "similarity": 0.8230285853642787
+        },
+        {
+          "id": "train:03050",
+          "similarity": 0.8222813008242771
+        },
+        {
+          "id": "train:03023",
+          "similarity": 0.8081897780579366
+        },
+        {
+          "id": "train:03046",
+          "similarity": 0.8049845658793422
+        },
+        {
+          "id": "train:03080",
+          "similarity": 0.804418305898011
+        },
+        {
+          "id": "train:03054",
+          "similarity": 0.798492566981827
+        },
+        {
+          "id": "train:03009",
+          "similarity": 0.7947782224267825
+        },
+        {
+          "id": "train:03071",
+          "similarity": 0.7929927722773371
+        },
+        {
+          "id": "train:03005",
+          "similarity": 0.7865936722695207
+        },
+        {
+          "id": "train:08203",
+          "similarity": 0.7852439272313284
+        },
+        {
+          "id": "train:08372",
+          "similarity": 0.772758646400308
+        },
+        {
+          "id": "train:03063",
+          "similarity": 0.7709936248735232
+        }
+      ],
+      "serialized_request_bytes": 6887
+    },
+    {
+      "attempt_reservation_usd": "0.00287075",
+      "id": "train:04434",
+      "input_token_reservation": 22454,
+      "nominal_input_tokens": 1783,
+      "nominal_output_tokens": 32,
+      "nominal_usd_no_cache_read_discount": "0.000238875",
+      "output_token_reservation": 128,
+      "prompt_sha256": "11e71f88ecd25bd5e417941ded8d96ea9f68a094072958b7d3de70bf26716fd5",
+      "request_sha256": "636a74847929657999d3a89112bd654635957615202c105c1abe666a4f474c74",
+      "retrieved": [
+        {
+          "id": "train:04338",
+          "similarity": 0.9872987247735593
+        },
+        {
+          "id": "train:04432",
+          "similarity": 0.9763214314970482
+        },
+        {
+          "id": "train:04447",
+          "similarity": 0.9749927535213437
+        },
+        {
+          "id": "train:04358",
+          "similarity": 0.9244502981841114
+        },
+        {
+          "id": "train:04444",
+          "similarity": 0.9092269949086278
+        },
+        {
+          "id": "train:08425",
+          "similarity": 0.8246365254508053
+        },
+        {
+          "id": "train:04344",
+          "similarity": 0.8130104363638183
+        },
+        {
+          "id": "train:04448",
+          "similarity": 0.7830811925849306
+        },
+        {
+          "id": "train:04349",
+          "similarity": 0.7767774651359179
+        },
+        {
+          "id": "train:04347",
+          "similarity": 0.7383890271491166
+        },
+        {
+          "id": "train:08448",
+          "similarity": 0.7273336610018357
+        },
+        {
+          "id": "train:08433",
+          "similarity": 0.7184673944348173
+        },
+        {
+          "id": "train:04366",
+          "similarity": 0.7117817327849038
+        },
+        {
+          "id": "train:08437",
+          "similarity": 0.70883084342659
+        },
+        {
+          "id": "train:08439",
+          "similarity": 0.6924403573795452
+        },
+        {
+          "id": "train:04361",
+          "similarity": 0.6900580766823257
+        },
+        {
+          "id": "train:04442",
+          "similarity": 0.6867709628658669
+        },
+        {
+          "id": "train:08371",
+          "similarity": 0.682569775551383
+        },
+        {
+          "id": "train:04340",
+          "similarity": 0.6751114536579657
+        },
+        {
+          "id": "train:04452",
+          "similarity": 0.6680392640931291
+        }
+      ],
+      "serialized_request_bytes": 7131
+    },
+    {
+      "attempt_reservation_usd": "0.0029235",
+      "id": "train:03631",
+      "input_token_reservation": 22876,
+      "nominal_input_tokens": 1836,
+      "nominal_output_tokens": 32,
+      "nominal_usd_no_cache_read_discount": "0.0002455",
+      "output_token_reservation": 128,
+      "prompt_sha256": "fdd0244f5e7e93f2686d5fd919e3904e7b4794162e15a16fa34818b8b8fb1a67",
+      "request_sha256": "4663e0132202ce241c1bad1bc1b295b7cdf1a737a9499b29539dfcfa57f112a1",
+      "retrieved": [
+        {
+          "id": "train:03551",
+          "similarity": 0.7770950800492264
+        },
+        {
+          "id": "train:03547",
+          "similarity": 0.764650603525756
+        },
+        {
+          "id": "train:03626",
+          "similarity": 0.7308172193367103
+        },
+        {
+          "id": "train:03494",
+          "similarity": 0.7278423773944862
+        },
+        {
+          "id": "train:04636",
+          "similarity": 0.7096264921983522
+        },
+        {
+          "id": "train:03535",
+          "similarity": 0.6725566032312349
+        },
+        {
+          "id": "train:03601",
+          "similarity": 0.6719906165482503
+        },
+        {
+          "id": "train:04776",
+          "similarity": 0.6674300769319164
+        },
+        {
+          "id": "train:06434",
+          "similarity": 0.660517781875522
+        },
+        {
+          "id": "train:03429",
+          "similarity": 0.6474155954964271
+        },
+        {
+          "id": "train:03623",
+          "similarity": 0.6463744120509209
+        },
+        {
+          "id": "train:06827",
+          "similarity": 0.6437500927781041
+        },
+        {
+          "id": "train:04803",
+          "similarity": 0.6416851148159571
+        },
+        {
+          "id": "train:03649",
+          "similarity": 0.6356872565939138
+        },
+        {
+          "id": "train:04641",
+          "similarity": 0.6346049057992867
+        },
+        {
+          "id": "train:06805",
+          "similarity": 0.634355021868877
+        },
+        {
+          "id": "train:03619",
+          "similarity": 0.6337719016144235
+        },
+        {
+          "id": "train:03546",
+          "similarity": 0.6316673158721574
+        },
+        {
+          "id": "train:05851",
+          "similarity": 0.6309125824288461
+        },
+        {
+          "id": "train:05936",
+          "similarity": 0.6240095911307112
+        }
+      ],
+      "serialized_request_bytes": 7342
+    },
+    {
+      "attempt_reservation_usd": "0.00278725",
+      "id": "train:09234",
+      "input_token_reservation": 21786,
+      "nominal_input_tokens": 1700,
+      "nominal_output_tokens": 32,
+      "nominal_usd_no_cache_read_discount": "0.0002285",
+      "output_token_reservation": 128,
+      "prompt_sha256": "b43b6ad961955f58b88c8d451906a8fda8ac8d7f2c61ad93a2ebefcba6cc80a1",
+      "request_sha256": "89506d11a897c04a745f12b8294a803dd60b75f29141b3458f657c0287f7726e",
+      "retrieved": [
+        {
+          "id": "train:09243",
+          "similarity": 0.9419021010288566
+        },
+        {
+          "id": "train:09254",
+          "similarity": 0.8716316716540943
+        },
+        {
+          "id": "train:09180",
+          "similarity": 0.8466791928802884
+        },
+        {
+          "id": "train:09326",
+          "similarity": 0.8205388933703499
+        },
+        {
+          "id": "train:09292",
+          "similarity": 0.8146171739084931
+        },
+        {
+          "id": "train:09337",
+          "similarity": 0.813187848598254
+        },
+        {
+          "id": "train:09191",
+          "similarity": 0.7978633715357141
+        },
+        {
+          "id": "train:09195",
+          "similarity": 0.7913672282552665
+        },
+        {
+          "id": "train:09203",
+          "similarity": 0.7851446386711496
+        },
+        {
+          "id": "train:09204",
+          "similarity": 0.782971871882872
+        },
+        {
+          "id": "train:09227",
+          "similarity": 0.7784264896681596
+        },
+        {
+          "id": "train:09276",
+          "similarity": 0.7378605721455728
+        },
+        {
+          "id": "train:09223",
+          "similarity": 0.7372924812059236
+        },
+        {
+          "id": "train:01309",
+          "similarity": 0.7277956761119461
+        },
+        {
+          "id": "train:09199",
+          "similarity": 0.7209356442301925
+        },
+        {
+          "id": "train:01260",
+          "similarity": 0.7158408535517737
+        },
+        {
+          "id": "train:00253",
+          "similarity": 0.7142321690311635
+        },
+        {
+          "id": "train:01285",
+          "similarity": 0.7074647549930988
+        },
+        {
+          "id": "train:01338",
+          "similarity": 0.7008644958554668
+        },
+        {
+          "id": "train:00210",
+          "similarity": 0.7007491167551789
+        }
+      ],
+      "serialized_request_bytes": 6797
+    },
+    {
+      "attempt_reservation_usd": "0.002845",
+      "id": "train:09522",
+      "input_token_reservation": 22248,
+      "nominal_input_tokens": 1757,
+      "nominal_output_tokens": 32,
+      "nominal_usd_no_cache_read_discount": "0.000235625",
+      "output_token_reservation": 128,
+      "prompt_sha256": "d6c452dfea86156d470beebab586eb8178d7f7928d6b159e5b3029cc896fa4bc",
+      "request_sha256": "70bdd22acd66e20dacfc8e5eef86a48cd0eb158b67ea3feca83314e3ca130065",
+      "retrieved": [
+        {
+          "id": "train:09612",
+          "similarity": 0.9545888667975604
+        },
+        {
+          "id": "train:09633",
+          "similarity": 0.8680462198677377
+        },
+        {
+          "id": "train:09627",
+          "similarity": 0.8251163961367687
+        },
+        {
+          "id": "train:09632",
+          "similarity": 0.799474150956446
+        },
+        {
+          "id": "train:09576",
+          "similarity": 0.7949803711732857
+        },
+        {
+          "id": "train:09545",
+          "similarity": 0.7745423784699113
+        },
+        {
+          "id": "train:01801",
+          "similarity": 0.7665648077387731
+        },
+        {
+          "id": "train:09590",
+          "similarity": 0.7615347897032578
+        },
+        {
+          "id": "train:07827",
+          "similarity": 0.7516864769894078
+        },
+        {
+          "id": "train:09569",
+          "similarity": 0.7490478060011154
+        },
+        {
+          "id": "train:09564",
+          "similarity": 0.7339004020644821
+        },
+        {
+          "id": "train:09546",
+          "similarity": 0.7209196594763759
+        },
+        {
+          "id": "train:07892",
+          "similarity": 0.7172584080922499
+        },
+        {
+          "id": "train:09535",
+          "similarity": 0.7096842958802543
+        },
+        {
+          "id": "train:01529",
+          "similarity": 0.7092146154011854
+        },
+        {
+          "id": "train:00142",
+          "similarity": 0.7079133548906331
+        },
+        {
+          "id": "train:07917",
+          "similarity": 0.7026189219157746
+        },
+        {
+          "id": "train:09533",
+          "similarity": 0.6914532808910336
+        },
+        {
+          "id": "train:01493",
+          "similarity": 0.6829031021400052
+        },
+        {
+          "id": "train:07850",
+          "similarity": 0.6786301380963535
+        }
+      ],
+      "serialized_request_bytes": 7028
+    },
+    {
+      "attempt_reservation_usd": "0.00277175",
+      "id": "train:00345",
+      "input_token_reservation": 21662,
+      "nominal_input_tokens": 1684,
+      "nominal_output_tokens": 32,
+      "nominal_usd_no_cache_read_discount": "0.0002265",
+      "output_token_reservation": 128,
+      "prompt_sha256": "21807b4e95486f1458239d5f57e65333a67430c4ccbfbe81430e165f3d41396f",
+      "request_sha256": "9965e72c83d704b140afe9e502c3d5bb5e49017aa62753022b08c079d4cedcea",
+      "retrieved": [
+        {
+          "id": "train:00376",
+          "similarity": 0.8622351955695207
+        },
+        {
+          "id": "train:00303",
+          "similarity": 0.8078764259931126
+        },
+        {
+          "id": "train:00315",
+          "similarity": 0.7990304619830455
+        },
+        {
+          "id": "train:00317",
+          "similarity": 0.7936217884069878
+        },
+        {
+          "id": "train:00397",
+          "similarity": 0.7742153050035574
+        },
+        {
+          "id": "train:00350",
+          "similarity": 0.7631473388269705
+        },
+        {
+          "id": "train:00373",
+          "similarity": 0.7617404267546322
+        },
+        {
+          "id": "train:00318",
+          "similarity": 0.7587696020145006
+        },
+        {
+          "id": "train:00403",
+          "similarity": 0.7552490358359845
+        },
+        {
+          "id": "train:00354",
+          "similarity": 0.7463517265349897
+        },
+        {
+          "id": "train:00332",
+          "similarity": 0.7433729777515845
+        },
+        {
+          "id": "train:00320",
+          "similarity": 0.7397955257238149
+        },
+        {
+          "id": "train:00310",
+          "similarity": 0.7342096902554202
+        },
+        {
+          "id": "train:00937",
+          "similarity": 0.7190910407173474
+        },
+        {
+          "id": "train:00371",
+          "similarity": 0.7178642734626663
+        },
+        {
+          "id": "train:00380",
+          "similarity": 0.7161412743366931
+        },
+        {
+          "id": "train:00394",
+          "similarity": 0.7089577437336716
+        },
+        {
+          "id": "train:09015",
+          "similarity": 0.6982625650053058
+        },
+        {
+          "id": "train:00938",
+          "similarity": 0.6898526944773707
+        },
+        {
+          "id": "train:00966",
+          "similarity": 0.6804263870581904
+        }
+      ],
+      "serialized_request_bytes": 6735
+    },
+    {
+      "attempt_reservation_usd": "0.00295875",
+      "id": "train:05109",
+      "input_token_reservation": 23158,
+      "nominal_input_tokens": 1871,
+      "nominal_output_tokens": 32,
+      "nominal_usd_no_cache_read_discount": "0.000249875",
+      "output_token_reservation": 128,
+      "prompt_sha256": "c9da3e63a21531a5f845f44431fdbd4e26d8fa87e65a76582a5edfb99b09783a",
+      "request_sha256": "3831ef96eb0c6ede0719087d9f47d68bd1544a28e01f042a2644e6edc3905bb1",
+      "retrieved": [
+        {
+          "id": "train:05174",
+          "similarity": 0.9741349037331757
+        },
+        {
+          "id": "train:05151",
+          "similarity": 0.9725910242453403
+        },
+        {
+          "id": "train:05120",
+          "similarity": 0.8958664102461175
+        },
+        {
+          "id": "train:05171",
+          "similarity": 0.8667219834167227
+        },
+        {
+          "id": "train:05128",
+          "similarity": 0.8498866734684417
+        },
+        {
+          "id": "train:05118",
+          "similarity": 0.8439592368849709
+        },
+        {
+          "id": "train:05204",
+          "similarity": 0.8341068123044963
+        },
+        {
+          "id": "train:05108",
+          "similarity": 0.7975651958400457
+        },
+        {
+          "id": "train:05231",
+          "similarity": 0.7775441286971827
+        },
+        {
+          "id": "train:05093",
+          "similarity": 0.7496685479681532
+        },
+        {
+          "id": "train:05244",
+          "similarity": 0.7018182769399525
+        },
+        {
+          "id": "train:05106",
+          "similarity": 0.6965739432615405
+        },
+        {
+          "id": "train:05214",
+          "similarity": 0.691648604931212
+        },
+        {
+          "id": "train:05208",
+          "similarity": 0.6860485317265952
+        },
+        {
+          "id": "train:06787",
+          "similarity": 0.6828459281629133
+        },
+        {
+          "id": "train:06796",
+          "similarity": 0.6773846611540538
+        },
+        {
+          "id": "train:05181",
+          "similarity": 0.6730744795177337
+        },
+        {
+          "id": "train:00747",
+          "similarity": 0.6675989923942611
+        },
+        {
+          "id": "train:03649",
+          "similarity": 0.6665895455892379
+        },
+        {
+          "id": "train:00802",
+          "similarity": 0.6593224584885212
+        }
+      ],
+      "serialized_request_bytes": 7483
+    },
+    {
+      "attempt_reservation_usd": "0.0027625",
+      "id": "train:06298",
+      "input_token_reservation": 21588,
+      "nominal_input_tokens": 1675,
+      "nominal_output_tokens": 32,
+      "nominal_usd_no_cache_read_discount": "0.000225375",
+      "output_token_reservation": 128,
+      "prompt_sha256": "e463480d0caa5f2924198324d2083034c97fbbf98c4abd603a5058a22dfb4593",
+      "request_sha256": "29d525549e2d304f9c041868c677728202c893066c6643034c2d71692af1dc5e",
+      "retrieved": [
+        {
+          "id": "train:01538",
+          "similarity": 0.7966992038638185
+        },
+        {
+          "id": "train:01493",
+          "similarity": 0.7423229620909129
+        },
+        {
+          "id": "train:01333",
+          "similarity": 0.7379505536570103
+        },
+        {
+          "id": "train:01254",
+          "similarity": 0.7239736073909722
+        },
+        {
+          "id": "train:01529",
+          "similarity": 0.7139928961881503
+        },
+        {
+          "id": "train:00101",
+          "similarity": 0.7127240949789406
+        },
+        {
+          "id": "train:01530",
+          "similarity": 0.7114830728517696
+        },
+        {
+          "id": "train:00134",
+          "similarity": 0.7074840322866218
+        },
+        {
+          "id": "train:07827",
+          "similarity": 0.7071744322834506
+        },
+        {
+          "id": "train:01504",
+          "similarity": 0.7071096390809359
+        },
+        {
+          "id": "train:01487",
+          "similarity": 0.7045324120677774
+        },
+        {
+          "id": "train:01491",
+          "similarity": 0.7041524899973522
+        },
+        {
+          "id": "train:01532",
+          "similarity": 0.703876139979536
+        },
+        {
+          "id": "train:06263",
+          "similarity": 0.6982331456868613
+        },
+        {
+          "id": "train:00259",
+          "similarity": 0.6970342891259234
+        },
+        {
+          "id": "train:00193",
+          "similarity": 0.6954026698058366
+        },
+        {
+          "id": "train:01309",
+          "similarity": 0.693615179214945
+        },
+        {
+          "id": "train:00087",
+          "similarity": 0.6929560070241814
+        },
+        {
+          "id": "train:01260",
+          "similarity": 0.6906536889930761
+        },
+        {
+          "id": "train:06261",
+          "similarity": 0.6881201064402775
+        }
+      ],
+      "serialized_request_bytes": 6698
+    },
+    {
+      "attempt_reservation_usd": "0.002771",
+      "id": "train:03106",
+      "input_token_reservation": 21656,
+      "nominal_input_tokens": 1683,
+      "nominal_output_tokens": 32,
+      "nominal_usd_no_cache_read_discount": "0.000226375",
+      "output_token_reservation": 128,
+      "prompt_sha256": "153614a910e12b6c54568c4d81fc494dffbe79b4b8aeec1cf89b91959ed2c9ed",
+      "request_sha256": "27e906a776f2e7d0d77f5af168ab4813191af4e245b72211286bc4e4ca52fa0f",
+      "retrieved": [
+        {
+          "id": "train:03121",
+          "similarity": 0.6719322767676591
+        },
+        {
+          "id": "train:09960",
+          "similarity": 0.6698520785139161
+        },
+        {
+          "id": "train:09925",
+          "similarity": 0.6293912294311976
+        },
+        {
+          "id": "train:03153",
+          "similarity": 0.6254040130496621
+        },
+        {
+          "id": "train:03127",
+          "similarity": 0.6039853964905773
+        },
+        {
+          "id": "train:09919",
+          "similarity": 0.5997255170229772
+        },
+        {
+          "id": "train:03130",
+          "similarity": 0.5910228902511276
+        },
+        {
+          "id": "train:09559",
+          "similarity": 0.5585105844597811
+        },
+        {
+          "id": "train:09912",
+          "similarity": 0.5532720785250332
+        },
+        {
+          "id": "train:09880",
+          "similarity": 0.552492316515494
+        },
+        {
+          "id": "train:01279",
+          "similarity": 0.5488607505860126
+        },
+        {
+          "id": "train:03146",
+          "similarity": 0.542984927781274
+        },
+        {
+          "id": "train:02895",
+          "similarity": 0.5385288399491972
+        },
+        {
+          "id": "train:09984",
+          "similarity": 0.536019315363538
+        },
+        {
+          "id": "train:01101",
+          "similarity": 0.5342037912271702
+        },
+        {
+          "id": "train:03134",
+          "similarity": 0.5336003652825472
+        },
+        {
+          "id": "train:09962",
+          "similarity": 0.5255102131418667
+        },
+        {
+          "id": "train:09953",
+          "similarity": 0.5236793768974388
+        },
+        {
+          "id": "train:03142",
+          "similarity": 0.5223721760654968
+        },
+        {
+          "id": "train:03099",
+          "similarity": 0.5186461291809215
+        }
+      ],
+      "serialized_request_bytes": 6732
+    },
+    {
+      "attempt_reservation_usd": "0.0027925",
+      "id": "train:07999",
+      "input_token_reservation": 21828,
+      "nominal_input_tokens": 1705,
+      "nominal_output_tokens": 32,
+      "nominal_usd_no_cache_read_discount": "0.000229125",
+      "output_token_reservation": 128,
+      "prompt_sha256": "216eb76523cf78a76347efed4b682cf11cc0ced90bf4d8ab3dced4acdbe47eed",
+      "request_sha256": "213ec45def8a4dfd3c89af6d69d9250ce9c42d7dd2dde78744718deec341b615",
+      "retrieved": [
+        {
+          "id": "train:07953",
+          "similarity": 0.9046325579757865
+        },
+        {
+          "id": "train:07938",
+          "similarity": 0.8833223049721306
+        },
+        {
+          "id": "train:07946",
+          "similarity": 0.8698988595366212
+        },
+        {
+          "id": "train:08014",
+          "similarity": 0.8651266159395318
+        },
+        {
+          "id": "train:08035",
+          "similarity": 0.8296182947975386
+        },
+        {
+          "id": "train:08033",
+          "similarity": 0.6862431587162852
+        },
+        {
+          "id": "train:02237",
+          "similarity": 0.6453356981932689
+        },
+        {
+          "id": "train:07960",
+          "similarity": 0.6401282630560745
+        },
+        {
+          "id": "train:08019",
+          "similarity": 0.6314580560962619
+        },
+        {
+          "id": "train:07993",
+          "similarity": 0.5941799815243793
+        },
+        {
+          "id": "train:09743",
+          "similarity": 0.5526763246590383
+        },
+        {
+          "id": "train:08028",
+          "similarity": 0.5454697337698843
+        },
+        {
+          "id": "train:09683",
+          "similarity": 0.544273306926048
+        },
+        {
+          "id": "train:01126",
+          "similarity": 0.5339951818151797
+        },
+        {
+          "id": "train:07956",
+          "similarity": 0.5272517459521211
+        },
+        {
+          "id": "train:02280",
+          "similarity": 0.5259887652833442
+        },
+        {
+          "id": "train:01916",
+          "similarity": 0.5253691985038818
+        },
+        {
+          "id": "train:09713",
+          "similarity": 0.521765816786693
+        },
+        {
+          "id": "train:01149",
+          "similarity": 0.5214701748660053
+        },
+        {
+          "id": "train:01134",
+          "similarity": 0.5203906829225826
+        }
+      ],
+      "serialized_request_bytes": 6818
+    },
+    {
+      "attempt_reservation_usd": "0.002848",
+      "id": "train:02108",
+      "input_token_reservation": 22272,
+      "nominal_input_tokens": 1760,
+      "nominal_output_tokens": 32,
+      "nominal_usd_no_cache_read_discount": "0.000236",
+      "output_token_reservation": 128,
+      "prompt_sha256": "fe98db21d5afe045af7ce1afc8bf0853876777ad9bde3e0ef0c3725b930e7416",
+      "request_sha256": "7aa36b81e77f0e3a0407fe9c6e9d75849ee850711f7fc44b554f3d28d7cea10a",
+      "retrieved": [
+        {
+          "id": "train:02186",
+          "similarity": 0.9835379227069541
+        },
+        {
+          "id": "train:02219",
+          "similarity": 0.953760733582908
+        },
+        {
+          "id": "train:02091",
+          "similarity": 0.9019310060846776
+        },
+        {
+          "id": "train:02113",
+          "similarity": 0.8835199794534165
+        },
+        {
+          "id": "train:02205",
+          "similarity": 0.8718414525411717
+        },
+        {
+          "id": "train:02136",
+          "similarity": 0.8495713402847629
+        },
+        {
+          "id": "train:02174",
+          "similarity": 0.8141484311529136
+        },
+        {
+          "id": "train:02112",
+          "similarity": 0.7420263745246733
+        },
+        {
+          "id": "train:02098",
+          "similarity": 0.7372634129443862
+        },
+        {
+          "id": "train:02221",
+          "similarity": 0.7340465847878475
+        },
+        {
+          "id": "train:06071",
+          "similarity": 0.6911454722932014
+        },
+        {
+          "id": "train:05462",
+          "similarity": 0.6801306520480539
+        },
+        {
+          "id": "train:02077",
+          "similarity": 0.6798089684217086
+        },
+        {
+          "id": "train:02214",
+          "similarity": 0.674813890892557
+        },
+        {
+          "id": "train:08695",
+          "similarity": 0.6665109891062988
+        },
+        {
+          "id": "train:05543",
+          "similarity": 0.6653231563031912
+        },
+        {
+          "id": "train:02106",
+          "similarity": 0.6582190419440108
+        },
+        {
+          "id": "train:07255",
+          "similarity": 0.6500287236979765
+        },
+        {
+          "id": "train:02117",
+          "similarity": 0.6439690809238549
+        },
+        {
+          "id": "train:05501",
+          "similarity": 0.6417991513896539
+        }
+      ],
+      "serialized_request_bytes": 7040
+    },
+    {
+      "attempt_reservation_usd": "0.002781",
+      "id": "train:04264",
+      "input_token_reservation": 21736,
+      "nominal_input_tokens": 1693,
+      "nominal_output_tokens": 32,
+      "nominal_usd_no_cache_read_discount": "0.000227625",
+      "output_token_reservation": 128,
+      "prompt_sha256": "5850f93718e4274bc0dd8d33c58e4a5a51bb6034ea7bab7280190d492c30b3fe",
+      "request_sha256": "f68243159d12dc4b8183c94f728bddf8d444f413d6f1ea4297017e8de984cd2b",
+      "retrieved": [
+        {
+          "id": "train:04282",
+          "similarity": 0.8426366683252378
+        },
+        {
+          "id": "train:04285",
+          "similarity": 0.8109767718820324
+        },
+        {
+          "id": "train:04334",
+          "similarity": 0.7822443747414187
+        },
+        {
+          "id": "train:02237",
+          "similarity": 0.7334743379484192
+        },
+        {
+          "id": "train:02978",
+          "similarity": 0.7288860670264099
+        },
+        {
+          "id": "train:07654",
+          "similarity": 0.7169504007634966
+        },
+        {
+          "id": "train:09111",
+          "similarity": 0.7166724092282232
+        },
+        {
+          "id": "train:04328",
+          "similarity": 0.7081643510137375
+        },
+        {
+          "id": "train:07720",
+          "similarity": 0.6965853590846574
+        },
+        {
+          "id": "train:02933",
+          "similarity": 0.6895019816606238
+        },
+        {
+          "id": "train:04278",
+          "similarity": 0.6883148589171665
+        },
+        {
+          "id": "train:02280",
+          "similarity": 0.6712455499794567
+        },
+        {
+          "id": "train:01136",
+          "similarity": 0.6692277304977741
+        },
+        {
+          "id": "train:07706",
+          "similarity": 0.6552863907871826
+        },
+        {
+          "id": "train:02322",
+          "similarity": 0.6490534874284284
+        },
+        {
+          "id": "train:01126",
+          "similarity": 0.6363156619432675
+        },
+        {
+          "id": "train:07960",
+          "similarity": 0.6359926334176719
+        },
+        {
+          "id": "train:02925",
+          "similarity": 0.6357728464143706
+        },
+        {
+          "id": "train:02291",
+          "similarity": 0.632337895366573
+        },
+        {
+          "id": "train:09157",
+          "similarity": 0.6299194705714987
+        }
+      ],
+      "serialized_request_bytes": 6772
+    },
+    {
+      "attempt_reservation_usd": "0.00304025",
+      "id": "train:03460",
+      "input_token_reservation": 23810,
+      "nominal_input_tokens": 1953,
+      "nominal_output_tokens": 32,
+      "nominal_usd_no_cache_read_discount": "0.000260125",
+      "output_token_reservation": 128,
+      "prompt_sha256": "697b2ffd21eb7664a6acf0a3ec659d0f7f9115d5baf186bb78ba8f973e88d9ba",
+      "request_sha256": "09c1b9b0463f9d4f314c57eb178547b12808c156210bd42c0f1a27dba89d510f",
+      "retrieved": [
+        {
+          "id": "train:03422",
+          "similarity": 0.6550857663229757
+        },
+        {
+          "id": "train:01930",
+          "similarity": 0.6494291746006273
+        },
+        {
+          "id": "train:03473",
+          "similarity": 0.6483932465952419
+        },
+        {
+          "id": "train:03322",
+          "similarity": 0.6368408140306097
+        },
+        {
+          "id": "train:03389",
+          "similarity": 0.6326703308146389
+        },
+        {
+          "id": "train:03307",
+          "similarity": 0.6179141217409048
+        },
+        {
+          "id": "train:03380",
+          "similarity": 0.6142425396134654
+        },
+        {
+          "id": "train:03373",
+          "similarity": 0.6045004376394992
+        },
+        {
+          "id": "train:02769",
+          "similarity": 0.5917895200954494
+        },
+        {
+          "id": "train:08002",
+          "similarity": 0.577949807309277
+        },
+        {
+          "id": "train:03436",
+          "similarity": 0.5756215346227933
+        },
+        {
+          "id": "train:03415",
+          "similarity": 0.5696372309355198
+        },
+        {
+          "id": "train:07941",
+          "similarity": 0.5506959977396487
+        },
+        {
+          "id": "train:03316",
+          "similarity": 0.5506876753328186
+        },
+        {
+          "id": "train:06632",
+          "similarity": 0.5489020637235182
+        },
+        {
+          "id": "train:08718",
+          "similarity": 0.5458461852134296
+        },
+        {
+          "id": "train:03429",
+          "similarity": 0.541997406211195
+        },
+        {
+          "id": "train:03360",
+          "similarity": 0.540754506373377
+        },
+        {
+          "id": "train:03445",
+          "similarity": 0.5403929508482619
+        },
+        {
+          "id": "train:06666",
+          "similarity": 0.5315300271752071
+        }
+      ],
+      "serialized_request_bytes": 7809
+    },
+    {
+      "attempt_reservation_usd": "0.00279025",
+      "id": "train:01710",
+      "input_token_reservation": 21810,
+      "nominal_input_tokens": 1703,
+      "nominal_output_tokens": 32,
+      "nominal_usd_no_cache_read_discount": "0.000228875",
+      "output_token_reservation": 128,
+      "prompt_sha256": "065bdc5eccaac853071d8e12e9a6a7a925460627ab65205180993c7a5a87f8ed",
+      "request_sha256": "055029828f9b7ddd53b338f4d05fde3dcc9c4cd094250b1749cc3caa6d62ee2e",
+      "retrieved": [
+        {
+          "id": "train:01676",
+          "similarity": 0.9031937366671701
+        },
+        {
+          "id": "train:01775",
+          "similarity": 0.8755456438701443
+        },
+        {
+          "id": "train:01716",
+          "similarity": 0.8453377699488849
+        },
+        {
+          "id": "train:01757",
+          "similarity": 0.8450845343883361
+        },
+        {
+          "id": "train:01721",
+          "similarity": 0.8423729642997348
+        },
+        {
+          "id": "train:01712",
+          "similarity": 0.8214123303259706
+        },
+        {
+          "id": "train:01671",
+          "similarity": 0.7634477208334429
+        },
+        {
+          "id": "train:01726",
+          "similarity": 0.7506729335210677
+        },
+        {
+          "id": "train:01749",
+          "similarity": 0.7409335070266816
+        },
+        {
+          "id": "train:01750",
+          "similarity": 0.6648560049028931
+        },
+        {
+          "id": "train:01751",
+          "similarity": 0.6534292661216252
+        },
+        {
+          "id": "train:01779",
+          "similarity": 0.6466287773114188
+        },
+        {
+          "id": "train:01720",
+          "similarity": 0.6077860787983655
+        },
+        {
+          "id": "train:01745",
+          "similarity": 0.6038076530871843
+        },
+        {
+          "id": "train:01748",
+          "similarity": 0.5957968550431643
+        },
+        {
+          "id": "train:06967",
+          "similarity": 0.5900726626612358
+        },
+        {
+          "id": "train:06979",
+          "similarity": 0.5840411134695835
+        },
+        {
+          "id": "train:01691",
+          "similarity": 0.547875818823042
+        },
+        {
+          "id": "train:01714",
+          "similarity": 0.5434611943502956
+        },
+        {
+          "id": "train:01735",
+          "similarity": 0.541084708355002
+        }
+      ],
+      "serialized_request_bytes": 6809
+    },
+    {
+      "attempt_reservation_usd": "0.0030455",
+      "id": "train:07453",
+      "input_token_reservation": 23852,
+      "nominal_input_tokens": 1958,
+      "nominal_output_tokens": 32,
+      "nominal_usd_no_cache_read_discount": "0.00026075",
+      "output_token_reservation": 128,
+      "prompt_sha256": "921b0d28b6d648ff2683e5c0c8cb03550035502d18a0350ba0ee485c03c4627c",
+      "request_sha256": "3995284cf013d18d80957be8cebe8fe2cd4848df8020340e8c20d8a23b3a0727",
+      "retrieved": [
+        {
+          "id": "train:07559",
+          "similarity": 0.7303247414981325
+        },
+        {
+          "id": "train:07514",
+          "similarity": 0.7241719545766576
+        },
+        {
+          "id": "train:07562",
+          "similarity": 0.7232625495501022
+        },
+        {
+          "id": "train:07493",
+          "similarity": 0.722472739209615
+        },
+        {
+          "id": "train:07093",
+          "similarity": 0.7003362512396871
+        },
+        {
+          "id": "train:07558",
+          "similarity": 0.6989833723911942
+        },
+        {
+          "id": "train:07479",
+          "similarity": 0.6924810966449689
+        },
+        {
+          "id": "train:07100",
+          "similarity": 0.6916296787979617
+        },
+        {
+          "id": "train:07477",
+          "similarity": 0.6839656023151484
+        },
+        {
+          "id": "train:07458",
+          "similarity": 0.6809970901927347
+        },
+        {
+          "id": "train:07016",
+          "similarity": 0.6732461851022118
+        },
+        {
+          "id": "train:05543",
+          "similarity": 0.6712294205181389
+        },
+        {
+          "id": "train:07460",
+          "similarity": 0.6712240394373283
+        },
+        {
+          "id": "train:07449",
+          "similarity": 0.6698289305951861
+        },
+        {
+          "id": "train:07050",
+          "similarity": 0.6688037939777098
+        },
+        {
+          "id": "train:07443",
+          "similarity": 0.6641459514641038
+        },
+        {
+          "id": "train:07138",
+          "similarity": 0.6571629778420105
+        },
+        {
+          "id": "train:07428",
+          "similarity": 0.6543143951675126
+        },
+        {
+          "id": "train:07436",
+          "similarity": 0.6432100501058047
+        },
+        {
+          "id": "train:05653",
+          "similarity": 0.6409328301085069
+        }
+      ],
+      "serialized_request_bytes": 7830
+    },
+    {
+      "attempt_reservation_usd": "0.00281025",
+      "id": "train:08185",
+      "input_token_reservation": 21970,
+      "nominal_input_tokens": 1723,
+      "nominal_output_tokens": 32,
+      "nominal_usd_no_cache_read_discount": "0.000231375",
+      "output_token_reservation": 128,
+      "prompt_sha256": "198af02a5bedd7b2d92cd44f2d72eede29e90d092f3a76b7c4f7af43f4388727",
+      "request_sha256": "f5f57cdea07ba31638ca3842d50ec81728c47597c939d37f6f6536b1f1d050e7",
+      "retrieved": [
+        {
+          "id": "train:08187",
+          "similarity": 0.9809278956378906
+        },
+        {
+          "id": "train:08179",
+          "similarity": 0.9584704893253189
+        },
+        {
+          "id": "train:08169",
+          "similarity": 0.9497880483201668
+        },
+        {
+          "id": "train:08203",
+          "similarity": 0.9478604115593616
+        },
+        {
+          "id": "train:08171",
+          "similarity": 0.9210851194913476
+        },
+        {
+          "id": "train:08170",
+          "similarity": 0.8513004258386104
+        },
+        {
+          "id": "train:08175",
+          "similarity": 0.8106601794949267
+        },
+        {
+          "id": "train:03040",
+          "similarity": 0.807995206968668
+        },
+        {
+          "id": "train:03054",
+          "similarity": 0.8065755431799598
+        },
+        {
+          "id": "train:08181",
+          "similarity": 0.7830484547129928
+        },
+        {
+          "id": "train:08204",
+          "similarity": 0.7789565365066533
+        },
+        {
+          "id": "train:03010",
+          "similarity": 0.7708314292388765
+        },
+        {
+          "id": "train:03051",
+          "similarity": 0.7541442660340996
+        },
+        {
+          "id": "train:08183",
+          "similarity": 0.7540243461278575
+        },
+        {
+          "id": "train:08186",
+          "similarity": 0.7533997095621529
+        },
+        {
+          "id": "train:03005",
+          "similarity": 0.7518352641822177
+        },
+        {
+          "id": "train:03059",
+          "similarity": 0.750326618881105
+        },
+        {
+          "id": "train:03071",
+          "similarity": 0.7483013235518403
+        },
+        {
+          "id": "train:03023",
+          "similarity": 0.7482534064501225
+        },
+        {
+          "id": "train:03038",
+          "similarity": 0.7229241343225437
+        }
+      ],
+      "serialized_request_bytes": 6889
+    },
+    {
+      "attempt_reservation_usd": "0.002799",
+      "id": "train:03800",
+      "input_token_reservation": 21880,
+      "nominal_input_tokens": 1711,
+      "nominal_output_tokens": 32,
+      "nominal_usd_no_cache_read_discount": "0.000229875",
+      "output_token_reservation": 128,
+      "prompt_sha256": "0423caa50da633316be6144bf31f87b554ac70dbb798329d7c7488fba9842c5b",
+      "request_sha256": "3a99513412452c448bc4e0e6fe66fbb52ff314de085acfb365d4d6dd51922f3a",
+      "retrieved": [
+        {
+          "id": "train:03790",
+          "similarity": 0.8253956887043099
+        },
+        {
+          "id": "train:03885",
+          "similarity": 0.8095466745481186
+        },
+        {
+          "id": "train:03948",
+          "similarity": 0.7979594057358731
+        },
+        {
+          "id": "train:03924",
+          "similarity": 0.7891304087172484
+        },
+        {
+          "id": "train:03798",
+          "similarity": 0.7837276940333208
+        },
+        {
+          "id": "train:03806",
+          "similarity": 0.7772784628520746
+        },
+        {
+          "id": "train:03861",
+          "similarity": 0.7640667580638741
+        },
+        {
+          "id": "train:03969",
+          "similarity": 0.7272814311798615
+        },
+        {
+          "id": "train:03985",
+          "similarity": 0.708412341897928
+        },
+        {
+          "id": "train:03937",
+          "similarity": 0.7037188973174259
+        },
+        {
+          "id": "train:03796",
+          "similarity": 0.7000829339528563
+        },
+        {
+          "id": "train:09868",
+          "similarity": 0.6978349661968326
+        },
+        {
+          "id": "train:03882",
+          "similarity": 0.6950538692524406
+        },
+        {
+          "id": "train:03913",
+          "similarity": 0.6947481699550981
+        },
+        {
+          "id": "train:09839",
+          "similarity": 0.6940881740811469
+        },
+        {
+          "id": "train:09799",
+          "similarity": 0.6772400295142511
+        },
+        {
+          "id": "train:03965",
+          "similarity": 0.6751749681203938
+        },
+        {
+          "id": "train:09809",
+          "similarity": 0.6640230773710518
+        },
+        {
+          "id": "train:03920",
+          "similarity": 0.659670861606239
+        },
+        {
+          "id": "train:09778",
+          "similarity": 0.6493061901928462
+        }
+      ],
+      "serialized_request_bytes": 6844
+    },
+    {
+      "attempt_reservation_usd": "0.0028535",
+      "id": "train:01047",
+      "input_token_reservation": 22316,
+      "nominal_input_tokens": 1766,
+      "nominal_output_tokens": 32,
+      "nominal_usd_no_cache_read_discount": "0.00023675",
+      "output_token_reservation": 128,
+      "prompt_sha256": "42fa0c0bf860f31fcd553ccfd2b2221e3036dfaa1d0294577544b52ef24acaab",
+      "request_sha256": "a8b1f3fb403de04e0fc4bd12cb9ea1a70fec481297a395f0fb1a9bcda27eef1d",
+      "retrieved": [
+        {
+          "id": "train:01076",
+          "similarity": 0.8648885906855572
+        },
+        {
+          "id": "train:01087",
+          "similarity": 0.8418943300403376
+        },
+        {
+          "id": "train:00081",
+          "similarity": 0.8332484514765007
+        },
+        {
+          "id": "train:01072",
+          "similarity": 0.8311590165443434
+        },
+        {
+          "id": "train:01104",
+          "similarity": 0.8100017474990224
+        },
+        {
+          "id": "train:01064",
+          "similarity": 0.8015810944655487
+        },
+        {
+          "id": "train:00066",
+          "similarity": 0.7998368656590552
+        },
+        {
+          "id": "train:01041",
+          "similarity": 0.7895546306010669
+        },
+        {
+          "id": "train:01014",
+          "similarity": 0.7785604104856908
+        },
+        {
+          "id": "train:00019",
+          "similarity": 0.73840406109764
+        },
+        {
+          "id": "train:09594",
+          "similarity": 0.7184513300963122
+        },
+        {
+          "id": "train:00080",
+          "similarity": 0.715359822888555
+        },
+        {
+          "id": "train:04070",
+          "similarity": 0.7096640745860558
+        },
+        {
+          "id": "train:00101",
+          "similarity": 0.7046483924379043
+        },
+        {
+          "id": "train:01786",
+          "similarity": 0.6736262810112885
+        },
+        {
+          "id": "train:00134",
+          "similarity": 0.6735247432441662
+        },
+        {
+          "id": "train:01101",
+          "similarity": 0.6643376773413078
+        },
+        {
+          "id": "train:09590",
+          "similarity": 0.6548904747774672
+        },
+        {
+          "id": "train:09632",
+          "similarity": 0.6467832579782289
+        },
+        {
+          "id": "train:04062",
+          "similarity": 0.6309354934365141
+        }
+      ],
+      "serialized_request_bytes": 7062
+    },
+    {
+      "attempt_reservation_usd": "0.002829",
+      "id": "train:06216",
+      "input_token_reservation": 22120,
+      "nominal_input_tokens": 1741,
+      "nominal_output_tokens": 32,
+      "nominal_usd_no_cache_read_discount": "0.000233625",
+      "output_token_reservation": 128,
+      "prompt_sha256": "9857d6cbee11e529a619be5d5f8bf40c7e710d0d6bc7524d71ca5f1d695bd05b",
+      "request_sha256": "78bc91399e4b91c03e3ee20c458a0bb44ac6431b801f09048b3b2f38d4087efd",
+      "retrieved": [
+        {
+          "id": "train:06173",
+          "similarity": 0.7947996408217466
+        },
+        {
+          "id": "train:06154",
+          "similarity": 0.756341503112036
+        },
+        {
+          "id": "train:06138",
+          "similarity": 0.743114245484896
+        },
+        {
+          "id": "train:06176",
+          "similarity": 0.6933325428937589
+        },
+        {
+          "id": "train:06191",
+          "similarity": 0.6850110982578909
+        },
+        {
+          "id": "train:06163",
+          "similarity": 0.6790363227157092
+        },
+        {
+          "id": "train:06193",
+          "similarity": 0.6668889507490412
+        },
+        {
+          "id": "train:06214",
+          "similarity": 0.657270986967633
+        },
+        {
+          "id": "train:06153",
+          "similarity": 0.650134990151317
+        },
+        {
+          "id": "train:06228",
+          "similarity": 0.6463787838453519
+        },
+        {
+          "id": "train:06197",
+          "similarity": 0.6237576539501901
+        },
+        {
+          "id": "train:06236",
+          "similarity": 0.6182581458690634
+        },
+        {
+          "id": "train:04464",
+          "similarity": 0.6174565921708742
+        },
+        {
+          "id": "train:06242",
+          "similarity": 0.6026916559772894
+        },
+        {
+          "id": "train:09842",
+          "similarity": 0.5742281471166478
+        },
+        {
+          "id": "train:06211",
+          "similarity": 0.5664326806280193
+        },
+        {
+          "id": "train:06241",
+          "similarity": 0.5651099342672956
+        },
+        {
+          "id": "train:06208",
+          "similarity": 0.5598049658301696
+        },
+        {
+          "id": "train:06156",
+          "similarity": 0.5494614838804537
+        },
+        {
+          "id": "train:06194",
+          "similarity": 0.5444436376324908
+        }
+      ],
+      "serialized_request_bytes": 6964
+    }
+  ],
+  "selection": "first20 sorted by (SHA256 UTF8 EXP-009-pilot-v1:<ID>, ID); IDs only before results"
+}

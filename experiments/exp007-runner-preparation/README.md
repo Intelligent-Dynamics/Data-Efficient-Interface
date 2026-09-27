@@ -1,6 +1,8 @@
 # EXP-007 guarded runner — implementation only
 
-**OFFICIAL TEST STILL SEALED. NO PAID CALLS.** This checkpoint implements the already frozen protocol; it contains no test predictions, scores or measured test request sizes. All new execution tests use clearly synthetic fixtures. Existing research artifacts and protocol bytes are unchanged.
+**Historical runner-preparation evidence: no test access or paid calls occurred during implementation.**
+
+**2026-09-27 status update:** the user reports a subsequent authorized mechanical preflight opened the official test, but no predictions or scores have been produced. The bounded v1 CPU/retrieval pass supersedes immediate live execution. No further test access or paid call is authorized. The protocol and runner remain unchanged; the estimates below describe original preparation assumptions, not a new authorization. This checkpoint implements the already frozen protocol; it contains no test predictions, scores or measured test request sizes. All new execution tests use clearly synthetic fixtures. Existing research artifacts and protocol bytes are unchanged.
 
 Authoritative protocol: [`../exp007-fixed-threshold-preparation/protocol.json`](../exp007-fixed-threshold-preparation/protocol.json), SHA-256:
 

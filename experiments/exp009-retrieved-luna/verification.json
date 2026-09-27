@@ -1,0 +1,41 @@
+{
+  "api_calls": 0,
+  "candidate_count": 1540,
+  "evidence_sha256": {
+    "README.md": "bd37777862a54c54b0d90fb99a2d6228cdb4a0254412958a791889d54e734b7f",
+    "costs.json": "457e165fa1ee7978d765914dcb304bb12606e3987ac433f46d225ab5ea1dbaeb",
+    "overhead.json": "b890c0589e33916d6f8eb196cf85c66e56c36e5f2ef4306639a162ab4dd47d0b",
+    "pilot.json": "3a05a2d6580eae579864eef432601ca862168d1a4b948b274e1741b1e7d9fa52",
+    "prompt.txt": "5c6e098f6115da58152d0fbad8cf73dcacbc5cafb69270ccfd0a79abc5113335",
+    "protocol.json": "b78f3d32a9bd86ea130ce1f51e2feded9d52b5f5ff796507c49d6f53fccc3334",
+    "validation_retrieval.json.gz": "577208d177f50ee5644a842b7c0a75155fe19d2dd0fb135337ca15c7b7132ece"
+  },
+  "focused_synthetic_tests": {
+    "elapsed_seconds": 1.27,
+    "failed": 0,
+    "passed": 40
+  },
+  "guard_counters": {
+    "network_access_attempts": 0,
+    "official_test_access_attempts": 0
+  },
+  "model_fits": 0,
+  "no_paid_evaluation_run": true,
+  "official_test_access_this_session": false,
+  "pilot_count": 20,
+  "protocol_sha256": "b78f3d32a9bd86ea130ce1f51e2feded9d52b5f5ff796507c49d6f53fccc3334",
+  "request_hashes_reproduced": true,
+  "serialized_order_roundtrip_verified": true,
+  "source_and_tests_sha256": {
+    "baseline/retrieved.py": "85e64e349e4ddcf052107085e369acc9faaf9cec86e71643e34ecc2548dd706f",
+    "baseline/retrieved_collection.py": "00c2ddd0a45d9238c87931ff5dc282da69591d254d310e43589082068aee66da",
+    "baseline/retrieved_run.py": "4c4649bf35575b0c4677d9bb16bc5c537a6f1e122356edc4b078186a8fa66097",
+    "tests/test_retrieved.py": "27bedb3bc28393e1f8dbae72bbb231e4d0ff9586b6d06d04ea0dff39c16fd510"
+  },
+  "source_exp007_protocol_sha256": "0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00",
+  "status": "PREPARED, NOT EVALUATED",
+  "study_id": "EXP-009",
+  "test_state": "mechanically opened earlier by authorized preflight, still unencoded/unevaluated; no further access now",
+  "validation_count": 770,
+  "verified_utc": "2026-09-27T20:01:52.626096+00:00"
+}

@@ -1,16 +1,25 @@
 # Data-Efficient Specialist Inference
 
-An **Intelligent Dynamics** research project exploring specialized AI systems that learn narrow business tasks from limited labeled data.
+An **Intelligent Dynamics** project studying complementary intent classifiers under a limited training-label budget.
 
-## Research question
+**Can confidence-based routing combine a few-shot specialist with a complementary LLM to improve classification quality while reducing LLM calls, and what local inference overhead does this introduce?**
 
-Can a small specialist model trained with limited labeled data handle a significant portion of a narrow business classification workload while uncertain cases fall back to a stronger general-purpose model, reducing benchmarked inference cost without materially reducing model quality?
+![Validation quality versus fallback fraction](experiments/v1-complementary-validation/quality_vs_fallback_fraction.png)
 
-## Current status
+These are **reused-validation results**, not final-test estimates. Across the five existing 20-shot models, specialist-only accuracy is **83.77%**, zero-shot Luna accuracy is **79.74%**, and the hybrid at 90% specialist coverage achieves **85.27%**. On each seed's matching 77 rejected requests, specialist accuracy averages **45.19%**, versus **60.26%** for Luna. The resulting hybrid gain over specialist-only is **1.51 percentage points**. Luna is a complementary classifier here; it is not established as stronger overall on this task. [Independent replay, all seed counts and negative results](experiments/v1-complementary-validation/README.md).
 
-The classical TF-IDF and frozen MiniLM 5/10/20-shot validation curves are measured across five seeds and independently reproduced locally. See [verified validation results](docs/RESULTS.md), [the paired MiniLM/TF-IDF study](experiments/exp004-minilm-learning-curve/README.md), and [the experiment log](docs/EXPERIMENTS.md). Every configuration uses the same existing BANKING77 v2 sample IDs; only logistic regression is trained for the frozen embedding model. Official-test performance, end-to-end embedding inference speed, and cost savings remain unmeasured. Fine-tuning, serving/routing infrastructure, calibration and frontend work are deferred. EXP-006 + EXP-006R validation collection is complete. EXP-007 fixed-threshold preparation and its guarded final-test runner are implemented; official test evaluation remains unrun and needs separate authorization.
+The chart reports classification quality against the fraction sent to Luna, with training-seed sample SD. Five seeds share the same 770 validation requests and Luna predictions; seed SD is not a confidence interval over future traffic. Fewer API requests do not establish total-system savings. Each 20-shot specialist uses **1,540 fitting labels plus 770 reused validation labels**, with external MiniLM pretraining.
 
-## Run locally
+## Bounded v1 status
+
+- Completed: TF-IDF/MiniLM validation learning curves, confidence diagnostics and recovered zero-shot Luna validation comparison; previous artifacts and negative results are preserved.
+- Local CPU measurement: the existing frozen seed-11 specialist is benchmarked as one deployed model, with **5.91 ms median / 7.82 ms p95** warm request latency, **370.18 requests/s** at batch 32 and **582.92 MiB** lifetime process peak RSS on this Apple M1 Pro. Loading and inference are separate; no deployment price is assumed. See [EXP-008](experiments/exp008-cpu-validation/README.md).
+- Retrieved-example comparison: [EXP-009](experiments/exp009-retrieved-luna/README.md) adds exactly 20 retrieved demonstrations from the same seed-11 training pool. Implementation and offline requests are prepared; no paid pilot or retrieved-Luna quality result exists.
+- Final-test performance remains **unmeasured**. The user reports that an earlier authorized preflight mechanically opened the official test. No test predictions or scores have been produced; this pass performs no further access. EXP-007's original protocol remains unchanged, and proceeding immediately to its live run is superseded by this bounded v1 scope.
+
+A compatibility assertion in the original runner currently rejects inert empty encoder prompts; its minimal fix needs review before final launch. The new CPU helper validates empty prompts without changing model behavior. All paid collection requires new, experiment-specific approval and a numeric cap. Historical prices and conditional estimates grant no spending permission. See [current plan](docs/CURRENT_PLAN.md) for the next bounded step.
+
+## Historical reproduction commands
 
 Use Python 3.13.0 and [uv](https://docs.astral.sh/uv/). The canonical checkout is `/Users/Andrew/Developer/data-efficient-inference`; run commands from that repository root. `uv.lock` pins all resolved dependencies; the first sync and uncached dataset preparation need network access.
 
@@ -24,7 +33,7 @@ uv sync --locked --cache-dir .cache/uv
 
 Choose a new output directory for each run; existing runs are never overwritten. Preparation is idempotent, checks file hashes, and refuses to overwrite a changed split manifest. Once files are cached, preparation and training work offline.
 
-The source is fixed to publisher revision `57ec275d8078af65b7731c2a98be812d844a6d6b`, with SHA-256 checksums in [the source manifest](data/banking77-source.json). Preparation audits exact/normalized duplicates, leaves official test rows untouched, and stores only test IDs and text hashes in the split manifest. Training loads only training-source texts and verifies test-file byte integrity. There is no test-evaluation CLI.
+The source is fixed to publisher revision `57ec275d8078af65b7731c2a98be812d844a6d6b`, with SHA-256 checksums in [the source manifest](data/banking77-source.json). Preparation audits exact/normalized duplicates, leaves official test rows untouched, and stores only test IDs and text hashes in the split manifest. Training loads only training-source texts and verifies test-file byte integrity. The guarded final-test CLI is separate and requires explicit authorization; do not use these historical preparation/training commands in this bounded pass.
 
 Protocol `banking77-val10-v2` reserves **10 examples per class** (770 total), fixed with seed `20260924` and shared across every regime and sampling seed. Training seeds `11`, `22`, `33`, `44`, `55` define nested **5-, 10-, and 20-shot** subsets. All three regimes are feasible across all 77 classes: the smallest class has 35 usable source rows and retains 25. **50-shot is dropped**, since supporting it would require excluded classes, repeated examples, or new data. No official test examples enter development.
 
@@ -81,7 +90,7 @@ Reproduce tables and curves using compact records alone, with a fresh output pat
 MPLCONFIGDIR=.cache/matplotlib .venv/bin/python -m baseline.selective --records-dir experiments/exp005-selective-diagnostic/runs --output artifacts/exp005-summary-new
 ```
 
-Original probabilities/caches/models stay ignored. The study README records provenance checks and a separate independent checker; the official test remains sealed.
+Original probabilities/caches/models stay ignored. The study README records provenance checks and a separate independent checker; no test evaluation occurred in that study.
 
 ## Completed general-model validation
 
@@ -89,7 +98,7 @@ Original probabilities/caches/models stay ignored. The study README records prov
 
 Verified validation scores: Luna alone **79.74% accuracy / 79.01% macro-F1**; the five 20-shot specialists at the 90% acceptance landmark average **85.27 ± 0.27% accuracy / 84.92 ± 0.38% macro-F1**. All seed results and all 90 combinations are retained, including negative comparisons. Unknown usage from 105 original failed attempts prevents an exact combined spend claim.
 
-[Verified compact completed-validation evidence](experiments/exp006-completed-validation/README.md) retains predictions, every combination, seed variability and known/unknown accounting without raw API responses or request text. The earlier preparation-only write-ups describe their historical checkpoints. The official test remains sealed; validation results are exploratory and do not establish total-system savings or production quality.
+[Verified compact completed-validation evidence](experiments/exp006-completed-validation/README.md) retains predictions, every combination, seed variability and known/unknown accounting without raw API responses or request text. The earlier preparation-only write-ups describe their historical checkpoints. The official test has been mechanically opened by an authorized preflight but remains unscored; validation results are exploratory and do not establish total-system savings or production quality.
 
 ## Fixed-threshold routing preparation
 
@@ -106,7 +115,7 @@ These are validation-only offline preparation/replay commands. See the study REA
 
 ## Guarded final-test runner (implementation only)
 
-`baseline.final_test` implements the unchanged frozen EXP-007 protocol. **The official test is still sealed; no live test collection has run.** All implementation checks use synthetic fixtures.
+`baseline.final_test` implements the unchanged frozen EXP-007 protocol. **The earlier authorized preflight mechanically opened the test; no test predictions or scores exist.** All implementation checks use synthetic fixtures.
 
 ```sh
 .venv/bin/python -m baseline.final_test dry-run

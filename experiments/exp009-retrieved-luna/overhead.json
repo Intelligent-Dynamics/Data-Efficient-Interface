@@ -1,0 +1,3886 @@
+{
+  "hardware": {
+    "hw.logicalcpu": "10",
+    "hw.memsize": "34359738368",
+    "hw.physicalcpu": "10",
+    "logical_cpus": 10,
+    "machdep.cpu.brand_string": "Apple M1 Pro",
+    "machine": "arm64",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "python": "3.13.0"
+  },
+  "measured_utc": "2026-09-27T19:58:00.831536+00:00",
+  "network_calls": 0,
+  "numpy": "2.3.3",
+  "passes": 1,
+  "per_query": [
+    {
+      "id": "train:00053",
+      "prompt_seconds": 0.0021779173985123634,
+      "retrieval_seconds": 0.0018050409853458405
+    },
+    {
+      "id": "train:00070",
+      "prompt_seconds": 0.002098583150655031,
+      "retrieval_seconds": 0.0008377078920602798
+    },
+    {
+      "id": "train:00106",
+      "prompt_seconds": 0.002065458334982395,
+      "retrieval_seconds": 0.0007598325610160828
+    },
+    {
+      "id": "train:00062",
+      "prompt_seconds": 0.0020139161497354507,
+      "retrieval_seconds": 0.0007566669955849648
+    },
+    {
+      "id": "train:00091",
+      "prompt_seconds": 0.0020021251402795315,
+      "retrieval_seconds": 0.0007392079569399357
+    },
+    {
+      "id": "train:00040",
+      "prompt_seconds": 0.0020748749375343323,
+      "retrieval_seconds": 0.0007731248624622822
+    },
+    {
+      "id": "train:00011",
+      "prompt_seconds": 0.0018199579790234566,
+      "retrieval_seconds": 0.0007126247510313988
+    },
+    {
+      "id": "train:00149",
+      "prompt_seconds": 0.0017917091026902199,
+      "retrieval_seconds": 0.0005669998936355114
+    },
+    {
+      "id": "train:00126",
+      "prompt_seconds": 0.0018265829421579838,
+      "retrieval_seconds": 0.0005585420876741409
+    },
+    {
+      "id": "train:00039",
+      "prompt_seconds": 0.002524042036384344,
+      "retrieval_seconds": 0.0005612499080598354
+    },
+    {
+      "id": "train:00261",
+      "prompt_seconds": 0.0020851660519838333,
+      "retrieval_seconds": 0.0008511249907314777
+    },
+    {
+      "id": "train:00245",
+      "prompt_seconds": 0.0019572079181671143,
+      "retrieval_seconds": 0.0007550832815468311
+    },
+    {
+      "id": "train:00215",
+      "prompt_seconds": 0.0019443328492343426,
+      "retrieval_seconds": 0.00070583401247859
+    },
+    {
+      "id": "train:00288",
+      "prompt_seconds": 0.001936499960720539,
+      "retrieval_seconds": 0.0007177079096436501
+    },
+    {
+      "id": "train:00180",
+      "prompt_seconds": 0.001957249827682972,
+      "retrieval_seconds": 0.0006994591094553471
+    },
+    {
+      "id": "train:00248",
+      "prompt_seconds": 0.0019988329149782658,
+      "retrieval_seconds": 0.0007447921670973301
+    },
+    {
+      "id": "train:00181",
+      "prompt_seconds": 0.001985957846045494,
+      "retrieval_seconds": 0.0007210420444607735
+    },
+    {
+      "id": "train:00254",
+      "prompt_seconds": 0.001982792280614376,
+      "retrieval_seconds": 0.0007121670059859753
+    },
+    {
+      "id": "train:00155",
+      "prompt_seconds": 0.002053000032901764,
+      "retrieval_seconds": 0.0007200418040156364
+    },
+    {
+      "id": "train:00283",
+      "prompt_seconds": 0.001979541964828968,
+      "retrieval_seconds": 0.0007183747366070747
+    },
+    {
+      "id": "train:00369",
+      "prompt_seconds": 0.0019884170033037663,
+      "retrieval_seconds": 0.0007850001566112041
+    },
+    {
+      "id": "train:00292",
+      "prompt_seconds": 0.0019797920249402523,
+      "retrieval_seconds": 0.0007241661660373211
+    },
+    {
+      "id": "train:00372",
+      "prompt_seconds": 0.001981250010430813,
+      "retrieval_seconds": 0.0007053338922560215
+    },
+    {
+      "id": "train:00353",
+      "prompt_seconds": 0.0019948328845202923,
+      "retrieval_seconds": 0.0007187919691205025
+    },
+    {
+      "id": "train:00400",
+      "prompt_seconds": 0.001958915963768959,
+      "retrieval_seconds": 0.0007179169915616512
+    },
+    {
+      "id": "train:00370",
+      "prompt_seconds": 0.001995459198951721,
+      "retrieval_seconds": 0.0007517081685364246
+    },
+    {
+      "id": "train:00345",
+      "prompt_seconds": 0.002042165957391262,
+      "retrieval_seconds": 0.000725375022739172
+    },
+    {
+      "id": "train:00339",
+      "prompt_seconds": 0.002043041866272688,
+      "retrieval_seconds": 0.000785541720688343
+    },
+    {
+      "id": "train:00334",
+      "prompt_seconds": 0.002003791742026806,
+      "retrieval_seconds": 0.0007347501814365387
+    },
+    {
+      "id": "train:00361",
+      "prompt_seconds": 0.001989500131458044,
+      "retrieval_seconds": 0.0007109157741069794
+    },
+    {
+      "id": "train:00432",
+      "prompt_seconds": 0.001984125003218651,
+      "retrieval_seconds": 0.0007172077894210815
+    },
+    {
+      "id": "train:00499",
+      "prompt_seconds": 0.002018250059336424,
+      "retrieval_seconds": 0.0007168329320847988
+    },
+    {
+      "id": "train:00544",
+      "prompt_seconds": 0.0019723749719560146,
+      "retrieval_seconds": 0.0007548751309514046
+    },
+    {
+      "id": "train:00476",
+      "prompt_seconds": 0.0019691665656864643,
+      "retrieval_seconds": 0.0007753330282866955
+    },
+    {
+      "id": "train:00527",
+      "prompt_seconds": 0.001971667166799307,
+      "retrieval_seconds": 0.0007319999858736992
+    },
+    {
+      "id": "train:00513",
+      "prompt_seconds": 0.0021610003896057606,
+      "retrieval_seconds": 0.0007677916437387466
+    },
+    {
+      "id": "train:00500",
+      "prompt_seconds": 0.0020403750240802765,
+      "retrieval_seconds": 0.0007738326676189899
+    },
+    {
+      "id": "train:00539",
+      "prompt_seconds": 0.002016957849264145,
+      "retrieval_seconds": 0.000739208422601223
+    },
+    {
+      "id": "train:00522",
+      "prompt_seconds": 0.002025958150625229,
+      "retrieval_seconds": 0.0007367501966655254
+    },
+    {
+      "id": "train:00546",
+      "prompt_seconds": 0.00202645780518651,
+      "retrieval_seconds": 0.0007517500780522823
+    },
+    {
+      "id": "train:00616",
+      "prompt_seconds": 0.002076250035315752,
+      "retrieval_seconds": 0.0007420829497277737
+    },
+    {
+      "id": "train:00667",
+      "prompt_seconds": 0.002132791094481945,
+      "retrieval_seconds": 0.0007834169082343578
+    },
+    {
+      "id": "train:00686",
+      "prompt_seconds": 0.0018201251514256,
+      "retrieval_seconds": 0.0006175828166306019
+    },
+    {
+      "id": "train:00664",
+      "prompt_seconds": 0.0018097921274602413,
+      "retrieval_seconds": 0.0005542081780731678
+    },
+    {
+      "id": "train:00671",
+      "prompt_seconds": 0.0020843343809247017,
+      "retrieval_seconds": 0.000547999981790781
+    },
+    {
+      "id": "train:00603",
+      "prompt_seconds": 0.0022304579615592957,
+      "retrieval_seconds": 0.0008109170012176037
+    },
+    {
+      "id": "train:00624",
+      "prompt_seconds": 0.0020524580031633377,
+      "retrieval_seconds": 0.0007618749514222145
+    },
+    {
+      "id": "train:00725",
+      "prompt_seconds": 0.002244708128273487,
+      "retrieval_seconds": 0.0007856669835746288
+    },
+    {
+      "id": "train:00594",
+      "prompt_seconds": 0.00203383294865489,
+      "retrieval_seconds": 0.0007825838401913643
+    },
+    {
+      "id": "train:00640",
+      "prompt_seconds": 0.0019837082363665104,
+      "retrieval_seconds": 0.0007461248897016048
+    },
+    {
+      "id": "train:00875",
+      "prompt_seconds": 0.0019944170489907265,
+      "retrieval_seconds": 0.000716417096555233
+    },
+    {
+      "id": "train:00836",
+      "prompt_seconds": 0.0020547090098261833,
+      "retrieval_seconds": 0.00076720817014575
+    },
+    {
+      "id": "train:00847",
+      "prompt_seconds": 0.001981792040169239,
+      "retrieval_seconds": 0.0007317080162465572
+    },
+    {
+      "id": "train:00815",
+      "prompt_seconds": 0.0019352501258254051,
+      "retrieval_seconds": 0.0006350837647914886
+    },
+    {
+      "id": "train:00758",
+      "prompt_seconds": 0.0019266251474618912,
+      "retrieval_seconds": 0.0005661658942699432
+    },
+    {
+      "id": "train:00818",
+      "prompt_seconds": 0.0018535000272095203,
+      "retrieval_seconds": 0.0005557923577725887
+    },
+    {
+      "id": "train:00835",
+      "prompt_seconds": 0.0023322077468037605,
+      "retrieval_seconds": 0.0006767082959413528
+    },
+    {
+      "id": "train:00839",
+      "prompt_seconds": 0.0019598747603595257,
+      "retrieval_seconds": 0.0007295422255992889
+    },
+    {
+      "id": "train:00805",
+      "prompt_seconds": 0.002151000313460827,
+      "retrieval_seconds": 0.0007413746789097786
+    },
+    {
+      "id": "train:00856",
+      "prompt_seconds": 0.0022555827163159847,
+      "retrieval_seconds": 0.0007539172656834126
+    },
+    {
+      "id": "train:00916",
+      "prompt_seconds": 0.0021570418030023575,
+      "retrieval_seconds": 0.0008029169403016567
+    },
+    {
+      "id": "train:00976",
+      "prompt_seconds": 0.0020403750240802765,
+      "retrieval_seconds": 0.0007597911171615124
+    },
+    {
+      "id": "train:00933",
+      "prompt_seconds": 0.0021227910183370113,
+      "retrieval_seconds": 0.0007322919555008411
+    },
+    {
+      "id": "train:00954",
+      "prompt_seconds": 0.002054625190794468,
+      "retrieval_seconds": 0.0007638749666512012
+    },
+    {
+      "id": "train:00910",
+      "prompt_seconds": 0.002218416891992092,
+      "retrieval_seconds": 0.0007735001854598522
+    },
+    {
+      "id": "train:00926",
+      "prompt_seconds": 0.0019885418005287647,
+      "retrieval_seconds": 0.0008297082968056202
+    },
+    {
+      "id": "train:00931",
+      "prompt_seconds": 0.002008375246077776,
+      "retrieval_seconds": 0.0007265419699251652
+    },
+    {
+      "id": "train:00974",
+      "prompt_seconds": 0.0020202086307108402,
+      "retrieval_seconds": 0.0007544159889221191
+    },
+    {
+      "id": "train:00932",
+      "prompt_seconds": 0.002302084118127823,
+      "retrieval_seconds": 0.0007963748648762703
+    },
+    {
+      "id": "train:00892",
+      "prompt_seconds": 0.002018542028963566,
+      "retrieval_seconds": 0.0008145831525325775
+    },
+    {
+      "id": "train:01029",
+      "prompt_seconds": 0.001842500176280737,
+      "retrieval_seconds": 0.0005976669490337372
+    },
+    {
+      "id": "train:01047",
+      "prompt_seconds": 0.0021669166162610054,
+      "retrieval_seconds": 0.0005601672455668449
+    },
+    {
+      "id": "train:01051",
+      "prompt_seconds": 0.0022368328645825386,
+      "retrieval_seconds": 0.0007817093282938004
+    },
+    {
+      "id": "train:01094",
+      "prompt_seconds": 0.0020657083950936794,
+      "retrieval_seconds": 0.0007454575970768929
+    },
+    {
+      "id": "train:01008",
+      "prompt_seconds": 0.0020943330600857735,
+      "retrieval_seconds": 0.0007423330098390579
+    },
+    {
+      "id": "train:01066",
+      "prompt_seconds": 0.0022269999608397484,
+      "retrieval_seconds": 0.0007926663383841515
+    },
+    {
+      "id": "train:01007",
+      "prompt_seconds": 0.001905917190015316,
+      "retrieval_seconds": 0.0006211670115590096
+    },
+    {
+      "id": "train:01020",
+      "prompt_seconds": 0.001876958180218935,
+      "retrieval_seconds": 0.000552500132471323
+    },
+    {
+      "id": "train:01114",
+      "prompt_seconds": 0.001972499769181013,
+      "retrieval_seconds": 0.0005471669137477875
+    },
+    {
+      "id": "train:01058",
+      "prompt_seconds": 0.0018358328379690647,
+      "retrieval_seconds": 0.0009135832078754902
+    },
+    {
+      "id": "train:01243",
+      "prompt_seconds": 0.0018109171651303768,
+      "retrieval_seconds": 0.0006046667695045471
+    },
+    {
+      "id": "train:01181",
+      "prompt_seconds": 0.001810499932616949,
+      "retrieval_seconds": 0.0005506668239831924
+    },
+    {
+      "id": "train:01235",
+      "prompt_seconds": 0.0018768329173326492,
+      "retrieval_seconds": 0.0005523753352463245
+    },
+    {
+      "id": "train:01133",
+      "prompt_seconds": 0.0018143747001886368,
+      "retrieval_seconds": 0.0005522919818758965
+    },
+    {
+      "id": "train:01229",
+      "prompt_seconds": 0.0018426249735057354,
+      "retrieval_seconds": 0.0005450830794870853
+    },
+    {
+      "id": "train:01202",
+      "prompt_seconds": 0.0018617501482367516,
+      "retrieval_seconds": 0.0005469168536365032
+    },
+    {
+      "id": "train:01140",
+      "prompt_seconds": 0.002096707932651043,
+      "retrieval_seconds": 0.000545792281627655
+    },
+    {
+      "id": "train:01177",
+      "prompt_seconds": 0.002237042412161827,
+      "retrieval_seconds": 0.0007985825650393963
+    },
+    {
+      "id": "train:01159",
+      "prompt_seconds": 0.002064707688987255,
+      "retrieval_seconds": 0.0007826252840459347
+    },
+    {
+      "id": "train:01143",
+      "prompt_seconds": 0.0021182503551244736,
+      "retrieval_seconds": 0.0007436666637659073
+    },
+    {
+      "id": "train:01283",
+      "prompt_seconds": 0.0020783753134310246,
+      "retrieval_seconds": 0.0007432089187204838
+    },
+    {
+      "id": "train:01327",
+      "prompt_seconds": 0.002069291193038225,
+      "retrieval_seconds": 0.0007462091743946075
+    },
+    {
+      "id": "train:01355",
+      "prompt_seconds": 0.002083292230963707,
+      "retrieval_seconds": 0.0007509998977184296
+    },
+    {
+      "id": "train:01346",
+      "prompt_seconds": 0.0020800838246941566,
+      "retrieval_seconds": 0.0007621659897267818
+    },
+    {
+      "id": "train:01322",
+      "prompt_seconds": 0.0020599588751792908,
+      "retrieval_seconds": 0.0007254998199641705
+    },
+    {
+      "id": "train:01263",
+      "prompt_seconds": 0.002071124967187643,
+      "retrieval_seconds": 0.0007214583456516266
+    },
+    {
+      "id": "train:01321",
+      "prompt_seconds": 0.0021443329751491547,
+      "retrieval_seconds": 0.0007267920300364494
+    },
+    {
+      "id": "train:01316",
+      "prompt_seconds": 0.0018819170072674751,
+      "retrieval_seconds": 0.0006260829977691174
+    },
+    {
+      "id": "train:01264",
+      "prompt_seconds": 0.0018537910655140877,
+      "retrieval_seconds": 0.000546041876077652
+    },
+    {
+      "id": "train:01352",
+      "prompt_seconds": 0.0018495842814445496,
+      "retrieval_seconds": 0.0005479580722749233
+    },
+    {
+      "id": "train:01428",
+      "prompt_seconds": 0.001961792353540659,
+      "retrieval_seconds": 0.0005443748086690903
+    },
+    {
+      "id": "train:01429",
+      "prompt_seconds": 0.0018584588542580605,
+      "retrieval_seconds": 0.0005613751709461212
+    },
+    {
+      "id": "train:01375",
+      "prompt_seconds": 0.001849875319749117,
+      "retrieval_seconds": 0.0005437498912215233
+    },
+    {
+      "id": "train:01370",
+      "prompt_seconds": 0.0018588751554489136,
+      "retrieval_seconds": 0.000539291650056839
+    },
+    {
+      "id": "train:01367",
+      "prompt_seconds": 0.0023408331908285618,
+      "retrieval_seconds": 0.0005420828238129616
+    },
+    {
+      "id": "train:01392",
+      "prompt_seconds": 0.0022427919320762157,
+      "retrieval_seconds": 0.000801874790340662
+    },
+    {
+      "id": "train:01472",
+      "prompt_seconds": 0.0020807082764804363,
+      "retrieval_seconds": 0.0008357088081538677
+    },
+    {
+      "id": "train:01395",
+      "prompt_seconds": 0.00204054219648242,
+      "retrieval_seconds": 0.0007587079890072346
+    },
+    {
+      "id": "train:01361",
+      "prompt_seconds": 0.0020241253077983856,
+      "retrieval_seconds": 0.0007443749345839024
+    },
+    {
+      "id": "train:01444",
+      "prompt_seconds": 0.0020858747884631157,
+      "retrieval_seconds": 0.0007962081581354141
+    },
+    {
+      "id": "train:01550",
+      "prompt_seconds": 0.001863459125161171,
+      "retrieval_seconds": 0.0006200829520821571
+    },
+    {
+      "id": "train:01501",
+      "prompt_seconds": 0.0018612919375300407,
+      "retrieval_seconds": 0.0005485001020133495
+    },
+    {
+      "id": "train:01555",
+      "prompt_seconds": 0.0018661669455468655,
+      "retrieval_seconds": 0.0005510002374649048
+    },
+    {
+      "id": "train:01513",
+      "prompt_seconds": 0.0022652498446404934,
+      "retrieval_seconds": 0.0005516251549124718
+    },
+    {
+      "id": "train:01480",
+      "prompt_seconds": 0.0021887090988457203,
+      "retrieval_seconds": 0.0007599997334182262
+    },
+    {
+      "id": "train:01549",
+      "prompt_seconds": 0.00206679105758667,
+      "retrieval_seconds": 0.0007359166629612446
+    },
+    {
+      "id": "train:01523",
+      "prompt_seconds": 0.002078833058476448,
+      "retrieval_seconds": 0.0007573748007416725
+    },
+    {
+      "id": "train:01552",
+      "prompt_seconds": 0.002010582946240902,
+      "retrieval_seconds": 0.000756917055696249
+    },
+    {
+      "id": "train:01477",
+      "prompt_seconds": 0.002020125277340412,
+      "retrieval_seconds": 0.0007298337295651436
+    },
+    {
+      "id": "train:01518",
+      "prompt_seconds": 0.0020403750240802765,
+      "retrieval_seconds": 0.0007485407404601574
+    },
+    {
+      "id": "train:01639",
+      "prompt_seconds": 0.0019810833036899567,
+      "retrieval_seconds": 0.0007378747686743736
+    },
+    {
+      "id": "train:01589",
+      "prompt_seconds": 0.0020097498781979084,
+      "retrieval_seconds": 0.0007377080619335175
+    },
+    {
+      "id": "train:01565",
+      "prompt_seconds": 0.0020090830512344837,
+      "retrieval_seconds": 0.000744083896279335
+    },
+    {
+      "id": "train:01656",
+      "prompt_seconds": 0.0020331251434981823,
+      "retrieval_seconds": 0.000722791999578476
+    },
+    {
+      "id": "train:01581",
+      "prompt_seconds": 0.002063833177089691,
+      "retrieval_seconds": 0.0007505421526730061
+    },
+    {
+      "id": "train:01612",
+      "prompt_seconds": 0.0020829583518207073,
+      "retrieval_seconds": 0.0007670419290661812
+    },
+    {
+      "id": "train:01632",
+      "prompt_seconds": 0.0021175420843064785,
+      "retrieval_seconds": 0.0007689581252634525
+    },
+    {
+      "id": "train:01601",
+      "prompt_seconds": 0.0021396251395344734,
+      "retrieval_seconds": 0.000794833991676569
+    },
+    {
+      "id": "train:01593",
+      "prompt_seconds": 0.0019377502612769604,
+      "retrieval_seconds": 0.0008373339660465717
+    },
+    {
+      "id": "train:01588",
+      "prompt_seconds": 0.001899875234812498,
+      "retrieval_seconds": 0.0006049997173249722
+    },
+    {
+      "id": "train:01780",
+      "prompt_seconds": 0.0021953750401735306,
+      "retrieval_seconds": 0.0006041247397661209
+    },
+    {
+      "id": "train:01699",
+      "prompt_seconds": 0.002111458219587803,
+      "retrieval_seconds": 0.0010264581069350243
+    },
+    {
+      "id": "train:01692",
+      "prompt_seconds": 0.0021532918326556683,
+      "retrieval_seconds": 0.0007802918553352356
+    },
+    {
+      "id": "train:01689",
+      "prompt_seconds": 0.0020545409061014652,
+      "retrieval_seconds": 0.0008520418778061867
+    },
+    {
+      "id": "train:01719",
+      "prompt_seconds": 0.0020950408652424812,
+      "retrieval_seconds": 0.0007827091030776501
+    },
+    {
+      "id": "train:01710",
+      "prompt_seconds": 0.0020961672998964787,
+      "retrieval_seconds": 0.0007751248776912689
+    },
+    {
+      "id": "train:01759",
+      "prompt_seconds": 0.0020863329991698265,
+      "retrieval_seconds": 0.0007843747735023499
+    },
+    {
+      "id": "train:01742",
+      "prompt_seconds": 0.002100749872624874,
+      "retrieval_seconds": 0.0007799998857080936
+    },
+    {
+      "id": "train:01727",
+      "prompt_seconds": 0.0020760828629136086,
+      "retrieval_seconds": 0.0007587498985230923
+    },
+    {
+      "id": "train:01677",
+      "prompt_seconds": 0.00209595775231719,
+      "retrieval_seconds": 0.0007505002431571484
+    },
+    {
+      "id": "train:01792",
+      "prompt_seconds": 0.0019487091340124607,
+      "retrieval_seconds": 0.0006988747045397758
+    },
+    {
+      "id": "train:01782",
+      "prompt_seconds": 0.001935209147632122,
+      "retrieval_seconds": 0.0005976250395178795
+    },
+    {
+      "id": "train:01784",
+      "prompt_seconds": 0.001920625101774931,
+      "retrieval_seconds": 0.0005925418809056282
+    },
+    {
+      "id": "train:01816",
+      "prompt_seconds": 0.0022967918775975704,
+      "retrieval_seconds": 0.0007947077974677086
+    },
+    {
+      "id": "train:01788",
+      "prompt_seconds": 0.0019208751618862152,
+      "retrieval_seconds": 0.0006472906097769737
+    },
+    {
+      "id": "train:01791",
+      "prompt_seconds": 0.0018997923471033573,
+      "retrieval_seconds": 0.0005681249313056469
+    },
+    {
+      "id": "train:01800",
+      "prompt_seconds": 0.002225792035460472,
+      "retrieval_seconds": 0.000564665999263525
+    },
+    {
+      "id": "train:01796",
+      "prompt_seconds": 0.002078167162835598,
+      "retrieval_seconds": 0.000782540999352932
+    },
+    {
+      "id": "train:01814",
+      "prompt_seconds": 0.0020549590699374676,
+      "retrieval_seconds": 0.000760124996304512
+    },
+    {
+      "id": "train:01805",
+      "prompt_seconds": 0.0020930422469973564,
+      "retrieval_seconds": 0.0007677078247070312
+    },
+    {
+      "id": "train:01871",
+      "prompt_seconds": 0.0022500832565128803,
+      "retrieval_seconds": 0.0008363751694560051
+    },
+    {
+      "id": "train:01906",
+      "prompt_seconds": 0.0021380833350121975,
+      "retrieval_seconds": 0.0007835417054593563
+    },
+    {
+      "id": "train:01899",
+      "prompt_seconds": 0.002049082890152931,
+      "retrieval_seconds": 0.0007315841503441334
+    },
+    {
+      "id": "train:01836",
+      "prompt_seconds": 0.002288042102009058,
+      "retrieval_seconds": 0.0007449998520314693
+    },
+    {
+      "id": "train:01902",
+      "prompt_seconds": 0.00213629100471735,
+      "retrieval_seconds": 0.0007867091335356236
+    },
+    {
+      "id": "train:01901",
+      "prompt_seconds": 0.0019223750568926334,
+      "retrieval_seconds": 0.0008155000396072865
+    },
+    {
+      "id": "train:01910",
+      "prompt_seconds": 0.0018682503141462803,
+      "retrieval_seconds": 0.000619666650891304
+    },
+    {
+      "id": "train:01898",
+      "prompt_seconds": 0.002326291985809803,
+      "retrieval_seconds": 0.0007560001686215401
+    },
+    {
+      "id": "train:01875",
+      "prompt_seconds": 0.0021639158949255943,
+      "retrieval_seconds": 0.0008278340101242065
+    },
+    {
+      "id": "train:01890",
+      "prompt_seconds": 0.0018887077458202839,
+      "retrieval_seconds": 0.000627709086984396
+    },
+    {
+      "id": "train:02019",
+      "prompt_seconds": 0.0023998329415917397,
+      "retrieval_seconds": 0.0005580000579357147
+    },
+    {
+      "id": "train:01981",
+      "prompt_seconds": 0.002064041793346405,
+      "retrieval_seconds": 0.0007912912406027317
+    },
+    {
+      "id": "train:01995",
+      "prompt_seconds": 0.0020139170810580254,
+      "retrieval_seconds": 0.0007480420172214508
+    },
+    {
+      "id": "train:02010",
+      "prompt_seconds": 0.0018801670521497726,
+      "retrieval_seconds": 0.0006217500194907188
+    },
+    {
+      "id": "train:01931",
+      "prompt_seconds": 0.0023592920042574406,
+      "retrieval_seconds": 0.000854582991451025
+    },
+    {
+      "id": "train:02005",
+      "prompt_seconds": 0.0021399171091616154,
+      "retrieval_seconds": 0.0007650000043213367
+    },
+    {
+      "id": "train:01938",
+      "prompt_seconds": 0.00210854085162282,
+      "retrieval_seconds": 0.0007651671767234802
+    },
+    {
+      "id": "train:01965",
+      "prompt_seconds": 0.00212020892649889,
+      "retrieval_seconds": 0.0007376251742243767
+    },
+    {
+      "id": "train:01961",
+      "prompt_seconds": 0.0021103331819176674,
+      "retrieval_seconds": 0.0007630828768014908
+    },
+    {
+      "id": "train:01967",
+      "prompt_seconds": 0.0021030837669968605,
+      "retrieval_seconds": 0.0007509160786867142
+    },
+    {
+      "id": "train:02138",
+      "prompt_seconds": 0.0021673748269677162,
+      "retrieval_seconds": 0.0008097919635474682
+    },
+    {
+      "id": "train:02126",
+      "prompt_seconds": 0.002082499675452709,
+      "retrieval_seconds": 0.0007680002599954605
+    },
+    {
+      "id": "train:02133",
+      "prompt_seconds": 0.0020855003967881203,
+      "retrieval_seconds": 0.0007333336398005486
+    },
+    {
+      "id": "train:02080",
+      "prompt_seconds": 0.0020945831201970577,
+      "retrieval_seconds": 0.0007777088321745396
+    },
+    {
+      "id": "train:02108",
+      "prompt_seconds": 0.002081042155623436,
+      "retrieval_seconds": 0.0007395828142762184
+    },
+    {
+      "id": "train:02120",
+      "prompt_seconds": 0.0019171671010553837,
+      "retrieval_seconds": 0.0008868328295648098
+    },
+    {
+      "id": "train:02225",
+      "prompt_seconds": 0.0018740827217698097,
+      "retrieval_seconds": 0.0006162920035421848
+    },
+    {
+      "id": "train:02105",
+      "prompt_seconds": 0.0018771248869597912,
+      "retrieval_seconds": 0.0005661253817379475
+    },
+    {
+      "id": "train:02165",
+      "prompt_seconds": 0.0018699164502322674,
+      "retrieval_seconds": 0.0005591670051217079
+    },
+    {
+      "id": "train:02211",
+      "prompt_seconds": 0.0023380410857498646,
+      "retrieval_seconds": 0.0008024587295949459
+    },
+    {
+      "id": "train:02239",
+      "prompt_seconds": 0.002120541874319315,
+      "retrieval_seconds": 0.0007755830883979797
+    },
+    {
+      "id": "train:02324",
+      "prompt_seconds": 0.002069166861474514,
+      "retrieval_seconds": 0.0007545412518084049
+    },
+    {
+      "id": "train:02286",
+      "prompt_seconds": 0.0020770831033587456,
+      "retrieval_seconds": 0.000767500139772892
+    },
+    {
+      "id": "train:02294",
+      "prompt_seconds": 0.0020909160375595093,
+      "retrieval_seconds": 0.0007798750884830952
+    },
+    {
+      "id": "train:02290",
+      "prompt_seconds": 0.0020434577018022537,
+      "retrieval_seconds": 0.0007651671767234802
+    },
+    {
+      "id": "train:02316",
+      "prompt_seconds": 0.0021188328973948956,
+      "retrieval_seconds": 0.0007902090437710285
+    },
+    {
+      "id": "train:02251",
+      "prompt_seconds": 0.0020722500048577785,
+      "retrieval_seconds": 0.0007857498712837696
+    },
+    {
+      "id": "train:02320",
+      "prompt_seconds": 0.002033500000834465,
+      "retrieval_seconds": 0.000752416905015707
+    },
+    {
+      "id": "train:02272",
+      "prompt_seconds": 0.0020761247724294662,
+      "retrieval_seconds": 0.0007676668465137482
+    },
+    {
+      "id": "train:02289",
+      "prompt_seconds": 0.0020236666314303875,
+      "retrieval_seconds": 0.000771708320826292
+    },
+    {
+      "id": "train:02382",
+      "prompt_seconds": 0.0020242081955075264,
+      "retrieval_seconds": 0.000769082922488451
+    },
+    {
+      "id": "train:02446",
+      "prompt_seconds": 0.0020238752476871014,
+      "retrieval_seconds": 0.0007585831917822361
+    },
+    {
+      "id": "train:02357",
+      "prompt_seconds": 0.0020572077482938766,
+      "retrieval_seconds": 0.0007687089964747429
+    },
+    {
+      "id": "train:02496",
+      "prompt_seconds": 0.002003250177949667,
+      "retrieval_seconds": 0.0007462496869266033
+    },
+    {
+      "id": "train:02429",
+      "prompt_seconds": 0.0020175003446638584,
+      "retrieval_seconds": 0.0007440829649567604
+    },
+    {
+      "id": "train:02474",
+      "prompt_seconds": 0.0020083747804164886,
+      "retrieval_seconds": 0.0007440829649567604
+    },
+    {
+      "id": "train:02407",
+      "prompt_seconds": 0.0020348750986158848,
+      "retrieval_seconds": 0.0007512909360229969
+    },
+    {
+      "id": "train:02416",
+      "prompt_seconds": 0.0020036669448018074,
+      "retrieval_seconds": 0.0007777907885611057
+    },
+    {
+      "id": "train:02406",
+      "prompt_seconds": 0.002016832586377859,
+      "retrieval_seconds": 0.0007400834001600742
+    },
+    {
+      "id": "train:02410",
+      "prompt_seconds": 0.002024624962359667,
+      "retrieval_seconds": 0.0007293331436812878
+    },
+    {
+      "id": "train:02563",
+      "prompt_seconds": 0.002031833864748478,
+      "retrieval_seconds": 0.0007491661235690117
+    },
+    {
+      "id": "train:02576",
+      "prompt_seconds": 0.002014750149101019,
+      "retrieval_seconds": 0.0007434161379933357
+    },
+    {
+      "id": "train:02519",
+      "prompt_seconds": 0.0020215418189764023,
+      "retrieval_seconds": 0.0007660412229597569
+    },
+    {
+      "id": "train:02515",
+      "prompt_seconds": 0.001995333004742861,
+      "retrieval_seconds": 0.0007463749498128891
+    },
+    {
+      "id": "train:02634",
+      "prompt_seconds": 0.002043667249381542,
+      "retrieval_seconds": 0.0007399576716125011
+    },
+    {
+      "id": "train:02606",
+      "prompt_seconds": 0.002067958004772663,
+      "retrieval_seconds": 0.0008219578303396702
+    },
+    {
+      "id": "train:02655",
+      "prompt_seconds": 0.001955957617610693,
+      "retrieval_seconds": 0.0007474170997738838
+    },
+    {
+      "id": "train:02645",
+      "prompt_seconds": 0.001991833094507456,
+      "retrieval_seconds": 0.0007711248472332954
+    },
+    {
+      "id": "train:02569",
+      "prompt_seconds": 0.002060584258288145,
+      "retrieval_seconds": 0.0007405001670122147
+    },
+    {
+      "id": "train:02599",
+      "prompt_seconds": 0.002033084165304899,
+      "retrieval_seconds": 0.0007314998656511307
+    },
+    {
+      "id": "train:02743",
+      "prompt_seconds": 0.0018890411593019962,
+      "retrieval_seconds": 0.0008839168585836887
+    },
+    {
+      "id": "train:02794",
+      "prompt_seconds": 0.0018385839648544788,
+      "retrieval_seconds": 0.0006443331949412823
+    },
+    {
+      "id": "train:02862",
+      "prompt_seconds": 0.0018562921322882175,
+      "retrieval_seconds": 0.0005658329464495182
+    },
+    {
+      "id": "train:02698",
+      "prompt_seconds": 0.001965249888598919,
+      "retrieval_seconds": 0.0005548330955207348
+    },
+    {
+      "id": "train:02742",
+      "prompt_seconds": 0.002058708108961582,
+      "retrieval_seconds": 0.0008037080988287926
+    },
+    {
+      "id": "train:02804",
+      "prompt_seconds": 0.001805833075195551,
+      "retrieval_seconds": 0.0006228326819837093
+    },
+    {
+      "id": "train:02738",
+      "prompt_seconds": 0.0018219170160591602,
+      "retrieval_seconds": 0.0005670418031513691
+    },
+    {
+      "id": "train:02866",
+      "prompt_seconds": 0.0020302091725170612,
+      "retrieval_seconds": 0.0005631246604025364
+    },
+    {
+      "id": "train:02764",
+      "prompt_seconds": 0.0020202076993882656,
+      "retrieval_seconds": 0.0007875831797719002
+    },
+    {
+      "id": "train:02855",
+      "prompt_seconds": 0.002075375057756901,
+      "retrieval_seconds": 0.0007672500796616077
+    },
+    {
+      "id": "train:02927",
+      "prompt_seconds": 0.0020635416731238365,
+      "retrieval_seconds": 0.0007942910306155682
+    },
+    {
+      "id": "train:02893",
+      "prompt_seconds": 0.002031708136200905,
+      "retrieval_seconds": 0.0007673338986933231
+    },
+    {
+      "id": "train:02931",
+      "prompt_seconds": 0.001975875347852707,
+      "retrieval_seconds": 0.0007992498576641083
+    },
+    {
+      "id": "train:02966",
+      "prompt_seconds": 0.0019826670177280903,
+      "retrieval_seconds": 0.0007815002463757992
+    },
+    {
+      "id": "train:02924",
+      "prompt_seconds": 0.0020138747058808804,
+      "retrieval_seconds": 0.0007511661387979984
+    },
+    {
+      "id": "train:02923",
+      "prompt_seconds": 0.001850709319114685,
+      "retrieval_seconds": 0.0007158326916396618
+    },
+    {
+      "id": "train:02971",
+      "prompt_seconds": 0.001798541285097599,
+      "retrieval_seconds": 0.0005829166620969772
+    },
+    {
+      "id": "train:02938",
+      "prompt_seconds": 0.0018179169856011868,
+      "retrieval_seconds": 0.0005537909455597401
+    },
+    {
+      "id": "train:02941",
+      "prompt_seconds": 0.0017951671034097672,
+      "retrieval_seconds": 0.0005523748695850372
+    },
+    {
+      "id": "train:02878",
+      "prompt_seconds": 0.0020808340050280094,
+      "retrieval_seconds": 0.000559499952942133
+    },
+    {
+      "id": "train:03002",
+      "prompt_seconds": 0.0019517922773957253,
+      "retrieval_seconds": 0.0007444578222930431
+    },
+    {
+      "id": "train:03094",
+      "prompt_seconds": 0.0021072919480502605,
+      "retrieval_seconds": 0.0007499577477574348
+    },
+    {
+      "id": "train:03073",
+      "prompt_seconds": 0.002024207729846239,
+      "retrieval_seconds": 0.0008456669747829437
+    },
+    {
+      "id": "train:03007",
+      "prompt_seconds": 0.002019374631345272,
+      "retrieval_seconds": 0.0007924581877887249
+    },
+    {
+      "id": "train:03034",
+      "prompt_seconds": 0.0019820830784738064,
+      "retrieval_seconds": 0.0007548336870968342
+    },
+    {
+      "id": "train:03089",
+      "prompt_seconds": 0.0020206249319016933,
+      "retrieval_seconds": 0.000762332696467638
+    },
+    {
+      "id": "train:03022",
+      "prompt_seconds": 0.002025333233177662,
+      "retrieval_seconds": 0.0007547079585492611
+    },
+    {
+      "id": "train:03017",
+      "prompt_seconds": 0.0019912500865757465,
+      "retrieval_seconds": 0.0007441248744726181
+    },
+    {
+      "id": "train:03025",
+      "prompt_seconds": 0.002028082963079214,
+      "retrieval_seconds": 0.000757292378693819
+    },
+    {
+      "id": "train:03074",
+      "prompt_seconds": 0.0020097908563911915,
+      "retrieval_seconds": 0.0007699592970311642
+    },
+    {
+      "id": "train:03096",
+      "prompt_seconds": 0.0018482496961951256,
+      "retrieval_seconds": 0.0009499159641563892
+    },
+    {
+      "id": "train:03140",
+      "prompt_seconds": 0.0017984588630497456,
+      "retrieval_seconds": 0.0006086253561079502
+    },
+    {
+      "id": "train:03132",
+      "prompt_seconds": 0.001782457809895277,
+      "retrieval_seconds": 0.0005564582534134388
+    },
+    {
+      "id": "train:03109",
+      "prompt_seconds": 0.0017932918854057789,
+      "retrieval_seconds": 0.0005578752607107162
+    },
+    {
+      "id": "train:03100",
+      "prompt_seconds": 0.0022414997220039368,
+      "retrieval_seconds": 0.0006863330490887165
+    },
+    {
+      "id": "train:03106",
+      "prompt_seconds": 0.0020120423287153244,
+      "retrieval_seconds": 0.0007720827125012875
+    },
+    {
+      "id": "train:03135",
+      "prompt_seconds": 0.0020907092839479446,
+      "retrieval_seconds": 0.0007575829513370991
+    },
+    {
+      "id": "train:03098",
+      "prompt_seconds": 0.0023186667822301388,
+      "retrieval_seconds": 0.0006753331981599331
+    },
+    {
+      "id": "train:03150",
+      "prompt_seconds": 0.002106166910380125,
+      "retrieval_seconds": 0.0008177501149475574
+    },
+    {
+      "id": "train:03123",
+      "prompt_seconds": 0.0021616662852466106,
+      "retrieval_seconds": 0.0007837498560547829
+    },
+    {
+      "id": "train:03206",
+      "prompt_seconds": 0.0020987079478800297,
+      "retrieval_seconds": 0.0008266246877610683
+    },
+    {
+      "id": "train:03226",
+      "prompt_seconds": 0.0022059581242501736,
+      "retrieval_seconds": 0.000773250125348568
+    },
+    {
+      "id": "train:03267",
+      "prompt_seconds": 0.0018225410021841526,
+      "retrieval_seconds": 0.0006276248022913933
+    },
+    {
+      "id": "train:03243",
+      "prompt_seconds": 0.0018307915888726711,
+      "retrieval_seconds": 0.0005545830354094505
+    },
+    {
+      "id": "train:03161",
+      "prompt_seconds": 0.0022112918086349964,
+      "retrieval_seconds": 0.0005494579672813416
+    },
+    {
+      "id": "train:03155",
+      "prompt_seconds": 0.0021782503463327885,
+      "retrieval_seconds": 0.0008112499490380287
+    },
+    {
+      "id": "train:03233",
+      "prompt_seconds": 0.0020272498950362206,
+      "retrieval_seconds": 0.0007660002447664738
+    },
+    {
+      "id": "train:03285",
+      "prompt_seconds": 0.002037541940808296,
+      "retrieval_seconds": 0.0007401248440146446
+    },
+    {
+      "id": "train:03263",
+      "prompt_seconds": 0.002030957955867052,
+      "retrieval_seconds": 0.0007505840621888638
+    },
+    {
+      "id": "train:03244",
+      "prompt_seconds": 0.0020245001651346684,
+      "retrieval_seconds": 0.0007494157180190086
+    },
+    {
+      "id": "train:03381",
+      "prompt_seconds": 0.0020348341204226017,
+      "retrieval_seconds": 0.0007595410570502281
+    },
+    {
+      "id": "train:03394",
+      "prompt_seconds": 0.002016166690737009,
+      "retrieval_seconds": 0.000768790952861309
+    },
+    {
+      "id": "train:03386",
+      "prompt_seconds": 0.002066332846879959,
+      "retrieval_seconds": 0.0007615000940859318
+    },
+    {
+      "id": "train:03361",
+      "prompt_seconds": 0.002020374871790409,
+      "retrieval_seconds": 0.0007737502455711365
+    },
+    {
+      "id": "train:03406",
+      "prompt_seconds": 0.0020215408876538277,
+      "retrieval_seconds": 0.0007369997911155224
+    },
+    {
+      "id": "train:03430",
+      "prompt_seconds": 0.0020084171555936337,
+      "retrieval_seconds": 0.0007603331468999386
+    },
+    {
+      "id": "train:03378",
+      "prompt_seconds": 0.002077875193208456,
+      "retrieval_seconds": 0.0007394589483737946
+    },
+    {
+      "id": "train:03460",
+      "prompt_seconds": 0.002084291074424982,
+      "retrieval_seconds": 0.0008377498015761375
+    },
+    {
+      "id": "train:03384",
+      "prompt_seconds": 0.0019867075607180595,
+      "retrieval_seconds": 0.0007827919907867908
+    },
+    {
+      "id": "train:03408",
+      "prompt_seconds": 0.001945416908711195,
+      "retrieval_seconds": 0.0007288753986358643
+    },
+    {
+      "id": "train:03643",
+      "prompt_seconds": 0.0020037502981722355,
+      "retrieval_seconds": 0.0007467917166650295
+    },
+    {
+      "id": "train:03615",
+      "prompt_seconds": 0.0019977916963398457,
+      "retrieval_seconds": 0.0007437081076204777
+    },
+    {
+      "id": "train:03500",
+      "prompt_seconds": 0.0019772499799728394,
+      "retrieval_seconds": 0.0007377080619335175
+    },
+    {
+      "id": "train:03545",
+      "prompt_seconds": 0.0020138751715421677,
+      "retrieval_seconds": 0.0007316251285374165
+    },
+    {
+      "id": "train:03590",
+      "prompt_seconds": 0.001970082987099886,
+      "retrieval_seconds": 0.0007680831477046013
+    },
+    {
+      "id": "train:03620",
+      "prompt_seconds": 0.002144207712262869,
+      "retrieval_seconds": 0.0007658340036869049
+    },
+    {
+      "id": "train:03569",
+      "prompt_seconds": 0.0020006662234663963,
+      "retrieval_seconds": 0.0008340836502611637
+    },
+    {
+      "id": "train:03596",
+      "prompt_seconds": 0.002054208889603615,
+      "retrieval_seconds": 0.0007549161091446877
+    },
+    {
+      "id": "train:03631",
+      "prompt_seconds": 0.00196266733109951,
+      "retrieval_seconds": 0.000769374892115593
+    },
+    {
+      "id": "train:03542",
+      "prompt_seconds": 0.001975374761968851,
+      "retrieval_seconds": 0.0007469579577445984
+    },
+    {
+      "id": "train:03769",
+      "prompt_seconds": 0.0019859997555613518,
+      "retrieval_seconds": 0.0007547084242105484
+    },
+    {
+      "id": "train:03683",
+      "prompt_seconds": 0.0018478329293429852,
+      "retrieval_seconds": 0.0008932920172810555
+    },
+    {
+      "id": "train:03743",
+      "prompt_seconds": 0.0018128748051822186,
+      "retrieval_seconds": 0.0006262501701712608
+    },
+    {
+      "id": "train:03717",
+      "prompt_seconds": 0.0017931661568582058,
+      "retrieval_seconds": 0.0005634590052068233
+    },
+    {
+      "id": "train:03751",
+      "prompt_seconds": 0.0018054167740046978,
+      "retrieval_seconds": 0.0005527501925826073
+    },
+    {
+      "id": "train:03692",
+      "prompt_seconds": 0.002247542142868042,
+      "retrieval_seconds": 0.0007153749465942383
+    },
+    {
+      "id": "train:03706",
+      "prompt_seconds": 0.0020247087813913822,
+      "retrieval_seconds": 0.0007655001245439053
+    },
+    {
+      "id": "train:03691",
+      "prompt_seconds": 0.0018449998460710049,
+      "retrieval_seconds": 0.0008280421607196331
+    },
+    {
+      "id": "train:03765",
+      "prompt_seconds": 0.002115416806191206,
+      "retrieval_seconds": 0.0006000003777444363
+    },
+    {
+      "id": "train:03698",
+      "prompt_seconds": 0.0022033746354281902,
+      "retrieval_seconds": 0.0008234591223299503
+    },
+    {
+      "id": "train:03800",
+      "prompt_seconds": 0.0018128338269889355,
+      "retrieval_seconds": 0.0006141248159110546
+    },
+    {
+      "id": "train:03809",
+      "prompt_seconds": 0.001805999781936407,
+      "retrieval_seconds": 0.0005504591390490532
+    },
+    {
+      "id": "train:03786",
+      "prompt_seconds": 0.0023769582621753216,
+      "retrieval_seconds": 0.0005517918616533279
+    },
+    {
+      "id": "train:03810",
+      "prompt_seconds": 0.0020687496289610863,
+      "retrieval_seconds": 0.000842417124658823
+    },
+    {
+      "id": "train:03862",
+      "prompt_seconds": 0.0017995419912040234,
+      "retrieval_seconds": 0.0006326250731945038
+    },
+    {
+      "id": "train:03801",
+      "prompt_seconds": 0.0018053753301501274,
+      "retrieval_seconds": 0.0005481666885316372
+    },
+    {
+      "id": "train:03865",
+      "prompt_seconds": 0.0023079998791217804,
+      "retrieval_seconds": 0.0008400832302868366
+    },
+    {
+      "id": "train:03829",
+      "prompt_seconds": 0.002134375274181366,
+      "retrieval_seconds": 0.0008794157765805721
+    },
+    {
+      "id": "train:03844",
+      "prompt_seconds": 0.002024166751652956,
+      "retrieval_seconds": 0.0007965420372784138
+    },
+    {
+      "id": "train:03778",
+      "prompt_seconds": 0.002046499866992235,
+      "retrieval_seconds": 0.0007501658983528614
+    },
+    {
+      "id": "train:03899",
+      "prompt_seconds": 0.0020209159702062607,
+      "retrieval_seconds": 0.000753333792090416
+    },
+    {
+      "id": "train:03918",
+      "prompt_seconds": 0.0020337076857686043,
+      "retrieval_seconds": 0.0007488750852644444
+    },
+    {
+      "id": "train:03989",
+      "prompt_seconds": 0.0020582922734320164,
+      "retrieval_seconds": 0.000753999687731266
+    },
+    {
+      "id": "train:03911",
+      "prompt_seconds": 0.002075249794870615,
+      "retrieval_seconds": 0.0007521254010498524
+    },
+    {
+      "id": "train:03993",
+      "prompt_seconds": 0.0020187078043818474,
+      "retrieval_seconds": 0.0007541249506175518
+    },
+    {
+      "id": "train:03952",
+      "prompt_seconds": 0.0020427503623068333,
+      "retrieval_seconds": 0.0007574576884508133
+    },
+    {
+      "id": "train:03923",
+      "prompt_seconds": 0.002011250238865614,
+      "retrieval_seconds": 0.0007605841383337975
+    },
+    {
+      "id": "train:03987",
+      "prompt_seconds": 0.002070083748549223,
+      "retrieval_seconds": 0.0007517910562455654
+    },
+    {
+      "id": "train:03928",
+      "prompt_seconds": 0.0018199998885393143,
+      "retrieval_seconds": 0.0006177909672260284
+    },
+    {
+      "id": "train:03946",
+      "prompt_seconds": 0.0018206252716481686,
+      "retrieval_seconds": 0.0005532079376280308
+    },
+    {
+      "id": "train:04017",
+      "prompt_seconds": 0.0018155411817133427,
+      "retrieval_seconds": 0.000544792041182518
+    },
+    {
+      "id": "train:04068",
+      "prompt_seconds": 0.0023086662404239178,
+      "retrieval_seconds": 0.0005494588986039162
+    },
+    {
+      "id": "train:04091",
+      "prompt_seconds": 0.0021788342855870724,
+      "retrieval_seconds": 0.0008219159208238125
+    },
+    {
+      "id": "train:04048",
+      "prompt_seconds": 0.0020789578557014465,
+      "retrieval_seconds": 0.0007671252824366093
+    },
+    {
+      "id": "train:04034",
+      "prompt_seconds": 0.002110375091433525,
+      "retrieval_seconds": 0.0007982500828802586
+    },
+    {
+      "id": "train:04069",
+      "prompt_seconds": 0.001967084128409624,
+      "retrieval_seconds": 0.0007835407741367817
+    },
+    {
+      "id": "train:04042",
+      "prompt_seconds": 0.001959124580025673,
+      "retrieval_seconds": 0.0007442082278430462
+    },
+    {
+      "id": "train:04052",
+      "prompt_seconds": 0.002030708361417055,
+      "retrieval_seconds": 0.0007309997454285622
+    },
+    {
+      "id": "train:03996",
+      "prompt_seconds": 0.0020461250096559525,
+      "retrieval_seconds": 0.0007802080363035202
+    },
+    {
+      "id": "train:04057",
+      "prompt_seconds": 0.002109792083501816,
+      "retrieval_seconds": 0.000755667220801115
+    },
+    {
+      "id": "train:04149",
+      "prompt_seconds": 0.002103125210851431,
+      "retrieval_seconds": 0.0007861247286200523
+    },
+    {
+      "id": "train:04182",
+      "prompt_seconds": 0.002056499943137169,
+      "retrieval_seconds": 0.0007481249049305916
+    },
+    {
+      "id": "train:04159",
+      "prompt_seconds": 0.0022054999135434628,
+      "retrieval_seconds": 0.000802250113338232
+    },
+    {
+      "id": "train:04192",
+      "prompt_seconds": 0.0018771248869597912,
+      "retrieval_seconds": 0.0006330418400466442
+    },
+    {
+      "id": "train:04224",
+      "prompt_seconds": 0.0018290001899003983,
+      "retrieval_seconds": 0.0005532079376280308
+    },
+    {
+      "id": "train:04108",
+      "prompt_seconds": 0.0018499582074582577,
+      "retrieval_seconds": 0.0005539995618164539
+    },
+    {
+      "id": "train:04137",
+      "prompt_seconds": 0.0021092910319566727,
+      "retrieval_seconds": 0.0005516670644283295
+    },
+    {
+      "id": "train:04143",
+      "prompt_seconds": 0.0022896663285791874,
+      "retrieval_seconds": 0.0008090417832136154
+    },
+    {
+      "id": "train:04117",
+      "prompt_seconds": 0.002084625419229269,
+      "retrieval_seconds": 0.0007680417038500309
+    },
+    {
+      "id": "train:04167",
+      "prompt_seconds": 0.0021155839785933495,
+      "retrieval_seconds": 0.0007526250556111336
+    },
+    {
+      "id": "train:04264",
+      "prompt_seconds": 0.002300499938428402,
+      "retrieval_seconds": 0.0007730410434305668
+    },
+    {
+      "id": "train:04283",
+      "prompt_seconds": 0.0018857079558074474,
+      "retrieval_seconds": 0.0007666246965527534
+    },
+    {
+      "id": "train:04325",
+      "prompt_seconds": 0.0018321247771382332,
+      "retrieval_seconds": 0.0005724998190999031
+    },
+    {
+      "id": "train:04327",
+      "prompt_seconds": 0.0020698746666312218,
+      "retrieval_seconds": 0.0005605421029031277
+    },
+    {
+      "id": "train:04266",
+      "prompt_seconds": 0.002262749709188938,
+      "retrieval_seconds": 0.0007766662165522575
+    },
+    {
+      "id": "train:04316",
+      "prompt_seconds": 0.002130167093127966,
+      "retrieval_seconds": 0.0008034170605242252
+    },
+    {
+      "id": "train:04315",
+      "prompt_seconds": 0.0019577499479055405,
+      "retrieval_seconds": 0.0007215002551674843
+    },
+    {
+      "id": "train:04306",
+      "prompt_seconds": 0.0021870830096304417,
+      "retrieval_seconds": 0.0007825829088687897
+    },
+    {
+      "id": "train:04333",
+      "prompt_seconds": 0.001993083395063877,
+      "retrieval_seconds": 0.0007023336365818977
+    },
+    {
+      "id": "train:04289",
+      "prompt_seconds": 0.0019978340715169907,
+      "retrieval_seconds": 0.0006517907604575157
+    },
+    {
+      "id": "train:04360",
+      "prompt_seconds": 0.0021299580112099648,
+      "retrieval_seconds": 0.000639874953776598
+    },
+    {
+      "id": "train:04434",
+      "prompt_seconds": 0.0020757499150931835,
+      "retrieval_seconds": 0.0008300831541419029
+    },
+    {
+      "id": "train:04426",
+      "prompt_seconds": 0.0021447092294692993,
+      "retrieval_seconds": 0.000813415739685297
+    },
+    {
+      "id": "train:04450",
+      "prompt_seconds": 0.0020892503671348095,
+      "retrieval_seconds": 0.0008554160594940186
+    },
+    {
+      "id": "train:04372",
+      "prompt_seconds": 0.0019647497683763504,
+      "retrieval_seconds": 0.0007667089812457561
+    },
+    {
+      "id": "train:04343",
+      "prompt_seconds": 0.0018820418044924736,
+      "retrieval_seconds": 0.0006598751060664654
+    },
+    {
+      "id": "train:04431",
+      "prompt_seconds": 0.0018486250191926956,
+      "retrieval_seconds": 0.0005852500908076763
+    },
+    {
+      "id": "train:04421",
+      "prompt_seconds": 0.002065124921500683,
+      "retrieval_seconds": 0.0005803331732749939
+    },
+    {
+      "id": "train:04370",
+      "prompt_seconds": 0.002194667235016823,
+      "retrieval_seconds": 0.0008348748087882996
+    },
+    {
+      "id": "train:04427",
+      "prompt_seconds": 0.0020553753711283207,
+      "retrieval_seconds": 0.0008164998143911362
+    },
+    {
+      "id": "train:04475",
+      "prompt_seconds": 0.0020687500946223736,
+      "retrieval_seconds": 0.0008208327926695347
+    },
+    {
+      "id": "train:04542",
+      "prompt_seconds": 0.002134332899004221,
+      "retrieval_seconds": 0.0007878751493990421
+    },
+    {
+      "id": "train:04513",
+      "prompt_seconds": 0.0020719170570373535,
+      "retrieval_seconds": 0.0008328752592206001
+    },
+    {
+      "id": "train:04508",
+      "prompt_seconds": 0.0021389159373939037,
+      "retrieval_seconds": 0.0007805842906236649
+    },
+    {
+      "id": "train:04500",
+      "prompt_seconds": 0.0020956662483513355,
+      "retrieval_seconds": 0.0008304999209940434
+    },
+    {
+      "id": "train:04524",
+      "prompt_seconds": 0.0021025417372584343,
+      "retrieval_seconds": 0.0008120830170810223
+    },
+    {
+      "id": "train:04530",
+      "prompt_seconds": 0.002051082905381918,
+      "retrieval_seconds": 0.0008258339948952198
+    },
+    {
+      "id": "train:04474",
+      "prompt_seconds": 0.00209666695445776,
+      "retrieval_seconds": 0.0008382918313145638
+    },
+    {
+      "id": "train:04499",
+      "prompt_seconds": 0.0020055840723216534,
+      "retrieval_seconds": 0.0008330829441547394
+    },
+    {
+      "id": "train:04520",
+      "prompt_seconds": 0.0021560420282185078,
+      "retrieval_seconds": 0.0007758750580251217
+    },
+    {
+      "id": "train:04547",
+      "prompt_seconds": 0.0019309590570628643,
+      "retrieval_seconds": 0.0008072908967733383
+    },
+    {
+      "id": "train:04587",
+      "prompt_seconds": 0.0020540407858788967,
+      "retrieval_seconds": 0.0005920841358602047
+    },
+    {
+      "id": "train:04627",
+      "prompt_seconds": 0.0020748749375343323,
+      "retrieval_seconds": 0.0008272500708699226
+    },
+    {
+      "id": "train:04598",
+      "prompt_seconds": 0.0020825406536459923,
+      "retrieval_seconds": 0.0008177920244634151
+    },
+    {
+      "id": "train:04609",
+      "prompt_seconds": 0.002049833070486784,
+      "retrieval_seconds": 0.0007660002447664738
+    },
+    {
+      "id": "train:04606",
+      "prompt_seconds": 0.002024332992732525,
+      "retrieval_seconds": 0.0007693329825997353
+    },
+    {
+      "id": "train:04621",
+      "prompt_seconds": 0.0020454167388379574,
+      "retrieval_seconds": 0.0007460829801857471
+    },
+    {
+      "id": "train:04557",
+      "prompt_seconds": 0.0020467080175876617,
+      "retrieval_seconds": 0.0007727500051259995
+    },
+    {
+      "id": "train:04619",
+      "prompt_seconds": 0.002013040706515312,
+      "retrieval_seconds": 0.0007371669635176659
+    },
+    {
+      "id": "train:04568",
+      "prompt_seconds": 0.0020276252180337906,
+      "retrieval_seconds": 0.0007182080298662186
+    },
+    {
+      "id": "train:04745",
+      "prompt_seconds": 0.0020170407369732857,
+      "retrieval_seconds": 0.0007551251910626888
+    },
+    {
+      "id": "train:04785",
+      "prompt_seconds": 0.002134541980922222,
+      "retrieval_seconds": 0.0007277079857885838
+    },
+    {
+      "id": "train:04809",
+      "prompt_seconds": 0.002172625157982111,
+      "retrieval_seconds": 0.0008246251381933689
+    },
+    {
+      "id": "train:04786",
+      "prompt_seconds": 0.0021941252052783966,
+      "retrieval_seconds": 0.0008523338474333286
+    },
+    {
+      "id": "train:04743",
+      "prompt_seconds": 0.0020401249639689922,
+      "retrieval_seconds": 0.0007354579865932465
+    },
+    {
+      "id": "train:04795",
+      "prompt_seconds": 0.002003499772399664,
+      "retrieval_seconds": 0.0007650000043213367
+    },
+    {
+      "id": "train:04723",
+      "prompt_seconds": 0.002034207805991173,
+      "retrieval_seconds": 0.0007445840165019035
+    },
+    {
+      "id": "train:04789",
+      "prompt_seconds": 0.0020444998517632484,
+      "retrieval_seconds": 0.0007695420645177364
+    },
+    {
+      "id": "train:04714",
+      "prompt_seconds": 0.002043082844465971,
+      "retrieval_seconds": 0.0007522078230977058
+    },
+    {
+      "id": "train:04715",
+      "prompt_seconds": 0.0020640422590076923,
+      "retrieval_seconds": 0.0007802918553352356
+    },
+    {
+      "id": "train:04837",
+      "prompt_seconds": 0.0020180828869342804,
+      "retrieval_seconds": 0.0007837922312319279
+    },
+    {
+      "id": "train:04859",
+      "prompt_seconds": 0.002213458064943552,
+      "retrieval_seconds": 0.0007516248151659966
+    },
+    {
+      "id": "train:04846",
+      "prompt_seconds": 0.002008541952818632,
+      "retrieval_seconds": 0.0008150422945618629
+    },
+    {
+      "id": "train:04841",
+      "prompt_seconds": 0.0019709160551428795,
+      "retrieval_seconds": 0.0007420000620186329
+    },
+    {
+      "id": "train:04899",
+      "prompt_seconds": 0.0019820001907646656,
+      "retrieval_seconds": 0.0007495828904211521
+    },
+    {
+      "id": "train:04880",
+      "prompt_seconds": 0.002019875217229128,
+      "retrieval_seconds": 0.0007647089660167694
+    },
+    {
+      "id": "train:04824",
+      "prompt_seconds": 0.0020241672173142433,
+      "retrieval_seconds": 0.0007495828904211521
+    },
+    {
+      "id": "train:04917",
+      "prompt_seconds": 0.0020659579895436764,
+      "retrieval_seconds": 0.000761417206376791
+    },
+    {
+      "id": "train:04870",
+      "prompt_seconds": 0.002002874854952097,
+      "retrieval_seconds": 0.0007527908310294151
+    },
+    {
+      "id": "train:04904",
+      "prompt_seconds": 0.0021341247484087944,
+      "retrieval_seconds": 0.0007583340629935265
+    },
+    {
+      "id": "train:05082",
+      "prompt_seconds": 0.002052332740277052,
+      "retrieval_seconds": 0.0007907501421868801
+    },
+    {
+      "id": "train:04970",
+      "prompt_seconds": 0.002046791836619377,
+      "retrieval_seconds": 0.0007810420356690884
+    },
+    {
+      "id": "train:05042",
+      "prompt_seconds": 0.0018473751842975616,
+      "retrieval_seconds": 0.0006567500531673431
+    },
+    {
+      "id": "train:05018",
+      "prompt_seconds": 0.001841207966208458,
+      "retrieval_seconds": 0.0005730842240154743
+    },
+    {
+      "id": "train:05044",
+      "prompt_seconds": 0.0018358752131462097,
+      "retrieval_seconds": 0.0005582496523857117
+    },
+    {
+      "id": "train:04982",
+      "prompt_seconds": 0.0020738751627504826,
+      "retrieval_seconds": 0.0007202080450952053
+    },
+    {
+      "id": "train:05008",
+      "prompt_seconds": 0.002054290845990181,
+      "retrieval_seconds": 0.0007774997502565384
+    },
+    {
+      "id": "train:05020",
+      "prompt_seconds": 0.0020823748782277107,
+      "retrieval_seconds": 0.0007747500203549862
+    },
+    {
+      "id": "train:05017",
+      "prompt_seconds": 0.002294500358402729,
+      "retrieval_seconds": 0.0006325417198240757
+    },
+    {
+      "id": "train:05026",
+      "prompt_seconds": 0.0022217081859707832,
+      "retrieval_seconds": 0.0008401251398026943
+    },
+    {
+      "id": "train:05177",
+      "prompt_seconds": 0.0020517921075224876,
+      "retrieval_seconds": 0.0007715411484241486
+    },
+    {
+      "id": "train:05169",
+      "prompt_seconds": 0.0020837089978158474,
+      "retrieval_seconds": 0.0007514157332479954
+    },
+    {
+      "id": "train:05109",
+      "prompt_seconds": 0.0020900829695165157,
+      "retrieval_seconds": 0.0007759998552501202
+    },
+    {
+      "id": "train:05126",
+      "prompt_seconds": 0.0020445827394723892,
+      "retrieval_seconds": 0.0007465002126991749
+    },
+    {
+      "id": "train:05230",
+      "prompt_seconds": 0.0020581670105457306,
+      "retrieval_seconds": 0.0007708328776061535
+    },
+    {
+      "id": "train:05111",
+      "prompt_seconds": 0.002039582934230566,
+      "retrieval_seconds": 0.000750166829675436
+    },
+    {
+      "id": "train:05209",
+      "prompt_seconds": 0.0020716250874102116,
+      "retrieval_seconds": 0.00078970892354846
+    },
+    {
+      "id": "train:05216",
+      "prompt_seconds": 0.0018553342670202255,
+      "retrieval_seconds": 0.0006406251341104507
+    },
+    {
+      "id": "train:05206",
+      "prompt_seconds": 0.0018176250159740448,
+      "retrieval_seconds": 0.000557625200599432
+    },
+    {
+      "id": "train:05179",
+      "prompt_seconds": 0.0018438752740621567,
+      "retrieval_seconds": 0.0005529168993234634
+    },
+    {
+      "id": "train:05370",
+      "prompt_seconds": 0.0025324998423457146,
+      "retrieval_seconds": 0.0005606249906122684
+    },
+    {
+      "id": "train:05328",
+      "prompt_seconds": 0.00210754107683897,
+      "retrieval_seconds": 0.0008278749883174896
+    },
+    {
+      "id": "train:05356",
+      "prompt_seconds": 0.0020447918213903904,
+      "retrieval_seconds": 0.0007904167287051678
+    },
+    {
+      "id": "train:05253",
+      "prompt_seconds": 0.0020540407858788967,
+      "retrieval_seconds": 0.0007446673698723316
+    },
+    {
+      "id": "train:05285",
+      "prompt_seconds": 0.0021531246602535248,
+      "retrieval_seconds": 0.0007729162462055683
+    },
+    {
+      "id": "train:05347",
+      "prompt_seconds": 0.0020165001042187214,
+      "retrieval_seconds": 0.0007767090573906898
+    },
+    {
+      "id": "train:05255",
+      "prompt_seconds": 0.0020904168486595154,
+      "retrieval_seconds": 0.0008050831966102123
+    },
+    {
+      "id": "train:05252",
+      "prompt_seconds": 0.002096125390380621,
+      "retrieval_seconds": 0.000832791905850172
+    },
+    {
+      "id": "train:05361",
+      "prompt_seconds": 0.0022613750770688057,
+      "retrieval_seconds": 0.0008448329754173756
+    },
+    {
+      "id": "train:05269",
+      "prompt_seconds": 0.0021093753166496754,
+      "retrieval_seconds": 0.000837292056530714
+    },
+    {
+      "id": "train:05396",
+      "prompt_seconds": 0.002071207854896784,
+      "retrieval_seconds": 0.0009107082150876522
+    },
+    {
+      "id": "train:05460",
+      "prompt_seconds": 0.0020580836571753025,
+      "retrieval_seconds": 0.0008055409416556358
+    },
+    {
+      "id": "train:05433",
+      "prompt_seconds": 0.0021711247973144054,
+      "retrieval_seconds": 0.0007919161580502987
+    },
+    {
+      "id": "train:05378",
+      "prompt_seconds": 0.002254749648272991,
+      "retrieval_seconds": 0.0008372911252081394
+    },
+    {
+      "id": "train:05517",
+      "prompt_seconds": 0.0020261253230273724,
+      "retrieval_seconds": 0.0008124997839331627
+    },
+    {
+      "id": "train:05463",
+      "prompt_seconds": 0.002105916850268841,
+      "retrieval_seconds": 0.0007528751157224178
+    },
+    {
+      "id": "train:05400",
+      "prompt_seconds": 0.0020978753454983234,
+      "retrieval_seconds": 0.0008290000259876251
+    },
+    {
+      "id": "train:05450",
+      "prompt_seconds": 0.0019064168445765972,
+      "retrieval_seconds": 0.0007872083224356174
+    },
+    {
+      "id": "train:05466",
+      "prompt_seconds": 0.0018506250344216824,
+      "retrieval_seconds": 0.000592291820794344
+    },
+    {
+      "id": "train:05387",
+      "prompt_seconds": 0.0018569999374449253,
+      "retrieval_seconds": 0.0005699582397937775
+    },
+    {
+      "id": "train:05635",
+      "prompt_seconds": 0.0020035002380609512,
+      "retrieval_seconds": 0.0005689999088644981
+    },
+    {
+      "id": "train:05559",
+      "prompt_seconds": 0.0023121661506593227,
+      "retrieval_seconds": 0.0008220002055168152
+    },
+    {
+      "id": "train:05614",
+      "prompt_seconds": 0.0020601246505975723,
+      "retrieval_seconds": 0.0007619163952767849
+    },
+    {
+      "id": "train:05555",
+      "prompt_seconds": 0.0020727086812257767,
+      "retrieval_seconds": 0.0007953750900924206
+    },
+    {
+      "id": "train:05603",
+      "prompt_seconds": 0.0020843329839408398,
+      "retrieval_seconds": 0.000759500078856945
+    },
+    {
+      "id": "train:05591",
+      "prompt_seconds": 0.0018639173358678818,
+      "retrieval_seconds": 0.0006275409832596779
+    },
+    {
+      "id": "train:05610",
+      "prompt_seconds": 0.0018260409124195576,
+      "retrieval_seconds": 0.0005515841767191887
+    },
+    {
+      "id": "train:05551",
+      "prompt_seconds": 0.0018337909132242203,
+      "retrieval_seconds": 0.0005463338457047939
+    },
+    {
+      "id": "train:05617",
+      "prompt_seconds": 0.002461249940097332,
+      "retrieval_seconds": 0.000553749967366457
+    },
+    {
+      "id": "train:05588",
+      "prompt_seconds": 0.002171583939343691,
+      "retrieval_seconds": 0.0008055828511714935
+    },
+    {
+      "id": "train:05679",
+      "prompt_seconds": 0.0021985420025885105,
+      "retrieval_seconds": 0.0007618749514222145
+    },
+    {
+      "id": "train:05820",
+      "prompt_seconds": 0.0021123341284692287,
+      "retrieval_seconds": 0.0008592079393565655
+    },
+    {
+      "id": "train:05722",
+      "prompt_seconds": 0.002015083096921444,
+      "retrieval_seconds": 0.0007641250267624855
+    },
+    {
+      "id": "train:05759",
+      "prompt_seconds": 0.002120083197951317,
+      "retrieval_seconds": 0.0007976251654326916
+    },
+    {
+      "id": "train:05681",
+      "prompt_seconds": 0.0018766671419143677,
+      "retrieval_seconds": 0.0006323750130832195
+    },
+    {
+      "id": "train:05783",
+      "prompt_seconds": 0.0018600826151669025,
+      "retrieval_seconds": 0.0005539590492844582
+    },
+    {
+      "id": "train:05779",
+      "prompt_seconds": 0.0019119172357022762,
+      "retrieval_seconds": 0.0005503748543560505
+    },
+    {
+      "id": "train:05729",
+      "prompt_seconds": 0.0021815826185047626,
+      "retrieval_seconds": 0.0005684173665940762
+    },
+    {
+      "id": "train:05750",
+      "prompt_seconds": 0.0022771251387894154,
+      "retrieval_seconds": 0.0008212919346988201
+    },
+    {
+      "id": "train:05807",
+      "prompt_seconds": 0.0021080002188682556,
+      "retrieval_seconds": 0.0007685408927500248
+    },
+    {
+      "id": "train:05962",
+      "prompt_seconds": 0.002242709044367075,
+      "retrieval_seconds": 0.0007486660033464432
+    },
+    {
+      "id": "train:05856",
+      "prompt_seconds": 0.0020713340491056442,
+      "retrieval_seconds": 0.0008589159697294235
+    },
+    {
+      "id": "train:05898",
+      "prompt_seconds": 0.0020409999415278435,
+      "retrieval_seconds": 0.0007628332823514938
+    },
+    {
+      "id": "train:05917",
+      "prompt_seconds": 0.002098499797284603,
+      "retrieval_seconds": 0.0007441663183271885
+    },
+    {
+      "id": "train:05941",
+      "prompt_seconds": 0.002165290992707014,
+      "retrieval_seconds": 0.0006676670163869858
+    },
+    {
+      "id": "train:05959",
+      "prompt_seconds": 0.002211124636232853,
+      "retrieval_seconds": 0.0008642501197755337
+    },
+    {
+      "id": "train:05892",
+      "prompt_seconds": 0.0019795000553131104,
+      "retrieval_seconds": 0.0006632921285927296
+    },
+    {
+      "id": "train:05956",
+      "prompt_seconds": 0.0020944587886333466,
+      "retrieval_seconds": 0.0005803331732749939
+    },
+    {
+      "id": "train:05937",
+      "prompt_seconds": 0.002326374873518944,
+      "retrieval_seconds": 0.0008390001021325588
+    },
+    {
+      "id": "train:05910",
+      "prompt_seconds": 0.0019730422645807266,
+      "retrieval_seconds": 0.0009038327261805534
+    },
+    {
+      "id": "train:06078",
+      "prompt_seconds": 0.0019130841828882694,
+      "retrieval_seconds": 0.0006268331781029701
+    },
+    {
+      "id": "train:06054",
+      "prompt_seconds": 0.0025042500346899033,
+      "retrieval_seconds": 0.0005593337118625641
+    },
+    {
+      "id": "train:06053",
+      "prompt_seconds": 0.0021221251226961613,
+      "retrieval_seconds": 0.0008530421182513237
+    },
+    {
+      "id": "train:05993",
+      "prompt_seconds": 0.00205875001847744,
+      "retrieval_seconds": 0.0007695001550018787
+    },
+    {
+      "id": "train:06036",
+      "prompt_seconds": 0.002148791216313839,
+      "retrieval_seconds": 0.0007401667535305023
+    },
+    {
+      "id": "train:06098",
+      "prompt_seconds": 0.001933916937559843,
+      "retrieval_seconds": 0.0006225001998245716
+    },
+    {
+      "id": "train:06127",
+      "prompt_seconds": 0.0018950840458273888,
+      "retrieval_seconds": 0.0005540410056710243
+    },
+    {
+      "id": "train:06080",
+      "prompt_seconds": 0.0019276249222457409,
+      "retrieval_seconds": 0.0005545420572161674
+    },
+    {
+      "id": "train:06037",
+      "prompt_seconds": 0.0022423751652240753,
+      "retrieval_seconds": 0.0005993330851197243
+    },
+    {
+      "id": "train:06010",
+      "prompt_seconds": 0.0021938327699899673,
+      "retrieval_seconds": 0.0008187089115381241
+    },
+    {
+      "id": "train:06204",
+      "prompt_seconds": 0.0022517917677760124,
+      "retrieval_seconds": 0.0009223748929798603
+    },
+    {
+      "id": "train:06174",
+      "prompt_seconds": 0.0020919591188430786,
+      "retrieval_seconds": 0.0007376247085630894
+    },
+    {
+      "id": "train:06168",
+      "prompt_seconds": 0.0020056250505149364,
+      "retrieval_seconds": 0.0007363329641520977
+    },
+    {
+      "id": "train:06223",
+      "prompt_seconds": 0.0019297078251838684,
+      "retrieval_seconds": 0.0006784172728657722
+    },
+    {
+      "id": "train:06216",
+      "prompt_seconds": 0.0019182078540325165,
+      "retrieval_seconds": 0.0006087501533329487
+    },
+    {
+      "id": "train:06161",
+      "prompt_seconds": 0.001940291840583086,
+      "retrieval_seconds": 0.0005714581348001957
+    },
+    {
+      "id": "train:06213",
+      "prompt_seconds": 0.0019187498837709427,
+      "retrieval_seconds": 0.0005904999561607838
+    },
+    {
+      "id": "train:06206",
+      "prompt_seconds": 0.001936915796250105,
+      "retrieval_seconds": 0.0005838340148329735
+    },
+    {
+      "id": "train:06222",
+      "prompt_seconds": 0.0019282088615000248,
+      "retrieval_seconds": 0.0005803750827908516
+    },
+    {
+      "id": "train:06143",
+      "prompt_seconds": 0.002378667239099741,
+      "retrieval_seconds": 0.0005770409479737282
+    },
+    {
+      "id": "train:06292",
+      "prompt_seconds": 0.0019237077794969082,
+      "retrieval_seconds": 0.0005812500603497028
+    },
+    {
+      "id": "train:06271",
+      "prompt_seconds": 0.0019462499767541885,
+      "retrieval_seconds": 0.0005692075937986374
+    },
+    {
+      "id": "train:06262",
+      "prompt_seconds": 0.001950290985405445,
+      "retrieval_seconds": 0.0006311670877039433
+    },
+    {
+      "id": "train:06298",
+      "prompt_seconds": 0.0019385418854653835,
+      "retrieval_seconds": 0.0006157080642879009
+    },
+    {
+      "id": "train:06272",
+      "prompt_seconds": 0.0019197086803615093,
+      "retrieval_seconds": 0.0005786251276731491
+    },
+    {
+      "id": "train:06270",
+      "prompt_seconds": 0.0019469158723950386,
+      "retrieval_seconds": 0.0005800840444862843
+    },
+    {
+      "id": "train:06266",
+      "prompt_seconds": 0.001937124878168106,
+      "retrieval_seconds": 0.0005815830081701279
+    },
+    {
+      "id": "train:06293",
+      "prompt_seconds": 0.002261958085000515,
+      "retrieval_seconds": 0.0008226251229643822
+    },
+    {
+      "id": "train:06256",
+      "prompt_seconds": 0.002107958309352398,
+      "retrieval_seconds": 0.0007789996452629566
+    },
+    {
+      "id": "train:06268",
+      "prompt_seconds": 0.0020524594001471996,
+      "retrieval_seconds": 0.0007201246917247772
+    },
+    {
+      "id": "train:06335",
+      "prompt_seconds": 0.002390707843005657,
+      "retrieval_seconds": 0.0006234170868992805
+    },
+    {
+      "id": "train:06411",
+      "prompt_seconds": 0.002094708848744631,
+      "retrieval_seconds": 0.0007984582334756851
+    },
+    {
+      "id": "train:06396",
+      "prompt_seconds": 0.0020425422117114067,
+      "retrieval_seconds": 0.000756249763071537
+    },
+    {
+      "id": "train:06315",
+      "prompt_seconds": 0.0022218748927116394,
+      "retrieval_seconds": 0.000808333046734333
+    },
+    {
+      "id": "train:06379",
+      "prompt_seconds": 0.0019959169439971447,
+      "retrieval_seconds": 0.0007532923482358456
+    },
+    {
+      "id": "train:06363",
+      "prompt_seconds": 0.001993041019886732,
+      "retrieval_seconds": 0.0006548753008246422
+    },
+    {
+      "id": "train:06446",
+      "prompt_seconds": 0.0019607082940638065,
+      "retrieval_seconds": 0.0006429576314985752
+    },
+    {
+      "id": "train:06382",
+      "prompt_seconds": 0.0022549168206751347,
+      "retrieval_seconds": 0.0006292499601840973
+    },
+    {
+      "id": "train:06344",
+      "prompt_seconds": 0.0020335419103503227,
+      "retrieval_seconds": 0.0007472913712263107
+    },
+    {
+      "id": "train:06462",
+      "prompt_seconds": 0.0020371670834720135,
+      "retrieval_seconds": 0.0007478748448193073
+    },
+    {
+      "id": "train:06570",
+      "prompt_seconds": 0.0022254171781241894,
+      "retrieval_seconds": 0.0007910407148301601
+    },
+    {
+      "id": "train:06545",
+      "prompt_seconds": 0.002181833144277334,
+      "retrieval_seconds": 0.0008547077886760235
+    },
+    {
+      "id": "train:06520",
+      "prompt_seconds": 0.0021517500281333923,
+      "retrieval_seconds": 0.0007872502319514751
+    },
+    {
+      "id": "train:06571",
+      "prompt_seconds": 0.0021149590611457825,
+      "retrieval_seconds": 0.0008094161748886108
+    },
+    {
+      "id": "train:06554",
+      "prompt_seconds": 0.002217541914433241,
+      "retrieval_seconds": 0.0008575827814638615
+    },
+    {
+      "id": "train:06541",
+      "prompt_seconds": 0.0022350000217556953,
+      "retrieval_seconds": 0.000882917083799839
+    },
+    {
+      "id": "train:06518",
+      "prompt_seconds": 0.0021076248958706856,
+      "retrieval_seconds": 0.0007965001277625561
+    },
+    {
+      "id": "train:06503",
+      "prompt_seconds": 0.0021557919681072235,
+      "retrieval_seconds": 0.0008213752880692482
+    },
+    {
+      "id": "train:06507",
+      "prompt_seconds": 0.0021139169111847878,
+      "retrieval_seconds": 0.0007663327269256115
+    },
+    {
+      "id": "train:06565",
+      "prompt_seconds": 0.0022239582613110542,
+      "retrieval_seconds": 0.0007827500812709332
+    },
+    {
+      "id": "train:06673",
+      "prompt_seconds": 0.002043291926383972,
+      "retrieval_seconds": 0.0007441672496497631
+    },
+    {
+      "id": "train:06613",
+      "prompt_seconds": 0.001976375002413988,
+      "retrieval_seconds": 0.0006645410321652889
+    },
+    {
+      "id": "train:06705",
+      "prompt_seconds": 0.0019430839456617832,
+      "retrieval_seconds": 0.0006619580090045929
+    },
+    {
+      "id": "train:06634",
+      "prompt_seconds": 0.0024354998022317886,
+      "retrieval_seconds": 0.0006017079576849937
+    },
+    {
+      "id": "train:06619",
+      "prompt_seconds": 0.00211070803925395,
+      "retrieval_seconds": 0.0008016251958906651
+    },
+    {
+      "id": "train:06721",
+      "prompt_seconds": 0.0019422080367803574,
+      "retrieval_seconds": 0.0006530419923365116
+    },
+    {
+      "id": "train:06640",
+      "prompt_seconds": 0.002011542208492756,
+      "retrieval_seconds": 0.0005702907219529152
+    },
+    {
+      "id": "train:06664",
+      "prompt_seconds": 0.001919375266879797,
+      "retrieval_seconds": 0.0007662908174097538
+    },
+    {
+      "id": "train:06717",
+      "prompt_seconds": 0.0019146669656038284,
+      "retrieval_seconds": 0.0005725417286157608
+    },
+    {
+      "id": "train:06661",
+      "prompt_seconds": 0.001946374773979187,
+      "retrieval_seconds": 0.0005658343434333801
+    },
+    {
+      "id": "train:06786",
+      "prompt_seconds": 0.0022254171781241894,
+      "retrieval_seconds": 0.0006050420925021172
+    },
+    {
+      "id": "train:06745",
+      "prompt_seconds": 0.0022163339890539646,
+      "retrieval_seconds": 0.0008385833352804184
+    },
+    {
+      "id": "train:06771",
+      "prompt_seconds": 0.0019388329237699509,
+      "retrieval_seconds": 0.0006607077084481716
+    },
+    {
+      "id": "train:06871",
+      "prompt_seconds": 0.0019051251001656055,
+      "retrieval_seconds": 0.0005689999088644981
+    },
+    {
+      "id": "train:06851",
+      "prompt_seconds": 0.00238204188644886,
+      "retrieval_seconds": 0.0005595004186034203
+    },
+    {
+      "id": "train:06879",
+      "prompt_seconds": 0.002141917124390602,
+      "retrieval_seconds": 0.0007968749850988388
+    },
+    {
+      "id": "train:06778",
+      "prompt_seconds": 0.00212620897218585,
+      "retrieval_seconds": 0.0007827500812709332
+    },
+    {
+      "id": "train:06839",
+      "prompt_seconds": 0.002136791590601206,
+      "retrieval_seconds": 0.0008148751221597195
+    },
+    {
+      "id": "train:06723",
+      "prompt_seconds": 0.002128333318978548,
+      "retrieval_seconds": 0.0007582497783005238
+    },
+    {
+      "id": "train:06845",
+      "prompt_seconds": 0.0019669998437166214,
+      "retrieval_seconds": 0.0007148748263716698
+    },
+    {
+      "id": "train:06937",
+      "prompt_seconds": 0.0019535422325134277,
+      "retrieval_seconds": 0.0006419578567147255
+    },
+    {
+      "id": "train:06943",
+      "prompt_seconds": 0.001990374643355608,
+      "retrieval_seconds": 0.0006340420804917812
+    },
+    {
+      "id": "train:06963",
+      "prompt_seconds": 0.0022260420955717564,
+      "retrieval_seconds": 0.0006460417062044144
+    },
+    {
+      "id": "train:06886",
+      "prompt_seconds": 0.0021064169704914093,
+      "retrieval_seconds": 0.0008114157244563103
+    },
+    {
+      "id": "train:06905",
+      "prompt_seconds": 0.002199541311711073,
+      "retrieval_seconds": 0.0007951250299811363
+    },
+    {
+      "id": "train:06912",
+      "prompt_seconds": 0.0022578751668334007,
+      "retrieval_seconds": 0.0007467078976333141
+    },
+    {
+      "id": "train:06956",
+      "prompt_seconds": 0.002032875083386898,
+      "retrieval_seconds": 0.0006942087784409523
+    },
+    {
+      "id": "train:06958",
+      "prompt_seconds": 0.0019680410623550415,
+      "retrieval_seconds": 0.0006717918440699577
+    },
+    {
+      "id": "train:06931",
+      "prompt_seconds": 0.00191033398732543,
+      "retrieval_seconds": 0.0006145001389086246
+    },
+    {
+      "id": "train:06918",
+      "prompt_seconds": 0.0022467090748250484,
+      "retrieval_seconds": 0.0006136246956884861
+    },
+    {
+      "id": "train:07129",
+      "prompt_seconds": 0.0022037499584257603,
+      "retrieval_seconds": 0.0008335420861840248
+    },
+    {
+      "id": "train:07142",
+      "prompt_seconds": 0.0021693329326808453,
+      "retrieval_seconds": 0.0008518327958881855
+    },
+    {
+      "id": "train:07158",
+      "prompt_seconds": 0.0021370002068579197,
+      "retrieval_seconds": 0.0007956670597195625
+    },
+    {
+      "id": "train:07078",
+      "prompt_seconds": 0.0019996250048279762,
+      "retrieval_seconds": 0.0008137081749737263
+    },
+    {
+      "id": "train:07043",
+      "prompt_seconds": 0.0019676671363413334,
+      "retrieval_seconds": 0.0006401669234037399
+    },
+    {
+      "id": "train:07058",
+      "prompt_seconds": 0.001951834186911583,
+      "retrieval_seconds": 0.000635750126093626
+    },
+    {
+      "id": "train:07044",
+      "prompt_seconds": 0.002107457723468542,
+      "retrieval_seconds": 0.0006055422127246857
+    },
+    {
+      "id": "train:07015",
+      "prompt_seconds": 0.002119665965437889,
+      "retrieval_seconds": 0.0007952502928674221
+    },
+    {
+      "id": "train:07091",
+      "prompt_seconds": 0.002086291089653969,
+      "retrieval_seconds": 0.0007835421711206436
+    },
+    {
+      "id": "train:07124",
+      "prompt_seconds": 0.0021405420266091824,
+      "retrieval_seconds": 0.000756249763071537
+    },
+    {
+      "id": "train:07215",
+      "prompt_seconds": 0.0022511249408125877,
+      "retrieval_seconds": 0.0008450420573353767
+    },
+    {
+      "id": "train:07314",
+      "prompt_seconds": 0.0020834999158978462,
+      "retrieval_seconds": 0.0007350826635956764
+    },
+    {
+      "id": "train:07193",
+      "prompt_seconds": 0.0019332077354192734,
+      "retrieval_seconds": 0.0006253751926124096
+    },
+    {
+      "id": "train:07218",
+      "prompt_seconds": 0.0019637499935925007,
+      "retrieval_seconds": 0.0006233332678675652
+    },
+    {
+      "id": "train:07323",
+      "prompt_seconds": 0.002216208726167679,
+      "retrieval_seconds": 0.000599707942456007
+    },
+    {
+      "id": "train:07182",
+      "prompt_seconds": 0.002117374911904335,
+      "retrieval_seconds": 0.000630292110145092
+    },
+    {
+      "id": "train:07201",
+      "prompt_seconds": 0.0021275831386446953,
+      "retrieval_seconds": 0.0006993748247623444
+    },
+    {
+      "id": "train:07200",
+      "prompt_seconds": 0.00227533420547843,
+      "retrieval_seconds": 0.0007472909055650234
+    },
+    {
+      "id": "train:07313",
+      "prompt_seconds": 0.0021582921035587788,
+      "retrieval_seconds": 0.0008105416782200336
+    },
+    {
+      "id": "train:07276",
+      "prompt_seconds": 0.002087125089019537,
+      "retrieval_seconds": 0.0007402920164167881
+    },
+    {
+      "id": "train:07418",
+      "prompt_seconds": 0.0020602080039680004,
+      "retrieval_seconds": 0.0007133339531719685
+    },
+    {
+      "id": "train:07398",
+      "prompt_seconds": 0.0021842080168426037,
+      "retrieval_seconds": 0.0009030420333147049
+    },
+    {
+      "id": "train:07413",
+      "prompt_seconds": 0.002058458048850298,
+      "retrieval_seconds": 0.0007767076604068279
+    },
+    {
+      "id": "train:07333",
+      "prompt_seconds": 0.0020340830087661743,
+      "retrieval_seconds": 0.0006798747926950455
+    },
+    {
+      "id": "train:07427",
+      "prompt_seconds": 0.0023210421204566956,
+      "retrieval_seconds": 0.0006731660105288029
+    },
+    {
+      "id": "train:07385",
+      "prompt_seconds": 0.00213808286935091,
+      "retrieval_seconds": 0.0007965001277625561
+    },
+    {
+      "id": "train:07370",
+      "prompt_seconds": 0.0020997091196477413,
+      "retrieval_seconds": 0.0007551657035946846
+    },
+    {
+      "id": "train:07394",
+      "prompt_seconds": 0.002169707790017128,
+      "retrieval_seconds": 0.0006959172897040844
+    },
+    {
+      "id": "train:07339",
+      "prompt_seconds": 0.0022637909278273582,
+      "retrieval_seconds": 0.0008597918786108494
+    },
+    {
+      "id": "train:07371",
+      "prompt_seconds": 0.0020897495560348034,
+      "retrieval_seconds": 0.0007869172841310501
+    },
+    {
+      "id": "train:07534",
+      "prompt_seconds": 0.0021038753911852837,
+      "retrieval_seconds": 0.0006884168833494186
+    },
+    {
+      "id": "train:07549",
+      "prompt_seconds": 0.0020521669648587704,
+      "retrieval_seconds": 0.0006912080571055412
+    },
+    {
+      "id": "train:07456",
+      "prompt_seconds": 0.001954750157892704,
+      "retrieval_seconds": 0.0006514587439596653
+    },
+    {
+      "id": "train:07518",
+      "prompt_seconds": 0.0019256672821938992,
+      "retrieval_seconds": 0.0005914997309446335
+    },
+    {
+      "id": "train:07497",
+      "prompt_seconds": 0.00194258289411664,
+      "retrieval_seconds": 0.0005860421806573868
+    },
+    {
+      "id": "train:07444",
+      "prompt_seconds": 0.002156917005777359,
+      "retrieval_seconds": 0.0008316249586641788
+    },
+    {
+      "id": "train:07453",
+      "prompt_seconds": 0.002270208206027746,
+      "retrieval_seconds": 0.0008412920869886875
+    },
+    {
+      "id": "train:07516",
+      "prompt_seconds": 0.002077583223581314,
+      "retrieval_seconds": 0.0007354589179158211
+    },
+    {
+      "id": "train:07535",
+      "prompt_seconds": 0.0022075423039495945,
+      "retrieval_seconds": 0.0006239577196538448
+    },
+    {
+      "id": "train:07459",
+      "prompt_seconds": 0.002253834158182144,
+      "retrieval_seconds": 0.0009172079153358936
+    },
+    {
+      "id": "train:07596",
+      "prompt_seconds": 0.0020071668550372124,
+      "retrieval_seconds": 0.0007194578647613525
+    },
+    {
+      "id": "train:07677",
+      "prompt_seconds": 0.002131291665136814,
+      "retrieval_seconds": 0.000599125400185585
+    },
+    {
+      "id": "train:07649",
+      "prompt_seconds": 0.002221334259957075,
+      "retrieval_seconds": 0.0007849577814340591
+    },
+    {
+      "id": "train:07630",
+      "prompt_seconds": 0.002021417021751404,
+      "retrieval_seconds": 0.0008706660009920597
+    },
+    {
+      "id": "train:07571",
+      "prompt_seconds": 0.002002582885324955,
+      "retrieval_seconds": 0.0006740828976035118
+    },
+    {
+      "id": "train:07606",
+      "prompt_seconds": 0.00202962476760149,
+      "retrieval_seconds": 0.0007824581116437912
+    },
+    {
+      "id": "train:07570",
+      "prompt_seconds": 0.0020054997876286507,
+      "retrieval_seconds": 0.0006691250018775463
+    },
+    {
+      "id": "train:07608",
+      "prompt_seconds": 0.0019712080247700214,
+      "retrieval_seconds": 0.0006725420244038105
+    },
+    {
+      "id": "train:07643",
+      "prompt_seconds": 0.002029082737863064,
+      "retrieval_seconds": 0.0006637503392994404
+    },
+    {
+      "id": "train:07639",
+      "prompt_seconds": 0.0020599160343408585,
+      "retrieval_seconds": 0.0006851670332252979
+    },
+    {
+      "id": "train:07789",
+      "prompt_seconds": 0.002017584163695574,
+      "retrieval_seconds": 0.0006962497718632221
+    },
+    {
+      "id": "train:07745",
+      "prompt_seconds": 0.002045332919806242,
+      "retrieval_seconds": 0.0006602499634027481
+    },
+    {
+      "id": "train:07772",
+      "prompt_seconds": 0.0022222502157092094,
+      "retrieval_seconds": 0.0006651249714195728
+    },
+    {
+      "id": "train:07747",
+      "prompt_seconds": 0.0022582910023629665,
+      "retrieval_seconds": 0.0008148336783051491
+    },
+    {
+      "id": "train:07752",
+      "prompt_seconds": 0.0020689163357019424,
+      "retrieval_seconds": 0.0006604166701436043
+    },
+    {
+      "id": "train:07731",
+      "prompt_seconds": 0.0021471669897437096,
+      "retrieval_seconds": 0.0006780410185456276
+    },
+    {
+      "id": "train:07750",
+      "prompt_seconds": 0.002098166849464178,
+      "retrieval_seconds": 0.0009149583056569099
+    },
+    {
+      "id": "train:07719",
+      "prompt_seconds": 0.0020010829903185368,
+      "retrieval_seconds": 0.000726957805454731
+    },
+    {
+      "id": "train:07713",
+      "prompt_seconds": 0.00199945829808712,
+      "retrieval_seconds": 0.000655083917081356
+    },
+    {
+      "id": "train:07786",
+      "prompt_seconds": 0.0021545416675508022,
+      "retrieval_seconds": 0.0007489160634577274
+    },
+    {
+      "id": "train:07815",
+      "prompt_seconds": 0.0022047501988708973,
+      "retrieval_seconds": 0.0008023330010473728
+    },
+    {
+      "id": "train:07916",
+      "prompt_seconds": 0.0022889170795679092,
+      "retrieval_seconds": 0.0008353330194950104
+    },
+    {
+      "id": "train:07829",
+      "prompt_seconds": 0.002216957975178957,
+      "retrieval_seconds": 0.0008560419082641602
+    },
+    {
+      "id": "train:07833",
+      "prompt_seconds": 0.0020056674256920815,
+      "retrieval_seconds": 0.0007489579729735851
+    },
+    {
+      "id": "train:07864",
+      "prompt_seconds": 0.0019649160094559193,
+      "retrieval_seconds": 0.0006090840324759483
+    },
+    {
+      "id": "train:07871",
+      "prompt_seconds": 0.0019242498092353344,
+      "retrieval_seconds": 0.0005892091430723667
+    },
+    {
+      "id": "train:07924",
+      "prompt_seconds": 0.002248167060315609,
+      "retrieval_seconds": 0.000710291787981987
+    },
+    {
+      "id": "train:07819",
+      "prompt_seconds": 0.0021807076409459114,
+      "retrieval_seconds": 0.0008168332278728485
+    },
+    {
+      "id": "train:07921",
+      "prompt_seconds": 0.002206333912909031,
+      "retrieval_seconds": 0.0008252081461250782
+    },
+    {
+      "id": "train:07830",
+      "prompt_seconds": 0.0022254157811403275,
+      "retrieval_seconds": 0.0008047502487897873
+    },
+    {
+      "id": "train:07999",
+      "prompt_seconds": 0.002277292311191559,
+      "retrieval_seconds": 0.0008563748560845852
+    },
+    {
+      "id": "train:07974",
+      "prompt_seconds": 0.002068957779556513,
+      "retrieval_seconds": 0.0007887501269578934
+    },
+    {
+      "id": "train:08006",
+      "prompt_seconds": 0.002122749574482441,
+      "retrieval_seconds": 0.0006515830755233765
+    },
+    {
+      "id": "train:08040",
+      "prompt_seconds": 0.0022112498991191387,
+      "retrieval_seconds": 0.000868083443492651
+    },
+    {
+      "id": "train:07966",
+      "prompt_seconds": 0.0020553749054670334,
+      "retrieval_seconds": 0.0007001250050961971
+    },
+    {
+      "id": "train:08042",
+      "prompt_seconds": 0.0019821668975055218,
+      "retrieval_seconds": 0.0006420412100851536
+    },
+    {
+      "id": "train:07963",
+      "prompt_seconds": 0.0021273749880492687,
+      "retrieval_seconds": 0.000811832956969738
+    },
+    {
+      "id": "train:07992",
+      "prompt_seconds": 0.0020173746161162853,
+      "retrieval_seconds": 0.0006980001926422119
+    },
+    {
+      "id": "train:07964",
+      "prompt_seconds": 0.002036707941442728,
+      "retrieval_seconds": 0.0006658332422375679
+    },
+    {
+      "id": "train:07998",
+      "prompt_seconds": 0.002147375140339136,
+      "retrieval_seconds": 0.0006256252527236938
+    },
+    {
+      "id": "train:08100",
+      "prompt_seconds": 0.002162791322916746,
+      "retrieval_seconds": 0.0008339169435203075
+    },
+    {
+      "id": "train:08096",
+      "prompt_seconds": 0.0021488340571522713,
+      "retrieval_seconds": 0.0008248751983046532
+    },
+    {
+      "id": "train:08166",
+      "prompt_seconds": 0.0021405420266091824,
+      "retrieval_seconds": 0.0008148327469825745
+    },
+    {
+      "id": "train:08134",
+      "prompt_seconds": 0.002081042155623436,
+      "retrieval_seconds": 0.0008837501518428326
+    },
+    {
+      "id": "train:08129",
+      "prompt_seconds": 0.0019099581986665726,
+      "retrieval_seconds": 0.0006987918168306351
+    },
+    {
+      "id": "train:08120",
+      "prompt_seconds": 0.00191137520596385,
+      "retrieval_seconds": 0.0005917497910559177
+    },
+    {
+      "id": "train:08118",
+      "prompt_seconds": 0.0020263749174773693,
+      "retrieval_seconds": 0.0006151250563561916
+    },
+    {
+      "id": "train:08119",
+      "prompt_seconds": 0.002071583177894354,
+      "retrieval_seconds": 0.0007853745482861996
+    },
+    {
+      "id": "train:08146",
+      "prompt_seconds": 0.002023791428655386,
+      "retrieval_seconds": 0.000714416615664959
+    },
+    {
+      "id": "train:08089",
+      "prompt_seconds": 0.0018938328139483929,
+      "retrieval_seconds": 0.0006619170308113098
+    },
+    {
+      "id": "train:08185",
+      "prompt_seconds": 0.0023209163919091225,
+      "retrieval_seconds": 0.0005980418063700199
+    },
+    {
+      "id": "train:08205",
+      "prompt_seconds": 0.002052375115454197,
+      "retrieval_seconds": 0.000819541048258543
+    },
+    {
+      "id": "train:08206",
+      "prompt_seconds": 0.00209770817309618,
+      "retrieval_seconds": 0.0007850830443203449
+    },
+    {
+      "id": "train:08190",
+      "prompt_seconds": 0.002109458204358816,
+      "retrieval_seconds": 0.0008066250011324883
+    },
+    {
+      "id": "train:08176",
+      "prompt_seconds": 0.00213004183024168,
+      "retrieval_seconds": 0.0007894579321146011
+    },
+    {
+      "id": "train:08197",
+      "prompt_seconds": 0.002073707990348339,
+      "retrieval_seconds": 0.0007834578864276409
+    },
+    {
+      "id": "train:08182",
+      "prompt_seconds": 0.0021055424585938454,
+      "retrieval_seconds": 0.0007942919619381428
+    },
+    {
+      "id": "train:08184",
+      "prompt_seconds": 0.002121083904057741,
+      "retrieval_seconds": 0.0007711248472332954
+    },
+    {
+      "id": "train:08173",
+      "prompt_seconds": 0.0022697499953210354,
+      "retrieval_seconds": 0.0008335411548614502
+    },
+    {
+      "id": "train:08167",
+      "prompt_seconds": 0.002089583780616522,
+      "retrieval_seconds": 0.0007508751004934311
+    },
+    {
+      "id": "train:08367",
+      "prompt_seconds": 0.002093916293233633,
+      "retrieval_seconds": 0.0007341667078435421
+    },
+    {
+      "id": "train:08273",
+      "prompt_seconds": 0.002100792247802019,
+      "retrieval_seconds": 0.0007719998247921467
+    },
+    {
+      "id": "train:08352",
+      "prompt_seconds": 0.002283667214214802,
+      "retrieval_seconds": 0.0009655416943132877
+    },
+    {
+      "id": "train:08264",
+      "prompt_seconds": 0.002108165994286537,
+      "retrieval_seconds": 0.000870708841830492
+    },
+    {
+      "id": "train:08297",
+      "prompt_seconds": 0.0020778747275471687,
+      "retrieval_seconds": 0.0007893331348896027
+    },
+    {
+      "id": "train:08226",
+      "prompt_seconds": 0.0021544168703258038,
+      "retrieval_seconds": 0.0008462080731987953
+    },
+    {
+      "id": "train:08218",
+      "prompt_seconds": 0.002041500061750412,
+      "retrieval_seconds": 0.0008115842938423157
+    },
+    {
+      "id": "train:08308",
+      "prompt_seconds": 0.0020455829799175262,
+      "retrieval_seconds": 0.0007465840317308903
+    },
+    {
+      "id": "train:08230",
+      "prompt_seconds": 0.0021982500329613686,
+      "retrieval_seconds": 0.0007611671462655067
+    },
+    {
+      "id": "train:08331",
+      "prompt_seconds": 0.0021830000914633274,
+      "retrieval_seconds": 0.0008204169571399689
+    },
+    {
+      "id": "train:08436",
+      "prompt_seconds": 0.002144208177924156,
+      "retrieval_seconds": 0.0008939579129219055
+    },
+    {
+      "id": "train:08377",
+      "prompt_seconds": 0.002145832870155573,
+      "retrieval_seconds": 0.0009360001422464848
+    },
+    {
+      "id": "train:08428",
+      "prompt_seconds": 0.0022157919593155384,
+      "retrieval_seconds": 0.0008459580130875111
+    },
+    {
+      "id": "train:08444",
+      "prompt_seconds": 0.0020260829478502274,
+      "retrieval_seconds": 0.0007403339259326458
+    },
+    {
+      "id": "train:08400",
+      "prompt_seconds": 0.0019686250016093254,
+      "retrieval_seconds": 0.0006442088633775711
+    },
+    {
+      "id": "train:08429",
+      "prompt_seconds": 0.0019043749198317528,
+      "retrieval_seconds": 0.0006002918817102909
+    },
+    {
+      "id": "train:08416",
+      "prompt_seconds": 0.00224862527102232,
+      "retrieval_seconds": 0.0005844589322805405
+    },
+    {
+      "id": "train:08467",
+      "prompt_seconds": 0.0022009173408150673,
+      "retrieval_seconds": 0.0009430828504264355
+    },
+    {
+      "id": "train:08387",
+      "prompt_seconds": 0.002139999996870756,
+      "retrieval_seconds": 0.0008588749915361404
+    },
+    {
+      "id": "train:08383",
+      "prompt_seconds": 0.0022372910752892494,
+      "retrieval_seconds": 0.0009013749659061432
+    },
+    {
+      "id": "train:08523",
+      "prompt_seconds": 0.0021277498453855515,
+      "retrieval_seconds": 0.0008864998817443848
+    },
+    {
+      "id": "train:08609",
+      "prompt_seconds": 0.002162165939807892,
+      "retrieval_seconds": 0.0008166669867932796
+    },
+    {
+      "id": "train:08484",
+      "prompt_seconds": 0.0021372498013079166,
+      "retrieval_seconds": 0.0008063330315053463
+    },
+    {
+      "id": "train:08562",
+      "prompt_seconds": 0.001975415740162134,
+      "retrieval_seconds": 0.0008375002071261406
+    },
+    {
+      "id": "train:08525",
+      "prompt_seconds": 0.0018968749791383743,
+      "retrieval_seconds": 0.0006806249730288982
+    },
+    {
+      "id": "train:08517",
+      "prompt_seconds": 0.0019216248765587807,
+      "retrieval_seconds": 0.0005875830538570881
+    },
+    {
+      "id": "train:08468",
+      "prompt_seconds": 0.0018772920593619347,
+      "retrieval_seconds": 0.0005830000154674053
+    },
+    {
+      "id": "train:08573",
+      "prompt_seconds": 0.0019014999270439148,
+      "retrieval_seconds": 0.0005787094123661518
+    },
+    {
+      "id": "train:08544",
+      "prompt_seconds": 0.0018787500448524952,
+      "retrieval_seconds": 0.0005893749184906483
+    },
+    {
+      "id": "train:08526",
+      "prompt_seconds": 0.0019204169511795044,
+      "retrieval_seconds": 0.0005760830827057362
+    },
+    {
+      "id": "train:08657",
+      "prompt_seconds": 0.002075666096061468,
+      "retrieval_seconds": 0.0005768341943621635
+    },
+    {
+      "id": "train:08634",
+      "prompt_seconds": 0.002162208314985037,
+      "retrieval_seconds": 0.0008014165796339512
+    },
+    {
+      "id": "train:08757",
+      "prompt_seconds": 0.002050082664936781,
+      "retrieval_seconds": 0.0007685422897338867
+    },
+    {
+      "id": "train:08670",
+      "prompt_seconds": 0.002130832988768816,
+      "retrieval_seconds": 0.0008465838618576527
+    },
+    {
+      "id": "train:08613",
+      "prompt_seconds": 0.0023044170811772346,
+      "retrieval_seconds": 0.0008187498897314072
+    },
+    {
+      "id": "train:08625",
+      "prompt_seconds": 0.0019316249527037144,
+      "retrieval_seconds": 0.0008926247246563435
+    },
+    {
+      "id": "train:08781",
+      "prompt_seconds": 0.0018605422228574753,
+      "retrieval_seconds": 0.0005972078070044518
+    },
+    {
+      "id": "train:08749",
+      "prompt_seconds": 0.0021932078525424004,
+      "retrieval_seconds": 0.0005551669746637344
+    },
+    {
+      "id": "train:08641",
+      "prompt_seconds": 0.001933916937559843,
+      "retrieval_seconds": 0.0008649579249322414
+    },
+    {
+      "id": "train:08767",
+      "prompt_seconds": 0.0019261660054326057,
+      "retrieval_seconds": 0.0006247498095035553
+    },
+    {
+      "id": "train:08870",
+      "prompt_seconds": 0.0018743332475423813,
+      "retrieval_seconds": 0.0005718749016523361
+    },
+    {
+      "id": "train:08886",
+      "prompt_seconds": 0.002185666002333164,
+      "retrieval_seconds": 0.0005705421790480614
+    },
+    {
+      "id": "train:08938",
+      "prompt_seconds": 0.0018789996393024921,
+      "retrieval_seconds": 0.0005786251276731491
+    },
+    {
+      "id": "train:08854",
+      "prompt_seconds": 0.001908124890178442,
+      "retrieval_seconds": 0.000561750028282404
+    },
+    {
+      "id": "train:08889",
+      "prompt_seconds": 0.0023587499745190144,
+      "retrieval_seconds": 0.0005628750659525394
+    },
+    {
+      "id": "train:08802",
+      "prompt_seconds": 0.002103665843605995,
+      "retrieval_seconds": 0.0008047497831285
+    },
+    {
+      "id": "train:08927",
+      "prompt_seconds": 0.0020291246473789215,
+      "retrieval_seconds": 0.0007625413127243519
+    },
+    {
+      "id": "train:08928",
+      "prompt_seconds": 0.0021500829607248306,
+      "retrieval_seconds": 0.0007622502744197845
+    },
+    {
+      "id": "train:08859",
+      "prompt_seconds": 0.0020614168606698513,
+      "retrieval_seconds": 0.0008190828375518322
+    },
+    {
+      "id": "train:08906",
+      "prompt_seconds": 0.002019500359892845,
+      "retrieval_seconds": 0.0007674586959183216
+    },
+    {
+      "id": "train:09002",
+      "prompt_seconds": 0.0019741253927350044,
+      "retrieval_seconds": 0.0007387916557490826
+    },
+    {
+      "id": "train:09003",
+      "prompt_seconds": 0.0021394998766481876,
+      "retrieval_seconds": 0.0007664170116186142
+    },
+    {
+      "id": "train:09001",
+      "prompt_seconds": 0.0020630001090466976,
+      "retrieval_seconds": 0.0008164998143911362
+    },
+    {
+      "id": "train:09058",
+      "prompt_seconds": 0.0020433752797544003,
+      "retrieval_seconds": 0.0007787910290062428
+    },
+    {
+      "id": "train:08977",
+      "prompt_seconds": 0.002062124665826559,
+      "retrieval_seconds": 0.000771957915276289
+    },
+    {
+      "id": "train:08959",
+      "prompt_seconds": 0.002071916125714779,
+      "retrieval_seconds": 0.0007765837945044041
+    },
+    {
+      "id": "train:08978",
+      "prompt_seconds": 0.001950874924659729,
+      "retrieval_seconds": 0.0006952499970793724
+    },
+    {
+      "id": "train:09037",
+      "prompt_seconds": 0.0019752499647438526,
+      "retrieval_seconds": 0.000680374912917614
+    },
+    {
+      "id": "train:08960",
+      "prompt_seconds": 0.002114292234182358,
+      "retrieval_seconds": 0.0008107079192996025
+    },
+    {
+      "id": "train:09025",
+      "prompt_seconds": 0.0021517910063266754,
+      "retrieval_seconds": 0.0007963748648762703
+    },
+    {
+      "id": "train:09078",
+      "prompt_seconds": 0.0019079158082604408,
+      "retrieval_seconds": 0.0007139174267649651
+    },
+    {
+      "id": "train:09096",
+      "prompt_seconds": 0.002082624938338995,
+      "retrieval_seconds": 0.0005885418504476547
+    },
+    {
+      "id": "train:09156",
+      "prompt_seconds": 0.002096249721944332,
+      "retrieval_seconds": 0.0007527503184974194
+    },
+    {
+      "id": "train:09175",
+      "prompt_seconds": 0.0020278748124837875,
+      "retrieval_seconds": 0.0007759998552501202
+    },
+    {
+      "id": "train:09108",
+      "prompt_seconds": 0.001995875034481287,
+      "retrieval_seconds": 0.0007615410722792149
+    },
+    {
+      "id": "train:09142",
+      "prompt_seconds": 0.0020089582540094852,
+      "retrieval_seconds": 0.0007489998824894428
+    },
+    {
+      "id": "train:09130",
+      "prompt_seconds": 0.002101208083331585,
+      "retrieval_seconds": 0.0007771248929202557
+    },
+    {
+      "id": "train:09075",
+      "prompt_seconds": 0.0020116246305406094,
+      "retrieval_seconds": 0.0008075423538684845
+    },
+    {
+      "id": "train:09089",
+      "prompt_seconds": 0.0019771670922636986,
+      "retrieval_seconds": 0.0007495000027120113
+    },
+    {
+      "id": "train:09138",
+      "prompt_seconds": 0.0020707501098513603,
+      "retrieval_seconds": 0.0007827086374163628
+    },
+    {
+      "id": "train:09303",
+      "prompt_seconds": 0.0020887921564280987,
+      "retrieval_seconds": 0.0007459158077836037
+    },
+    {
+      "id": "train:09229",
+      "prompt_seconds": 0.002108499873429537,
+      "retrieval_seconds": 0.0007511251606047153
+    },
+    {
+      "id": "train:09301",
+      "prompt_seconds": 0.0018353331834077835,
+      "retrieval_seconds": 0.0006117499433457851
+    },
+    {
+      "id": "train:09249",
+      "prompt_seconds": 0.001815000083297491,
+      "retrieval_seconds": 0.0005498332902789116
+    },
+    {
+      "id": "train:09238",
+      "prompt_seconds": 0.0018202499486505985,
+      "retrieval_seconds": 0.0005598748102784157
+    },
+    {
+      "id": "train:09287",
+      "prompt_seconds": 0.0020171250216662884,
+      "retrieval_seconds": 0.000550542026758194
+    },
+    {
+      "id": "train:09234",
+      "prompt_seconds": 0.002214999869465828,
+      "retrieval_seconds": 0.0008097500540316105
+    },
+    {
+      "id": "train:09286",
+      "prompt_seconds": 0.0019810833036899567,
+      "retrieval_seconds": 0.0007390836253762245
+    },
+    {
+      "id": "train:09236",
+      "prompt_seconds": 0.0019832500256597996,
+      "retrieval_seconds": 0.0007802080363035202
+    },
+    {
+      "id": "train:09308",
+      "prompt_seconds": 0.0019686250016093254,
+      "retrieval_seconds": 0.0007525002583861351
+    },
+    {
+      "id": "train:09407",
+      "prompt_seconds": 0.0020190421491861343,
+      "retrieval_seconds": 0.0007320409640669823
+    },
+    {
+      "id": "train:09394",
+      "prompt_seconds": 0.0020092916674911976,
+      "retrieval_seconds": 0.0007507083937525749
+    },
+    {
+      "id": "train:09481",
+      "prompt_seconds": 0.002075625117868185,
+      "retrieval_seconds": 0.0007421672344207764
+    },
+    {
+      "id": "train:09505",
+      "prompt_seconds": 0.0020623328164219856,
+      "retrieval_seconds": 0.0007371669635176659
+    },
+    {
+      "id": "train:09473",
+      "prompt_seconds": 0.002085333224385977,
+      "retrieval_seconds": 0.0007602917030453682
+    },
+    {
+      "id": "train:09378",
+      "prompt_seconds": 0.0020857499912381172,
+      "retrieval_seconds": 0.0007773749530315399
+    },
+    {
+      "id": "train:09448",
+      "prompt_seconds": 0.002119000069797039,
+      "retrieval_seconds": 0.0007407078519463539
+    },
+    {
+      "id": "train:09493",
+      "prompt_seconds": 0.002054458949714899,
+      "retrieval_seconds": 0.0008135833777487278
+    },
+    {
+      "id": "train:09492",
+      "prompt_seconds": 0.001969999633729458,
+      "retrieval_seconds": 0.0007499172352254391
+    },
+    {
+      "id": "train:09397",
+      "prompt_seconds": 0.0020034583285450935,
+      "retrieval_seconds": 0.0007448750548064709
+    },
+    {
+      "id": "train:09622",
+      "prompt_seconds": 0.0020645419135689735,
+      "retrieval_seconds": 0.0007472909055650234
+    },
+    {
+      "id": "train:09615",
+      "prompt_seconds": 0.0020532910712063313,
+      "retrieval_seconds": 0.0007827091030776501
+    },
+    {
+      "id": "train:09575",
+      "prompt_seconds": 0.0018716668710112572,
+      "retrieval_seconds": 0.0008347909897565842
+    },
+    {
+      "id": "train:09637",
+      "prompt_seconds": 0.0018724999390542507,
+      "retrieval_seconds": 0.0006049172952771187
+    },
+    {
+      "id": "train:09557",
+      "prompt_seconds": 0.0018463339656591415,
+      "retrieval_seconds": 0.0005495832301676273
+    },
+    {
+      "id": "train:09539",
+      "prompt_seconds": 0.0018531251698732376,
+      "retrieval_seconds": 0.000549874734133482
+    },
+    {
+      "id": "train:09591",
+      "prompt_seconds": 0.002220790833234787,
+      "retrieval_seconds": 0.0007220418192446232
+    },
+    {
+      "id": "train:09522",
+      "prompt_seconds": 0.0019768751226365566,
+      "retrieval_seconds": 0.0007600001990795135
+    },
+    {
+      "id": "train:09636",
+      "prompt_seconds": 0.001915459055453539,
+      "retrieval_seconds": 0.0005919160321354866
+    },
+    {
+      "id": "train:09605",
+      "prompt_seconds": 0.002065750304609537,
+      "retrieval_seconds": 0.0005777496844530106
+    },
+    {
+      "id": "train:09644",
+      "prompt_seconds": 0.0023111659102141857,
+      "retrieval_seconds": 0.0008049169555306435
+    },
+    {
+      "id": "train:09708",
+      "prompt_seconds": 0.002075625117868185,
+      "retrieval_seconds": 0.0008649169467389584
+    },
+    {
+      "id": "train:09661",
+      "prompt_seconds": 0.0020000003278255463,
+      "retrieval_seconds": 0.0007494157180190086
+    },
+    {
+      "id": "train:09701",
+      "prompt_seconds": 0.002045833971351385,
+      "retrieval_seconds": 0.0007574157789349556
+    },
+    {
+      "id": "train:09702",
+      "prompt_seconds": 0.0020576659590005875,
+      "retrieval_seconds": 0.0007600421085953712
+    },
+    {
+      "id": "train:09688",
+      "prompt_seconds": 0.002107582986354828,
+      "retrieval_seconds": 0.000778083223849535
+    },
+    {
+      "id": "train:09750",
+      "prompt_seconds": 0.002104333136230707,
+      "retrieval_seconds": 0.0008502919226884842
+    },
+    {
+      "id": "train:09675",
+      "prompt_seconds": 0.0018514590337872505,
+      "retrieval_seconds": 0.0006404579617083073
+    },
+    {
+      "id": "train:09765",
+      "prompt_seconds": 0.0018414156511425972,
+      "retrieval_seconds": 0.0005559171549975872
+    },
+    {
+      "id": "train:09724",
+      "prompt_seconds": 0.0018902909941971302,
+      "retrieval_seconds": 0.000547667033970356
+    },
+    {
+      "id": "train:09826",
+      "prompt_seconds": 0.0022675413638353348,
+      "retrieval_seconds": 0.0008367500267922878
+    },
+    {
+      "id": "train:09777",
+      "prompt_seconds": 0.0020855418406426907,
+      "retrieval_seconds": 0.000767500139772892
+    },
+    {
+      "id": "train:09852",
+      "prompt_seconds": 0.0018208753317594528,
+      "retrieval_seconds": 0.0006051249802112579
+    },
+    {
+      "id": "train:09783",
+      "prompt_seconds": 0.0022927080281078815,
+      "retrieval_seconds": 0.0005485829897224903
+    },
+    {
+      "id": "train:09830",
+      "prompt_seconds": 0.0021184999495744705,
+      "retrieval_seconds": 0.0008169589564204216
+    },
+    {
+      "id": "train:09837",
+      "prompt_seconds": 0.0018417499959468842,
+      "retrieval_seconds": 0.0006197080947458744
+    },
+    {
+      "id": "train:09807",
+      "prompt_seconds": 0.0018335417844355106,
+      "retrieval_seconds": 0.0005500828847289085
+    },
+    {
+      "id": "train:09857",
+      "prompt_seconds": 0.002456916030496359,
+      "retrieval_seconds": 0.000557000283151865
+    },
+    {
+      "id": "train:09798",
+      "prompt_seconds": 0.0020784172229468822,
+      "retrieval_seconds": 0.0008374159224331379
+    },
+    {
+      "id": "train:09784",
+      "prompt_seconds": 0.002110375091433525,
+      "retrieval_seconds": 0.0007647080346941948
+    },
+    {
+      "id": "train:09899",
+      "prompt_seconds": 0.0021117497235536575,
+      "retrieval_seconds": 0.000845625065267086
+    },
+    {
+      "id": "train:09901",
+      "prompt_seconds": 0.0018252497538924217,
+      "retrieval_seconds": 0.0006310832686722279
+    },
+    {
+      "id": "train:09956",
+      "prompt_seconds": 0.001819500233978033,
+      "retrieval_seconds": 0.0005550840869545937
+    },
+    {
+      "id": "train:09874",
+      "prompt_seconds": 0.0018166247755289078,
+      "retrieval_seconds": 0.0005607921630144119
+    },
+    {
+      "id": "train:09995",
+      "prompt_seconds": 0.001968082971870899,
+      "retrieval_seconds": 0.000556624960154295
+    },
+    {
+      "id": "train:09910",
+      "prompt_seconds": 0.0018464173190295696,
+      "retrieval_seconds": 0.0005686245858669281
+    },
+    {
+      "id": "train:09890",
+      "prompt_seconds": 0.001861166674643755,
+      "retrieval_seconds": 0.000563708133995533
+    },
+    {
+      "id": "train:09905",
+      "prompt_seconds": 0.0019001658074557781,
+      "retrieval_seconds": 0.0005664173513650894
+    },
+    {
+      "id": "train:09927",
+      "prompt_seconds": 0.00210470799356699,
+      "retrieval_seconds": 0.0005862503312528133
+    },
+    {
+      "id": "train:10000",
+      "prompt_seconds": 0.0019968338310718536,
+      "retrieval_seconds": 0.0007596253417432308
+    }
+  ],
+  "python": "3.13.0",
+  "queries": 770,
+  "query_embeddings": "verified existing cache, not end-to-end inference",
+  "status": "measured validation retrieval/prompt CPU overhead only; excludes query encoding",
+  "summary": {
+    "prompt_seconds": {
+      "median_ms": 2.051437506452203,
+      "p95_ms": 2.2700020112097263,
+      "total_seconds": 1.5788032938726246
+    },
+    "retrieval_seconds": {
+      "median_ms": 0.7505631074309349,
+      "p95_ms": 0.8538895985111593,
+      "total_seconds": 0.5587565740570426
+    }
+  },
+  "test_access": false,
+  "threads": 1
+}

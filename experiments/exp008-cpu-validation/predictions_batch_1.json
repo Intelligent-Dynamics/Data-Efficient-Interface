@@ -1,0 +1,4622 @@
+[
+  {
+    "confidence": 0.09428557615610501,
+    "id": "train:00053",
+    "predicted_label": "card_not_working",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.10313289738774553,
+    "id": "train:00070",
+    "predicted_label": "card_arrival",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.17701979380722893,
+    "id": "train:00106",
+    "predicted_label": "card_arrival",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.13386885283531408,
+    "id": "train:00062",
+    "predicted_label": "card_arrival",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.0883816494389519,
+    "id": "train:00091",
+    "predicted_label": "card_arrival",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.1126228828650624,
+    "id": "train:00040",
+    "predicted_label": "order_physical_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.15357452534032798,
+    "id": "train:00011",
+    "predicted_label": "card_arrival",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.12597906349879492,
+    "id": "train:00149",
+    "predicted_label": "card_arrival",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.15092461788801934,
+    "id": "train:00126",
+    "predicted_label": "card_about_to_expire",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.09791736137459447,
+    "id": "train:00039",
+    "predicted_label": "card_arrival",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.12858097919919287,
+    "id": "train:00261",
+    "predicted_label": "card_linking",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1845876733294704,
+    "id": "train:00245",
+    "predicted_label": "card_linking",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2691551183144745,
+    "id": "train:00215",
+    "predicted_label": "card_linking",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.25712323480574123,
+    "id": "train:00288",
+    "predicted_label": "card_linking",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.15987438806477744,
+    "id": "train:00180",
+    "predicted_label": "card_linking",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.18575341873132734,
+    "id": "train:00248",
+    "predicted_label": "card_linking",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1436708945647253,
+    "id": "train:00181",
+    "predicted_label": "card_linking",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.14894260434855233,
+    "id": "train:00254",
+    "predicted_label": "lost_or_stolen_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.16948020200865607,
+    "id": "train:00155",
+    "predicted_label": "card_linking",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2176618443090622,
+    "id": "train:00283",
+    "predicted_label": "card_linking",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4769486533530212,
+    "id": "train:00369",
+    "predicted_label": "exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.09557862731538305,
+    "id": "train:00292",
+    "predicted_label": "fiat_currency_support",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.5180777841510158,
+    "id": "train:00372",
+    "predicted_label": "exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.48736701394619186,
+    "id": "train:00353",
+    "predicted_label": "exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4918410161904083,
+    "id": "train:00400",
+    "predicted_label": "exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3583460018887532,
+    "id": "train:00370",
+    "predicted_label": "exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.42633269234297094,
+    "id": "train:00345",
+    "predicted_label": "exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.40908489807280984,
+    "id": "train:00339",
+    "predicted_label": "exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.48190184324576735,
+    "id": "train:00334",
+    "predicted_label": "exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.41870046070807504,
+    "id": "train:00361",
+    "predicted_label": "exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2114865048133882,
+    "id": "train:00432",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.179674423039247,
+    "id": "train:00499",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2331105646976856,
+    "id": "train:00544",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.20663362551540837,
+    "id": "train:00476",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.36427962927558205,
+    "id": "train:00527",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.28373974844122113,
+    "id": "train:00513",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2394229282126425,
+    "id": "train:00500",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.10354116298070128,
+    "id": "train:00539",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.38860087854838105,
+    "id": "train:00522",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4729675384933074,
+    "id": "train:00546",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.17047058033578952,
+    "id": "train:00616",
+    "predicted_label": "extra_charge_on_statement",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.10967576493031796,
+    "id": "train:00667",
+    "predicted_label": "transaction_charged_twice",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.34033353917872977,
+    "id": "train:00686",
+    "predicted_label": "extra_charge_on_statement",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.13647383174005,
+    "id": "train:00664",
+    "predicted_label": "card_payment_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3711012682432998,
+    "id": "train:00671",
+    "predicted_label": "extra_charge_on_statement",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.31444186853619677,
+    "id": "train:00603",
+    "predicted_label": "extra_charge_on_statement",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.35882502570050967,
+    "id": "train:00624",
+    "predicted_label": "extra_charge_on_statement",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2720745318290658,
+    "id": "train:00725",
+    "predicted_label": "extra_charge_on_statement",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.15592566769526026,
+    "id": "train:00594",
+    "predicted_label": "extra_charge_on_statement",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.19998599748587353,
+    "id": "train:00640",
+    "predicted_label": "extra_charge_on_statement",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2963197945375359,
+    "id": "train:00875",
+    "predicted_label": "pending_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1856967222947286,
+    "id": "train:00836",
+    "predicted_label": "pending_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.18056487905972754,
+    "id": "train:00847",
+    "predicted_label": "pending_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.13731243547250374,
+    "id": "train:00815",
+    "predicted_label": "pending_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.38384448354812795,
+    "id": "train:00758",
+    "predicted_label": "pending_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.27430746041196663,
+    "id": "train:00818",
+    "predicted_label": "pending_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.45098038694473724,
+    "id": "train:00835",
+    "predicted_label": "pending_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.39294828280783245,
+    "id": "train:00839",
+    "predicted_label": "pending_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.08818725564638616,
+    "id": "train:00805",
+    "predicted_label": "card_swallowed",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.3602236240031343,
+    "id": "train:00856",
+    "predicted_label": "pending_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.16569356468911808,
+    "id": "train:00916",
+    "predicted_label": "fiat_currency_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4477137865206169,
+    "id": "train:00976",
+    "predicted_label": "fiat_currency_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.15533193235460677,
+    "id": "train:00933",
+    "predicted_label": "fiat_currency_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.33925504561423087,
+    "id": "train:00954",
+    "predicted_label": "fiat_currency_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.37260106823581857,
+    "id": "train:00910",
+    "predicted_label": "fiat_currency_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.39765340870884947,
+    "id": "train:00926",
+    "predicted_label": "fiat_currency_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.12635326990963874,
+    "id": "train:00931",
+    "predicted_label": "fiat_currency_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2783873613334993,
+    "id": "train:00974",
+    "predicted_label": "fiat_currency_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.11420050833617118,
+    "id": "train:00932",
+    "predicted_label": "fiat_currency_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.49298762532002893,
+    "id": "train:00892",
+    "predicted_label": "fiat_currency_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.20586290899517554,
+    "id": "train:01029",
+    "predicted_label": "card_delivery_estimate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.28338669865196253,
+    "id": "train:01047",
+    "predicted_label": "card_delivery_estimate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4566671247580941,
+    "id": "train:01051",
+    "predicted_label": "card_delivery_estimate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2688037856927802,
+    "id": "train:01094",
+    "predicted_label": "card_delivery_estimate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.20798723769790714,
+    "id": "train:01008",
+    "predicted_label": "card_delivery_estimate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2516947832891402,
+    "id": "train:01066",
+    "predicted_label": "card_delivery_estimate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.08557180029068738,
+    "id": "train:01007",
+    "predicted_label": "order_physical_card",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.14622811037262465,
+    "id": "train:01020",
+    "predicted_label": "card_delivery_estimate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2624016871121973,
+    "id": "train:01114",
+    "predicted_label": "card_delivery_estimate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.43365149211620696,
+    "id": "train:01058",
+    "predicted_label": "card_delivery_estimate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3504543289209539,
+    "id": "train:01243",
+    "predicted_label": "top_up_limits",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3380696508641326,
+    "id": "train:01181",
+    "predicted_label": "top_up_limits",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5419498822745679,
+    "id": "train:01235",
+    "predicted_label": "automatic_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5134877233744528,
+    "id": "train:01133",
+    "predicted_label": "automatic_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.17095057687704462,
+    "id": "train:01229",
+    "predicted_label": "automatic_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.6411342406077629,
+    "id": "train:01202",
+    "predicted_label": "automatic_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5477693381468753,
+    "id": "train:01140",
+    "predicted_label": "automatic_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5416662515941179,
+    "id": "train:01177",
+    "predicted_label": "automatic_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.6465401656161104,
+    "id": "train:01159",
+    "predicted_label": "automatic_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.6064772768875776,
+    "id": "train:01143",
+    "predicted_label": "automatic_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1937935894541983,
+    "id": "train:01283",
+    "predicted_label": "card_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.13190016103623395,
+    "id": "train:01327",
+    "predicted_label": "card_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.27209092029997933,
+    "id": "train:01355",
+    "predicted_label": "card_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.32327011123608684,
+    "id": "train:01346",
+    "predicted_label": "card_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.20507376293972204,
+    "id": "train:01322",
+    "predicted_label": "declined_card_payment",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.18391933029363725,
+    "id": "train:01263",
+    "predicted_label": "card_about_to_expire",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.13868685632595987,
+    "id": "train:01321",
+    "predicted_label": "card_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.34528833983258467,
+    "id": "train:01316",
+    "predicted_label": "card_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.36160191239878753,
+    "id": "train:01264",
+    "predicted_label": "card_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2325465428836716,
+    "id": "train:01352",
+    "predicted_label": "card_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.11511835499676014,
+    "id": "train:01428",
+    "predicted_label": "exchange_via_app",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4389965009277378,
+    "id": "train:01429",
+    "predicted_label": "exchange_via_app",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.23493628913786546,
+    "id": "train:01375",
+    "predicted_label": "exchange_via_app",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.44910528594726246,
+    "id": "train:01370",
+    "predicted_label": "exchange_via_app",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.14476714711922242,
+    "id": "train:01367",
+    "predicted_label": "exchange_via_app",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.29724570784376814,
+    "id": "train:01392",
+    "predicted_label": "exchange_via_app",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3387709446613346,
+    "id": "train:01472",
+    "predicted_label": "exchange_via_app",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.39351235624106107,
+    "id": "train:01395",
+    "predicted_label": "exchange_via_app",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.21387044807945274,
+    "id": "train:01361",
+    "predicted_label": "exchange_via_app",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.11888518687420412,
+    "id": "train:01444",
+    "predicted_label": "exchange_via_app",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.181555160017478,
+    "id": "train:01550",
+    "predicted_label": "lost_or_stolen_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.23663847533478596,
+    "id": "train:01501",
+    "predicted_label": "lost_or_stolen_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2878158482861673,
+    "id": "train:01555",
+    "predicted_label": "lost_or_stolen_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1955976913790116,
+    "id": "train:01513",
+    "predicted_label": "lost_or_stolen_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.056214760809395324,
+    "id": "train:01480",
+    "predicted_label": "card_not_working",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.1349005546770435,
+    "id": "train:01549",
+    "predicted_label": "card_arrival",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.24358992610420482,
+    "id": "train:01523",
+    "predicted_label": "lost_or_stolen_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1591728293027974,
+    "id": "train:01552",
+    "predicted_label": "lost_or_stolen_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.21452573854744186,
+    "id": "train:01477",
+    "predicted_label": "lost_or_stolen_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.27400534737335147,
+    "id": "train:01518",
+    "predicted_label": "lost_or_stolen_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4284782588466992,
+    "id": "train:01639",
+    "predicted_label": "age_limit",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4104290899000413,
+    "id": "train:01589",
+    "predicted_label": "age_limit",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4086200754453815,
+    "id": "train:01565",
+    "predicted_label": "age_limit",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.564125115359258,
+    "id": "train:01656",
+    "predicted_label": "age_limit",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.60090222391324,
+    "id": "train:01581",
+    "predicted_label": "age_limit",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3858944766956156,
+    "id": "train:01612",
+    "predicted_label": "age_limit",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.46699790765692956,
+    "id": "train:01632",
+    "predicted_label": "age_limit",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.42718576608041403,
+    "id": "train:01601",
+    "predicted_label": "age_limit",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4754742557252422,
+    "id": "train:01593",
+    "predicted_label": "age_limit",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5322878889812149,
+    "id": "train:01588",
+    "predicted_label": "age_limit",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.30821600911665764,
+    "id": "train:01780",
+    "predicted_label": "pin_blocked",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2839320422271202,
+    "id": "train:01699",
+    "predicted_label": "pin_blocked",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.31690589806171016,
+    "id": "train:01692",
+    "predicted_label": "pin_blocked",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5162153238703372,
+    "id": "train:01689",
+    "predicted_label": "pin_blocked",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.24565012026635924,
+    "id": "train:01719",
+    "predicted_label": "pin_blocked",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.6417276200630688,
+    "id": "train:01710",
+    "predicted_label": "pin_blocked",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.22914315541989866,
+    "id": "train:01759",
+    "predicted_label": "pin_blocked",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1919293301919915,
+    "id": "train:01742",
+    "predicted_label": "get_physical_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2466779824044534,
+    "id": "train:01727",
+    "predicted_label": "pin_blocked",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3407142335238805,
+    "id": "train:01677",
+    "predicted_label": "pin_blocked",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.16099307373364896,
+    "id": "train:01792",
+    "predicted_label": "contactless_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.08445816219175073,
+    "id": "train:01782",
+    "predicted_label": "lost_or_stolen_phone",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.7069046396453704,
+    "id": "train:01784",
+    "predicted_label": "contactless_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.17135774794597866,
+    "id": "train:01816",
+    "predicted_label": "contactless_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.0908215301298766,
+    "id": "train:01788",
+    "predicted_label": "lost_or_stolen_phone",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.07804376109998039,
+    "id": "train:01791",
+    "predicted_label": "card_not_working",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.31246726787275275,
+    "id": "train:01800",
+    "predicted_label": "contactless_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.22870962119499083,
+    "id": "train:01796",
+    "predicted_label": "contactless_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5426250443404007,
+    "id": "train:01814",
+    "predicted_label": "contactless_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.49527437608628105,
+    "id": "train:01805",
+    "predicted_label": "contactless_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.0747173694171532,
+    "id": "train:01871",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.09522054243812769,
+    "id": "train:01906",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.09763332302656193,
+    "id": "train:01899",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.3419573781583367,
+    "id": "train:01836",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.32020971309980245,
+    "id": "train:01902",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3062266055459464,
+    "id": "train:01901",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.09619826274713172,
+    "id": "train:01910",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.30103135793631064,
+    "id": "train:01898",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.28960101781969183,
+    "id": "train:01875",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.11700236866564999,
+    "id": "train:01890",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.12391826808237286,
+    "id": "train:02019",
+    "predicted_label": "pending_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2383586825156165,
+    "id": "train:01981",
+    "predicted_label": "top_up_failed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2509769292406952,
+    "id": "train:01995",
+    "predicted_label": "top_up_failed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3585693645856899,
+    "id": "train:02010",
+    "predicted_label": "pending_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.07692372288324954,
+    "id": "train:01931",
+    "predicted_label": "topping_up_by_card",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.3797258777060861,
+    "id": "train:02005",
+    "predicted_label": "pending_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3849257474491158,
+    "id": "train:01938",
+    "predicted_label": "pending_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2303610995426653,
+    "id": "train:01965",
+    "predicted_label": "pending_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.31442441880838073,
+    "id": "train:01961",
+    "predicted_label": "pending_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.16661715900167273,
+    "id": "train:01967",
+    "predicted_label": "pending_card_payment",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.07893612464402956,
+    "id": "train:02138",
+    "predicted_label": "cancel_transfer",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.44571038913188854,
+    "id": "train:02126",
+    "predicted_label": "cancel_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3363517214310613,
+    "id": "train:02133",
+    "predicted_label": "cancel_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.17127188637326127,
+    "id": "train:02080",
+    "predicted_label": "cancel_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.39808355420669445,
+    "id": "train:02108",
+    "predicted_label": "cancel_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.08001489766544753,
+    "id": "train:02120",
+    "predicted_label": "cancel_transfer",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.14771086077160903,
+    "id": "train:02225",
+    "predicted_label": "cancel_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.09494388434183916,
+    "id": "train:02105",
+    "predicted_label": "cancel_transfer",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.3635151518051995,
+    "id": "train:02165",
+    "predicted_label": "cancel_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.22600701197670695,
+    "id": "train:02211",
+    "predicted_label": "cancel_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.32527757586319417,
+    "id": "train:02239",
+    "predicted_label": "top_up_limits",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5539326185761979,
+    "id": "train:02324",
+    "predicted_label": "top_up_limits",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5280792755296806,
+    "id": "train:02286",
+    "predicted_label": "top_up_limits",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1485408538492714,
+    "id": "train:02294",
+    "predicted_label": "top_up_limits",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.529518855888669,
+    "id": "train:02290",
+    "predicted_label": "top_up_limits",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.48068609257855593,
+    "id": "train:02316",
+    "predicted_label": "top_up_limits",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.36950348741019773,
+    "id": "train:02251",
+    "predicted_label": "top_up_limits",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.384460943474614,
+    "id": "train:02320",
+    "predicted_label": "top_up_limits",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.16431134646800427,
+    "id": "train:02272",
+    "predicted_label": "top_up_limits",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.06436024251418414,
+    "id": "train:02289",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.28741317846009773,
+    "id": "train:02382",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1600514341512728,
+    "id": "train:02446",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.15290180598155706,
+    "id": "train:02357",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.16604222741538893,
+    "id": "train:02496",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.18980167813923465,
+    "id": "train:02429",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.24795062126684925,
+    "id": "train:02474",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1439851040420185,
+    "id": "train:02407",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.17278687758598787,
+    "id": "train:02416",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.15815394977993055,
+    "id": "train:02406",
+    "predicted_label": "pending_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1450708499371335,
+    "id": "train:02410",
+    "predicted_label": "wrong_amount_of_cash_received",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1649632416851753,
+    "id": "train:02563",
+    "predicted_label": "card_payment_fee_charged",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.27554835436036207,
+    "id": "train:02576",
+    "predicted_label": "card_payment_fee_charged",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.24757142337139806,
+    "id": "train:02519",
+    "predicted_label": "card_payment_fee_charged",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.18697429526609552,
+    "id": "train:02515",
+    "predicted_label": "card_payment_fee_charged",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.339906045556604,
+    "id": "train:02634",
+    "predicted_label": "card_payment_fee_charged",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3677035397952328,
+    "id": "train:02606",
+    "predicted_label": "card_payment_fee_charged",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.12900104233679185,
+    "id": "train:02655",
+    "predicted_label": "verify_source_of_funds",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.14715690738652704,
+    "id": "train:02645",
+    "predicted_label": "card_payment_fee_charged",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.27397361455164093,
+    "id": "train:02569",
+    "predicted_label": "card_payment_fee_charged",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.23241236615710276,
+    "id": "train:02599",
+    "predicted_label": "card_payment_fee_charged",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.14618453771912165,
+    "id": "train:02743",
+    "predicted_label": "transfer_timing",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.14168416470542547,
+    "id": "train:02794",
+    "predicted_label": "transfer_timing",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.17886943424028096,
+    "id": "train:02862",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.135773622679386,
+    "id": "train:02698",
+    "predicted_label": "transfer_timing",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.34112261016811746,
+    "id": "train:02742",
+    "predicted_label": "transfer_not_received_by_recipient",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.0983467656763435,
+    "id": "train:02804",
+    "predicted_label": "failed_transfer",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.15256943395320627,
+    "id": "train:02738",
+    "predicted_label": "transfer_timing",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.15134060224251145,
+    "id": "train:02866",
+    "predicted_label": "pending_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.12917881101843617,
+    "id": "train:02764",
+    "predicted_label": "pending_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.21808786946054118,
+    "id": "train:02855",
+    "predicted_label": "transfer_not_received_by_recipient",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.17049624918368322,
+    "id": "train:02927",
+    "predicted_label": "country_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.15620894737243846,
+    "id": "train:02893",
+    "predicted_label": "supported_cards_and_currencies",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.10379147809382912,
+    "id": "train:02931",
+    "predicted_label": "supported_cards_and_currencies",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.17590474499438094,
+    "id": "train:02966",
+    "predicted_label": "country_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.24421111764573972,
+    "id": "train:02924",
+    "predicted_label": "fiat_currency_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.16277964549740048,
+    "id": "train:02923",
+    "predicted_label": "supported_cards_and_currencies",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.14340363732772105,
+    "id": "train:02971",
+    "predicted_label": "apple_pay_or_google_pay",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.13735065034507496,
+    "id": "train:02938",
+    "predicted_label": "topping_up_by_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2129405789777549,
+    "id": "train:02941",
+    "predicted_label": "fiat_currency_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.0680094570190172,
+    "id": "train:02878",
+    "predicted_label": "supported_cards_and_currencies",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.3678128096089777,
+    "id": "train:03002",
+    "predicted_label": "getting_virtual_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.28283007882287076,
+    "id": "train:03094",
+    "predicted_label": "getting_virtual_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.22234310462269402,
+    "id": "train:03073",
+    "predicted_label": "getting_virtual_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.39937904105553745,
+    "id": "train:03007",
+    "predicted_label": "getting_virtual_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4337548967045078,
+    "id": "train:03034",
+    "predicted_label": "getting_virtual_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.45711084586720657,
+    "id": "train:03089",
+    "predicted_label": "getting_virtual_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.28649135938529396,
+    "id": "train:03022",
+    "predicted_label": "getting_virtual_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.29433195492047276,
+    "id": "train:03017",
+    "predicted_label": "getting_virtual_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.373973889237584,
+    "id": "train:03025",
+    "predicted_label": "getting_virtual_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2141891661346306,
+    "id": "train:03074",
+    "predicted_label": "virtual_card_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.09773720103682952,
+    "id": "train:03096",
+    "predicted_label": "card_acceptance",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.3080578058279803,
+    "id": "train:03140",
+    "predicted_label": "card_acceptance",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.17849836549221992,
+    "id": "train:03132",
+    "predicted_label": "card_acceptance",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.08800659827500856,
+    "id": "train:03109",
+    "predicted_label": "supported_cards_and_currencies",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.2350257716123077,
+    "id": "train:03100",
+    "predicted_label": "card_acceptance",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2081268979843086,
+    "id": "train:03106",
+    "predicted_label": "country_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.10090355538289328,
+    "id": "train:03135",
+    "predicted_label": "card_acceptance",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.18141071039304985,
+    "id": "train:03098",
+    "predicted_label": "card_acceptance",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.21426006863999508,
+    "id": "train:03150",
+    "predicted_label": "card_acceptance",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.27432861929457675,
+    "id": "train:03123",
+    "predicted_label": "card_acceptance",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.35194093839987056,
+    "id": "train:03206",
+    "predicted_label": "top_up_reverted",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2016444173985759,
+    "id": "train:03226",
+    "predicted_label": "top_up_reverted",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.12404673039776536,
+    "id": "train:03267",
+    "predicted_label": "top_up_failed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.28399109374298176,
+    "id": "train:03243",
+    "predicted_label": "top_up_failed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.08256435072227647,
+    "id": "train:03161",
+    "predicted_label": "top_up_reverted",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.25631248241512694,
+    "id": "train:03155",
+    "predicted_label": "top_up_reverted",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.08895395021252463,
+    "id": "train:03233",
+    "predicted_label": "top_up_reverted",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.1189004444975052,
+    "id": "train:03285",
+    "predicted_label": "top_up_reverted",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.21814811430995412,
+    "id": "train:03263",
+    "predicted_label": "top_up_failed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.09390740736109322,
+    "id": "train:03244",
+    "predicted_label": "top_up_reverted",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.4025315686503335,
+    "id": "train:03381",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.37768443764640103,
+    "id": "train:03394",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.24127713149271116,
+    "id": "train:03386",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2642329021126538,
+    "id": "train:03361",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2560944290985415,
+    "id": "train:03406",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.32309629062482403,
+    "id": "train:03430",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.23101815207866563,
+    "id": "train:03378",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.20607979992899073,
+    "id": "train:03460",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.17587174688549492,
+    "id": "train:03384",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.19781319984149914,
+    "id": "train:03408",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.25929891133452304,
+    "id": "train:03643",
+    "predicted_label": "card_payment_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.14848726434741813,
+    "id": "train:03615",
+    "predicted_label": "reverted_card_payment?",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.05993073309272925,
+    "id": "train:03500",
+    "predicted_label": "reverted_card_payment?",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.1369426335600789,
+    "id": "train:03545",
+    "predicted_label": "card_payment_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.18464620549793553,
+    "id": "train:03590",
+    "predicted_label": "card_payment_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.09590901547637229,
+    "id": "train:03620",
+    "predicted_label": "card_payment_not_recognised",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.20629413246294098,
+    "id": "train:03569",
+    "predicted_label": "card_payment_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.16515806684732204,
+    "id": "train:03596",
+    "predicted_label": "card_payment_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.22244577628906928,
+    "id": "train:03631",
+    "predicted_label": "card_payment_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.25595156401796704,
+    "id": "train:03542",
+    "predicted_label": "card_payment_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.0734456014803344,
+    "id": "train:03769",
+    "predicted_label": "edit_personal_details",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.3742865918304713,
+    "id": "train:03683",
+    "predicted_label": "edit_personal_details",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.37066709925107677,
+    "id": "train:03743",
+    "predicted_label": "edit_personal_details",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5332921254317856,
+    "id": "train:03717",
+    "predicted_label": "edit_personal_details",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.26832251854102945,
+    "id": "train:03751",
+    "predicted_label": "edit_personal_details",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.14362915269875245,
+    "id": "train:03692",
+    "predicted_label": "edit_personal_details",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.43013553013994565,
+    "id": "train:03706",
+    "predicted_label": "edit_personal_details",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3494445393574558,
+    "id": "train:03691",
+    "predicted_label": "edit_personal_details",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.24211340142442248,
+    "id": "train:03765",
+    "predicted_label": "edit_personal_details",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.336438261497134,
+    "id": "train:03698",
+    "predicted_label": "edit_personal_details",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.34130298723914465,
+    "id": "train:03800",
+    "predicted_label": "why_verify_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.24549320047777667,
+    "id": "train:03809",
+    "predicted_label": "verify_my_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.28340997292962755,
+    "id": "train:03786",
+    "predicted_label": "why_verify_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2517114887809504,
+    "id": "train:03810",
+    "predicted_label": "why_verify_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1557081668076722,
+    "id": "train:03862",
+    "predicted_label": "why_verify_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3026126827423117,
+    "id": "train:03801",
+    "predicted_label": "why_verify_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4177708978012953,
+    "id": "train:03865",
+    "predicted_label": "why_verify_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.23825801848693143,
+    "id": "train:03829",
+    "predicted_label": "why_verify_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.270633093356713,
+    "id": "train:03844",
+    "predicted_label": "why_verify_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3717537942293776,
+    "id": "train:03778",
+    "predicted_label": "why_verify_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.24923299744903782,
+    "id": "train:03899",
+    "predicted_label": "unable_to_verify_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.35507803624107426,
+    "id": "train:03918",
+    "predicted_label": "unable_to_verify_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.20170562683929383,
+    "id": "train:03989",
+    "predicted_label": "why_verify_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.17047890686274703,
+    "id": "train:03911",
+    "predicted_label": "unable_to_verify_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2572809156124844,
+    "id": "train:03993",
+    "predicted_label": "verify_my_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.15157260911979187,
+    "id": "train:03952",
+    "predicted_label": "unable_to_verify_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.27621084718639005,
+    "id": "train:03923",
+    "predicted_label": "unable_to_verify_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.35485127557887475,
+    "id": "train:03987",
+    "predicted_label": "unable_to_verify_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.323735827679883,
+    "id": "train:03928",
+    "predicted_label": "unable_to_verify_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.23479194254700747,
+    "id": "train:03946",
+    "predicted_label": "unable_to_verify_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.29277950167500305,
+    "id": "train:04017",
+    "predicted_label": "get_physical_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.28420658730073606,
+    "id": "train:04068",
+    "predicted_label": "get_physical_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.09054288069303229,
+    "id": "train:04091",
+    "predicted_label": "activate_my_card",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.379170968620943,
+    "id": "train:04048",
+    "predicted_label": "get_physical_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.33165508478088074,
+    "id": "train:04034",
+    "predicted_label": "get_physical_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.21206510704377982,
+    "id": "train:04069",
+    "predicted_label": "get_physical_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.28174590596934057,
+    "id": "train:04042",
+    "predicted_label": "get_physical_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3674964613357242,
+    "id": "train:04052",
+    "predicted_label": "get_physical_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.25319635205691404,
+    "id": "train:03996",
+    "predicted_label": "get_physical_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3222290415613018,
+    "id": "train:04057",
+    "predicted_label": "get_physical_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4995331593843537,
+    "id": "train:04149",
+    "predicted_label": "visa_or_mastercard",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.48322843440293994,
+    "id": "train:04182",
+    "predicted_label": "visa_or_mastercard",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5489296774774316,
+    "id": "train:04159",
+    "predicted_label": "visa_or_mastercard",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3904257203022592,
+    "id": "train:04192",
+    "predicted_label": "visa_or_mastercard",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3833752875743536,
+    "id": "train:04224",
+    "predicted_label": "visa_or_mastercard",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.31287985145025604,
+    "id": "train:04108",
+    "predicted_label": "visa_or_mastercard",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5543508714909702,
+    "id": "train:04137",
+    "predicted_label": "visa_or_mastercard",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.31414620487574063,
+    "id": "train:04143",
+    "predicted_label": "visa_or_mastercard",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.37848887755428706,
+    "id": "train:04117",
+    "predicted_label": "visa_or_mastercard",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.07211455454644382,
+    "id": "train:04167",
+    "predicted_label": "supported_cards_and_currencies",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.1557822900540065,
+    "id": "train:04264",
+    "predicted_label": "topping_up_by_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1791583756604021,
+    "id": "train:04283",
+    "predicted_label": "topping_up_by_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2346948194854014,
+    "id": "train:04325",
+    "predicted_label": "top_up_reverted",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.05539581631553582,
+    "id": "train:04327",
+    "predicted_label": "topping_up_by_card",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.1576771551128332,
+    "id": "train:04266",
+    "predicted_label": "topping_up_by_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.12707921321477614,
+    "id": "train:04316",
+    "predicted_label": "pending_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.07078736339102289,
+    "id": "train:04315",
+    "predicted_label": "topping_up_by_card",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.1470453770968192,
+    "id": "train:04306",
+    "predicted_label": "top_up_failed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1350106017138867,
+    "id": "train:04333",
+    "predicted_label": "transfer_into_account",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.17901711913009757,
+    "id": "train:04289",
+    "predicted_label": "topping_up_by_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.0993126533928887,
+    "id": "train:04360",
+    "predicted_label": "getting_spare_card",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.4753342440716096,
+    "id": "train:04434",
+    "predicted_label": "disposable_card_limits",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5577431122982529,
+    "id": "train:04426",
+    "predicted_label": "disposable_card_limits",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.6074493945250209,
+    "id": "train:04450",
+    "predicted_label": "disposable_card_limits",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.482874357566089,
+    "id": "train:04372",
+    "predicted_label": "disposable_card_limits",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3878728375719434,
+    "id": "train:04343",
+    "predicted_label": "disposable_card_limits",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5047192296231227,
+    "id": "train:04431",
+    "predicted_label": "disposable_card_limits",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.09749980752550359,
+    "id": "train:04421",
+    "predicted_label": "getting_virtual_card",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.4942954275614448,
+    "id": "train:04370",
+    "predicted_label": "disposable_card_limits",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5277755448373459,
+    "id": "train:04427",
+    "predicted_label": "disposable_card_limits",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.19973192126924047,
+    "id": "train:04475",
+    "predicted_label": "compromised_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.12462578527884244,
+    "id": "train:04542",
+    "predicted_label": "compromised_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.24040011960460148,
+    "id": "train:04513",
+    "predicted_label": "compromised_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1289371360587468,
+    "id": "train:04508",
+    "predicted_label": "compromised_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.10845868184796464,
+    "id": "train:04500",
+    "predicted_label": "compromised_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.17205548795407336,
+    "id": "train:04524",
+    "predicted_label": "compromised_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.20664147872053976,
+    "id": "train:04530",
+    "predicted_label": "compromised_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.11031888416827475,
+    "id": "train:04474",
+    "predicted_label": "compromised_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2694043684366195,
+    "id": "train:04499",
+    "predicted_label": "compromised_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.15968976384915948,
+    "id": "train:04520",
+    "predicted_label": "compromised_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.07283191899211804,
+    "id": "train:04547",
+    "predicted_label": "card_acceptance",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.42583589464557536,
+    "id": "train:04587",
+    "predicted_label": "atm_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.20561404694864846,
+    "id": "train:04627",
+    "predicted_label": "atm_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4302521645827718,
+    "id": "train:04598",
+    "predicted_label": "atm_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3507019227256021,
+    "id": "train:04609",
+    "predicted_label": "atm_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.406683743163901,
+    "id": "train:04606",
+    "predicted_label": "atm_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.36774656127616706,
+    "id": "train:04621",
+    "predicted_label": "atm_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.30061382161394856,
+    "id": "train:04557",
+    "predicted_label": "atm_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4578909648223372,
+    "id": "train:04619",
+    "predicted_label": "atm_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4001917218948781,
+    "id": "train:04568",
+    "predicted_label": "atm_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.11756689523512644,
+    "id": "train:04745",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.12796154404647916,
+    "id": "train:04785",
+    "predicted_label": "card_payment_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.08380680885793808,
+    "id": "train:04809",
+    "predicted_label": "card_payment_not_recognised",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.23294444649547424,
+    "id": "train:04786",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2438557428699304,
+    "id": "train:04743",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.24421601143388752,
+    "id": "train:04795",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.373809255169676,
+    "id": "train:04723",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.24584888430405008,
+    "id": "train:04789",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.30918710920611286,
+    "id": "train:04714",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.301441238428752,
+    "id": "train:04715",
+    "predicted_label": "direct_debit_payment_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1907438171848811,
+    "id": "train:04837",
+    "predicted_label": "passcode_forgotten",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.48429670878317055,
+    "id": "train:04859",
+    "predicted_label": "passcode_forgotten",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.39191725494434554,
+    "id": "train:04846",
+    "predicted_label": "passcode_forgotten",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.6011574754166935,
+    "id": "train:04841",
+    "predicted_label": "passcode_forgotten",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.377271861696144,
+    "id": "train:04899",
+    "predicted_label": "passcode_forgotten",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.6019246313699198,
+    "id": "train:04880",
+    "predicted_label": "passcode_forgotten",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3607419731222845,
+    "id": "train:04824",
+    "predicted_label": "passcode_forgotten",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2682848172942849,
+    "id": "train:04917",
+    "predicted_label": "passcode_forgotten",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5629322681950888,
+    "id": "train:04870",
+    "predicted_label": "passcode_forgotten",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.595680085359353,
+    "id": "train:04904",
+    "predicted_label": "passcode_forgotten",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.19919432304280943,
+    "id": "train:05082",
+    "predicted_label": "declined_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.10586508967013587,
+    "id": "train:04970",
+    "predicted_label": "declined_card_payment",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1149727999828418,
+    "id": "train:05042",
+    "predicted_label": "card_swallowed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3155680476728638,
+    "id": "train:05018",
+    "predicted_label": "declined_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.11155692894102158,
+    "id": "train:05044",
+    "predicted_label": "card_swallowed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.29564859482231615,
+    "id": "train:04982",
+    "predicted_label": "declined_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1352040346961645,
+    "id": "train:05008",
+    "predicted_label": "card_swallowed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.12881834551638,
+    "id": "train:05020",
+    "predicted_label": "declined_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.12594558672319972,
+    "id": "train:05017",
+    "predicted_label": "pending_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.11453000045740509,
+    "id": "train:05026",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.24355807940395563,
+    "id": "train:05177",
+    "predicted_label": "pending_card_payment",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.30729724292414484,
+    "id": "train:05169",
+    "predicted_label": "pending_card_payment",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.43502997252999287,
+    "id": "train:05109",
+    "predicted_label": "pending_card_payment",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.35841073353617126,
+    "id": "train:05126",
+    "predicted_label": "pending_card_payment",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2783741077649476,
+    "id": "train:05230",
+    "predicted_label": "pending_card_payment",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4167218419469479,
+    "id": "train:05111",
+    "predicted_label": "pending_card_payment",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3513126909330855,
+    "id": "train:05209",
+    "predicted_label": "pending_card_payment",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3649656088106934,
+    "id": "train:05216",
+    "predicted_label": "pending_card_payment",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3765002112604706,
+    "id": "train:05206",
+    "predicted_label": "pending_card_payment",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.32709696928721954,
+    "id": "train:05179",
+    "predicted_label": "pending_card_payment",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2605065364822823,
+    "id": "train:05370",
+    "predicted_label": "lost_or_stolen_phone",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4779702306072103,
+    "id": "train:05328",
+    "predicted_label": "lost_or_stolen_phone",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5258245686549844,
+    "id": "train:05356",
+    "predicted_label": "lost_or_stolen_phone",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5544774778080328,
+    "id": "train:05253",
+    "predicted_label": "lost_or_stolen_phone",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.30215813908941935,
+    "id": "train:05285",
+    "predicted_label": "lost_or_stolen_phone",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4718119585075199,
+    "id": "train:05347",
+    "predicted_label": "lost_or_stolen_phone",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.33507264898579875,
+    "id": "train:05255",
+    "predicted_label": "lost_or_stolen_phone",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5136200450181911,
+    "id": "train:05252",
+    "predicted_label": "lost_or_stolen_phone",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1331131463393175,
+    "id": "train:05361",
+    "predicted_label": "card_linking",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5073848640451822,
+    "id": "train:05269",
+    "predicted_label": "lost_or_stolen_phone",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3252150011641127,
+    "id": "train:05396",
+    "predicted_label": "request_refund",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.24877098127958983,
+    "id": "train:05460",
+    "predicted_label": "request_refund",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.35519500795257686,
+    "id": "train:05433",
+    "predicted_label": "Refund_not_showing_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.38036738942718734,
+    "id": "train:05378",
+    "predicted_label": "Refund_not_showing_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4874799359010885,
+    "id": "train:05517",
+    "predicted_label": "request_refund",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.17868669682501553,
+    "id": "train:05463",
+    "predicted_label": "request_refund",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.36463277912804304,
+    "id": "train:05400",
+    "predicted_label": "request_refund",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3098233603977126,
+    "id": "train:05450",
+    "predicted_label": "Refund_not_showing_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.07737311765033104,
+    "id": "train:05466",
+    "predicted_label": "request_refund",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.3816176955877079,
+    "id": "train:05387",
+    "predicted_label": "request_refund",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.27327762180080434,
+    "id": "train:05635",
+    "predicted_label": "declined_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.29224019490066694,
+    "id": "train:05559",
+    "predicted_label": "declined_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.26489555773953544,
+    "id": "train:05614",
+    "predicted_label": "declined_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2651328673943672,
+    "id": "train:05555",
+    "predicted_label": "declined_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3087120634791034,
+    "id": "train:05603",
+    "predicted_label": "declined_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.12237686683751554,
+    "id": "train:05591",
+    "predicted_label": "declined_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.20716752009936693,
+    "id": "train:05610",
+    "predicted_label": "declined_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3063480329349821,
+    "id": "train:05551",
+    "predicted_label": "declined_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2862195305084318,
+    "id": "train:05617",
+    "predicted_label": "declined_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.06580110555082574,
+    "id": "train:05588",
+    "predicted_label": "declined_transfer",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.5103522297806744,
+    "id": "train:05679",
+    "predicted_label": "Refund_not_showing_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2265447025864162,
+    "id": "train:05820",
+    "predicted_label": "Refund_not_showing_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3593039874257634,
+    "id": "train:05722",
+    "predicted_label": "Refund_not_showing_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.16880485734824746,
+    "id": "train:05759",
+    "predicted_label": "Refund_not_showing_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.17160343608414264,
+    "id": "train:05681",
+    "predicted_label": "request_refund",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3606701362436961,
+    "id": "train:05783",
+    "predicted_label": "Refund_not_showing_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4927683294007826,
+    "id": "train:05779",
+    "predicted_label": "Refund_not_showing_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.15781948407877838,
+    "id": "train:05729",
+    "predicted_label": "Refund_not_showing_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.30188831039237574,
+    "id": "train:05750",
+    "predicted_label": "Refund_not_showing_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4257940665661919,
+    "id": "train:05807",
+    "predicted_label": "Refund_not_showing_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.09033769460826023,
+    "id": "train:05962",
+    "predicted_label": "declined_card_payment",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.17470046739163647,
+    "id": "train:05856",
+    "predicted_label": "declined_card_payment",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.14598692442457806,
+    "id": "train:05898",
+    "predicted_label": "declined_card_payment",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.09465559023934157,
+    "id": "train:05917",
+    "predicted_label": "card_acceptance",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.14414351339776915,
+    "id": "train:05941",
+    "predicted_label": "declined_card_payment",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.10127439065831395,
+    "id": "train:05959",
+    "predicted_label": "card_not_working",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.2462228046085675,
+    "id": "train:05892",
+    "predicted_label": "declined_card_payment",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.34191676048750713,
+    "id": "train:05956",
+    "predicted_label": "declined_card_payment",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.07558099117451483,
+    "id": "train:05937",
+    "predicted_label": "reverted_card_payment?",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.08213072258531279,
+    "id": "train:05910",
+    "predicted_label": "card_acceptance",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.12191232340187544,
+    "id": "train:06078",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.20031741492333474,
+    "id": "train:06054",
+    "predicted_label": "pending_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.25167097810126965,
+    "id": "train:06053",
+    "predicted_label": "pending_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2550596166465723,
+    "id": "train:05993",
+    "predicted_label": "pending_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.16318670231699278,
+    "id": "train:06036",
+    "predicted_label": "pending_card_payment",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.16447902931753364,
+    "id": "train:06098",
+    "predicted_label": "pending_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.27117332689906637,
+    "id": "train:06127",
+    "predicted_label": "pending_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2451290867803216,
+    "id": "train:06080",
+    "predicted_label": "pending_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.19227426799515035,
+    "id": "train:06037",
+    "predicted_label": "transfer_timing",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2530425050671404,
+    "id": "train:06010",
+    "predicted_label": "pending_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4643161225803547,
+    "id": "train:06204",
+    "predicted_label": "terminate_account",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3432234173539469,
+    "id": "train:06174",
+    "predicted_label": "terminate_account",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5489281163866425,
+    "id": "train:06168",
+    "predicted_label": "terminate_account",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4954186302874829,
+    "id": "train:06223",
+    "predicted_label": "terminate_account",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.45471329210023564,
+    "id": "train:06216",
+    "predicted_label": "terminate_account",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4091289932824752,
+    "id": "train:06161",
+    "predicted_label": "terminate_account",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3582783417452281,
+    "id": "train:06213",
+    "predicted_label": "terminate_account",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.36512741149909267,
+    "id": "train:06206",
+    "predicted_label": "terminate_account",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.47994257219471614,
+    "id": "train:06222",
+    "predicted_label": "terminate_account",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4820009025694323,
+    "id": "train:06143",
+    "predicted_label": "terminate_account",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.10889278798391003,
+    "id": "train:06292",
+    "predicted_label": "card_swallowed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.381781476072791,
+    "id": "train:06271",
+    "predicted_label": "card_swallowed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2663279300686279,
+    "id": "train:06262",
+    "predicted_label": "card_swallowed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.11873292826623565,
+    "id": "train:06298",
+    "predicted_label": "lost_or_stolen_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2217400990835239,
+    "id": "train:06272",
+    "predicted_label": "card_swallowed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.29878466105072643,
+    "id": "train:06270",
+    "predicted_label": "card_swallowed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2681485278310557,
+    "id": "train:06266",
+    "predicted_label": "card_swallowed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2822776519923471,
+    "id": "train:06293",
+    "predicted_label": "card_swallowed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.13812644059351734,
+    "id": "train:06256",
+    "predicted_label": "card_swallowed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3514963668026365,
+    "id": "train:06268",
+    "predicted_label": "card_swallowed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.6576108764953624,
+    "id": "train:06335",
+    "predicted_label": "transaction_charged_twice",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2401585686932195,
+    "id": "train:06411",
+    "predicted_label": "transaction_charged_twice",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.11410677762017173,
+    "id": "train:06396",
+    "predicted_label": "transaction_charged_twice",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5596278052600726,
+    "id": "train:06315",
+    "predicted_label": "transaction_charged_twice",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.18247495687815962,
+    "id": "train:06379",
+    "predicted_label": "transaction_charged_twice",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.41749458554124214,
+    "id": "train:06363",
+    "predicted_label": "transaction_charged_twice",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4610914426643631,
+    "id": "train:06446",
+    "predicted_label": "transaction_charged_twice",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2554728785974399,
+    "id": "train:06382",
+    "predicted_label": "transaction_charged_twice",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.07686373528391283,
+    "id": "train:06344",
+    "predicted_label": "reverted_card_payment?",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.4262096010873468,
+    "id": "train:06462",
+    "predicted_label": "transaction_charged_twice",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.29118810087490743,
+    "id": "train:06570",
+    "predicted_label": "verify_source_of_funds",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5432492851436985,
+    "id": "train:06545",
+    "predicted_label": "verify_source_of_funds",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5766954741873509,
+    "id": "train:06520",
+    "predicted_label": "verify_source_of_funds",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3656722418878637,
+    "id": "train:06571",
+    "predicted_label": "verify_source_of_funds",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5446480127603163,
+    "id": "train:06554",
+    "predicted_label": "verify_source_of_funds",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.6229972603340687,
+    "id": "train:06541",
+    "predicted_label": "verify_source_of_funds",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.24294809345595247,
+    "id": "train:06518",
+    "predicted_label": "verify_source_of_funds",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.24414462012582042,
+    "id": "train:06503",
+    "predicted_label": "verify_source_of_funds",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.6500585226120785,
+    "id": "train:06507",
+    "predicted_label": "verify_source_of_funds",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.37949694582708116,
+    "id": "train:06565",
+    "predicted_label": "verify_source_of_funds",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.31364072864449977,
+    "id": "train:06673",
+    "predicted_label": "transfer_timing",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.09439851773541903,
+    "id": "train:06613",
+    "predicted_label": "transfer_timing",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.24460182200763028,
+    "id": "train:06705",
+    "predicted_label": "transfer_timing",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.059804216800035566,
+    "id": "train:06634",
+    "predicted_label": "transfer_into_account",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.4269527952570585,
+    "id": "train:06619",
+    "predicted_label": "transfer_timing",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.15299520879655515,
+    "id": "train:06721",
+    "predicted_label": "transfer_timing",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.23686560584815858,
+    "id": "train:06640",
+    "predicted_label": "transfer_timing",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1025566759999763,
+    "id": "train:06664",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.22089423451657117,
+    "id": "train:06717",
+    "predicted_label": "transfer_timing",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.15452818909967592,
+    "id": "train:06661",
+    "predicted_label": "transfer_timing",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.08095956991750544,
+    "id": "train:06786",
+    "predicted_label": "reverted_card_payment?",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.07045956330891455,
+    "id": "train:06745",
+    "predicted_label": "reverted_card_payment?",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.059423083797316346,
+    "id": "train:06771",
+    "predicted_label": "Refund_not_showing_up",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.14778849963690255,
+    "id": "train:06871",
+    "predicted_label": "reverted_card_payment?",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.14113499949121433,
+    "id": "train:06851",
+    "predicted_label": "reverted_card_payment?",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.29372007336471395,
+    "id": "train:06879",
+    "predicted_label": "reverted_card_payment?",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.23285615186649697,
+    "id": "train:06778",
+    "predicted_label": "reverted_card_payment?",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2601758597284126,
+    "id": "train:06839",
+    "predicted_label": "Refund_not_showing_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.05717030373445414,
+    "id": "train:06723",
+    "predicted_label": "declined_card_payment",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.2616109450734499,
+    "id": "train:06845",
+    "predicted_label": "reverted_card_payment?",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.52161205877884,
+    "id": "train:06937",
+    "predicted_label": "change_pin",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.18683948338200584,
+    "id": "train:06943",
+    "predicted_label": "pin_blocked",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5617282561182995,
+    "id": "train:06963",
+    "predicted_label": "change_pin",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.46801649692623865,
+    "id": "train:06886",
+    "predicted_label": "change_pin",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5517799755076555,
+    "id": "train:06905",
+    "predicted_label": "change_pin",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3757500543559692,
+    "id": "train:06912",
+    "predicted_label": "change_pin",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2341212827353075,
+    "id": "train:06956",
+    "predicted_label": "change_pin",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5257765531586873,
+    "id": "train:06958",
+    "predicted_label": "change_pin",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4036478631180275,
+    "id": "train:06931",
+    "predicted_label": "change_pin",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.27753054445020786,
+    "id": "train:06918",
+    "predicted_label": "change_pin",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.196006457593501,
+    "id": "train:07129",
+    "predicted_label": "failed_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1470179973482682,
+    "id": "train:07142",
+    "predicted_label": "beneficiary_not_allowed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.22675828973330525,
+    "id": "train:07158",
+    "predicted_label": "beneficiary_not_allowed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.12750399055700215,
+    "id": "train:07078",
+    "predicted_label": "beneficiary_not_allowed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.0844998156311777,
+    "id": "train:07043",
+    "predicted_label": "beneficiary_not_allowed",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.23414885540688574,
+    "id": "train:07058",
+    "predicted_label": "beneficiary_not_allowed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.24114493152624775,
+    "id": "train:07044",
+    "predicted_label": "failed_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.10730774510865944,
+    "id": "train:07015",
+    "predicted_label": "beneficiary_not_allowed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.13584189726634718,
+    "id": "train:07091",
+    "predicted_label": "beneficiary_not_allowed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.08306750458024646,
+    "id": "train:07124",
+    "predicted_label": "beneficiary_not_allowed",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.18348631989956402,
+    "id": "train:07215",
+    "predicted_label": "transfer_fee_charged",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.13871734526311924,
+    "id": "train:07314",
+    "predicted_label": "transfer_fee_charged",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2543312951702286,
+    "id": "train:07193",
+    "predicted_label": "transfer_fee_charged",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.04583971423442388,
+    "id": "train:07218",
+    "predicted_label": "extra_charge_on_statement",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.17447289042030642,
+    "id": "train:07323",
+    "predicted_label": "card_payment_fee_charged",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.22059492369815273,
+    "id": "train:07182",
+    "predicted_label": "transfer_fee_charged",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.35861062553320794,
+    "id": "train:07201",
+    "predicted_label": "transfer_fee_charged",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1905638247627788,
+    "id": "train:07200",
+    "predicted_label": "transfer_fee_charged",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.15590283772813537,
+    "id": "train:07313",
+    "predicted_label": "transfer_fee_charged",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.13929772627397075,
+    "id": "train:07276",
+    "predicted_label": "top_up_by_bank_transfer_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.08463796414933661,
+    "id": "train:07418",
+    "predicted_label": "transfer_not_received_by_recipient",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.12401327996921205,
+    "id": "train:07398",
+    "predicted_label": "receiving_money",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.12904393819919452,
+    "id": "train:07413",
+    "predicted_label": "receiving_money",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.46981660612680143,
+    "id": "train:07333",
+    "predicted_label": "receiving_money",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1192366822264737,
+    "id": "train:07427",
+    "predicted_label": "receiving_money",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1556500450433329,
+    "id": "train:07385",
+    "predicted_label": "receiving_money",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.051478416768160694,
+    "id": "train:07370",
+    "predicted_label": "verify_source_of_funds",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.12400494952691453,
+    "id": "train:07394",
+    "predicted_label": "receiving_money",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.14386927373664962,
+    "id": "train:07339",
+    "predicted_label": "receiving_money",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.17844015962927914,
+    "id": "train:07371",
+    "predicted_label": "receiving_money",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3830841564494601,
+    "id": "train:07534",
+    "predicted_label": "failed_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3865584499450566,
+    "id": "train:07549",
+    "predicted_label": "failed_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.26198467612586557,
+    "id": "train:07456",
+    "predicted_label": "failed_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.15877965986787954,
+    "id": "train:07518",
+    "predicted_label": "failed_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.286370941177653,
+    "id": "train:07497",
+    "predicted_label": "failed_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3251844462705879,
+    "id": "train:07444",
+    "predicted_label": "failed_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.27877078095981883,
+    "id": "train:07453",
+    "predicted_label": "failed_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.20735212567627118,
+    "id": "train:07516",
+    "predicted_label": "failed_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.145605854388118,
+    "id": "train:07535",
+    "predicted_label": "failed_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.27159261564230447,
+    "id": "train:07459",
+    "predicted_label": "failed_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3019987900479908,
+    "id": "train:07596",
+    "predicted_label": "transfer_into_account",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.17882440683377973,
+    "id": "train:07677",
+    "predicted_label": "transfer_into_account",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.23361582594548289,
+    "id": "train:07649",
+    "predicted_label": "transfer_into_account",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1688095752422307,
+    "id": "train:07630",
+    "predicted_label": "transfer_into_account",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.31115164552499797,
+    "id": "train:07571",
+    "predicted_label": "transfer_into_account",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.422882459391978,
+    "id": "train:07606",
+    "predicted_label": "transfer_into_account",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1204122363143179,
+    "id": "train:07570",
+    "predicted_label": "transfer_timing",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2685194320880831,
+    "id": "train:07608",
+    "predicted_label": "transfer_into_account",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3801334043183053,
+    "id": "train:07643",
+    "predicted_label": "transfer_into_account",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.40432393676367134,
+    "id": "train:07639",
+    "predicted_label": "transfer_into_account",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.06911916200355421,
+    "id": "train:07789",
+    "predicted_label": "card_arrival",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.35030608262577667,
+    "id": "train:07745",
+    "predicted_label": "verify_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5282628383941637,
+    "id": "train:07772",
+    "predicted_label": "verify_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5070189297201795,
+    "id": "train:07747",
+    "predicted_label": "verify_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.379345975308238,
+    "id": "train:07752",
+    "predicted_label": "verify_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4061406482588365,
+    "id": "train:07731",
+    "predicted_label": "verify_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.07091102059653627,
+    "id": "train:07750",
+    "predicted_label": "verify_top_up",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.4759379468089863,
+    "id": "train:07719",
+    "predicted_label": "verify_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.41655213440145095,
+    "id": "train:07713",
+    "predicted_label": "verify_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.26308696456087954,
+    "id": "train:07786",
+    "predicted_label": "verify_top_up",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.11366997903424028,
+    "id": "train:07815",
+    "predicted_label": "getting_spare_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.16289401624919272,
+    "id": "train:07916",
+    "predicted_label": "getting_spare_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.09130585626995921,
+    "id": "train:07829",
+    "predicted_label": "lost_or_stolen_card",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.11861120866376058,
+    "id": "train:07833",
+    "predicted_label": "getting_spare_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.12358658120303138,
+    "id": "train:07864",
+    "predicted_label": "getting_spare_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.19910503533168739,
+    "id": "train:07871",
+    "predicted_label": "getting_spare_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.22811166859539042,
+    "id": "train:07924",
+    "predicted_label": "getting_spare_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2952824501534927,
+    "id": "train:07819",
+    "predicted_label": "getting_spare_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.11898757552389455,
+    "id": "train:07921",
+    "predicted_label": "top_up_by_card_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.27774944453036887,
+    "id": "train:07830",
+    "predicted_label": "getting_spare_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5602013064730594,
+    "id": "train:07999",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.44234030728090484,
+    "id": "train:07974",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.10327387445190749,
+    "id": "train:08006",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.15248670107145657,
+    "id": "train:08040",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.31621495267054944,
+    "id": "train:07966",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1707011922476232,
+    "id": "train:08042",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.13176730573167908,
+    "id": "train:07963",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.21897310298283984,
+    "id": "train:07992",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.09410306714871094,
+    "id": "train:07964",
+    "predicted_label": "top_up_limits",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.34582171733282974,
+    "id": "train:07998",
+    "predicted_label": "top_up_by_cash_or_cheque",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.20282940139947556,
+    "id": "train:08100",
+    "predicted_label": "order_physical_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1160173602732297,
+    "id": "train:08096",
+    "predicted_label": "extra_charge_on_statement",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.06919102383172464,
+    "id": "train:08166",
+    "predicted_label": "getting_spare_card",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.19852559820288607,
+    "id": "train:08134",
+    "predicted_label": "order_physical_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.13037428651450791,
+    "id": "train:08129",
+    "predicted_label": "order_physical_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.05936276349781971,
+    "id": "train:08120",
+    "predicted_label": "order_physical_card",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.26332456217835737,
+    "id": "train:08118",
+    "predicted_label": "order_physical_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.18293160778730944,
+    "id": "train:08119",
+    "predicted_label": "order_physical_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.28984393862547314,
+    "id": "train:08146",
+    "predicted_label": "order_physical_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3040645166397995,
+    "id": "train:08089",
+    "predicted_label": "order_physical_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.49603936774705243,
+    "id": "train:08185",
+    "predicted_label": "virtual_card_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.24576069265115402,
+    "id": "train:08205",
+    "predicted_label": "virtual_card_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.12976763511870273,
+    "id": "train:08206",
+    "predicted_label": "card_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.48100697489826216,
+    "id": "train:08190",
+    "predicted_label": "virtual_card_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.21969167958000171,
+    "id": "train:08176",
+    "predicted_label": "virtual_card_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.36227530142258446,
+    "id": "train:08197",
+    "predicted_label": "virtual_card_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1857753816659744,
+    "id": "train:08182",
+    "predicted_label": "virtual_card_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3435937906762512,
+    "id": "train:08184",
+    "predicted_label": "virtual_card_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.30809008972038066,
+    "id": "train:08173",
+    "predicted_label": "virtual_card_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.47470071375014694,
+    "id": "train:08167",
+    "predicted_label": "virtual_card_not_working",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.35876367137677695,
+    "id": "train:08367",
+    "predicted_label": "wrong_exchange_rate_for_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.15576046466124266,
+    "id": "train:08273",
+    "predicted_label": "wrong_exchange_rate_for_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3070255463114225,
+    "id": "train:08352",
+    "predicted_label": "wrong_exchange_rate_for_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3016014899382225,
+    "id": "train:08264",
+    "predicted_label": "wrong_exchange_rate_for_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.15058596537054983,
+    "id": "train:08297",
+    "predicted_label": "wrong_exchange_rate_for_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.14202029636274108,
+    "id": "train:08226",
+    "predicted_label": "cash_withdrawal_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.07236414814672505,
+    "id": "train:08218",
+    "predicted_label": "wrong_exchange_rate_for_cash_withdrawal",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.31418412682063585,
+    "id": "train:08308",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.34571864241988987,
+    "id": "train:08230",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2347256656845309,
+    "id": "train:08331",
+    "predicted_label": "card_payment_wrong_exchange_rate",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3517307712574595,
+    "id": "train:08436",
+    "predicted_label": "get_disposable_virtual_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2770852486552797,
+    "id": "train:08377",
+    "predicted_label": "get_disposable_virtual_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2888509805203055,
+    "id": "train:08428",
+    "predicted_label": "get_disposable_virtual_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.13755196884245466,
+    "id": "train:08444",
+    "predicted_label": "getting_virtual_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.33399951775808473,
+    "id": "train:08400",
+    "predicted_label": "get_disposable_virtual_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4483958547076929,
+    "id": "train:08429",
+    "predicted_label": "get_disposable_virtual_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.34072871491650003,
+    "id": "train:08416",
+    "predicted_label": "get_disposable_virtual_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.28207333799682505,
+    "id": "train:08467",
+    "predicted_label": "get_disposable_virtual_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.29324899761514095,
+    "id": "train:08387",
+    "predicted_label": "get_disposable_virtual_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.493069856898212,
+    "id": "train:08383",
+    "predicted_label": "get_disposable_virtual_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.12244455573945684,
+    "id": "train:08523",
+    "predicted_label": "top_up_failed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.08210933292007276,
+    "id": "train:08609",
+    "predicted_label": "top_up_reverted",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.1550114941860371,
+    "id": "train:08484",
+    "predicted_label": "top_up_failed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.0597929397241562,
+    "id": "train:08562",
+    "predicted_label": "pending_top_up",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.3543478876237706,
+    "id": "train:08525",
+    "predicted_label": "top_up_failed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.26729856216387554,
+    "id": "train:08517",
+    "predicted_label": "top_up_failed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.23851296558670282,
+    "id": "train:08468",
+    "predicted_label": "top_up_failed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.34403670319125496,
+    "id": "train:08573",
+    "predicted_label": "top_up_failed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.15240310129923187,
+    "id": "train:08544",
+    "predicted_label": "top_up_failed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3090786101969661,
+    "id": "train:08526",
+    "predicted_label": "top_up_failed",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.12750822670311088,
+    "id": "train:08657",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.16692890079989012,
+    "id": "train:08634",
+    "predicted_label": "transfer_timing",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.046093888238868855,
+    "id": "train:08757",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.11242589345076764,
+    "id": "train:08670",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.05043903944592389,
+    "id": "train:08613",
+    "predicted_label": "topping_up_by_card",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.23091161605581487,
+    "id": "train:08625",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1228092608907974,
+    "id": "train:08781",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.14054389592349578,
+    "id": "train:08749",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.16134192285729407,
+    "id": "train:08641",
+    "predicted_label": "transfer_timing",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.12828879397185947,
+    "id": "train:08767",
+    "predicted_label": "balance_not_updated_after_bank_transfer",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.0769887351170323,
+    "id": "train:08870",
+    "predicted_label": "card_payment_fee_charged",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.19967459355528874,
+    "id": "train:08886",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.06653188287482723,
+    "id": "train:08938",
+    "predicted_label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.202060053058671,
+    "id": "train:08854",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.11417254485319249,
+    "id": "train:08889",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.024702118242924315,
+    "id": "train:08802",
+    "predicted_label": "receiving_money",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.21614678226113151,
+    "id": "train:08927",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1506047643788993,
+    "id": "train:08928",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.13025054743206174,
+    "id": "train:08859",
+    "predicted_label": "compromised_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.041091547681104575,
+    "id": "train:08906",
+    "predicted_label": "cash_withdrawal_not_recognised",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.11411196063976316,
+    "id": "train:09002",
+    "predicted_label": "exchange_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.40479207395077177,
+    "id": "train:09003",
+    "predicted_label": "exchange_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.32653332705699767,
+    "id": "train:09001",
+    "predicted_label": "exchange_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2314100394826938,
+    "id": "train:09058",
+    "predicted_label": "exchange_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3009760452332843,
+    "id": "train:08977",
+    "predicted_label": "exchange_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.30716802905783636,
+    "id": "train:08959",
+    "predicted_label": "exchange_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.322946744182327,
+    "id": "train:08978",
+    "predicted_label": "exchange_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.315003963216411,
+    "id": "train:09037",
+    "predicted_label": "exchange_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.329662382266405,
+    "id": "train:08960",
+    "predicted_label": "exchange_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.35170221489308495,
+    "id": "train:09025",
+    "predicted_label": "exchange_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.22189084072615384,
+    "id": "train:09078",
+    "predicted_label": "top_up_by_card_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.28391114434514586,
+    "id": "train:09096",
+    "predicted_label": "top_up_by_card_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.14670332963123484,
+    "id": "train:09156",
+    "predicted_label": "top_up_by_card_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.21465972869577707,
+    "id": "train:09175",
+    "predicted_label": "top_up_by_card_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3251091278380229,
+    "id": "train:09108",
+    "predicted_label": "top_up_by_card_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.28502000408343053,
+    "id": "train:09142",
+    "predicted_label": "top_up_by_card_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.24369901663552812,
+    "id": "train:09130",
+    "predicted_label": "top_up_by_card_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.16662661283627056,
+    "id": "train:09075",
+    "predicted_label": "top_up_by_card_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.17323907390808146,
+    "id": "train:09089",
+    "predicted_label": "top_up_by_card_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.21292074839398586,
+    "id": "train:09138",
+    "predicted_label": "top_up_by_card_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.25764731991413414,
+    "id": "train:09303",
+    "predicted_label": "activate_my_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.47467444607526704,
+    "id": "train:09229",
+    "predicted_label": "activate_my_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4437176578502486,
+    "id": "train:09301",
+    "predicted_label": "activate_my_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.43419654237509175,
+    "id": "train:09249",
+    "predicted_label": "activate_my_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5265973824116882,
+    "id": "train:09238",
+    "predicted_label": "activate_my_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.21479359611410964,
+    "id": "train:09287",
+    "predicted_label": "activate_my_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.32765928543412337,
+    "id": "train:09234",
+    "predicted_label": "activate_my_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.410672734416594,
+    "id": "train:09286",
+    "predicted_label": "activate_my_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.46629158889525757,
+    "id": "train:09236",
+    "predicted_label": "activate_my_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.534516237624211,
+    "id": "train:09308",
+    "predicted_label": "activate_my_card",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.21259056557120715,
+    "id": "train:09407",
+    "predicted_label": "cash_withdrawal_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.11319682214511351,
+    "id": "train:09394",
+    "predicted_label": "declined_cash_withdrawal",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.19166507659052634,
+    "id": "train:09481",
+    "predicted_label": "card_payment_fee_charged",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.239893137131592,
+    "id": "train:09505",
+    "predicted_label": "cash_withdrawal_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.17795910105678137,
+    "id": "train:09473",
+    "predicted_label": "cash_withdrawal_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3024813202708166,
+    "id": "train:09378",
+    "predicted_label": "cash_withdrawal_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1402808744125191,
+    "id": "train:09448",
+    "predicted_label": "cash_withdrawal_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2581935737379158,
+    "id": "train:09493",
+    "predicted_label": "cash_withdrawal_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1994660453769163,
+    "id": "train:09492",
+    "predicted_label": "cash_withdrawal_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2313102460566236,
+    "id": "train:09397",
+    "predicted_label": "cash_withdrawal_charge",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2188370468570032,
+    "id": "train:09622",
+    "predicted_label": "card_about_to_expire",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.30627508867503844,
+    "id": "train:09615",
+    "predicted_label": "card_about_to_expire",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.30042413733955503,
+    "id": "train:09575",
+    "predicted_label": "card_about_to_expire",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.09579999922562989,
+    "id": "train:09637",
+    "predicted_label": "card_about_to_expire",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.3672142602031478,
+    "id": "train:09557",
+    "predicted_label": "card_about_to_expire",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.35217341832323196,
+    "id": "train:09539",
+    "predicted_label": "card_about_to_expire",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.30327621495720314,
+    "id": "train:09591",
+    "predicted_label": "card_about_to_expire",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3484512286301343,
+    "id": "train:09522",
+    "predicted_label": "card_about_to_expire",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.34082491853990804,
+    "id": "train:09636",
+    "predicted_label": "card_about_to_expire",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.2902724668857153,
+    "id": "train:09605",
+    "predicted_label": "card_about_to_expire",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.13579737140633777,
+    "id": "train:09644",
+    "predicted_label": "apple_pay_or_google_pay",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3910998687554197,
+    "id": "train:09708",
+    "predicted_label": "apple_pay_or_google_pay",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4901620564825651,
+    "id": "train:09661",
+    "predicted_label": "apple_pay_or_google_pay",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1281015537439694,
+    "id": "train:09701",
+    "predicted_label": "apple_pay_or_google_pay",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.27478198067334264,
+    "id": "train:09702",
+    "predicted_label": "apple_pay_or_google_pay",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3000697769608922,
+    "id": "train:09688",
+    "predicted_label": "apple_pay_or_google_pay",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.14686543542988986,
+    "id": "train:09750",
+    "predicted_label": "apple_pay_or_google_pay",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5247614670611594,
+    "id": "train:09675",
+    "predicted_label": "apple_pay_or_google_pay",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.19061652307762464,
+    "id": "train:09765",
+    "predicted_label": "apple_pay_or_google_pay",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3809248813411075,
+    "id": "train:09724",
+    "predicted_label": "apple_pay_or_google_pay",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3316440330254576,
+    "id": "train:09826",
+    "predicted_label": "verify_my_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.40919627739662773,
+    "id": "train:09777",
+    "predicted_label": "verify_my_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.45134810406911835,
+    "id": "train:09852",
+    "predicted_label": "verify_my_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.064305820791936,
+    "id": "train:09783",
+    "predicted_label": "verify_my_identity",
+    "use_specialist": false
+  },
+  {
+    "confidence": 0.2643922588205835,
+    "id": "train:09830",
+    "predicted_label": "unable_to_verify_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.380968486363725,
+    "id": "train:09837",
+    "predicted_label": "verify_my_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.25049458545998154,
+    "id": "train:09807",
+    "predicted_label": "verify_my_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.22961553406604948,
+    "id": "train:09857",
+    "predicted_label": "unable_to_verify_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4924623840435419,
+    "id": "train:09798",
+    "predicted_label": "verify_my_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4041676389618315,
+    "id": "train:09784",
+    "predicted_label": "verify_my_identity",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.23648850975523678,
+    "id": "train:09899",
+    "predicted_label": "country_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.5261737785324405,
+    "id": "train:09901",
+    "predicted_label": "country_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.19618918160277862,
+    "id": "train:09956",
+    "predicted_label": "country_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.48996782626114116,
+    "id": "train:09874",
+    "predicted_label": "country_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3101321215395658,
+    "id": "train:09995",
+    "predicted_label": "country_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.301085666866135,
+    "id": "train:09910",
+    "predicted_label": "country_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.1741045563496904,
+    "id": "train:09890",
+    "predicted_label": "country_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.3670390398666828,
+    "id": "train:09905",
+    "predicted_label": "country_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.31314704153988404,
+    "id": "train:09927",
+    "predicted_label": "country_support",
+    "use_specialist": true
+  },
+  {
+    "confidence": 0.4630130337235397,
+    "id": "train:10000",
+    "predicted_label": "country_support",
+    "use_specialist": true
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "cache_assumption": "No cache-read discount; all inputs charged at historical cache-write rate. Static instructions shared, demonstrations query-dependent.",
+  "pilot": {
+    "expected_usd_heuristic": "0.004712625",
+    "four_attempt_backoff_timeout_seconds_without_retry_after": 9100,
+    "maximum_attempts": 80,
+    "minimum_pacing_seconds": 95,
+    "one_attempt_timeout_plus_pacing_seconds": 1295,
+    "requests": 20,
+    "reservation_usd": "0.22757600",
+    "retry_after_note": "Server headers can extend this; >3600-second single wait pauses for later resume."
+  },
+  "pricing": {
+    "as_of": "2026-09-25",
+    "cache_source": "https://developers.openai.com/api/docs/guides/prompt-caching",
+    "currency": "USD",
+    "per_million_tokens": {
+      "cache_write": "0.125",
+      "cached_input": "0.01",
+      "input": "0.10",
+      "output": "0.50"
+    },
+    "scope": "Standard, nonregional, <=272000 input tokens, no tools; excluding taxes/credits",
+    "source": "https://developers.openai.com/api/docs/pricing"
+  },
+  "pricing_status": "HISTORICAL; not reverified this session",
+  "proposed_pilot_only_cap_usd_NOT_APPROVED": "0.26",
+  "test_projection_unread": {
+    "conditional_maximum_usd": "39.8490400",
+    "conditional_payload_limit_bytes": 8586,
+    "expected_usd_heuristic": "0.735458000",
+    "four_attempt_backoff_timeout_seconds_without_retry_after": 1401400,
+    "limitation": "Uses validation request sizes only; actual test payload envelope must be recomputed after separate authorization.",
+    "maximum_attempts": 12320,
+    "minimum_pacing_seconds": 15395,
+    "one_attempt_timeout_plus_pacing_seconds": 200195,
+    "requests": 3080
+  },
+  "token_method": "Existing estimate: nominal ceil(compact UTF8 payload bytes/4), 32 output; reservation 2*bytes+8192 input, full 128 output, four attempts.",
+  "validation": {
+    "expected_usd_heuristic": "0.183864500",
+    "four_attempt_backoff_timeout_seconds_without_retry_after": 350350,
+    "maximum_attempts": 3080,
+    "minimum_pacing_seconds": 3845,
+    "one_attempt_timeout_plus_pacing_seconds": 50045,
+    "requests": 770,
+    "reservation_usd": "8.83929200",
+    "retry_after_note": "Server headers can extend this; >3600-second single wait pauses for later resume."
+  }
+}

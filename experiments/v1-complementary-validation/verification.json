@@ -1,0 +1,32 @@
+{
+  "artifacts_sha256": {
+    "quality_vs_fallback_fraction.png": "1c4109b49a5171a947c6a8464d23d8bf67b17c4e68a03bf4bbccb1b7ed71ae78",
+    "quality_vs_fallback_fraction.svg": "feced18db14684dbfe7dff3b6364552d546e7b4836b12740959b29a1767dfbff",
+    "summary.json": "7120b02785e404c6fd4281252d3bc2f99a9d6670e356c6920c1b25fef3d832a1"
+  },
+  "chart_visually_checked": true,
+  "combinations_reproduced": 90,
+  "comparison_tolerance_absolute": 2e-15,
+  "dataset_access": false,
+  "frozen_exp007_protocol_sha256": "0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00",
+  "guard_counters": {
+    "network_attempts": 0,
+    "protected_access_attempts": 0
+  },
+  "metrics_implementation": "Independent Counter-based per-class F1; full 77 classes and all request rows; no original evaluator imports.",
+  "model_executions": 0,
+  "network_or_api_calls": 0,
+  "official_test_access": false,
+  "official_test_history": "Mechanically opened in prior authorized preflight; no inference or scoring. No access in this reanalysis.",
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "source_code_sha256": "abfa1b227687cf082c0f2412f4da97bbd7d664be61a8f6d3da55704ec0a6d0d7",
+  "source_evidence_mutated": false,
+  "status": "verified offline saved-validation reanalysis",
+  "validation_ids": 770
+}

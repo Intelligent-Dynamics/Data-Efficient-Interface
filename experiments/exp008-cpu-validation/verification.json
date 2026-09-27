@@ -1,0 +1,17 @@
+{
+  "api_calls": 0,
+  "benchmark_protocol_sha256": "1a1c02fd3d1a72ddfa45cd844e47b8602cc143f8649919fe0b2700509ca6043e",
+  "files_sha256": {
+    "README.md": "a90bd5a39c53ee5b69ca87dac892658c9057371436b4f9d480cca6ae068278a2",
+    "predictions_batch_1.json": "0bd06a085541ec32fe3815c4e79fe58676efb4e2949a3a1971c6e88b9d23c491",
+    "predictions_batch_32.json": "5b8f125372f2d4edb576b869ba85ef7afbbf93d2e9e4ede6c54067c8f918e1b1",
+    "protocol.json": "1a1c02fd3d1a72ddfa45cd844e47b8602cc143f8649919fe0b2700509ca6043e",
+    "reproduce.py": "23e95199747ba9433c1a1c50f601b888f5bddea6a5e9182ba1ae8be1b8db1e29",
+    "results.json": "ed09bb0e22620d96a6eef671f34e57540314c4cf3016273ba871a4b0dfeea7aa"
+  },
+  "focused_synthetic_tests": 12,
+  "official_test_access_during_exp008": false,
+  "original_exp007_protocol_sha256": "0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00",
+  "status": "passed",
+  "timing_summary_independent_reproduction": "reproduce.py passed; medians, linear p95, throughput, counts, first-pass identity and scalar gates recomputed from compact evidence"
+}

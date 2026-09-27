@@ -1,0 +1,24 @@
+{
+  "batch_sizes": [
+    1,
+    32
+  ],
+  "batching_note": "Only dispatch size varies to measure request and batch workloads; encoder/model tokenization, precision, max length, normalization and classifier parameters unchanged. Final batch has 2 rows. Batched throughput is not interactive request latency.",
+  "execution_order": "Batch size 1 then 32. One untimed complete validation warmup for each batching mode, then five timed full validation passes for that mode.",
+  "exp007_protocol_sha256": "0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00",
+  "isolation": "Install test-file/final-test-artifact and network audit guard before data/model access. No official test open/hash/inference, paid calls, tuning or refitting.",
+  "limitations": "Single-machine reused-validation CPU measurement; sequential fixed ordering, no concurrent serving/load test, power/thermal conditions uncontrolled. Does not imply cloud price, production latency, total-system savings or free local inference. Existing 1540 training +770 validation labels; no additional labels.",
+  "loading": "Measure local encoder and classifier loading separately before warmup, excluding artifact hash validation; include lazy encoder-library imports. Filesystem may already be warm; no cold-start guarantee.",
+  "memory": "Sample process RSS using ps -o rss= (KiB -> bytes) before/after loading and warmup/every pass. Record resource.ru_maxrss process lifetime high water (Darwin bytes). Includes Python/dependencies/evidence; not isolated model allocation or continuous transient RSS.",
+  "model": "Existing frozen 20-shot seed-11 MiniLM + logistic regression; all encoder/classifier files, package versions, generation-free encoding settings and exact threshold inherited unchanged from EXP-007.",
+  "population": "Exactly 770 saved v2 validation IDs in original saved order; resolve raw texts only from pinned official training CSV. No test access, new samples or fitting.",
+  "predeclared_utc": "2026-09-27T19:52:23.808026+00:00",
+  "protocol_version": "exp008-cpu-validation-v1",
+  "study_id": "EXP-008",
+  "summary": "Pool 3850 single-request timings for median/p95 (NumPy linear percentile); keep each pass and per-batch duration. Batch throughput=3850/sum inference durations across 5 passes; retain per-pass throughput.",
+  "threads": "torch intra-op and inter-op threads=1; threadpoolctl native libraries=1; TOKENIZERS_PARALLELISM=false; deterministic torch algorithms; CPU only",
+  "timed_passes": 5,
+  "timed_path": "Preloaded raw text -> tokenization -> frozen CPU float32 MiniLM -> normalization -> LR probabilities -> exact fixed scalar gate. No cached embeddings or predictions. perf_counter_ns around each request/batch only; no network/disk logging/verification inside timer.",
+  "untimed_warmup_passes_per_batch_size": 1,
+  "verification": "Hash pinned files/packages before deserialization; check frozen encoder/classifier state before/after. Compare each pass prediction and exact gate against archived validation probabilities; report all numerical differences and gate changes, without adjusting threshold or forcing coverage."
+}

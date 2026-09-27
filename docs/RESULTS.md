@@ -1,5 +1,7 @@
 # Verified reproducible results
 
+Current status (2026-09-27): final-test quality remains unmeasured. An earlier authorized preflight mechanically opened the test, as reported by the user; this bounded v1 pass performs no further access. Historical entries below retain their original status statements. No retrieved-example Luna responses or quality results exist yet.
+
 ## EXP-002 — validation learning curve (2026-09-24)
 
 EXP-002 uses the unchanged word unigram/bigram TF-IDF + L2 multinomial logistic-regression pipeline at clean Git commit `30645360724d7fb8fe0c5a11d7dd7e02f3ac339b`. Dataset: BANKING77 revision `57ec275d8078af65b7731c2a98be812d844a6d6b`. Split protocol: `banking77-val10-v2`, seed 20260924, all 77 classes, the same 770 validation examples. Training seeds: 11, 22, 33, 44, 55; N=5/10/20. No model settings, splits, or seeds were selected using these scores.
@@ -152,3 +154,53 @@ All 90 combinations, every seed and all predeclared landmarks are preserved in t
 Accounting remains separate from quality completion: recovery usage-priced charges are **$0.0055932**; combined known usage-priced charges are **$0.0831327**. **Exact combined total spend remains unknown** because 105 original failed attempts have no returned usage. The saved conditional interval is $0.0831327–$0.31921220 under the frozen reservation assumptions, not an invoice reconciliation. Original failures are retained even though every final prediction is resolved. No actual cash-saving, total-system savings or production-latency claim follows.
 
 The complete saved offline evaluation was reproduced exactly from audited local caches. Published compact predictions plus existing versioned EXP-005 records reproduce all quality metrics; derived per-attempt token/reservation records reproduce accounting without raw response bodies, customer texts, API request IDs, credentials, weights or private caches. [Completed-validation evidence and reproduction](../experiments/exp006-completed-validation/README.md). The same **770 additional validation labels** are reused; five seeds do not create five independent holdouts. No new API calls, model fitting or official-test access occurred during promotion.
+
+
+## Bounded v1 — independently replayed complementary validation errors (2026-09-27)
+
+An independent Counter-based implementation reproduced all 90 saved combinations and every frozen 20-shot 90% acceptance set from versioned EXP-004/005/006+006R evidence, without model inference, raw data, private response caches, or test access.
+
+| Accuracy on the reused validation set | Mean ± sample SD (%) |
+| --- | ---: |
+| 20-shot specialist alone | 83.7662 ± 0.6622 |
+| Zero-shot Luna alone (one shared response set) | 79.7403 |
+| 20-shot specialist + Luna, 90% specialist coverage | 85.2727 ± 0.2693 |
+| Specialist on each matching 77-case rejected subset | 45.1948 ± 4.8069 |
+| Luna on those same rejected cases | 60.2597 ± 3.2597 |
+
+The hybrid gains **1.5065 ± 0.6660 accuracy points** and **1.5711 ± 0.7424 macro-F1 points** over its matching specialist. Seed 11/22/33/44/55 gains are respectively 8/14/18/13/5 correct answers out of 770. Luna rescues 111 specialist-error events and harms 53 specialist-correct events across the five overlapping rejected subsets, net +58. These are repeated model/case events, not independent new requests.
+
+Negative comparisons remain: at 50% fallback, the 20-shot hybrid averages 82.57% accuracy, below specialist-only 83.77%; the 5-shot 10%-fallback hybrid is 77.14%, below Luna-only 79.74%. No claim that Luna is stronger overall or frontier is supported. All curves/seed values are retained in the [independent evidence and chart](../experiments/v1-complementary-validation/README.md).
+
+Each 20-shot specialist uses 1,540 fitting labels plus the same 770 additional validation labels; the encoder has external pretraining. Five seeds do not create independent validation sets, and sample SD is not a confidence interval over new traffic. This is complementary-error evidence on development data, not final-test quality, a production guarantee, or total-system dollar savings.
+
+
+## EXP-008 — measured local CPU pipeline (2026-09-27)
+
+The representative **20-shot seed-11** specialist was measured as one deployed model on the same 770 validation texts: Apple M1 Pro (10 cores, 32 GiB), macOS 26.5.1, Python 3.13.0, CPU only, PyTorch/native libraries single-threaded. Encoder/classifier weights, packages, normalization and the scalar threshold were unchanged. No fitting or new labels. Protocol `1a1c02fd3d1a72ddfa45cd844e47b8602cc143f8649919fe0b2700509ca6043e` was written before collecting timings.
+
+Each batching mode had one untimed full validation pass, then five measured passes (3,850 request events per mode). The timed path includes raw-text tokenization, MiniLM, normalization, LR probabilities and fixed routing, without cached features, network or disk logging.
+
+| Measurement | Observed value |
+| --- | ---: |
+| Warm single-request median | 5.906833 ms |
+| Warm single-request p95 | 7.824673 ms |
+| Batch-32 pooled throughput | 370.1814 requests/s |
+| Batch-32 per-pass throughput range | 307.8937–404.1805 requests/s |
+| Local encoder loading | 2.424610 s |
+| Classifier loading | 0.629625 ms |
+| Process RSS after model loading | 513.53125 MiB |
+| Lifetime process peak RSS | 582.921875 MiB |
+
+RSS is sampled with `ps` (KiB converted to bytes); the lifetime high-water mark comes from `resource.ru_maxrss` (bytes on macOS). This includes Python, libraries and evidence, not isolated model memory. Loading excludes hash verification and may benefit from warm filesystem caches; it is not a cold-process startup claim. Batch throughput is not interactive latency. All pass/per-request/batch durations and resource snapshots are retained.
+
+Every label and routing decision matched saved validation evidence in all ten timed passes: exactly 693/770 accepted, zero decision mismatches. Maximum absolute probability differences were `2.51655065e-7` at batch 1 and `2.77835884e-7` at batch 32; no confidence value or threshold was rounded or adjusted. An independent standard-library replay reproduced the timing summaries. Access guards recorded zero official-test and network attempts. [Full measurements, methodology and reproduction](../experiments/exp008-cpu-validation/README.md).
+
+A real setup failure occurred before timings: the original final-runner loader rejects the pinned library's inert `{'query': '', 'document': ''}` prompt mapping. The new benchmark-only loader permits only empty prompt strings and no default/applied prompt, while checking exact frozen weights and settings. The original runner is unchanged; it needs a minimal compatibility review before final execution. These measurements are specific to this machine and workload; no cloud price, free-compute assumption, production latency or total-system saving is inferred.
+
+
+## EXP-009 — measured offline retrieval overhead; no LLM quality result (2026-09-27)
+
+One serial, single-threaded pass over the 770 existing validation query embeddings measured exact retrieval median/p95 **0.750563/0.853890 ms** and prompt construction plus isolation checks **2.051438/2.270002 ms**. Query vectors were reused from the verified frozen cache; these values exclude encoding and are not end-to-end inference or service latency. Every query duration is retained in [the companion evidence](../experiments/exp009-retrieved-luna/overhead.json).
+
+The prepared baseline retrieves exactly 20 examples by normalized-vector cosine similarity from only the 1,540 original seed-11 20-shot training IDs; ties use ascending training ID. All 1,540 training labels count, plus the reused 770 validation labels. The companion preserves original encoder, generation settings, strict intent schema and fixed threshold. **Paid pilot/validation/test evaluation NOT RUN:** no retrieved-Luna quality, fallback gain, actual API charge or total-system saving is claimed. Historical estimates are preparation assumptions documented in the experiment log, not measured spend.
