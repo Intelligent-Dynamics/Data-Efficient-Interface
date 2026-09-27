@@ -1,4 +1,5 @@
 """EXP-007 synthetic specialist checks: no official dataset or real encoder access."""
+from collections import UserDict
 from copy import deepcopy
 from pathlib import Path
 import sys
@@ -313,3 +314,56 @@ def test_immutable_checkpoint_fsyncs_parent_directory(synthetic, monkeypatch):
     assert calls == [path.parent, path.parent]
     final._write_once(path, {'synthetic': True})
     assert calls[-1] == path.parent
+
+
+@pytest.mark.parametrize('prompts', [{}, {'query': '', 'document': ''}, {'custom': ''},
+                                   UserDict({'query': '', 'document': ''})])
+def test_original_loader_accepts_only_inert_mapping_without_mutation(prompts, monkeypatch):
+    encoder = SyntheticEncoder()
+    encoder.prompts = prompts
+    original_mapping = encoder.prompts
+    before = dict(prompts)
+    calls = []
+    def constructor(*args, **kwargs):
+        calls.append((args, kwargs))
+        return encoder
+    monkeypatch.setitem(sys.modules, 'sentence_transformers', SimpleNamespace(SentenceTransformer=constructor))
+    loaded = final._load_local_encoder('/synthetic/local/snapshot')
+    assert loaded is encoder and loaded.prompts is original_mapping
+    assert dict(loaded.prompts) == before and loaded.default_prompt_name is None
+    assert calls == [(('/synthetic/local/snapshot',), {
+        'device': 'cpu', 'backend': 'torch', 'local_files_only': True,
+        'trust_remote_code': False, 'prompts': {}, 'default_prompt_name': None,
+        'model_kwargs': {'use_safetensors': True, 'attn_implementation': 'eager'},
+    })]
+    assert not loaded.training and not loaded.weight.requires_grad
+
+
+@pytest.mark.parametrize('prompts', [
+    None, [], (), '', 0, [('query', '')],
+    {'query': 'prefix'}, {'query': ' '}, {'query': '\n'},
+    {'query': None}, {'query': False}, {'query': 0}, {'query': b''},
+    {'query': []}, {'query': {}}, {1: ''}, {None: ''},
+    {'query': '', 'document': 'prefix'},
+])
+def test_original_loader_rejects_nonempty_or_malformed_prompts(prompts, monkeypatch):
+    encoder = SyntheticEncoder()
+    encoder.prompts = prompts
+    monkeypatch.setitem(sys.modules, 'sentence_transformers',
+                        SimpleNamespace(SentenceTransformer=lambda *args, **kwargs: encoder))
+    with pytest.raises(ValueError, match='prompts must remain disabled'):
+        final._load_local_encoder('/synthetic/local/snapshot')
+    assert encoder.prompts is prompts
+
+
+@pytest.mark.parametrize('default', ['query', 'document', '', False, 0])
+@pytest.mark.parametrize('prompts', [{}, {'query': '', 'document': ''}])
+def test_original_loader_rejects_any_non_none_default(default, prompts, monkeypatch):
+    encoder = SyntheticEncoder()
+    encoder.prompts = prompts
+    encoder.default_prompt_name = default
+    monkeypatch.setitem(sys.modules, 'sentence_transformers',
+                        SimpleNamespace(SentenceTransformer=lambda *args, **kwargs: encoder))
+    with pytest.raises(ValueError, match='prompts must remain disabled'):
+        final._load_local_encoder('/synthetic/local/snapshot')
+    assert encoder.prompts is prompts and encoder.default_prompt_name is default

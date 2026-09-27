@@ -413,3 +413,12 @@ Preserved implementation findings: JSON object serialization reorders keys, so p
 ## 2026-09-27 — bounded v1 final verification
 
 The full suite ran once at the end under `experiments/v1-strengthening/verify_suite.py`: **775 passed in 49.96s**. The process blocked real datasets, model/response caches and network; both guard counters were zero. No additional official-test access or API calls occurred. Source/protocol/evidence integrity and the intended compact commit scope were inspected. See `docs/V1_COMPLETION.md` for exact future commands, label/cost/time assumptions and remaining original-runner compatibility blocker. No paid pilot, final inference or final score is claimed.
+
+
+## 2026-09-27 — EXP-007 original-loader compatibility fix verified
+
+Resolved the original loader issue preserved in the EXP-008 entry without rerunning that benchmark. The original `baseline.final_specialists._load_local_encoder` now requires a mapping with string keys and exclusively empty-string values, plus `default_prompt_name is None`. Empty mappings pass; nonempty strings, malformed mappings/values and any selected default still fail. No metadata is cleared and all constructor/encoding settings are unchanged.
+
+One untimed offline validation used the patched original loader, the actual pinned local encoder, exactly the existing 770 validation texts, and all five unchanged 20-shot classifiers. Encoder/file/package/classifier integrity checks passed before/after; zero trainable parameters. For every seed, maximum probability/confidence difference from saved validation evidence was **0.0**, with zero label or routing mismatches and **693/770** accepted. New evidence and source hashes are in `experiments/exp007-loader-compatibility/`; old verification records and all previous tracked experiment files remain byte-identical. No protocol binding conflicted with this assertion change; runtime resume checks were not weakened.
+
+Full suite run once: **807 passed in 52.55s** (32 added synthetic cases). Both verification processes recorded zero forbidden access attempts. EXP-007 remains `0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00`; EXP-009 remains `b78f3d32a9bd86ea130ce1f51e2feded9d52b5f5ff796507c49d6f53fccc3334`. No further official-test access, API calls, new fitting, pilot, test preflight, final evaluation or CPU timing study occurred. This is compatibility verification, not a new research-quality result or execution authorization.

@@ -5,6 +5,8 @@ The guarded CLI must authorize unsealing before constructing its ID/text rows.
 All writes are immutable checkpoints; resumed checkpoints are fully revalidated.
 """
 
+from collections.abc import Mapping
+
 import hashlib
 import importlib.metadata
 import os
@@ -104,7 +106,10 @@ def _load_local_encoder(snapshot):
     _require(encoder.max_seq_length == ENCODING['max_seq_length'] and
              encoder.get_sentence_embedding_dimension() == ENCODING['dimensions'],
              'Pinned encoder architecture/settings mismatch')
-    _require(not encoder.prompts and encoder.default_prompt_name is None,
+    _require(isinstance(encoder.prompts, Mapping) and
+             all(isinstance(name, str) and isinstance(value, str) and value == ''
+                 for name, value in encoder.prompts.items()) and
+             encoder.default_prompt_name is None,
              'Encoder prompts must remain disabled')
     freeze_encoder(encoder)
     return encoder

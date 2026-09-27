@@ -1,0 +1,56 @@
+{
+  "actual_loader_guard_counters": {
+    "network_access_attempts": 0,
+    "official_test_access_attempts": 0
+  },
+  "actual_loader_validation": "All five seeds: max probability/confidence difference 0.0, zero label/gate differences, 693/770 accepted; frozen state and pinned file/package/classifier integrity passed.",
+  "api_calls_this_fix": 0,
+  "base_commit": "b5a2191d97f00a25344f65b35c3b5d86b5696237",
+  "cpu_timing_study_rerun": false,
+  "frozen_protocol_files_sha256": {
+    "experiments/exp007-fixed-threshold-preparation/protocol.json": "0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00",
+    "experiments/exp009-retrieved-luna/protocol.json": "b78f3d32a9bd86ea130ce1f51e2feded9d52b5f5ff796507c49d6f53fccc3334"
+  },
+  "full_suite": {
+    "command": ".venv/bin/python experiments/v1-strengthening/verify_suite.py",
+    "elapsed_seconds": 52.866888666991144,
+    "exit_code": 0,
+    "failed": 0,
+    "fixture_directory": "/private/tmp/v1-offline-suite-1bj3to7x/fixtures",
+    "full_runs_this_fix": 1,
+    "guards": {
+      "network_attempts": 0,
+      "protected_access_attempts": 0
+    },
+    "passed": 807,
+    "pytest_seconds": 52.55,
+    "scope": "Synthetic test suite; real data, weights, response caches and network denied"
+  },
+  "historical_verification_records_rewritten": false,
+  "integrity_checks_disabled_or_rebound": false,
+  "milestone": "EXP-007 original encoder-loader compatibility fix",
+  "model_fits": 0,
+  "official_test_access_this_fix": false,
+  "original_inventory_changes": [
+    "baseline/final_specialists.py",
+    "tests/test_final_specialists.py"
+  ],
+  "patched_loader_source_sha256": "c443f4a4136f4737e9b4188dcd3007e6a4c461627dd630deebbc67406fe41961",
+  "previous_loader_source_sha256": "036af93ee40b74ea4563f7e5b445cd7ba74ff0d0ffdcbdaf848b4aed38f441b1",
+  "previous_tracked_experiment_files_byte_identical": true,
+  "previous_tracked_experiment_files_checked": 174,
+  "reviewed_files_sha256": {
+    "README.md": "0da3a244e917181783e03b63928293954b594772b26f241c6a04a027b0374e56",
+    "baseline/final_specialists.py": "c443f4a4136f4737e9b4188dcd3007e6a4c461627dd630deebbc67406fe41961",
+    "docs/CURRENT_PLAN.md": "b94df8ba7cd26ac19a1743630e1d3ce3a0d899802c5863630ffb0790cbee1357",
+    "docs/EXPERIMENTS.md": "d742bde72bc83182dc6b3e72929ebd26b49df9961ac4d81791fa2cde0ceb0a34",
+    "docs/PROJECT_CONTEXT.md": "6777aa552f1526941f9a322e55e5c573625f2e99e22ca30e38519dd40cfbf289",
+    "docs/V1_COMPLETION.md": "696e2cac59ab1e10355692ac102079b5d6ce617bb31ae8e0f5ca280aeae528d5",
+    "experiments/exp007-loader-compatibility/README.md": "e14484b33c5911f9d3ad53003a40e9f2464c86b247abd32544465d4a355c4c64",
+    "experiments/exp007-loader-compatibility/validation_check.json": "6bc8c7891b4aa0cd629e2c363d0186ae4a1874df1e8f5397cf0d6cb9ca0812e0",
+    "experiments/exp007-loader-compatibility/verify_validation.py": "c7836167189f65734838f5cfa54c192a75402016fe556a4750fbf5e3a7728488",
+    "experiments/v1-strengthening/verify_suite.py": "b823aff0dc31db81b821e410344b404b55dcf6a86d428ae6cafa62ad098fa7d1",
+    "tests/test_final_specialists.py": "465de7094038a5f4d04e321f6294796cd292b6533f3bb3f69dbfd556c92a418d"
+  },
+  "verified_utc": "2026-09-27T22:06:54.740659+00:00"
+}

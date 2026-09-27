@@ -61,7 +61,7 @@ After explicit pilot-only approval (the proposed $0.26 is not yet approved):
 
 Use local `OPENAI_API_KEY` and optional `OPENAI_PROJECT_ID`; never paste their values into chat, command arguments or Git. Pilot outcomes are formatting/usage/cost checks, not a reliable 77-class quality estimate or prompt-selection opportunity.
 
-**Resolve the original loader blocker below before these final commands.** Obtain new original-test access/live approvals and a sufficient approved cap; preserve its original five-seed scope:
+**The original loader blocker is resolved by the separate compatibility addendum below.** Obtain new original-test access/live approvals and a sufficient approved cap; preserve its original five-seed scope:
 
 ```sh
 .venv/bin/python -m baseline.final_test live \
@@ -101,3 +101,12 @@ Full suite: **775 passed in 49.96 s**, run once at the end via `experiments/v1-s
 The real CPU setup exposed an existing `final_specialists._load_local_encoder` assertion that rejects SentenceTransformer 5.1.1's inert empty `query`/`document` prompt mapping. No prompt is applied (`default_prompt_name=None` and explicit no-prompt encoding). The new CPU helper accepts only empty prompt strings and verifies frozen state/settings; original source and protocol remain untouched. **Smallest remedy before original EXP-007 execution:** a narrowly reviewed assertion fix allowing inert empty mappings while still rejecting nonempty/default prompts, with synthetic regression coverage. No model, prompt, threshold or experimental-method change is needed. Do not bypass the guard or launch the original test first.
 
 Other outstanding requirements are authorization and current official compatibility/pricing verification for future paid execution, plus actual companion test payload sizing after separately approved access. Retrieved-Luna quality and final-test quality remain unknown. No further model, dataset, tuning, calibration, GPU serving or frontend work is proposed.
+
+
+## 2026-09-27 addendum — original loader compatibility blocker resolved
+
+The blocker above records the bounded-v1 pass as it happened. A subsequent narrow fix changes only the original loader's prompt assertion: accept an empty mapping or string-keyed mapping with all empty-string values, only when `default_prompt_name is None`. It still rejects malformed/nonempty/default prompts and never clears the mapping or changes encoding settings.
+
+The patched original loader loaded the pinned encoder offline and encoded all 770 existing validation texts once, without timing. All five saved classifiers passed integrity/settings/state checks. Maximum absolute probability and confidence differences were **0.0**, predicted-label and routing mismatches were **0**, and every seed accepted **693/770**. Encoder state remained equal to the frozen hash with zero trainable parameters. This does not replace the earlier CPU benchmark or its recorded numerical differences.
+
+The full synthetic suite ran once: **807 passed in 52.55s**, including 32 new assertion cases. Suite and actual-loader guard counters were zero. No further official-test access, API call, pilot, preflight, final evaluation, model fitting or timing study occurred. Both EXP-007 and EXP-009 protocol hashes remain unchanged; all previous tracked experiment evidence is byte-identical. New source hashes and checks are kept separately in [compatibility evidence](../experiments/exp007-loader-compatibility/README.md). Historical verification records and runtime source bindings remain intact. The loader blocker is resolved; future execution permissions/pricing prerequisites above remain outstanding.

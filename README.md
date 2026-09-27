@@ -17,7 +17,7 @@ The chart reports classification quality against the fraction sent to Luna, with
 - Retrieved-example comparison: [EXP-009](experiments/exp009-retrieved-luna/README.md) adds exactly 20 retrieved demonstrations from the same seed-11 training pool. Implementation and offline requests are prepared; no paid pilot or retrieved-Luna quality result exists.
 - Final-test performance remains **unmeasured**. The user reports that an earlier authorized preflight mechanically opened the official test. No test predictions or scores have been produced; this pass performs no further access. EXP-007's original protocol remains unchanged, and proceeding immediately to its live run is superseded by this bounded v1 scope.
 
-A compatibility assertion in the original runner currently rejects inert empty encoder prompts; its minimal fix needs review before final launch. The new CPU helper validates empty prompts without changing model behavior. All paid collection requires new, experiment-specific approval and a numeric cap. Historical prices and conditional estimates grant no spending permission. See [current plan](docs/CURRENT_PLAN.md) for the next bounded step.
+The original runner's empty-prompt compatibility blocker is resolved: the patched original loader reproduced all five saved validation predictions and gates exactly, with no numerical difference. See the separate [compatibility verification](experiments/exp007-loader-compatibility/README.md); frozen protocols and historical evidence are unchanged. All paid collection requires new, experiment-specific approval and a numeric cap. Historical prices and conditional estimates grant no spending permission. See [current plan](docs/CURRENT_PLAN.md) for the next bounded step.
 
 ## Historical reproduction commands
 
