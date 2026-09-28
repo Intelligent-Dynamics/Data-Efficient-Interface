@@ -9,6 +9,7 @@ import os
 from urllib.error import URLError
 
 from . import general, recovery
+from .final_collection import _wait_for_cooldown
 from .data import ROOT, read_json, sha256
 from .general_protocol import SETTINGS, PRICING, ENDPOINT, cache_key, digest, estimate
 from .selective import require
@@ -92,7 +93,8 @@ def _entry(output, rid, body, protocol, kind):
     return path,entry
 
 
-def collect(requests, protocol, output, approval, scope, *, transport=None, sleep=time.sleep, clock=time.time):
+def collect(requests, protocol, output, approval, scope, *, transport=None,
+            sleep=time.sleep, clock=time.time, monotonic=time.monotonic):
     require(scope in ('pilot','validation','test'), 'Unknown collection scope')
     require(isinstance(approval,Approval), 'Explicit approval object required')
     cap = approval.validate(protocol,live=True,test=scope=='test')
@@ -124,7 +126,7 @@ def collect(requests, protocol, output, approval, scope, *, transport=None, slee
                 'code_sha256':{p.name:sha256(p.read_bytes()) for p in sorted((ROOT/'baseline').glob('retrieved*.py'))},
                 'reused_code':general.code_record(),
                 'reused_helper_sha256':{name:sha256((ROOT/'baseline'/name).read_bytes()) for name in
-                    ('recovery.py','final_protocol.py','final_test.py','final_specialists.py','cpu_benchmark.py',
+                    ('recovery.py','final_collection.py','final_protocol.py','final_test.py','final_specialists.py','cpu_benchmark.py',
                      'embeddings.py','data.py','selective.py','thresholds.py')}}
     with general.lock(output):
         mp=output/'manifest.json'
@@ -146,12 +148,10 @@ def collect(requests, protocol, output, approval, scope, *, transport=None, slee
                 entry['attempts'][-1].update(status='interrupted_unknown',predicted_label=None,retryable=True)
                 general.atomic_json(path,entry)
             while len(entry['attempts'])<4 and (not entry['attempts'] or entry['attempts'][-1].get('retryable')):
-                delay=recovery.next_delay(entries,rid,clock())
-                if delay>recovery.POLICY['maximum_single_wait_seconds']:
+                delay=_wait_for_cooldown(entries,rid,recovery.POLICY['maximum_single_wait_seconds'],
+                                         sleep=sleep,clock=clock,monotonic=monotonic)
+                if delay is None:
                     halted='cooldown_pause'; break
-                if delay:
-                    sleep(delay)
-                    require(recovery.next_delay(entries,rid,clock())<=.001,'Cooldown not elapsed')
                 approval.validate(protocol,live=True,test=scope=='test')
                 bound=estimate(body)
                 require(Decimal(general.accounting(entries)['committed_reservation_usd'])+Decimal(bound['attempt_reservation_usd'])<=cap,

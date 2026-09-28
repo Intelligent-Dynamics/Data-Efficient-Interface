@@ -1,0 +1,78 @@
+{
+  "base_git_head": "36495acf8e90b763789792c9bbca509bc708de7b",
+  "checkpoint": "Cooldown-only helper port; existing live resume remains source-bound",
+  "frozen_protocols_sha256": {
+    "experiments/exp007-fixed-threshold-preparation/protocol.json": "0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00",
+    "experiments/exp009-retrieved-luna/protocol.json": "b78f3d32a9bd86ea130ce1f51e2feded9d52b5f5ff796507c49d6f53fccc3334"
+  },
+  "preservation": {
+    "all_prior_files_byte_identical": true,
+    "directory": "artifacts/exp009-retrieved-luna-v1/test",
+    "file_count": 834,
+    "inventory_sha256": "fa99456da1273e899324ce6e6463dc8a0018ab64c19c1de34bd075ee05669199",
+    "ledger_sha256": "1bff1c0dde68eadca2c74aa5665b4555f5cd02ff1689486945fd4fef8b13a752",
+    "manifest_sha256": "2de36e011bc7936ac591a85f612958235cd13d21b70e6bb950eca9fcc1082f21",
+    "prepared_files_sha256": {
+      "overhead.json": "e6d57f6053ee697833dfeba1baed2ccc717415291937ce502e37dc3581419159",
+      "prepared.json": "75ee925814d2dadddce848ddab2d89d1e7ec23c496f1997d0844d5ae7692cdce",
+      "requests.json": "858b27f52b98f640e4e361aefead55c166cbcc8bc5bcf971376d5f677adb82d7",
+      "retrieval_evidence.json": "72339062d7a6bb3e33aabb367fe7d089cc25884d0d80a5326c85f4e7362ea9f9",
+      "specialist.json": "b92c3e679ed31a9ad7b3a41c4fbeb645099c1ec1b59977d19c5d7db4dd1d9a26"
+    },
+    "prepared_request_count": 3080,
+    "prepared_requests_sha256": "858b27f52b98f640e4e361aefead55c166cbcc8bc5bcf971376d5f677adb82d7",
+    "recorded_attempts": 826,
+    "successful_responses_preserved": 826
+  },
+  "resume_integrity": {
+    "conflicting_fields": [
+      "code_sha256.retrieved_collection.py",
+      "reused_helper_sha256.final_collection.py (new binding)",
+      "reused_code.git_head (after commit)"
+    ],
+    "historical_manifest_and_ledger_untouched": true,
+    "manifest_check_bypassed": false,
+    "migration_implemented": false,
+    "saved_cap_usd": "36.00",
+    "saved_full_retry_reservation_usd": "35.32756300",
+    "status": "blocked pending separately approved exact-source compatibility support"
+  },
+  "session_scope": {
+    "api_calls": 0,
+    "live_execution": false,
+    "model_inference": false,
+    "new_test_preflight": false,
+    "protocols_or_requests_changed": false,
+    "raw_test_file_access": false,
+    "test_scoring": false
+  },
+  "source_change": {
+    "description": "Import and call reviewed _wait_for_cooldown; inject monotonic; include helper in new manifest provenance. Existing manifest equality and cooldown_pause retained.",
+    "file": "baseline/retrieved_collection.py",
+    "helper_sha256": "fbf3771bc1954a8434692e3398f34ba211f50aa88f2e77b987baa3f74ae7e4fc",
+    "original_sha256": "00c2ddd0a45d9238c87931ff5dc282da69591d254d310e43589082068aee66da",
+    "patched_sha256": "5ac338e4babf2e7acc66545efcdf8724dc6bc2b292d559dc160686b8e56fc122",
+    "reused_unchanged_helper": "baseline/final_collection.py"
+  },
+  "study_id": "EXP-009",
+  "tests": {
+    "focused": {
+      "command": ".venv/bin/python -m pytest -q tests/test_retrieved.py tests/test_final_collection.py",
+      "passed": 142,
+      "seconds": 24.13
+    },
+    "full_suite": {
+      "command": ".venv/bin/python experiments/v1-strengthening/verify_suite.py",
+      "exit_code": 0,
+      "guards": {
+        "network_attempts": 0,
+        "protected_access_attempts": 0
+      },
+      "passed": 888,
+      "runs": 1,
+      "seconds": 66.11
+    },
+    "new_regression_cases": 9
+  },
+  "verified_utc": "2026-09-28T22:19:41.328657+00:00"
+}

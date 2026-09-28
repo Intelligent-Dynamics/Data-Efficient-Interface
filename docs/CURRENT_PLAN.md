@@ -2,6 +2,14 @@
 
 Updated: 2026-09-28 UTC. Active protocol: **`banking77-val10-v2`**.
 
+## EXP-009 cooldown port (2026-09-28 UTC)
+
+The collector now directly reuses EXP-007's unchanged `_wait_for_cooldown` helper, with independently injected monotonic time and the helper's source hash recorded in new collection manifests. Minimum gap, Retry-After, backoff, maximum wait and retry limits are unchanged. This mechanical fix does not change either protocol or any experimental setting.
+
+Read-only inspection found the existing **3,080 prepared test requests** and an interrupted **826-success/826-attempt** collection (no missing usage, no completed execution report). These artifacts remain untouched; no new preflight, inference, API call or scoring occurred. All **834** prior files remain byte-identical. **142 focused tests** and **888 full-suite tests** passed; the full guarded suite ran once, with zero protected-access or network attempts. Preservation and source evidence: `experiments/exp009-cooldown-fix/verification.json`.
+
+**Existing-run resume remains blocked by source integrity.** Its immutable collection manifest binds the original collector hash and Git commit `36495acf8e90b763789792c9bbca509bc708de7b`. The patched source, added helper binding and new commit intentionally fail the unchanged exact manifest comparison. This narrow cooldown patch does not implement or authorize a migration. The next required step before any live resume is separately approved, exact-source compatibility support that preserves the original manifest, journal and 826 successes. Keep the existing $36.00 cap and $35.32756300 full reservation; do not reset or create a replacement run. Future pricing acknowledgement must follow a fresh official-price check.
+
 ## Repository and status
 
 **Latest milestone: completed EXP-007 official-test checkpoint.** All 3,080 Luna outputs are resolved and all five frozen specialist/hybrid policies are scored. [Compact final-test evidence](../experiments/exp007-official-test/README.md) independently reproduces the saved scores without new inference or API calls. Mean specialist accuracy/macro-F1: **85.435065% / 85.190044%**; Luna: **81.363636% / 80.585867%**; mean hybrid: **86.487013% / 86.298575%**. The hybrid gains **1.051948 accuracy points** over specialist-only at **9.012987% mean fallback** (90.987013% specialist coverage). All five seeds improve; all individual results and sample SDs are retained.
@@ -12,7 +20,7 @@ The all-case API study records **3,081 attempts**, including one HTTP-503 attemp
 
 Checkpoint verification: **879 tests passed** in the full guarded offline suite; protected-data/model/cache access and network-attempt counters were both zero. Saved-score replay reproduced all numeric metrics exactly, and all **3,110** original run files remain byte-identical. Both frozen protocols and the runtime source are unchanged. See the [verification record](../experiments/exp007-official-test/verification.json).
 
-## Exact next milestone — separately authorized EXP-009 test preparation
+## Previous EXP-009 preflight plan — now prepared (historical)
 
 Preserve the completed original test bundle and both frozen protocols. After separate explicit authorization, prepare the already-frozen seed-11 retrieved-example comparison:
 

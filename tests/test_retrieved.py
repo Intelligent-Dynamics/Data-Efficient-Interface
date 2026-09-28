@@ -132,12 +132,16 @@ class Clock:
     def __init__(self):
         self.time = 1_700_000_000.0
         self.sleeps = []
+        self.elapsed = 0.
     def __call__(self):
         return self.time
+    def monotonic(self):
+        return self.elapsed
     def sleep(self, value):
         assert value >= 0
         self.sleeps.append(value)
         self.time += value
+        self.elapsed += value
 
 
 def response(label='a', **changes):
@@ -168,7 +172,8 @@ def case(tmp_path, monkeypatch):
     monkeypatch.setattr(general, 'code_record', lambda: {'synthetic': True})
     clock = Clock()
     return {'requests': requests, 'protocol': protocol, 'output': tmp_path / 'collection',
-            'approval': approval, 'scope': 'pilot', 'clock': clock, 'sleep': clock.sleep}
+            'approval': approval, 'scope': 'pilot', 'clock': clock, 'sleep': clock.sleep,
+            'monotonic': clock.monotonic}
 
 
 def run(case, transport):
@@ -351,3 +356,113 @@ def test_frozen_gate_cannot_be_replaced_with_coverage_target():
     fallback = [{'id': 'train:90000', 'status': 'ok', 'predicted_label': 'a'}]
     with pytest.raises(ValueError, match='threshold'):
         retrieved.evaluate_companion(truth, specialist, fallback, fallback, ['a', 'b'], .5)
+
+
+@pytest.mark.parametrize('wall_jump,expected_sleeps', [
+    (0., [4., 3.]), (100., [4., 3.]), (-3., [4., 6.]),
+])
+def test_cooldown_restart_rechecks_early_sleep_and_clock_jumps_without_resending(case, wall_jump, expected_sleeps):
+    sent = []
+    def successful(body, _):
+        sent.append(cache_key(body))
+        return response()
+    def interrupt_wait(_):
+        raise KeyboardInterrupt('SYNTHETIC wait interruption')
+    case['sleep'] = interrupt_wait
+    with pytest.raises(KeyboardInterrupt):
+        run(case, successful)
+    saved_path = entry_path(case)
+    saved_bytes = saved_path.read_bytes()
+    finished = read_json(saved_path)['attempts'][0]['finished_epoch']
+    assert len(sent) == 1
+    # A new monotonic origin, but the first success's durable wall timestamp remains.
+    clock = Clock()
+    clock.time = finished + 1.
+    waits = []
+    def early_adjusted(delay):
+        waits.append(delay)
+        if len(waits) == 1:
+            clock.sleep(1.)
+            clock.time += wall_jump
+        else:
+            clock.sleep(delay)
+    def resumed(body, timeout):
+        assert clock.elapsed >= 4. - .001
+        assert clock() >= finished + 5. - .001
+        return successful(body, timeout)
+    case.update(clock=clock, monotonic=clock.monotonic, sleep=early_adjusted)
+    result = run(case, resumed)
+    assert result['status'] == 'finished' and result['accounting']['recorded_attempts'] == 2
+    assert waits == expected_sleeps and len(sent) == len(set(sent)) == 2
+    assert saved_path.read_bytes() == saved_bytes
+    assert run(case, lambda *_: forbidden())['predictions'] == result['predictions']
+    manifest = read_json(case['output'] / 'manifest.json')
+    assert manifest['reused_helper_sha256']['final_collection.py'] == sha256((ROOT / 'baseline/final_collection.py').read_bytes())
+
+
+@pytest.mark.parametrize('header,required_wait', [('40', 40.), ('0', 30.)])
+def test_cooldown_keeps_retry_after_and_backoff_despite_forward_clock_jump(case, header, required_wait):
+    clock = case['clock']
+    waits, calls = [], []
+    def early_adjusted(delay):
+        waits.append(delay)
+        if len(waits) == 1:
+            clock.sleep(1.)
+            clock.time += 100.
+        else:
+            clock.sleep(delay)
+    def transport(body, _):
+        calls.append((cache_key(body), clock.monotonic()))
+        if len(calls) == 1:
+            limited = rate_limit()
+            limited['headers']['retry-after'] = header
+            return limited
+        assert clock.monotonic() >= required_wait - .001
+        return response()
+    case['sleep'] = early_adjusted
+    result = run(case, transport)
+    assert waits == [required_wait, required_wait - 1., 5.]
+    assert [t for _, t in calls] == [0., required_wait, required_wait + 5.]
+    assert calls[0][0] == calls[1][0] != calls[2][0]
+    assert result['status'] == 'finished' and result['accounting']['recorded_attempts'] == 3
+    assert run(case, lambda *_: forbidden())['predictions'] == result['predictions']
+
+
+@pytest.mark.parametrize('fault', ['nonadvancing', 'large_backward_jump', 'continually_early'])
+def test_cooldown_pauses_without_early_dispatch_or_new_attempt_when_wait_is_bounded(case, fault):
+    clock = case['clock']
+    waits, calls = [], []
+    def broken_wait(delay):
+        assert delay > .001
+        waits.append(delay)
+        if fault == 'large_backward_jump':
+            clock.sleep(1.)
+            clock.time -= recovery.POLICY['maximum_single_wait_seconds']
+        elif fault == 'continually_early':
+            clock.sleep(.00001)
+    def transport(body, _):
+        calls.append(cache_key(body))
+        return response()
+    case['sleep'] = broken_wait
+    result = run(case, transport)
+    assert result['status'] == 'halted' and result['halt_reason'] == 'cooldown_pause'
+    assert result['accounting']['recorded_attempts'] == len(calls) == 1
+    assert len(waits) == (64 if fault == 'continually_early' else 1)
+    assert not entry_path(case, 1).exists()
+    saved_path = entry_path(case)
+    saved_bytes = saved_path.read_bytes()
+    # Resume from the original durable deadline with a fresh monotonic clock.
+    restart = Clock()
+    restart.time = read_json(saved_path)['attempts'][0]['finished_epoch'] + 5.
+    case.update(clock=restart, monotonic=restart.monotonic, sleep=restart.sleep)
+    assert run(case, transport)['status'] == 'finished'
+    assert len(calls) == len(set(calls)) == 2 and saved_path.read_bytes() == saved_bytes
+
+
+def test_cooldown_source_drift_still_blocks_resume_without_rewriting_manifest(case, monkeypatch):
+    run(case, lambda *_: response())
+    before = {str(p): p.read_bytes() for p in case['output'].rglob('*.json')}
+    monkeypatch.setattr(general, 'code_record', lambda: {'synthetic': 'changed source'})
+    with pytest.raises(ValueError, match='Resume manifest/code/input/cap drift'):
+        run(case, lambda *_: forbidden())
+    assert before == {str(p): p.read_bytes() for p in case['output'].rglob('*.json')}
