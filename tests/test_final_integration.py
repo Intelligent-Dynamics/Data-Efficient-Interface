@@ -116,8 +116,12 @@ def integration(tmp_path, monkeypatch):
         return truth
     monkeypatch.setattr(runner, 'run_specialists', fake_specialists)
     monkeypatch.setattr(runner, 'scoring_truth', fake_truth)
+    clock = Clock()
+    collect = runner.collect
+    monkeypatch.setattr(runner, 'collect',
+                        lambda *args, **kwargs: collect(*args, **kwargs, monotonic=clock))
     return {'root': tmp_path, 'protocol': protocol, 'authorization': auth, 'output': output,
-            'calls': calls, 'rows': rows, 'labels': labels, 'clock': Clock()}
+            'calls': calls, 'rows': rows, 'labels': labels, 'clock': clock}
 
 
 def execute(case, transport):

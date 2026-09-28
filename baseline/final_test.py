@@ -14,6 +14,7 @@ from .final_protocol import (Authorization, BUNDLE, FROZEN_PROTOCOL_SHA256, load
                              runtime_code, safe_output, scoring_truth, unseal_inputs,
                              validate_protocol, verify_preparation)
 from .final_collection import collect, collection_plan, verify_completed
+from .final_compatibility import accepted_manifest
 from .final_specialists import run_specialists, verify_specialist_files
 from .fixed_routing import evaluate_fixed
 from .selective import require
@@ -170,6 +171,7 @@ def execute(authorization, root=ROOT, *, transport=None, sleep=None, clock=None)
     with lock(output):
         if not (output / 'manifest.json').exists():
             require(not any(p.name != '.lock' for p in output.iterdir()), 'New test output must be empty')
+        manifest = accepted_manifest(output / 'manifest.json', manifest, authorization, root=root)
         _persist_exact(output / 'manifest.json', manifest)
         _persist_exact(output / 'protocol.json', protocol)
         _persist_exact(output / 'preflight.json', plan)
@@ -222,6 +224,8 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('mode', choices=['dry-run', 'preflight', 'live'], nargs='?', default='dry-run')
     parser.add_argument('--approved-protocol-sha256', default='')
+    parser.add_argument('--approved-resume-compatibility-sha256', default='',
+                        help='Explicit approval of the exact cooldown-fix receipt for the existing run')
     parser.add_argument('--authorize-test-access', action='store_true')
     parser.add_argument('--authorize-live', action='store_true')
     parser.add_argument('--spending-cap-usd', default='', help='Required approved cap for live; optional proposed cap comparison for preflight')
@@ -229,7 +233,8 @@ def main(argv=None):
                         help='UTC date on which operator verified official rates still equal frozen prices')
     args = parser.parse_args(argv)
     authorization = Authorization(args.approved_protocol_sha256, args.authorize_test_access,
-                                  args.authorize_live, args.spending_cap_usd, args.acknowledge_current_pricing_date)
+                                  args.authorize_live, args.spending_cap_usd, args.acknowledge_current_pricing_date,
+                                  args.approved_resume_compatibility_sha256)
     try:
         result = dry_run() if args.mode == 'dry-run' else preflight(authorization) if args.mode == 'preflight' else execute(authorization)
     except (ValueError, FileNotFoundError) as exc:

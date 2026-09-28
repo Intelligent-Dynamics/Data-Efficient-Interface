@@ -6,6 +6,8 @@ Canonical checkout: `/Users/Andrew/Developer/data-efficient-inference`. The exis
 
 ## Current completed state
 
+**2026-09-28 UTC update:** EXP-007 live collection started after the earlier preparation and stopped at its local cooldown guard: 509 successful responses/509 attempts, 2,571 unattempted, no final score. The minimal timing repair preserves every live artifact and uses an explicitly approved exact-source compatibility receipt for future resume. See `experiments/exp007-cooldown-compatibility/README.md`; it does not authorize calls or test access. The following preparation statements describe the earlier state.
+
 EXP-006R live recovery has zero unresolved requests, and the EXP-006 + EXP-006R offline merged evaluation is complete over all 770 validation IDs and all 90 prior specialist/fallback combinations. Verified compact evidence is published in `experiments/exp006-completed-validation/`; raw response caches remain ignored. The original 718-success/52-HTTP-429 execution and its preparation write-ups remain unchanged historical evidence.
 
 Verified compact validation results record Luna standalone 79.74% accuracy / 79.01% macro-F1 and the exploratory 20-shot 90% combination at 85.27% / 84.92% mean accuracy/macro-F1. All 90 combinations and seed variance are preserved, including weaker outcomes. Every final prediction is resolved, while exact combined spend remains unknown because 105 original failed attempts lacked token usage. These are reused-validation findings, not test or production measurements.

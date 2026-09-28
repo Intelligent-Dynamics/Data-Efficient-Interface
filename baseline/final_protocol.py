@@ -60,6 +60,7 @@ class Authorization:
     authorize_live: bool = False
     spending_cap_usd: str = ''
     pricing_date: str = ''
+    resume_compatibility_sha256: str = ''
 
     def validate(self, protocol, *, live=True):
         validate_protocol(protocol)

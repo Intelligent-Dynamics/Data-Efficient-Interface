@@ -1,0 +1,64 @@
+{
+  "actual_compatibility_guard_counters": {
+    "dataset_or_model_access": 0,
+    "filesystem_write": 0,
+    "network": 0
+  },
+  "actual_saved_outer_and_inner_manifest_compatibility": "passed with patched current source; pure read-only checks only",
+  "api_calls": 0,
+  "base_commit": "aa58af8461ea3423b849d4e67a24eec93eb4dbb7",
+  "frozen_protocol_files_sha256": {
+    "experiments/exp007-fixed-threshold-preparation/protocol.json": "0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00",
+    "experiments/exp009-retrieved-luna/protocol.json": "b78f3d32a9bd86ea130ce1f51e2feded9d52b5f5ff796507c49d6f53fccc3334"
+  },
+  "full_suite": {
+    "command": ".venv/bin/python experiments/v1-strengthening/verify_suite.py",
+    "elapsed_seconds": 58.00215829210356,
+    "exit_code": 0,
+    "failed": 0,
+    "fixture_directory": "/private/tmp/v1-offline-suite-0mdaqzaz/fixtures",
+    "full_runs_this_fix": 1,
+    "guards": {
+      "network_attempts": 0,
+      "protected_access_attempts": 0
+    },
+    "passed": 863,
+    "pytest_seconds": 57.68,
+    "scope": "Synthetic test suite; real data, weights, response caches and network denied"
+  },
+  "future_resume_note": "Command dates acknowledge current UTC pricing; verify official unchanged rates first. Exact receipt approval is additional to all original live controls.",
+  "known_verification_findings": [
+    "Initial diagnostic guard rejected harmless /dev/null platform lookup; narrowly corrected device allowance, then read-only check passed.",
+    "Two focused timing-test expectation issues were adapted before the full suite; all final tests passed."
+  ],
+  "live_resume_performed": false,
+  "milestone": "EXP-007 cooldown-only repair with explicit source compatibility",
+  "model_inference": false,
+  "new_live_run_artifacts_created": 0,
+  "original_artifact_inventory_sha256": "79847d3762bfac52aaf2ac1aa5c5b50fb93989eec7cc026a84cc3e5c8d2edd3d",
+  "original_recorded_attempts": 509,
+  "original_run_files_byte_identical": 533,
+  "original_successful_response_files_byte_identical": 509,
+  "prices_reverified_this_fix": false,
+  "raw_test_or_label_access": false,
+  "receipt_sha256": "687333556fc6012f36047544c2413a8b64b3beade6a1113ea3f16662559437a1",
+  "reviewed_files_sha256": {
+    "AGENTS.md": "b38010403ff185c48ee8477322e638cdaa50e71c93fdd07493dfee3c0f450581",
+    "baseline/final_collection.py": "fbf3771bc1954a8434692e3398f34ba211f50aa88f2e77b987baa3f74ae7e4fc",
+    "baseline/final_compatibility.py": "981f6c882122547c7e585932145e38fb432e57361dba42490a7e71b4583f9bc7",
+    "baseline/final_protocol.py": "d8cd4122f2c0b64729123e60760cb80dccc221b34f374406cd130f9902e1f9c1",
+    "baseline/final_test.py": "b2523e886f30c3991c9d757c100c50e630e10020b0e74ef2d05177e12fb1cb04",
+    "docs/CURRENT_PLAN.md": "f7aba8fafe9734dbfbda5a089275d4156a78faf6b8b790e39f80149fd2ec8351",
+    "docs/EXPERIMENTS.md": "3eedc547779eccc503e1d71ffcc1d137ab398319f44b7dfc0cdf79aea6b8c291",
+    "docs/PROJECT_CONTEXT.md": "2d5a3e2060f6baf0ba004d47d3f5cbf6e7d01625230cc50a85894d06efa96e72",
+    "docs/V1_COMPLETION.md": "2ec5f1a56fd64d4f0087d7daed24b930f15f230d4ad550d56c35aa20de86d34f",
+    "experiments/exp007-cooldown-compatibility/README.md": "72dfb124f5f81fb783a64177ba10e090e0d03418d1b4438a16597630de8c4601",
+    "experiments/exp007-cooldown-compatibility/receipt.json": "687333556fc6012f36047544c2413a8b64b3beade6a1113ea3f16662559437a1",
+    "tests/test_final_collection.py": "fb2149c5b3efb4ea1baa7395fe207499bc8ee2d2a9545fd69f2232252c3c8180",
+    "tests/test_final_compatibility.py": "7e76f4f93fae55d3ed227fec849903dad838996b4a3525032ac6177e98ed7e7f",
+    "tests/test_final_integration.py": "6b2afcb4610a6da7aceaaeda2f151311137e6d204e87249cf1399052c051e716"
+  },
+  "scoring": false,
+  "unattempted_requests": 2571,
+  "verified_utc": "2026-09-28T00:49:59.310391+00:00"
+}

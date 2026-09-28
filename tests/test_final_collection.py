@@ -43,12 +43,16 @@ class Clock:
     def __init__(self):
         self.time = 1_700_000_000.0
         self.sleeps = []
+        self.elapsed = 0.
+    def monotonic(self):
+        return self.elapsed
     def __call__(self):
         return self.time
     def sleep(self, value):
         assert value >= 0
         self.sleeps.append(value)
         self.time += value
+        self.elapsed += value
 
 
 def success(label='card_arrival', **changes):
@@ -74,7 +78,7 @@ def case(tmp_path, monkeypatch):
     clock = Clock()
     return {'rows': [{'id': f'test:{i:05d}', 'text': 'SYNTHETIC customer ' + str(i % 2)} for i in range(3080)],
             'protocol': protocol, 'prompt': prompt, 'schema': schema, 'output': tmp_path / 'luna',
-            'authorization': authorization, 'clock': clock, 'sleep': clock.sleep}
+            'authorization': authorization, 'clock': clock, 'sleep': clock.sleep, 'monotonic': clock.monotonic}
 
 
 def run(case, transport):
@@ -372,8 +376,9 @@ def test_serial_cooldown_cannot_be_shortened_by_sleep_implementation(case):
     def response(*_):
         calls.append(1)
         return success()
-    with pytest.raises(ValueError, match='Cooldown has not elapsed'):
-        run(case, response)
+    report, _ = run(case, response)
+    assert report['halt_reason'] == 'cooldown_pause_resume_after_retry_after'
+    assert report['accounting']['recorded_attempts'] == 1
     assert len(calls) == 1
 
 
@@ -471,3 +476,153 @@ def test_missing_key_does_not_create_a_paid_reservation(case, monkeypatch, tmp_p
     with pytest.raises(ValueError, match='OPENAI_API_KEY must be set locally'):
         runner.collect(**case)
     assert not case['output'].exists()
+
+
+def cooldown_entries(clock, *, retry_after=0, retryable=False, attempt=1):
+    """Timing-only synthetic durable state, without any request or response text."""
+    return {'saved': {'attempts': [{'attempt': attempt, 'status': 'http_429' if retryable else 'ok',
+                                  'started_epoch': clock(), 'finished_epoch': clock(),
+                                  'retryable': retryable, 'retry_after_seconds': retry_after}]}}
+
+
+def wait(clock, entries, *, sleep=None, maximum=3600):
+    return runner._wait_for_cooldown(entries, 'next-request', maximum,
+                                    sleep=sleep or clock.sleep, clock=clock,
+                                    monotonic=clock.monotonic)
+
+
+def test_cooldown_rechecks_early_sleep_and_sleeps_only_remaining_time():
+    clock = Clock()
+    clock.time = 100.
+    entries = cooldown_entries(clock)
+    requested = []
+    def early(delay):
+        requested.append(delay)
+        clock.sleep(delay / 2 if len(requested) <= 2 else delay)
+    assert wait(clock, entries, sleep=early) == 5
+    assert requested == [5, 2.5, 1.25]
+    assert clock.elapsed == 5 and recovery.next_delay(entries, 'next-request', clock()) == 0
+
+
+@pytest.mark.parametrize('residual,sleeps', [(.0005, 0), (.0009765625, 0), (.0015, 1), (.02, 1)])
+def test_small_residual_cooldowns_respect_one_millisecond_tolerance(residual, sleeps):
+    clock = Clock()
+    clock.time = 0.
+    entries = cooldown_entries(clock)
+    clock.time = 5 - residual
+    result = wait(clock, entries)
+    assert result == pytest.approx(residual)
+    assert len(clock.sleeps) == sleeps
+    assert all(delay > .001 for delay in clock.sleeps)
+    assert recovery.next_delay(entries, 'next-request', clock()) <= .001 + 1e-12
+
+
+@pytest.mark.parametrize('wall_jump,expected', [(100., [5., 3.]), (-3., [5., 6.])])
+def test_wall_clock_jumps_cannot_shorten_initial_monotonic_cooldown(wall_jump, expected):
+    clock = Clock()
+    clock.time = 100.
+    entries = cooldown_entries(clock)
+    requested = []
+    def adjusted(delay):
+        requested.append(delay)
+        if len(requested) == 1:
+            clock.sleep(2.)
+            clock.time += wall_jump
+        else:
+            clock.sleep(delay)
+    assert wait(clock, entries, sleep=adjusted) == 5.
+    assert requested == expected
+    assert clock.elapsed >= 5.
+    assert recovery.next_delay(entries, 'next-request', clock()) == 0
+
+
+@pytest.mark.parametrize('retry_after,attempt,expected', [(100, 1, 100), (10, 2, 60), (0, 4, 240)])
+def test_cooldown_keeps_retry_after_and_exponential_backoff_across_ids(retry_after, attempt, expected):
+    clock = Clock()
+    entries = cooldown_entries(clock, retry_after=retry_after, retryable=True, attempt=attempt)
+    assert wait(clock, entries) == expected
+    assert clock.sleeps == [expected]
+    assert recovery.next_delay(entries, 'another-request', clock()) == 0
+
+
+def test_restart_reconstructs_remaining_retry_after_from_durable_timestamps(tmp_path):
+    original_clock = Clock()
+    entries = cooldown_entries(original_clock, retry_after=100, retryable=True)
+    path = tmp_path / 'synthetic-timing.json'
+    general.atomic_json(path, entries)
+    before = path.read_bytes()
+    restarted = Clock()
+    restarted.time += 20
+    assert restarted.elapsed == 0
+    assert wait(restarted, read_json(path)) == 80
+    assert restarted.sleeps == [80] and path.read_bytes() == before
+
+
+@pytest.mark.parametrize('delay,expected_sleeps', [(3600, [3600]), (3601, [])])
+def test_maximum_single_wait_boundary_still_pauses_without_shortening(delay, expected_sleeps):
+    clock = Clock()
+    result = wait(clock, cooldown_entries(clock, retry_after=delay))
+    assert result == (delay if delay <= 3600 else None)
+    assert clock.sleeps == expected_sleeps
+
+
+def test_backward_wall_jump_cannot_extend_cumulative_wait_past_bound():
+    clock = Clock()
+    entries = cooldown_entries(clock)
+    def backward(delay):
+        clock.sleep(2)
+        clock.time -= 20
+    assert wait(clock, entries, sleep=backward, maximum=10) is None
+    assert clock.elapsed == 2 and clock.sleeps == [2]
+    assert recovery.next_delay(entries, 'next-request', clock()) == 23
+
+
+def test_nonadvancing_sleeper_pauses_without_spinning():
+    clock = Clock()
+    calls = []
+    assert wait(clock, cooldown_entries(clock), sleep=calls.append) is None
+    assert calls == [5] and clock.elapsed == 0
+
+
+def test_continually_interrupted_sleeper_is_bounded_without_zero_sleeps():
+    clock = Clock()
+    requested = []
+    def interrupted(delay):
+        requested.append(delay)
+        clock.sleep(.00001)
+    assert wait(clock, cooldown_entries(clock), sleep=interrupted) is None
+    assert len(requested) == 64 and all(delay > .001 for delay in requested)
+    assert clock.elapsed < .001
+
+
+def test_resume_after_early_wait_preserves_success_and_only_dispatches_unattempted(case):
+    sent = []
+    def successful(body, _):
+        sent.append(cache_key(body))
+        return success()
+    case['sleep'] = lambda _: (_ for _ in ()).throw(KeyboardInterrupt('SYNTHETIC wait interruption'))
+    with pytest.raises(KeyboardInterrupt):
+        run(case, successful)
+    assert len(sent) == 1
+    successful_path = case['output'] / 'responses' / (sent[0] + '.json')
+    successful_bytes = successful_path.read_bytes()
+    restarted = Clock()
+    restarted.time = case['clock']() + 1
+    sleeps = []
+    def early(delay):
+        sleeps.append(delay)
+        restarted.sleep(delay / 2 if len(sleeps) == 1 else delay)
+    case.update(clock=restarted, monotonic=restarted.monotonic, sleep=early)
+    report, entries = run(case, successful)
+    assert len(sent) == len(set(sent)) == 2
+    assert sleeps == [4, 2]
+    assert report['accounting']['recorded_attempts'] == 2
+    assert report['status'] == 'completed' and all(len(e['attempts']) == 1 for e in entries.values())
+    assert successful_path.read_bytes() == successful_bytes
+
+
+def test_exact_one_millisecond_remaining_needs_no_sleep(monkeypatch):
+    clock = Clock()
+    monkeypatch.setattr(recovery, 'next_delay', lambda *_: .001)
+    assert wait(clock, {}) == .001
+    assert clock.sleeps == []

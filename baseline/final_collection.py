@@ -11,6 +11,7 @@ from . import general, recovery
 from .data import ROOT, read_json, sha256
 from .general_protocol import ENDPOINT, PRICING, SETTINGS, cache_key, digest, estimate, payload
 from .selective import require
+from .final_compatibility import accepted_manifest, record_resume_source
 
 
 def _validate(protocol, prompt, schema):
@@ -135,23 +136,50 @@ def _manifest(rows, protocol, aliases, cap, full_reservation, authorization, kin
                 'authorize_test_access': authorization.authorize_test_access, 'authorize_live': authorization.authorize_live}}
 
 
-def _require_live_preflight(output, rows, protocol, plan, cap):
+def _require_live_preflight(output, rows, protocol, plan, cap, authorization=None):
     """A direct live API entry requires the durable, completed upstream preflight."""
     from .final_protocol import runtime_code
     from .final_specialists import verify_saved_specialists
     parent = output.parent
-    manifest = read_json(parent / 'manifest.json')
-    require(manifest == {'study_id': 'EXP-007', 'protocol_sha256': digest(protocol),
-                        'rows_sha256': digest(rows), 'code_files_sha256': runtime_code(),
-                        'cap_usd': str(cap), 'test_sha256': protocol['population']['sealed_file_sha256_from_existing_metadata']},
-            'Live collector requires matching authorized dataset/code/cap preflight')
+    if not (parent / 'manifest.json').exists():
+        raise FileNotFoundError('Live collector requires durable preflight')
+    accepted_manifest(parent / 'manifest.json',
+                      {'study_id': 'EXP-007', 'protocol_sha256': digest(protocol),
+                       'rows_sha256': digest(rows), 'code_files_sha256': runtime_code(),
+                       'cap_usd': str(cap), 'test_sha256': protocol['population']['sealed_file_sha256_from_existing_metadata']},
+                      authorization, root=ROOT)
     require(read_json(parent / 'protocol.json') == protocol and read_json(parent / 'preflight.json') == plan,
             'Missing or changed complete preflight before paid collection')
     verify_saved_specialists(rows, protocol, parent)
 
 
+def _wait_for_cooldown(entries, key, maximum, *, sleep, clock, monotonic):
+    """Recheck durable deadlines after every sleep, with a bounded monotonic wait.
+
+    Wall timestamps remain authoritative across restarts. The initial remaining
+    duration also has a monotonic deadline so a forward wall adjustment cannot
+    shorten an already owed wait; a backward adjustment may conservatively extend
+    it. None pauses collection without creating an attempt or changing evidence.
+    """
+    initial = recovery.next_delay(entries, key, clock())
+    started = monotonic()
+    deadline = started + initial
+    # A broken/continually interrupted sleeper must not cause an unbounded spin.
+    for _ in range(64):
+        current = monotonic()
+        remaining = max(recovery.next_delay(entries, key, clock()), deadline - current)
+        if remaining <= .001:
+            return initial
+        if remaining > maximum or current - started + remaining > maximum + .001:
+            return None
+        sleep(remaining)
+        if monotonic() <= current:
+            return None
+    return None
+
+
 def collect(rows, protocol, prompt, schema, output, authorization, *, transport=None,
-            sleep=time.sleep, clock=time.time):
+            sleep=time.sleep, clock=time.time, monotonic=time.monotonic):
     """Return (execution report, UNIQUE-payload entries). Synthetic injection never bypasses authorization.
 
     A response is shared only when the entire frozen request is identical. Aliases explicitly
@@ -169,7 +197,7 @@ def collect(rows, protocol, prompt, schema, output, authorization, *, transport=
     if live:
         require(output.resolve() == (ROOT / protocol['outputs']['root'] / 'luna').resolve(),
                 'Live collection must use the one frozen output directory')
-        _require_live_preflight(output, rows, protocol, plan, cap)
+        _require_live_preflight(output, rows, protocol, plan, cap, authorization)
         require(bool(os.environ.get('OPENAI_API_KEY')), 'OPENAI_API_KEY must be set locally before collection')
         transport = recovery.post_recovery
     else:
@@ -180,10 +208,11 @@ def collect(rows, protocol, prompt, schema, output, authorization, *, transport=
     with general.lock(output):
         manifest_path = output / 'manifest.json'
         if manifest_path.exists():
-            require(read_json(manifest_path) == manifest, 'Resume manifest/code/rows/authorization drift')
+            manifest = accepted_manifest(manifest_path, manifest, authorization, root=ROOT)
             require((output / 'reservations.json').exists(), 'Missing durable reservation journal')
         else:
             require(not any(p.name != '.lock' for p in output.iterdir()), 'New collection directory must be empty')
+            require(not authorization.resume_compatibility_sha256, 'Compatibility cannot create a replacement run')
             general.atomic_json(manifest_path, manifest)
         history_path = output / 'authorization_history.json'
         history = read_json(history_path) if history_path.exists() else []
@@ -192,6 +221,7 @@ def collect(rows, protocol, prompt, schema, output, authorization, *, transport=
         general.atomic_json(history_path, history)
         entries = {key: _read_entry(output, key, request, protocol, kind) for key, request in requests.items()}
         general.sync_reservation_ledger(output, manifest, entries)
+        record_resume_source(output, authorization, source_code(), root=ROOT)
         for key, entry in entries.items():
             if entry['attempts'] and entry['attempts'][-1]['status'] == 'reserved':
                 entry['attempts'][-1].update(status='interrupted_unknown', predicted_label=None, retryable=True)
@@ -211,13 +241,11 @@ def collect(rows, protocol, prompt, schema, output, authorization, *, transport=
             while len(entry['attempts']) < policy['max_attempts_per_request']:
                 if entry['attempts'] and not entry['attempts'][-1].get('retryable'):
                     break
-                delay = recovery.next_delay(entries, key, clock())
-                if delay > policy['maximum_single_wait_seconds']:
+                delay = _wait_for_cooldown(entries, key, policy['maximum_single_wait_seconds'],
+                                           sleep=sleep, clock=clock, monotonic=monotonic)
+                if delay is None:
                     halted = 'cooldown_pause_resume_after_retry_after'
                     break
-                if delay:
-                    sleep(delay)
-                    require(recovery.next_delay(entries, key, clock()) <= .001, 'Cooldown has not elapsed')
                 bound = request['estimate']
                 require(Decimal(general.accounting(entries)['committed_reservation_usd']) +
                         Decimal(bound['attempt_reservation_usd']) <= cap, 'Spending cap reached')
@@ -288,8 +316,11 @@ def verify_completed(rows, protocol, prompt, schema, output, authorization):
         manifest = read_json(output / 'manifest.json')
         kind = manifest.get('kind')
         require(kind in ('live', 'synthetic'), 'Unknown collection evidence kind')
-        require(manifest == _manifest(rows, protocol, aliases, cap,
-                Decimal(plan['full_retry_reservation_usd']), authorization, kind), 'Completed collection manifest changed')
+        manifest = accepted_manifest(output / 'manifest.json',
+                    _manifest(rows, protocol, aliases, cap,
+                              Decimal(plan['full_retry_reservation_usd']), authorization, kind),
+                    authorization, root=ROOT)
+        record_resume_source(output, authorization, source_code(), root=ROOT, write=False)
         require((output / 'reservations.json').exists(), 'Completed reservation ledger is missing')
         entries = {key: _read_entry(output, key, request, protocol, kind) for key, request in requests.items()}
         general.sync_reservation_ledger(output, manifest, entries, write=False)
