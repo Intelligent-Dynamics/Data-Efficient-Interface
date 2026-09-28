@@ -1,10 +1,35 @@
 # Current plan
 
-Updated: 2026-09-27. Active protocol: **`banking77-val10-v2`**.
+Updated: 2026-09-28 UTC. Active protocol: **`banking77-val10-v2`**.
 
 ## Repository and status
 
-**Latest milestone (2026-09-28 UTC): cooldown repair for interrupted EXP-007.** The live tree contains 509 successful Luna responses/509 attempts and 2,571 unattempted requests, with no unknown attempt or completed score. A bounded remaining-delay loop replaces the fragile one-shot sleep assertion. The full synthetic suite passed **863 tests** once, and all **533** prior run files remain byte-identical. The separate [source-compatibility receipt](../experiments/exp007-cooldown-compatibility/README.md) permits only the exact old-to-patched runtime transition; existing artifacts are not rewritten. Next action, only after live authorization and current official-price acknowledgement, is the documented same-directory resume with the original $28.00 cap and explicit receipt hash. No new inference, API call, raw test access or resume occurred during this fix. Previous milestone paragraphs below remain historical.
+**Latest milestone: completed EXP-007 official-test checkpoint.** All 3,080 Luna outputs are resolved and all five frozen specialist/hybrid policies are scored. [Compact final-test evidence](../experiments/exp007-official-test/README.md) independently reproduces the saved scores without new inference or API calls. Mean specialist accuracy/macro-F1: **85.435065% / 85.190044%**; Luna: **81.363636% / 80.585867%**; mean hybrid: **86.487013% / 86.298575%**. The hybrid gains **1.051948 accuracy points** over specialist-only at **9.012987% mean fallback** (90.987013% specialist coverage). All five seeds improve; all individual results and sample SDs are retained.
+
+Five seeds share one 3,080-case test population and one Luna response set; seed SD is not a confidence interval. Each specialist uses 1,540 fitting labels plus 770 reused validation/development labels and external MiniLM pretraining. The test labels were used for scoring only. Do not tune thresholds, prompts, retrieval, models or protocols based on the completed test.
+
+The all-case API study records **3,081 attempts**, including one HTTP-503 attempt without usage, and **zero unresolved final predictions**. Usage-priced charges are **$0.332622650**, with a bounded interval of **$0.332622650–$0.334866150**, not an invoice-reconciled bill. A hypothetical routed workload would send only the rejected subset; these quantities are separate. Specialist deployment cost and total-system savings remain unmeasured. EXP-009 retrieved-example test quality is still pending.
+
+Checkpoint verification: **879 tests passed** in the full guarded offline suite; protected-data/model/cache access and network-attempt counters were both zero. Saved-score replay reproduced all numeric metrics exactly, and all **3,110** original run files remain byte-identical. Both frozen protocols and the runtime source are unchanged. See the [verification record](../experiments/exp007-official-test/verification.json).
+
+## Exact next milestone — separately authorized EXP-009 test preparation
+
+Preserve the completed original test bundle and both frozen protocols. After separate explicit authorization, prepare the already-frozen seed-11 retrieved-example comparison:
+
+```sh
+cd /Users/Andrew/Developer/data-efficient-inference
+.venv/bin/python -m baseline.retrieved_run test-preflight \
+  --approved-protocol-sha256 b78f3d32a9bd86ea130ce1f51e2feded9d52b5f5ff796507c49d6f53fccc3334 \
+  --authorize-test-access
+```
+
+**Not executed in this checkpoint.** This command reads and encodes the test inputs, verifies exact seed-11 predictions/gates against EXP-007, retrieves the frozen top-20 examples from only its 1,540 training IDs, and prepares all 3,080 payloads with a complete spending reservation. It makes zero API calls and needs no live authorization, cap or pricing flag. Test access/model execution still require a new explicit instruction. Later paid execution requires separate EXP-009 live approval, a sufficient numeric cap and current official model/pricing verification. No existing API key, documented command or EXP-007 cap grants that approval. Do not run EXP-009, repeat EXP-007 inference, or add/tune models in this checkpoint.
+
+## Historical preparation and repair checkpoints
+
+The following dated records preserve what was true at each earlier milestone. Their then-pending test/launch status is superseded by the completed checkpoint above; historical test counts remain attached to their original checks.
+
+**Earlier milestone (2026-09-28 UTC): cooldown repair for interrupted EXP-007.** The live tree contains 509 successful Luna responses/509 attempts and 2,571 unattempted requests, with no unknown attempt or completed score. A bounded remaining-delay loop replaces the fragile one-shot sleep assertion. The full synthetic suite passed **863 tests** once, and all **533** prior run files remain byte-identical. The separate [source-compatibility receipt](../experiments/exp007-cooldown-compatibility/README.md) permits only the exact old-to-patched runtime transition; existing artifacts are not rewritten. Next action, only after live authorization and current official-price acknowledgement, is the documented same-directory resume with the original $28.00 cap and explicit receipt hash. No new inference, API call, raw test access or resume occurred during this fix. Previous milestone paragraphs below remain historical.
 
 Canonical checkout: `/Users/Andrew/Developer/data-efficient-inference`. The existing repository was moved here intact from `/Users/Andrew/Documents/ChatGPT/Data-Efficient Specialist Inference`; no new repository was initialized. Before protocol edits, `main` was clean at `717b7e6`, one commit ahead of `origin/main`. Origin remains `https://github.com/Intelligent-Dynamics/data-efficient-inference.git` in the Intelligent Dynamics organization.
 
@@ -30,7 +55,7 @@ Implemented `baseline/thresholds.py` (pure gate), `baseline/threshold_inputs.py`
 
 **Guarded runner preparation complete and reviewed; OFFICIAL TEST NOT RUN.** `baseline.final_protocol`, `baseline.final_specialists`, `baseline.final_collection` and `baseline.final_test` implement the exact frozen protocol without changing its hash. The reviewed full suite passed **720 tests** (225 new since the preceding committed checkpoint, including 42 authorization-scope regressions); the new execution tests use synthetic fixtures only, and protected-access/network guard counters were zero. Authorization gates precede test-file access; model/package hashes precede unsealing; a complete four-attempt reservation precedes paid transport. ID/text-only inference, all five independent scalar gates, durable probabilities/decisions, one shared Luna response set, explicit duplicate aliases, bounded resume and an atomic prediction/scoring checkpoint preserve all 3,080 eventual evaluation IDs. No real test data, model weights or API calls were used during implementation. The new [runner write-up](../experiments/exp007-runner-preparation/README.md) records commands, verification and cost limitations.
 
-**Exact next milestone (bounded v1; supersedes immediate EXP-007 live launch):** obtain separate approval for its 20-query formatting/usage/cost pilot. Do not optimize the prompt using pilot accuracy. No paid call or further official-test access is authorized in this pass. The user reports that a separately authorized preflight already mechanically opened the test; no test predictions or scores exist. Preserve the original EXP-007 protocol byte-for-byte and keep its original five-seed comparison unchanged. Add only seed-11 retrieved-Luna standalone and seed-11 specialist + retrieved-Luna at the same threshold. The companion has its own protocol and approval boundary; its response set is shared between standalone and routed evaluation. After the bounded pilot, any validation/final collection requires distinct explicit authorization, current official model/pricing compatibility verification and a sufficient cap. Report every failure, deterioration and null result. No additional models, datasets, tuning, calibration, frontend or serving infrastructure.
+**Historical next milestone (bounded v1, superseded):** obtain separate approval for its 20-query formatting/usage/cost pilot. Do not optimize the prompt using pilot accuracy. No paid call or further official-test access is authorized in this pass. The user reports that a separately authorized preflight already mechanically opened the test; no test predictions or scores exist. Preserve the original EXP-007 protocol byte-for-byte and keep its original five-seed comparison unchanged. Add only seed-11 retrieved-Luna standalone and seed-11 specialist + retrieved-Luna at the same threshold. The companion has its own protocol and approval boundary; its response set is shared between standalone and routed evaluation. After the bounded pilot, any validation/final collection requires distinct explicit authorization, current official model/pricing compatibility verification and a sufficient cap. Report every failure, deterioration and null result. No additional models, datasets, tuning, calibration, frontend or serving infrastructure.
 
 The new question is complementary routing quality versus LLM call fraction and measured CPU overhead. Luna is not established as stronger overall. Sample SD over training seeds is not uncertainty over new requests; local inference is not economically free. EXP-008 measures one seed-11 model on the 770 validation texts; EXP-009 uses exactly its 1,540 training IDs, fixed cosine top-20 retrieval and unchanged encoder/Luna settings. See their experiment write-ups and the completion record for measured evidence and exact future commands.
 
@@ -44,7 +69,7 @@ Historical EXP-007 conditional test API estimates (not approval; original prepar
 
 ## Decisions and rationale
 
-- Retain all 77 BANKING77 intents and the original sealed official test split.
+- Retain all 77 BANKING77 intents and the intact official test split. It was sealed during development and has now been evaluated under the frozen EXP-007 policy; do not reuse outcomes for tuning.
 - Reserve a fixed **10 examples per class** from cleaned official training data for the validation/calibration development pool. Use it for validation only at this stage; no calibrator is fitted.
 - Use nested training regimes **5, 10, 20 examples per class** and seeds **11, 22, 33, 44, 55**. Every regime and seed uses the same validation IDs.
 - Drop 50-shot. The smallest class has only 35 usable source-training examples, so 50 unique training examples cannot be supported even with no holdout. Do not exclude classes, oversample, borrow validation/test rows, or claim repeated examples are new labels. Reconsider only with a documented source of additional valid training data.
@@ -71,11 +96,11 @@ The unchanged duplicate audit removes 7 train/test text overlaps and 4 repeated 
 | 10-shot | 770 | 770 | 1,540 |
 | 20-shot | 1,540 | 770 | 2,310 |
 
-All 10,003 public training labels are mechanically read for stratification and duplicate-conflict auditing; disclose that separately. Calibration/prompt/test-evaluation labels used so far: none. Record unique examples across the later multi-seed study rather than summing overlapping per-run budgets. Public labels simulate few-shot fitting, not measured annotation cost.
+All 10,003 public training labels are mechanically read for stratification and duplicate-conflict auditing; disclose that separately. No calibrator has been fitted. EXP-007 used 3,080 test labels for final scoring; the fixed zero-shot prompt used no demonstrations. EXP-009 preparation counts its entire 1,540-label training candidate pool for retrieval. Record unique examples across the later multi-seed study rather than summing overlapping per-run budgets. Public labels simulate few-shot fitting, not measured annotation cost.
 
 ## Is this validation budget sufficient?
 
-For the current stage, **yes for coarse development comparisons among a small, prespecified set of simple models**, with cautious interpretation. The common 770-case validation set makes paired comparisons possible and avoids changing evaluation examples with N. It is not enough to establish small quality differences or precise class-level estimates: per-class recall changes in 10-percentage-point increments, and macro-F1 can vary substantially. Multiple training seeds measure training-sample sensitivity, not uncertainty from drawing a different validation set. Limit tuning and preserve the sealed test for a later frozen evaluation.
+For the current stage, **yes for coarse development comparisons among a small, prespecified set of simple models**, with cautious interpretation. The common 770-case validation set makes paired comparisons possible and avoids changing evaluation examples with N. It is not enough to establish small quality differences or precise class-level estimates: per-class recall changes in 10-percentage-point increments, and macro-F1 can vary substantially. Multiple training seeds measure training-sample sensitivity, not uncertainty from drawing a different validation set. The test was preserved for the frozen EXP-007 evaluation, now complete; do not tune from its outcomes.
 
 This is one held-out development pool, not separate validation and calibration evidence. Later calibration/threshold fitting and evaluation must not reuse the same labels as if independent. Ten examples per class are especially weak for per-class calibration and high-confidence/rare-error estimates. Before calibration work, specify either additional independent development labels or an appropriate cross-fitting procedure, account for all labels, and keep final evaluation independent. No calibration claim or non-inferiority margin is established now.
 

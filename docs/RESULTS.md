@@ -1,6 +1,33 @@
 # Verified reproducible results
 
-Current status (2026-09-27): final-test quality remains unmeasured. An earlier authorized preflight mechanically opened the test, as reported by the user; this bounded v1 pass performs no further access. Historical entries below retain their original status statements. No retrieved-example Luna responses or quality results exist yet.
+Current status (2026-09-28 UTC): EXP-007 official-test evaluation is complete and independently verified from saved artifacts. Validation and official-test results below are separate populations; historical status statements retain their original dates. Retrieved-example EXP-009 test results remain pending.
+
+## EXP-007 — official-test complementary routing (2026-09-28)
+
+The frozen 20-shot MiniLM/LR specialists use 1,540 fitting labels each plus the same 770 development labels, with external MiniLM pretraining. All five seeds are evaluated on the same 3,080 official BANKING77 cases using fixed validation-derived thresholds. One all-case zero-shot Luna prediction set is reused across seeds; no test ranking or forced coverage. Results are mean ± **sample SD** across training seeds, with SD in percentage points; Luna has one shared result.
+
+| Model | Accuracy | Macro-F1 |
+| --- | ---: | ---: |
+| Luna-only | 81.363636% | 80.585867% |
+| Specialist-only | 85.435065% ± 0.317784 | 85.190044% ± 0.328684 |
+| Hybrid | 86.487013% ± 0.435235 | 86.298575% ± 0.448328 |
+
+The hybrid adds **1.051948 accuracy percentage points** over specialist-only (paired seed SD **0.190150 pp**), while the policy sends only **9.012987% ± 0.329989 pp** to Luna. Mean specialist coverage is **90.987013%**. All five seeds improve; no best-seed selection. Macro-F1 gain is **1.108531 pp**.
+
+| Seed | Specialist accuracy / macro-F1 (%) | Hybrid accuracy / macro-F1 (%) | Specialist accepted | Luna fallback | Fallback accuracy (%) | Accuracy gain (pp) |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 11 | 85.584416 / 85.347125 | 86.525974 / 86.389275 | 2812 | 268 (8.701299%) | 57.462687 | +0.941558 |
+| 22 | 85.097403 / 84.794841 | 86.266234 / 86.066432 | 2810 | 270 (8.766234%) | 53.333333 | +1.168831 |
+| 33 | 85.259740 / 85.014634 | 86.071429 / 85.843303 | 2805 | 275 (8.928571%) | 53.818182 | +0.811688 |
+| 44 | 85.324675 / 85.137002 | 86.363636 / 86.174694 | 2798 | 282 (9.155844%) | 55.673759 | +1.038961 |
+| 55 | 85.909091 / 85.656617 | 87.207792 / 87.019170 | 2787 | 293 (9.512987%) | 55.290102 | +1.298701 |
+
+Mean accuracy on matching rejected subsets is **55.115613%** for Luna and **43.466706%** for the specialist. Luna is weaker overall but makes useful complementary errors; it is not established as universally stronger or frontier. Earlier **validation** accuracy over 770 reused cases was specialist 83.7662%, Luna 79.7403%, hybrid 85.2727% at 90% specialist coverage; those are development findings, not these official-test estimates.
+
+**Accounting:** 3,080 final outputs resolved; 3,081 attempts, including one HTTP 503 followed by a successful retry. Known usage-priced charges **$0.332622650**; the failed attempt lacks usage, so the frozen-envelope spend interval remains **$0.332622650–$0.334866150**, not an exact invoice total. The experiment queried all 3,080 cases for the standalone baseline; ~9% is the policy fallback fraction. Reservations are not additional charges.
+
+Five seeds share the same test population and Luna predictions; seed SD is **not a confidence interval**. No total production cost/savings or production latency is measured. EXP-009 retrieved-example test results are **pending**; no tuning follows this test. All per-class metrics, seed results, raw-count arithmetic, accounting and provenance are in the [compact official-test evidence](../experiments/exp007-official-test/README.md). Independent replay matched all saved numeric metrics exactly (maximum difference **0.0**); it used saved evaluation labels and never reopened the raw test CSV, reran inference or called an API. The original protocol remains `0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00`.
+
 
 ## EXP-002 — validation learning curve (2026-09-24)
 

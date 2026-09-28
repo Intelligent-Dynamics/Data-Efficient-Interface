@@ -4,20 +4,46 @@ An **Intelligent Dynamics** project studying complementary intent classifiers un
 
 **Can confidence-based routing combine a few-shot specialist with a complementary LLM to improve classification quality while reducing LLM calls, and what local inference overhead does this introduce?**
 
+## Completed official test — EXP-007
+
+The frozen EXP-007 evaluation is complete on **all 3,080 BANKING77 test cases**. A frozen MiniLM + logistic-regression specialist uses one validation-derived confidence threshold per training seed, with zero-shot `gpt-6-luna` below threshold. No threshold or model was tuned on these test results.
+
+| Policy | Test accuracy (%) | Test macro-F1 (%) |
+| --- | ---: | ---: |
+| Specialist only, five-seed mean ± sample SD | 85.435065 ± 0.317784 | 85.190044 ± 0.328684 |
+| Luna only, one shared prediction set | 81.363636 | 80.585867 |
+| Hybrid, five-seed mean ± sample SD | **86.487013 ± 0.435235** | **86.298575 ± 0.448328** |
+
+The hybrid improves mean test accuracy by **1.051948 percentage points** over specialist-only while sending **9.012987%** of requests to Luna on average; observed specialist coverage is **90.987013%**, rather than a forced 90%. Every seed improves. This supports complementary routing on this benchmark: overall model ranking does not determine usefulness on the specialist's rejected subset. [All five seeds, per-class metrics, accounting and independent verification](experiments/exp007-official-test/README.md).
+
+Each 20-shot specialist uses **1,540 fitting labels plus 770 reused development labels**, with external MiniLM pretraining. The five seeds share one 3,080-case test population and the same Luna predictions; seed SD is not a confidence interval. Public-benchmark contamination and differences from production traffic remain limitations.
+
+All **3,080 Luna outputs are resolved**, from **3,081 attempts**. One HTTP-503 attempt lacks usage. Returned usage priced at the frozen rates totals **$0.332622650**; the bounded spend interval is **$0.332622650–$0.334866150**, not an invoice-reconciled bill. This was an all-case API study, not a 9%-fallback deployment. Specialist deployment cost, production latency and total-system savings remain unmeasured.
+
+## Earlier validation evidence
+
 ![Validation quality versus fallback fraction](experiments/v1-complementary-validation/quality_vs_fallback_fraction.png)
 
-These are **reused-validation results**, not final-test estimates. Across the five existing 20-shot models, specialist-only accuracy is **83.77%**, zero-shot Luna accuracy is **79.74%**, and the hybrid at 90% specialist coverage achieves **85.27%**. On each seed's matching 77 rejected requests, specialist accuracy averages **45.19%**, versus **60.26%** for Luna. The resulting hybrid gain over specialist-only is **1.51 percentage points**. Luna is a complementary classifier here; it is not established as stronger overall on this task. [Independent replay, all seed counts and negative results](experiments/v1-complementary-validation/README.md).
+This chart uses the **770 reused validation cases**, separately from the official test above. Across five 20-shot specialists, specialist-only accuracy is **83.77%**, zero-shot Luna accuracy **79.74%**, and the 90%-coverage hybrid accuracy **85.27%**. On each seed's matching 77 rejected cases, specialist accuracy averages **45.19%**, versus **60.26%** for Luna. The validation hybrid gain is **1.51 percentage points**. [Independent replay, all seed counts and negative results](experiments/v1-complementary-validation/README.md). The chart's seed sample SD does not measure uncertainty over future traffic.
 
-The chart reports classification quality against the fraction sent to Luna, with training-seed sample SD. Five seeds share the same 770 validation requests and Luna predictions; seed SD is not a confidence interval over future traffic. Fewer API requests do not establish total-system savings. Each 20-shot specialist uses **1,540 fitting labels plus 770 reused validation labels**, with external MiniLM pretraining.
+## Current status and next step
 
-## Bounded v1 status
+- Completed: TF-IDF/MiniLM validation learning curves, confidence diagnostics, recovered Luna validation comparison and the frozen EXP-007 official test. Previous artifacts and negative results are preserved.
+- Local CPU measurement: the existing seed-11 specialist achieves **5.91 ms median / 7.82 ms p95** warm request latency, **370.18 requests/s** at batch 32 and **582.92 MiB** lifetime peak RSS on this Apple M1 Pro. This validation-input measurement is separate from test quality and does not set a deployment price. See [EXP-008](experiments/exp008-cpu-validation/README.md).
+- Retrieved-example [EXP-009](experiments/exp009-retrieved-luna/README.md) remains **pending**. It freezes exactly 20 retrieved demonstrations from the same seed-11 training pool and retains the original seed-11 routing threshold. No prompt/retrieval tuning follows EXP-007 test results.
 
-- Completed: TF-IDF/MiniLM validation learning curves, confidence diagnostics and recovered zero-shot Luna validation comparison; previous artifacts and negative results are preserved.
-- Local CPU measurement: the existing frozen seed-11 specialist is benchmarked as one deployed model, with **5.91 ms median / 7.82 ms p95** warm request latency, **370.18 requests/s** at batch 32 and **582.92 MiB** lifetime process peak RSS on this Apple M1 Pro. Loading and inference are separate; no deployment price is assumed. See [EXP-008](experiments/exp008-cpu-validation/README.md).
-- Retrieved-example comparison: [EXP-009](experiments/exp009-retrieved-luna/README.md) adds exactly 20 retrieved demonstrations from the same seed-11 training pool. Implementation and offline requests are prepared; no paid pilot or retrieved-Luna quality result exists.
-- Final-test performance remains **unmeasured**. The user reports that an earlier authorized preflight mechanically opened the official test. No test predictions or scores have been produced; this pass performs no further access. EXP-007's original protocol remains unchanged, and proceeding immediately to its live run is superseded by this bounded v1 scope.
+The next command, only after separate test-access authorization, is:
 
-The original runner's empty-prompt compatibility blocker is resolved: the patched original loader reproduced all five saved validation predictions and gates exactly, with no numerical difference. See the separate [compatibility verification](experiments/exp007-loader-compatibility/README.md); frozen protocols and historical evidence are unchanged. All paid collection requires new, experiment-specific approval and a numeric cap. Historical prices and conditional estimates grant no spending permission. See [current plan](docs/CURRENT_PLAN.md) for the next bounded step.
+```sh
+cd /Users/Andrew/Developer/data-efficient-inference
+.venv/bin/python -m baseline.retrieved_run test-preflight \
+  --approved-protocol-sha256 b78f3d32a9bd86ea130ce1f51e2feded9d52b5f5ff796507c49d6f53fccc3334 \
+  --authorize-test-access
+```
+
+This companion preflight **reads and encodes test inputs**, verifies the frozen seed-11 predictions/gates, and prepares all 3,080 requests with an exact reservation; it makes **zero API calls**. It was not executed in this checkpoint. Any later paid companion run requires its own explicit approval, current model/pricing verification and a sufficient numeric cap. EXP-007 approvals do not transfer. See [current plan](docs/CURRENT_PLAN.md).
+
+The original loader and cooldown compatibility fixes remain documented separately in [loader verification](experiments/exp007-loader-compatibility/README.md) and [cooldown receipt](experiments/exp007-cooldown-compatibility/README.md). Both frozen protocols and all earlier evidence remain unchanged.
 
 ## Historical reproduction commands
 
@@ -98,24 +124,24 @@ Original probabilities/caches/models stay ignored. The study README records prov
 
 Verified validation scores: Luna alone **79.74% accuracy / 79.01% macro-F1**; the five 20-shot specialists at the 90% acceptance landmark average **85.27 ± 0.27% accuracy / 84.92 ± 0.38% macro-F1**. All seed results and all 90 combinations are retained, including negative comparisons. Unknown usage from 105 original failed attempts prevents an exact combined spend claim.
 
-[Verified compact completed-validation evidence](experiments/exp006-completed-validation/README.md) retains predictions, every combination, seed variability and known/unknown accounting without raw API responses or request text. The earlier preparation-only write-ups describe their historical checkpoints. The official test has been mechanically opened by an authorized preflight but remains unscored; validation results are exploratory and do not establish total-system savings or production quality.
+[Verified compact completed-validation evidence](experiments/exp006-completed-validation/README.md) retains predictions, every combination, seed variability and known/unknown accounting without raw API responses or request text. The earlier preparation-only write-ups describe their historical checkpoints. Those validation results remain exploratory and distinct from the completed EXP-007 official-test results above; neither establishes total-system savings or production quality.
 
-## Fixed-threshold routing preparation
+## Historical fixed-threshold routing preparation
 
 [EXP-007](experiments/exp007-fixed-threshold-preparation/README.md) freezes one confidence threshold for each existing 20-shot specialist. All five scalar gates reproduce exactly 693/770 validation requests (90%) with no tied-boundary differences. The original EXP-006 plus separately completed recovery now provides 770 validation Luna responses; earlier artifacts are preserved.
 
-**Official test evaluation has NOT RUN.** The future test protocol applies each threshold independently and reports observed coverage. It needs a new all-case Luna test prediction set once, shared across five specialists, to report specialist-only/Luna-only/routed metrics. Test access and spending require new explicit authorization. No paid/test mode is exposed by preparation.
+At this preparation checkpoint, official-test evaluation had not run. The protocol subsequently produced the completed EXP-007 result above using one shared all-case Luna set and independent scalar thresholds. The preparation commands below remain validation-only; they do not launch the test.
 
 ```sh
 .venv/bin/python -m baseline.fixed_routing --output artifacts/exp007-preparation-replay
 .venv/bin/python experiments/exp007-fixed-threshold-preparation/independent_check.py
 ```
 
-These are validation-only offline preparation/replay commands. See the study README for exact thresholds, frozen protocol hash, conditional API estimates, tests and limitations. No calibrated confidence, test performance or total-system savings is claimed.
+These are validation-only offline preparation/replay commands. See the study README for exact thresholds, frozen protocol hash, conditional API estimates, tests and limitations. The preparation itself established no calibrated-confidence, test-performance or total-system-savings claim.
 
-## Guarded final-test runner (implementation only)
+## Guarded final-test runner history
 
-`baseline.final_test` implements the unchanged frozen EXP-007 protocol. **The earlier authorized preflight mechanically opened the test; no test predictions or scores exist.** All implementation checks use synthetic fixtures.
+`baseline.final_test` implements the unchanged frozen EXP-007 protocol and has now completed its authorized test evaluation. Its earlier implementation checks used synthetic fixtures; the command below remains a metadata-only dry run. Preserve the completed run and do not launch another evaluation.
 
 ```sh
 .venv/bin/python -m baseline.final_test dry-run

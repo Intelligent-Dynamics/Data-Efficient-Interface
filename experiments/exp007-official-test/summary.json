@@ -1,0 +1,247 @@
+{
+  "aggregate": {
+    "accepted_count": {
+      "mean": 2802.4,
+      "sample_sd": 10.16366075781753
+    },
+    "accuracy_gain_percentage_points": {
+      "mean": 1.051948051948055,
+      "sample_sd": 0.19015000603047025
+    },
+    "fallback_accuracy_on_rejected": {
+      "mean": 0.5511561259460122,
+      "sample_sd": 0.016363508307543802
+    },
+    "fallback_count": {
+      "mean": 277.6,
+      "sample_sd": 10.16366075781753
+    },
+    "fallback_percentage": {
+      "mean": 9.012987012987013,
+      "sample_sd": 0.32998898564342655
+    },
+    "macro_f1_gain_percentage_points": {
+      "mean": 1.1085311014843735,
+      "sample_sd": 0.2114609911426516
+    },
+    "observed_coverage": {
+      "mean": 0.9098701298701298,
+      "sample_sd": 0.0032998898564342793
+    },
+    "routed": {
+      "accuracy": {
+        "mean": 0.8648701298701299,
+        "sample_sd": 0.0043523450853085
+      },
+      "macro_f1": {
+        "mean": 0.8629857479209235,
+        "sample_sd": 0.0044832844176384435
+      }
+    },
+    "specialist_accuracy_on_rejected": {
+      "mean": 0.43466706032554664,
+      "sample_sd": 0.026348807603502396
+    },
+    "specialist_only": {
+      "accuracy": {
+        "mean": 0.8543506493506493,
+        "sample_sd": 0.0031778400787642225
+      },
+      "macro_f1": {
+        "mean": 0.8519004369060799,
+        "sample_sd": 0.0032868384361917423
+      }
+    }
+  },
+  "evaluation_split": "official test",
+  "limitations": [
+    "Five training seeds share one 3080-case test population and one Luna response set.",
+    "Sample SD across seeds is not a confidence interval.",
+    "1540 fitting labels per specialist plus 770 development labels and external encoder pretraining.",
+    "Fallback fraction is a policy replay; standalone baseline collection queried all 3080 cases.",
+    "Specialist deployment cost, production latency and total-system dollar savings are unmeasured.",
+    "Retrieved-example EXP-009 official-test result remains pending; no tuning follows these test results."
+  ],
+  "luna_only": {
+    "accuracy": 0.8136363636363636,
+    "correct_count": 2506,
+    "error_count": 574,
+    "macro_f1": 0.8058586665013753,
+    "n_examples": 3080,
+    "unresolved_count": 0
+  },
+  "n_examples": 3080,
+  "seeds": {
+    "11": {
+      "accepted_count": 2812,
+      "accuracy_gain_percentage_points": 0.9415584415584433,
+      "fallback_accuracy_on_rejected": 0.5746268656716418,
+      "fallback_count": 268,
+      "fallback_percentage": 8.7012987012987,
+      "macro_f1_gain_percentage_points": 1.0421500630342306,
+      "observed_coverage": 0.912987012987013,
+      "rejected_complementarity": {
+        "both_correct": 84,
+        "both_wrong": 73,
+        "luna_only_correct": 70,
+        "specialist_only_correct": 41
+      },
+      "routed": {
+        "accuracy": 0.8652597402597403,
+        "correct_count": 2665,
+        "error_count": 415,
+        "macro_f1": 0.8638927520147035,
+        "n_examples": 3080,
+        "unresolved_count": 0
+      },
+      "seed": 11,
+      "specialist_accuracy_on_rejected": 0.4664179104477612,
+      "specialist_only": {
+        "accuracy": 0.8558441558441559,
+        "correct_count": 2636,
+        "error_count": 444,
+        "macro_f1": 0.8534712513843612,
+        "n_examples": 3080,
+        "unresolved_count": 0
+      },
+      "threshold": 0.10354116298070118
+    },
+    "22": {
+      "accepted_count": 2810,
+      "accuracy_gain_percentage_points": 1.1688311688311748,
+      "fallback_accuracy_on_rejected": 0.5333333333333333,
+      "fallback_count": 270,
+      "fallback_percentage": 8.766233766233766,
+      "macro_f1_gain_percentage_points": 1.2715907328349818,
+      "observed_coverage": 0.9123376623376623,
+      "rejected_complementarity": {
+        "both_correct": 67,
+        "both_wrong": 85,
+        "luna_only_correct": 77,
+        "specialist_only_correct": 41
+      },
+      "routed": {
+        "accuracy": 0.8626623376623377,
+        "correct_count": 2657,
+        "error_count": 423,
+        "macro_f1": 0.8606643185520938,
+        "n_examples": 3080,
+        "unresolved_count": 0
+      },
+      "seed": 22,
+      "specialist_accuracy_on_rejected": 0.4,
+      "specialist_only": {
+        "accuracy": 0.8509740259740259,
+        "correct_count": 2621,
+        "error_count": 459,
+        "macro_f1": 0.847948411223744,
+        "n_examples": 3080,
+        "unresolved_count": 0
+      },
+      "threshold": 0.10243964501544885
+    },
+    "33": {
+      "accepted_count": 2805,
+      "accuracy_gain_percentage_points": 0.8116883116883189,
+      "fallback_accuracy_on_rejected": 0.5381818181818182,
+      "fallback_count": 275,
+      "fallback_percentage": 8.928571428571429,
+      "macro_f1_gain_percentage_points": 0.828669278862193,
+      "observed_coverage": 0.9107142857142857,
+      "rejected_complementarity": {
+        "both_correct": 78,
+        "both_wrong": 82,
+        "luna_only_correct": 70,
+        "specialist_only_correct": 45
+      },
+      "routed": {
+        "accuracy": 0.8607142857142858,
+        "correct_count": 2651,
+        "error_count": 429,
+        "macro_f1": 0.85843303084316,
+        "n_examples": 3080,
+        "unresolved_count": 0
+      },
+      "seed": 33,
+      "specialist_accuracy_on_rejected": 0.44727272727272727,
+      "specialist_only": {
+        "accuracy": 0.8525974025974026,
+        "correct_count": 2626,
+        "error_count": 454,
+        "macro_f1": 0.8501463380545381,
+        "n_examples": 3080,
+        "unresolved_count": 0
+      },
+      "threshold": 0.1021902311171956
+    },
+    "44": {
+      "accepted_count": 2798,
+      "accuracy_gain_percentage_points": 1.0389610389610393,
+      "fallback_accuracy_on_rejected": 0.5567375886524822,
+      "fallback_count": 282,
+      "fallback_percentage": 9.155844155844155,
+      "macro_f1_gain_percentage_points": 1.0376920698046743,
+      "observed_coverage": 0.9084415584415585,
+      "rejected_complementarity": {
+        "both_correct": 79,
+        "both_wrong": 79,
+        "luna_only_correct": 78,
+        "specialist_only_correct": 46
+      },
+      "routed": {
+        "accuracy": 0.8636363636363636,
+        "correct_count": 2660,
+        "error_count": 420,
+        "macro_f1": 0.861746935930348,
+        "n_examples": 3080,
+        "unresolved_count": 0
+      },
+      "seed": 44,
+      "specialist_accuracy_on_rejected": 0.4432624113475177,
+      "specialist_only": {
+        "accuracy": 0.8532467532467533,
+        "correct_count": 2628,
+        "error_count": 452,
+        "macro_f1": 0.8513700152323013,
+        "n_examples": 3080,
+        "unresolved_count": 0
+      },
+      "threshold": 0.10160314104812371
+    },
+    "55": {
+      "accepted_count": 2787,
+      "accuracy_gain_percentage_points": 1.2987012987012991,
+      "fallback_accuracy_on_rejected": 0.552901023890785,
+      "fallback_count": 293,
+      "fallback_percentage": 9.512987012987013,
+      "macro_f1_gain_percentage_points": 1.3625533628857878,
+      "observed_coverage": 0.9048701298701298,
+      "rejected_complementarity": {
+        "both_correct": 80,
+        "both_wrong": 89,
+        "luna_only_correct": 82,
+        "specialist_only_correct": 42
+      },
+      "routed": {
+        "accuracy": 0.8720779220779221,
+        "correct_count": 2686,
+        "error_count": 394,
+        "macro_f1": 0.8701917022643125,
+        "n_examples": 3080,
+        "unresolved_count": 0
+      },
+      "seed": 55,
+      "specialist_accuracy_on_rejected": 0.41638225255972694,
+      "specialist_only": {
+        "accuracy": 0.8590909090909091,
+        "correct_count": 2646,
+        "error_count": 434,
+        "macro_f1": 0.8565661686354547,
+        "n_examples": 3080,
+        "unresolved_count": 0
+      },
+      "threshold": 0.10612054364389162
+    }
+  },
+  "study_id": "EXP-007"
+}

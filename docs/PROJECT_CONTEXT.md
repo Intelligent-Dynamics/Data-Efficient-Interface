@@ -1,18 +1,20 @@
 # Project context
 
-Updated: 2026-09-27. Organization: Intelligent Dynamics.
+Updated: 2026-09-28 UTC. Organization: Intelligent Dynamics.
 Project: **Data-Efficient Specialist Inference**.
 Canonical checkout: `/Users/Andrew/Developer/data-efficient-inference`. The existing checkout, including Git history and local artifacts, was moved here from the former Documents/ChatGPT path on 2026-09-24. Origin remains `https://github.com/Intelligent-Dynamics/data-efficient-inference.git`.
 
 ## Current completed state
 
-**2026-09-28 UTC update:** EXP-007 live collection started after the earlier preparation and stopped at its local cooldown guard: 509 successful responses/509 attempts, 2,571 unattempted, no final score. The minimal timing repair preserves every live artifact and uses an explicitly approved exact-source compatibility receipt for future resume. See `experiments/exp007-cooldown-compatibility/README.md`; it does not authorize calls or test access. The following preparation statements describe the earlier state.
+**2026-09-28 UTC: EXP-007 official-test evaluation is complete.** The same frozen five 20-shot MiniLM/LR specialists, validation-derived scalar thresholds and zero-shot Luna prompt were evaluated on all **3,080 BANKING77 test cases**. Mean specialist accuracy/macro-F1 is **85.435065% / 85.190044%**, Luna-only is **81.363636% / 80.585867%**, and mean hybrid is **86.487013% / 86.298575%**. The hybrid adds **1.051948 accuracy points** over specialist-only, using Luna on **9.012987%** of requests on average. Observed specialist coverage is **90.987013%**, never forced to 90%. All five seeds improve. [Compact test evidence and independent replay](../experiments/exp007-official-test/README.md).
 
-EXP-006R live recovery has zero unresolved requests, and the EXP-006 + EXP-006R offline merged evaluation is complete over all 770 validation IDs and all 90 prior specialist/fallback combinations. Verified compact evidence is published in `experiments/exp006-completed-validation/`; raw response caches remain ignored. The original 718-success/52-HTTP-429 execution and its preparation write-ups remain unchanged historical evidence.
+All 3,080 Luna outputs are resolved in 3,081 attempts. One HTTP-503 attempt has unknown usage; usage-priced charges are **$0.332622650**, with a bounded interval of **$0.332622650–$0.334866150**. These are frozen-rate charges for an all-case collection, not invoice-reconciled spend or the cost of a hypothetical routed deployment. Specialist deployment cost, total-system savings and production latency remain unmeasured.
 
-Verified compact validation results record Luna standalone 79.74% accuracy / 79.01% macro-F1 and the exploratory 20-shot 90% combination at 85.27% / 84.92% mean accuracy/macro-F1. All 90 combinations and seed variance are preserved, including weaker outcomes. Every final prediction is resolved, while exact combined spend remains unknown because 105 original failed attempts lacked token usage. These are reused-validation findings, not test or production measurements.
+Each specialist used 1,540 fitting labels plus 770 repeatedly used validation/development labels, with external MiniLM pretraining. Five seeds share one test population and one Luna set; sample SD measures training-seed variability, not a confidence interval over new requests. Public-benchmark contamination and production distribution differences cannot be ruled out. No threshold, prompt or model changes follow test scores. EXP-009's already-frozen retrieved-example test comparison remains pending and needs separate authorization.
 
-EXP-007 fixed-threshold preparation is complete: all five gates exactly reproduce 693/770 validation acceptance, with no boundary ties. **The user reports that an authorized preflight mechanically opened the official test; no test predictions or scores exist. Further access is not authorized in this pass.** The unchanged frozen protocol now has a guarded one-time runner (`baseline.final_test`), implemented and tested using synthetic fixtures only. Its default `dry-run` stays sealed; `preflight` requires exact protocol approval and explicit test access, without API authorization, cap or pricing acknowledgement. It only computes requirements; an optional cap comparison cannot authorize calls. `live` separately requires both explicit test/live permissions, a positive approved cap and current pricing acknowledgement. Runner preparation is reviewed and included in this checkpoint; no real test evaluation has run. Neither this repository synchronization nor earlier validation approval authorizes test access or paid calls.
+Validation is separate: EXP-006R recovered all 52 unresolved requests and EXP-006 + EXP-006R completed all 770 validation IDs/all 90 combinations. Luna validation accuracy/macro-F1 is **79.74% / 79.01%**, versus **85.27% / 84.92%** for the exploratory 20-shot 90%-coverage hybrid. Those reused-development findings selected the fixed policy; they are not held-out test estimates. The original 718-success/52-HTTP-429 execution and unknown usage from 105 failed attempts remain preserved in the [validation evidence](../experiments/exp006-completed-validation/README.md).
+
+EXP-007 threshold preparation matched 693/770 validation acceptance for every seed with no boundary ties. The subsequent loader/cooldown compatibility fixes and live resume retain their separate records; neither frozen protocol changed. The interrupted 509-response checkpoint is historical, superseded by the completed immutable prediction bundle. This synchronization uses saved evidence only: it does not rerun inference, call APIs, modify protocols or run EXP-009. The exact next conditional companion preflight is in [CURRENT_PLAN.md](CURRENT_PLAN.md); it reads/encodes test inputs but makes no API calls.
 
 ## Thesis and research question
 
@@ -20,17 +22,19 @@ Intelligent Dynamics explores data-efficient AI: specialized systems that adapt 
 
 **Can confidence-based routing combine a few-shot specialist with a complementary LLM to improve classification quality while reducing LLM calls, and what local inference overhead does this introduce?**
 
-The hypothesis is that a specialist and an LLM can make complementary errors. Overall model ranking does not determine performance on the specialist’s rejected subset. The existing Luna model performs worse than the 20-shot specialist overall on validation, yet improves the matching rejected-subset accuracy. This motivates a fixed-policy final comparison, not a claim that Luna is frontier or universally stronger. Confident errors, fallback deterioration and local compute overhead remain important negative findings.
+The hypothesis is that a specialist and an LLM can make complementary errors. Overall model ranking does not determine performance on the specialist’s rejected subset. Luna performs worse than the 20-shot specialist overall on validation and official test, yet its complementary predictions improve the frozen hybrid on both populations. The official-test comparison now measures this gain; it does not establish a universal model ranking or deployment guarantee. Confident errors, fallback deterioration and local compute overhead remain important negative findings.
 
 Operating principle: **Measure → understand → improve → re-measure.**
 
-The bounded v1 report will state measured specialist/routed/comparator accuracy and macro-F1, observed specialist coverage and LLM call fraction, training and development label budgets, and local CPU overhead. The original cost-saving thesis remains historical motivation; total-system dollar savings require a defensible deployment-cost basis that this study does not yet have. No reduction in API calls is automatically a reduction in total cost.
+The bounded v1 report states measured specialist/routed/comparator accuracy and macro-F1, observed specialist coverage and LLM call fraction, training and development label budgets, and local CPU overhead. The original cost-saving thesis remains historical motivation; total-system dollar savings require a defensible deployment-cost basis that this study does not yet have. No reduction in API calls is automatically a reduction in total cost.
 
-## Bounded v1 update (2026-09-27)
+## Historical bounded v1 update (2026-09-27)
+
+This checkpoint preceded the completed official test above. Its then-pending execution status and proposed pilot remain historical.
 
 EXP-008 now measures the existing seed-11 model at 5.91 ms median / 7.82 ms p95 warm CPU request latency and 370.18 requests/s batch-32 throughput on this Apple M1 Pro; process memory and load times are separate. EXP-009 is implemented and prepared but has no paid response or quality result. Its cached-vector retrieval/prompt median overhead is 0.751/2.051 ms. Inherited prices are historical; $0.26 is only a proposed unapproved pilot cap. The original runner's inert-empty-prompt compatibility assertion is now fixed and verified offline on all five existing validation specialists, with zero probability, label or routing differences. Only that assertion changed; original and companion protocols and previous evidence remain unchanged. Separate evidence is in `experiments/exp007-loader-compatibility/`.
 
-The current scope adds CPU-only seed-11 timing and one retrieved-example Luna comparison (seed 11 only) before any final-test execution. Exactly 20 demonstrations are retrieved from the 1,540 seed-11 training IDs using the same normalized frozen MiniLM; all 1,540 available task labels count, in addition to the reused 770 validation labels. No k/prompt/threshold/model search is allowed. The 20-query pilot is for formatting, usage and cost only. Original EXP-007 bytes and all prior experimental evidence remain unchanged; the companion requires its own approval. Historical sections below describe their original milestones, including then-sealed test status.
+The then-current scope added CPU-only seed-11 timing and one retrieved-example Luna comparison (seed 11 only) before any final-test execution. Exactly 20 demonstrations are retrieved from the 1,540 seed-11 training IDs using the same normalized frozen MiniLM; all 1,540 available task labels count, in addition to the reused 770 validation labels. No k/prompt/threshold/model search is allowed. The 20-query pilot is for formatting, usage and cost only. Original EXP-007 bytes and all prior experimental evidence remain unchanged; the companion requires its own approval. Historical sections below describe their original milestones, including then-sealed test status.
 
 ## Initial repository inspection
 
@@ -89,16 +93,16 @@ Together they provide a lightweight CPU baseline, interpretable word association
 
 The exact initial split and baseline recipe live in `CURRENT_PLAN.md`. Primary quality metric: macro-F1 across all 77 labels; secondary: accuracy, per-class precision/recall/F1, and confusion counts. Report every planned seed and mean/sample standard deviation; do not report only the best run. Seed variation and test-sampling uncertainty answer different questions.
 
-Later, evaluate the specialist alone, Luna alone, and combined policy on the same frozen test requests against dataset labels. Luna is a comparator, not ground truth or an assumed stronger model. Freeze its model version, prompt, decoding, label mapping, retry policy, and invalid-output handling. Prompt examples must come from an explicitly counted development budget. Tune routing only on development data; evaluate accepted-subset quality, coverage, fallback rate, and full-system quality separately.
+EXP-007 evaluates specialist-only, Luna-only and the combined policy on the same frozen test population against dataset labels. Luna is a comparator, not ground truth. Future comparisons must retain this paired design. Freeze its model version, prompt, decoding, label mapping, retry policy, and invalid-output handling. Prompt examples must come from an explicitly counted development budget. Tune routing only on development data; evaluate accepted-subset quality, coverage, fallback rate, and full-system quality separately.
 
-Before routing experiments, predeclare the acceptable quality loss and useful coverage target. For a higher-is-better metric Q, quality loss in percentage points is `100 * (Q_strong - Q_hybrid)` when Q is on [0, 1]. A non-inferiority claim needs a prespecified margin and uncertainty analysis, not just a favorable point estimate. Use paired comparisons on the same requests. Do not assume Luna handles fallback cases perfectly.
+Before routing experiments, predeclare the acceptable quality loss and useful coverage target. For a higher-is-better metric Q, quality loss in percentage points is `100 * (Q_comparator - Q_hybrid)` when Q is on [0, 1]. A non-inferiority claim needs a prespecified margin and uncertainty analysis, not just a favorable point estimate. Use paired comparisons on the same requests. Do not assume Luna handles fallback cases perfectly.
 
 For M benchmark requests and accepted set A:
 
 - Coverage = `|A| / M`.
-- All-strong cost = sum of each request's measured usage priced under a frozen pricing schedule.
-- Hybrid cost = specialist inference on every request + routing overhead + strong-model cost for each fallback request.
-- Benchmarked cost reduction = `100 * (1 - hybrid_cost / all_strong_cost)`; the denominator must be positive. Negative savings remain results.
+- All-Luna cost = sum of each request's measured usage priced under a frozen pricing schedule.
+- Hybrid cost = specialist inference on every request + routing overhead + Luna cost for each fallback request.
+- Benchmarked cost reduction = `100 * (1 - hybrid_cost / all_luna_cost)`; the denominator must be positive. Negative savings remain results.
 
 Use request-level token usage because fallback requests may be longer or more expensive. Record pricing date, currency, cache/batch discounts, retries, and hardware/rate/utilization assumptions. Record local timing even when a defensible monetary rate is unavailable; label any monetization as an estimate.
 
@@ -136,7 +140,7 @@ The authoritative EXP-007 protocol specifies one eventual evaluation of all 3,08
 
 ## Scope boundaries and persistent records
 
-Begin with a local reproducible experiment. No frontend, serving stack, database, orchestration platform, GPU fine-tuning, or routing implementation is needed now.
+Keep the completed local experiment reproducible. The offline routing evaluator exists; no frontend, production serving stack, database, orchestration platform or GPU fine-tuning is in scope. Preserve protocols and evidence, and keep any separately authorized EXP-009 execution within its frozen design.
 
 - `AGENTS.md`: operational rules for future sessions.
 - `CURRENT_PLAN.md`: current milestone, protocol, decisions, tasks, and unresolved choices.

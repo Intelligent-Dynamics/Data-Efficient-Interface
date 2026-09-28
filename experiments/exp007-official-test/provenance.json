@@ -1,0 +1,73 @@
+{
+  "all_ids_and_probability_argmaxes_and_scalar_gates_verified": true,
+  "all_scores_counts_per_class_and_sample_sd_independently_reproduced": true,
+  "api_calls": 0,
+  "dataset_revision": "57ec275d8078af65b7731c2a98be812d844a6d6b",
+  "evaluation_utc": "2026-09-28T05:07:18.847118+00:00",
+  "exp009_executed": false,
+  "label_source": "Existing saved evaluation rows; no raw dataset access",
+  "maximum_absolute_numeric_metric_difference": 0.0,
+  "model_executions": 0,
+  "protocol_sha256": "0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00",
+  "raw_test_file_opened": false,
+  "source_artifact_count": 3110,
+  "source_artifact_inventory_sha256": "a8c8d37e857f74966cf0aff91340245e293e6bb759d4da0b9c7a68d1f4621569",
+  "source_artifacts_byte_identical": true,
+  "source_code": {
+    "code": {
+      "files_sha256": {
+        "baseline/__init__.py": "8a3218d35d41d1cf1d4608ed6cea6ca0a0529b1c889b8058d2932b6135837708",
+        "baseline/__main__.py": "b6d15f22487fe22ba9ba36e41260510375477ce91bfc769761a7f1c4810e248d",
+        "baseline/cpu_benchmark.py": "04156766083a51d39427d71d757f2ce515c7a6fe2aa406332617f0fefb411aba",
+        "baseline/data.py": "1aa6dc3f0d7d9c59467517b4802d27ea999a2415aabbf079e12c0ffc1d8cad5a",
+        "baseline/embeddings.py": "76d0466557c56f7f6ed75454dca0a454be12c4fe78744c9b2224013903672c28",
+        "baseline/experiment.py": "ed04b521b6f6a381fd5d9e35bc3a2b82280bfdd868a4e969f1f1188ca64e32e9",
+        "baseline/final_collection.py": "fbf3771bc1954a8434692e3398f34ba211f50aa88f2e77b987baa3f74ae7e4fc",
+        "baseline/final_compatibility.py": "981f6c882122547c7e585932145e38fb432e57361dba42490a7e71b4583f9bc7",
+        "baseline/final_protocol.py": "d8cd4122f2c0b64729123e60760cb80dccc221b34f374406cd130f9902e1f9c1",
+        "baseline/final_specialists.py": "c443f4a4136f4737e9b4188dcd3007e6a4c461627dd630deebbc67406fe41961",
+        "baseline/final_test.py": "b2523e886f30c3991c9d757c100c50e630e10020b0e74ef2d05177e12fb1cb04",
+        "baseline/fixed_routing.py": "02fa0a3b20129d2a4475b1245ce5742a76227a0171148f7b3d5ddf1e640da806",
+        "baseline/general.py": "2193ac7ce9433a3d551e2f5b987d0fc7173c6c095a504c04ef96ef97adfff434",
+        "baseline/general_metrics.py": "20015576459f971d9644f6f8e59fe1725f5d095e9ca6ef6f83953e8cdfdc396c",
+        "baseline/general_protocol.py": "9f3b1422e17988b71899326b9dd1a6312603b66dbaa5c26e2ddfd0073a9884a2",
+        "baseline/learning_curve.py": "6579eea88874a9c0e3831be77e464126ece75337c4cce914649ae73b5644ed81",
+        "baseline/minilm_curve.py": "4f1f789fd78820a2dda48c6750f70e09ad047b56d89e51bfbdb76d6da044bbb5",
+        "baseline/recovery.py": "36d41fb99eb73121eeb8fa1407034f25ac9718e4f174a72f03c633307c6ca576",
+        "baseline/recovery_merge.py": "6976c9c848144f929a13862fc122f546588e0d546705f0ea73e74b6f5b56dcf1",
+        "baseline/recovery_source.py": "5a8f44fb520d008da1ac2f5721f1220ae2de108498d7dcd4171ef056bd0fbd0e",
+        "baseline/retrieved.py": "85e64e349e4ddcf052107085e369acc9faaf9cec86e71643e34ecc2548dd706f",
+        "baseline/retrieved_collection.py": "00c2ddd0a45d9238c87931ff5dc282da69591d254d310e43589082068aee66da",
+        "baseline/retrieved_run.py": "4c4649bf35575b0c4677d9bb16bc5c537a6f1e122356edc4b078186a8fa66097",
+        "baseline/selective.py": "c2ad88cdfa97b4a65fb976ecaebd0f89d5307b3b37f1f01f53f92910346b785a",
+        "baseline/threshold_inputs.py": "2471e098dedadae1be724f80ecfbb6709c52c4e878651a849af729a74f47066a",
+        "baseline/thresholds.py": "33ee9dc601fc1c477bf925a78101126bf8cd57f4321ca7899352cd208bb832b2",
+        "pyproject.toml": "01599a944ee41d015c00a7fc491fef088f1746f5b72d9a235f9a2a7a54d33897",
+        "uv.lock": "2211a97a03960524dfd4fe173e911392d6dca00d981924ed594fa0f712157b99"
+      },
+      "git_head": "04bc7987c447ba77eb9d2ac2337b4feb8e1665fd",
+      "http_client": "Python standard library urllib; no SDK or hidden retries",
+      "packages": {
+        "numpy": "2.3.3",
+        "scikit-learn": "1.7.2"
+      },
+      "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+      "python": "3.13.0"
+    },
+    "receipt_sha256": "687333556fc6012f36047544c2413a8b64b3beade6a1113ea3f16662559437a1"
+  },
+  "source_directory": "artifacts/exp007-fixed-threshold-test-v1",
+  "source_files_sha256": {
+    "evaluation.json": "93f2b96b90da364b5511a757ac22bee62e62a8e8d24e5ff92e7b8f9ea9ae6dbb",
+    "evaluation_checkpoint.json": "43adfaba08892ff4b2b487bbad1e58f8e0786d4bf0462451fa82d8079c54469c",
+    "luna/execution.json": "60df831ec3259ed7e44dea1e8f2e28721534b0f6099a9c35f34e6522e48960dd",
+    "luna/manifest.json": "4577cb9b1b741e9f2a8380d7d4479d5b35a0838e736f298e07d72bc738ecf472",
+    "luna/reservations.json": "a78bc1a1f6c82a961b48fea3b40bd1837fe921a7193bedc86cb2be1c444710d6",
+    "luna/source_compatibility.json": "22c3a63006f06478e4ab6b4b78a7575972f0f1f46b7900496989e8d386970176",
+    "manifest.json": "d422cf108778e5e98657b2e8ba77ba8c3013dbcb235575f848defe5b15f9591a",
+    "predictions_frozen.json": "5228074740fd31af26884897d6217fa01cffc47261757d1ef4ea8d2b3d7fc846",
+    "protocol.json": "0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00",
+    "verification.json": "f9dca0d97cf9c4bcd18d8e27a55054ca0c0c6f1af08b51e0ba9df608b7007c09"
+  },
+  "source_prediction_freeze_sha256": "5228074740fd31af26884897d6217fa01cffc47261757d1ef4ea8d2b3d7fc846"
+}

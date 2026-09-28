@@ -1,0 +1,146 @@
+{
+  "accounting": {
+    "actual_api_spend_usd": null,
+    "committed_reservation_usd": "6.92628000",
+    "invoice_reconciled": false,
+    "note": "Actual experiment usage priced at frozen rates; missing usage is reserved, not assumed free.",
+    "recorded_attempts": 3081,
+    "reservation_envelope_valid": true,
+    "spend_interval_under_frozen_assumptions_usd": [
+      "0.332622650",
+      "0.334866150"
+    ],
+    "unknown_charge_attempts": 1,
+    "unknown_charge_reservation_usd": "0.0022435",
+    "usage_priced_api_charges_usd": "0.332622650"
+  },
+  "attempt_count_distribution": {
+    "1": 3079,
+    "2": 1
+  },
+  "attempt_status_counts": {
+    "http_503": 1,
+    "ok": 3080
+  },
+  "audited_utc": "2026-09-28T06:39:41.892716+00:00",
+  "case_count": 3080,
+  "explicit_alias_count": 0,
+  "final_status_counts": {
+    "ok": 3080
+  },
+  "http_status_counts": {
+    "200": 3080,
+    "503": 1
+  },
+  "limitations": [
+    "Charges are priced from returned usage at the frozen rates, not reconciled against a provider invoice.",
+    "One HTTP 503 attempt has no returned token usage; its retained reservation bounds unknown charges under the frozen envelope. Its subsequent retry resolved successfully.",
+    "Ledger reservations are safeguards, not additional charges.",
+    "No API, inference, raw test-file reading, scoring, protocol changes or artifact writes were performed by this audit."
+  ],
+  "pricing": {
+    "as_of": "2026-09-25",
+    "cache_source": "https://developers.openai.com/api/docs/guides/prompt-caching",
+    "currency": "USD",
+    "per_million_tokens": {
+      "cache_write": "0.125",
+      "cached_input": "0.01",
+      "input": "0.10",
+      "output": "0.50"
+    },
+    "scope": "Standard, nonregional, <=272000 input tokens, no tools; excluding taxes/credits",
+    "source": "https://developers.openai.com/api/docs/pricing"
+  },
+  "protocol_sha256": "0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00",
+  "provenance": {
+    "file_count": 3110,
+    "metadata_files_sha256": {
+      ".lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authorizations.json": "9452265c9b1aa7d5715670ece241ff0c6d253044a577d9c15c7c2583a580a081",
+      "evaluation.json": "93f2b96b90da364b5511a757ac22bee62e62a8e8d24e5ff92e7b8f9ea9ae6dbb",
+      "evaluation_checkpoint.json": "43adfaba08892ff4b2b487bbad1e58f8e0786d4bf0462451fa82d8079c54469c",
+      "luna/.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "luna/authorization_history.json": "4e31ede645063318585458c059abdffc15731a3159ec377fd5cea39028de8768",
+      "luna/execution.json": "60df831ec3259ed7e44dea1e8f2e28721534b0f6099a9c35f34e6522e48960dd",
+      "luna/manifest.json": "4577cb9b1b741e9f2a8380d7d4479d5b35a0838e736f298e07d72bc738ecf472",
+      "luna/reservations.json": "a78bc1a1f6c82a961b48fea3b40bd1837fe921a7193bedc86cb2be1c444710d6",
+      "luna/source_compatibility.json": "22c3a63006f06478e4ab6b4b78a7575972f0f1f46b7900496989e8d386970176",
+      "manifest.json": "d422cf108778e5e98657b2e8ba77ba8c3013dbcb235575f848defe5b15f9591a",
+      "predictions_frozen.json": "5228074740fd31af26884897d6217fa01cffc47261757d1ef4ea8d2b3d7fc846",
+      "preflight.json": "9358feda51f57212875734b07e11c90e22a667b629fe72b915317a9cf9fff487",
+      "protocol.json": "0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00",
+      "verification.json": "f9dca0d97cf9c4bcd18d8e27a55054ca0c0c6f1af08b51e0ba9df608b7007c09"
+    },
+    "response_file_count": 3080,
+    "response_file_inventory_sha256": "3039dd84a6564adb214857088464993ef9144db32038777bcb304b2a50283aee",
+    "run_relative_path": "artifacts/exp007-fixed-threshold-test-v1",
+    "tree_sha256": "a8c8d37e857f74966cf0aff91340245e293e6bb759d4da0b9c7a68d1f4621569"
+  },
+  "reservation": {
+    "approved_cap_usd": "28.00",
+    "preflight_full_retry_reservation_usd": "27.69614600",
+    "remaining_permitted_attempt_reservation_usd": "0"
+  },
+  "resume_compatibility": {
+    "current_runtime_matches_receipt": true,
+    "historical_manifests_unchanged": true,
+    "original_git_head": "aa58af8461ea3423b849d4e67a24eec93eb4dbb7",
+    "original_preserved_files_verified": 530,
+    "original_successful_responses_preserved": 509,
+    "receipt_sha256": "687333556fc6012f36047544c2413a8b64b3beade6a1113ea3f16662559437a1",
+    "resumed_code_git_head": "04bc7987c447ba77eb9d2ac2337b4feb8e1665fd"
+  },
+  "status": "completed",
+  "study_id": "EXP-007",
+  "unique_requests": 3080,
+  "unknown_usage_bins": [
+    {
+      "count": 1,
+      "reservation_usd": "0.0022435",
+      "status": "http_503"
+    }
+  ],
+  "unresolved_cases": 0,
+  "usage_bins": [
+    {
+      "attempts": 3080,
+      "cache_write_input_tokens": 7250,
+      "cached_input_tokens": 0,
+      "input_tokens": 3031829,
+      "known_usage_priced_usd": "0.33262265",
+      "model": "gpt-6-luna",
+      "output_tokens": 58517,
+      "reasoning_detail_missing_attempts": 0,
+      "reasoning_output_tokens": 0,
+      "service_tier": "default",
+      "status": "ok"
+    }
+  ],
+  "usage_missing_attempt_status_counts": {
+    "http_503": 1
+  },
+  "usage_totals": {
+    "cache_write_tokens": 7250,
+    "cached_tokens": 0,
+    "input_tokens": 3031829,
+    "output_tokens": 58517,
+    "reasoning_tokens": 0
+  },
+  "verification": {
+    "all_response_hashes_outcomes_usage_pricing_replayed": true,
+    "artifact_tree_unchanged": true,
+    "evaluation_checkpoint_verified": true,
+    "execution_matches_terminal_response_evidence": true,
+    "frozen_prediction_file_hashes_verified": true,
+    "guards": {
+      "network_attempts": 0,
+      "raw_data_or_model_access_attempts": 0,
+      "run_write_attempts": 0
+    },
+    "ledger_exactly_matches_all_response_attempts": true,
+    "manifest_bindings_verified": true,
+    "no_api_calls": true,
+    "no_raw_dataset_or_model_access": true,
+    "preflight_recomputed_from_saved_requests": true
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "checkpoint": "Completed official-test evidence, offline verification only",
+  "checkpoint_base_git_head": "04bc7987c447ba77eb9d2ac2337b4feb8e1665fd",
+  "checkpoint_files_sha256": {
+    "AGENTS.md": "4d033e0565343994f084a6ee295010aa0d7e346d5d5045cd1ef80588490c1bfc",
+    "README.md": "59d060b53611568c5c0356b01215627da370023e23bfdf161fe1df52f581d096",
+    "docs/CURRENT_PLAN.md": "1ebfd0f69b3a801db4ad91bb9105780d6413a9288a9f4afcc72ee596c7ef36e4",
+    "docs/EXPERIMENTS.md": "376cae245f7b1ec1207cfc1e90608fa196b62bf7f43316232942a9adecc233a9",
+    "docs/PROJECT_CONTEXT.md": "197e54ce4bd69a34dcc444cd02c642618b6c59f3860a171d8adda076bff4930e",
+    "docs/RESULTS.md": "a3ac829b9537cc5add41f2fd4060e42f6ef06acef87ed60ce01d473ed0c69ec1",
+    "tests/test_exp007_official_evidence.py": "14734b88ff53005b28361169de406dc72c8866e6ce153ca95a33ed6c49665b96"
+  },
+  "compact_files_sha256": {
+    "README.md": "e9ba8167856607c79b510047cd8c45662d9177326c6ddab3c0e57b42903c96c5",
+    "accounting.json": "1f839519a7a34ef25a2e80c3104a3e6f927fff246f9775669a9ff6ad9b94fe58",
+    "audit_accounting.py": "bb5d71d3017962582a21146735ca8c601e3590723b098293125081dd36c7d8bd",
+    "counts.json": "db1c893850c77f28a9ffeb314e59cfb4a163135cc9106c21f6872231885e7d9e",
+    "export.py": "a001055f1f54917889efd7a32c3c272ce0fde0e2c650601526d00e70a11cac31",
+    "per_class.json": "9c696e1b51686d176aef444ac70807d983d87cf2c4b402bf7d44157a9dada184",
+    "provenance.json": "84c60e44bf4e45246d62425fe6e025b185542e3a739bcec64fd55aa8ac2f28b8",
+    "reproduce.py": "4f50690196afd7edddf5b7dfa52bf483de94b2b942079e73071054d7d55f6d06",
+    "summary.json": "318a21bbff682ddd0c00cb972d24a5a8fc56177019625fcdad14189631ae027c"
+  },
+  "frozen_protocols_sha256": {
+    "experiments/exp007-fixed-threshold-preparation/protocol.json": "0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00",
+    "experiments/exp009-retrieved-luna/protocol.json": "b78f3d32a9bd86ea130ce1f51e2feded9d52b5f5ff796507c49d6f53fccc3334"
+  },
+  "study_id": "EXP-007",
+  "test_suite": {
+    "command": ".venv/bin/python experiments/v1-strengthening/verify_suite.py",
+    "console_output_sha256": "43cb4ba4813614b6c2db17d120e11c2eba4f2d622fedcf8651bc5dd377a4d35e",
+    "exit_code": 0,
+    "guards": {
+      "network_attempts": 0,
+      "protected_access_attempts": 0
+    },
+    "harness_elapsed_seconds": 58.638802541885525,
+    "passed": 879,
+    "pytest_elapsed_seconds": 58.29,
+    "scope": "Full offline suite: synthetic fixtures plus compact versioned aggregate evidence; real data/models/caches and network denied",
+    "status": "passed"
+  },
+  "verification": {
+    "accounting_and_response_ledger_independently_verified": true,
+    "all_3080_ids_retained_once": true,
+    "all_probability_argmaxes_and_independent_threshold_decisions_match_saved_evidence": true,
+    "all_scores_per_class_counts_sample_sd_reproduced": true,
+    "api_calls": 0,
+    "exp009_executed": false,
+    "five_seeds_verified": true,
+    "guard_counters": {
+      "network_attempts": 0,
+      "raw_data_or_model_access_attempts": 0,
+      "run_write_attempts": 0
+    },
+    "maximum_absolute_numeric_metric_difference": 0.0,
+    "new_model_execution": false,
+    "prior_experimental_artifacts_and_protocols_unchanged": true,
+    "raw_test_csv_opened": false,
+    "source_artifact_count": 3110,
+    "source_artifact_inventory_sha256": "a8c8d37e857f74966cf0aff91340245e293e6bb759d4da0b9c7a68d1f4621569",
+    "source_artifacts_unchanged": true
+  },
+  "verified_utc": "2026-09-28T06:50:04.874134+00:00"
+}
