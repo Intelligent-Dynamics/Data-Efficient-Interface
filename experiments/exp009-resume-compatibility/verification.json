@@ -1,0 +1,109 @@
+{
+  "artifact_preservation_after_tests": {
+    "byte_identical": true,
+    "file_count": 834,
+    "inventory_sha256": "fa99456da1273e899324ce6e6463dc8a0018ab64c19c1de34bd075ee05669199"
+  },
+  "changed_source_files": [
+    "baseline/retrieved_collection.py",
+    "baseline/retrieved_compatibility.py",
+    "baseline/retrieved_run.py"
+  ],
+  "checkpoint": "Explicit exact-source resume compatibility prepared; live NOT executed",
+  "compact_bundle_sha256": {
+    "README.md": "ca8b0a3340ae9906ff5724e1cd9351db82bde575e520e3c65172076604a0beae",
+    "receipt.json": "7587d5363a6aa5fbe885a9f979a79905867865ba2b536fffb94864a65e9326fd"
+  },
+  "frozen_protocols_sha256": {
+    "experiments/exp007-fixed-threshold-preparation/protocol.json": "0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00",
+    "experiments/exp009-retrieved-luna/protocol.json": "b78f3d32a9bd86ea130ce1f51e2feded9d52b5f5ff796507c49d6f53fccc3334"
+  },
+  "independent_original_audit": {
+    "all_artifacts_unchanged": true,
+    "all_responses_pass_existing_entry_verifier": true,
+    "guard_violations": [],
+    "ledger_matches_attempt_counts": true,
+    "remaining_attempt_allowance_distribution": {
+      "4": 2254
+    },
+    "successful_dispatch_gate_skips_all": true
+  },
+  "preparation_base_git_head": "38d836a5f2b0b49ca31ba7b67a222a4230cb01e1",
+  "read_only_patched_validation": {
+    "accounting": {
+      "actual_api_spend_usd": "0.153193925",
+      "committed_reservation_usd": "2.35222450",
+      "invoice_reconciled": false,
+      "note": "Actual experiment usage priced at frozen rates; missing usage is reserved, not assumed free.",
+      "recorded_attempts": 826,
+      "reservation_envelope_valid": true,
+      "spend_interval_under_frozen_assumptions_usd": [
+        "0.153193925",
+        "0.153193925"
+      ],
+      "unknown_charge_attempts": 0,
+      "unknown_charge_reservation_usd": "0",
+      "usage_priced_api_charges_usd": "0.153193925"
+    },
+    "all_original_files_byte_identical": true,
+    "api_calls": 0,
+    "guards": {
+      "network_attempts": 0,
+      "raw_data_or_model_access_attempts": 0,
+      "run_write_attempts": 0
+    },
+    "inventory_sha256": "fa99456da1273e899324ce6e6463dc8a0018ab64c19c1de34bd075ee05669199",
+    "ledger_consistent": true,
+    "model_inference": false,
+    "no_source_compatibility_record_written": true,
+    "original_file_count": 834,
+    "original_manifest_accepted_readonly": true,
+    "original_successes_skipped_by_dispatch_condition": true,
+    "preflight_or_live_executed": false,
+    "receipt_sha256": "7587d5363a6aa5fbe885a9f979a79905867865ba2b536fffb94864a65e9326fd",
+    "remaining_attempts_per_request": 4,
+    "remaining_full_reservation_usd": "25.91866500",
+    "remaining_max_attempts": 9016,
+    "remaining_requests": 2254,
+    "successes": 826,
+    "test_labels_accessed": false
+  },
+  "receipt_sha256": "7587d5363a6aa5fbe885a9f979a79905867865ba2b536fffb94864a65e9326fd",
+  "scope": {
+    "api_calls": 0,
+    "historical_artifacts_written": false,
+    "inference_executed": false,
+    "live_resume_executed": false,
+    "new_live_source_compatibility_record_created": false,
+    "preflight_executed": false,
+    "test_labels_accessed": false
+  },
+  "source_and_tests_sha256": {
+    "baseline/retrieved_collection.py": "cdfe786baa80c933ceaa961638b25efe281729db78663093150d9d4b112514dd",
+    "baseline/retrieved_compatibility.py": "48a8d53e87e2b2faede4dcc62de510caebbcd6524f7c220dc9392692d95d2197",
+    "baseline/retrieved_run.py": "cf99a15534ead532db994e27fc1eafeb2197827fe2aa8616856f2a4632243445",
+    "tests/test_retrieved_compatibility.py": "075ef4142b5c6ddb10ef58d0c5503d473f972e786bbb1dffcfdb7a132d285314"
+  },
+  "study_id": "EXP-009",
+  "tests": {
+    "focused": {
+      "command": ".venv/bin/python -m pytest -q tests/test_retrieved.py tests/test_retrieved_compatibility.py",
+      "console_sha256": "f2fdddb49ec23a76aaeffe05197536b81c93d83fc855119b669edb7a10619242",
+      "elapsed_seconds": 11.91,
+      "passed": 78
+    },
+    "full_suite": {
+      "command": ".venv/bin/python experiments/v1-strengthening/verify_suite.py",
+      "console_sha256": "64d08fc79b28c0eeaf7ea52266a9a3605c7e6a0ff999d99a5675a7709667c32c",
+      "elapsed_seconds": 76.18,
+      "exit_code": 0,
+      "guards": {
+        "network_attempts": 0,
+        "protected_access_attempts": 0
+      },
+      "passed": 917,
+      "runs": 1
+    }
+  },
+  "verified_utc": "2026-09-28T22:44:56.220230+00:00"
+}

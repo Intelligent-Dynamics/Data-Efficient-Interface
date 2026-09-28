@@ -2,7 +2,15 @@
 
 Updated: 2026-09-28 UTC. Active protocol: **`banking77-val10-v2`**.
 
-## EXP-009 cooldown port (2026-09-28 UTC)
+## EXP-009 explicit resume compatibility (2026-09-28 UTC)
+
+The minimal receipt mechanism is implemented and read-only verified against the existing **826 successes / 2,254 unattempted requests**. Receipt SHA-256: `7587d5363a6aa5fbe885a9f979a79905867865ba2b536fffb94864a65e9326fd`. It binds the exact old manifest/runtime, patched runtime, 3,080 prepared requests, original ledger/success hashes, cap and protocol. Only the collector, CLI and new EXP-009-specific validator change from the original pre-cooldown runtime; the reviewed EXP-007 helper remains unchanged. No historical artifact or successful request is rewritten, and no compatibility record is appended until an explicitly authorized resume. [Receipt, audit and full command](../experiments/exp009-resume-compatibility/README.md).
+
+**Next action, only after separate live authorization and current official-price verification:** use that documented `test-live` command with the exact receipt approval, original $36.00 cap and current UTC pricing acknowledgement. The approved receipt path reuses prepared inputs directly, without preflight/model inference or test-label access. It collects only outstanding predictions; it does not score them. Source/environment drift and changes to any successful attempt still fail closed. No live/API call, test-label access, preflight, inference or scoring occurred in this checkpoint. **78 focused tests** and **917 full-suite tests** passed. The full guarded suite ran once, with zero network/protected-access attempts. All 834 original files remain byte-identical; preservation hashes are recorded separately in the receipt bundle.
+
+The preceding cooldown-only checkpoint below remains historical; its then-blocked resume status is superseded by the explicit receipt mechanism above.
+
+## Earlier EXP-009 cooldown port (2026-09-28 UTC)
 
 The collector now directly reuses EXP-007's unchanged `_wait_for_cooldown` helper, with independently injected monotonic time and the helper's source hash recorded in new collection manifests. Minimum gap, Retry-After, backoff, maximum wait and retry limits are unchanged. This mechanical fix does not change either protocol or any experimental setting.
 

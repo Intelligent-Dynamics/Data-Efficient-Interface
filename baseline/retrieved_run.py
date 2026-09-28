@@ -150,7 +150,7 @@ def evaluate(scope,approval):
     if scope=='test':
         _test_bridge(approval,protocol,live=False)
     directory,requests,prepared=_load_prepared(scope,protocol)
-    report=verify_completed(requests,protocol,directory/'collection')
+    report=verify_completed(requests,protocol,directory/'collection',approval)
     frozen={'requests_sha256':digest(requests),'execution_sha256':digest(report),'protocol_sha256':digest(protocol)}
     _write_once(directory/'predictions_frozen.json',frozen)
     if (directory/'evaluation.json').exists():
@@ -196,13 +196,18 @@ def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('mode',choices=['dry-run','prepare-validation','pilot-live','validation-live','test-preflight','test-live','evaluate-pilot','evaluate-validation','evaluate-test'])
     parser.add_argument('--approved-protocol-sha256',default='')
+    parser.add_argument('--approved-resume-compatibility-sha256',default='')
     parser.add_argument('--authorize-live',action='store_true')
     parser.add_argument('--authorize-test-access',action='store_true')
     parser.add_argument('--spending-cap-usd',default='')
     parser.add_argument('--acknowledge-model-pricing-date',default='')
     args=parser.parse_args(argv)
-    approval=Approval(args.approved_protocol_sha256,args.authorize_live,args.spending_cap_usd,args.acknowledge_model_pricing_date,args.authorize_test_access)
+    approval=Approval(args.approved_protocol_sha256,args.authorize_live,args.spending_cap_usd,args.acknowledge_model_pricing_date,args.authorize_test_access,args.approved_resume_compatibility_sha256)
     protocol,_,_=load_protocol()
+    if approval.resume_compatibility_sha256:
+        require(args.mode in ('test-live','evaluate-test'), 'Compatibility is only for the original test run')
+        from .retrieved_compatibility import validate_receipt
+        validate_receipt(ROOT,approval)
     if args.mode=='dry-run':
         result={'status':'PREPARED; NOT EVALUATED; NO API CALLS','protocol_sha256':digest(protocol),
                 'costs':read_json(BUNDLE/'costs.json'),'test_access':False,'api_calls':0}
@@ -211,7 +216,8 @@ def main(argv=None):
     elif args.mode.endswith('-live'):
         scope=args.mode.removesuffix('-live')
         approval.validate(protocol,live=True,test=scope=='test')
-        if scope=='test': prepare_test(approval)
+        if scope=='test':
+            if not approval.resume_compatibility_sha256: prepare_test(approval)
         else: prepare_validation()
         directory,requests,_=_load_prepared(scope,protocol)
         result=collect(requests,protocol,directory/'collection',approval,scope)

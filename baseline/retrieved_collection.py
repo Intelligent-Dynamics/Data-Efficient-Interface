@@ -10,6 +10,7 @@ from urllib.error import URLError
 
 from . import general, recovery
 from .final_collection import _wait_for_cooldown
+from .retrieved_compatibility import accepted_manifest, record_resume_source
 from .data import ROOT, read_json, sha256
 from .general_protocol import SETTINGS, PRICING, ENDPOINT, cache_key, digest, estimate
 from .selective import require
@@ -22,6 +23,7 @@ class Approval:
     cap_usd: str = ''
     compatibility_date: str = ''
     authorize_test_access: bool = False
+    resume_compatibility_sha256: str = ''
 
     def validate(self, protocol, *, live, test=False):
         require(self.protocol_sha256 == digest(protocol), 'Separate EXP-009 protocol approval required')
@@ -93,6 +95,14 @@ def _entry(output, rid, body, protocol, kind):
     return path,entry
 
 
+def source_record():
+    return {'code_sha256':{p.name:sha256(p.read_bytes()) for p in sorted((ROOT/'baseline').glob('retrieved*.py'))},
+            'reused_code':general.code_record(),
+            'reused_helper_sha256':{name:sha256((ROOT/'baseline'/name).read_bytes()) for name in
+                ('recovery.py','final_collection.py','final_protocol.py','final_test.py','final_specialists.py','cpu_benchmark.py',
+                 'embeddings.py','data.py','selective.py','thresholds.py')}}
+
+
 def collect(requests, protocol, output, approval, scope, *, transport=None,
             sleep=time.sleep, clock=time.time, monotonic=time.monotonic):
     require(scope in ('pilot','validation','test'), 'Unknown collection scope')
@@ -123,20 +133,20 @@ def collect(requests, protocol, output, approval, scope, *, transport=None,
     kind = 'live' if live else 'synthetic'
     manifest = {'study_id':'EXP-009','kind':kind,'scope':scope,'protocol_sha256':digest(protocol),
                 'requests_sha256':digest(requests),'cap_usd':str(cap),'full_retry_reservation_usd':str(reserve),
-                'code_sha256':{p.name:sha256(p.read_bytes()) for p in sorted((ROOT/'baseline').glob('retrieved*.py'))},
-                'reused_code':general.code_record(),
-                'reused_helper_sha256':{name:sha256((ROOT/'baseline'/name).read_bytes()) for name in
-                    ('recovery.py','final_collection.py','final_protocol.py','final_test.py','final_specialists.py','cpu_benchmark.py',
-                     'embeddings.py','data.py','selective.py','thresholds.py')}}
+                **source_record()}
+    if approval.resume_compatibility_sha256:
+        accepted_manifest(output/'manifest.json',manifest,approval,root=ROOT)
     with general.lock(output):
         mp=output/'manifest.json'
         if mp.exists():
-            require(read_json(mp)==manifest,'Resume manifest/code/input/cap drift')
+            manifest=accepted_manifest(mp,manifest,approval,root=ROOT)
             require((output/'reservations.json').exists(),'Reservation ledger missing')
         else:
             require(not any(p.name!='.lock' for p in output.iterdir()),'New collection directory must be empty')
             general.atomic_json(mp,manifest)
         entries={i:_entry(output,i,b,protocol,kind)[1] for i,b in requests.items()}
+        general.sync_reservation_ledger(output,manifest,entries,write=False)
+        record_resume_source(output,approval,source_record(),root=ROOT)
         general.sync_reservation_ledger(output,manifest,entries)
         halted='previous_fatal_attempt' if any(a.get('halt') for e in entries.values() for a in e['attempts']) else None
         for rid,body in requests.items():
@@ -193,7 +203,7 @@ def collect(requests, protocol, output, approval, scope, *, transport=None,
         return result
 
 
-def verify_completed(requests, protocol, output):
+def verify_completed(requests, protocol, output, approval=None):
     """Offline replay never resumes or allocates a paid request."""
     output=Path(output)
     validate_requests(requests,protocol)
@@ -201,6 +211,10 @@ def verify_completed(requests, protocol, output):
             not any(p.is_symlink() for p in output.rglob('*')), 'Symlink evidence forbidden')
     manifest=read_json(output/'manifest.json')
     scope=manifest['scope']
+    if getattr(approval,'resume_compatibility_sha256','') or (output/'source_compatibility.json').exists():
+        expected={**manifest,**source_record()}
+        accepted_manifest(output/'manifest.json',expected,approval,root=ROOT)
+        record_resume_source(output,approval,source_record(),root=ROOT,write=False)
     require(scope in ('pilot','validation','test') and manifest['kind'] in ('live','synthetic'), 'Invalid saved scope/kind')
     expected=protocol['pilot_ids'] if scope=='pilot' else protocol['validation_ids'] if scope=='validation' else [f'test:{i:05d}' for i in range(3080)]
     require(list(requests)==expected, 'Completed scope IDs changed')
