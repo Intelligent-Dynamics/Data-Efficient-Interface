@@ -1,0 +1,43 @@
+{
+  "api_calls": 0,
+  "base_git_head": "173522e5454f1565c5e8d99d032fbc27eb720e90",
+  "compact_files_sha256": {
+    "README.md": "cb77c14059dfa3844dda6c830ebc93be5b5cbca99ec504186f09a0f20b6ab828",
+    "analyze.py": "1e3901166c51936a224dfccf4c0fc54e71e4cedd95f3c4fbdacdffd8ffcea5e5",
+    "summary.json": "a6f4f2bb3a5581753e3d381a1374aaf04731052fb35db2bdcbaabbf8922b5d1a"
+  },
+  "independent_raw_usage_audit_matches": true,
+  "inference_calls": 0,
+  "preservation_after_tests": {
+    "all_saved_files_byte_identical": true,
+    "api_calls": 0,
+    "file_count": 3092,
+    "guard_violations": [],
+    "raw_test_file_access": false,
+    "tree_sha256": "03bc76cbe5afbd71308fb13f73c660f9dd61e633b8ecf77e1c63feb87094d3bc"
+  },
+  "primary_guard_counters": {
+    "network_attempts": 0,
+    "protected_access_attempts": 0,
+    "write_attempts": 0
+  },
+  "raw_test_file_access": false,
+  "scoring_calls": 0,
+  "source_artifacts_byte_identical": true,
+  "source_artifacts_preserved_count": 3092,
+  "source_tree_sha256": "03bc76cbe5afbd71308fb13f73c660f9dd61e633b8ecf77e1c63feb87094d3bc",
+  "status": "VERIFIED OFFLINE",
+  "test_source_sha256": "ddb349b3e5455e78ce9866b64df50df6f1926b2db38ee7e87ab0783621e8263a",
+  "tests": {
+    "command": ".venv/bin/python -m pytest -q tests/test_exp009_routed_cost.py tests/test_exp009_official_evidence.py tests/test_general_runner.py tests/test_general_protocol.py (under v1 offline guards)",
+    "console_sha256": "7d0c270b93050a5df57dc4d238f63b82790b818197b945b49db7082ef398016a",
+    "failed": 0,
+    "guards": {
+      "network_attempts": 0,
+      "protected_access_attempts": 0
+    },
+    "new_synthetic_cost_tests": 13,
+    "passed": 129,
+    "pytest_seconds": 2.97
+  }
+}

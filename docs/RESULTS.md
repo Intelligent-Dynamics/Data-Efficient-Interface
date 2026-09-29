@@ -34,6 +34,14 @@ Retrieved Luna is substantially stronger than zero-shot Luna **under these froze
 
 **Limits:** one seed and one training pool do not establish seed robustness for the retrieved condition. EXP-007's five seeds share this same test population, and their SD is not a confidence interval; the two study summaries do not have identical uncertainty. Public-benchmark pretraining exposure and near-duplicate contamination cannot be ruled out. The test is now evaluated; no further tuning is justified by these outcomes. Production dollar savings are not established. Calibration, SetFit/fine-tuning, a second dataset (CLINC150), self-hosted vLLM/H100 and production cost measurement are deferred to v2.
 
+## EXP-009 — routed LLM API spend attribution (2026-09-29)
+
+Read-only accounting on the completed test evidence identifies exactly **268 fallback IDs**. Their 268 successful first attempts have known usage-priced charges of **$0.051380650**, no priced retry charges and no unknown usage; routed spend interval **[$0.051380650, $0.051380650]**. **None of the three all-case unknown-charge attempts is routed.** All-Luna remains **$0.576343155**, bounded by **[$0.576343155, $0.584791155]**.
+
+The hypothetical **LLM API spend reduction** is exactly **$0.524962505** on known usage, with interval **[$0.524962505, $0.533410505]** under frozen unknown-attempt assumptions. Known-spend reduction is **91.08505938619155%**, bounded by **91.08505938619155%–91.21384624909383%**. This is similar to, but slightly below, the **91.2987012987013%** request reduction; mean routed charges are slightly higher. Every selected attempt was repriced from its returned usage and independently checked using raw token totals; no proportional approximation or rescoring was used.
+
+These values replay the observed cache-read/write and retry behavior from the all-case experiment. Sending a different traffic subset could change that behavior; the actual study did not save this money, and invoice spend remains unknown/unreconciled. Specialist, retrieval and serving costs are excluded. This is **not total-system or production savings**. See [compact cost evidence and read-only analysis](../experiments/exp009-routed-api-spend/README.md). Historical official-test evidence and protocol bytes remain unchanged.
+
 ## EXP-007 — official-test complementary routing (2026-09-28)
 
 The frozen 20-shot MiniLM/LR specialists use 1,540 fitting labels each plus the same 770 development labels, with external MiniLM pretraining. All five seeds are evaluated on the same 3,080 official BANKING77 cases using fixed validation-derived thresholds. One all-case zero-shot Luna prediction set is reused across seeds; no test ranking or forced coverage. Results are mean ± **sample SD** across training seeds, with SD in percentage points; Luna has one shared result.

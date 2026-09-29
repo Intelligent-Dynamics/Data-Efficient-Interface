@@ -1,0 +1,125 @@
+{
+  "actual_invoice_spend_usd": null,
+  "all_luna": {
+    "attempt_count": 3083,
+    "attempt_status_counts": {
+      "ok": 3080,
+      "transport_unknown": 3
+    },
+    "known_charges_usd": "0.576343155",
+    "priced_retry_attempt_charges_usd_included_above": "0.000232805",
+    "priced_successful_attempt_charges_usd": "0.576343155",
+    "priced_unsuccessful_attempt_charges_usd": "0",
+    "request_count": 3080,
+    "returned_usage_totals": {
+      "cache_write_tokens": 4367509,
+      "cached_tokens": 2703,
+      "input_tokens": 4379452,
+      "output_tokens": 58907,
+      "reasoning_tokens": 0
+    },
+    "spend_interval_under_frozen_assumptions_usd": [
+      "0.576343155",
+      "0.584791155"
+    ],
+    "unknown_charge_attempts": 3,
+    "unknown_charge_reservation_usd": "0.0084480"
+  },
+  "assumptions": [
+    "Replay recorded token usage, cache-read/write classification and retry histories at frozen rates.",
+    "Sending only the fallback subset could change caching or retries; this is not a new execution or guaranteed invoice.",
+    "LLM API spend reduction only; specialist/retrieval/serving costs and total-system savings are unmeasured."
+  ],
+  "fallback_ids_sha256": "c0df0a60713322525c58ada360e04b5989c7201177f1e3a0cb5fb9738065e9ec",
+  "invoice_reconciled": false,
+  "not_routed": {
+    "attempt_count": 2815,
+    "attempt_status_counts": {
+      "ok": 2812,
+      "transport_unknown": 3
+    },
+    "known_charges_usd": "0.524962505",
+    "priced_retry_attempt_charges_usd_included_above": "0.000232805",
+    "priced_successful_attempt_charges_usd": "0.524962505",
+    "priced_unsuccessful_attempt_charges_usd": "0",
+    "request_count": 2812,
+    "returned_usage_totals": {
+      "cache_write_tokens": 3977891,
+      "cached_tokens": 2703,
+      "input_tokens": 3989030,
+      "output_tokens": 53711,
+      "reasoning_tokens": 0
+    },
+    "spend_interval_under_frozen_assumptions_usd": [
+      "0.524962505",
+      "0.533410505"
+    ],
+    "unknown_charge_attempts": 3,
+    "unknown_charge_reservation_usd": "0.0084480"
+  },
+  "pricing": {
+    "as_of": "2026-09-25",
+    "cache_source": "https://developers.openai.com/api/docs/guides/prompt-caching",
+    "currency": "USD",
+    "per_million_tokens": {
+      "cache_write": "0.125",
+      "cached_input": "0.01",
+      "input": "0.10",
+      "output": "0.50"
+    },
+    "scope": "Standard, nonregional, <=272000 input tokens, no tools; excluding taxes/credits",
+    "source": "https://developers.openai.com/api/docs/pricing"
+  },
+  "protocol_sha256": "b78f3d32a9bd86ea130ce1f51e2feded9d52b5f5ff796507c49d6f53fccc3334",
+  "provenance": {
+    "reservation_ledger_sha256": "49fde469949cc7de3131088cf1ff4234a7b48ab06ce8d0ce005a0bee028911ba",
+    "response_file_inventory_sha256": "431917522804b80916ab68dbe9f6f33976c3a7523f8f31cd943eb3e6e9d4c779",
+    "specialist_sha256": "b92c3e679ed31a9ad7b3a41c4fbeb645099c1ec1b59977d19c5d7db4dd1d9a26"
+  },
+  "reduction": {
+    "absolute_reduction_interval_usd": [
+      "0.524962505",
+      "0.533410505"
+    ],
+    "known_dollar_reduction_usd": "0.524962505",
+    "known_spend_reduction_percent": "91.08505938619154763796925809",
+    "spend_reduction_percent_interval": [
+      "91.08505938619154763796925809",
+      "91.21384624909383248110173623"
+    ]
+  },
+  "request_reduction_percent": "91.29870129870129870129870130",
+  "routed_luna": {
+    "attempt_count": 268,
+    "attempt_status_counts": {
+      "ok": 268
+    },
+    "known_charges_usd": "0.051380650",
+    "priced_retry_attempt_charges_usd_included_above": "0",
+    "priced_successful_attempt_charges_usd": "0.051380650",
+    "priced_unsuccessful_attempt_charges_usd": "0",
+    "request_count": 268,
+    "returned_usage_totals": {
+      "cache_write_tokens": 389618,
+      "cached_tokens": 0,
+      "input_tokens": 390422,
+      "output_tokens": 5196,
+      "reasoning_tokens": 0
+    },
+    "spend_interval_under_frozen_assumptions_usd": [
+      "0.051380650",
+      "0.051380650"
+    ],
+    "unknown_charge_attempts": 0,
+    "unknown_charge_reservation_usd": "0"
+  },
+  "study_id": "EXP-009 routed LLM API spend attribution",
+  "verification": {
+    "api_calls": 0,
+    "independent_token_total_repricing": true,
+    "ledger_consistent": true,
+    "no_scoring_or_inference": true,
+    "raw_returned_usage_repriced": true,
+    "response_files_byte_identical": true
+  }
+}

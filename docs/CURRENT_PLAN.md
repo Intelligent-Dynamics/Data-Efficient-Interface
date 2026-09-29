@@ -16,6 +16,8 @@ Protocols are unchanged: EXP-007 `0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7a
 
 Final checkpoint checks are recorded in [verification](../experiments/exp009-official-test/verification.json). Current results and limitations are in [RESULTS.md](RESULTS.md) and [V1_COMPLETION.md](V1_COMPLETION.md).
 
+Post-v1 accounting is complete: the 268 routed requests have **$0.051380650** in known usage-priced LLM charges, with zero routed retry/unknown charges. This yields **91.085059%** known LLM API spend reduction under recorded cache/retry behavior, not total-system savings. No execution is required; see [cost attribution](../experiments/exp009-routed-api-spend/README.md).
+
 ## Historical plans and checkpoints — superseded
 
 **Everything below preserves an earlier dated state.** Pending-run instructions, partial progress, test counts and future commands are historical; they are not current actions or execution authorization. EXP-009's earlier 826-response checkpoint and EXP-007's earlier interrupted collection were subsequently completed.
