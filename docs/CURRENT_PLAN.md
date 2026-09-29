@@ -1,6 +1,24 @@
 # Current plan
 
-Updated: 2026-09-28 UTC. Active protocol: **`banking77-val10-v2`**.
+Updated: 2026-09-29 UTC. Development split: **`banking77-val10-v2`**.
+
+## Current milestone — v1 DONE
+
+Both frozen official-test studies are complete. Finalization uses the saved EXP-009 evaluation, prediction freeze and accounting; compact evidence is in [EXP-009 final test](../experiments/exp009-official-test/README.md). No more API calls, training, model inference, test preflight or experiments are needed for v1. Do not resume or replace completed runs.
+
+The **single-seed EXP-009 companion** scores **88.084416% accuracy / 87.982622% macro-F1** for retrieved-example routing over all **3,080** test requests. It uses Luna on **268 cases (8.701299%)**, retains specialist coverage **91.298701%**, and improves its matching seed-11 specialist by **2.500000 / 2.635497 percentage points**. Retrieved Luna on every request is higher at **92.175325% / 92.134813%**. This is a measured quality-versus-LLM-usage tradeoff, not a production-dollar-savings claim. All 3,080 final retrieved outputs are OK. Usage-priced charges are **$0.576343155**, bounded by **$0.576343155–$0.584791155** with three unknown-usage attempts; actual invoice spend remains unknown/unreconciled.
+
+The separate **five-seed EXP-007** result remains specialist mean **85.435065% / 85.190044%**, zero-shot Luna **81.363636% / 80.585867%**, and zero-shot hybrid mean **86.487013% / 86.298575%** at **9.012987% mean fallback / 90.987013% mean specialist coverage**. EXP-009 uses matched seed-11 controls for paired gains; its uncertainty is not interchangeable with five-seed variation. The five seeds share one population and one zero-shot Luna set; seed SD is not a confidence interval. Both studies use 1,540 fitting labels per specialist plus 770 reused development labels and external encoder pretraining. Actual study calls covered all test cases; routed fractions describe policy replay.
+
+Protocols are unchanged: EXP-007 `0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00`; EXP-009 `b78f3d32a9bd86ea130ce1f51e2feded9d52b5f5ff796507c49d6f53fccc3334`. EXP-009 prediction freeze is `c2963a59ca83911a9ccacf9390390fed18fb9bb5282bf38ae1b33b5c44be2a8c`. Preserve original manifests, response histories, ledgers, weights, frozen requests and all earlier artifacts; only compact verified evidence belongs in Git.
+
+**Next work is deferred to v2, not started:** calibration; SetFit/fine-tuned specialist; CLINC150/second dataset; self-hosted vLLM/H100; production cost study. A new user-approved scope must define fresh evaluation and label/cost budgets. Do not tune from the completed official-test outcomes. The remaining limitation is unmeasured production cost/reliability, not an unfinished v1 run.
+
+Final checkpoint checks are recorded in [verification](../experiments/exp009-official-test/verification.json). Current results and limitations are in [RESULTS.md](RESULTS.md) and [V1_COMPLETION.md](V1_COMPLETION.md).
+
+## Historical plans and checkpoints — superseded
+
+**Everything below preserves an earlier dated state.** Pending-run instructions, partial progress, test counts and future commands are historical; they are not current actions or execution authorization. EXP-009's earlier 826-response checkpoint and EXP-007's earlier interrupted collection were subsequently completed.
 
 ## EXP-009 explicit resume compatibility (2026-09-28 UTC)
 

@@ -1,0 +1,106 @@
+{
+  "accepted_count": 2812,
+  "additional_validation_labels": 770,
+  "companion": {
+    "comparability": "All five arms share the same 3080 test cases and seed-11 specialist/training pool. This companion has no five-seed uncertainty estimate.",
+    "examples_per_class": 20,
+    "seed": 11,
+    "seed_count": 1,
+    "threshold": 0.10354116298070118,
+    "threshold_binary64_hex": "0x1.a81ac74cabb1ap-4",
+    "training_pool_count": 1
+  },
+  "fallback_accuracy": {
+    "retrieved": 0.753731343283582,
+    "zero_shot": 0.5746268656716418
+  },
+  "fallback_correct_counts": {
+    "retrieved": 202,
+    "zero_shot": 154
+  },
+  "fallback_count": 268,
+  "fallback_percentage": 8.7012987012987,
+  "limitation": "Single seed/single training pool; report deterioration/null effects equally.",
+  "metrics": {
+    "retrieved_hybrid": {
+      "accuracy": 0.8808441558441559,
+      "correct_count": 2713,
+      "error_count": 367,
+      "macro_f1": 0.8798262186132982,
+      "n_examples": 3080,
+      "unresolved_count": 0,
+      "unresolved_policy": "None counts as incorrect; all cases retained; macro averages declared classes only"
+    },
+    "retrieved_luna": {
+      "accuracy": 0.9217532467532468,
+      "correct_count": 2839,
+      "error_count": 241,
+      "macro_f1": 0.921348132423449,
+      "n_examples": 3080,
+      "unresolved_count": 0,
+      "unresolved_policy": "None counts as incorrect; all cases retained; macro averages declared classes only"
+    },
+    "specialist": {
+      "accuracy": 0.8558441558441559,
+      "correct_count": 2636,
+      "error_count": 444,
+      "macro_f1": 0.8534712513843612,
+      "n_examples": 3080,
+      "unresolved_count": 0,
+      "unresolved_policy": "None counts as incorrect; all cases retained; macro averages declared classes only"
+    },
+    "zero_shot_hybrid": {
+      "accuracy": 0.8652597402597403,
+      "correct_count": 2665,
+      "error_count": 415,
+      "macro_f1": 0.8638927520147035,
+      "n_examples": 3080,
+      "unresolved_count": 0,
+      "unresolved_policy": "None counts as incorrect; all cases retained; macro averages declared classes only"
+    },
+    "zero_shot_luna": {
+      "accuracy": 0.8136363636363636,
+      "correct_count": 2506,
+      "error_count": 574,
+      "macro_f1": 0.8058586665013753,
+      "n_examples": 3080,
+      "unresolved_count": 0,
+      "unresolved_policy": "None counts as incorrect; all cases retained; macro averages declared classes only"
+    }
+  },
+  "n_examples": 3080,
+  "observed_coverage": 0.912987012987013,
+  "paired_differences": {
+    "retrieved_hybrid minus retrieved_luna": {
+      "accuracy": -0.040909090909090895,
+      "macro_f1": -0.0415219138101508
+    },
+    "retrieved_hybrid minus specialist": {
+      "accuracy": 0.025000000000000022,
+      "macro_f1": 0.026354967228937043
+    },
+    "retrieved_hybrid minus zero_shot_hybrid": {
+      "accuracy": 0.01558441558441559,
+      "macro_f1": 0.015933466598594737
+    },
+    "retrieved_luna minus specialist": {
+      "accuracy": 0.06590909090909092,
+      "macro_f1": 0.06787688103908784
+    },
+    "retrieved_luna minus zero_shot_luna": {
+      "accuracy": 0.10811688311688317,
+      "macro_f1": 0.11548946592207376
+    }
+  },
+  "prediction_freeze_sha256": "c2963a59ca83911a9ccacf9390390fed18fb9bb5282bf38ae1b33b5c44be2a8c",
+  "production_savings_usd": null,
+  "protocol_sha256": "b78f3d32a9bd86ea130ce1f51e2feded9d52b5f5ff796507c49d6f53fccc3334",
+  "retrieved_status_counts": {
+    "ok": 3080
+  },
+  "scope": "test",
+  "status": "PAID RESULTS",
+  "study_id": "EXP-009",
+  "task_training_labels": 1540,
+  "total_system_cost_usd": null
+}

@@ -1,0 +1,74 @@
+{
+  "api_calls": 0,
+  "checkpoint_base_git_head": "7b518e5280723829a6a4a83f6826ac4b38434ab2",
+  "compact_files_sha256": {
+    "README.md": "47e9bfb1c66ef878453a6e5b297da8bd3c6755944f54f1929c06d4014c3fbd94",
+    "accounting.json": "3dc9111922dc57845c6d3f479781ace0965c6ddb67e7739bdc56aa01e0872b19",
+    "per_class.json": "1ea0ba74959495130799472ab28388c8ff8784864cc152ddf83fe83d1ea5b659",
+    "provenance.json": "bcf0d067efa7339e23f5184c527ffd25f04aeed2e80d7a307f6688f32a7d4dc0",
+    "reproduce.py": "c687372c6d03c8f6dcf18760444633d9e84776cce15b5d803dfe9fd18d0cf96e",
+    "summary.json": "b122d6c3a8ca366ac5dc5e2109571241b8468aa76e8548bde4e9a667ccc731d2"
+  },
+  "documentation_consistency": {
+    "api_calls": 0,
+    "checks": {
+      "both_frozen_protocols_unchanged": true,
+      "experiment_calls_distinguished_from_policy_llm_fraction": true,
+      "matched_seed11_tables_and_distinct_five_seed_controls": true,
+      "no_current_live_or_preflight_command": true,
+      "relative_links_resolve": 76,
+      "seven_current_documents_consistent": true
+    },
+    "documents_sha256": {
+      "AGENTS.md": "85ddaed548f8395634b449dcb6b3aadc16a3cc739d037c335001db4b5fb8a87e",
+      "README.md": "e6192d7434b0ed6f066e007aaff060c1de569e2021ddbe14541af4ad36ae5f20",
+      "docs/CURRENT_PLAN.md": "96050323ae4d21d297c2d86eaee0d69568cf3b8368d0764e28ef199e6c08bd4c",
+      "docs/EXPERIMENTS.md": "3548bd8bc0c86b6bbcc6f1c80d9341781ee534eadf18f9ec8a6931a78414e475",
+      "docs/PROJECT_CONTEXT.md": "b710b66cffc2996ec054ebed5b32109c6a9cd4d262bd6cd2a8cc2d31ae0e0ca8",
+      "docs/RESULTS.md": "9cec0602ab1f4ba647604d7b5c65195f99f5a65c930534d7f6bceaed3b14b0ec",
+      "docs/V1_COMPLETION.md": "a4643db9140eec191d3176ada4482e607c2a84f360523b8c05dd1ae457930c1c"
+    },
+    "model_execution": false,
+    "raw_test_file_access": false
+  },
+  "guard_violations": {},
+  "historical_tracked_evidence_unchanged_from_base": true,
+  "maximum_absolute_arithmetic_difference": 1.1102230246251565e-16,
+  "model_inference": false,
+  "prediction_freeze_sha256": "c2963a59ca83911a9ccacf9390390fed18fb9bb5282bf38ae1b33b5c44be2a8c",
+  "preservation_after_tests": {
+    "all_saved_files_byte_identical": true,
+    "api_calls": 0,
+    "file_count": 3092,
+    "guard_violations": [],
+    "raw_test_file_access": false,
+    "tree_sha256": "03bc76cbe5afbd71308fb13f73c660f9dd61e633b8ecf77e1c63feb87094d3bc"
+  },
+  "protocol_sha256": "b78f3d32a9bd86ea130ce1f51e2feded9d52b5f5ff796507c49d6f53fccc3334",
+  "raw_test_csv_access": false,
+  "runtime_and_protocol_files_unchanged_from_base": true,
+  "scope": "Saved evaluation/per-class/response evidence replay only; no inference or newly joined test labels.",
+  "source_artifacts_byte_identical": true,
+  "source_artifacts_preserved_count": 3092,
+  "status": "VERIFIED OFFLINE; v1 DONE",
+  "tests": {
+    "command": ".venv/bin/python experiments/v1-strengthening/verify_suite.py",
+    "console_sha256": "3c527ec6ced28fb09e355e5fde501c2d0f5325d90f312d49626c232f8353b9dc",
+    "exit_code": 0,
+    "failed": 0,
+    "full_suite_runs": 1,
+    "guarded_process_elapsed_seconds": 72.45318770874292,
+    "guards": {
+      "network_attempts": 0,
+      "protected_access_attempts": 0
+    },
+    "new_compact_evidence_tests": 18,
+    "passed": 935,
+    "pytest_elapsed_seconds": 72.09
+  },
+  "verification_source_sha256": {
+    "experiments/exp009-official-test/reproduce.py": "c687372c6d03c8f6dcf18760444633d9e84776cce15b5d803dfe9fd18d0cf96e",
+    "experiments/v1-strengthening/verify_suite.py": "b823aff0dc31db81b821e410344b404b55dcf6a86d428ae6cafa62ad098fa7d1",
+    "tests/test_exp009_official_evidence.py": "2e4fae636d43b5f8bd9a80e81c26fbd03b8e12eba59e017fc4cac93e37c47398"
+  }
+}

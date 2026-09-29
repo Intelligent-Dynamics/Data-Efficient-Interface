@@ -1,6 +1,38 @@
 # Verified reproducible results
 
-Current status (2026-09-28 UTC): EXP-007 official-test evaluation is complete and independently verified from saved artifacts. Validation and official-test results below are separate populations; historical status statements retain their original dates. Retrieved-example EXP-009 test results remain pending.
+Current status (2026-09-29 UTC): **v1 DONE.** Both EXP-007 and EXP-009 official-test evaluations are complete. The new EXP-009 companion is a single-seed result; EXP-007 retains its five-seed summary separately. Validation and official-test results below are separate populations. Dated earlier preparation, interrupted-run and negative results are preserved as history, not current instructions to run more experiments.
+
+## EXP-009 — official-test retrieved-example companion (2026-09-29)
+
+**Retrieved-example routing reached 88.084416% accuracy and 87.982622% macro-F1 while sending 268/3,080 requests (8.701299%) to Luna.** This improves accuracy by **2.500000 percentage points** and macro-F1 by **2.635497 points** over the matched seed-11 specialist. Specialist coverage is exactly **0.912987012987013** (2,812 accepted). The frozen scalar threshold is applied independently, without ranking or forcing test coverage.
+
+All five rows below use the same 3,080 held-out cases and the **same seed-11, 20-shot training pool** where applicable. The specialist and zero-shot controls are reused from EXP-007's seed-11 results; they are not EXP-007's five-seed averages. Luna-only has one shared response set per prompt condition, not five independently sampled models. This is a single-seed/single-pool companion comparison, with no seed SD or confidence interval claimed.
+
+| System (matched seed-11 comparison) | Accuracy (%) | Macro-F1 (%) | Correct / 3,080 | LLM use under policy |
+| --- | ---: | ---: | ---: | ---: |
+| Specialist | 85.584416 | 85.347125 | 2,636 | 0% |
+| Zero-shot Luna | 81.363636 | 80.585867 | 2,506 | 100% |
+| Zero-shot hybrid | 86.525974 | 86.389275 | 2,665 | 8.701299% |
+| Retrieved-example Luna | 92.175325 | 92.134813 | 2,839 | 100% |
+| Retrieved-example hybrid | 88.084416 | 87.982622 | 2,713 | 8.701299% |
+
+The retrieved prompt uses exactly 20 examples from the already labeled 1,540-example training pool, chosen with the frozen MiniLM retrieval procedure. Label budget: **1,540 task training labels + 770 additional validation labels**, with external encoder pretraining. No extra fitting or validation/test demonstrations were added for EXP-009.
+
+| Paired difference on the same seed-11 controls | Accuracy change (pp) | Macro-F1 change (pp) |
+| --- | ---: | ---: |
+| Retrieved Luna − zero-shot Luna | +10.811688 | +11.548947 |
+| Retrieved Luna − specialist | +6.590909 | +6.787688 |
+| Retrieved hybrid − specialist | +2.500000 | +2.635497 |
+| Retrieved hybrid − retrieved Luna | −4.090909 | −4.152191 |
+| Retrieved hybrid − zero-shot hybrid | +1.558442 | +1.593347 |
+
+Retrieved Luna is substantially stronger than zero-shot Luna **under these frozen prompt conditions on this benchmark**. It is also more accurate than the routed system: accepting specialist answers trades some quality for fewer LLM requests. On the same 268 rejected requests, retrieved fallback accuracy is **0.753731343283582** (202 correct), versus zero-shot fallback **0.5746268656716418** (154 correct). This is complementary routing, not a claim that Luna is universally stronger. The observed 8.7012987012987% describes offline policy replay; the experiment actually queried all 3,080 cases for each standalone Luna condition.
+
+**Accounting:** all 3,080 retrieved outputs are `ok`; 3,083 attempts include three `transport_unknown` attempts that later resolved. Known usage-priced API charges are **$0.576343155**. Missing usage carries a **$0.0084480** reservation, so the frozen-assumption spend interval is **[$0.576343155, $0.584791155]**. Actual invoice spend remains **unknown / not reconciled**. Reservations are not additional known charges. These are experiment charges, not production-system costs or savings; specialist deployment cost and production latency remain unmeasured.
+
+**Verification and provenance:** compact [evidence and offline replay](../experiments/exp009-official-test/README.md) preserve all original metric values, per-class counts, paired differences, accounting and source hashes. Replay recomputes accuracy/macro-F1 from saved per-class sufficient statistics; aligned saved predictions, gates and prediction marginals are separately checked. Maximum independent arithmetic difference is **1.1102230246251565e-16**; the original saved metric floats remain unchanged. This checkpoint does not rejoin test labels or rerun inference. All 3,092 original EXP-009 artifact files remain byte-identical. The original prediction freeze is `c2963a59ca83911a9ccacf9390390fed18fb9bb5282bf38ae1b33b5c44be2a8c`, and protocol remains `b78f3d32a9bd86ea130ce1f51e2feded9d52b5f5ff796507c49d6f53fccc3334`.
+
+**Limits:** one seed and one training pool do not establish seed robustness for the retrieved condition. EXP-007's five seeds share this same test population, and their SD is not a confidence interval; the two study summaries do not have identical uncertainty. Public-benchmark pretraining exposure and near-duplicate contamination cannot be ruled out. The test is now evaluated; no further tuning is justified by these outcomes. Production dollar savings are not established. Calibration, SetFit/fine-tuning, a second dataset (CLINC150), self-hosted vLLM/H100 and production cost measurement are deferred to v2.
 
 ## EXP-007 — official-test complementary routing (2026-09-28)
 
@@ -26,7 +58,7 @@ Mean accuracy on matching rejected subsets is **55.115613%** for Luna and **43.4
 
 **Accounting:** 3,080 final outputs resolved; 3,081 attempts, including one HTTP 503 followed by a successful retry. Known usage-priced charges **$0.332622650**; the failed attempt lacks usage, so the frozen-envelope spend interval remains **$0.332622650–$0.334866150**, not an exact invoice total. The experiment queried all 3,080 cases for the standalone baseline; ~9% is the policy fallback fraction. Reservations are not additional charges.
 
-Five seeds share the same test population and Luna predictions; seed SD is **not a confidence interval**. No total production cost/savings or production latency is measured. EXP-009 retrieved-example test results are **pending**; no tuning follows this test. All per-class metrics, seed results, raw-count arithmetic, accounting and provenance are in the [compact official-test evidence](../experiments/exp007-official-test/README.md). Independent replay matched all saved numeric metrics exactly (maximum difference **0.0**); it used saved evaluation labels and never reopened the raw test CSV, reran inference or called an API. The original protocol remains `0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00`.
+Five seeds share the same test population and Luna predictions; seed SD is **not a confidence interval**. No total production cost/savings or production latency is measured. At this EXP-007 checkpoint, EXP-009 was pending; its completed single-seed companion is now reported above. No tuning follows either test. All per-class metrics, seed results, raw-count arithmetic, accounting and provenance are in the [compact official-test evidence](../experiments/exp007-official-test/README.md). Independent replay matched all saved numeric metrics exactly (maximum difference **0.0**); it used saved evaluation labels and never reopened the raw test CSV, reran inference or called an API. The original protocol remains `0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00`.
 
 
 ## EXP-002 — validation learning curve (2026-09-24)

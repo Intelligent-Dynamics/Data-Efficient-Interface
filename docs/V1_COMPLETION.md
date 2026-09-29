@@ -1,4 +1,40 @@
-# Bounded v1 completion — 2026-09-27
+# v1 completion — DONE
+
+Updated: 2026-09-29 UTC. EXP-007 and EXP-009 official-test evaluation are complete. This final checkpoint verifies saved evidence only, with no further API calls, inference, training, test preflight or experiments. Historical bounded-pass records below preserve the earlier sequence, including then-pending runs and resolved blockers.
+
+## Final held-out conclusion
+
+On **3,080 BANKING77 test cases**, the **single-seed EXP-009 retrieved-example hybrid** achieves **88.084416% accuracy / 87.982622% macro-F1**, using Luna for **268 requests (8.701299%)**. The specialist handles **2,812 cases (91.298701%)**. Relative to the matched seed-11 specialist, accuracy improves **2.500000 percentage points** and macro-F1 **2.635497 points**; relative to the matched zero-shot hybrid, improvements are **1.558442 / 1.593347 points**.
+
+Retrieved-example Luna on all requests achieves **92.175325% accuracy / 92.134813% macro-F1**: **10.811688 / 11.548947 points** above zero-shot Luna, and **4.090909 / 4.152191 points** above the retrieved hybrid. On the shared 268-case fallback subset, retrieved Luna is correct on **202 (75.373134%)**, versus **154 (57.462687%)** for zero-shot Luna. Thus retrieval improves this model's task performance and routing improves the specialist, while the routed system sacrifices quality relative to all-request retrieved Luna to use the LLM less. This is not a claim of production dollar savings or universal model superiority.
+
+The separate **five-seed EXP-007** official-test result is retained: specialist mean accuracy/macro-F1 **85.435065% / 85.190044%**, zero-shot Luna **81.363636% / 80.585867%**, zero-shot hybrid mean **86.487013% / 86.298575%**, mean specialist coverage **90.987013%**, and mean fallback **9.012987%**. Its mean accuracy gain is **1.051948 points** over specialist-only. EXP-009 paired differences use the actual seed-11 control, not these five-seed means.
+
+## Completed scope and evidence
+
+- Classical and frozen-MiniLM validation learning curves, all prescribed seeds and preserved negative outcomes.
+- Validation confidence diagnostics, completed EXP-006/006R collection and fixed scalar thresholds derived from development data only.
+- Existing CPU timing study (EXP-008), kept separate from test quality and production costs; no timing rerun.
+- Five-seed zero-shot held-out comparison (EXP-007), including all individual results and sample SDs: [final evidence](../experiments/exp007-official-test/README.md).
+- Single-seed retrieved-example held-out comparison (EXP-009), preserving its exact 20-example retrieval, training pool, prompt, models, threshold and evaluation definitions: [final evidence](../experiments/exp009-official-test/README.md).
+
+EXP-009 has **3,080 OK final outputs**, **3,083 attempts**, and three unknown-usage attempts. Usage-priced charges are **$0.576343155**; the frozen-assumption spend interval is **[$0.576343155, $0.584791155]**. Actual invoice spend remains unknown/unreconciled. EXP-007's retained charges are **$0.332622650**, bounded by **$0.332622650–$0.334866150**. Both collections queried all test cases for standalone comparisons. The routed LLM percentages are offline policy use, not the fraction of experiment calls purchased.
+
+Frozen EXP-007 protocol: `0ff095f523ebc8f05d295dad4545f6a730dd07c6c9bc7ac194bbbb4a759cfa00`.
+Frozen EXP-009 protocol: `b78f3d32a9bd86ea130ce1f51e2feded9d52b5f5ff796507c49d6f53fccc3334`.
+EXP-009 prediction freeze: `c2963a59ca83911a9ccacf9390390fed18fb9bb5282bf38ae1b33b5c44be2a8c`.
+
+Original protocols, manifests, response/attempt evidence, ledgers and compatibility records remain unchanged. Only compact evidence is promoted; raw text, API responses, request bodies, provider request IDs, secrets, weights and caches stay out of Git. The final [verification record](../experiments/exp009-official-test/verification.json) records the saved-evidence checks and test outcome; [RESULTS.md](RESULTS.md) retains exact comparisons and limitations.
+
+## Limitations and v2 deferrals
+
+Each specialist uses **1,540 task-training labels plus 770 additional, repeatedly reused validation/development labels** and external MiniLM pretraining. EXP-009 is one seed and one training pool; it has no measured seed variability. EXP-007's five seeds share one test population and one Luna prediction set; their sample SD is not a confidence interval. The same 3,080 test cases support the paired companion comparison, not an independent replication. Public-benchmark contamination, out-of-scope behavior and production distribution shift remain unresolved. Specialist deployment cost, production latency and total-system dollar savings are not measured. These limitations do not leave a v1 execution step outstanding.
+
+**Explicitly deferred to v2:** calibration; SetFit or another fine-tuned specialist; CLINC150 or a second dataset; self-hosted vLLM/H100 work; and a production cost study. None is started or authorized by finalizing v1. No additional pilot, preflight, test inference or test-driven tuning belongs to this completed milestone.
+
+## Historical bounded v1 strengthening pass — 2026-09-27
+
+The following record is preserved as history. Its pending-status statements and future commands applied at that earlier checkpoint and must not be executed as the current plan.
 
 The local strengthening pass is complete: complementary-error evidence, measured single-model CPU performance, and an executable retrieved-example companion with synthetic safety/evaluation checks. **Paid pilot and final test are not run.** The user reports an earlier authorized mechanical test preflight; this pass performed no further test access, encoding, inference or scoring. No API call occurred.
 

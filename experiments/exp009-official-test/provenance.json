@@ -1,0 +1,50 @@
+{
+  "control_compact_hashes": {
+    "experiments/exp007-official-test/per_class.json": "9c696e1b51686d176aef444ac70807d983d87cf2c4b402bf7d44157a9dada184",
+    "experiments/exp007-official-test/summary.json": "318a21bbff682ddd0c00cb972d24a5a8fc56177019625fcdad14189631ae027c"
+  },
+  "limitation": "Per-class TP/FP/FN/support reproduce published scores. Confusion cells cannot be reconstructed without truth rows; no new row-level scoring was performed.",
+  "prediction_freeze_sha256": "c2963a59ca83911a9ccacf9390390fed18fb9bb5282bf38ae1b33b5c44be2a8c",
+  "protocol_sha256": "b78f3d32a9bd86ea130ce1f51e2feded9d52b5f5ff796507c49d6f53fccc3334",
+  "runtime_compatibility": {
+    "executed_git_head": "7b518e5280723829a6a4a83f6826ac4b38434ab2",
+    "original_git_head": "36495acf8e90b763789792c9bbca509bc708de7b",
+    "original_successes_preserved": 826,
+    "receipt_sha256": "7587d5363a6aa5fbe885a9f979a79905867865ba2b536fffb94864a65e9326fd"
+  },
+  "source_artifacts": {
+    "cap_usd": "36.00",
+    "file_count": 3092,
+    "full_retry_reservation_usd": "35.32756300",
+    "metadata_files_sha256": {
+      "collection/.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "collection/execution.json": "d56883e862e880908b10697330df3e37b7b25a227e8778f1ada20f836aa8b712",
+      "collection/manifest.json": "2de36e011bc7936ac591a85f612958235cd13d21b70e6bb950eca9fcc1082f21",
+      "collection/reservations.json": "49fde469949cc7de3131088cf1ff4234a7b48ab06ce8d0ce005a0bee028911ba",
+      "collection/source_compatibility.json": "09998ada68bc2c3c3e665b2bdba038fbb83480d0c24c589b3d3c79d7115e7f1f",
+      "evaluation.json": "fd5f6011b93da838bbcd1fa68e1621011d2b6bfe33787f4bcaaeb9792e3dfac1",
+      "overhead.json": "e6d57f6053ee697833dfeba1baed2ccc717415291937ce502e37dc3581419159",
+      "predictions_frozen.json": "c2963a59ca83911a9ccacf9390390fed18fb9bb5282bf38ae1b33b5c44be2a8c",
+      "prepared.json": "75ee925814d2dadddce848ddab2d89d1e7ec23c496f1997d0844d5ae7692cdce",
+      "requests.json": "858b27f52b98f640e4e361aefead55c166cbcc8bc5bcf971376d5f677adb82d7",
+      "retrieval_evidence.json": "72339062d7a6bb3e33aabb367fe7d089cc25884d0d80a5326c85f4e7362ea9f9",
+      "specialist.json": "b92c3e679ed31a9ad7b3a41c4fbeb645099c1ec1b59977d19c5d7db4dd1d9a26"
+    },
+    "response_file_count": 3080,
+    "response_file_inventory_sha256": "431917522804b80916ab68dbe9f6f33976c3a7523f8f31cd943eb3e6e9d4c779",
+    "run_relative_path": "artifacts/exp009-retrieved-luna-v1/test",
+    "tree_sha256": "03bc76cbe5afbd71308fb13f73c660f9dd61e633b8ecf77e1c63feb87094d3bc"
+  },
+  "source_git_head": "7b518e5280723829a6a4a83f6826ac4b38434ab2",
+  "study_id": "EXP-009",
+  "verification_scope": {
+    "all_five_prediction_marginals_match_saved_class_counts": true,
+    "exp007_seed11_controls_exact": true,
+    "fallback_correct_counts_inferred_from_saved_scores_not_new_label_join": true,
+    "independent_scalar_gate_replayed": true,
+    "metrics_replayed_from_saved_per_class_sufficient_statistics": true,
+    "row_level_truth_not_reopened": true,
+    "saved_prediction_ids_exactly_once": 3080,
+    "saved_prediction_labels_match_execution_and_specialist": true
+  }
+}
